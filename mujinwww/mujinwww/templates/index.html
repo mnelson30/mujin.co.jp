@@ -1,0 +1,76 @@
+{% load url from future %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+{% load i18n %}
+<head>
+  <title>{% trans "MUJIN Inc Homepage" %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css">
+  <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+  <script type="text/javascript" src="{{ STATIC_URL }}jquery-1.7.1.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}jquery.tools.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}jquery-ui-1.8.16.custom.min.js"></script>
+  <!-- scrolling images -->
+  <link type="text/css" href="{{ STATIC_URL }}css/scrollable.css" rel="stylesheet" />
+  <script type="text/javascript" src="{{ STATIC_URL }}scrollable.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}scrollable.autoscroll.js"></script>
+  {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
+</head>
+
+<body class="">
+
+<!-- Container -->
+<div id="container">
+
+    <!-- Header -->
+    <div id="header">
+      <div id="branding">
+        <table border="0" width="100%" ><tr>
+            <td align="left" width="150">
+              <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg" width="150"/></td>
+        </tr></table>
+      </div>
+    </div>
+    <!-- Content -->
+    <div id="content">
+      
+      <ul class="tabs">
+        <li><a href="#">{% trans "Introduction" %}</a></li>
+        <li><a href="#">{% trans "Products" %}</a></li>
+        <li><a href="#">{% trans "Technology" %}</a></li>
+        <li><a href="#">{% trans "About MUJIN" %}</a></li>
+      </ul>
+
+      <div class="pane">{% include "intro_pane.html" %}</div>
+      <div class="pane">{% include "products_pane.html" %}</div>
+      <div class="pane">{% include "technology_pane.html" %}</div>
+      <div class="pane">{% include "aboutmujin_pane.html" %}</div>
+      
+      <script type="text/javascript">
+        // perform JavaScript after the document is scriptable.
+        $(function() {
+        // setup ul.tabs to work as tabs for each div directly under div.panes
+        $("ul.tabs").fpTabs("> .pane");
+        });
+      </script>
+
+      <script type="text/javascript">
+        $(function() {
+          $("#scrollable").scrollable({
+              size: 1,
+              circular: true,
+              speed: 1000,
+          }).navigator().autoscroll({
+              autoplay: true,
+              interval: 4000,
+          });
+        });
+      </script>
+
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+
+</body>
+</html>

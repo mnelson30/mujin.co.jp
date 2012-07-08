@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-06 09:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mujinwww/templates/aboutmujin_pane.html:3
+msgid ""
+"MUJIN Inc is an recent startup based in Japan. It's core development team "
+"has experience in managing one of the most popular robot motion planning "
+"libraries in the field. "
+msgstr "株式会社MUJINは最近設立されました。開発チームは世界でもっとも人気なロボット動作に関するソフトウェアを運営してきています。"
+
+#: mujinwww/templates/aboutmujin_pane.html:5
+msgid "MUJIN is currently seeking engineers in:"
+msgstr "株式会社MUJINは現在エンジニアを募集中です。"
+
+#: mujinwww/templates/aboutmujin_pane.html:7
+msgid "Software Engineering"
+msgstr "ソフトウェアエンジニアリング"
+
+#: mujinwww/templates/aboutmujin_pane.html:8
+msgid "Database and Network Engineering"
+msgstr "データベース・ネットワークエンジニアリング"
+
+#: mujinwww/templates/aboutmujin_pane.html:9
+msgid "Web design and user interfaces"
+msgstr "ウェブデザインとユーザインタフェースのエンジニアリング"
+
+#: mujinwww/templates/aboutmujin_pane.html:10
+msgid "Motion Planning Algorithms"
+msgstr "ロボット動作計画アルゴリズム"
+
+#: mujinwww/templates/aboutmujin_pane.html:11
+msgid "Robot Automation Experience (Hardware + Perception)"
+msgstr "ロボット自動化の経験を持つエンジニア（ハードウェアか認識）"
+
+#: mujinwww/templates/aboutmujin_pane.html:15
+msgid "For questions email: "
+msgstr "ご質問かご興味があれば、このアドレスにメールください。"
+
+#: mujinwww/templates/index.html:5
+msgid "MUJIN Inc Homepage"
+msgstr "株式会社MUJINホームページ"
+
+#: mujinwww/templates/index.html:37
+msgid "Introduction"
+msgstr "事業案内"
+
+#: mujinwww/templates/index.html:38
+msgid "Products"
+msgstr "製品情報"
+
+#: mujinwww/templates/index.html:39
+msgid "Technology"
+msgstr "技術情報"
+
+#: mujinwww/templates/index.html:40
+msgid "About MUJIN"
+msgstr "企業情報"
+
+#: mujinwww/templates/intro_pane.html:25
+msgid ""
+"MUJIN specializes in industrial robot automation through advanced motion "
+"planning and optimization algorithms. MUJIN technlogy virtually works for "
+"any robot, and makes robots easier and cheaper to program for by offering "
+"intuitive cloud computing interfaces backed up by large-scale computing "
+"infastructure."
+msgstr ""
+"株式会社MUJINは産業用ロボットの自動化を高度なロボット動作計画と最適化のアルゴ"
+"リズムで実現しています。MUJINの技術は全世界のロボットに対応しており、ロボット"
+"プログラミングをより簡単に出来ることを提供しています。MUJINのコア技術は、自社"
+"のクラウドコンピューティングインフラでは一日でかかる最適化を、数分でこなせる"
+"ようになっています。"
+
+#: mujinwww/templates/intro_pane.html:27
+#, python-format
+msgid ""
+"<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_en.pdf\">IREX "
+"2011 Pamphlet</a>"
+msgstr ""
+"<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_jp.pdf\">IREX 2011"
+"年パンフレット</a>"
+
+#: mujinwww/templates/products_pane.html:2
+msgid "MUJIN Controller"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/products_pane.html:4
+msgid "World's first cloud computing solution for robot motion planning."
+msgstr "世界初のロボット動作計画のクラウドコンピューティングサービス。"
+
+#: mujinwww/templates/products_pane.html:6
+msgid "http://www.youtube.com/embed/Je7Gqt1HfR0"
+msgstr ""
+
+#: mujinwww/templates/technology_pane.html:3
+msgid "Layout Optimization"
+msgstr "ロボット配置の最適化"
+
+#: mujinwww/templates/technology_pane.html:4
+msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
+msgstr ""
+
+#: mujinwww/templates/technology_pane.html:5
+msgid "Multi-Robot Motion Planning"
+msgstr "複数ロボット動作"
+
+#: mujinwww/templates/technology_pane.html:6
+#, python-format
+msgid ""
+"Motion planning for multiple robots. Task time for one robot is 16.6s, "
+"adding two in the same environment decreases task time by 25%% "
+msgstr ""
+"複数ロボットとの作業がすぐに実現可能です。以下の作業では、1台だと16.6秒で、2"
+"台では動作が12.3秒になります。2台か双腕ロボットを使えば同じ作業の時間を25%%ぐ"
+"らい短縮出来ます。 "
+
+#: mujinwww/templates/technology_pane.html:7
+msgid "http://www.youtube.com/embed/vLu0twF2-Ps"
+msgstr ""
+
+#~ msgid "MUJIN Inc"
+#~ msgstr "株式会社MUJIN"
+
+#~ msgid ""
+#~ "Mujin Inc. Official Homepage. Will be updated early 2012. For questions "
+#~ "email: "
+#~ msgstr ""
+#~ "株式会社MUJINのホームページです。2012年に公開されます。問い合わせメール："

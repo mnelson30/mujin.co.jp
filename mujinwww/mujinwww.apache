@@ -1,0 +1,31 @@
+<VirtualHost *:80>
+  ServerAdmin rosen.diankov@mujin.co.jp
+  ServerName mujin.co.jp
+  ServerAlias www.mujin.co.jp
+
+  DocumentRoot /var/www
+  <Directory />
+      Options -Indexes FollowSymLinks
+      AllowOverride AuthConfig
+  </Directory>
+  <Directory /var/www/>
+      Options -Indexes FollowSymLinks MultiViews
+      AllowOverride AuthConfig
+      Order allow,deny
+      allow from all
+  </Directory>
+
+  Alias /static/ /var/www/static/
+  <Directory /var/www/static>
+    Order deny,allow
+    Allow from all
+  </Directory>
+
+  WSGIScriptAlias / /var/www/mujinwww/mujinwww/wsgi.py
+  ErrorLog /var/log/apache2/mujinwww_error.log
+  # Possible values include: debug, info, notice, warn, error, crit,
+  # alert, emerg.
+  LogLevel warn
+  CustomLog /var/log/apache2/mujinwww_access.log combined
+
+</VirtualHost>
