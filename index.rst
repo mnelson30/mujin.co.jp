@@ -4,6 +4,8 @@ MUJIN Home Website Development
 Initial Setup
 =============
 
+User **mujincontroller**, Password is **testpass**
+
 ::
 
   sudo -u postgres psql --command "CREATE ROLE mujincontroller PASSWORD 'md53c8bec98348b82fb05cc70d4744dfb59' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;"
@@ -16,15 +18,17 @@ Execute every time mujinwww is updated
 
 ::
 
-  python $MUJIN_HOME/../web/mujinwww/manage.py syncdb
-  python $MUJIN_HOME/../web/mujinwww/manage.py migrate
+  python $MUJIN_HOME/../www/mujinwww/manage.py syncdb
+  python $MUJIN_HOME/../www/mujinwww/manage.py migrate
 
 Running
 =======
 
 ::
 
-  python $MUJIN_HOME/../web/mujinwww/manage.py runserver
+  python $MUJIN_HOME/../www/mujinwww/manage.py runserver
+
+Local website is at `http://http://localhost:8000/`_
 
 Editing
 =======
