@@ -6,21 +6,9 @@
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
   <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
-  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"/>
-  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"/>
-  <script>
-    $(document).ready(function(){
-$('#myslider').bjqs({
-'animation' : 'slide',
-'width' : 850,
-'height' : 340,
-'showMarkers' : true,
-'showControls' : true,
-'centerMarkers' : false
-});
-}); 
-</script>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
+  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
+  {% block headscripts %}{% endblock %}
 </head>
 
 <body onload="preloadImages();">
@@ -38,7 +26,7 @@ $('#myslider').bjqs({
             <td> 
               <div id="inquiry">
                 <a href="inquiry.html">
-                  <img width="392" height="74" border="0" src="{{ STATIC_URL }}img/inquiry.jpg"/>
+                  <img width="392" height="74" border="0" src="{{ STATIC_URL }}{% trans "img/en/inquiry.jpg" %}"/>
                 </a>
               </div>
             </td>

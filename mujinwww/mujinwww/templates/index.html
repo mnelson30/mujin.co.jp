@@ -1,135 +1,79 @@
-{% load url from future %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+{% extends "base.html" %}
 {% load i18n %}
-<head>
-  <title>{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css">
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css">
-  <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
-  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
-  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
-  <script>
-    $(document).ready(function(){
-$('#myslider').bjqs({
-'animation' : 'slide',
-'width' : 850,
-'height' : 340,
-'showMarkers' : true,
-'showControls' : true,
-'centerMarkers' : false
-});
-}); 
-</script>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css">
-</head>
 
-<body onload="preloadImages();">
-<div id="container" class="homepage">
-    <div id="Main">
-      <div id="header">
-        <table>
-           <tr>
-           <td>
-           <div id="logo">
-           <a href="index.html">
-               <img width="220" height="111" border="0" src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
-           </a>
-           </div>
-           <td>
-           <td>  <td>
-           <td> 
-           <div id="inquiry">
-           <a href="inquiry.html">
-               <img width="392" height="74" border="0" src="{{ STATIC_URL }}img/inquiry.jpg"/>
-           </a>
-           </div>
-           <td>
-           <tr>
-        </table>
-      </div>
-      <nav>
-      <ul id="NavBar">
-                <li><a href="index.html" title="Home">{% trans "Home" %}</a></li>
-                <li><a href="product.html" title="Product">{% trans "Products" %}</a></li>
-                <li><a href="technology.html" title="Technology">{% trans "Technology" %}</a></li>
-                <li><a href="News.html" title="News">{% trans "News" %}</a></li>
-                <li><a href="carrers.html" title="Careers">{% trans "Careers" %}</a></li>
-                <li><a href="aboutmujin.html" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-                    <form>
-                        <input type="text" />
-                    </form>
-                </li>
-      </ul>
-      </nav>
-     
-  
-    <div id="myslider">
-        <ul class="bjqs">
-          <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="520" title="Automatically generated caption"></li>
-          <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="520"  title="Automatically generated caption"></li>
-          <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="520" title="Automatically generated caption"></li>
-        </ul>
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#myslider').bjqs({
+  'animation' : 'slide',
+  'width' : 850,
+  'height' : 340,
+  'showMarkers' : true,
+  'showControls' : true,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% endblock %}
+
+{% block content %}  
+<div id="myslider">
+  <ul class="bjqs">
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="520" title="Automatically generated caption"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="520"  title="Automatically generated caption"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="520" title="Automatically generated caption"/></li>
+  </ul>
 </div>
-      <div id="TextArea">
-        <span class="theader">{% trans "Industrial Robots for Everyone." %} </span>
-        <br>
-        <div style="font-size:16px;width:470px;">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-{% trans "Robots will change how we think about manufacturing. And Rethink Robotics will change how we think about robots." %} 
-      </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-      <div id="QuoteBox">
-        <span class="header" style="color:#666666" >{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}        <br>
-      </span>
-        <p style="margin-bottom:8px;">{% trans "Easy access to industrial robot gives tremendous benefit to customer in terms of :" %}</p>
-      <ul style="list-style-type:none;margin:0;padding-left:15px">
-        <li>{% trans "Promoting factory automation" %}</li>
-        <li>{% trans "Increasin productivity" %}</li>
-        <li>{% trans "Reducing total cost" %}</li>
-        <li>
-      </ul>
-      </div>
-      <div id="NewsHome">
-        <b class="white">NEWS</b>
-        <br>
-<a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
-<br>
-<br>
-<a target="_blank" href="news.html">{% trans "MUJIN Annouced office was moved into Tokyo University." %}</a>
-<br>
-<br>
+<div id="TextArea">
+  <span class="theader">{% trans "Industrial Robots for Everyone." %} </span>
+  <br/>
+  <div style="font-size:16px;width:470px;">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    {% trans "Robots will change how we think about manufacturing. And Rethink Robotics will change how we think about robots." %} 
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+<div id="QuoteBox">
+  <span class="header" style="color:#666666" >{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}
+    <br/>
+  </span>
+  <p style="margin-bottom:8px;">{% trans "Easy access to industrial robot gives tremendous benefit to customer in terms of :" %}</p>
+  <ul style="list-style-type:none;margin:0;padding-left:15px">
+    <li>{% trans "Promoting factory automation" %}</li>
+    <li>{% trans "Increasin productivity" %}</li>
+    <li>{% trans "Reducing total cost" %}</li>
+  </ul>
 </div>
 <div id="NewsHome">
-<b class="white">VISION</b>
-<br>
-<a href="vision.html">Rethink Robotics Founder Rodney Brooks Describes the Future of Robots</a>
+  <b class="white">NEWS</b>
+  <br/>
+  <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
+  <br/>
+  <br/>
+  <a target="_blank" href="news.html">{% trans "MUJIN Annouced office was moved into Tokyo University." %}</a>
+  <br/>
+  <br/>
+</div>
+<div id="NewsHome">
+  <b class="white">VISION</b>
+  <br/>
+  <a href="vision.html">Rethink Robotics Founder Rodney Brooks Describes the Future of Robots</a>
 </div>
 
 <div id="NewsHome" style="margin-right:0px;">
-<b class="white"> CAREERS</b>
-<br>
-<a href="careers.html">Thinking about changing jobs? At MUJIN, you could change the world too.</a>
+  <b class="white"> CAREERS</b>
+  <br/>
+  <a href="careers.html">Thinking about changing jobs? At MUJIN, you could change the world too.</a>
 </div>
-</div>
-<div style="clear: both;"></div>
-<div id="Footer">
-<div class="footertext">
-&copy; 2011-2012 MUJIN Inc. All rights reserved.
-<a href="privacy.html">Privacy Policy</a>
-</div>
-</div>
-</div>
-</body>
-</html>
-    
+{% endblock %}

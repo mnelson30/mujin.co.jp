@@ -26,7 +26,7 @@ Running
 
 ::
 
-  python $MUJIN_HOME/../www/mujinwww/manage.py runserver
+  python $MUJIN_HOME/../www/mujinwww/manage.py runserver 0.0.0.0:8000
 
 Local website is at `http://http://localhost:8000/`_
 
