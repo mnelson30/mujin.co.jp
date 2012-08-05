@@ -15,15 +15,15 @@ from django.conf import settings
 # from django.contrib import admin
 # admin.autodiscover()
 from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.template import RequestContext, TemplateDoesNotExist
 from django.utils.translation import get_language_from_request
 
 def indexview(request,name):
     if len(name) == 0:
-        name = 'index.html'
+        name = 'index'
 
     htmlvars = dict()
-    if name == 'index.html':
+    if name == 'index':
         # perhaps move this in initialization step for caching?
         gallery_intro_dir = None
         for staticdir in settings.STATICFILES_DIRS:
@@ -43,11 +43,13 @@ def indexview(request,name):
                     if ext == '.png' or ext == '.jpg':
                         imagefilenames += u'<img src="%s" width="640"/>\n'%os.path.join(urldir,imagename)
             htmlvars['intro_gallery_images'] = imagefilenames
-    
-    return render_to_response(name, RequestContext(request,htmlvars))
+    try:
+        return render_to_response(name, RequestContext(request,htmlvars))
+    except TemplateDoesNotExist:
+        return render_to_response(name+'.html', RequestContext(request,htmlvars))
 
 urlpatterns = patterns('',
-    url(r'^(?P<name>(\w)*)$', indexview),
+                       url(r'^(?P<name>[\w]*)$', indexview),
     # Examples:
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),

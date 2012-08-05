@@ -2,75 +2,134 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
 {% load i18n %}
 <head>
-  <title>{% trans "MUJIN Inc Homepage" %}</title>
+  <title>{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}</title>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css">
   <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
-  <script type="text/javascript" src="{{ STATIC_URL }}jquery-1.7.1.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}jquery.tools.min.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}jquery-ui-1.8.16.custom.min.js"></script>
-  <!-- scrolling images -->
-  <link type="text/css" href="{{ STATIC_URL }}css/scrollable.css" rel="stylesheet" />
-  <script type="text/javascript" src="{{ STATIC_URL }}scrollable.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}scrollable.autoscroll.js"></script>
-  {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
+  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
+  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
+  <script>
+    $(document).ready(function(){
+$('#myslider').bjqs({
+'animation' : 'slide',
+'width' : 850,
+'height' : 340,
+'showMarkers' : true,
+'showControls' : true,
+'centerMarkers' : false
+});
+}); 
+</script>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css">
 </head>
 
-<body class="">
-
-<!-- Container -->
-<div id="container">
-
-    <!-- Header -->
-    <div id="header">
-      <div id="branding">
-        <table border="0" width="100%" ><tr>
-            <td align="left" width="150">
-              <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg" width="150"/></td>
-        </tr></table>
+<body onload="preloadImages();">
+<div id="container" class="homepage">
+    <div id="Main">
+      <div id="header">
+        <table>
+           <tr>
+           <td>
+           <div id="logo">
+           <a href="index.html">
+               <img width="220" height="111" border="0" src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
+           </a>
+           </div>
+           <td>
+           <td>  <td>
+           <td> 
+           <div id="inquiry">
+           <a href="inquiry.html">
+               <img width="392" height="74" border="0" src="{{ STATIC_URL }}img/inquiry.jpg"/>
+           </a>
+           </div>
+           <td>
+           <tr>
+        </table>
       </div>
-    </div>
-    <!-- Content -->
-    <div id="content">
-      
-      <ul class="tabs">
-        <li><a href="#">{% trans "Introduction" %}</a></li>
-        <li><a href="#">{% trans "Products" %}</a></li>
-        <li><a href="#">{% trans "Technology" %}</a></li>
-        <li><a href="#">{% trans "About MUJIN" %}</a></li>
+      <nav>
+      <ul id="NavBar">
+                <li><a href="index.html" title="Home">{% trans "Home" %}</a></li>
+                <li><a href="product.html" title="Product">{% trans "Products" %}</a></li>
+                <li><a href="technology.html" title="Technology">{% trans "Technology" %}</a></li>
+                <li><a href="News.html" title="News">{% trans "News" %}</a></li>
+                <li><a href="carrers.html" title="Careers">{% trans "Careers" %}</a></li>
+                <li><a href="aboutmujin.html" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+                    <form>
+                        <input type="text" />
+                    </form>
+                </li>
       </ul>
-
-      <div class="pane">{% include "intro_pane.html" %}</div>
-      <div class="pane">{% include "products_pane.html" %}</div>
-      <div class="pane">{% include "technology_pane.html" %}</div>
-      <div class="pane">{% include "aboutmujin_pane.html" %}</div>
-      
-      <script type="text/javascript">
-        // perform JavaScript after the document is scriptable.
-        $(function() {
-        // setup ul.tabs to work as tabs for each div directly under div.panes
-        $("ul.tabs").fpTabs("> .pane");
-        });
-      </script>
-
-      <script type="text/javascript">
-        $(function() {
-          $("#scrollable").scrollable({
-              size: 1,
-              circular: true,
-              speed: 1000,
-          }).navigator().autoscroll({
-              autoplay: true,
-              interval: 4000,
-          });
-        });
-      </script>
-
-    </div>
-    <!-- END Content -->
-
-    <div id="footer"></div>
+      </nav>
+     
+  
+    <div id="myslider">
+        <ul class="bjqs">
+          <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="520" title="Automatically generated caption"></li>
+          <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="520"  title="Automatically generated caption"></li>
+          <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="520" title="Automatically generated caption"></li>
+        </ul>
+</div>
+      <div id="TextArea">
+        <span class="theader">{% trans "Industrial Robots for Everyone." %} </span>
+        <br>
+        <div style="font-size:16px;width:470px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+{% trans "Robots will change how we think about manufacturing. And Rethink Robotics will change how we think about robots." %} 
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div id="QuoteBox">
+        <span class="header" style="color:#666666" >{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}        <br>
+      </span>
+        <p style="margin-bottom:8px;">{% trans "Easy access to industrial robot gives tremendous benefit to customer in terms of :" %}</p>
+      <ul style="list-style-type:none;margin:0;padding-left:15px">
+        <li>{% trans "Promoting factory automation" %}</li>
+        <li>{% trans "Increasin productivity" %}</li>
+        <li>{% trans "Reducing total cost" %}</li>
+        <li>
+      </ul>
+      </div>
+      <div id="NewsHome">
+        <b class="white">NEWS</b>
+        <br>
+<a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
+<br>
+<br>
+<a target="_blank" href="news.html">{% trans "MUJIN Annouced office was moved into Tokyo University." %}</a>
+<br>
+<br>
+</div>
+<div id="NewsHome">
+<b class="white">VISION</b>
+<br>
+<a href="vision.html">Rethink Robotics Founder Rodney Brooks Describes the Future of Robots</a>
 </div>
 
+<div id="NewsHome" style="margin-right:0px;">
+<b class="white"> CAREERS</b>
+<br>
+<a href="careers.html">Thinking about changing jobs? At MUJIN, you could change the world too.</a>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div id="Footer">
+<div class="footertext">
+&copy; 2011-2012 MUJIN Inc. All rights reserved.
+<a href="privacy.html">Privacy Policy</a>
+</div>
+</div>
+</div>
 </body>
 </html>
+    

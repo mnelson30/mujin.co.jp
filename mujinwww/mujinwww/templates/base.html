@@ -1,0 +1,86 @@
+{% load url from future %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+{% load i18n %}
+<head>
+  <title>{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
+  <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"/>
+  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"/>
+  <script>
+    $(document).ready(function(){
+$('#myslider').bjqs({
+'animation' : 'slide',
+'width' : 850,
+'height' : 340,
+'showMarkers' : true,
+'showControls' : true,
+'centerMarkers' : false
+});
+}); 
+</script>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+</head>
+
+<body onload="preloadImages();">
+  <div id="container" class="homepage">
+    <div id="Main">
+      <div id="header">
+        <table>
+          <tr>
+            <td>
+              <div id="logo">
+                <a href="index.html">
+                  <img width="220" height="111" border="0" src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
+                </a>
+              </div>
+            <td> 
+              <div id="inquiry">
+                <a href="inquiry.html">
+                  <img width="392" height="74" border="0" src="{{ STATIC_URL }}img/inquiry.jpg"/>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <nav>
+        <ul id="NavBar">
+          <li><a href="index.html" title="Home">{% trans "Home" %}</a></li>
+          <li><a href="product.html" title="Product">{% trans "Products" %}</a></li>
+          <li><a href="technology.html" title="Technology">{% trans "Technology" %}</a></li>
+          <li><a href="News.html" title="News">{% trans "News" %}</a></li>
+          <li><a href="carrers.html" title="Careers">{% trans "Careers" %}</a></li>
+          <li><a href="aboutmujin.html" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+                <form>
+                  <input type="text" />
+                </form>
+        </ul>
+      </nav>
+    </div>
+    <!-- Content -->
+    <div id="content" class="{% block coltype %}colM{% endblock %}">
+      {% block pretitle %}{% endblock %}
+      {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+      {% block content %}
+      {% block object-tools %}{% endblock %}
+      {{ content }}
+      {% endblock %}
+      {% block sidebar %}{% endblock %}
+      <br class="clear" />
+    </div> 
+
+    <div style="clear: both;"></div>
+    <br/>
+    <br/>
+    <br/>    
+    <div id="Footer">
+      <div class="footertext">
+        &copy; 2011-2012 MUJIN Inc. All rights reserved.
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
