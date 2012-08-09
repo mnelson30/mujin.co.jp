@@ -1,3 +1,4 @@
+
 #container {
     background-attachment: fixed;
     background-color: #FFFFFF;
@@ -32,6 +33,17 @@ html, body {
 }
 
 
+#headNewsHome {
+    background-color: #E3E2E3;
+    color: #3399FF;
+    font-family: Century Gothic,Verdana,Geneva,sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    width: 260px;
+}
+
 #NewsHome {
     color: #3399FF;
     float: left;
@@ -55,35 +67,61 @@ html, body {
     float: left;}
 
 #QuoteBox {
-    color: #F58026;
+     background-color: #E3E2E3;
+     color: #F58026;
     font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    font-size: 14px;
-    left: 90px;
+    font-size: 13px;
+    left: 70px;
     line-height: 23px;
-    margin-top: 450px;
+    margin-top: 0px;
     position: absolute;
-    width: 230px;
+    width: 210px;
+    float: left;
 }
 .homepage #QuoteBox {
     font-size: 13px;
     line-height: 19px;
     top: 150px;
 }
-#TextArea {
-    background-color: #E3E2E3;
-    clear: both;
-    color: #717074;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    font-size: 13px;
-    height: auto;
-    line-height: 19px;
-    margin-bottom: 22px;
-    margin-left: 0;
-    margin-top: 400px;
-    min-height: 250px;
-    padding: 32px 40px 40px 324px;
-    width: 530px;
+
+#mujinmission {
+    margin-left:300px;
 }
+.subnavi .subbutton {
+   border-top: 1px solid #f7fafa;
+   background: #f76e05;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
+   background: -webkit-linear-gradient(top, #f0a308, #f76e05);
+   background: -moz-linear-gradient(top, #f0a308, #f76e05);
+   background: -ms-linear-gradient(top, #f0a308, #f76e05);
+   background: -o-linear-gradient(top, #f0a308, #f76e05);
+   padding: 5px 5px;
+   webkit-border-radius: 11px;
+   moz-border-radius: 11px;
+   border-radius: 11px;
+   webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 24px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.subbutton:hover {
+   border-top-color: #080204;
+   background: #080204;
+   color: #ccc;
+   }
+.subbutton:active {
+   border-top-color: #a89696;
+   background: #a89696;
+   }
+
+.subnavi li a {
+     text-decoration:none; text-align:center; display:block; line-height:30px; outline:none; margin:2px;  width:250px }
+
 #Footer {
     background-color: #FF8C00;
     border-top: 0 dotted #B4A579;
@@ -99,7 +137,7 @@ html, body {
     padding-top: 10px;
     position: absolute;
     text-align: left;
-    width: 1000px;
+    width: 980px;
     clear: both; 
 }
 #Footer a:link {
@@ -239,8 +277,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
 #NavBar form input {
     width:90px; height:20px; margin-left:9px; margin-top:8px; border:none; padding-left:20px; padding-right:10px; color:#eee;
  
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
+    moz-border-radius:10px;
+    webkit-border-radius:10px;
     border-radius:10px;
  
     /* We use the CSS3 multiple backgrounds for the input field: The magnifier image and the gradient background */    
@@ -250,16 +288,16 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
     
     background-color:#6E6E6E; /* Fallback */
     
-    -moz-box-shadow: inset 0 2px 1px 1px #363636;
-    -webkit-box-shadow: inset 0 2px 1px 1px #363636;
+    moz-box-shadow: inset 0 2px 1px 1px #363636;
+    webkit-box-shadow: inset 0 2px 1px 1px #363636;
     box-shadow: inset 0 2px 1px 1px #363636;
 }
  
 /* Rounded corner for the first in last item. Shorthand: Top left, Top right, Bottom right, Bottom left.
 We also remove the borders, since they don't need them. */
 #NavBar li:first-child {
-    -moz-border-radius:4px 0 0 4px;
-    -webkit-border-radius:4px 0 0 4px;
+    moz-border-radius:4px 0 0 4px;
+    webkit-border-radius:4px 0 0 4px;
     border-radius:4px 0 0 4px;
     
     border-left:none;
@@ -267,16 +305,15 @@ We also remove the borders, since they don't need them. */
  
 /* The first child image - the logo - has to be centered. Because of the image dimensions, we manually need to shift it a bit. */
 #NavBar li:first-child a img {
-   vertical-align:middle; margin-top:-2px;
+   vertical-align:middle; 
+   margin-top:-2px;
 }
  
-#Navbar li:last-child {
-    -moz-border-radius:0 4px 4px 0;
-    -webkit-border-radius:0 4px 4px 0;
-    border-radius:0 4px 4px 0;
-    
-    border-right:none;
-    
+#Navbar li:last-child  {
+    moz-border-radius:0 4px 4px 0;
+    webkit-border-radius:0 4px 4px 0;
+    border-radius:0 4px 4px 0; 
+    border-right:none;   
     /* The width of the last menu item (search bar) is bigger than the others */
     width:124px;
 }
@@ -288,5 +325,27 @@ We also remove the borders, since they don't need them. */
 }
  
 #NavBar {
-     -webkit-animation: showMenu 1s; position:relative;
+     webkit-animation: showMenu 1s; position:relative;
+
+/* styling for icons in Corporate Overview */
+#imagebox {
+border: 1px dashed #0000cc;
+}
+
+p.image, p.caption {
+text-align: center;
+margin: 5px;
+}
+
+p.caption {
+font-size: 80%;
+align: center }
+
+table .subnavi td {
+background-image: url("{{ STATIC_URL }}img.gif");
+}
+   
+table .subnavi:hover {
+color: red;
+}
 

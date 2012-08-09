@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Company profile" %}
+{% endblock %}
+
+{% block content %}    
+<div id= "about mujin">
+  <div class="article">
+    <div class="headline">
+   <br/>
+   <br/>
+      <h1 class="title"> Company profile </h1>
+    </div>
+    <br/>
+    <p>
+      <img width="250" height="190" alt="INCONTROL Office" src="{{ STATIC_URL }}/img/industrial_robots.jpg" style="margin-left: 10px; float: right;"/>
+        MUJIN Inc is recently founded as the independent software developer of the worldwide leading inverse kinematics technology, developed by Dr.Diankov, for Automatic Motion and Path Planning in Japan.
+    </p>
+    <br/>
+    <br/>
+    <p>
+Being forcused on the development of world class opensource software for programming autonomous multi joint machines for last five years,  MUJIN now adresses large companies and more than 200 research institutions.   
+    </p>
+    <br/>
+    <br/>
+    <p>
+Of many fields where our technology can be appied, MUJIN's main market is Factory Automation "FA" using industrial robot. In this area, demand of factory automation using industrial robot has been increasing more than ever, however; special-skill-required and time- consuming system integration process has been acknowledged as a big obstacle.
+Providing the large range of solutions, from stand-alone to fully integrated service, enables robot system integraters to save money, to shorten developmentn time, and to increase productivity.
+    </p>
+    <br/>
+    <br/>
+    <p>
+MUJIN's mission is to accomplish "Industrial Robots for Everyone" since we believe that easy access to industrial robot is the key to promote world FA and to increase world wide manufacturing productivity. 
+    </p>
+    <br/>
+    <br/>
+Key manufacture markets include:
+  
+    <ul>
+      <li>food & Medical </li>
+      <li>Electric</li>
+      <li>Automotive</li>
+      <li>Logistics</li>
+    </ul>
+  </div>
+<br/>
+<br/>
+  <div class="imagebox">
+    <table width="700px">
+      <tr>
+        <td valign="bottom">
+          <p class="image"><a href="/company_overview"><img src="{{ STATIC_URL }}/img/corporate_profile.jpg" width="120px" hight="130px" alt="company_overview"/></a></p>
+          <p class="caption">{% trans "Corporate overview" %}</p>
+        </td>
+        <td valign="bottom">
+          <p class="image"><a href="/company_development"><img src="{{ STATIC_URL }}/img/company_development.jpg" width="120px" hight="130px" alt="company_development"/></a>
+          </p>
+          <p class="caption">{% trans "Company development" %}
+          </p>
+        </td>
+        <td valign="bottom">
+          <p class="image"><a href="/management_team"><img src="{{ STATIC_URL }}/img/management_team.jpg" width="120px" hight="130px" alt="management_team"/></a>
+          </p>
+          <p class="caption">{% trans "Management team" %}
+          </p>
+        </td>
+        <td valign="bottom">
+          <p class="image"><a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" width="120px" hight="130px" alt="access_map"/></a>
+          </p>
+          <p class="caption">{% trans "Access map" %}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html> 
+{% endblock %}
+
+
+    

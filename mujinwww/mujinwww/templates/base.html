@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
 {% load i18n %}
 <head>
-  <title>{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
+  <title>{% block title %}{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}{% endblock %}</title> 
+  {% block css %}{% endblock %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
   <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
   <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
@@ -15,18 +16,28 @@
   <div id="container" class="homepage">
     <div id="Main">
       <div id="header">
-        <table>
+      <table style="hight:400px">
           <tr>
             <td>
               <div id="logo">
-                <a href="index.html">
+                <a href="/index">
                   <img width="220" height="111" border="0" src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
                 </a>
               </div>
+            </td>
             <td> 
+              <div id="headNewsHome">
+                <b class="white">NEWS</b>
+                <br/>
+                <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
+                <br/>
+                <a target="_blank" href="news.html">{% trans "MUJIN Annouced office was moved into Tokyo University." %}</a>
+              </div>
+            </td>
+            <td>
               <div id="inquiry">
-                <a href="inquiry.html">
-                  <img width="392" height="74" border="0" src="{{ STATIC_URL }}{% trans "img/en/inquiry.jpg" %}"/>
+                <a href="/inquiry">
+                  <img width="350" height="74" border="0" src="{{ STATIC_URL }}{% trans "img/en/inquiry.jpg" %}"/>
                 </a>
               </div>
             </td>
@@ -35,23 +46,21 @@
       </div>
       <nav>
         <ul id="NavBar">
-          <li><a href="index.html" title="Home">{% trans "Home" %}</a></li>
-          <li><a href="product.html" title="Product">{% trans "Products" %}</a></li>
-          <li><a href="technology.html" title="Technology">{% trans "Technology" %}</a></li>
-          <li><a href="News.html" title="News">{% trans "News" %}</a></li>
-          <li><a href="carrers.html" title="Careers">{% trans "Careers" %}</a></li>
-          <li><a href="aboutmujin.html" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-                <form>
-                  <input type="text" />
-                </form>
+          <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
+          <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+          <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
+          <li><a href="/news" title="News">{% trans "News" %}</a></li>
+          <li><a href="/carriers" title="Careers">{% trans "Careers" %}</a></li>
+          <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+          <li><form><input type="text" /> </form></li>
         </ul>
       </nav>
-    </div>
+   
     <!-- Content -->
     <div id="content" class="{% block coltype %}colM{% endblock %}">
       {% block pretitle %}{% endblock %}
       {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
-      {% block content %}
+     {% block content %}
       {% block object-tools %}{% endblock %}
       {{ content }}
       {% endblock %}
@@ -66,7 +75,7 @@
     <div id="Footer">
       <div class="footertext">
         &copy; 2011-2012 MUJIN Inc. All rights reserved.
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="/privacy">Privacy Policy</a>
       </div>
     </div>
   </div>

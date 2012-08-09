@@ -30,6 +30,9 @@ Running
 
 Local website is at `http://http://localhost:8000/`_
 
+IPの見方
+sbin ifconfig
+
 Editing
 =======
 

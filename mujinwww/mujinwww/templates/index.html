@@ -25,36 +25,26 @@
     <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="520" title="Automatically generated caption"/></li>
   </ul>
 </div>
-<div id="TextArea">
-  <span class="theader">{% trans "Industrial Robots for Everyone." %} </span>
-  <br/>
-  <div style="font-size:16px;width:470px;">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    {% trans "Robots will change how we think about manufacturing. And Rethink Robotics will change how we think about robots." %} 
-  </div>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-</div>
+
 <div id="QuoteBox">
   <span class="header" style="color:#666666" >{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}
     <br/>
   </span>
-  <p style="margin-bottom:8px;">{% trans "Easy access to industrial robot gives tremendous benefit to customer in terms of :" %}</p>
-  <ul style="list-style-type:none;margin:0;padding-left:15px">
-    <li>{% trans "Promoting factory automation" %}</li>
-    <li>{% trans "Increasin productivity" %}</li>
-    <li>{% trans "Reducing total cost" %}</li>
-  </ul>
 </div>
+
+<div id="mujinmission">
+<a><img src="{{ STATIC_URL }}img/mujin_mission.png" margin="0" padding="0"/></a>
+</div>
+
+<div id="submain">
+<ul class="subnavi">
+<li><a href="/submain_simulation" class="subbutton">Simulation Software</a> </li>
+<li><a href="/submain_FAservice" class="subbutton">FA Simulation Service</a></li>
+<li><a href="/submain_Robotcell Integration" class="subbutton">Robotcell Integration</a></li>
+</ul>
+<br/>
+</div>
+
 <div id="NewsHome">
   <b class="white">NEWS</b>
   <br/>
@@ -75,5 +65,6 @@
   <b class="white"> CAREERS</b>
   <br/>
   <a href="careers.html">Thinking about changing jobs? At MUJIN, you could change the world too.</a>
+</div>
 </div>
 {% endblock %}

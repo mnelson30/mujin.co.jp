@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Access Map" %}
+{% endblock %}
+
+{% block content %}
+<div id="accessmap">
+  <br/>
+  <br/>
+  <h1 class="title">{% trans "Access Map" %}</h1>
+  <h2> {% trans "Headquater Location" %}</h2>
+  <br/>
+  〒113-0033　東京都文京区本郷7-3-1 東京大学アントレプレナープラ4階 
+  <br/>
+  　（1Fのインターフォンで405号室をお呼び出し下さい。） 
+  <br/>
+  <br/>
+  <img width="500" height="458" alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map1.jpg" style="margin-left: 10px; float: center;"/> 
+  <br/>
+  <br/>
+  <h2 style="text-align:left;">
+    最寄駅
+    <br/>
+  </h2>
+  <strong>東京メトロ丸ノ内線 本郷三丁目駅</strong>
+  <br/>
+  <br/>
+  ２番出口を出て本郷３交差点を右折し、本郷消防署前交差点前の龍岡門からお入り下さい。
+  <br/>
+  <br/>
+  <strong>
+    東京メトロ千代田線　湯島駅
+    <br/>
+  </strong>
+  <br/>
+  １番出口を出て本郷消防署前交差点前の龍岡門からお入り下さい。
+  <br/>
+  <br/>
+  <strong>都営大江戸線　本郷三丁目駅</strong>
+  <br/>
+  <br/>
+  ５番出口を出て右折し、本郷消防署前交差点前の龍岡門からお入り下さい。
+<br/>
+<br/>
+  <h2>
+    お車の場合
+    <br/>
+  </h2>
+  龍岡門から入り直進し、薬学部脇のゲートからお入り下さい。
+  <br/>
+  ゲートでは東京大学アントレプレナープラザに行く旨をお伝え下さい。
+</div>
+</div>
+</body>
+{% endblock %}
