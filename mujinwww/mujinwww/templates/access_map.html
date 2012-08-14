@@ -6,13 +6,28 @@
 {% endblock %}
 
 {% block content %}
-<div id="accessmap">
+<div id="feature">
+  <div class="top_shadow">
+  </div>
+  <div class="inner">
+    <h1>{% trans "Access Map" %}</h1>
+  </div>
+  <div class="bottom_shadow"></div>
+</div>
+<br/>
+
+<div id="submain">
+  <ul class="subnavi" style="float:left">
+    <li><a href="/" class="subbutton"><b>{% trans "headquater" %}</b></a> </li>
+    <li><a href="/" class="subbutton"><b>{% trans "Koishikawa Office" %}</b></a></li>
+  </ul>
+</div>
+
+<div id="access_content" style="float:right;position:relative; left:30px">
+  <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:150px;background:#F8F8F8;"><h2> {% trans "Headquater" %}</h2>
+  </div>
   <br/>
-  <br/>
-  <h1 class="title">{% trans "Access Map" %}</h1>
-  <h2> {% trans "Headquater Location" %}</h2>
-  <br/>
-  〒113-0033　東京都文京区本郷7-3-1 東京大学アントレプレナープラ4階 
+  〒113-0033　東京都文京区本郷7-3-1 東京大学アントレプレナープラザ4階 
   <br/>
   　（1Fのインターフォンで405号室をお呼び出し下さい。） 
   <br/>
@@ -20,10 +35,10 @@
   <img width="500" height="458" alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map1.jpg" style="margin-left: 10px; float: center;"/> 
   <br/>
   <br/>
-  <h2 style="text-align:left;">
+  <h3 style="text-align:left; color:red;">
     最寄駅
     <br/>
-  </h2>
+  </h3>
   <strong>東京メトロ丸ノ内線 本郷三丁目駅</strong>
   <br/>
   <br/>
@@ -42,15 +57,42 @@
   <br/>
   <br/>
   ５番出口を出て右折し、本郷消防署前交差点前の龍岡門からお入り下さい。
-<br/>
-<br/>
-  <h2>
+  <br/>
+  <br/>
+  <h3 style="text-align:left; color:red;">
     お車の場合
     <br/>
-  </h2>
+  </h3>
   龍岡門から入り直進し、薬学部脇のゲートからお入り下さい。
   <br/>
   ゲートでは東京大学アントレプレナープラザに行く旨をお伝え下さい。
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:250px;background:#F8F8F8;"><h2> {% trans "Koishikawa Office" %}</h2>
+  </div>
+ <br/>
+  〒112-0002　{% trans "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan" %} 
+  <br/>
+  <br/>
+  <img width="500"  alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map2.png" style="margin-left: 10px; float: center;"/> 
+  <br/>
+  <br/>
+  <h3 style="text-align:left; color:red;">
+    {% trans "Closest Station" %}
+    <br/>
+  </h3>
+  <strong>{% trans "東京メトロ三田線 春日駅" %}</strong>
+  <br/>
+  <br/>
+  {% trans "２番出口を出て本郷３交差点を右折し、本郷消防署前交差点前の龍岡門からお入り下さい。" %}
+  <br/>
+      お車の場合
+    <br/>
+  </h3>
+  {% trans "Please call us in advance, so that we will prepare for a parking space for you" %}
 </div>
 </div>
 </body>

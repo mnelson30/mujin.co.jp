@@ -26,12 +26,24 @@ html, body {
     height: 100%;
 }
 
+#Main {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 45px;
+    margin-top: 0px;
+    text-align: left;
+    width: 910px;
+}
+
 #header {
     font-size: 30px;
     font-family: Century Gothic,Verdana,Geneva,sans-serif;
     margin-bottom: 0px;
 }
 
+
+#Logo {
+    float: left;}
 
 #headNewsHome {
     background-color: #E3E2E3;
@@ -42,6 +54,179 @@ html, body {
     margin-left: 50px;
     padding-bottom: 0px;
     width: 260px;
+}
+#NavBar {
+    margin:0px 0; 
+    margin-bottom: 10px;
+    list-style:none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; 
+    letter-spacing:-0.5px; 
+    font-size:13px;
+    text-shadow: 0 -1px 3px #202020;
+    width:890px; height:34px;
+    
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    
+    -moz-box-shadow: 0px 3px 3px #cecece;
+    -webkit-box-shadow: 0px 3px 3px #cecece;
+    box-shadow: 0 3px 4px #8b8b8b;
+}
+
+#NavBar li {
+    display:block; 
+    float:left; 
+    border-right:1px solid #5d5d5d; 
+    border-left:1px solid #929292; 
+    width:120px; 
+    height:34px; 
+    border-bottom:1px solid #575757;  
+    border-top:1px solid #797979;
+    
+    /* Gradient backgrounds for the buttons. Generated using http://gradients.glrzad.com/ */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+    background-color:#5f5f5f; /* Fallback */
+}
+
+/* Set the states when hovering, except for the last item in the list (the search bar), since it doesn't need to change */
+#NavBar li:not(:last-child):hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
+    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
+    background-color:#383838; /* Fallback */
+    
+    /* We use the inset of the box shadow to create a subtle inner glow when hovering */
+    -moz-box-shadow: inset 0 0 5px 5px #535353;
+    -webkit-box-shadow: inset 0 0 5px 5px #535353;
+    box-shadow: inset 0 0 5px 5px #535353;
+}
+
+/* When the user clicks the button, we simply change the box inset (compared to the "hover") */
+#NavBar li:not(:last-child):active {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
+    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
+    background-color:#383838; /* Fallback */
+    
+    -moz-box-shadow: inset 0 1px 2px 2px #000;
+    -webkit-box-shadow: inset 0 1px 2px 2px #000;
+    box-shadow: inset 0 1px 2px 2px #000;
+}
+
+#NavBar li a {
+    color:white; text-decoration:none; text-align:center; display:block; line-height:34px; outline:none; }
+
+/* Styling of the search field */
+#NavBar form input {
+    width:90px; height:20px; margin-left:9px; margin-top:8px; border:none; padding-left:20px; padding-right:10px; color:#eee;
+    
+    moz-border-radius:10px;
+    webkit-border-radius:10px;
+    border-radius:10px;
+    
+    /* We use the CSS3 multiple backgrounds for the input field: The magnifier image and the gradient background */    
+    background-image: url("/static/img/magnifier.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, #747474), color-stop(0.5, #6E6E6E), color-stop(0.51, #7E7E7E), color-stop(1, #8D8D8D));
+    background-image: url("/static/img/magnifier.png"), -moz-linear-gradient(center bottom, #747474 0%, #6E6E6E 50%, #7E7E7E 51%, #8D8D8D 100%);
+    background-repeat: no-repeat;
+    
+    background-color:#6E6E6E; /* Fallback */
+    
+    moz-box-shadow: inset 0 2px 1px 1px #363636;
+    webkit-box-shadow: inset 0 2px 1px 1px #363636;
+    box-shadow: inset 0 2px 1px 1px #363636;
+}
+
+/* Rounded corner for the first in last item. Shorthand: Top left, Top right, Bottom right, Bottom left.
+   We also remove the borders, since they don't need them. */
+#NavBar li:first-child {
+    moz-border-radius:4px 0 0 4px;
+    webkit-border-radius:4px 0 0 4px;
+    border-radius:4px 0 0 4px;
+    
+    border-left:none;
+}
+
+
+/* The width of the last menu item (search bar) is bigger than the others */
+
+#NavBar li:last-child {
+    moz-border-radius:0 4px 4px 0;
+    webkit-border-radius:0 4px 4px 0;
+    border-radius:0 4px 4px 0; 
+    border-right:none;   
+    width:124px;
+}
+
+/* Fade in animation (Webkit only) */
+@-webkit-keyframes showMenu {
+    from { opacity: 0; top:-20px; }
+    to   { opacity: 1; }
+}
+
+#NavBar {
+    webkit-animation: showMenu 1s; position:relative;
+}
+
+#QuoteBox {
+    background-color: #E3E2E3;
+    color: #F58026;
+    font-family: Century Gothic,Verdana,Geneva,sans-serif;
+    font-size: 17px;
+    left: 0px;
+    line-height:58px;
+    margin-top: 0px;
+    width: 270px;
+    float: left;
+    margin-right:0px;
+}
+.homepage #QuoteBox {
+    font-size: 13px;
+    line-height: 19px;
+    top: 150px;
+}
+.header {
+    color: #000000;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 120%;
+}
+.subnavi { clear:both;
+}
+#submain .subnavi .subbutton {
+    border-top: 1px solid #f7fafa;
+    background: #f76e05;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
+    background: -webkit-linear-gradient(top, #f0a308, #f76e05);
+    background: -moz-linear-gradient(top, #f0a308, #f76e05);
+    background: -ms-linear-gradient(top, #f0a308, #f76e05);
+    background: -o-linear-gradient(top, #f0a308, #f76e05);
+    padding: 5px 5px;
+    webkit-border-radius: 11px;
+    moz-border-radius: 11px;
+    border-radius: 11px;
+    webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 24px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    display:block;
+}
+.subbutton:hover {
+    border-top-color: #080204;
+    background: #080204;
+    color: #ccc;
+}
+.subbutton:active {
+    border-top-color: #a89696;
+    background: #a89696;
+}
+
+.subnavi li {
+    text-decoration:none; text-align:center; display:block; line-height:30px; outline:none; margin:2px;  width:250px
 }
 
 #NewsHome {
@@ -55,75 +240,8 @@ html, body {
     padding-bottom: 60px;
     width: 260px;
 }
-#Main {
-    float: left;
-    margin-bottom: 0;
-    margin-left: 45px;
-    margin-top: 0px;
-    text-align: left;
-    width: 910px;
-}
-#Logo {
-    float: left;}
-
-#QuoteBox {
-     background-color: #E3E2E3;
-     color: #F58026;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    font-size: 13px;
-    left: 70px;
-    line-height: 23px;
-    margin-top: 0px;
-    position: absolute;
-    width: 210px;
-    float: left;
-}
-.homepage #QuoteBox {
-    font-size: 13px;
-    line-height: 19px;
-    top: 150px;
-}
-
-#mujinmission {
-    margin-left:300px;
-}
-.subnavi .subbutton {
-   border-top: 1px solid #f7fafa;
-   background: #f76e05;
-   background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
-   background: -webkit-linear-gradient(top, #f0a308, #f76e05);
-   background: -moz-linear-gradient(top, #f0a308, #f76e05);
-   background: -ms-linear-gradient(top, #f0a308, #f76e05);
-   background: -o-linear-gradient(top, #f0a308, #f76e05);
-   padding: 5px 5px;
-   webkit-border-radius: 11px;
-   moz-border-radius: 11px;
-   border-radius: 11px;
-   webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 24px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.subbutton:hover {
-   border-top-color: #080204;
-   background: #080204;
-   color: #ccc;
-   }
-.subbutton:active {
-   border-top-color: #a89696;
-   background: #a89696;
-   }
-
-.subnavi li a {
-     text-decoration:none; text-align:center; display:block; line-height:30px; outline:none; margin:2px;  width:250px }
-
 #Footer {
-    background-color: #FF8C00;
+    background-color: #FF9900;
     border-top: 0 dotted #B4A579;
     bottom: 0;
     color: #666666;
@@ -164,16 +282,7 @@ html, body {
     margin-left: 44px;
     margin-top: 0;
 }
-.header {
-    color: #000000;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 140%;
-}
-.theader {
-    font-size: 33px;
-    color: #000000
-}
+
 .subhead {
     color: #000000;
     font-size: 14px;
@@ -212,140 +321,70 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
     margin: 0;
     padding: 0;
 }
-#NavBar {
-    margin:0px 0; 
-    margin-bottom: 10px;
-    list-style:none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; 
-    letter-spacing:-0.5px; 
-    font-size:13px;
-    text-shadow: 0 -1px 3px #202020;
-    width:890px; height:34px;
-    
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    
-    -moz-box-shadow: 0px 3px 3px #cecece;
-    -webkit-box-shadow: 0px 3px 3px #cecece;
-    box-shadow: 0 3px 4px #8b8b8b;
-}
- 
-#NavBar li {
-    display:block; 
-    float:left; 
-    border-right:1px solid #5d5d5d; 
-    border-left:1px solid #929292; 
-    width:120px; 
-    height:34px; 
-    border-bottom:1px solid #575757;  
-    border-top:1px solid #797979;
- 
-    /* Gradient backgrounds for the buttons. Generated using http://gradients.glrzad.com/ */
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
-    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
-    background-color:#5f5f5f; /* Fallback */
-}
- 
-/* Set the states when hovering, except for the last item in the list (the search bar), since it doesn't need to change */
-#NavBar li:not(:last-child):hover {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
-    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
-    background-color:#383838; /* Fallback */
-    
-    /* We use the inset of the box shadow to create a subtle inner glow when hovering */
-    -moz-box-shadow: inset 0 0 5px 5px #535353;
-    -webkit-box-shadow: inset 0 0 5px 5px #535353;
-    box-shadow: inset 0 0 5px 5px #535353;
-}
- 
-/* When the user clicks the button, we simply change the box inset (compared to the "hover") */
-#NavBar li:not(:last-child):active {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
-    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
-    background-color:#383838; /* Fallback */
-    
-    -moz-box-shadow: inset 0 1px 2px 2px #000;
-    -webkit-box-shadow: inset 0 1px 2px 2px #000;
-    box-shadow: inset 0 1px 2px 2px #000;
-}
- 
-#NavBar li a {
-    color:white; text-decoration:none; text-align:center; display:block; line-height:34px; outline:none; }
- 
-/* Styling of the search field */
-#NavBar form input {
-    width:90px; height:20px; margin-left:9px; margin-top:8px; border:none; padding-left:20px; padding-right:10px; color:#eee;
- 
-    moz-border-radius:10px;
-    webkit-border-radius:10px;
-    border-radius:10px;
- 
-    /* We use the CSS3 multiple backgrounds for the input field: The magnifier image and the gradient background */    
-    background-image: url("/static/img/magnifier.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, #747474), color-stop(0.5, #6E6E6E), color-stop(0.51, #7E7E7E), color-stop(1, #8D8D8D));
-    background-image: url("/static/img/magnifier.png"), -moz-linear-gradient(center bottom, #747474 0%, #6E6E6E 50%, #7E7E7E 51%, #8D8D8D 100%);
-    background-repeat: no-repeat;
-    
-    background-color:#6E6E6E; /* Fallback */
-    
-    moz-box-shadow: inset 0 2px 1px 1px #363636;
-    webkit-box-shadow: inset 0 2px 1px 1px #363636;
-    box-shadow: inset 0 2px 1px 1px #363636;
-}
- 
-/* Rounded corner for the first in last item. Shorthand: Top left, Top right, Bottom right, Bottom left.
-We also remove the borders, since they don't need them. */
-#NavBar li:first-child {
-    moz-border-radius:4px 0 0 4px;
-    webkit-border-radius:4px 0 0 4px;
-    border-radius:4px 0 0 4px;
-    
-    border-left:none;
-}
- 
-/* The first child image - the logo - has to be centered. Because of the image dimensions, we manually need to shift it a bit. */
-#NavBar li:first-child a img {
-   vertical-align:middle; 
-   margin-top:-2px;
-}
- 
-#Navbar li:last-child  {
-    moz-border-radius:0 4px 4px 0;
-    webkit-border-radius:0 4px 4px 0;
-    border-radius:0 4px 4px 0; 
-    border-right:none;   
-    /* The width of the last menu item (search bar) is bigger than the others */
-    width:124px;
-}
- 
-/* Fade in animation (Webkit only) */
-@-webkit-keyframes showMenu {
-    from { opacity: 0; top:-20px; }
-    to   { opacity: 1; }
-}
- 
-#NavBar {
-     webkit-animation: showMenu 1s; position:relative;
 
 /* styling for icons in Corporate Overview */
 #imagebox {
-border: 1px dashed #0000cc;
+    border: 1px dashed #0000cc;
 }
 
 p.image, p.caption {
-text-align: center;
-margin: 5px;
+    text-align: center;
+    margin: 5px;
 }
 
 p.caption {
-font-size: 80%;
-align: center }
+    font-size: 80%;
+    align: center }
 
 table .subnavi td {
-background-image: url("{{ STATIC_URL }}img.gif");
-}
-   
-table .subnavi:hover {
-color: red;
+    background-image: url("{{ STATIC_URL }}img.gif");
 }
 
+table .subnavi:hover {
+    color: red;
+}
+
+
+#productheader h1{
+    background-color: #E3E2E3;
+}
+
+
+#product_content {
+    float:right;    
+    width:650px;
+}
+
+
+#feature {
+    background-color:#FF9900
+}
+#feature .top_shadow {
+    content:""
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+    z-index: 100;
+}
+
+#feature .bottom_shadow {
+    content:""
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+    z-index: 100;
+}
