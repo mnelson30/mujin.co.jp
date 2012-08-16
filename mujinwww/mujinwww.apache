@@ -3,25 +3,25 @@
   ServerName mujin.co.jp
   ServerAlias www.mujin.co.jp
 
-  DocumentRoot /var/www
+  DocumentRoot /var/www/www
   <Directory />
       Options -Indexes FollowSymLinks
       AllowOverride AuthConfig
   </Directory>
-  <Directory /var/www/>
+  <Directory /var/www/www/>
       Options -Indexes FollowSymLinks MultiViews
       AllowOverride AuthConfig
       Order allow,deny
       allow from all
   </Directory>
 
-  Alias /static/ /var/www/static/
-  <Directory /var/www/static>
+  Alias /static/ /var/www/www/mujinwww/mujinwww/static/
+  <Directory /var/www/www/mujinwww/mujinwww/static>
     Order deny,allow
     Allow from all
   </Directory>
 
-  WSGIScriptAlias / /var/www/mujinwww/mujinwww/wsgi.py
+  WSGIScriptAlias / /var/www/www/mujinwww/mujinwww/wsgi.py
   ErrorLog /var/log/apache2/mujinwww_error.log
   # Possible values include: debug, info, notice, warn, error, crit,
   # alert, emerg.
