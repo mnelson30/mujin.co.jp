@@ -1,0 +1,15 @@
+
+table.content-default th {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+table.content-default td {
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 5px 5px 5px 10px;
+}

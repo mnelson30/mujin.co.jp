@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Inquiry" %}
+{% endblock %}
+
+{% block content %}  
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/inquiry.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Inquiry" %}</b>
+  </div>
+</div>  
+   
+<div id="fsurround" align="center">
+<span class="theader">{% trans "Contact us" %} </span>
+  <br>
+  <br>
+  <form onsubmit="alert('The submission features was disabled for this example'); return false;" action="#" method="post" name="htmlform">
+    <table bgcolor="FF8C00" width="450px" cellpadding="4">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <label for="first_name">First Name *</label>
+          </td>
+          <td valign="top">
+            <input type="text" size="30" maxlength="50" name="first_name">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="last_name">Last Name *</label>
+          </td>
+          <td valign="top">
+            <input type="text" size="30" maxlength="50" name="last_name">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="email">Email Address *</label>
+          </td>
+          <td valign="top">
+            <input type="text" size="30" maxlength="80" name="email">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="telephone">Telephone Number</label>
+          </td>
+          <td valign="top">
+            <input type="text" size="30" maxlength="30" name="telephone">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="comments">Comments *</label>
+          </td>
+          <td valign="top">
+            <textarea rows="6" cols="25" maxlength="1000" name="comments"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center" colspan="2">
+            <input type="submit" value=" Submit Form ">
+            <br>
+            <br>
+           
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <br>
+</div>
+</div>
+{% endblock %}

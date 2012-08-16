@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-23 20:39+0900\n"
+"POT-Creation-Date: 2012-08-17 02:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,111 +17,466 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: mujinwww/templates/aboutmujin_pane.html:3
-msgid ""
-"MUJIN Inc is an recent startup based in Japan. It's core development team "
-"has experience in managing one of the most popular robot motion planning "
-"libraries in the field. "
-msgstr ""
-"株式会社MUJINは最近設立されました。開発チームは世界でもっとも人気なロボット動"
-"作に関するソフトウェアを運営してきています。"
+#: mujinwww/templates/aboutmujin.html:5
+#: mujinwww/templates/mujincontroller.html:5
+#: mujinwww/templates/products.html:5
+#, fuzzy
+msgid "MUJIN | Company profile"
+msgstr "MUJINコントローラ"
 
-#: mujinwww/templates/aboutmujin_pane.html:5
-msgid "MUJIN is currently seeking engineers in:"
-msgstr "株式会社MUJINは現在エンジニアを募集中です。"
-
-#: mujinwww/templates/aboutmujin_pane.html:7
-msgid "Software Engineering"
-msgstr "ソフトウェアエンジニアリング"
-
-#: mujinwww/templates/aboutmujin_pane.html:8
-msgid "Database and Network Engineering"
-msgstr "データベース・ネットワークエンジニアリング"
-
-#: mujinwww/templates/aboutmujin_pane.html:9
-msgid "Web design and user interfaces"
-msgstr "ウェブデザインとユーザインタフェースのエンジニアリング"
-
-#: mujinwww/templates/aboutmujin_pane.html:10
-msgid "Motion Planning Algorithms"
-msgstr "ロボット動作計画アルゴリズム"
-
-#: mujinwww/templates/aboutmujin_pane.html:11
-msgid "Robot Automation Experience (Hardware + Perception)"
-msgstr "ロボット自動化の経験を持つエンジニア（ハードウェアか認識）"
-
-#: mujinwww/templates/aboutmujin_pane.html:15
-msgid "For questions email: "
-msgstr "ご質問かご興味があれば、このアドレスにメールください。"
-
-#: mujinwww/templates/index.html:5
-msgid "MUJIN Inc Homepage"
-msgstr "株式会社MUJINホームページ"
-
-#: mujinwww/templates/index.html:37
-msgid "Introduction"
-msgstr "事業案内"
-
-#: mujinwww/templates/index.html:38
-msgid "Products"
-msgstr "製品情報"
-
-#: mujinwww/templates/index.html:39
-msgid "Technology"
-msgstr "技術情報"
-
-#: mujinwww/templates/index.html:40
+#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:54
 msgid "About MUJIN"
 msgstr "企業情報"
 
-#: mujinwww/templates/intro_pane.html:29
-msgid ""
-"MUJIN does industrial robotics. MUJIN specializes in industrial robot "
-"automation through advanced motion planning and optimization algorithms. "
-"MUJIN technlogy virtually works for any robot, and makes robots easier and "
-"cheaper to program for by offering intuitive cloud computing interfaces "
-"backed up by large-scale computing infastructure."
+#: mujinwww/templates/aboutmujin.html:24
+msgid "Corporate overview"
 msgstr ""
-"産業用ロボット。株式会社MUJINは産業用ロボットの自動化を高度なロボット動作計画"
-"と最適化のアルゴリズムで実現しています。MUJINの技術は全世界のロボットに対応し"
-"ており、ロボットプログラミングをより簡単に出来ることを提供しています。MUJINの"
-"コア技術は、自社のクラウドコンピューティングインフラでは一日でかかる最適化"
-"を、数分でこなせるようになっています。"
 
-#: mujinwww/templates/intro_pane.html:31
-#, python-format
-msgid ""
-"<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_en.pdf\">IREX "
-"2011 Pamphlet</a>"
+#: mujinwww/templates/aboutmujin.html:30 mujinwww/templates/vision.html:11
+msgid "Vision"
 msgstr ""
-"<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_jp.pdf\">IREX 2011"
-"年パンフレット</a>"
 
-#: mujinwww/templates/products_pane.html:2
+#: mujinwww/templates/aboutmujin.html:36
+msgid "Management team"
+msgstr ""
+
+#: mujinwww/templates/aboutmujin.html:44
+msgid "Access map"
+msgstr ""
+
+#: mujinwww/templates/aboutmujin.html:50
+msgid "Company development"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:5
+msgid "MUJIN | Access Map"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:11
+msgid "Access Map"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:18
+msgid "headquater"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:19 mujinwww/templates/access_map.html:71
+#: mujinwww/templates/carreers.html:59
+msgid "Koishikawa Office"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:24 mujinwww/templates/carreers.html:57
+msgid "Headquater"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:30
+msgid "Please use an interphone at the 1st floor to call"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:40
+msgid "Tokyo Metro Marunouchi-line Hongosanchome Station"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:43
+msgid "Walk out from exit No.2 and make right at Hongo3 intersection."
+msgstr ""
+
+#: mujinwww/templates/access_map.html:47
+msgid " Tokyo Metro Chiyoda-line Yushima Station"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:54
+msgid "Toei Oedo-line Hongosanchome Station"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:57
+msgid ""
+"Walk out from exit No.5. Then, make right and enter campus from Tatsuoki-"
+"gate."
+msgstr ""
+
+#: mujinwww/templates/access_map.html:61 mujinwww/templates/access_map.html:91
+msgid "Driving a car"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:63
+msgid ""
+"Enter campus from Tatsuoki-gate and pass the gate besides department of "
+"pharmacy"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:65
+msgid "please tell gate-guards that you are going to Entrepreneur Plaza."
+msgstr ""
+
+#: mujinwww/templates/access_map.html:74
+#: mujinwww/templates/company_overview.html:73
+msgid "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:81
+msgid "Closest Station"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:84
+msgid "Tokyo Metro Mita-line Kasuga Station"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:87
+msgid ""
+"Exit A5 and go down to east for 5minutes. When you pass supermarket,make "
+"left at the second intersection"
+msgstr ""
+
+#: mujinwww/templates/access_map.html:92
+msgid ""
+"Please call us in advance, so that we will prepare for a parking space for "
+"you"
+msgstr ""
+
+#: mujinwww/templates/base.html:5
+msgid "MUJIN Inc Homepage | Indusctrial Robots for Everyone"
+msgstr ""
+
+#: mujinwww/templates/base.html:32 mujinwww/templates/index.html:49
+msgid "MUJIN was introduced by Yomiuri newspaper"
+msgstr ""
+
+#: mujinwww/templates/base.html:34 mujinwww/templates/index.html:52
+msgid "MUJIN Annouced office was moved into Tokyo University."
+msgstr ""
+
+#: mujinwww/templates/base.html:40
+msgid "img/en/inquiry.jpg"
+msgstr ""
+
+#: mujinwww/templates/base.html:49
+msgid "Home"
+msgstr ""
+
+#: mujinwww/templates/base.html:50 mujinwww/templates/products.html:12
+msgid "Products"
+msgstr "製品情報"
+
+#: mujinwww/templates/base.html:51 mujinwww/templates/technology.html:12
+msgid "Technology"
+msgstr "技術情報"
+
+#: mujinwww/templates/base.html:52 mujinwww/templates/news.html:12
+msgid "News"
+msgstr ""
+
+#: mujinwww/templates/base.html:53
+msgid "Careers"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:5
+#, fuzzy
+msgid "MUJIN | Careers"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/carreers.html:12
+msgid "Career"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:19 mujinwww/templates/carreers.html:25
+msgid "Web Programmer"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:20
+msgid "Engineer"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:29
+msgid "Work Contents"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:36
+msgid "Minimum Qualification"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:45
+msgid "Prefered Skill"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:55
+msgid "Location to work"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:63
+msgid "Working time"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:68
+msgid "How you apply"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:74
+msgid "Contact"
+msgstr ""
+
+#: mujinwww/templates/carreers.html:76
+msgid "MUJIN Inc"
+msgstr "株式会社MUJIN"
+
+#: mujinwww/templates/company_overview.html:5
+#, fuzzy
+msgid "MUJIN | Company overview"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/company_overview.html:16
+msgid "Company Overview"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:25
+msgid "Company Name"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:26
+#, fuzzy
+msgid "MUJIN Inc."
+msgstr "株式会社MUJIN"
+
+#: mujinwww/templates/company_overview.html:29
+msgid "EN Company Name"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:33
+msgid "Founded"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:34
+msgid "2007/7/6"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:37
+msgid "Representative CEO"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:38
+msgid "Issei Takino"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:41
+msgid "CEOs"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:43
+msgid "CTO　　　　  　     　  　Diankov Rosen (Doctor of Engineering)"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:44
+msgid ""
+"External Director　 Tetsuya Yamamoto （The University of Tokyo Edge Capital, "
+"GP)"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:48
+msgid "Auditing Officers"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:49
+msgid "Miki Hirai"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:49
+msgid "（The University of Tokyo Edge Capital）"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:49
+msgid "AZX総合法律事務所"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:52
+msgid "Advisers"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:54
+msgid "Takeo Kanade　  （Carnegie Mellon University 工学博士）"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:55
+msgid "Masayuki Inaba　（Professor in Tokyo University）"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:59
+msgid "Capital"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:60
+msgid "76,000千円"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:64
+msgid "Major Stockholders"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:66
+msgid "The University of Tokyo Edge Capital"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:67
+msgid "MUJIN Employee"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:71
+#, fuzzy
+msgid "Location"
+msgstr "事業案内"
+
+#: mujinwww/templates/company_overview.html:72
+#: mujinwww/templates/company_overview.html:78
+#: mujinwww/templates/company_overview.html:84
+msgid "[Headquater]"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:72
+msgid "Entrenerplaza 405, 7-3-1,Hongo,Bunkyo-ku,Tokyo,Japan"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:72
+#: mujinwww/templates/company_overview.html:78
+#: mujinwww/templates/company_overview.html:84
+msgid "[Koishikawa Office]"
+msgstr ""
+
+#: mujinwww/templates/company_overview.html:77
+msgid "Telephone"
+msgstr ""
+
+#: mujinwww/templates/index.html:29
+msgid ""
+"MUJIN's innovative technology changes how to programing industrial robot and "
+"integrates automation quality."
+msgstr ""
+
+#: mujinwww/templates/inquiry.html:5
+#, fuzzy
+msgid "MUJIN | Inquiry"
+msgstr "株式会社MUJIN"
+
+#: mujinwww/templates/inquiry.html:11
+msgid "Inquiry"
+msgstr ""
+
+#: mujinwww/templates/inquiry.html:16
+msgid "Contact us"
+msgstr ""
+
+#: mujinwww/templates/management_team.html:5
+msgid "MUJIN | Management Team"
+msgstr ""
+
+#: mujinwww/templates/management_team.html:27
+msgid "Management Team"
+msgstr ""
+
+#: mujinwww/templates/management_team.html:33
+msgid "CEO Issei Takino"
+msgstr ""
+
+#: mujinwww/templates/management_team.html:34
+msgid "CTO Rosen Diankov"
+msgstr ""
+
+#: mujinwww/templates/mujincontroller.html:12
 msgid "MUJIN Controller"
 msgstr "MUJINコントローラ"
 
-#: mujinwww/templates/products_pane.html:4
-msgid "World's first cloud computing solution for robot motion planning."
-msgstr "世界初のロボット動作計画のクラウドコンピューティングサービス。"
+#: mujinwww/templates/mujincontroller.html:29
+#, fuzzy
+msgid "Product Concept"
+msgstr "製品情報"
 
-#: mujinwww/templates/products_pane.html:6
+#: mujinwww/templates/mujincontroller.html:37
+msgid ""
+"MUJIN controller provided innovative solution for robot programming by "
+"teaching which has been the most time consuming and skill-required process. "
+"By specifying desired parameters and tasks in user-friendly interface  with "
+"clicks, MUJIN Controller automatically consider all collision and even the "
+"best robot position. In addition, MUJIN's original innovative technology "
+"such as -dual arm calculation- enable customers to make applications which "
+"has never been accomplished by manual teaching. MUJIN Controller contributes "
+"customers to save their precious time/cost & create new value."
+msgstr ""
+
+#: mujinwww/templates/mujincontroller.html:42
 msgid "http://www.youtube.com/embed/Je7Gqt1HfR0"
 msgstr ""
 
-#: mujinwww/templates/technology_pane.html:3
+#: mujinwww/templates/mujincontroller.html:43
+msgid "World's first cloud computing solution for robot motion planning."
+msgstr "世界初のロボット動作計画のクラウドコンピューティングサービス。"
+
+#: mujinwww/templates/mujincontroller.html:44
+#, fuzzy
+msgid "Controller Spec"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/news.html:5
+msgid "MUJIN | News"
+msgstr ""
+
+#: mujinwww/templates/news.html:28
+msgid "2012/8/10"
+msgstr ""
+
+#: mujinwww/templates/news.html:33
+msgid "<b>MUJIN</b> announces openning new Koishikawa office"
+msgstr ""
+
+#: mujinwww/templates/news.html:44 mujinwww/templates/news.html.py:71
+msgid "more detail"
+msgstr ""
+
+#: mujinwww/templates/news.html:55
+msgid "2012/8/2"
+msgstr ""
+
+#: mujinwww/templates/news.html:60
+msgid "<b>MUJIN</b> announces relacation of headquater"
+msgstr ""
+
+#: mujinwww/templates/news.html:84
+msgid "2012/5/16"
+msgstr ""
+
+#: mujinwww/templates/news.html:89
+msgid "読売新聞の磯崎様の起業案内にて<b>MUJIN</b>が紹介されました"
+msgstr ""
+
+#: mujinwww/templates/news.html:116
+msgid "2011/10/10"
+msgstr ""
+
+#: mujinwww/templates/products.html:29
+#, fuzzy
+msgid "MUJIN Controller Cloud"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/products.html:39
+#, fuzzy
+msgid "MUJIN Controller Hard"
+msgstr "MUJINコントローラ"
+
+#: mujinwww/templates/technology.html:5
+#, fuzzy
+msgid "MUJIN | Technology"
+msgstr "技術情報"
+
+#: mujinwww/templates/technology.html:17
 msgid "Layout Optimization"
 msgstr "ロボット配置の最適化"
 
-#: mujinwww/templates/technology_pane.html:4
+#: mujinwww/templates/technology.html:18
 msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
 msgstr ""
 
-#: mujinwww/templates/technology_pane.html:5
+#: mujinwww/templates/technology.html:19
 msgid "Multi-Robot Motion Planning"
 msgstr "複数ロボット動作"
 
-#: mujinwww/templates/technology_pane.html:6
+#: mujinwww/templates/technology.html:20
 #, python-format
 msgid ""
 "Motion planning for multiple robots. Task time for one robot is 16.6s, "
@@ -131,12 +486,66 @@ msgstr ""
 "台では動作が12.3秒になります。2台か双腕ロボットを使えば同じ作業の時間を25%%ぐ"
 "らい短縮出来ます。 "
 
-#: mujinwww/templates/technology_pane.html:7
+#: mujinwww/templates/technology.html:21
 msgid "http://www.youtube.com/embed/vLu0twF2-Ps"
 msgstr ""
 
-#~ msgid "MUJIN Inc"
-#~ msgstr "株式会社MUJIN"
+#: mujinwww/templates/vision.html:5
+#, fuzzy
+msgid "MUJIN | Vision"
+msgstr "株式会社MUJIN"
+
+#~ msgid ""
+#~ "MUJIN Inc is an recent startup based in Japan. It's core development team "
+#~ "has experience in managing one of the most popular robot motion planning "
+#~ "libraries in the field. "
+#~ msgstr ""
+#~ "株式会社MUJINは最近設立されました。開発チームは世界でもっとも人気なロボッ"
+#~ "ト動作に関するソフトウェアを運営してきています。"
+
+#~ msgid "MUJIN is currently seeking engineers in:"
+#~ msgstr "株式会社MUJINは現在エンジニアを募集中です。"
+
+#~ msgid "Software Engineering"
+#~ msgstr "ソフトウェアエンジニアリング"
+
+#~ msgid "Database and Network Engineering"
+#~ msgstr "データベース・ネットワークエンジニアリング"
+
+#~ msgid "Web design and user interfaces"
+#~ msgstr "ウェブデザインとユーザインタフェースのエンジニアリング"
+
+#~ msgid "Motion Planning Algorithms"
+#~ msgstr "ロボット動作計画アルゴリズム"
+
+#~ msgid "Robot Automation Experience (Hardware + Perception)"
+#~ msgstr "ロボット自動化の経験を持つエンジニア（ハードウェアか認識）"
+
+#~ msgid "For questions email: "
+#~ msgstr "ご質問かご興味があれば、このアドレスにメールください。"
+
+#~ msgid "MUJIN Inc Homepage"
+#~ msgstr "株式会社MUJINホームページ"
+
+#~ msgid ""
+#~ "MUJIN does industrial robotics. MUJIN specializes in industrial robot "
+#~ "automation through advanced motion planning and optimization algorithms. "
+#~ "MUJIN technlogy virtually works for any robot, and makes robots easier "
+#~ "and cheaper to program for by offering intuitive cloud computing "
+#~ "interfaces backed up by large-scale computing infastructure."
+#~ msgstr ""
+#~ "産業用ロボット。株式会社MUJINは産業用ロボットの自動化を高度なロボット動作"
+#~ "計画と最適化のアルゴリズムで実現しています。MUJINの技術は全世界のロボット"
+#~ "に対応しており、ロボットプログラミングをより簡単に出来ることを提供していま"
+#~ "す。MUJINのコア技術は、自社のクラウドコンピューティングインフラでは一日で"
+#~ "かかる最適化を、数分でこなせるようになっています。"
+
+#~ msgid ""
+#~ "<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_en.pdf\">IREX "
+#~ "2011 Pamphlet</a>"
+#~ msgstr ""
+#~ "<a href=\"%(STATIC_URL)s/reports/20111107_MUJIN_CONTROLLER_jp.pdf\">IREX "
+#~ "2011年パンフレット</a>"
 
 #~ msgid ""
 #~ "Mujin Inc. Official Homepage. Will be updated early 2012. For questions "

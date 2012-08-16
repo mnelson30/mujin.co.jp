@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Management Team" %}
+{% endblock %}
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#myslider2').bjqs({
+  'animation' : 'slide',
+  'width' : 550,
+  'height' : 450,
+  'showMarkers' : true,
+  'showControls' : true,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/management_team.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Management Team" %}</b>
+  </div>
+</div>
+
+<div id="myslider2" style="margin-top:30px;margin-bottom:30px">
+  <ul class="bjqs">
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/issei.png" width="550" title="{% trans "CEO Issei Takino"%}"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/rosen2.png" width="550"  title="{% trans "CTO Rosen Diankov" %}"/></li>
+  </ul>
+</div>
+</div>
+{% endblock %}

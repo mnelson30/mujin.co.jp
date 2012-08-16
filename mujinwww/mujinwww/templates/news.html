@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | News" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "News" %}</b>
+  </div>
+</div>
+
+<div id="pless_main">
+  <div id="submain" style="float:left">
+    <ul class="subnavi">
+      <li><a href="/product_offline" class="subbutton" style="width:150px">2012</a></li>
+      <li><a href="/product_realtime" class="subbutton" style="width:150px">2011</a></li>
+    </ul>
+  </div>
+
+<div id="news_content" style="margin-top:0px; float:right;">
+<div class="onenews">
+  <table>
+    <tr>
+      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/10" %}
+      </th>
+      <th class="mj">MUJIN
+      </th>
+      <th>
+        {% trans "<b>MUJIN</b> announces openning new Koishikawa office" %}
+      </th>
+    </tr>
+  </table>
+  <table style="font-size:11px; width:650px;" >
+    <tr>
+      <td>
+        <img src="{{ STATIC_URL }}img/koishikawa.png" style="float:left"/>
+      </td>
+      <td style="font-size:13px">
+        <b>MUJIN</b> opened new Koishikawa office for software R&D and ranning trial by using industrial robots and other devices.  
+        <a href="/access_map">{% trans "more detail" %}
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="onenews">
+  <table>
+    <tr>
+      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/2" %}
+      </th>
+      <th class="mj">MUJIN 
+      </th>
+      <th>
+        {% trans "<b>MUJIN</b> announces relacation of headquater" %}
+      </th>
+    </tr>
+  </table>
+  <table style="font-size:11px; width:650px;" >
+    <tr>
+      <td>
+        <img src="{{ STATIC_URL }}img/entreplaza.png" style="float:left"/>
+      </td>
+      <td style="font-size:13px">
+        <b>MUJIN</b> has relocated its headquater to Entrepreneurplaza in <b>Tokyo University</b>. 
+        <a href="/access_map">{% trans "more detail" %}
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+<div class="onenews">
+  <table>
+    <tr>
+      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
+{% trans "2012/5/16" %}
+      </th>
+      <th class="mj">MUJIN 
+      </th>
+      <th>
+        {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}
+    </tr>
+  </table>
+  <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">ロボット最適化で「ＭＵＪＩＮ」の価値
+  </a>
+  <br/>
+
+  <table style="font-size:13px; width:650px;" >
+    <tr>
+      <td>
+        シリコンバレーから日本へ。ブルガリア出身の魯仙さん
+        魯仙さん（左）と滝野さん
+        ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）」
+        
+        　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
+        <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">続きはこちら
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+<div class="onenews">
+  <table>
+    <tr>
+      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2011/10/10" %}
+      </th>
+      <th class="mj">MUJIN 
+      </th>
+      <th>
+        <b>MUJIN</b> exhibited in DensoWave booth at IREX 2011. 
+    </tr>
+  </table>
+  <table style="font-size:11px; width:650px;">
+    <tr>
+      <td>
+        <img src="{{ STATIC_URL }}img/irex2011.png" style="float:left"/>
+      </td>
+      <td style="font-size:13px">
+        MUJIN fortunately could have a exhibition booth in DensoWave booth
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+

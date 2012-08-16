@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Vision" %}
+{% endblock %}
+
+{% block content %}  
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Vision" %}</b>
+  </div>
+</div>  
+
+<div id= "about mujin">
+  <div class="article">
+<br/>
+    <p>
+      <img width="250" height="190" alt="INCONTROL Office" src="{{ STATIC_URL }}/img/industrial_robots.jpg" style="margin-left: 10px; float: right;"/>
+      MUJIN Inc is recently founded as the independent software developer of the worldwide leading inverse kinematics technology, developed by Dr.Diankov, for Automatic Motion and Path Planning in Japan.
+    </p>
+    <br/>
+    <p>
+      Being forcused on the development of world class opensource software for programming autonomous multi joint machines for last five years,  MUJIN now adresses large companies and more than 200 research institutions.   
+    </p>
+    <br/>
+    <p>
+      Of many fields where our technology can be appied, MUJIN's main market is Factory Automation "FA" using industrial robot. In this area, demand of factory automation using industrial robot has been increasing more than ever, however; special-skill-required and time- consuming system integration process has been acknowledged as a big obstacle.
+      Providing the large range of solutions, from stand-alone to fully integrated service, enables robot system integraters to save money, to shorten developmentn time, and to increase productivity.
+    </p>
+    <br/>
+    <p>
+      MUJIN's mission is to accomplish "Industrial Robots for Everyone" since we believe that easy access to industrial robot is the key to promote world FA and to increase world wide manufacturing productivity. 
+    </p>
+    <br/>
+    Key manufacture markets include:
+    
+    <ul>
+      <li>food & Medical </li>
+      <li>Electric</li>
+      <li>Automotive</li>
+      <li>Logistics</li>
+    </ul>
+  </div>
+</div>
+</div>
+{% endblock %}

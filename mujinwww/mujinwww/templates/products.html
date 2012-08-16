@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Company profile" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px;font-size:50px;color:#EE920E;padding0px"><b>{% trans "Products" %}</b>
+  </div>
+</div>
+
+<div id="products">
+  <div id="submain">
+    <ul class="subnavi" style="float:left">
+      <li><a href="/product_offline" class="subbutton">Offline Simulator</a> </li>
+    </ul>
+  <HR size="3" color="#999999" style="border-style:dashe; clear:both; margin:0;">
+    <table style="clear:both">
+      <tr>
+        <td>
+          <a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a>
+        </td>
+        <td valign="top">
+          <h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid;">{% trans "MUJIN Controller Cloud" %}</h3>
+          <p> 
+        </td>
+</tr>
+<tr>
+        <td>
+          <a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a>
+        </td>
+        <td>
+          <h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
+            {% trans "MUJIN Controller Hard" %}</h3>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  
+
+</div>
+</div>
+
+{% endblock %}
+
