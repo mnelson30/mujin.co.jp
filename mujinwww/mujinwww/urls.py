@@ -48,6 +48,7 @@ def indexview(request,name):
 
 urlpatterns = patterns('',
     url(r'^(?P<name>(\w)*)$', indexview),
+    url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
     # Examples:
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),
