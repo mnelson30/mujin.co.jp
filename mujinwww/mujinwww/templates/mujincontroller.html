@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Company profile" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="float:right; height:135px"/>
+  <div style="position:relative; left:40px; top:60px;font-size:40px;color:#EE920E;padding:0px"><b>{% trans "MUJIN Controller" %}</b>
+  </div>
+</div>
+
+<div id="productnavi" style="width:270px;height:185px;background:#DDDDDD;float:left">
+  <ul class="subnavi" style="position:relative;left:10px;top:5px;">
+    <li><a href="/MC_product_concept" class="subbutton">Product concept</a> </li>
+    <li><a href="/MC_new_function" class="subbutton">New function</a></li>
+    <li><a href="/MC_application" class="subbutton">Application</a></li>
+    <li><a href="/MC_operation_demo" class="subbutton">Operation demo</a></li>
+    <li><a href="/MC_spec" class="subbutton">Operation environment</a></li>
+  </ul>
+  <br/>
+</div>
+
+<div id="product_content" style="width:630px; float:right">
+  <div id="productheader" >
+    <div style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Product Concept" %}</h1>
+    </div>
+
+    <div id="productbox" style="margin-top:20px;">
+      <div class="h2_lef">
+        <h3 style="margin-top:8px;margin-left:10px;"> Everybody can program robot </h3>
+      </div>
+      <div class="box2">
+          <p>{% trans "MUJIN controller provided innovative solution for robot programming by teaching which has been the most time consuming and skill-required process. By specifying desired parameters and tasks in user-friendly interface  with clicks, MUJIN Controller automatically consider all collision and even the best robot position. In addition, MUJIN's original innovative technology such as -dual arm calculation- enable customers to make applications which has never been accomplished by manual teaching. MUJIN Controller contributes customers to save their precious time/cost & create new value." %} </p>
+      </div>
+</div>
+    
+    <br/>
+    <iframe width="450" height="300" src="{% trans "http://www.youtube.com/embed/Je7Gqt1HfR0" %}" frameborder="0" allowfullscreen></iframe>
+    <p>{% blocktrans %}World's first cloud computing solution for robot motion planning.{% endblocktrans %}</p>  
+    <h2>{% trans "Controller Spec" %}</h2>
+    <P>Hard32 type</P>
+  </div>
+  <br/>
+  <div  class="specstyle1">
+    <table class="tablestyle1" width="600" cellspacing="0" cellpadding="10" border="1">
+      <tr>
+        <th bgcolor="#CCCCCC" colspan="1"></th>
+        <th bgcolor="#CCCCCC">MUJIN Controller-Hard32</th>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Outlook</td>
+        <td><img width="60%" hight="60%" src="{{ STATIC_URL }}/img/IW-PV689-3.jpg"/></td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Item Description</td>
+        <td>MUJINCH32</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Dimention</td>
+        <td>Height: 430mm</br>
+          Width: 210mm</br>
+          Depth: 584.8mm</br>
+          Gross Weight:25kg</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">CPU core</td>
+        <td>32core</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Available Colors</td>
+        <td>black</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">AC Input</td>
+        <td>    750W: 100 - 140V, 50 - 60Hz, 10.5 - 14.7 Amp </td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE"> Network Connection</td>
+        <td> 1 Gigabit Ethernet</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+
+{% endblock %}
+
+

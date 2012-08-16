@@ -9,11 +9,15 @@
  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/company_overview.css"/>
 {% endblock %}
 
-{% block content %}    
+{% block content %}   
+ 
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/corporate.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:40px;color:#EE920E;padding0px"><b>{% trans "Company Overview" %}</b>
+  </div>
+</div>
+
 <div id="company_overview" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"> 
-  <br/>
-   <br/>
- <h1 class="title">{% trans "Company Overview" %} </h1>
    <br/>
   <table class="content-default">
     <tbody>
@@ -42,18 +46,18 @@
       </tr>
       <tr>
         <th>{% trans "Auditing Officers" %}</th>
-        <td>{% trans "Miki Hirai" %}{% trans "（The University of Tokyo Edge Capital）" %}<br/>{% trans "AZX総合法律事務所" %}</td>
+        <td>{% trans "Miki Hirai" %}{% trans "（The University of Tokyo Edge Capital）" %}<br/>{% trans "AZX Professionals Group Law Offices" %}</td>
       </tr>
       <tr>
         <th>{% trans "Advisers" %}</th>
         <td>
-          {% trans "Takeo Kanade　  （Carnegie Mellon University 工学博士）" %}<br/>
-          {% trans "Masayuki Inaba　（Professor in Tokyo University）" %}<br/>
+          {% trans "Takeo Kanade　  （Professor, Carnegie Mellon University）" %}<br/>
+          {% trans "Masayuki Inaba　（Professor, Tokyo University）" %}<br/>
         </td>
       </tr>
       <tr>
         <th>{% trans "Capital" %}</th>
-        <td>{% trans "76,000千円" %}</td>
+        <td>{% trans "_ yen" %}</td>
         
       </tr>
       <tr>

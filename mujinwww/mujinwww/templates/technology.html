@@ -1,7 +1,23 @@
+{% extends "base.html" %}
 {% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Technology" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/inspec.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Technology" %}</b>
+  </div>
+</div>
+
 <h1>Robot Motion Planning Sample Demos</h1>
 <h2>{% trans "Layout Optimization" %}</h2>
 <iframe width="640" height="360" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
 <h2>{% trans "Multi-Robot Motion Planning" %}</h2>
 <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
 <iframe width="480" height="360" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0" allowfullscreen></iframe>
+</div>
+{% endblock %}

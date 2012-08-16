@@ -6,16 +6,13 @@
 {% endblock %}
 
 {% block content %}
-<div id="feature">
-  <div class="top_shadow">
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/oldmap.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px;font-size:50px;color:#EE920E;padding0px"><b>{% trans "Access Map" %}</b>
   </div>
-  <div class="inner">
-    <h1>{% trans "Access Map" %}</h1>
-  </div>
-  <div class="bottom_shadow"></div>
 </div>
-<br/>
 
+<br/>
 <div id="submain">
   <ul class="subnavi" style="float:left">
     <li><a href="/" class="subbutton"><b>{% trans "headquater" %}</b></a> </li>
@@ -23,13 +20,14 @@
   </ul>
 </div>
 
-<div id="access_content" style="float:right;position:relative; left:30px">
+<div id="access_content" style="float:right;position:relative; left:30px; width:600px;">
   <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:150px;background:#F8F8F8;"><h2> {% trans "Headquater" %}</h2>
   </div>
   <br/>
-  〒113-0033　東京都文京区本郷7-3-1 東京大学アントレプレナープラザ4階 
+  〒113-0033　Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan
   <br/>
-  　（1Fのインターフォンで405号室をお呼び出し下さい。） 
+  <br/>
+　({% trans "Please use an interphone at the 1st floor to call" %}） 
   <br/>
   <br/>
   <img width="500" height="458" alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map1.jpg" style="margin-left: 10px; float: center;"/> 
@@ -39,33 +37,32 @@
     最寄駅
     <br/>
   </h3>
-  <strong>東京メトロ丸ノ内線 本郷三丁目駅</strong>
+  <strong>{% trans "Tokyo Metro Marunouchi-line Hongosanchome Station" %}</strong>
   <br/>
   <br/>
-  ２番出口を出て本郷３交差点を右折し、本郷消防署前交差点前の龍岡門からお入り下さい。
+  {% trans "Walk out from exit No.2 and make right at Hongo3 intersection." %}
   <br/>
   <br/>
   <strong>
-    東京メトロ千代田線　湯島駅
+   {% trans " Tokyo Metro Chiyoda-line Yushima Station" %}
     <br/>
-  </strong>
+   </strong>
   <br/>
-  １番出口を出て本郷消防署前交差点前の龍岡門からお入り下さい。
-  <br/>
-  <br/>
-  <strong>都営大江戸線　本郷三丁目駅</strong>
+  Walk out from exit No.1 and enter campus from Tatsuoki-gate in front of a fireman station.
   <br/>
   <br/>
-  ５番出口を出て右折し、本郷消防署前交差点前の龍岡門からお入り下さい。
+  <strong>{% trans "Toei Oedo-line Hongosanchome Station" %}</strong>
+  <br/>
+  <br/>
+  {% trans "Walk out from exit No.5. Then, make right and enter campus from Tatsuoki-gate." %}
   <br/>
   <br/>
   <h3 style="text-align:left; color:red;">
-    お車の場合
-    <br/>
+    {% trans "Driving a car" %}
   </h3>
-  龍岡門から入り直進し、薬学部脇のゲートからお入り下さい。
-  <br/>
-  ゲートでは東京大学アントレプレナープラザに行く旨をお伝え下さい。
+  {% trans "Enter campus from Tatsuoki-gate and pass the gate besides department of pharmacy" %}
+  <br/
+  {% trans "please tell gate-guards that you are going to Entrepreneur Plaza." %}
 <br/>
 <br/>
 <br/>
@@ -84,15 +81,15 @@
     {% trans "Closest Station" %}
     <br/>
   </h3>
-  <strong>{% trans "東京メトロ三田線 春日駅" %}</strong>
+  <strong>{% trans "Tokyo Metro Mita-line Kasuga Station" %}</strong>
   <br/>
   <br/>
-  {% trans "２番出口を出て本郷３交差点を右折し、本郷消防署前交差点前の龍岡門からお入り下さい。" %}
+  {% trans "Exit A5 and go down to east for 5minutes. When you pass supermarket,make left at the second intersection" %}
   <br/>
-      お車の場合
-    <br/>
-  </h3>
-  {% trans "Please call us in advance, so that we will prepare for a parking space for you" %}
+<br/>
+  <h3 style="text-align:left; color:red;">
+    {% trans "Driving a car" %}</h3>
+{% trans "Please call us in advance, so that we will prepare for a parking space for you" %}
 </div>
 </div>
 </body>

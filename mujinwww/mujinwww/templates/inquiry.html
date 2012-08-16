@@ -2,18 +2,15 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "Inquiry" %}
+{% trans "MUJIN | Inquiry" %}
 {% endblock %}
 
 {% block content %}  
-<div id="feature">
-  <div class="top_shadow">
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/inquiry.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Inquiry" %}</b>
   </div>
-  <div class="inner">
-    <h1>{% trans "Access Map" %}</h1>
-  </div>
-  <div class="bottom_shadow"></div>
-</div>
+</div>  
    
 <div id="fsurround" align="center">
 <span class="theader">{% trans "Contact us" %} </span>

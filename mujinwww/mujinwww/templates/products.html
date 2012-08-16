@@ -7,74 +7,42 @@
 
 {% block content %}
 
-<div id="feature">
-  <div class="top_shadow">
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
+  <div style="position:relative; left:40px; top:60px;font-size:50px;color:#EE920E;padding0px"><b>{% trans "Products" %}</b>
   </div>
-  <div class="inner">
-    <h1>{% trans "Product" %}</h1>
-  </div>
-  <div class="bottom_shadow"></div>
-</div>
-    
-<div id="products">
-<div id="submain">
-<ul class="subnavi" style="float:left">
-<li><a href="/product_offline" class="subbutton">Offline Simulator</a> </li>
-<li><a href="/product_realtime" class="subbutton">Realtime Controller</a></li>
-<li><a href="/product_application" class="subbutton">Application</a></li>
-</ul>
-<br/>
 </div>
 
-<div id="product_content">
-  <div id="productheader" >
-    <h1>{% trans "MUJIN Controller" %}</h1>
-    <iframe width="450" height="300" src="{% trans "http://www.youtube.com/embed/Je7Gqt1HfR0" %}" frameborder="0" allowfullscreen></iframe>
-    <p>{% blocktrans %}World's first cloud computing solution for robot motion planning.{% endblocktrans %}</p>  
-  <h2>{% trans "Controller Spec" %}</h2>
-    <P>Hard32 type</P>
-  </div>
-<br/>
-  <div  class="specstyle1">
-    <table class="tablestyle1" width="600" cellspacing="0" cellpadding="10" border="1">
+<div id="products">
+  <div id="submain">
+    <ul class="subnavi" style="float:left">
+      <li><a href="/product_offline" class="subbutton">Offline Simulator</a> </li>
+    </ul>
+  <HR size="3" color="#999999" style="border-style:dashe; clear:both; margin:0;">
+    <table style="clear:both">
       <tr>
-        <th bgcolor="#CCCCCC" colspan="1"></th>
-        <th bgcolor="#CCCCCC">MUJIN Controller-Hard32</th>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">Outlook</td>
-        <td><img width="60%" hight="60%" src="{{ STATIC_URL }}/img/IW-PV689-3.jpg"/></td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">Item Description</td>
-        <td>MUJINCH32</td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">Dimention</td>
-        <td>Height: 430mm</br>
-          Width: 210mm</br>
-          Depth: 584.8mm</br>
-          Gross Weight:25kg</td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">CPU core</td>
-        <td>32core</td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">Available Colors</td>
-        <td>black</td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE">AC Input</td>
-        <td>    750W: 100 - 140V, 50 - 60Hz, 10.5 - 14.7 Amp </td>
-      </tr>
-      <tr>
-        <td bgcolor="#EEEEEE"> Network Connection</td>
-        <td> 1 Gigabit Ethernet</td>
+        <td>
+          <a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a>
+        </td>
+        <td valign="top">
+          <h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid;">{% trans "MUJIN Controller Cloud" %}</h3>
+          <p> 
+        </td>
+</tr>
+<tr>
+        <td>
+          <a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a>
+        </td>
+        <td>
+          <h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
+            {% trans "MUJIN Controller Hard" %}</h3>
+        </td>
       </tr>
     </table>
+
   </div>
-</div>
+  
+
 </div>
 </div>
 

@@ -51,11 +51,11 @@ Translating to Japanese
 
 When English templates are done, execute::
 
-  cd $MUJIN_HOME/../web/mujinwww; django-admin.py makemessages --locale=ja_JP
+  cd $MUJIN_HOME/../www/mujinwww; django-admin.py makemessages --locale=ja_JP
 
 Open **$MUJIN_HOME/../web/mujinwww/locale/ja_JP/LC_MESSAGES/django.po** and edit the translations. When done execute::
 
-  cd $MUJIN_HOME/../web/mujinwww; django-admin.py compilemessages --locale=ja_JP
+  cd $MUJIN_HOME/../www/mujinwww; django-admin.py compilemessages --locale=ja_JP
 
 Restart the mujinwww server and the new translation should be visible!
 
