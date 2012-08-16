@@ -15,7 +15,7 @@ framework.
 """
 import os,sys
 
-sys.path.append('/var/www/mujinwww')
+sys.path.append('/var/www/www/mujinwww')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mujinwww.settings")
 os.environ['MUJIN_ENV'] = 'production'
 
