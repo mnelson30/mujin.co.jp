@@ -33,6 +33,6 @@ CSRF_COOKIE_SECURE = True
 
 MEDIA_ROOT = '/var/www/media/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/var/www/static/'
+STATIC_ROOT = '/var/www/www/mujinwww/mujinwww/static/'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ('/var/www/static/',)
+STATICFILES_DIRS = ('/var/www/www/mujinwww/mujinwww/static/',)
