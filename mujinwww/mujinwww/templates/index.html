@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% load i18n %}
 
+{% block title %}
+{% trans "MUJIN | Home" %}
+{% endblock %}
 {% block headscripts %}
 <script>
   $(document).ready(function(){
   $('#myslider').bjqs({
-  'animation' : 'slide',
+  'animation' : 'fade',
   'width' : 850,
-  'height' : 340,
+  'height' : 400,
   'showMarkers' : true,
   'showControls' : true,
   'centerMarkers' : false
@@ -20,11 +23,12 @@
 {% block content %}  
 <div id="myslider">
   <ul class="bjqs">
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="520" title="Automatically generated caption"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="520"  title="Automatically generated caption"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="520" title="Automatically generated caption"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="600" title="Automatically generated caption"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="Automatically generated caption"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="Automatically generated caption"/></li>
   </ul>
 </div>
+
 <div id="QuoteBox">
   <span class="header" style="color:#666666" ><br/>{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}<br/><br/>
   </span>
@@ -33,14 +37,6 @@
 <div style="position:relative; left:-20px; width:630px;float:right; background: url({{ STATIC_URL }}img/mujin_mission.jpg) top right  no-repeat;padding:0; margin:0;">
   <div style="position:relative; left:40px; font-size:32px;color:ivory;padding:0px;hight:100px"><br/><br/><b>Industrial Robot For Everyone</b><br/><br/><br/><br/>
   </div>
-</div>
-<div id="submain">
-  <ul class="subnavi">
-    <li><a href="/submain_simulation" class="subbutton">Simulation Software</a> </li>
-    <li><a href="/submain_FAservice" class="subbutton">FA Simulation Service</a></li>
-    <li><a href="/submain_Robotcell Integration" class="subbutton">Robotcell Integration</a></li>
-  </ul>
-  <br/>
 </div>
 
 <div id="NewsHome">

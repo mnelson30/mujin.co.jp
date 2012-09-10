@@ -19,7 +19,7 @@ body{
 
 #myslider {
   height:300px;
-  width:700px;
+  width:850px;
   margin:0 auto;
   position:relative;
   background:#fff;
@@ -33,7 +33,19 @@ body{
   height:400px;
   width:500px;
   margin:0 auto;
-  position:relative;left:170px;
+  position:relative;
+  left:170px;
+  background:#fff;
+  border:20px #fff solid;
+  box-shadow:0 0 50px rgba(0,0,0,0.5);
+  float:left;
+   
+}
+#productslider {
+  height:100px;
+  width:700px;
+  margin:0 auto;
+  position:relative;
   background:#fff;
   border:20px #fff solid;
   box-shadow:0 0 50px rgba(0,0,0,0.5);

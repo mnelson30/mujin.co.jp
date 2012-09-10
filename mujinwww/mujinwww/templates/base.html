@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
   <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
   <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
-  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
+   {% block basic-jquery %}<script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>{% endblock %}
   {% block headscripts %}{% endblock %}
 </head>
 
@@ -42,40 +42,42 @@
               </div>
             </td>
           </tr>
-        </table>
+      </table>
       </div>
       <nav>
+        
         <ul id="NavBar">
           <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
           <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
           <li><a href="/news" title="News">{% trans "News" %}</a></li>
+          <li><a href="/aquiring_process" title="aquiring_process">{% trans "Aquiring process" %}</a></li>
           <li><a href="/carreers" title="Careers">{% trans "Careers" %}</a></li>
           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-          <li><form><input type="text" /> </form></li>
         </ul>
       </nav>
-   
-    <!-- Content -->
-    <div id="content" class="{% block coltype %}colM{% endblock %}">
-      {% block pretitle %}{% endblock %}
-      {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
-     {% block content %}
-      {% block object-tools %}{% endblock %}
-      {{ content }}
-      {% endblock %}
-      {% block sidebar %}{% endblock %}
-      <br class="clear" />
-    </div> 
-
-    <div style="clear: both;"></div>
-    <br/>
-    <br/>
-    <br/>    
-    <div id="Footer">
-      <div class="footertext">
-        &copy; 2011-2012 MUJIN Inc. All rights reserved.
-        <a href="/privacy">Privacy Policy</a>
+      
+      <!-- Content -->
+      <div id="content" class="{% block coltype %}colM{% endblock %}">
+        {% block pretitle %}{% endblock %}
+        {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+        {% block content %}
+        {% block object-tools %}{% endblock %}
+        {{ content }}
+        {% endblock %}
+        {% block sidebar %}{% endblock %}
+        <br class="clear" />
+      </div> 
+      
+      <div style="clear: both;"></div>
+      <br/>
+      <br/>
+      <br/>    
+      <div id="Footer">
+        <div class="footertext">
+          &copy; 2011-2012 MUJIN Inc. All rights reserved.
+          <a href="/privacy">Privacy Policy</a>
+      </div>
       </div>
     </div>
   </div>

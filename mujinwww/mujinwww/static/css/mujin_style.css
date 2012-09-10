@@ -12,9 +12,10 @@
     text-align: left;
     top: 0;
     width: 980px;
+    box-shadow:0 0 50px rgba(0,0,0,0.5);
 }
 html, body {
-    background-color: #778899;
+    background-color: #F5F5F5;
     border: 0 dotted #333333
     height: 100%;
     margin: 0 auto;
@@ -55,6 +56,8 @@ html, body {
     padding-bottom: 0px;
     width: 260px;
 }
+
+
 #NavBar {
     margin:0px 0; 
     margin-bottom: 10px;
@@ -91,7 +94,7 @@ html, body {
 }
 
 /* Set the states when hovering, except for the last item in the list (the search bar), since it doesn't need to change */
-#NavBar li:not(:last-child):hover {
+#NavBar li not(last-child):hover {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
     background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
     background-color:#383838; /* Fallback */
@@ -107,7 +110,6 @@ html, body {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
     background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
     background-color:#383838; /* Fallback */
-    
     -moz-box-shadow: inset 0 1px 2px 2px #000;
     -webkit-box-shadow: inset 0 1px 2px 2px #000;
     box-shadow: inset 0 1px 2px 2px #000;
@@ -148,7 +150,6 @@ html, body {
 
 
 /* The width of the last menu item (search bar) is bigger than the others */
-
 #NavBar li:last-child {
     moz-border-radius:0 4px 4px 0;
     webkit-border-radius:0 4px 4px 0;
@@ -355,12 +356,6 @@ table .subnavi:hover {
 }
 
 
-#product_content {
-    float:right;    
-    width:650px;
-}
-
-
 #feature {
     background-color:#FF9900
 }
@@ -409,6 +404,11 @@ table .subnavi:hover {
 margin-top:30px
 }
 
+.imagebox :hover{
+color:black;
+} 
+
+
 .career_list li {
     margin-left:50px;
 }
@@ -422,10 +422,12 @@ margin-top:30px
     display: block;
     height: 135px;
     margin: 0 0 30px;
+    background: url("/static/img/header2.png");
 }
 
+
 /*product navigation*/
-#productnavi .subnavi .subbutton {
+#navi .subnavi .subbutton {
     border-top: 1px solid #f7fafa;
     background: #f76e05;
     background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
@@ -449,18 +451,26 @@ margin-top:30px
     display:block;
     font-weight:bold;
 }
-#productnavi .subnavi .subbutton:hover {
+#navi .subnavi .subbutton:hover {
     border-top-color: #080204;
     background: #080204;
     color: #ccc;
 }
-#productnavi .subnavi .subbutton:active {
+#navi .subnavi .subbutton:active {
     border-top-color: #a89696;
     background: #a89696;
 }
 
-#productnavi .subnavi li {
-    text-decoration:none; text-align:center; display:block; line-height:25px; outline:none; margin:2px;  width:250px
+#navi .subnavi li {
+    text-decoration:none; text-align:center; display:block; line-height:25px; outline:none; margin:2px;  width:250px;display:inline;
+}
+
+#product_cotent{
+    width:930px;
+    float:left;
+    height:5em;
+    overflow: auto;
+    border: red 1px dashed;
 }
 
 #productbox .h2_lef {
@@ -468,7 +478,7 @@ margin-top:30px
     display:block;
     float:left;
     height:32px;
-    width:625px;
+    width:860px;
     border: 1px solid #E1E1E1;
     border-radius: 7px 7px 0px 0px;
 }
@@ -482,6 +492,6 @@ margin-top:30px
     margin-bottom:15px;
     padding:10px;
     clear:both;
-    width:605px;
+    width:840px;
     border-radius: 0px 0px 7px 7px;
 }
