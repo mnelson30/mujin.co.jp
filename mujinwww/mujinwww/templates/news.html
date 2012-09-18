@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div id="navi" style="margin-top:30px;width:270px;height:85px;background:#DDDDDD;float:left">
+<div id="navi" style="margin-top:30px;width:220px;height:150px;background:#DDDDDD;float:left">
   <ul class="subnavi" style="position:relative;left:10px;top:5px;">
     <li><a href="#news_content" class="subbutton">2012</a> </li>
     <li><a href="#2011news" class="subbutton">2011</a></li>
@@ -39,7 +39,7 @@
         <img src="{{ STATIC_URL }}img/koishikawa.png" style="float:left"/>
       </td>
       <td style="font-size:13px">
-        <b>MUJIN</b> opened new Koishikawa office for software R&D and ranning trial by using industrial robots and other devices.  
+       {% trans "<b>MUJIN</b> opened new Koishikawa office for software R&D and ranning trial by using industrial robots and other devices." %}  
         <a href="/access_map">{% trans "more detail" %}
         </a>
       </td>
@@ -66,7 +66,7 @@
         <img src="{{ STATIC_URL }}img/entreplaza.png" style="float:left"/>
       </td>
       <td style="font-size:13px">
-        <b>MUJIN</b> has relocated its headquater to Entrepreneurplaza in <b>Tokyo University</b>. 
+       {% trans "<b>MUJIN</b> has relocated its headquater to Entrepreneurplaza in <b>Tokyo University</b>" %}. 
         <a href="/access_map">{% trans "more detail" %}
         </a>
       </td>
@@ -88,19 +88,23 @@
         {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}
     </tr>
   </table>
-  <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">ロボット最適化で「ＭＵＪＩＮ」の価値
-  </a>
-  <br/>
 
   <table style="font-size:13px; width:650px;" >
     <tr>
       <td>
+        <img src="{{ STATIC_URL }}img/yomiuri_article.png" style="float:left"/>
+      </td>
+      <td>
+        <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">ロボット最適化で「ＭＵＪＩＮ」の価値
+        </a>
+        <br/>
+
         シリコンバレーから日本へ。ブルガリア出身の魯仙さん
         魯仙さん（左）と滝野さん
         ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）」
         
         　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
-        <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">続きはこちら
+        <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "more detail" %}
         </a>
       </td>
     </tr>
@@ -112,12 +116,12 @@
 <div id="2011news" class="onenews">
   <table>
     <tr>
-      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2011/10/10" %}
+      <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">2011/10/10
       </th>
       <th class="mj">MUJIN 
       </th>
       <th>
-        <b>MUJIN</b> exhibited in DensoWave booth at IREX 2011. 
+       {% trans " <b>MUJIN</b> exhibited in DensoWave booth at IREX 2011." %} 
     </tr>
   </table>
   <table style="font-size:11px; width:650px;">
@@ -126,11 +130,56 @@
         <img src="{{ STATIC_URL }}img/irex2011.png" style="float:left"/>
       </td>
       <td style="font-size:13px">
-        MUJIN fortunately could have a exhibition booth in DensoWave booth
+        {% trans "MUJIN opened a exhibition booth in DensoWave booth" %}
       </td>
     </tr>
   </table>
 </div>
+</div>
+
+<div id="about mujin" style="clear:both">
+    <table class="imagebox">
+      <tr>
+        <td valign="bottom">
+          <a href="/company_overview"> <img src="{{ STATIC_URL }}/img/corporate_profile.jpg" width="120px" hight="130px" alt="company_overview"/></a>
+        </td>
+        <td>
+           <a href="/company_overview"><p style="font-size:30px; color:#EE920E;">{% trans "Corporate overview" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/vision"><img src="{{ STATIC_URL }}/img/oldlighthouse.png" width="120px" hight="130px" alt="access_map"/></a>
+        </td>
+        <td>
+           <a href="/vision"><p style="font-size:30px; color:#EE920E;">{% trans "Vision" %}</p></a>
+        </td> 
+        <td valign="bottom">
+          <a href="/management_team"><img src="{{ STATIC_URL }}/img/management_team.jpg" width="120px" hight="130px" alt="management_team"/></a>
+        </td>
+        <td>
+          <a href="/management_team"><p style="font-size:30px; color:#EE920E;">{% trans "Management team" %}</p></a>
+        </td>
+      </tr>
+      <tr>
+        <td valign="bottom">
+          <a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" width="120px" hight="130px" alt="access_map"/></a>
+        </td>
+        <td>
+          <a href="/access_map"><p style="font-size:30px; color:#EE920E;"> {% trans "Access map" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/founder_message"><img src="{{ STATIC_URL }}/img/message.jpg" width="120px" hight="130px" alt="company_development"/></a>
+        </td>
+        <td>
+          <a href="/founder_message"><p style="font-size:30px; color:#EE920E;"> {% trans "Message from founder" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/company_development"><img src="{{ STATIC_URL }}/img/company_development.jpg" width="120px" hight="130px" alt="company_development"/></a>
+        </td>
+        <td>
+          <a href="/company_development"><p style="font-size:30px; color:#EE920E;"> {% trans "Company development" %}</p></a>
+</td>
+      </tr>
+    </table>
 </div>
 </div>
 {% endblock %}

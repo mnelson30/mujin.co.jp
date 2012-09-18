@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | Home" %}
+{% trans "MUJIN Inc.| Home" %}
 {% endblock %}
 {% block headscripts %}
 <script>
@@ -29,18 +29,42 @@
   </ul>
 </div>
 
-<div id="QuoteBox">
-  <span class="header" style="color:#666666" ><br/>{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}<br/><br/>
+<div id="QuoteBox" class="shadowing">
+  <span class="header" style="color:#666666;" ></br></br>{% trans "MUJIN's innovative technology changes how to programing industrial robot and integrates automation quality." %}
   </span>
 </div>
 
-<div style="position:relative; left:-20px; width:630px;float:right; background: url({{ STATIC_URL }}img/mujin_mission.jpg) top right  no-repeat;padding:0; margin:0;">
-  <div style="position:relative; left:40px; font-size:32px;color:ivory;padding:0px;hight:100px"><br/><br/><b>Industrial Robot For Everyone</b><br/><br/><br/><br/>
+<div style="box-shadow:0px 3px 12px 0px #999999;position:relative; left:-20px; width:620px;float:right; background: url({{ STATIC_URL }}img/mujin_mission.jpg) top right  no-repeat;padding:0; margin:0;margin-bottom:30px">
+  <div style="position:relative; left:40px; font-size:32px;color:ivory;padding-top:60px;height:125px"><b>Industrial Robot For Everyone</b><br/><br/><br/>
   </div>
 </div>
 
+<div id="learning_index" style="clear:both;margin:40px;width:880px">
+  <table>
+    <tr>
+      <td> <div id="learn_mujincontroller" style="width:400px">
+          <h3>{% trans "Taking time for teaching robot?" %}</h3>
+          <h2><font color="#EE920E">{% trans "learn from here" %}</font></h2>
+          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img></br>                                <a href="/inquiry">
+           <p class="button">{% trans "Apply for using a trial" %}<p>
+          </a>                                
+      </div>
+      </td>
+      
+      <td><div id="learn_openrave" style="width:400px;float:right">
+          <h3>{% trans "Curious about OpenRAVE?" %}</h3>
+          <h2><font color="#EE920E">{% trans "Learn from here" %}</font></h2></br></br>
+          <img src="{{ STATIC_URL }}img/openrave_banner.png" style="width:380px"></img></br></br>
+          <a href="/inquiry">
+            <p class="button">{% trans "Need support for OpenRAVE?" %}<p>
+          </a> 
+        </div>
+    </td></tr>
+  </table>
+</div>
+
 <div id="NewsHome">
-  <b class="white">NEWS</b>
+  <b class="white">{% trans "NEWS" %}</b>
   <br/>
   <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
   <br/>
@@ -50,15 +74,15 @@
   <br/>
 </div>
 <div id="NewsHome">
-  <b class="white">VISION</b>
+  <b class="white">{% trans "VISION" %}</b>
   <br/>
-  <a href="/aboutmujin">MUJIN strive for automating factory and industrial processes through the creation of complex robotic systems capable of intelligent reasoning to increasing manufacturing productivity in our society.</a>
+  <a href="/aboutmujin">{% trans "MUJIN strive for automating factory and industrial processes through the creation of complex robotic systems capable of intelligent reasoning to increasing manufacturing productivity in our society." %}</a>
 </div>
 
 <div id="NewsHome" style="margin-right:0px;">
-  <b class="white"> CAREERS</b>
+  <b class="white"> {% trans "CAREERS" %}</b>
   <br/>
-  <a href="/carreers">Thinking about changing jobs? At MUJIN, you could change the world too.</a>
+  <a href="/carreers">{% trans "Thinking about changing jobs? At MUJIN, you could change the world too." %}</a>
 </div>
 </div>
 {% endblock %}

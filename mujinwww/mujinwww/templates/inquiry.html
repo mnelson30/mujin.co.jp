@@ -11,57 +11,101 @@
   <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Inquiry" %}</b>
   </div>
 </div>  
-   
+
+<div id="inquiry_head" align="center">   
+<h1>{% trans "Contact us" %} </h1>
+<h3>{% trans "Reach out MUJIN Inc.'s representative and find your solution." %}</h3>
+<p>{% trans "Do you have a question or quotation? Please fill out the following inquiry form. </br>You will receieve an answer from MUJIN within few days." %}</p>
+</div>
 <div id="fsurround" align="center">
-<span class="theader">{% trans "Contact us" %} </span>
   <br>
   <br>
   <form onsubmit="alert('The submission features was disabled for this example'); return false;" action="#" method="post" name="htmlform">
-    <table bgcolor="FF8C00" width="450px" cellpadding="4">
+    <table  width="450px" cellpadding="4">
       <tbody>
         <tr>
           <td valign="top">
-            <label for="first_name">First Name *</label>
+            <label for="first_name">{% trans "First Name" %} *</label>
           </td>
           <td valign="top">
-            <input type="text" size="30" maxlength="50" name="first_name">
+            <input class="shadowing" type="text" size="30"  maxlength="50" name="first_name">
           </td>
         </tr>
         <tr>
           <td valign="top">
-            <label for="last_name">Last Name *</label>
+            <label for="last_name">{% trans "Last Name" %} *</label>
           </td>
           <td valign="top">
-            <input type="text" size="30" maxlength="50" name="last_name">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="last_name"/>
           </td>
         </tr>
         <tr>
           <td valign="top">
-            <label for="email">Email Address *</label>
+            <label for="company_name">{% trans "Company Name" %} *</label>
           </td>
           <td valign="top">
-            <input type="text" size="30" maxlength="80" name="email">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="first_name"/>
+          </td>
+        </tr> 
+        <tr>
+          <td valign="top">
+            <label for="address">{% trans "Address" %} *</label>
+          </td>
+          <td valign="top">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="first_name"/>
+          </td>
+        </tr> 
+        <tr>
+          <td valign="top">
+            <label for="city">{% trans "City" %} *</label>
+          </td>
+          <td valign="top">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="first_name"/>
+          </td>
+        </tr> 
+        <tr>
+          <td valign="top">
+            <label for="states">{% trans "State/Prefecture" %} *</label>
+          </td>
+          <td valign="top">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="first_name">
+          </td>
+        </tr> 
+        <tr>
+        <td valign="top">
+          <label for="Country">{% trans "Country" %} *</label>
+        </td>
+        <td valign="top">
+          <input class="shadowing" type="text" size="30" maxlength="50" name="first_name">
+          </td>
+        </tr>            
+        <tr>
+          <td valign="top">
+            <label for="email">{% trans "Email Address" %} *</label>
+          </td>
+          <td valign="top">
+            <input class="shadowing" type="text" size="30" maxlength="80" name="email">
           </td>
         </tr>
         <tr>
           <td valign="top">
-            <label for="telephone">Telephone Number</label>
+            <label for="telephone">{% trans "Telephone Number" %}</label>
           </td>
           <td valign="top">
-            <input type="text" size="30" maxlength="30" name="telephone">
+            <input class="shadowing" type="text" size="30" maxlength="30" name="telephone">
           </td>
         </tr>
         <tr>
           <td valign="top">
-            <label for="comments">Comments *</label>
+            <label for="comments">{% trans "Comments" %} *</label>
           </td>
           <td valign="top">
-            <textarea rows="6" cols="25" maxlength="1000" name="comments"></textarea>
+            <textarea class="shadowing" rows="10" cols="50" maxlength="1000" name="comments"></textarea>
           </td>
         </tr>
         <tr>
-          <td style="text-align:center" colspan="2">
-            <input type="submit" value=" Submit Form ">
+          <td style="text-align:center" colspan="3">
+            <input class="shadowing" type="submit" value="{% trans "Submit Form" %} ">
             <br>
             <br>
            

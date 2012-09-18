@@ -13,18 +13,18 @@
 </div>
 
 <br/>
- <div id="navi" style="width:270px;height:85px;background:#DDDDDD;float:left">
+ <div id="navi" style="width:220px;height:150px;background:#DDDDDD;float:left">
     <ul class="subnavi" style="position:relative;left:10px;top:5px;">
       <li><a href="#access_content" class="subbutton">{% trans "Headquaters" %}</a></li>
       <li><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa office" %}</a></li>
     </ul>
   </div>   
 
-<div id="access_content" style="float:right;position:relative; left:30px; width:600px;">
-  <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:150px;background:#F8F8F8;"><h2> {% trans "Headquater" %}</h2>
+<div id="access_content" style="float:right;position:relative; left:30px; width:660px;">
+  <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:180px;background:#F8F8F8;"><h2> {% trans "Headquaters" %}</h2>
   </div>
   <br/>
-  〒113-0033　Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan
+  〒113-0033　{% trans "Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan" %}
   <br/>
   <br/>
 　({% trans "Please use an interphone at the 1st floor to call" %}） 
@@ -34,7 +34,7 @@
   <br/>
   <br/>
   <h3 style="text-align:left; color:red;">
-    最寄駅
+   {% trans "Closest station" %}
     <br/>
   </h3>
   <strong>{% trans "Tokyo Metro Marunouchi-line Hongosanchome Station" %}</strong>
@@ -48,7 +48,7 @@
     <br/>
    </strong>
   <br/>
-  Walk out from exit No.1 and enter campus from Tatsuoki-gate in front of a fireman station.
+  {% trans "Walk out from exit No.1 and enter campus from Tatsuoki-gate in front of a fireman station." %}
   <br/>
   <br/>
   <strong>{% trans "Toei Oedo-line Hongosanchome Station" %}</strong>
@@ -91,6 +91,52 @@
     {% trans "Driving a car" %}</h3>
 {% trans "Please call us in advance, so that we will prepare for a parking space for you" %}
 </div>
+
+<div id= "about mujin" style="clear:both">
+    <table class="imagebox">
+      <tr>
+        <td valign="bottom">
+          <a href="/company_overview"> <img src="{{ STATIC_URL }}/img/corporate_profile.jpg" width="120px" hight="130px" alt="company_overview"/></a>
+        </td>
+        <td>
+           <a href="/company_overview"><p style="font-size:30px; color:#EE920E;">{% trans "Corporate overview" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/vision"><img src="{{ STATIC_URL }}/img/oldlighthouse.png" width="120px" hight="130px" alt="access_map"/></a>
+        </td>
+        <td>
+           <a href="/vision"><p style="font-size:30px; color:#EE920E;">{% trans "Vision" %}</p></a>
+        </td> 
+        <td valign="bottom">
+          <a href="/management_team"><img src="{{ STATIC_URL }}/img/management_team.jpg" width="120px" hight="130px" alt="management_team"/></a>
+        </td>
+        <td>
+          <a href="/management_team"><p style="font-size:30px; color:#EE920E;">{% trans "Management team" %}</p></a>
+        </td>
+      </tr>
+      <tr>
+        <td valign="bottom">
+          <a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" width="120px" hight="130px" alt="access_map"/></a>
+        </td>
+        <td>
+          <a href="/access_map"><p style="font-size:30px; color:#EE920E;"> {% trans "Access map" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/founder_message"><img src="{{ STATIC_URL }}/img/message.jpg" width="120px" hight="130px" alt="company_development"/></a>
+        </td>
+        <td>
+          <a href="/founder_message"><p style="font-size:30px; color:#EE920E;"> {% trans "Message from founder" %}</p></a>
+        </td>
+        <td valign="bottom">
+          <a href="/company_development"><img src="{{ STATIC_URL }}/img/company_development.jpg" width="120px" hight="130px" alt="company_development"/></a>
+        </td>
+        <td>
+          <a href="/company_development"><p style="font-size:30px; color:#EE920E;"> {% trans "Company development" %}</p></a>
+</td>
+      </tr>
+    </table>
+</div>
+
 </div>
 </body>
 {% endblock %}
