@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN Inc.| Aquiring process" %}
+{% endblock %}
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#productslider').bjqs({
+  'animation' : 'fade',
+  'width' : 850,
+  'height' : 160,
+  'showMarkers' : true,
+  'showControls' : false,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% endblock %}
+
+{% block content %}
+ 
+<div id="productslider">
+  <ul class="bjqs">
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
+          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
+            {% trans "MUJIN Controller Cloud" %}</h3></td>
+        </tr>
+      </table>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
+          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
+              {% trans "MUJIN Controller" %}</h3></td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+</div>
+
+<div id="navi" style="width:890px;height:45px;background:#DDDDDD;float:left; margin-top:50px;margin-bottom:30px">
+  <ul class="subnavi" style="position:relative;left:170px;top:5px;width:880px;">
+    <li style="float:left"><a href="#licensing_options" class="subbutton">{% trans "Licensing options" %}</a></li>    
+    <li style="float:left"><a href="#acquiring_steps" class="subbutton">{% trans "Acquiring steps" %}</a></li>   
+  </ul>
+</div>
+
+{% block product_content %}
+<div id="product_content" style="width:890px; height:600px;overflow:auto;clear:both;">
+  <div id="productheader" >
+    <div id="licensing_options" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:340px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Licensing Options" %}</h1>
+    </div>
+  </div>
+  <div id="productbox" style="margin-top:20px;">
+    <div class="h2_lef">      
+      <h2 style="margin-left:10px;"> {% trans "Annual license system" %} </h2>
+    </div>
+    <div class="box2">
+      <p>{% trans "MUJIN offers only annual license option for commercial companies. License fee differs dependent on which kind of MUJIN Controller you choose and how much computing power you want. Usually, price of MUJIN Controller Cloud is more reasonable than MUJIN Controller served with a server. For price detail, please feel free to" %} <a href="/inquiry">{% trans " ask us" %}</a>{% trans " or call +81-050-3682-7852" %}</p>
+    </div>
+  </div>
+
+  <div id="productbox" style="margin-top:20px;">
+    <div class="h2_lef">      
+      <h2 style="margin-left:10px;"> {% trans "Accademic License System" %} </h2>
+    </div>
+    <div class="box2">
+      <p>{% trans "MUJIN Inc. offers academic licenses for non-commercial research. These licenses are only for academic research and for student projects. We expect many professors in robot engineering, electric engineering, and other fields to use our academic license." %}</p>
+      </br>
+      <p>{% trans "The academic license agreement includes the following provisions:" %}</p>
+      </br>
+      <ul>
+        <li>{% trans "The software may only be used for non-commercial research (not sponsored by an organization that would receive economic benefit from the work)."%}</li>
+        <li>{% trans "Technical support shall be provided to a single contact person." %}</li>
+      </ul> 
+    </div>
+  </div>
+
+  <div id="productheader" >
+    <div id="acquiring_steps" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:340px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Acquiring Steps" %}</h1>
+    </div>
+  </div>
+  <div id="productbox" style="margin-top:20px;">
+    <div class="h2_lef">
+      <h2 style="margin-left:10px;">{% trans "Flow to acquire product" %} </h2>
+    </div>
+    <div class="box2">
+      <table>
+        <tr>
+          <td style="height:100px;width:320px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
+            <p><font color="red">STEP 1</font> {% trans " To contact MUJIN sales" %}</p>
+          </td>
+          <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
+            <p>{% trans "Please send an inquiry by" %} <a href="/inquiry">web<a>,{% trans "or call +81-050-3682-7852" %}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
+            <p><font color="red">STEP 2</font> {% trans " Questioning about your bottleneck" %}</p>
+          </td>
+          <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
+            <p>{% trans "We ask you to have a meeting to recognize your customer's problem. Questioning would be very important to propose what application and ik  approach is suitable for you. If possible, we also would like to present your data, such as CAD drawings." %}</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
+            <p><font color="red">STEP 3</font> {% trans " Analysis and suggestion" %}</p>
+          </td>
+          <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
+            <p>{% trans "Considering customer's needs, we analize the problem and propose a suggestion the best way to maximize customer's profit. We can also decide trial duration of service." %} </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
+            <p><font color="red">STEP 4</font> {% trans " Sending a quatation" %}</p>
+          </td>
+          <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
+            <p>{% trans "MUJIN Sales division sends you a quotation, and as soon as teh customer approves it,  product will be delivered." %} </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart3.png);background-repeat:no-repeat;">
+            <p><font color="red">STEP 5</font>{% trans " Operation starts" %}</p>
+          </td>
+          <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
+            <p>{% trans "In most cases, customer is full supported by MUJIN engineer while contract is valid." %} </p>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+  </div> 
+{% endblock %}
+
+</div>
+</div>
+{% endblock %}
+
+  

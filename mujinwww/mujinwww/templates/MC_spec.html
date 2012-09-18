@@ -1,0 +1,73 @@
+ {% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN | Product/Spec and Operation Environment" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="bnr"> 
+  <image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="float:right; height:135px"/>
+  <div style="position:relative; left:40px; top:60px;font-size:40px;color:#EE920E;padding:0px"><b>{% trans "MUJIN Controller" %}</b>
+  </div>
+</div>
+
+<div id="navi" style="width:270px;height:185px;background:#DDDDDD;float:left">
+  <ul class="subnavi" style="position:relative;left:10px;top:5px;">
+    <li><a href="/mujincontroller" class="subbutton">Product concept</a> </li>
+    <li><a href="/MC_new_function" class="subbutton">New function</a></li>
+    <li><a href="/MC_application" class="subbutton">Application</a></li>
+    <li><a href="/MC_operation_demo" class="subbutton">Operation demo</a></li>
+    <li><a href="/MC_spec" class="subbutton">Operation environment</a></li>
+  </ul>
+</div>
+
+<div id="product_content" style="width:630px; float:right">
+  <div style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Product Concept" %}</h1>
+  </div>
+  <div  class="specstyle1">
+    <table class="tablestyle1" width="600" cellspacing="0" cellpadding="10" border="1">
+      <tr>
+        <th bgcolor="#CCCCCC" colspan="1"></th>
+        <th bgcolor="#CCCCCC">MUJIN Controller-Hard32</th>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Outlook</td>
+        <td><img width="60%" hight="60%" src="{{ STATIC_URL }}/img/IW-PV689-3.jpg"/></td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Item Description</td>
+        <td>MUJINCH32</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Dimention</td>
+        <td>Height: 178mm</br>
+          Width: 452mm</br>
+          Depth: 721mm</br>
+          Gross Weight:45kg</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">CPU core</td>
+        <td>32core</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Available Colors</td>
+        <td>black</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">AC Input</td>
+        <td> 1200W: 100 - 140V, 50 - 60Hz, 10.5 - 14.7 Amp <br/>
+       1400W: 180 - 240V, 50 - 60Hz, 7.2 - 9.5 Amp   </td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE"> Network Connection</td>
+        <td> 1 Gigabit Ethernet</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+
+
+{% endblock %}
