@@ -8,10 +8,10 @@
 {% block content %}
 
 <div id="technology_bnr" class="shadowing" style="height:190px;background: url({{ STATIC_URL }}img/technology_bnr.png);"></div>
-<div style="font-size:50px;color:#EE920E;margin-bottom:20px"><b>{% trans "Core Technologies" %}</b>
+<div style="font-size:50px;color:#EE920E;margin-bottom:20px; margin-top:20px"><b>{% trans "Core Technologies" %}</b>
 </div>
 
-<p>The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation platform used in over <b>200 robots</b>. </p>
+<p>{% trans "The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation platform used in over <b>200 robots</b>." %} </p>
 
 <div id="navi" style=";width:890px;height:50px;background:#DDDDDD;float:left; margin-bottom:30px">
   <ul class="subsubnavi" style="position:relative;left:10px;top:5px;width:890px;">
@@ -43,7 +43,7 @@
 <br/><br/>
 <div id="technology_content" style="width:890px; overflow:auto;clear:both;">
   <div id="productheader" >
-    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robust Inverse Kinematics for any Robot" %}</h1>
+    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:770px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robot Inverse Kinematics for any Robot" %}</h1>
     </div>
   </div>
   <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" frameborder="0" allowfullscreen/>
