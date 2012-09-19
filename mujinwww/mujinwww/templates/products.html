@@ -167,8 +167,10 @@
         <ul>
           <li>{% trans "MUJIN Controller offers flexibility to exchange tools and grasping workpiece." %}</li><br/>          <img src="{{ STATIC_URL }}img/grasping.gif" style="clear:right; display:block"/>
           <li>{% trans "1. The robot can easily mount different tools." %} <img src="{{ STATIC_URL }}img/mitsubishi_robot.png" style="clear:right; display:block"/></li>
-          <li>{% trans "2. Once specified the tool, the robot can grab the workpiece with MUJIN Grasp Planning. The programmer can program grasp and release target without adjusting any parameter and will be able to simulate more complex tasks, such as handling multiple workpieces and using multiple tools in one task." %}<img src="{{ STATIC_URL }}img/.png" style="clear:left"></li>
-          <li>{% trans "3. Moving tool with workpiece." %}
+          <li>{% trans "2. Once specified the tool, the robot can grab the workpiece with MUJIN Grasp Planning. The programmer can program grasp and release target without adjusting any parameter and will be able to simulate more complex tasks, such as handling multiple workpieces and using multiple tools in one task." %}</br>
+<img src="{{ STATIC_URL }}img/mitsubishi_grasp.png" style="clear:right"></li>
+          <li>{% trans "3. Moving tool with workpiece." %}</li>
+<img src="{{ STATIC_URL }}img/mitsubishi_grasp.gif" style="clear:right">
         </ul>
       </div>
     </div>
@@ -180,9 +182,9 @@
       <h2 style="margin-left:10px;">{% trans "Does not need specific 3D CAD software" %} </h2>
     </div>
     <div class="box2" style="height:350px;">
-      <p><img src="{{ STATIC_URL }}img/add_on.gif" style="margin-right:5px;float:left;"/>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} <br/><br/>
+      <p><img src="{{ STATIC_URL }}img/add_on.gif" style="height:350px;margin-right:5px;float:left;"/>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} <br/><br/>
         {% trans "MUJIN Controller supports the following formats:" %}
-        <ul style="background:#e7e7e7; width:80px; float:right;">
+        <ul style="background:#e7e7e7; width:80px; float:left;">
           <li>XML</li>
           <li>IGES</li>
           <li>STEP</li>

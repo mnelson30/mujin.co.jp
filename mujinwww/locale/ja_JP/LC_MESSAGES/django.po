@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 16:09+0900\n"
+"POT-Creation-Date: 2012-09-19 16:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,15 +311,15 @@ msgstr ""
 "株式会社MUJINが東京にて設立される。OpenRAVEの革新的技術を産業用ロボットに応用"
 "する事を開始。"
 
-#: mujinwww/templates/company_development.html:40
+#: mujinwww/templates/company_development.html:41
 msgid "Sep"
 msgstr "9月"
 
-#: mujinwww/templates/company_development.html:41
+#: mujinwww/templates/company_development.html:42
 msgid "MUJIN relocated the headquarters to"
 msgstr "MUJINは本社を"
 
-#: mujinwww/templates/company_development.html:41
+#: mujinwww/templates/company_development.html:42
 msgid "Tokyo University Entrepreneur Plaza."
 msgstr "東京都文京区本郷7-3-1, 東京大学アントレプレナープラザに移転する"
 
@@ -668,19 +668,19 @@ msgstr "製品コンセプト"
 msgid "Features"
 msgstr "製品特徴"
 
-#: mujinwww/templates/products.html:52 mujinwww/templates/products.html:198
+#: mujinwww/templates/products.html:52 mujinwww/templates/products.html:200
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: mujinwww/templates/products.html:53 mujinwww/templates/products.html:203
+#: mujinwww/templates/products.html:53 mujinwww/templates/products.html:205
 msgid "Operation demo"
 msgstr "操作デモ"
 
-#: mujinwww/templates/products.html:54 mujinwww/templates/products.html:208
+#: mujinwww/templates/products.html:54 mujinwww/templates/products.html:210
 msgid "Controller spec"
 msgstr "コントローラースペック"
 
-#: mujinwww/templates/products.html:55 mujinwww/templates/products.html:214
+#: mujinwww/templates/products.html:55 mujinwww/templates/products.html:216
 msgid "Operation environment"
 msgstr "動作環境"
 
@@ -727,12 +727,11 @@ msgid "What You See Is What You Get"
 msgstr "画面上でプログラムされたものがそのまま実際の動作となります。"
 
 #: mujinwww/templates/products.html:84
-#, python-format
 msgid ""
 "We believe that a simulation is pointless unless it is consistent with the "
 "reality. While most of existing simulation tools do not ensure the motion in "
-"reality, MUJIN Controller guarantees 99%% precision. What the program shows "
-"on the computer is what will happen in the actual robot cell."
+"reality, MUJIN Controller guarantees precision. What the program shows on "
+"the computer is what will happen in the actual robot cell. "
 msgstr ""
 "私達は現実と整合性がとれないシミュレーションツールは意味がないとの信じており"
 "ます。従来のほとんどのシミュレーションソフトは現実での動作や所要時間を保証し"
@@ -917,18 +916,18 @@ msgstr ""
 "ターは複数のワークピースをエンドエフェクターを交換しながらハンドリングする事"
 "が必要な（組み付け等の）複雑なタスクにも柔軟に対応できるようになります。"
 
-#: mujinwww/templates/products.html:171
+#: mujinwww/templates/products.html:172
 msgid "3. Moving tool with workpiece."
 msgstr ""
 "3. ワークピースを把持しながらアームを動かせます。この際、把持されているワーク"
 "までロボットの一部として認識され、完璧な障害物回避、最適動作、最適配置の算出"
 "を実現いたします。"
 
-#: mujinwww/templates/products.html:180
+#: mujinwww/templates/products.html:182
 msgid "Does not need specific 3D CAD software"
 msgstr "特有の３D　CADソフトフェアは必要ありません。"
 
-#: mujinwww/templates/products.html:183
+#: mujinwww/templates/products.html:185
 msgid ""
 "Many of the existing robot simulation software are add-on's to expensive 3D "
 "CAD software. Purchasing new 3D CAD software licenses can be expensive. "
@@ -941,13 +940,13 @@ msgstr ""
 "コントローラは特別な3D CADソフトは必要ありません。お客様がお使いの３DCAD"
 "フォーマットをそのまま簡単にインポートする事が可能です。"
 
-#: mujinwww/templates/products.html:184
+#: mujinwww/templates/products.html:186
 msgid "MUJIN Controller supports the following formats:"
 msgstr ""
 "MUJINコントローラは現在以下のフォーマットのCADファイルに対応しております。"
 
-#: mujinwww/templates/products.html:200 mujinwww/templates/products.html:205
-#: mujinwww/templates/products.html:210 mujinwww/templates/products.html:216
+#: mujinwww/templates/products.html:202 mujinwww/templates/products.html:207
+#: mujinwww/templates/products.html:212 mujinwww/templates/products.html:218
 msgid "UNDER CONSTRUCTION"
 msgstr "工事中"
 
@@ -968,16 +967,14 @@ msgid "Licensing Options"
 msgstr "ライセンス形態"
 
 #: mujinwww/templates/services.html:63
-msgid "Annual License System"
-msgstr "年間ライセンス制"
+msgid "Annual Licensing Option"
+msgstr "ライセンス形態"
 
 #: mujinwww/templates/services.html:66
 msgid ""
-"MUJIN offers annual license option for commercial companies. License fee "
-"differs dependent on which kind of MUJIN Controller you choose and how much "
-"computing power you want. Usually, price of MUJIN Controller Cloud is more "
-"reasonable than MUJIN Controller served with a server. For price detail, "
-"please feel free to"
+"MUJIN offers annual licenses to commercial companies. License fees differ "
+"depending on which kind of MUJIN Controller you choose and how much "
+"computing power you want. For pricing details, please "
 msgstr ""
 "MUJINは営利企業様向けに年間ライセンスの提供を行っております。ライセンス料はど"
 "のタイプのMUJINコントローラを選択されるかによって変わりますが、一般的には"
@@ -985,23 +982,24 @@ msgstr ""
 "価格の詳細につきましてはお気軽に"
 
 #: mujinwww/templates/services.html:66
-msgid " ask us"
-msgstr "こちらからお問い合わせください"
+msgid "contact us"
+msgstr "お問い合わせ"
 
 #: mujinwww/templates/services.html:66
-msgid " or call +81-050-3682-7852"
+msgid " or call +81-050-3682-7852."
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
 #: mujinwww/templates/services.html:72
-msgid "Accademic License System"
+msgid "Academic Licensing Option"
 msgstr "アカデミックライセンス制"
 
 #: mujinwww/templates/services.html:75
 msgid ""
-"MUJIN offers academic licenses for non-commercial research. These licenses "
-"are only for academic research and for student projects. We expect many "
-"professors in robot engineering, computer science, electrical engineering, "
-"and many other fields to use our academic license."
+"MUJIN offers academic licenses to non-commercial research programs. The "
+"licenses are only for academic research and for student projects. We expect "
+"teachers and researchers in robot engineering, computer science, electrical "
+"engineering, mechanical engineering, and many other fields to select our "
+"academic licensing option."
 msgstr ""
 "MUJINは非営利目的の研究を行う団体に対してアカデミックライセンスをご用意してお"
 "ります。このライセンスは学生のプロジェクト目的や学術的研究目的のみに適用さ"
@@ -1009,22 +1007,21 @@ msgstr ""
 "ております。"
 
 #: mujinwww/templates/services.html:77
-msgid "The academic license agreement includes the following provisions:"
+msgid "The academic licensing agreement includes the following provisions:"
 msgstr "アカデミックライセンス契約には以下の規定を定めています。"
 
 #: mujinwww/templates/services.html:80
 msgid ""
-"The software may only be used for non-commercial research (not sponsored by "
-"an organization that would receive economic benefit from the work)."
+"The software may only be used for non-commercial research not sponsored by "
+"an organization that could receive economic benefits from the work."
 msgstr ""
 "本ソフトウェアは非営利目的の研究に使用される事（その研究から経済的利益を得る"
 "可能性があるスポンサーがついていない事）"
 
 #: mujinwww/templates/services.html:81
-msgid "Technical support shall be provided to a single contact person."
+msgid "Technical support would be provided to a single contact person."
 msgstr ""
-"テクニカルサポートを受けられる対象者は一人の代表担当者のみに限定させて頂く事"
-"を承認頂く事。"
+"テクニカルサポートを受けられる対象者は一人の代表担当者のみに限定させて頂く事のご承認"
 
 #: mujinwww/templates/services.html:87
 msgid "Acquiring Steps"
@@ -1043,7 +1040,7 @@ msgid "Please send an inquiry by"
 msgstr "メールにてお問い合わせ頂くか"
 
 #: mujinwww/templates/services.html:101
-msgid "or call +81-050-3682-7852"
+msgid "or call +81-050-3682-7852."
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
 #: mujinwww/templates/services.html:106
@@ -1069,8 +1066,8 @@ msgstr ""
 "ンを提案させて頂きます。"
 
 #: mujinwww/templates/services.html:124
-msgid " Quotation"
-msgstr "見積書の送付"
+msgid " Approving quotation"
+msgstr "お見積書への同意"
 
 #: mujinwww/templates/services.html:127
 msgid ""
@@ -1081,15 +1078,15 @@ msgstr ""
 "荷させて頂きます。"
 
 #: mujinwww/templates/services.html:133
-msgid " Operation starts"
-msgstr "使用開始"
+msgid " Starting operation"
+msgstr "作業開始"
 
 #: mujinwww/templates/services.html:136
 msgid ""
-"In most cases, you are fully supported by MUJIN engineers while contract is "
-"valid."
+"You will be fully supported by MUJIN engineers as soon as the contract takes "
+"effect."
 msgstr ""
-"ほとんどの場合、ご契約期間中はお客様はMUJINのエンジニアからのフルサポートを受"
+"ご契約期間中はお客様はMUJINのエンジニアからのフルサポートを受"
 "けることができます。"
 
 #: mujinwww/templates/technology.html:5
@@ -1135,7 +1132,8 @@ msgid ""
 "robot task time.</p>\n"
 "  "
 msgstr ""
-"<p>動作計画はタスク時間の最適化と障害物への干渉を回避するために使われます。</p>"
+"<p>動作計画はタスク時間の最適化と障害物への干渉を回避するために使われます。</"
+"p>"
 
 #: mujinwww/templates/technology.html:37
 msgid "Multiple Robot Motion Planning"
@@ -1237,12 +1235,13 @@ msgid ""
 "effectively, shorten development and deployment cycle, and increase overall "
 "manufacturing performance."
 msgstr ""
-"産業用ロボットを利用した生産システム自動化の需要は年々増加している中、"
-"特別な技術と膨大な時間が要求されるシステムインテグレーションのプロセスは、ロボット普及を妨げる"
-"最大のボトルネックとして今だ業界の大きな課題として存在しています。\n"
+"産業用ロボットを利用した生産システム自動化の需要は年々増加している中、特別な"
+"技術と膨大な時間が要求されるシステムインテグレーションのプロセスは、ロボット"
+"普及を妨げる最大のボトルネックとして今だ業界の大きな課題として存在していま"
+"す。\n"
 "スタンドアローンからフルインテグレーションサービスまで幅広いソリューションを"
-"提供する事により、ロボットシステムのインテグレーター様が検討＆開発にかかる時間を大幅に"
-"削減し、システム全体の生産性を向上いたします。"
+"提供する事により、ロボットシステムのインテグレーター様が検討＆開発にかかる時"
+"間を大幅に削減し、システム全体の生産性を向上いたします。"
 
 #: mujinwww/templates/vision.html:33
 msgid ""
@@ -1274,6 +1273,21 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "Annual License System"
+#~ msgstr "年間ライセンス制"
+
+#~ msgid " ask us"
+#~ msgstr "こちらからお問い合わせください"
+
+#~ msgid "Accademic License System"
+#~ msgstr "アカデミックライセンス制"
+
+#~ msgid " Quotation"
+#~ msgstr "見積書の送付"
+
+#~ msgid " Operation starts"
+#~ msgstr "使用開始"
 
 #~ msgid "Aug"
 #~ msgstr "8月"
@@ -1336,12 +1350,6 @@ msgstr "物流"
 #~ "MUJINはお客様のニーズに沿って問題を分析し、利益を最大化するための最適ソ"
 #~ "リューションを提案いたします。その際に体験版の期限等を必要に応じて決定させ"
 #~ "て頂きます。"
-
-#~ msgid " Sending a quatation"
-#~ msgstr "お見積書の送付"
-
-#~ msgid "contact us"
-#~ msgstr "お問い合わせ"
 
 #~ msgid "Acquiring process"
 #~ msgstr "導入ステップ"
