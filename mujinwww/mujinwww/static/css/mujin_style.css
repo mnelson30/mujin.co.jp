@@ -616,3 +616,12 @@ width:300px;
    border-top-color: #f76f08;
    background: #f76f08;
    }
+
+#productbox li {
+display:block;
+}
+
+#productbox img{
+  width:300px;
+  height:200px
+}

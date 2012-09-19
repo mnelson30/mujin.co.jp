@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 02:53+0900\n"
+"POT-Creation-Date: 2012-09-19 12:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "MUJIN | Product/Spec and Operation Environment"
 msgstr "MUJIN | 製品/スペックと動作環境"
 
 #: mujinwww/templates/MC_spec.html:12
-#: mujinwww/templates/aquiring_process.html:41
+#: mujinwww/templates/acquiring_process.html:41
 #: mujinwww/templates/mujincontroller.html:12
 #: mujinwww/templates/products.html:41
 msgid "MUJIN Controller"
@@ -46,7 +46,7 @@ msgstr "会社情報"
 #: mujinwww/templates/access_map.html:102 mujinwww/templates/carreers.html:120
 #: mujinwww/templates/company_development.html:59
 #: mujinwww/templates/company_overview.html:107
-#: mujinwww/templates/management_team.html:45 mujinwww/templates/news.html:147
+#: mujinwww/templates/management_team.html:45 mujinwww/templates/news.html:174
 #: mujinwww/templates/vision.html:55
 msgid "Corporate overview"
 msgstr "会社概要"
@@ -55,7 +55,7 @@ msgstr "会社概要"
 #: mujinwww/templates/access_map.html:108 mujinwww/templates/carreers.html:126
 #: mujinwww/templates/company_development.html:65
 #: mujinwww/templates/company_overview.html:113
-#: mujinwww/templates/management_team.html:51 mujinwww/templates/news.html:153
+#: mujinwww/templates/management_team.html:51 mujinwww/templates/news.html:180
 #: mujinwww/templates/vision.html:11 mujinwww/templates/vision.html.py:61
 msgid "Vision"
 msgstr "ビジョン"
@@ -64,7 +64,7 @@ msgstr "ビジョン"
 #: mujinwww/templates/access_map.html:114 mujinwww/templates/carreers.html:132
 #: mujinwww/templates/company_development.html:71
 #: mujinwww/templates/company_overview.html:119
-#: mujinwww/templates/management_team.html:57 mujinwww/templates/news.html:159
+#: mujinwww/templates/management_team.html:57 mujinwww/templates/news.html:186
 #: mujinwww/templates/vision.html:67
 msgid "Management team"
 msgstr "経営チーム"
@@ -73,7 +73,7 @@ msgstr "経営チーム"
 #: mujinwww/templates/access_map.html:122 mujinwww/templates/carreers.html:140
 #: mujinwww/templates/company_development.html:79
 #: mujinwww/templates/company_overview.html:127
-#: mujinwww/templates/management_team.html:65 mujinwww/templates/news.html:167
+#: mujinwww/templates/management_team.html:65 mujinwww/templates/news.html:194
 #: mujinwww/templates/vision.html:75
 msgid "Access map"
 msgstr "アクセスMAP"
@@ -82,7 +82,7 @@ msgstr "アクセスMAP"
 #: mujinwww/templates/access_map.html:128 mujinwww/templates/carreers.html:146
 #: mujinwww/templates/company_development.html:85
 #: mujinwww/templates/company_overview.html:133
-#: mujinwww/templates/management_team.html:71 mujinwww/templates/news.html:173
+#: mujinwww/templates/management_team.html:71 mujinwww/templates/news.html:200
 #: mujinwww/templates/vision.html:81
 msgid "Message from founder"
 msgstr "創業者メッセージ"
@@ -91,7 +91,7 @@ msgstr "創業者メッセージ"
 #: mujinwww/templates/access_map.html:134 mujinwww/templates/carreers.html:152
 #: mujinwww/templates/company_development.html:91
 #: mujinwww/templates/company_overview.html:139
-#: mujinwww/templates/management_team.html:77 mujinwww/templates/news.html:179
+#: mujinwww/templates/management_team.html:77 mujinwww/templates/news.html:206
 #: mujinwww/templates/vision.html:87
 msgid "Company development"
 msgstr "沿革"
@@ -122,7 +122,6 @@ msgid "Please use an interphone at the 1st floor to call"
 msgstr "1階のインターフォンにて405号室をお呼びください"
 
 #: mujinwww/templates/access_map.html:37
-#, fuzzy
 msgid "Closest station"
 msgstr "最寄り駅"
 
@@ -201,32 +200,32 @@ msgstr ""
 "駐車スペースを確保させて頂きますので、お車でお越しの場合は前もってご連絡くだ"
 "さい。"
 
-#: mujinwww/templates/aquiring_process.html:5
+#: mujinwww/templates/acquiring_process.html:5
 msgid "MUJIN Inc.| Aquiring process"
 msgstr "株式会社MUJIN | 導入ステップ"
 
-#: mujinwww/templates/aquiring_process.html:33
+#: mujinwww/templates/acquiring_process.html:33
 #: mujinwww/templates/products.html:33
 msgid "MUJIN Controller Cloud"
 msgstr "MUJINコントローラ　クラウド"
 
-#: mujinwww/templates/aquiring_process.html:50
+#: mujinwww/templates/acquiring_process.html:50
 msgid "Licensing options"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/aquiring_process.html:51
+#: mujinwww/templates/acquiring_process.html:51
 msgid "Acquiring steps"
 msgstr "導入ステップ"
 
-#: mujinwww/templates/aquiring_process.html:58
+#: mujinwww/templates/acquiring_process.html:58
 msgid "Licensing Options"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/aquiring_process.html:63
+#: mujinwww/templates/acquiring_process.html:63
 msgid "Annual license system"
 msgstr "年間ライセンス制"
 
-#: mujinwww/templates/aquiring_process.html:66
+#: mujinwww/templates/acquiring_process.html:66
 msgid ""
 "MUJIN offers only annual license option for commercial companies. License "
 "fee differs dependent on which kind of MUJIN Controller you choose and how "
@@ -239,21 +238,19 @@ msgstr ""
 "コントローラクラウドの方がサーバーが付帯する通常版よりもお安くなります。価格"
 "の詳細につきましてはお気軽に"
 
-#: mujinwww/templates/aquiring_process.html:66
-#, fuzzy
+#: mujinwww/templates/acquiring_process.html:66
 msgid " ask us"
 msgstr "お問い合わせください"
 
-#: mujinwww/templates/aquiring_process.html:66
-#, fuzzy
+#: mujinwww/templates/acquiring_process.html:66
 msgid " or call +81-050-3682-7852"
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
-#: mujinwww/templates/aquiring_process.html:72
+#: mujinwww/templates/acquiring_process.html:72
 msgid "Accademic License System"
 msgstr "アカデミックライセンス制"
 
-#: mujinwww/templates/aquiring_process.html:75
+#: mujinwww/templates/acquiring_process.html:75
 msgid ""
 "MUJIN Inc. offers academic licenses for non-commercial research. These "
 "licenses are only for academic research and for student projects. We expect "
@@ -265,11 +262,11 @@ msgstr ""
 "れおり、ロボット工学、電機工学、その他の分野の多くの先生方にご利用される事を"
 "願っております。"
 
-#: mujinwww/templates/aquiring_process.html:77
+#: mujinwww/templates/acquiring_process.html:77
 msgid "The academic license agreement includes the following provisions:"
 msgstr "アカデミックライセンス契約には以下の規定を定めています。"
 
-#: mujinwww/templates/aquiring_process.html:80
+#: mujinwww/templates/acquiring_process.html:80
 msgid ""
 "The software may only be used for non-commercial research (not sponsored by "
 "an organization that would receive economic benefit from the work)."
@@ -277,85 +274,95 @@ msgstr ""
 "本ソフトウェアは非営利目的の研究に使用される（その研究から経済的利益を得る可"
 "能性があるスポンサーがついていない事）"
 
-#: mujinwww/templates/aquiring_process.html:81
+#: mujinwww/templates/acquiring_process.html:81
 msgid "Technical support shall be provided to a single contact person."
 msgstr ""
 "テクニカルサポートを受けられる対象者は一人の代表担当者のみに限定させて頂いて"
 "おります。"
 
-#: mujinwww/templates/aquiring_process.html:87
+#: mujinwww/templates/acquiring_process.html:87
 msgid "Acquiring Steps"
 msgstr "導入ステップ"
 
-#: mujinwww/templates/aquiring_process.html:92
+#: mujinwww/templates/acquiring_process.html:92
 msgid "Flow to acquire product"
 msgstr "導入までの流れ"
 
-#: mujinwww/templates/aquiring_process.html:98
+#: mujinwww/templates/acquiring_process.html:98
 msgid " To contact MUJIN sales"
-msgstr ""
+msgstr "MUJINの営業にコンタクトするために"
 
-#: mujinwww/templates/aquiring_process.html:101
+#: mujinwww/templates/acquiring_process.html:101
 msgid "Please send an inquiry by"
-msgstr ""
+msgstr "メールにてお問い合わせ頂くか"
 
-#: mujinwww/templates/aquiring_process.html:101
+#: mujinwww/templates/acquiring_process.html:101
 msgid "or call +81-050-3682-7852"
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
-#: mujinwww/templates/aquiring_process.html:106
+#: mujinwww/templates/acquiring_process.html:106
 msgid " Questioning about your bottleneck"
-msgstr ""
+msgstr "お客様の抱えていらっしゃる問題についての質問。"
 
-#: mujinwww/templates/aquiring_process.html:109
+#: mujinwww/templates/acquiring_process.html:109
 msgid ""
 "We ask you to have a meeting to recognize your customer's problem. "
 "Questioning would be very important to propose what application and ik  "
 "approach is suitable for you. If possible, we also would like to present "
 "your data, such as CAD drawings."
 msgstr ""
+"お客様の問題を教えて頂くためにご面会をお願いしております。お客様の問題をより"
+"正確に知る事により、どのアプリケーション叉は逆運動学的アプローチが最もお客様"
+"に最適化なのかをより正確にご提案させて頂きます。もし可能でしたら現在のサンプ"
+"ルプロジェクトのデータを頂ければ効果を立証できます。"
 
-#: mujinwww/templates/aquiring_process.html:115
+#: mujinwww/templates/acquiring_process.html:115
 msgid " Analysis and suggestion"
-msgstr ""
+msgstr "分析と提案"
 
-#: mujinwww/templates/aquiring_process.html:118
+#: mujinwww/templates/acquiring_process.html:118
 msgid ""
 "Considering customer's needs, we analize the problem and propose a "
 "suggestion the best way to maximize customer's profit. We can also decide "
 "trial duration of service."
 msgstr ""
+"MUJINはお客様のニーズに沿って問題を分析し、利益を最大化するための最適ソリュー"
+"ションを提案いたします。その際に体験版の期限等を必要に応じて決定させて頂きま"
+"す。"
 
-#: mujinwww/templates/aquiring_process.html:124
+#: mujinwww/templates/acquiring_process.html:124
 msgid " Sending a quatation"
-msgstr ""
+msgstr "お見積書の送付"
 
-#: mujinwww/templates/aquiring_process.html:127
+#: mujinwww/templates/acquiring_process.html:127
 msgid ""
 "MUJIN Sales division sends you a quotation, and as soon as teh customer "
 "approves it,  product will be delivered."
 msgstr ""
+"MUJINの営業部よりお見積書を送付させて頂きます。お客様の了解を得次第、商品を出"
+"荷させて頂きます。"
 
-#: mujinwww/templates/aquiring_process.html:133
-#, fuzzy
+#: mujinwww/templates/acquiring_process.html:133
 msgid " Operation starts"
-msgstr "操作デモ"
+msgstr "使用開始"
 
-#: mujinwww/templates/aquiring_process.html:136
+#: mujinwww/templates/acquiring_process.html:136
 msgid ""
 "In most cases, customer is full supported by MUJIN engineer while contract "
 "is valid."
 msgstr ""
+"ほとんどの場合、ご契約期間中はお客様はMUJINのエンジニアからのフルサポートを受"
+"けることができます。"
 
 #: mujinwww/templates/base.html:5
 msgid "MUJIN Inc Homepage | Indusctrial Robots for Everyone"
 msgstr "株式会社MUJIN ホームページ | 全ての人に産業用ロボットを"
 
 #: mujinwww/templates/base.html:32 mujinwww/templates/index.html:69
-msgid "MUJIN was introduced by Yomiuri newspaper"
-msgstr "株式会社MUJINが読売新聞に紹介されました。"
+msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
+msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 
-#: mujinwww/templates/base.html:34 mujinwww/templates/index.html:72
+#: mujinwww/templates/base.html:34 mujinwww/templates/index.html:74
 msgid "MUJIN Annouced office was moved into Tokyo University."
 msgstr "MUJINは本社を東京大学内に移転いたしました。"
 
@@ -364,7 +371,6 @@ msgid "img/en/inquiry.jpg"
 msgstr "img/ja/inquiry.jpg"
 
 #: mujinwww/templates/base.html:43
-#, fuzzy
 msgid "contact us"
 msgstr "お問い合わせ"
 
@@ -385,7 +391,6 @@ msgid "News"
 msgstr "新着情報"
 
 #: mujinwww/templates/base.html:57
-#, fuzzy
 msgid "Acquiring process"
 msgstr "導入ステップ"
 
@@ -512,7 +517,7 @@ msgstr "8月"
 
 #: mujinwww/templates/company_development.html:42
 msgid "MUJIN increased the capital to 76.000,000yen."
-msgstr "76,000千円に資本金を増資する"
+msgstr "38,500千円に資本金を増資する"
 
 #: mujinwww/templates/company_development.html:45
 msgid "Sep"
@@ -535,7 +540,7 @@ msgid "Company Overview"
 msgstr "会社情報"
 
 #: mujinwww/templates/company_overview.html:25
-#: mujinwww/templates/inquiry.html:44
+#: mujinwww/templates/inquiry.html:45
 msgid "Company Name"
 msgstr "会社名"
 
@@ -552,9 +557,8 @@ msgid "Founded"
 msgstr "設立日"
 
 #: mujinwww/templates/company_overview.html:34
-#, fuzzy
 msgid "2011/7/6"
-msgstr "2007年7月6日"
+msgstr "2011年7月6日"
 
 #: mujinwww/templates/company_overview.html:37
 msgid "Representative CEO"
@@ -615,8 +619,8 @@ msgid "Capital"
 msgstr "資本金"
 
 #: mujinwww/templates/company_overview.html:61
-msgid "76,000,000yen"
-msgstr "76,000千円"
+msgid "38,500,000yen"
+msgstr "38,500千円"
 
 #: mujinwww/templates/company_overview.html:65
 msgid "Major Stockholders"
@@ -658,9 +662,12 @@ msgid "MUJIN | Management Team"
 msgstr "MUJIN | 役員紹介"
 
 #: mujinwww/templates/founder_message.html:15
-#, fuzzy
 msgid "Message from Founder"
 msgstr "創業者メッセージ"
+
+#: mujinwww/templates/founder_message.html:19
+msgid "under construction"
+msgstr "工事中"
 
 #: mujinwww/templates/index.html:5
 msgid "MUJIN Inc.| Home"
@@ -676,37 +683,38 @@ msgstr ""
 
 #: mujinwww/templates/index.html:46
 msgid "Taking time for teaching robot?"
-msgstr ""
+msgstr "ロボットのティーチング作業に時間がかかっていませんか？"
 
-#: mujinwww/templates/index.html:47
+#: mujinwww/templates/index.html:47 mujinwww/templates/index.html.py:54
 msgid "learn from here"
 msgstr ""
 
 #: mujinwww/templates/index.html:49
 msgid "Apply for using a trial"
-msgstr ""
+msgstr "体験版の申込はここから"
 
-#: mujinwww/templates/index.html:55
-msgid "Curious about OpenRAVE?"
-msgstr ""
+#: mujinwww/templates/index.html:53
+msgid "Be close to MUJIN's technology"
+msgstr "MUJINの技術とは？"
 
 #: mujinwww/templates/index.html:56
-msgid "Learn from here"
-msgstr ""
-
-#: mujinwww/templates/index.html:59
-msgid "Need support for OpenRAVE?"
-msgstr ""
+#, fuzzy
+msgid "Need to know MUJIN's technology?"
+msgstr "MUJINの技術とは？"
 
 #: mujinwww/templates/index.html:67
 msgid "NEWS"
 msgstr "新着情報"
 
-#: mujinwww/templates/index.html:77
+#: mujinwww/templates/index.html:71
+msgid "MUJIN was introduced by Yomiuri newspaper"
+msgstr "株式会社MUJINが読売新聞に紹介されました。"
+
+#: mujinwww/templates/index.html:79
 msgid "VISION"
 msgstr "ビジョン"
 
-#: mujinwww/templates/index.html:79
+#: mujinwww/templates/index.html:81
 msgid ""
 "MUJIN strive for automating factory and industrial processes through the "
 "creation of complex robotic systems capable of intelligent reasoning to "
@@ -715,11 +723,11 @@ msgstr ""
 "MUJINは従来は困難であった、複雑化した知能的ロボットシステムの構築をより促進す"
 "る事により、お客様の生産性向上に大きく貢献いたします。"
 
-#: mujinwww/templates/index.html:83
+#: mujinwww/templates/index.html:85
 msgid "CAREERS"
 msgstr "採用情報"
 
-#: mujinwww/templates/index.html:85
+#: mujinwww/templates/index.html:87
 msgid "Thinking about changing jobs? At MUJIN, you could change the world too."
 msgstr ""
 "転職をお考えですか？世界中から集まった優秀な仲間と一緒にMUJINで働けば、あなた"
@@ -739,54 +747,55 @@ msgstr "お問い合わせ"
 
 #: mujinwww/templates/inquiry.html:17
 msgid "Reach out MUJIN Inc.'s representative and find your solution."
-msgstr ""
+msgstr "MUJINの担当者とソリューションを見つけましょう"
 
 #: mujinwww/templates/inquiry.html:18
-msgid ""
-"Do you have a question or quotation? Please fill out the following inquiry "
-"form. </br>You will receieve an answer from MUJIN within few days."
-msgstr ""
+msgid "Do you have a question or want quotation? Email"
+msgstr "ご質問がおありでしょうか？見積がご必要でしょうか？"
 
-#: mujinwww/templates/inquiry.html:28
+#: mujinwww/templates/inquiry.html:19
+msgid "You will receieve an answer from MUJIN within few days."
+msgstr "までEmailを頂けましたら数日以内にMUJINからご連絡させて頂きます。"
+
+#: mujinwww/templates/inquiry.html:29
 msgid "First Name"
 msgstr "名前"
 
-#: mujinwww/templates/inquiry.html:36
+#: mujinwww/templates/inquiry.html:37
 msgid "Last Name"
 msgstr "姓名"
 
-#: mujinwww/templates/inquiry.html:52
-#, fuzzy
+#: mujinwww/templates/inquiry.html:53
 msgid "Address"
 msgstr "Emailアドレス"
 
-#: mujinwww/templates/inquiry.html:60
+#: mujinwww/templates/inquiry.html:61
 msgid "City"
-msgstr ""
+msgstr "市町村"
 
-#: mujinwww/templates/inquiry.html:68
+#: mujinwww/templates/inquiry.html:69
 msgid "State/Prefecture"
-msgstr ""
+msgstr "州/県"
 
-#: mujinwww/templates/inquiry.html:76
+#: mujinwww/templates/inquiry.html:77
 msgid "Country"
-msgstr ""
+msgstr "国"
 
-#: mujinwww/templates/inquiry.html:84
+#: mujinwww/templates/inquiry.html:85
 msgid "Email Address"
 msgstr "Emailアドレス"
 
-#: mujinwww/templates/inquiry.html:92
+#: mujinwww/templates/inquiry.html:93
 msgid "Telephone Number"
 msgstr "電話番号"
 
-#: mujinwww/templates/inquiry.html:100
+#: mujinwww/templates/inquiry.html:101
 msgid "Comments"
 msgstr "コメント"
 
-#: mujinwww/templates/inquiry.html:108
+#: mujinwww/templates/inquiry.html:109
 msgid "Submit Form"
-msgstr ""
+msgstr "フォーム送信"
 
 #: mujinwww/templates/management_team.html:27
 msgid "Management Team"
@@ -798,7 +807,7 @@ msgstr "代表取締役　滝野　一征"
 
 #: mujinwww/templates/management_team.html:34
 msgid "CTO Rosen Diankov"
-msgstr "取締役　技術部長　出杏光　魯仙（Rosen Diankov)"
+msgstr "取締役技術部長　出杏光　魯仙（Rosen Diankov)"
 
 #: mujinwww/templates/mujincontroller.html:36
 #: mujinwww/templates/products.html:71
@@ -813,15 +822,14 @@ msgid ""
 "which has never been accomplished by manual teaching. MUJIN Controller "
 "contributes customers to save their precious time/cost & create new value."
 msgstr ""
-"MUJINコントローラは多大な時間と豊富な経験を要するティーチングによるロボットプ"
-"ログラミングを解決する革新的技術を提供します。シンプルな操作画面上で、任意の"
-"タスクと目的地、叉は各種スピードなどの制約条件を入力するだけで、MUJINコント"
-"ローラは全ての干渉回避、特異点をクリアした最適な軌道及び配置を短時間で自動計"
-"算いたします。更にMUJINの独創的な革新的技術は複数ロボットの協調プログラミング"
-"や双腕ロボットにも対応しており、従来の人の手によるティーチングでは不可能で"
-"あった新しいアプリケーションをも作成する事が可能です。MUJINコントローラはお客"
-"様の時間とコスト削減に大幅に貢献するだけでなく、新しい価値をも創造いたしま"
-"す。"
+"MUJINコントローラは多大な時間と豊富な経験を要するロボットのティーチング作業を"
+"革新的新技術により軽減致します。シンプルな操作画面上で、任意のタスクと目的"
+"地、叉は各種スピードなどの制約条件を入力するだけで、MUJINコントローラは全ての"
+"干渉回避、特異点をクリアした最適な軌道及び配置を短時間で自動計算いたします。"
+"更にMUJINの独創的な革新的技術は複数ロボットの協調プログラミングや双腕ロボット"
+"にも対応しており、従来の人の手によるティーチングでは不可能であった新しいアプ"
+"リケーションをも作成する事が可能です。MUJINコントローラはお客様の時間とコスト"
+"削減に大幅に貢献するだけでなく、新しい価値をも創造いたします。"
 
 #: mujinwww/templates/mujincontroller.html:41
 #: mujinwww/templates/products.html:73
@@ -956,8 +964,8 @@ msgstr ""
 msgid ""
 "1. By choosing a tool, robot can easily exchange and mount different tools."
 msgstr ""
-"1. ツールを選択する事により、ロボットが容易に異なるツールの脱着が可能になりま"
-"す。"
+"1. ツールを選択する事により、容易にロボットに異なるツールの脱着をさせる事が可"
+"能になります。"
 
 #: mujinwww/templates/mujincontroller.html:128
 #: mujinwww/templates/products.html:170
@@ -969,17 +977,20 @@ msgid ""
 "to simulate more flexible and complex task, such as handling muli work or "
 "changing tools."
 msgstr ""
-"2.　ツール叉は左/右のアームを指定する事により、MUJIN把持計画機能を使ってロ"
-"ボットがワークピースを把持する事が可能になります。MUJINコントローラは革新的な"
-"把持計画機能を有しており、オペレーターがパラメターを調整する事なくワークピー"
-"スの把持と解放をプログラムできるようになっております。この機能を活用する事に"
-"より、オペレーターは複数ワークピースをツールを交換しながらハンドリング/組み付"
-"けするようなより複雑なタスクにより柔軟に対応できるようになります。"
+"2.　ツール叉は左/右のアームを指定する事により、容易にロボットにワークピースを"
+"把持させる事が可能になります。MUJINコントローラは革新的な把持計画機能を有して"
+"おり、オペレーターがパラメターを調整する事なくワークピースの把持と解放を簡単"
+"にプログラムできるようになっております。この機能を活用する事により、オペレー"
+"ターは複数ワークピースをエンドエフェクターの交換しながらハンドリングする（組"
+"み付け等）より複雑なタスクに柔軟に対応できるようになります。"
 
 #: mujinwww/templates/mujincontroller.html:129
 #: mujinwww/templates/products.html:171
 msgid "3. Moving arm with grasping workpiece."
-msgstr "3. ワークピースを把持しながらアームを動かす。"
+msgstr ""
+"3. ワークピースを把持しながらアームを動かせます。この際、把持されているワーク"
+"までロボットの一部として認識され、完璧な障害物回避、最適動作、最適配置の算出"
+"を実現いたします。"
 
 #: mujinwww/templates/mujincontroller.html:141
 #: mujinwww/templates/products.html:183
@@ -990,25 +1001,46 @@ msgid ""
 "Controller does not choose a specifit 3D CAD software and operator can "
 "easily import many kinds of file format."
 msgstr ""
-"多くのロボットシミュレーションソフトは高価な３D　CADのアドオンになっていま"
-"す。残念な事にすでに自社で３DCADをお持ちのお客様にとっては新しい指定の３D CAD"
-"ソフトを購入するのは初期投資を増やしてしまいます。MUJINコントローラは特別な"
-"3D CADソフトは必要ありません。お客様がお使いの３DCADフォーマットをそのまま簡"
-"単にインポートする事が可能です。"
+"多くのロボットシミュレーションソフトは高価な３D　CADソフトのアドオンになって"
+"います。残念な事にすでに自社で３D　CADソフトをお持ちのお客様にとっては指定さ"
+"れた新規３D CADソフトを購入は初期投資額の増加を意味します。それに対してMUJIN"
+"コントローラは特別な3D CADソフトは必要ありません。お客様がお使いの３DCAD"
+"フォーマットをそのまま簡単にインポートする事が可能です。"
 
 #: mujinwww/templates/news.html:5
 msgid "MUJIN | News"
 msgstr "MUJIN | 新着情報"
 
 #: mujinwww/templates/news.html:27
-msgid "2012/8/10"
+msgid "2012/9/18"
 msgstr ""
 
 #: mujinwww/templates/news.html:32
+msgid "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper"
+msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
+
+#: mujinwww/templates/news.html:42
+msgid ""
+"<b>MUJIN</b> receives $950k investment from University of Tokyo Edge "
+"Capital. Announcing first official product in early 2013 year. "
+msgstr ""
+"株式会社MUJINは75,000千円を東京大学エッジキャピタルより調達し、来年初頭の製品"
+"発売を発表いたしました。"
+
+#: mujinwww/templates/news.html:43 mujinwww/templates/news.html.py:70
+#: mujinwww/templates/news.html:97 mujinwww/templates/news.html.py:134
+msgid "more detail"
+msgstr "続きはこちら"
+
+#: mujinwww/templates/news.html:54
+msgid "2012/8/10"
+msgstr ""
+
+#: mujinwww/templates/news.html:59
 msgid "<b>MUJIN</b> announces openning new Koishikawa office"
 msgstr "MUJINは小石川事業所を新設いたしました。"
 
-#: mujinwww/templates/news.html:42
+#: mujinwww/templates/news.html:69
 msgid ""
 "<b>MUJIN</b> opened new Koishikawa office for software R&D and ranning trial "
 "by using industrial robots and other devices."
@@ -1016,40 +1048,35 @@ msgstr ""
 "MUJINはソフトウエア開発及び産業用ロボット実機テストのために小石川事業所を新設"
 "いたしました。"
 
-#: mujinwww/templates/news.html:43 mujinwww/templates/news.html.py:70
-#: mujinwww/templates/news.html:107
-msgid "more detail"
-msgstr "続きはこちら"
-
-#: mujinwww/templates/news.html:54
+#: mujinwww/templates/news.html:81
 msgid "2012/8/2"
 msgstr ""
 
-#: mujinwww/templates/news.html:59
+#: mujinwww/templates/news.html:86
 msgid "<b>MUJIN</b> announces relacation of headquater"
 msgstr "MUJINは本社を移転いたしました。"
 
-#: mujinwww/templates/news.html:69
+#: mujinwww/templates/news.html:96
 msgid ""
 "<b>MUJIN</b> has relocated its headquater to Entrepreneurplaza in <b>Tokyo "
 "University</b>"
 msgstr "MUJINは本社を東京大学アントレプレナープラザ内に移転いたしました。"
 
-#: mujinwww/templates/news.html:83
+#: mujinwww/templates/news.html:110
 msgid "2012/5/16"
 msgstr ""
 
-#: mujinwww/templates/news.html:88
+#: mujinwww/templates/news.html:115
 msgid ""
 "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's "
 "technology"
 msgstr "読売新聞の磯崎哲也様の起業案内ページにて弊社MUJINが紹介されました。"
 
-#: mujinwww/templates/news.html:124
+#: mujinwww/templates/news.html:151
 msgid " <b>MUJIN</b> exhibited in DensoWave booth at IREX 2011."
 msgstr "MUJINはIREX2011においてデンソーウェーブ様のブース内で展示いたしました"
 
-#: mujinwww/templates/news.html:133
+#: mujinwww/templates/news.html:160
 msgid "MUJIN opened a exhibition booth in DensoWave booth"
 msgstr "デンソーウェーブ様ブース内にMUJIN展示ブースを開設いたしました。"
 
@@ -1094,18 +1121,17 @@ msgid "Compatibility between EASY/SIMPLE and HIGHT PRECISION."
 msgstr "シンプルさと高精度の両立"
 
 #: mujinwww/templates/products.html:84
-#, python-format
 msgid ""
 "We believe that simulation tool would be pointless unless it is consisitent "
 "with reality. While most of existing simulation tools does not ensure "
-"motions in reality, MUJIN controller ensures 99%% precision. What you "
-"program on computer is what you see in actual robot cell."
+"motions in reality, MUJIN controller ensures precision. What you program on "
+"computer is what you see in actual robot cell. "
 msgstr ""
 "私達は現実と整合性がとれないシミュレーションツールは意味がないとの信じており"
 "ます。従来のほとんどのシミュレーションツールは現実での動き、時間を保証してお"
-"りませんが、MUJINコントローラは対応しているメーカーに鍵っては９９％の精度をた"
-"もっています。お客様がMUJINコントローラ上でプログラムしたものがそのまま現実の"
-"ロボットの動きとして実現されます。"
+"りませんが、MUJINコントローラは対応しているメーカーに限ってはその高い精度をた"
+"もっております。お客様がMUJINコントローラ上でプログラムしたものがそのまま現実"
+"のロボットの動きとして実現されます。"
 
 #: mujinwww/templates/products.html:103 mujinwww/templates/products.html:147
 #: mujinwww/templates/products.html:156 mujinwww/templates/products.html:164
@@ -1188,112 +1214,46 @@ msgid "MUJIN Inc.| Technology"
 msgstr "株式会社MUJIN | 技術情報"
 
 #: mujinwww/templates/technology.html:12
-#, fuzzy
 msgid "Motion Planning Technology"
 msgstr "ロボット動作計画アルゴリズム"
 
 #: mujinwww/templates/technology.html:17
 msgid "About OpenRAVE"
-msgstr ""
+msgstr "OpenRAVEについて"
 
 #: mujinwww/templates/technology.html:18
-#, fuzzy
 msgid "Logics"
-msgstr "物流"
+msgstr "論理"
 
 #: mujinwww/templates/technology.html:19
-msgid "Achievement"
-msgstr ""
+msgid "Achievements"
+msgstr "成果"
 
-#: mujinwww/templates/technology.html:20 mujinwww/templates/technology.html:71
-msgid "Reference documents"
-msgstr ""
+#: mujinwww/templates/technology.html:20
+msgid "White Papers"
+msgstr "参考文献"
 
 #: mujinwww/templates/technology.html:26
-msgid "What is Motion Planning & OpenRAVE?"
-msgstr ""
+msgid "Motion Planning with OpenRAVE?"
+msgstr "モーションプランニング＆OpenRAVEとは？"
 
-#: mujinwww/templates/technology.html:31
-msgid "Conventional Analysis Method"
-msgstr ""
+#: mujinwww/templates/technology.html:32
+msgid "Robust Inverse Kinematics that Explores All Solutions"
+msgstr "全ての解を探索するロボット逆運動学"
 
-#: mujinwww/templates/technology.html:35
-msgid "fefewaefea"
-msgstr ""
-
-#: mujinwww/templates/technology.html:41
-msgid "Innovative OpenRAVE ikfast"
-msgstr ""
-
-#: mujinwww/templates/technology.html:44
-msgid ""
-"IKFast analytically solves robot inverse kinematics equations and generates "
-"optimized C++ files."
-msgstr ""
-
-#: mujinwww/templates/technology.html:46
-msgid ""
-"The inverse kinematics equations arise from attemping to place the robot end "
-"effector coordinate system in the world while maintaining joint and user-"
-"specified constraints. User-specified constraints make up many different IK "
-"Types, each of them having advantages depending on the task."
-msgstr ""
-
-#: mujinwww/templates/technology.html:48
-msgid ""
-"IKFast will work with any number of joints arranged in a chain; this is "
-"defined by the Robot.Manipulator. For chains containing more degrees of "
-"freedom (DOF) than the IK type requires, the user can set arbitrary values "
-"of a subset of the joints until the number of unknown joints matches the "
-"degrees of freedom of the IK type."
-msgstr ""
-
-#: mujinwww/templates/technology.html:50
-msgid ""
-"It is not trivial to create hand-optimized inverse kinematics solutions for "
-"arms that can capture all degenerate cases, having closed-form IK speeds up "
-"many tasks including planning algorithms, so it really is a must for most "
-"robotics researchers."
-msgstr ""
-
-#: mujinwww/templates/technology.html:52
-msgid ""
-"Closed-form solutions are necessary for motion planning due to two reasons:"
-msgstr ""
-
-#: mujinwww/templates/technology.html:55
-msgid ""
-" Numerical inverse kinematics solvers will always be much slower than closed "
-"form solutions. Planners require being able to process thousands of "
-"configurations per second. The closed-form code generated by ikfast can "
-"produce solutions on the order of ~4 microseconds! As a comparison, most "
-"numerical solutions are on the order of 10 milliseconds (assuming good "
-"convergence)."
-msgstr ""
-
-#: mujinwww/templates/technology.html:56
-msgid ""
-"The null space of the solution set can be explored because all solutions are "
-"computed."
-msgstr ""
-
-#: mujinwww/templates/technology.html:66
-msgid "All divide by zero conditions are automatically checked and handled."
-msgstr ""
-
-#: mujinwww/templates/technology.html:144
+#: mujinwww/templates/technology.html:40
 msgid "Layout Optimization"
 msgstr "ロボット配置の最適化"
 
-#: mujinwww/templates/technology.html:145
+#: mujinwww/templates/technology.html:41
 msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
 msgstr ""
 
-#: mujinwww/templates/technology.html:146
+#: mujinwww/templates/technology.html:42
 msgid "Multi-Robot Motion Planning"
 msgstr "複数ロボットによる動作生成"
 
-#: mujinwww/templates/technology.html:147
+#: mujinwww/templates/technology.html:43
 #, python-format
 msgid ""
 "Motion planning for multiple robots. Task time for one robot is 16.6s, "
@@ -1303,7 +1263,7 @@ msgstr ""
 "時間が、2台では動作が12.3秒に短縮されました。複数台か双腕ロボットを使えば同じ"
 "作業の時間を約25%%短縮出来ます。 "
 
-#: mujinwww/templates/technology.html:148
+#: mujinwww/templates/technology.html:44
 msgid "http://www.youtube.com/embed/vLu0twF2-Ps"
 msgstr ""
 
@@ -1317,6 +1277,7 @@ msgid ""
 "worldwide leading inverse kinematics technology, developed by Dr.Diankov, "
 "for Automatic Motion and Path Planning in Japan."
 msgstr ""
+"株式会社MUJINは、世界一の逆運動学技術を誇る、独立系ソフトウェア開発会社です。"
 
 #: mujinwww/templates/vision.html:24
 msgid ""
@@ -1324,6 +1285,13 @@ msgid ""
 "programming autonomous multi joint machines for last five years,  MUJIN now "
 "adresses large companies and more than 200 research institutions."
 msgstr ""
+"創立者の出杏光　魯仙は過去5年間に渡り、自立的多軸機械を簡単にプログラミングす"
+"る事を可能にした世界一のオープンソースソフトウェアOpenRAVEを運営開発してきま"
+"した。その結果、今や２００を超える研究機関に使用される世界一の逆運動学計算エ"
+"ンジンにまでに成長する事になりました。MUJINはこの技術を利用し、近年増加する産"
+"業会での効率UP、コスト削減の需要に対応するため、産業用ロボットのプログラミン"
+"グ時間の大幅削減や自動化システムの効率化に大きく貢献するサービスを開始いたし"
+"ます。"
 
 #: mujinwww/templates/vision.html:33
 msgid ""
@@ -1332,8 +1300,8 @@ msgid ""
 "and to increase world wide manufacturing productivity."
 msgstr ""
 "MUJINは「全ての人に産業用ロボットを」を使命としております。なぜなら、私たちは"
-"産業用ロボットがより容易に誰にでも取り扱えるようになる事こそが、工場の自動化"
-"を促進し、世界的な生産性を向上させる重要な鍵だと信じているからです。"
+"産業用ロボットが今より簡単に、そして誰にでも扱えるようになる事こそが、工場の"
+"自動化を促進し、世界的な生産性を向上させる重要な鍵だと信じているからです。"
 
 #: mujinwww/templates/vision.html:36
 msgid "Key manufacture markets include"
@@ -1354,6 +1322,26 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "Need to know OpenRAVE?"
+#~ msgstr "OpenRAVEについて知る"
+
+#~ msgid ""
+#~ "Do you have a question or want quotation? Email <b>info@mujin.co.jp</b>. "
+#~ "</br>You will receieve an answer from MUJIN within few days."
+#~ msgstr "質問がおありでしょうか？叉はお見積もりが必要でしょうか？"
+
+#~ msgid "Curious about OpenRAVE?"
+#~ msgstr "OpenRAVEに興味がありますか？"
+
+#~ msgid "Reference documents"
+#~ msgstr "参照文献"
+
+#~ msgid "Conventional Analysis Method"
+#~ msgstr "従来の分析方法"
+
+#~ msgid "Innovative OpenRAVE ikfast"
+#~ msgstr "革新的なOpenRAVEの逆運動計算"
 
 #~ msgid "MUJIN Controller Hard"
 #~ msgstr "MUJINコントローラ"
