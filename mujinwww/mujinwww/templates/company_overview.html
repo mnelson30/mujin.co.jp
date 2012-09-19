@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block css %}
- <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/company_overview.css"/>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/company_overview.css"/>
 {% endblock %}
 
 {% block content %}   
@@ -18,7 +18,7 @@
 </div>
 
 <div id="company_overview" align="left" style="width:850px; overflow-y: hidden;" class="wcustomhtml"> 
-   <br/>
+  <br/>
   <table class="content-default">
     <tbody>
       <tr>
@@ -40,7 +40,7 @@
       <tr>
         <th>{% trans "CEOs" %}</th>
         <td nowrap="nowrap">
-          {% trans "CTO　　　　  　     　  　Diankov Rosen (Phd.of Robot Engineering)" %}<br/>
+          {% trans "CTO　　　　  　     　  　Rosen Diankov, PhD. (Robot Engineering from Carnegie Mellon University)" %}<br/>
           {% trans "External Director　Tetsuya Yamamoto （The University of Tokyo Edge Capital, GP)" %}
         </td>
       </tr>
@@ -70,18 +70,18 @@
       </tr>
       <tr>
         <th>{% trans "Location" %}</th>
-        <td>{% trans "[Headquaters]" %} <br/>{% trans "Tokyo University Entrepreneur Plaza, 7-3-1,Hongo,Bunkyo-ku,Tokyo,Japan" %}<br/>{% trans "[Koishikawa Office]" %}<br/>
+        <td>{% trans "[Headquarter]" %} <br/>{% trans "Tokyo University Entrepreneur Plaza, 7-3-1,Hongo,Bunkyo-ku,Tokyo,Japan" %}<br/>{% trans "[Koishikawa Office]" %}<br/>
           {% trans "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan" %}<br/>
         </td>
       </tr>
       <tr>
         <th>{% trans "Telephone" %}</th>
-        <td>{% trans "[Headquaters]" %}<br/>050-3682-7852
+        <td>{% trans "[Headquarter]" %}<br/>050-3682-7852
         </td>
       </tr>
       <tr>
         <th>FAX</th>
-        <td>{% trans "[Headquaters]" %}<br/>050-3682-7852
+        <td>{% trans "[Headquarter]" %}<br/>050-3682-7852
         </td>
       </tr>
       <tr>
@@ -97,50 +97,8 @@
   </table>
 </div>
 
-<div id= "about mujin">
-    <table class="imagebox">
-      <tr>
-        <td valign="bottom">
-          <a href="/company_overview"> <img src="{{ STATIC_URL }}/img/corporate_profile.jpg" width="120px" hight="130px" alt="company_overview"/></a>
-        </td>
-        <td>
-           <a href="/company_overview"><p style="font-size:30px; color:#EE920E;">{% trans "Corporate overview" %}</p></a>
-        </td>
-        <td valign="bottom">
-          <a href="/vision"><img src="{{ STATIC_URL }}/img/oldlighthouse.png" width="120px" hight="130px" alt="access_map"/></a>
-        </td>
-        <td>
-           <a href="/vision"><p style="font-size:30px; color:#EE920E;">{% trans "Vision" %}</p></a>
-        </td> 
-        <td valign="bottom">
-          <a href="/management_team"><img src="{{ STATIC_URL }}/img/management_team.jpg" width="120px" hight="130px" alt="management_team"/></a>
-        </td>
-        <td>
-          <a href="/management_team"><p style="font-size:30px; color:#EE920E;">{% trans "Management team" %}</p></a>
-        </td>
-      </tr>
-      <tr>
-        <td valign="bottom">
-          <a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" width="120px" hight="130px" alt="access_map"/></a>
-        </td>
-        <td>
-          <a href="/access_map"><p style="font-size:30px; color:#EE920E;"> {% trans "Access map" %}</p></a>
-        </td>
-        <td valign="bottom">
-          <a href="/founder_message"><img src="{{ STATIC_URL }}/img/message.jpg" width="120px" hight="130px" alt="company_development"/></a>
-        </td>
-        <td>
-          <a href="/founder_message"><p style="font-size:30px; color:#EE920E;"> {% trans "Message from founder" %}</p></a>
-        </td>
-        <td valign="bottom">
-          <a href="/company_development"><img src="{{ STATIC_URL }}/img/company_development.jpg" width="120px" hight="130px" alt="company_development"/></a>
-        </td>
-        <td>
-          <a href="/company_development"><p style="font-size:30px; color:#EE920E;"> {% trans "Company development" %}</p></a>
-        </td>
-      </tr>
-    </table>
+<div style="clear:both">
+  {% include "aboutmujinpane.html" %}
 </div>
-</div>
-</body>
+
 {% endblock %}

@@ -8,41 +8,57 @@
 {% block content %}
 
 <div id="technology_bnr" class="shadowing" style="height:190px;background: url({{ STATIC_URL }}img/technology_bnr.png);"></div>
-<img style="position:relative; left:200px;top:10px; height:100px" src="{{ STATIC_URL }}img/openrave_banner.png"></img>
-<div style="position:relative; left:40px;top:-20px; font-size:50px;color:#EE920E;margin-bottom:20px"><b>{% trans "Motion Planning Technology" %}</b>
+<div style="font-size:50px;color:#EE920E;margin-bottom:20px"><b>{% trans "Core Technologies" %}</b>
 </div>
 
-<div id="navi" style=";width:890px;height:50px;background:#DDDDDD;float:left;margin-top:-30px; margin-bottom:30px">
+<p>The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation platform used in over <b>200 robots</b>. </p>
+
+<div id="navi" style=";width:890px;height:50px;background:#DDDDDD;float:left; margin-bottom:30px">
   <ul class="subsubnavi" style="position:relative;left:10px;top:5px;width:890px;">
-    <li style="display:inline-block"><a href="#about_openrave" class="subbutton" style="width:205px;">{% trans "About OpenRAVE" %}</a></li>
-    <li style="display:inline-block"><a href="#logics" class="subbutton" style="width:205px;">{% trans "Logics" %}</a></li>    
-    <li style="display:inline-block"><a href="#achievement" class="subbutton" style="width:205px">{% trans "Achievements" %}</a></li>
-    <li style="display:inline-block"><a href="#reference_documents" class="subbutton" style="width:205px">{% trans "White Papers" %}</a></li>
-     </ul>
+    <li style="display:inline-block"><a href="#motionplanning" class="subbutton" style="width:205px;">{% trans "Motion Planning" %}</a></li>    
+    <li style="display:inline-block"><a href="#multirobot" class="subbutton" style="width:205px">{% trans "Multiple Robots" %}</a></li>
+    <li style="display:inline-block"><a href="#inversekinematics" class="subbutton" style="width:205px">{% trans "Inverse Kinematics" %}</a></li>
+    <li style="display:inline-block"><a href="#layoutoptimization" class="subbutton" style="width:205px">{% trans "Layout Optimization" %}</a></li>
+  </ul>
 </div>
 
-<div id="technology_content" style="width:890px; height:1000px;overflow:auto;clear:both;">
+<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
   <div id="productheader" >
-    <div id="product_concept" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Motion Planning with OpenRAVE?" %}</h1>
+    <div id="motionplanning" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robot Motion Planning" %}</h1>
     </div>
   </div>
-  
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;"> {% trans "Robust Inverse Kinematics that Explores All Solutions" %} </h2>
+  <img width="640" src="{{ STATIC_URL }}img/motionplanning.png" frameborder="0" allowfullscreen/>
+  {% blocktrans %}<p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
+  {% endblocktrans %}
+</div>
+<br/><br/>
+<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
+  <div id="productheader" >
+    <div id="multirobot" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Multiple Robot Motion Planning" %}</h1>
     </div>
   </div>
-  <br/>
+  <iframe width="480" height="360" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0" allowfullscreen></iframe>
+  <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
+</div>
+<br/><br/>
+<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
+  <div id="productheader" >
+    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robust Inverse Kinematics for any Robot" %}</h1>
+    </div>
+  </div>
+  <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" frameborder="0" allowfullscreen/>
+  {% blocktrans %}<p>Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links.</p> {% endblocktrans %}
+  <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" frameborder="0" allowfullscreen/>
+</div>
+<br/><br/>
+<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
+  <div id="productheader" >
+    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Parallelized Layout Optimization" %}</h1>
+    </div>
+  </div>
+  <iframe width="640" height="360" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
+  <p>{% blocktrans %} Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task.</p>
+  <p>Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller. {% endblocktrans %}</p>
 </div>
 
-<div>
-  <h1>Robot Motion Planning Sample Demos</h1>
-  <h2>{% trans "Layout Optimization" %}</h2>
-  <iframe width="640" height="360" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
-  <h2>{% trans "Multi-Robot Motion Planning" %}</h2>
-  <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
-  <iframe width="480" height="360" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0" allowfullscreen></iframe>
-  
-</div>
-</div>
 {% endblock %}
