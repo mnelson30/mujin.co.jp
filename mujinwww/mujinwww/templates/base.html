@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
 {% load i18n %}
 <head>
-  <title>{% block title %}{% trans "MUJIN Inc Homepage | Indusctrial Robots for Everyone" %}{% endblock %}</title> 
+  <title>{% block title %}{% trans "MUJIN Inc Homepage | Industrial Robot for Everyone" %}{% endblock %}</title> 
   {% block css %}{% endblock %}
 <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
@@ -29,9 +29,9 @@
               <div id="headNewsHome">
                 <b class="white">NEWS</b>
                 <br/>
-                <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
+                <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper." %}</a>
                 <br/>
-                <a target="_blank" href="news.html">{% trans "MUJIN Annouced office was moved into Tokyo University." %}</a>
+                <a target="_blank" href="news.html">{% trans "MUJIN moved its headquarter into Tokyo University." %}</a>
               </div>
             </td>
             <td>
@@ -40,7 +40,7 @@
             <td style="align:left">
                <div id="inquiry"> 
                  <a href="/inquiry">
-                  <p class="button">{% trans "contact us" %}<p>
+                  <p class="button">{% trans "Contact us" %}<p>
                 </a>
               </div>
             </td>
@@ -54,7 +54,7 @@
           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
           <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
           <li><a href="/news" title="News">{% trans "News" %}</a></li>
-          <li><a href="/acquiring_process" title="acquiring_process">{% trans "Acquiring process" %}</a></li>
+          <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
           <li><a href="/carreers" title="Careers">{% trans "Careers" %}</a></li>
           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
         </ul>

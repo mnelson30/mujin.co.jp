@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN Inc.| Aquiring process" %}
+{% trans "MUJIN Inc.| Services" %}
 {% endblock %}
 {% block headscripts %}
 <script>
@@ -53,17 +53,17 @@
 </div>
 
 {% block product_content %}
-<div id="product_content" style="width:890px; height:600px;overflow:auto;clear:both;">
+<div id="product_content" style="width:890px; overflow:auto;clear:both;">
   <div id="productheader" >
     <div id="licensing_options" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:340px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Licensing Options" %}</h1>
     </div>
   </div>
   <div id="productbox" style="margin-top:20px;">
     <div class="h2_lef">      
-      <h2 style="margin-left:10px;"> {% trans "Annual license system" %} </h2>
+      <h2 style="margin-left:10px;"> {% trans "Annual License System" %} </h2>
     </div>
     <div class="box2">
-      <p>{% trans "MUJIN offers only annual license option for commercial companies. License fee differs dependent on which kind of MUJIN Controller you choose and how much computing power you want. Usually, price of MUJIN Controller Cloud is more reasonable than MUJIN Controller served with a server. For price detail, please feel free to" %} <a href="/inquiry">{% trans " ask us" %}</a>{% trans " or call +81-050-3682-7852" %}</p>
+      <p>{% trans "MUJIN offers annual license option for commercial companies. License fee differs dependent on which kind of MUJIN Controller you choose and how much computing power you want. Usually, price of MUJIN Controller Cloud is more reasonable than MUJIN Controller served with a server. For price detail, please feel free to" %} <a href="/inquiry">{% trans " ask us" %}</a>{% trans " or call +81-050-3682-7852" %}</p>
     </div>
   </div>
 
@@ -72,7 +72,7 @@
       <h2 style="margin-left:10px;"> {% trans "Accademic License System" %} </h2>
     </div>
     <div class="box2">
-      <p>{% trans "MUJIN Inc. offers academic licenses for non-commercial research. These licenses are only for academic research and for student projects. We expect many professors in robot engineering, electric engineering, and other fields to use our academic license." %}</p>
+      <p>{% trans "MUJIN offers academic licenses for non-commercial research. These licenses are only for academic research and for student projects. We expect many professors in robot engineering, computer science, electrical engineering, and many other fields to use our academic license." %}</p>
       </br>
       <p>{% trans "The academic license agreement includes the following provisions:" %}</p>
       </br>
@@ -89,13 +89,13 @@
   </div>
   <div id="productbox" style="margin-top:20px;">
     <div class="h2_lef">
-      <h2 style="margin-left:10px;">{% trans "Flow to acquire product" %} </h2>
+      <h2 style="margin-left:10px;">{% trans "Steps to acquire a product" %} </h2>
     </div>
     <div class="box2">
       <table>
         <tr>
           <td style="height:100px;width:320px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
-            <p><font color="red">STEP 1</font> {% trans " To contact MUJIN sales" %}</p>
+            <p><font color="red">STEP 1</font> {% trans " Contacting MUJIN sales" %}</p>
           </td>
           <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
             <p>{% trans "Please send an inquiry by" %} <a href="/inquiry">web<a>,{% trans "or call +81-050-3682-7852" %}</p>
@@ -103,28 +103,28 @@
         </tr>
         <tr>
           <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
-            <p><font color="red">STEP 2</font> {% trans " Questioning about your bottleneck" %}</p>
+            <p><font color="red">STEP 2</font> {% trans " Presenting your problem" %}</p>
           </td>
           <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
-            <p>{% trans "We ask you to have a meeting to recognize your customer's problem. Questioning would be very important to propose what application and ik  approach is suitable for you. If possible, we also would like to present your data, such as CAD drawings." %}</p>
+            <p>{% trans "MUJIN will arrange a meeting with you to fully understand your problem." %}</p>
           </td>
         </tr>
 
         <tr>
           <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
-            <p><font color="red">STEP 3</font> {% trans " Analysis and suggestion" %}</p>
+            <p><font color="red">STEP 3</font> {% trans " Receiving MUJIN proposal" %}</p>
           </td>
           <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
-            <p>{% trans "Considering customer's needs, we analize the problem and propose a suggestion the best way to maximize customer's profit. We can also decide trial duration of service." %} </p>
+            <p>{% trans "We analyze the problem and propose a MUJIN solution considering all the constraints and requirements. We will also decide the details about the trial of the service." %} </p>
           </td>
         </tr>
 
         <tr>
           <td style="height:100px;background: url({{ STATIC_URL }}img/acquiring_chart.png);background-repeat:no-repeat;">
-            <p><font color="red">STEP 4</font> {% trans " Sending a quatation" %}</p>
+            <p><font color="red">STEP 4</font> {% trans " Quotation" %}</p>
           </td>
           <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
-            <p>{% trans "MUJIN Sales division sends you a quotation, and as soon as teh customer approves it,  product will be delivered." %} </p>
+            <p>{% trans "MUJIN sales sends you a quotation, and as soon as you approve it, the product will be delivered." %} </p>
           </td>
         </tr>
 
@@ -133,7 +133,7 @@
             <p><font color="red">STEP 5</font>{% trans " Operation starts" %}</p>
           </td>
           <td style="background:url({{ STATIC_URL }}img/acquiring_chart2.png">
-            <p>{% trans "In most cases, customer is full supported by MUJIN engineer while contract is valid." %} </p>
+            <p>{% trans "In most cases, you are fully supported by MUJIN engineers while contract is valid." %} </p>
           </td>
         </tr>
 
