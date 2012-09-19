@@ -13,9 +13,9 @@
 </div>  
 
 <div id="inquiry_head" align="center">   
-<h1>{% trans "Contact us" %} </h1>
-<h3>{% trans "Reach out to MUJIN's representatives and find your solution." %}</h3>
-<p>{% trans "For any questions email " %} <img style="vertical-align:middle" src="{{STATIC_URL}}img/mujin_mail.png"/></p>
+  <h1>{% trans "Contact us" %} </h1>
+  <h3>{% trans "Reach out to MUJIN's representatives and find your solution." %}</h3>
+  <p>{% trans "For any questions email " %} <img style="vertical-align:middle" src="{{STATIC_URL}}img/mujin_mail.png"/></p>
 
 </div>
 <div id="fsurround" align="center">
@@ -73,11 +73,11 @@
           </td>
         </tr> 
         <tr>
-        <td valign="top">
-          <label for="Country">{% trans "Country" %} *</label>
-        </td>
-        <td valign="top">
-          <input class="shadowing" type="text" size="30" maxlength="50" name="first_name">
+          <td valign="top">
+            <label for="Country">{% trans "Country" %} *</label>
+          </td>
+          <td valign="top">
+            <input class="shadowing" type="text" size="30" maxlength="50" name="first_name">
           </td>
         </tr>            
         <tr>
@@ -109,13 +109,12 @@
             <input class="shadowing" type="submit" value="{% trans "Submit Form" %} ">
             <br>
             <br>
-           
+            
           </td>
         </tr>
       </tbody>
     </table>
   </form>
   <br>
-</div>
 </div>
 {% endblock %}

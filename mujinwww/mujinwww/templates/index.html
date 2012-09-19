@@ -30,7 +30,7 @@
 </div>
 
 <div id="QuoteBox" class="shadowing">
-  <span class="header" style="color:#666666;" ></br></br>{% trans "MUJIN's innovative technology makes it easier to program industrial robots and improves automation quality." %}
+  <span class="header" style="color:#666666;" ><br/><br/>{% trans "MUJIN's innovative technology makes it easier to program industrial robots and improves automation quality." %}
   </span>
 </div>
 
@@ -44,15 +44,14 @@
     <tr>
       <td> <div id="learn_mujincontroller" style="width:400px">
           <h3>{% trans "Are you taking too long to program a robot?" %}</h3>
-          <h2><font color="#EE920E">{% trans "Learn more here" %}</font></h2>
-          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img></br>                                <a href="/inquiry">
+          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img><br/>                                <a href="/inquiry">
             <p class="button">{% trans "Apply for trial" %}</p>
           </a>                                
         </div>
       </td><td>
-        <div id="learn_openrave" style="width:400px"></br>
+        <div id="learn_openrave" style="width:400px"><br/>
           <h3>{% trans "Be close to MUJIN's technology" %}</h3>
-          <h2><font color="#EE920E">{% trans "learn from here" %}</font></h2></br></br>
+          <br/>
           <p class="button">{% trans "Need to know MUJIN's technology?" %}</p>                        
         </div>
       </td>
@@ -63,14 +62,9 @@
 <div id="NewsHome">
   <b class="white">{% trans "News" %}</b>
   <br/>
-  <a target="_blank" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</a>
- </br>
- <a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a>
- <br/>
- <br/>
- <a target="_blank" href="news.html">{% trans "MUJIN moved its headquarter into Tokyo University." %}</a>
- <br/>
- <br/>
+  <p><a target="_blank" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</a></p>
+ <p><a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a></p>
+ <p><a target="_blank" href="/news">{% trans "MUJIN moved its headquarter into Tokyo University." %}</a></p>
 </div>
 <div id="NewsHome">
   <b class="white">{% trans "Vision" %}</b>
