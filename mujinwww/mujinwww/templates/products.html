@@ -29,16 +29,25 @@
       <table>
         <tr>
           <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-            {% trans "MUJIN Controller Cloud" %}</h3></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}</li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}</li>
+            </ul>
+            </div>
+          </td>
         </tr>
       </table>
     <li>
       <table>
         <tr>
           <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-              {% trans "MUJIN Controller" %}</h3></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 CPU cores high performance server running on a user internal network." %}</li>
+              <li>{% trans "All operation done inside browser, so support all OSes." %}</li>
+            </ul>
+          </td>
         </tr>
       </table>
     </li>
@@ -100,7 +109,7 @@
   
   <div id="productbox" style="margin-top:20px;">
     <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red">{% trans "The World's First" %} </font>{% trans "Automated Collision Avoidance System" %}</h2>
+      <h2 style="margin-left:10px;"><font color="red">{% trans "The World's First" %} </font>{% trans " Automated Collision Avoidance System" %}</h2>
     </div>
     <div class="box2">
       <p> {% trans "Although existing industrial robot programming packages can check for collisions of the workpiece and robot, they require users to manually specify way-points to move the robot out of collision. In comparison, MUJIN Controller automates all collision avoidance and constraint handling processes. We provide clean, simple, and customizable interfaces that require only high-level parameters as input." %}</p><br/>
@@ -144,7 +153,7 @@
   
   <div id="productbox" style="margin-top:20px;">
     <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red"> {% trans "The World's First" %}</font> {% trans "Multi-Robot Manipulation Planning System" %} </h2>
+      <h2 style="margin-left:10px;"><font color="red"> {% trans "The World's First" %}</font> {% trans " Multi-Robot Manipulation Planning System" %} </h2>
     </div>
     <div class="box2">
       <p><img  width="250" height="175" src="{{ STATIC_URL }}img/dual_arm.png" frameborder="0" style="float:right"/>{% trans "Most other robot simulation packages consider just a single robot and are not configured to compute solutions for multiple robots simultaneously. Because of this handicap, robot programmers have a very difficult time producing non-colliding motions for all robots. MUJIN has developed algorithms to make collision-free motion plans for multiple robots operating simultaneously. We also make it possible to optimize the combined locations of all robots involved in the task. The Multi-robot functionality would allow customers to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. We can also optimize for cell-manufacturing scenarios where a dual-arm robot performs a complex assembly task." %}</p>
@@ -153,7 +162,7 @@
   
   <div id="productbox" style="margin-top:20px;">
     <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red">{% trans "The World's First" %}</font>{% trans "Robot Placement Optimization" %} </h2>
+      <h2 style="margin-left:10px;"><font color="red">{% trans "The World's First" %}</font>{% trans " Parallelized Placement Optimization System" %} </h2>
     </div>
     <div class="box2">
       <p><img src="{{ STATIC_URL }}img/placement_opt.png" style="float:right"/>{% trans "What are the feasible locations of the robot where the task can be completed? Among these feasible locations, which allows the robot to perform the task most quickly? To answer these questions, we need to evaluate thousands of robot positions and orientations, and for each robot placement we need to solve for an optimal motion plan. For existing automation tools, it may take too much time to reasonably perform such optimization while maintaining task and safety constraints. MUJIN Controller is designed with the latest parallel computing technology that enables us to provide a good solution in a relatively short period of time while taking into account collision avoidance, singularities, and sensor-based visibility constraints." %}
@@ -161,7 +170,7 @@
     
     <div id="productbox" style="margin-top:20px;">
       <div class="h2_lef">
-        <h2 style="margin-left:10px;"><font color="red">{% trans "The World First" %}</font>{% trans "Flexible Grasp Planner" %}</h2>
+        <h2 style="margin-left:10px;"><font color="red">{% trans "The World First" %}</font>{% trans " Grasp Planning System" %}</h2>
       </div>
       <div class="box2">
         <ul>
@@ -185,12 +194,12 @@
       <p><img src="{{ STATIC_URL }}img/add_on.gif" style="height:350px;margin-right:5px;float:left;"/>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} <br/><br/>
         {% trans "MUJIN Controller supports the following formats:" %}
         <ul style="background:#e7e7e7; width:80px; float:left;">
-          <li>XML</li>
+          <li>COLLADA</li>
           <li>IGES</li>
           <li>STEP</li>
-          <li>DXF</li>
-          <li>COLLADA</li>
-          <li>VRML</li>
+          <li>IV/VRML</li>
+          <li>STL</li>
+          <li>DirectX</li>
         </ul>
       </p>
     </div>
