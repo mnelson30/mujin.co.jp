@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 13:04+0900\n"
+"POT-Creation-Date: 2012-09-19 13:39+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,73 +20,43 @@ msgstr ""
 msgid "MUJIN | Company profile"
 msgstr "MUJINコントローラ | 会社情報"
 
-#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:63
+#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:60
 msgid "About MUJIN"
 msgstr "会社情報"
 
-#: mujinwww/templates/aboutmujin.html:23
-#: mujinwww/templates/access_map.html:102 mujinwww/templates/carreers.html:120
-#: mujinwww/templates/company_development.html:59
-#: mujinwww/templates/company_overview.html:107
-#: mujinwww/templates/management_team.html:45 mujinwww/templates/news.html:174
-#: mujinwww/templates/vision.html:55
+#: mujinwww/templates/aboutmujinpane.html:10
 msgid "Corporate overview"
 msgstr "会社概要"
 
-#: mujinwww/templates/aboutmujin.html:29
-#: mujinwww/templates/access_map.html:108 mujinwww/templates/carreers.html:126
-#: mujinwww/templates/company_development.html:65
-#: mujinwww/templates/company_overview.html:113
-#: mujinwww/templates/index.html:79 mujinwww/templates/management_team.html:51
-#: mujinwww/templates/news.html:180 mujinwww/templates/vision.html:11
-#: mujinwww/templates/vision.html.py:61
+#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:76
+#: mujinwww/templates/vision.html:11
 msgid "Vision"
 msgstr "ビジョン"
 
-#: mujinwww/templates/aboutmujin.html:35
-#: mujinwww/templates/access_map.html:114 mujinwww/templates/carreers.html:132
-#: mujinwww/templates/company_development.html:71
-#: mujinwww/templates/company_overview.html:119
-#: mujinwww/templates/management_team.html:57 mujinwww/templates/news.html:186
-#: mujinwww/templates/vision.html:67
+#: mujinwww/templates/aboutmujinpane.html:22
 msgid "Management team"
 msgstr "経営チーム"
 
-#: mujinwww/templates/aboutmujin.html:43
-#: mujinwww/templates/access_map.html:122 mujinwww/templates/carreers.html:140
-#: mujinwww/templates/company_development.html:79
-#: mujinwww/templates/company_overview.html:127
-#: mujinwww/templates/management_team.html:65 mujinwww/templates/news.html:70
-#: mujinwww/templates/news.html.py:97 mujinwww/templates/news.html:194
-#: mujinwww/templates/vision.html:75
+#: mujinwww/templates/aboutmujinpane.html:30 mujinwww/templates/news.html:70
+#: mujinwww/templates/news.html.py:97
 msgid "Visit office"
 msgstr "小石川事業所"
 
-#: mujinwww/templates/aboutmujin.html:49
-#: mujinwww/templates/access_map.html:128 mujinwww/templates/carreers.html:146
-#: mujinwww/templates/company_development.html:85
-#: mujinwww/templates/company_overview.html:133
-#: mujinwww/templates/management_team.html:71 mujinwww/templates/news.html:200
-#: mujinwww/templates/vision.html:81
+#: mujinwww/templates/aboutmujinpane.html:36
 msgid "Message from founder"
 msgstr "創業者メッセージ"
 
-#: mujinwww/templates/aboutmujin.html:55
-#: mujinwww/templates/access_map.html:134 mujinwww/templates/carreers.html:152
-#: mujinwww/templates/company_development.html:91
-#: mujinwww/templates/company_overview.html:139
-#: mujinwww/templates/management_team.html:77 mujinwww/templates/news.html:206
-#: mujinwww/templates/vision.html:87
+#: mujinwww/templates/aboutmujinpane.html:42
 msgid "Company development"
 msgstr "沿革"
 
 #: mujinwww/templates/access_map.html:5
-msgid "MUJIN | Visit Office"
-msgstr "株式会社MUJIN | "
+msgid "MUJIN | Offices"
+msgstr "株式会社MUJIN | オフィス"
 
 #: mujinwww/templates/access_map.html:11
 #, fuzzy
-msgid "Visit Office"
+msgid "Offices"
 msgstr "小石川事業所"
 
 #: mujinwww/templates/access_map.html:18 mujinwww/templates/access_map.html:24
@@ -192,7 +162,7 @@ msgstr ""
 msgid "MUJIN Inc Homepage | Industrial Robot for Everyone"
 msgstr "株式会社MUJIN ホームページ | 全ての人に産業用ロボットを"
 
-#: mujinwww/templates/base.html:33 mujinwww/templates/index.html:69
+#: mujinwww/templates/base.html:33 mujinwww/templates/index.html:66
 msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
 msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 
@@ -201,7 +171,7 @@ msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 msgid "MUJIN was introduced by Yomiuri newspaper."
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/base.html:38 mujinwww/templates/index.html:74
+#: mujinwww/templates/base.html:38 mujinwww/templates/index.html:71
 #, fuzzy
 msgid "MUJIN moved its headquarter into Tokyo University."
 msgstr "MUJINは本社を東京大学内に移転いたしました。"
@@ -210,33 +180,33 @@ msgstr "MUJINは本社を東京大学内に移転いたしました。"
 msgid "img/en/inquiry.jpg"
 msgstr "img/ja/inquiry.jpg"
 
-#: mujinwww/templates/base.html:47 mujinwww/templates/inquiry.html:16
+#: mujinwww/templates/base.html:46 mujinwww/templates/inquiry.html:16
 msgid "Contact us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/base.html:57
+#: mujinwww/templates/base.html:54
 msgid "Home"
 msgstr "ホーム"
 
-#: mujinwww/templates/base.html:58
+#: mujinwww/templates/base.html:55
 msgid "Products"
 msgstr "製品情報"
 
-#: mujinwww/templates/base.html:59
+#: mujinwww/templates/base.html:56
 msgid "Technology"
 msgstr "技術情報"
 
-#: mujinwww/templates/base.html:60 mujinwww/templates/index.html:67
+#: mujinwww/templates/base.html:57 mujinwww/templates/index.html:64
 #: mujinwww/templates/news.html:12
 msgid "News"
 msgstr "新着情報"
 
-#: mujinwww/templates/base.html:61
+#: mujinwww/templates/base.html:58
 msgid "Services"
 msgstr ""
 
-#: mujinwww/templates/base.html:62 mujinwww/templates/carreers.html:12
-#: mujinwww/templates/index.html:85
+#: mujinwww/templates/base.html:59 mujinwww/templates/carreers.html:12
+#: mujinwww/templates/index.html:82
 msgid "Careers"
 msgstr "採用情報"
 
@@ -552,11 +522,11 @@ msgstr ""
 msgid "Apply for trial"
 msgstr "体験版の申込はここから"
 
-#: mujinwww/templates/index.html:53
+#: mujinwww/templates/index.html:54
 msgid "Be close to MUJIN's technology"
 msgstr "MUJINの技術とは？"
 
-#: mujinwww/templates/index.html:54
+#: mujinwww/templates/index.html:55
 msgid "learn from here"
 msgstr ""
 
@@ -565,11 +535,11 @@ msgstr ""
 msgid "Need to know MUJIN's technology?"
 msgstr "MUJINの技術とは？"
 
-#: mujinwww/templates/index.html:71
+#: mujinwww/templates/index.html:68
 msgid "MUJIN was introduced by Yomiuri newspaper"
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/index.html:81
+#: mujinwww/templates/index.html:78
 #, fuzzy
 msgid ""
 "MUJIN strives to automate factory and industrial processes through the "
@@ -579,7 +549,7 @@ msgstr ""
 "MUJINは従来は困難であった、複雑化した知能的ロボットシステムの構築をより促進す"
 "る事により、お客様の生産性向上に大きく貢献いたします。"
 
-#: mujinwww/templates/index.html:87
+#: mujinwww/templates/index.html:84
 #, fuzzy
 msgid ""
 "Thinking about changing your career? At MUJIN, you could change the world, "
