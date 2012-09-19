@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 10:02+0000\n"
+"POT-Creation-Date: 2012-09-19 11:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -353,7 +353,7 @@ msgid "2011/7/6"
 msgstr "2011年7月6日"
 
 #: mujinwww/templates/company_overview.html:37
-msgid "Representative CEO"
+msgid "Representative Officer"
 msgstr "代表取締役 CEO"
 
 #: mujinwww/templates/company_overview.html:38
@@ -361,13 +361,15 @@ msgid "Issei Takino"
 msgstr "滝野　一征"
 
 #: mujinwww/templates/company_overview.html:41
-msgid "CEOs"
-msgstr "取締役"
+msgid "Officers"
+msgstr "取締役員"
 
 #: mujinwww/templates/company_overview.html:43
 msgid ""
 "CTO  Rosen Diankov, PhD. (Robot Engineering from Carnegie Mellon University)"
-msgstr "取締役技術部長　CMUロボット工学博士  　　 出杏光　魯仙(Rosen Diankov)"
+msgstr ""
+"取締役CTO（就任予定）カーネギーメロン大学ロボット工学博士  出杏光　魯仙 "
+"(Rosen Diankov)"
 
 #: mujinwww/templates/company_overview.html:44
 msgid ""
@@ -392,7 +394,7 @@ msgid "AZX Professionals Group Law Offices"
 msgstr "AZX総合法律事務所"
 
 #: mujinwww/templates/company_overview.html:52
-msgid "Advisers"
+msgid "Advisors"
 msgstr "顧問"
 
 #: mujinwww/templates/company_overview.html:54
@@ -405,7 +407,7 @@ msgstr "稲葉　雅幸　　　（東京大学教授　工学博士）"
 
 #: mujinwww/templates/company_overview.html:56
 msgid "Kei Okada　（Associate Professor, Tokyo University）"
-msgstr "岡田　慧　　　（東京大学助教授　工学博士）"
+msgstr "岡田　慧　　　（東京大学准教授　工学博士）"
 
 #: mujinwww/templates/company_overview.html:60
 msgid "Major Stockholders"
@@ -1286,6 +1288,9 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "CEOs"
+#~ msgstr "取締役"
 
 #~ msgid " Robot Placement Optimization"
 #~ msgstr "ロボット配置の最適化"
