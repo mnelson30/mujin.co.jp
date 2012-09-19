@@ -29,16 +29,25 @@
       <table>
         <tr>
           <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-            {% trans "MUJIN Controller Cloud" %}</h3></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}</li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization anywhere in the world." %}</li>
+            </ul>
+            </div>
+          </td>
         </tr>
       </table>
     <li>
       <table>
         <tr>
           <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-              {% trans "MUJIN Controller" %}</h3></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 CPU core high performance server running on a user internal network." %}</li>
+              <li>{% trans "All operation done inside browser, so support all OSes." %}</li>
+            </ul>
+          </td>
         </tr>
       </table>
     </li>
@@ -185,12 +194,12 @@
       <p><img src="{{ STATIC_URL }}img/add_on.gif" style="height:350px;margin-right:5px;float:left;"/>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} <br/><br/>
         {% trans "MUJIN Controller supports the following formats:" %}
         <ul style="background:#e7e7e7; width:80px; float:left;">
-          <li>XML</li>
+          <li>COLLADA</li>
           <li>IGES</li>
           <li>STEP</li>
-          <li>DXF</li>
-          <li>COLLADA</li>
-          <li>VRML</li>
+          <li>IV/VRML</li>
+          <li>STL</li>
+          <li>DirectX</li>
         </ul>
       </p>
     </div>
