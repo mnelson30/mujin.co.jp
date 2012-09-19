@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 08:58+0000\n"
+"POT-Creation-Date: 2012-09-19 09:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -465,6 +465,10 @@ msgid ""
 msgstr ""
 "MUJINの革新的技術は産業ロボットのプログラミング方法を簡素化し、自動化品質を向"
 "上させます"
+
+#: mujinwww/templates/index.html:38
+msgid "Industrial Robot Automation<br/>for Everyone"
+msgstr "全ての人に<br/>ロボットプログラミングを"
 
 #: mujinwww/templates/index.html:46
 msgid "Are you taking too long to program a robot?"
@@ -1038,7 +1042,7 @@ msgstr ""
 
 #: mujinwww/templates/services.html:87
 msgid "Process for Acquiring MUJIN Controller"
-msgstr ""
+msgstr "MUJINコントローラ入手ステップ"
 
 #: mujinwww/templates/services.html:92
 msgid "Steps to acquire a product"
