@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 09:11+0000\n"
+"POT-Creation-Date: 2012-09-19 09:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "会社情報"
 msgid "Corporate overview"
 msgstr "会社概要"
 
-#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:70
+#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:67
 #: mujinwww/templates/vision.html:11
 msgid "Vision"
 msgstr "ビジョン"
@@ -150,7 +150,7 @@ msgstr ""
 msgid "MUJIN Inc Homepage | Industrial Robot for Everyone"
 msgstr "株式会社MUJIN ホームページ | 全ての人に産業用ロボットを"
 
-#: mujinwww/templates/base.html:33 mujinwww/templates/index.html:65
+#: mujinwww/templates/base.html:33 mujinwww/templates/index.html:62
 msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
 msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 
@@ -158,7 +158,7 @@ msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 msgid "MUJIN was introduced by Yomiuri newspaper."
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/base.html:37 mujinwww/templates/index.html:67
+#: mujinwww/templates/base.html:37 mujinwww/templates/index.html:64
 msgid "MUJIN moved its headquarter into Tokyo University."
 msgstr "MUJINは本社を東京大学内に移転いたしました。"
 
@@ -182,7 +182,7 @@ msgstr "製品情報"
 msgid "Technology"
 msgstr "技術情報"
 
-#: mujinwww/templates/base.html:56 mujinwww/templates/index.html:63
+#: mujinwww/templates/base.html:56 mujinwww/templates/index.html:60
 #: mujinwww/templates/news.html:12
 msgid "News"
 msgstr "新着情報"
@@ -192,7 +192,7 @@ msgid "Services"
 msgstr "導入ステップ"
 
 #: mujinwww/templates/base.html:58 mujinwww/templates/carreers.html:12
-#: mujinwww/templates/index.html:76
+#: mujinwww/templates/index.html:73
 msgid "Careers"
 msgstr "採用情報"
 
@@ -478,19 +478,15 @@ msgstr "ロボットのティーチングに時間がかかりすぎていませ
 msgid "Apply for trial"
 msgstr "体験版の申込はこちらから"
 
-#: mujinwww/templates/index.html:53
-msgid "Be close to MUJIN's technology"
-msgstr "MUJINの技術とは？"
-
-#: mujinwww/templates/index.html:55
+#: mujinwww/templates/index.html:52
 msgid "Need to know MUJIN's technology?"
 msgstr "MUJINの技術とは？"
 
-#: mujinwww/templates/index.html:66
+#: mujinwww/templates/index.html:63
 msgid "MUJIN was introduced by Yomiuri newspaper"
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/index.html:72
+#: mujinwww/templates/index.html:69
 msgid ""
 "MUJIN strives to automate factory and industrial processes through the "
 "creation of complex robotic systems capable of intelligent reasoning to "
@@ -499,7 +495,7 @@ msgstr ""
 "MUJINは従来は困難であった、複雑化した知能的ロボットシステムの構築をより促進す"
 "る事により、お客様の生産性向上に大きく貢献いたします。"
 
-#: mujinwww/templates/index.html:78
+#: mujinwww/templates/index.html:75
 msgid ""
 "Thinking about changing your career? At MUJIN, you could change the world, "
 "too."
@@ -657,8 +653,8 @@ msgstr "世界初のロボット動作計画のクラウドコンピューティ
 
 #: mujinwww/templates/products.html:35
 msgid ""
-"Can use 20-100 CPU cores simultaneously for motion optimization anywhere in "
-"the world."
+"Can use 20-100 CPU cores simultaneously for motion optimization from "
+"anywhere in the world."
 msgstr "20-100CPUコアを同時に使用しながら動作の最適化の実現化。"
 
 #: mujinwww/templates/products.html:45 mujinwww/templates/services.html:41
@@ -667,7 +663,7 @@ msgstr "MUJINコントローラ"
 
 #: mujinwww/templates/products.html:47
 msgid ""
-"On-site dedicated 32 CPU core high performance server running on a user "
+"On-site dedicated 32 CPU cores high performance server running on a user "
 "internal network."
 msgstr ""
 "32CPUコア搭載の専用サーバーで高性能計算をお客様ネットワーク内に設置可能。"
@@ -1290,6 +1286,9 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "Be close to MUJIN's technology"
+#~ msgstr "MUJINの技術とは？"
 
 #~ msgid "Aug"
 #~ msgstr "8月"
