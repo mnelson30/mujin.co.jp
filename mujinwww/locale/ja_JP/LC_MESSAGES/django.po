@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 11:44+0000\n"
+"POT-Creation-Date: 2012-09-19 23:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: mujinwww/templates/aboutmujin.html:5
 msgid "MUJIN | Company profile"
 msgstr "MUJINコントローラ | 会社情報"
 
-#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:59
+#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:60
 msgid "About MUJIN"
 msgstr "会社情報"
 
@@ -122,7 +122,7 @@ msgid ""
 msgstr "ゲートではアントレプレナープラザに行く旨をお伝え下さい。"
 
 #: mujinwww/templates/access_map.html:74
-#: mujinwww/templates/company_overview.html:61
+#: mujinwww/templates/company_overview.html:64
 msgid "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan"
 msgstr "東京都文京区小石川1-22-9"
 
@@ -162,36 +162,36 @@ msgstr "株式会社MUJINが読売新聞に紹介されました。"
 msgid "MUJIN moved its headquarter into Tokyo University."
 msgstr "MUJINは本社を東京大学内に移転いたしました。"
 
-#: mujinwww/templates/base.html:41
+#: mujinwww/templates/base.html:42
 msgid "img/en/inquiry.jpg"
 msgstr "img/ja/inquiry.jpg"
 
-#: mujinwww/templates/base.html:45 mujinwww/templates/inquiry.html:16
+#: mujinwww/templates/base.html:46 mujinwww/templates/inquiry.html:16
 msgid "Contact us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/base.html:53
+#: mujinwww/templates/base.html:54
 msgid "Home"
 msgstr "ホーム"
 
-#: mujinwww/templates/base.html:54
+#: mujinwww/templates/base.html:55
 msgid "Products"
 msgstr "製品情報"
 
-#: mujinwww/templates/base.html:55
+#: mujinwww/templates/base.html:56
 msgid "Technology"
 msgstr "技術情報"
 
-#: mujinwww/templates/base.html:56 mujinwww/templates/index.html:60
+#: mujinwww/templates/base.html:57 mujinwww/templates/index.html:60
 #: mujinwww/templates/news.html:12
 msgid "News"
 msgstr "新着情報"
 
-#: mujinwww/templates/base.html:57
+#: mujinwww/templates/base.html:58
 msgid "Services"
 msgstr "導入ステップ"
 
-#: mujinwww/templates/base.html:58 mujinwww/templates/carreers.html:12
+#: mujinwww/templates/base.html:59 mujinwww/templates/carreers.html:12
 #: mujinwww/templates/index.html:73
 msgid "Careers"
 msgstr "採用情報"
@@ -349,74 +349,83 @@ msgid "Founded"
 msgstr "設立日"
 
 #: mujinwww/templates/company_overview.html:34
-msgid "2011/7/6"
-msgstr "2011年7月6日"
+msgid "November 6th, 2011"
+msgstr "2011年11月6日"
 
 #: mujinwww/templates/company_overview.html:37
-msgid "Representative Officer"
-msgstr "代表取締役 CEO"
+#: mujinwww/templates/management_team.html:27
+msgid "Management Team"
+msgstr "役員紹介"
 
 #: mujinwww/templates/company_overview.html:38
-msgid "Issei Takino"
-msgstr "滝野　一征"
+#: mujinwww/templates/management_team.html:33
+msgid "CEO Issei Takino"
+msgstr "CEO 滝野　一征"
 
-#: mujinwww/templates/company_overview.html:41
-msgid "Officers"
-msgstr "取締役員"
+#: mujinwww/templates/company_overview.html:39
+msgid "CTO Rosen Diankov, Ph.D.(Carnegie Mellon Univeristy)"
+msgstr ""
+"CTO 出杏光　魯仙(Rosen Diankov)カーネギーメロン大学ロボット工学博士"
 
 #: mujinwww/templates/company_overview.html:43
-msgid ""
-"CTO  Rosen Diankov, PhD. (Robot Engineering from Carnegie Mellon University)"
-msgstr ""
-"取締役CTO（就任予定）カーネギーメロン大学ロボット工学博士  出杏光　魯仙 "
-"(Rosen Diankov)"
+msgid "Board of Directors"
+msgstr "取締役"
 
-#: mujinwww/templates/company_overview.html:44
+#: mujinwww/templates/company_overview.html:45
+msgid "Representative Director: Issei Takino, CEO"
+msgstr "代表取締役　滝野　一征"
+
+#: mujinwww/templates/company_overview.html:46
+msgid "Director (To be elected): Rosen Diankov , Ph.D.,  CTO"
+msgstr "取締役（就任予定）出杏光　魯仙(Rosen Diankov)"
+
+#: mujinwww/templates/company_overview.html:47
 msgid ""
-"External Officer　Tetsuya Yamamoto （The University of Tokyo Edge Capital, "
-"GP)"
+"Direcotr (Outside): Ted Yamamoto, General Partner at UTEC - The University "
+"of Tokyo Edge Capital"
 msgstr ""
 "社外取締役　山本　哲也　（東京大学エッジキャピタル　ジェネラル・パートナー）"
 
-#: mujinwww/templates/company_overview.html:48
+#: mujinwww/templates/company_overview.html:51
 msgid "Legal Advisor"
 msgstr "法律顧問"
 
-#: mujinwww/templates/company_overview.html:49
-msgid "AZX Professionals Group Law Offices"
+#: mujinwww/templates/company_overview.html:52
+
+msgid "AZX Professionals Group"
 msgstr "AZX総合法律事務所"
 
-#: mujinwww/templates/company_overview.html:52
-msgid "Major Stockholders"
+#: mujinwww/templates/company_overview.html:55
+msgid "Shareholders"
 msgstr "主要株主"
 
-#: mujinwww/templates/company_overview.html:54
+#: mujinwww/templates/company_overview.html:57
 msgid "MUJIN Founders"
 msgstr "MUJIN創業メンバー"
 
-#: mujinwww/templates/company_overview.html:55
-msgid "The University of Tokyo Edge Capital"
+#: mujinwww/templates/company_overview.html:58
+msgid "UTEC2,L.P."
 msgstr "UTEC2号投資事業有限責任組合"
 
-#: mujinwww/templates/company_overview.html:59
+#: mujinwww/templates/company_overview.html:62
 msgid "Location"
 msgstr "所在地"
 
-#: mujinwww/templates/company_overview.html:60
-#: mujinwww/templates/company_overview.html:66
-#: mujinwww/templates/company_overview.html:71
+#: mujinwww/templates/company_overview.html:63
+#: mujinwww/templates/company_overview.html:69
+#: mujinwww/templates/company_overview.html:74
 msgid "[Headquarter]"
 msgstr "[本社]"
 
-#: mujinwww/templates/company_overview.html:60
+#: mujinwww/templates/company_overview.html:63
 msgid "Tokyo University Entrepreneur Plaza, 7-3-1,Hongo,Bunkyo-ku,Tokyo,Japan"
 msgstr "東京都文京区本郷7-3-1, 東京大学アントレプレナープラザ"
 
-#: mujinwww/templates/company_overview.html:60
+#: mujinwww/templates/company_overview.html:63
 msgid "[Koishikawa Office]"
 msgstr "[小石川事業所]"
 
-#: mujinwww/templates/company_overview.html:65
+#: mujinwww/templates/company_overview.html:68
 msgid "Telephone"
 msgstr "電話"
 
@@ -537,14 +546,6 @@ msgstr "コメント"
 #: mujinwww/templates/inquiry.html:109
 msgid "Submit Form"
 msgstr "フォーム送信"
-
-#: mujinwww/templates/management_team.html:27
-msgid "Management Team"
-msgstr "役員紹介"
-
-#: mujinwww/templates/management_team.html:33
-msgid "CEO Issei Takino"
-msgstr "代表取締役　滝野　一征"
 
 #: mujinwww/templates/management_team.html:34
 msgid "CTO Rosen Diankov"
@@ -1265,6 +1266,21 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "2011/7/6"
+#~ msgstr "2011年7月6日"
+
+#~ msgid "Representative Officer"
+#~ msgstr "代表取締役 CEO"
+
+#~ msgid "Issei Takino"
+#~ msgstr "滝野　一征"
+
+#~ msgid "Officers"
+#~ msgstr "取締役員"
+
+#~ msgid "The University of Tokyo Edge Capital"
+#~ msgstr "UTEC2号投資事業有限責任組合"
 
 #~ msgid "MUJIN Employee holding"
 #~ msgstr "MUJIN従業員持株会"
