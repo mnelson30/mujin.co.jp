@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 09:37+0000\n"
+"POT-Creation-Date: 2012-09-19 09:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -838,7 +838,7 @@ msgstr ""
 
 #: mujinwww/templates/products.html:156
 msgid " Multi-Robot Manipulation Planning System"
-msgstr "複数ロボットによる動作生成"
+msgstr "複数ロボットによる動作生成システム"
 
 #: mujinwww/templates/products.html:159
 msgid ""
@@ -864,8 +864,8 @@ msgstr ""
 "複雑な教示を簡単に作成でき、大幅なコスト削減を可能にします。"
 
 #: mujinwww/templates/products.html:165
-msgid " Robot Placement Optimization"
-msgstr "ロボット配置の最適化"
+msgid " Parallelized Placement Optimization System"
+msgstr "並列処理され導かれるロボット配置の最適化システム"
 
 #: mujinwww/templates/products.html:168
 msgid ""
@@ -898,8 +898,8 @@ msgid "The World First"
 msgstr "世界初"
 
 #: mujinwww/templates/products.html:173
-msgid " Flexible Grasp Planner"
-msgstr "柔軟な把持計画機能"
+msgid " Grasp Planning System"
+msgstr "把持計画システム"
 
 #: mujinwww/templates/products.html:177
 msgid ""
@@ -1287,6 +1287,12 @@ msgstr "自動車"
 msgid "Logistics"
 msgstr "物流"
 
+#~ msgid " Robot Placement Optimization"
+#~ msgstr "ロボット配置の最適化"
+
+#~ msgid " Flexible Grasp Planner"
+#~ msgstr "柔軟な把持計画機能"
+
 #~ msgid "Be close to MUJIN's technology"
 #~ msgstr "MUJINの技術とは？"
 
@@ -1467,9 +1473,6 @@ msgstr "物流"
 
 #~ msgid "Multi Arm Calculation System"
 #~ msgstr "複数アーム協調計算システム"
-
-#~ msgid "Innovative Grasp Planning"
-#~ msgstr "革新的把持計画機能"
 
 #~ msgid "About OpenRAVE"
 #~ msgstr "OpenRAVEについて"
