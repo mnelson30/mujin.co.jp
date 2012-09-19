@@ -2,67 +2,67 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | Access Map" %}
+{% trans "MUJIN | Visit Office" %}
 {% endblock %}
 
 {% block content %}
 <div class="bnr"> 
   <image src="{{ STATIC_URL }}img/oldmap.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px;font-size:50px;color:#EE920E;padding0px"><b>{% trans "Access Map" %}</b>
+  <div style="position:relative; left:40px; top:60px;font-size:50px;color:#EE920E;padding0px"><b>{% trans "Visit Office" %}</b>
   </div>
 </div>
 
 <br/>
  <div id="navi" style="width:220px;height:150px;background:#DDDDDD;float:left">
     <ul class="subnavi" style="position:relative;left:10px;top:5px;">
-      <li><a href="#access_content" class="subbutton">{% trans "Headquaters" %}</a></li>
-      <li><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa office" %}</a></li>
+      <li><a href="#access_content" class="subbutton">{% trans "Headquarter" %}</a></li>
+      <li><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa Office" %}</a></li>
     </ul>
   </div>   
 
 <div id="access_content" style="float:right;position:relative; left:30px; width:660px;">
-  <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:180px;background:#F8F8F8;"><h2> {% trans "Headquaters" %}</h2>
+  <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:180px;background:#F8F8F8;"><h2> {% trans "Headquarter" %}</h2>
   </div>
   <br/>
   〒113-0033　{% trans "Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan" %}
   <br/>
   <br/>
-　({% trans "Please use an interphone at the 1st floor to call" %}） 
+　({% trans "Please use the intercomm on the 1st floor to call." %}） 
   <br/>
   <br/>
   <img width="500" height="458" alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map1.jpg" style="margin-left: 10px; float: center;"/> 
   <br/>
   <br/>
   <h3 style="text-align:left; color:red;">
-   {% trans "Closest station" %}
+   {% trans "Walking Directions" %}
     <br/>
   </h3>
   <strong>{% trans "Tokyo Metro Marunouchi-line Hongosanchome Station" %}</strong>
   <br/>
   <br/>
-  {% trans "Walk out from exit No.2 and make right at Hongo3 intersection." %}
+  {% trans "Take Exit No.2. Turn right at the Hongo3 intersection." %}
   <br/>
   <br/>
   <strong>
-   {% trans " Tokyo Metro Chiyoda-line Yushima Station" %}
+   {% trans "Tokyo Metro Chiyoda-line Yushima Station" %}
     <br/>
    </strong>
   <br/>
-  {% trans "Walk out from exit No.1 and enter campus from Tatsuoki-gate in front of a fireman station." %}
+  {% trans "Take Exit No.1. Enter campus at the Tatsuoki-gate in front of the fire station." %}
   <br/>
   <br/>
   <strong>{% trans "Toei Oedo-line Hongosanchome Station" %}</strong>
   <br/>
   <br/>
-  {% trans "Walk out from exit No.5. Then, make right and enter campus from Tatsuoki-gate." %}
+  {% trans "Take Exit No.5. Turn right and enter campus at the Tatsuoki-gate." %}
   <br/>
   <br/>
   <h3 style="text-align:left; color:red;">
-    {% trans "Driving a car" %}
+    {% trans "Driving Directions" %}
   </h3>
-  {% trans "Enter campus from Tatsuoki-gate and pass the gate besides department of pharmacy" %}
+  {% trans "Enter campus from the Tatsuoki-gate. Pass the gate next to the Department of Pharmacy." %}
   <br/
-  {% trans "please tell gate-guards that you are going to Entrepreneur Plaza." %}
+  {% trans "Please tell guards at the gate that you are going to Entrepreneur Plaza." %}
 <br/>
 <br/>
 <br/>
@@ -78,18 +78,18 @@
   <br/>
   <br/>
   <h3 style="text-align:left; color:red;">
-    {% trans "Closest Station" %}
+    {% trans "Walking Directions" %}
     <br/>
   </h3>
   <strong>{% trans "Tokyo Metro Mita-line Kasuga Station" %}</strong>
   <br/>
   <br/>
-  {% trans "Exit A5 and go down to east for 5minutes. When you pass supermarket,make left at the second intersection" %}
+  {% trans "Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, turn left at the second intersection." %}
   <br/>
 <br/>
   <h3 style="text-align:left; color:red;">
-    {% trans "Driving a car" %}</h3>
-{% trans "Please call us in advance, so that we will prepare for a parking space for you" %}
+    {% trans "Driving Directions" %}</h3>
+{% trans "Please call us in advance, so that we will prepare for a parking space for you." %}
 </div>
 
 <div id= "about mujin" style="clear:both">
@@ -119,7 +119,7 @@
           <a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" width="120px" hight="130px" alt="access_map"/></a>
         </td>
         <td>
-          <a href="/access_map"><p style="font-size:30px; color:#EE920E;"> {% trans "Access map" %}</p></a>
+          <a href="/access_map"><p style="font-size:30px; color:#EE920E;"> {% trans "Visit office" %}</p></a>
         </td>
         <td valign="bottom">
           <a href="/founder_message"><img src="{{ STATIC_URL }}/img/message.jpg" width="120px" hight="130px" alt="company_development"/></a>
