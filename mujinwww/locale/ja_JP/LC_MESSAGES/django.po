@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 11:04+0000\n"
+"POT-Creation-Date: 2012-09-19 11:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgid ""
 msgstr "ゲートではアントレプレナープラザに行く旨をお伝え下さい。"
 
 #: mujinwww/templates/access_map.html:74
-#: mujinwww/templates/company_overview.html:69
+#: mujinwww/templates/company_overview.html:73
 msgid "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan"
 msgstr "東京都文京区小石川1-22-9"
 
@@ -373,9 +373,10 @@ msgstr ""
 
 #: mujinwww/templates/company_overview.html:44
 msgid ""
-"External Director　Tetsuya Yamamoto （The University of Tokyo Edge Capital, "
+"External Officer　Tetsuya Yamamoto （The University of Tokyo Edge Capital, "
 "GP)"
-msgstr "社外取締役　山本　哲也　（東京大学エッジキャピタル　GP）"
+msgstr ""
+"社外取締役　山本　哲也　（東京大学エッジキャピタル　ジェネラル・パートナー）"
 
 #: mujinwww/templates/company_overview.html:48
 msgid "Auditing Officers"
@@ -387,11 +388,7 @@ msgstr "平井　美紀"
 
 #: mujinwww/templates/company_overview.html:49
 msgid " （The University of Tokyo Edge Capital）"
-msgstr "　(東京エッジキャピタル)"
-
-#: mujinwww/templates/company_overview.html:49
-msgid "AZX Professionals Group Law Offices"
-msgstr "AZX総合法律事務所"
+msgstr "　(東京大学エッジキャピタル)"
 
 #: mujinwww/templates/company_overview.html:52
 msgid "Advisors"
@@ -410,36 +407,44 @@ msgid "Kei Okada　（Associate Professor, Tokyo University）"
 msgstr "岡田　慧　　　（東京大学准教授　工学博士）"
 
 #: mujinwww/templates/company_overview.html:60
+msgid "Legal Advisor"
+msgstr "法律顧問"
+
+#: mujinwww/templates/company_overview.html:61
+msgid "AZX Professionals Group Law Offices"
+msgstr "AZX総合法律事務所"
+
+#: mujinwww/templates/company_overview.html:64
 msgid "Major Stockholders"
 msgstr "主要株主"
 
-#: mujinwww/templates/company_overview.html:62
+#: mujinwww/templates/company_overview.html:66
 msgid "The University of Tokyo Edge Capital"
 msgstr "UTEC2号投資事業有限責任組合"
 
-#: mujinwww/templates/company_overview.html:63
+#: mujinwww/templates/company_overview.html:67
 msgid "MUJIN Employee holding"
 msgstr "MUJIN従業員持株会"
 
-#: mujinwww/templates/company_overview.html:67
+#: mujinwww/templates/company_overview.html:71
 msgid "Location"
 msgstr "所在地"
 
-#: mujinwww/templates/company_overview.html:68
-#: mujinwww/templates/company_overview.html:74
-#: mujinwww/templates/company_overview.html:79
+#: mujinwww/templates/company_overview.html:72
+#: mujinwww/templates/company_overview.html:78
+#: mujinwww/templates/company_overview.html:83
 msgid "[Headquarter]"
 msgstr "[本社]"
 
-#: mujinwww/templates/company_overview.html:68
+#: mujinwww/templates/company_overview.html:72
 msgid "Tokyo University Entrepreneur Plaza, 7-3-1,Hongo,Bunkyo-ku,Tokyo,Japan"
 msgstr "東京都文京区本郷7-3-1, 東京大学アントレプレナープラザ"
 
-#: mujinwww/templates/company_overview.html:68
+#: mujinwww/templates/company_overview.html:72
 msgid "[Koishikawa Office]"
 msgstr "[小石川事業所]"
 
-#: mujinwww/templates/company_overview.html:73
+#: mujinwww/templates/company_overview.html:77
 msgid "Telephone"
 msgstr "電話"
 
