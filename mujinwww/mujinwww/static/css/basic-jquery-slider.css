@@ -11,7 +11,9 @@ ol.bjqs-markers li{float:left;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
 /* demo styles */
-
+.bjqs li img{
+margin-left:120px;
+}
 body{
   background:#f5f5f5;
   font-family: 'Carter One', sans-serif;
