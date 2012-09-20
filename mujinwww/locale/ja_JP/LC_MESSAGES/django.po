@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-19 23:17+0900\n"
+"POT-Creation-Date: 2012-09-21 02:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "MUJIN | Company profile"
 msgstr "MUJINコントローラ | 会社情報"
 
-#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:60
+#: mujinwww/templates/aboutmujin.html:11 mujinwww/templates/base.html:54
 msgid "About MUJIN"
 msgstr "会社情報"
 
@@ -28,7 +28,7 @@ msgstr "会社情報"
 msgid "Corporate overview"
 msgstr "会社概要"
 
-#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:67
+#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:76
 #: mujinwww/templates/vision.html:11
 msgid "Vision"
 msgstr "ビジョン"
@@ -150,49 +150,41 @@ msgstr ""
 msgid "MUJIN Inc Homepage | Industrial Robot for Everyone"
 msgstr "株式会社MUJIN ホームページ | 全ての人に産業用ロボットを"
 
-#: mujinwww/templates/base.html:33 mujinwww/templates/index.html:62
-msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
-msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
+#: mujinwww/templates/base.html:34
+msgid "Tell"
+msgstr ""
 
-#: mujinwww/templates/base.html:35
-msgid "MUJIN was introduced by Yomiuri newspaper."
-msgstr "株式会社MUJINが読売新聞に紹介されました。"
+#: mujinwww/templates/base.html:36
+msgid "Business hour 9:00am～6:00pm"
+msgstr "受付時間　9:00am～6:00pm"
 
-#: mujinwww/templates/base.html:37 mujinwww/templates/index.html:64
-msgid "MUJIN moved its headquarter into Tokyo University."
-msgstr "MUJINは本社を東京大学内に移転いたしました。"
-
-#: mujinwww/templates/base.html:42
-msgid "img/en/inquiry.jpg"
-msgstr "img/ja/inquiry.jpg"
-
-#: mujinwww/templates/base.html:46 mujinwww/templates/inquiry.html:16
+#: mujinwww/templates/base.html:40 mujinwww/templates/inquiry.html:16
 msgid "Contact us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/base.html:54
+#: mujinwww/templates/base.html:48
 msgid "Home"
 msgstr "ホーム"
 
-#: mujinwww/templates/base.html:55
+#: mujinwww/templates/base.html:49
 msgid "Products"
 msgstr "製品情報"
 
-#: mujinwww/templates/base.html:56
+#: mujinwww/templates/base.html:50
 msgid "Technology"
 msgstr "技術情報"
 
-#: mujinwww/templates/base.html:57 mujinwww/templates/index.html:60
+#: mujinwww/templates/base.html:51 mujinwww/templates/index.html:69
 #: mujinwww/templates/news.html:12
 msgid "News"
 msgstr "新着情報"
 
-#: mujinwww/templates/base.html:58
+#: mujinwww/templates/base.html:52
 msgid "Services"
 msgstr "導入ステップ"
 
-#: mujinwww/templates/base.html:59 mujinwww/templates/carreers.html:12
-#: mujinwww/templates/index.html:73
+#: mujinwww/templates/base.html:53 mujinwww/templates/carreers.html:12
+#: mujinwww/templates/index.html:82
 msgid "Careers"
 msgstr "採用情報"
 
@@ -364,8 +356,7 @@ msgstr "CEO 滝野　一征"
 
 #: mujinwww/templates/company_overview.html:39
 msgid "CTO Rosen Diankov, Ph.D.(Carnegie Mellon Univeristy)"
-msgstr ""
-"CTO 出杏光　魯仙(Rosen Diankov)カーネギーメロン大学ロボット工学博士"
+msgstr "CTO 出杏光　魯仙(Rosen Diankov)カーネギーメロン大学ロボット工学博士"
 
 #: mujinwww/templates/company_overview.html:43
 msgid "Board of Directors"
@@ -391,7 +382,6 @@ msgid "Legal Advisor"
 msgstr "法律顧問"
 
 #: mujinwww/templates/company_overview.html:52
-
 msgid "AZX Professionals Group"
 msgstr "AZX総合法律事務所"
 
@@ -446,6 +436,14 @@ msgstr "工事中"
 msgid "MUJIN Inc.| Home"
 msgstr "株式会社MUJIN | ホーム"
 
+#: mujinwww/templates/index.html:26 mujinwww/templates/index.html.py:27
+msgid "Dual-arm manipulation assembly"
+msgstr "双腕ロボットによる組み立て作業"
+
+#: mujinwww/templates/index.html:28
+msgid "Optimizing robot motion for complex object placement"
+msgstr "複雑な設置作業におけるロボット動作の最適化"
+
 #: mujinwww/templates/index.html:33
 msgid ""
 "MUJIN's innovative technology makes it easier to program industrial robots "
@@ -467,14 +465,22 @@ msgid "Apply for trial"
 msgstr "体験版の申込はこちらから"
 
 #: mujinwww/templates/index.html:52
-msgid "Need to know MUJIN's technology?"
-msgstr "MUJINの技術とは？"
+msgid "What's new?"
+msgstr ""
 
-#: mujinwww/templates/index.html:63
+#: mujinwww/templates/index.html:54 mujinwww/templates/index.html.py:71
+msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
+msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
+
+#: mujinwww/templates/index.html:72
 msgid "MUJIN was introduced by Yomiuri newspaper"
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/index.html:69
+#: mujinwww/templates/index.html:73
+msgid "MUJIN moved its headquarter into Tokyo University."
+msgstr "MUJINは本社を東京大学内に移転いたしました。"
+
+#: mujinwww/templates/index.html:78
 msgid ""
 "MUJIN strives to automate factory and industrial processes through the "
 "creation of complex robotic systems capable of intelligent reasoning to "
@@ -483,7 +489,7 @@ msgstr ""
 "MUJINは従来は困難であった、複雑化した知能的ロボットシステムの構築をより促進す"
 "る事により、お客様の生産性向上に大きく貢献いたします。"
 
-#: mujinwww/templates/index.html:75
+#: mujinwww/templates/index.html:84
 msgid ""
 "Thinking about changing your career? At MUJIN, you could change the world, "
 "too."
@@ -1266,6 +1272,15 @@ msgstr "自動車"
 #: mujinwww/templates/vision.html:42
 msgid "Logistics"
 msgstr "物流"
+
+#~ msgid "img/en/inquiry.jpg"
+#~ msgstr "img/ja/inquiry.jpg"
+
+#~ msgid "MUJIN was introduced by Yomiuri newspaper."
+#~ msgstr "株式会社MUJINが読売新聞に紹介されました。"
+
+#~ msgid "Need to know MUJIN's technology?"
+#~ msgstr "MUJINの技術とは？"
 
 #~ msgid "2011/7/6"
 #~ msgstr "2011年7月6日"
