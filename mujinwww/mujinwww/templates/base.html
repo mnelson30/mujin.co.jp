@@ -25,31 +25,25 @@
                 </a>
               </div>
             </td>
-            <td> 
-              <div id="headNewsHome">
-                <b class="white">NEWS</b>
-                <br/>
-                
-                <p><a target="_blank" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</a></p>
-                
-                <p><a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper." %}</a></p>
-                
-                <p><a target="_blank" href="/news">{% trans "MUJIN moved its headquarter into Tokyo University." %}</a></p>
-
-              </div>
+<td width="20%"><br></td>
+            <td>              
+              <img  border="0" src="{{ STATIC_URL }}{% trans "img/en/inquiry.jpg" %}"/>
             </td>
             <td>
-              <img border="0" src="{{ STATIC_URL }}{% trans "img/en/inquiry.jpg" %}"/> 
-            </td>
-            <td style="align:left">
+              <ul style="display:block">
+                <li style="display:block"> <font size="3px">電話番号</font></li>
+                <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
+                <li style="display:block"><font size="3px">受付時間　平日9:00am～6:00pm</font></li>
+              </td> 
+            <td>
               <div id="inquiry"> 
                 <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
               </div>
             </td>
-          </tr>
-        </table>
-      </div>
-      <nav>        
+            </tr>
+          </table>
+        </div>
+        <nav>
         <ul id="NavBar">
           <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
@@ -59,10 +53,10 @@
           <li><a href="/carreers" title="Careers">{% trans "Careers" %}</a></li>
           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
         </ul>
-      </nav>
-      
-      <!-- Content -->
-      <div id="content" class="{% block coltype %}colM{% endblock %}">
+     </nav>   
+  
+        <!-- Content -->
+        <div id="content" class="{% block coltype %}colM{% endblock %}">
         {% block pretitle %}{% endblock %}
         {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
         {% block content %}

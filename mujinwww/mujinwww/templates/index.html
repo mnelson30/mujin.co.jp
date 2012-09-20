@@ -23,9 +23,9 @@
 {% block content %}  
 <div id="myslider">
   <ul class="bjqs">
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/car_door1.png" width="600" title="Optimizing robot motion for complex object placement"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="Dual-arm manipulation assembly"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="Dual-arm manipulation assembly"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="{% trans "Dual-arm manipulation assembly" %}"></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="{% trans "Dual-arm manipulation assembly" %}"/></li>
+<li><img src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif" width="600" height="330" title="Optimizing robot motion for complex object placement"/></li>
   </ul>
 </div>
 
@@ -47,9 +47,18 @@
           <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img><br/>
           <a href="/inquiry"><p class="button">{% trans "Apply for trial" %}</p></a>
         </div>
-      </td><td>
-        <div id="learn_openrave" style="width:400px"><br/>
-          <a href="/technology"><p class="button">{% trans "Need to know MUJIN's technology?" %}</p></a>
+      </td>
+      <td style="width:410px">
+        <h2 style="border-bottom:1px solid;position:relative;left:20px">{% trans "What's new?" %}</h2>
+        <div id="headNewsHome" style="position:relative; left:20px">
+        {% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</br></br>
+          <img src="{{ STATIC_URL }}img/nikkannewspaper.png" style="width:350px"></img><br/>
+        
+           <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html"><h3>東大発ＶＢ・ＭＵＪＩＮ、来年初頭ソフト販売－産ロボの最適動作算出</h3></a></br>
+<p>ＭＵＪＩＮ（東京都文京区、滝野一征代表取締役、０５０・３６８２・７８５２）は、２０１３年初めに産業用ロボットの動作計画を行うソフトウエア「ＭＵＪＩＮコントローラー」の販売を始める。
+　東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。
+　ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。
+　専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
         </div>
       </td>
     </tr>
@@ -66,7 +75,7 @@
 <div id="NewsHome">
   <b class="white">{% trans "Vision" %}</b>
   <br/>
-  <a href="/aboutmujin">{% trans "MUJIN strives to automate factory and industrial processes through the creation of complex robotic systems capable of intelligent reasoning to increase manufacturing productivity in our society." %}</a>
+  <a href="/vision">{% trans "MUJIN strives to automate factory and industrial processes through the creation of complex robotic systems capable of intelligent reasoning to increase manufacturing productivity in our society." %}</a>
 </div>
 
 <div id="NewsHome" style="margin-right:0px;">
