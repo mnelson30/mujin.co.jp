@@ -23,9 +23,10 @@
 {% block content %}  
 <div id="myslider">
   <ul class="bjqs">
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="{% trans "Dual-arm manipulation assembly" %}"></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="{% trans "Dual-arm manipulation assembly" %}"/></li>
-<li><img src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif" width="600" height="330" title="{% trans "Optimizing robot motion for complex object placement" %}"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="{% trans "Multi-arm manipulation assembly" %}"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="{% trans "Multi-arm manipulation assembly" %}"/></li>
+    <li><img src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif" width="600" height="330" title="{% trans "Optimizing robot motion for complex object placement" %}"/></li>
+ <li><img src="{{ STATIC_URL }}img/gallery_intro/nextage.png" width="600" title="{% trans "Dual-arm manipulation assembly" %}"/></li>
   </ul>
 </div>
 
@@ -39,14 +40,11 @@
   </div>
 </div>
 
-<div id="learning_index" style="clear:both;margin:40px;width:880px">
+<div id="learning_index" style="clear:both;margin-top:40px;width:880px">
   <table>
     <tr>
-      <td> <div id="learn_mujincontroller" style="width:400px">
-          <h3>{% trans "Are you taking too long to program a robot?" %}</h3>
-          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img><br/>
-          <a href="/inquiry"><p class="button">{% trans "Apply for trial" %}</p></a>
-        </div>
+      <td>  
+        <iframe width="430" height="260" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe> 
       </td>
       <td style="width:410px">
         <h2 style="border-bottom:1px solid;position:relative;left:20px">{% trans "What's new?" %}</h2>
@@ -59,6 +57,24 @@
 　東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。
 　ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。
 　専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td> 
+        <div id="learn_mujincontroller" style="margin-bottom:50px;margin-top:50px;width:400px">
+          <h3>{% trans "Are you taking too long to program a robot?" %}</h3>
+          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img><br/>
+          <a href="/inquiry"><p class="button">{% trans "Apply for trial" %}</p></a>
+        </div>
+      </td>
+      <td>
+        <div id="navi" style="margin-top:50px;margin-bottom:50px">
+          <ul class="index_subnavi" style="position:relative;left:20px;top:5px;180px;">
+            <li style="float:left"><a href="/vision" class="index_button">{% trans "Who we are" %}</a></li>    
+            <li style="float:left"><a href="/products" class="index_button">{% trans "What we do" %}</a></li>    
+            <li style="float:left"><a href="/technology" class="index_button">{% trans "Why we are special" %}</a></li>
+          </ul>
         </div>
       </td>
     </tr>
