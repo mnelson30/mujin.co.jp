@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-21 02:00+0900\n"
+"POT-Creation-Date: 2012-09-21 11:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "会社情報"
 msgid "Corporate overview"
 msgstr "会社概要"
 
-#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:76
+#: mujinwww/templates/aboutmujinpane.html:16 mujinwww/templates/index.html:92
 #: mujinwww/templates/vision.html:11
 msgid "Vision"
 msgstr "ビジョン"
@@ -152,7 +152,7 @@ msgstr "株式会社MUJIN ホームページ | 全ての人に産業用ロボッ
 
 #: mujinwww/templates/base.html:34
 msgid "Tell"
-msgstr ""
+msgstr "電話番号"
 
 #: mujinwww/templates/base.html:36
 msgid "Business hour 9:00am～6:00pm"
@@ -174,7 +174,7 @@ msgstr "製品情報"
 msgid "Technology"
 msgstr "技術情報"
 
-#: mujinwww/templates/base.html:51 mujinwww/templates/index.html:69
+#: mujinwww/templates/base.html:51 mujinwww/templates/index.html:85
 #: mujinwww/templates/news.html:12
 msgid "News"
 msgstr "新着情報"
@@ -184,7 +184,7 @@ msgid "Services"
 msgstr "導入ステップ"
 
 #: mujinwww/templates/base.html:53 mujinwww/templates/carreers.html:12
-#: mujinwww/templates/index.html:82
+#: mujinwww/templates/index.html:98
 msgid "Careers"
 msgstr "採用情報"
 
@@ -437,14 +437,18 @@ msgid "MUJIN Inc.| Home"
 msgstr "株式会社MUJIN | ホーム"
 
 #: mujinwww/templates/index.html:26 mujinwww/templates/index.html.py:27
-msgid "Dual-arm manipulation assembly"
-msgstr "双腕ロボットによる組み立て作業"
+msgid "Multi-arm manipulation assembly"
+msgstr "複数ロボットによる組み立て作業"
 
 #: mujinwww/templates/index.html:28
 msgid "Optimizing robot motion for complex object placement"
 msgstr "複雑な設置作業におけるロボット動作の最適化"
 
-#: mujinwww/templates/index.html:33
+#: mujinwww/templates/index.html:29
+msgid "Dual-arm manipulation assembly"
+msgstr "双腕ロボットによる組み立て作業"
+
+#: mujinwww/templates/index.html:34
 msgid ""
 "MUJIN's innovative technology makes it easier to program industrial robots "
 "and improves automation quality."
@@ -452,35 +456,51 @@ msgstr ""
 "MUJINの革新的技術は産業ロボットのプログラミング方法を簡素化し、自動化品質を向"
 "上させます"
 
-#: mujinwww/templates/index.html:38
+#: mujinwww/templates/index.html:39
 msgid "Industrial Robot Automation<br/>for Everyone"
 msgstr "全ての人に<br/>ロボットプログラミングを"
 
-#: mujinwww/templates/index.html:46
-msgid "Are you taking too long to program a robot?"
-msgstr "ロボットのティーチングに時間がかかりすぎていませんか？"
+#: mujinwww/templates/index.html:47 mujinwww/templates/technology.html:59
+msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
+msgstr ""
 
-#: mujinwww/templates/index.html:48
-msgid "Apply for trial"
-msgstr "体験版の申込はこちらから"
-
-#: mujinwww/templates/index.html:52
+#: mujinwww/templates/index.html:50
 msgid "What's new?"
 msgstr ""
 
-#: mujinwww/templates/index.html:54 mujinwww/templates/index.html.py:71
+#: mujinwww/templates/index.html:52 mujinwww/templates/index.html.py:87
 msgid "MUJIN was introduced by Nikkan Kogyo Newspaper"
 msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
 
-#: mujinwww/templates/index.html:72
+#: mujinwww/templates/index.html:66
+msgid "Are you taking too long to program a robot?"
+msgstr "ロボットのティーチングに時間がかかりすぎていませんか？"
+
+#: mujinwww/templates/index.html:68
+msgid "Apply for trial"
+msgstr "体験版の申込はこちらから"
+
+#: mujinwww/templates/index.html:74
+msgid "Who we are"
+msgstr "MUJINとはどんな会社？"
+
+#: mujinwww/templates/index.html:75
+msgid "What we do"
+msgstr "MUJINは何をしているか？"
+
+#: mujinwww/templates/index.html:76
+msgid "Why we are special"
+msgstr "なぜMUJINは特別か？"
+
+#: mujinwww/templates/index.html:88
 msgid "MUJIN was introduced by Yomiuri newspaper"
 msgstr "株式会社MUJINが読売新聞に紹介されました。"
 
-#: mujinwww/templates/index.html:73
+#: mujinwww/templates/index.html:89
 msgid "MUJIN moved its headquarter into Tokyo University."
 msgstr "MUJINは本社を東京大学内に移転いたしました。"
 
-#: mujinwww/templates/index.html:78
+#: mujinwww/templates/index.html:94
 msgid ""
 "MUJIN strives to automate factory and industrial processes through the "
 "creation of complex robotic systems capable of intelligent reasoning to "
@@ -489,7 +509,7 @@ msgstr ""
 "MUJINは従来は困難であった、複雑化した知能的ロボットシステムの構築をより促進す"
 "る事により、お客様の生産性向上に大きく貢献いたします。"
 
-#: mujinwww/templates/index.html:84
+#: mujinwww/templates/index.html:100
 msgid ""
 "Thinking about changing your career? At MUJIN, you could change the world, "
 "too."
@@ -666,19 +686,19 @@ msgstr "製品コンセプト"
 msgid "Features"
 msgstr "製品特徴"
 
-#: mujinwww/templates/products.html:61 mujinwww/templates/products.html:209
+#: mujinwww/templates/products.html:61 mujinwww/templates/products.html:210
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: mujinwww/templates/products.html:62 mujinwww/templates/products.html:214
+#: mujinwww/templates/products.html:62 mujinwww/templates/products.html:215
 msgid "Operation demo"
 msgstr "操作デモ"
 
-#: mujinwww/templates/products.html:63 mujinwww/templates/products.html:219
+#: mujinwww/templates/products.html:63 mujinwww/templates/products.html:220
 msgid "Controller spec"
 msgstr "コントローラースペック"
 
-#: mujinwww/templates/products.html:64 mujinwww/templates/products.html:225
+#: mujinwww/templates/products.html:64 mujinwww/templates/products.html:226
 msgid "Operation environment"
 msgstr "動作環境"
 
@@ -943,8 +963,8 @@ msgid "MUJIN Controller supports the following formats:"
 msgstr ""
 "MUJINコントローラは現在以下のフォーマットのCADファイルに対応しております。"
 
-#: mujinwww/templates/products.html:211 mujinwww/templates/products.html:216
-#: mujinwww/templates/products.html:221 mujinwww/templates/products.html:227
+#: mujinwww/templates/products.html:212 mujinwww/templates/products.html:217
+#: mujinwww/templates/products.html:222 mujinwww/templates/products.html:228
 msgid "UNDER CONSTRUCTION"
 msgstr "工事中"
 
@@ -1172,10 +1192,6 @@ msgstr ""
 #: mujinwww/templates/technology.html:56
 msgid "Parallelized Layout Optimization"
 msgstr "並列処理され導かれるロボット配置の最適化"
-
-#: mujinwww/templates/technology.html:59
-msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
-msgstr ""
 
 #: mujinwww/templates/technology.html:60
 #, python-format
