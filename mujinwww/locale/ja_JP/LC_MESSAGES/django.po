@@ -664,7 +664,6 @@ msgid "MUJIN Controller"
 msgstr "MUJINコントローラ"
 
 #: mujinwww/templates/products.html:47
-#, fuzzy
 msgid ""
 "On-site dedicated 32 core high performance server running on a user internal "
 "network."
@@ -672,7 +671,6 @@ msgstr ""
 "32CPUコア搭載の専用サーバーで高性能計算をお客様ネットワーク内に設置可能。"
 
 #: mujinwww/templates/products.html:48
-#, fuzzy
 msgid "All system operation done through browser, so support all OSes."
 msgstr "全操作がブラウザー上で行われるため、全OS対応。"
 
@@ -709,7 +707,6 @@ msgid "Industrial Robot Programming for Everyone"
 msgstr "全ての人にロボットプログラミングを"
 
 #: mujinwww/templates/products.html:80
-#, fuzzy
 msgid ""
 "MUJIN Controller's innovative solution to industrial robot programming will "
 "dramatically improve the existing expensive and complicated processes. MUJIN "
@@ -765,7 +762,6 @@ msgid " Automated Collision Avoidance System"
 msgstr "干渉自動回避システム"
 
 #: mujinwww/templates/products.html:115
-#, fuzzy
 msgid ""
 "Most existing industrial robot programming packages can only <b>check</b> "
 "for collisions of the workpiece and robot, so they require users to manually "
@@ -842,7 +838,6 @@ msgid " Multi-Robot Manipulation Planning System"
 msgstr "複数ロボットによる動作生成システム"
 
 #: mujinwww/templates/products.html:159
-#, fuzzy
 msgid ""
 "Most robot simulation packages consider just a single robot and are not "
 "configured to simultaneously compute solutions for multiple robots. Because "
@@ -866,23 +861,21 @@ msgstr ""
 "複雑な教示を簡単に作成でき、大幅なコスト削減を可能にします。"
 
 #: mujinwww/templates/products.html:165
-#, fuzzy
 msgid " Robot Placement Optimization System"
 msgstr "ロボット配置の最適化"
 
 #: mujinwww/templates/products.html:169
 msgid ""
 "What are the feasible locations of the robot where the task can be completed?"
-msgstr ""
+msgstr "タスクが達成できるロボット配置候補はどれだけあるか？"
 
 #: mujinwww/templates/products.html:170
 msgid ""
 "Among these feasible locations, which allows the robot to perform the task "
 "most quickly?"
-msgstr ""
+msgstr "さらにそれらの配置候補の中で最も短時間で効率よくタスクを達成できる配置はどれか？"
 
 #: mujinwww/templates/products.html:171
-#, fuzzy
 msgid ""
 "To answer these questions, the MUJIN Controller evaluates thousands of robot "
 "positions and orientations, and for each robot placement it solves for an "
@@ -913,7 +906,6 @@ msgid " Grasp Planning System"
 msgstr "把持計画システム"
 
 #: mujinwww/templates/products.html:180
-#, fuzzy
 msgid ""
 "MUJIN Controller allows robots to change tools and grasp workpieces while "
 "computing motions."
@@ -922,7 +914,6 @@ msgstr ""
 "ています。"
 
 #: mujinwww/templates/products.html:181
-#, fuzzy
 msgid ""
 "1. The robot can easily mount different tools, which become part of the "
 "robot's collision geometry."
@@ -935,12 +926,12 @@ msgid ""
 "2. Once the tool is specified, the robot can grab the workpiece, transfer it "
 "to its goal, and release it without adjusting any parameters. Multiple "
 "workpieces and tools can be chained in one task to form complex assemblies."
-msgstr ""
+msgstr "2.一旦、ツールが指定されるとロボットはワークピースを把持し、そのまま目的地に移動できるようになり、更には、いかなるパラメターの調節をする事なく把持を解放する事が出来るようになります。 複数のワークピースと複数ツールが同一タスク内で使いこなせる事により、複雑な組み立て等の工程も簡単にシミュレーション出来るようになります。"
 
 #: mujinwww/templates/products.html:184
 msgid ""
 "3. The tool can move the workpiece while avoiding environment collisions."
-msgstr ""
+msgstr "3. ツールは環境への干渉を回避しながらワークピースを効率よく動かす事ができます。"
 
 #: mujinwww/templates/products.html:193
 msgid "Does not need specific 3D CAD software"
@@ -1216,7 +1207,7 @@ msgstr ""
 msgid "MUJIN | Vision"
 msgstr "株式会社MUJIN | ビジョン"
 
-#: mujinwww/templates/vision.html:20
+#: mujinwww/templates/vision.html:20F
 msgid ""
 "MUJIN Inc. was founded in 2011 at Tokyo, Japan by Issei Takino and the world-"
 "renowned roboticist, Dr. Rosen Diankov, the main contributor of the widely "
