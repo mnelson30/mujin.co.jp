@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-25 18:06+0900\n"
+"POT-Creation-Date: 2012-12-28 17:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: mujinwww/templates/aboutmujin.html:5
 msgid "MUJIN | Company profile"
@@ -364,11 +364,11 @@ msgstr "取締役"
 
 #: mujinwww/templates/company_overview.html:45
 msgid "Representative Director: Issei Takino, CEO"
-msgstr "代表取締役　滝野　一征"
+msgstr "代表取締役　滝野　一征　営業部長"
 
 #: mujinwww/templates/company_overview.html:46
-msgid "Director (To be elected): Rosen Diankov , Ph.D.,  CTO"
-msgstr "取締役（就任予定）出杏光　魯仙(Rosen Diankov)"
+msgid "Director: Rosen Diankov , Ph.D.,  CTO"
+msgstr "取締役　出杏光　魯仙　技術部長 (Rosen Diankov)"
 
 #: mujinwww/templates/company_overview.html:47
 msgid ""
@@ -873,7 +873,9 @@ msgstr "タスクが達成できるロボット配置候補はどれだけある
 msgid ""
 "Among these feasible locations, which allows the robot to perform the task "
 "most quickly?"
-msgstr "さらにそれらの配置候補の中で最も短時間で効率よくタスクを達成できる配置はどれか？"
+msgstr ""
+"さらにそれらの配置候補の中で最も短時間で効率よくタスクを達成できる配置はどれ"
+"か？"
 
 #: mujinwww/templates/products.html:171
 msgid ""
@@ -926,12 +928,19 @@ msgid ""
 "2. Once the tool is specified, the robot can grab the workpiece, transfer it "
 "to its goal, and release it without adjusting any parameters. Multiple "
 "workpieces and tools can be chained in one task to form complex assemblies."
-msgstr "2.一旦、ツールが指定されるとロボットはワークピースを把持し、そのまま目的地に移動できるようになり、更には、いかなるパラメターの調節をする事無く、把持を解放する事が出来るようになります。 複数のワークピースと複数ツールを同一タスク内で使用出来る事により、複雑な組み立て等の工程も簡単にシミュレーション出来るようになります。"
+msgstr ""
+"2.一旦、ツールが指定されるとロボットはワークピースを把持し、そのまま目的地に"
+"移動できるようになり、更には、いかなるパラメターの調節をする事無く、把持を解"
+"放する事が出来るようになります。 複数のワークピースと複数ツールを同一タスク内"
+"で使用出来る事により、複雑な組み立て等の工程も簡単にシミュレーション出来るよ"
+"うになります。"
 
 #: mujinwww/templates/products.html:184
 msgid ""
 "3. The tool can move the workpiece while avoiding environment collisions."
-msgstr "3. ツールは環境への干渉を回避しながらワークピースを効率よく動かす事ができます。"
+msgstr ""
+"3. ツールは環境への干渉を回避しながらワークピースを効率よく動かす事ができま"
+"す。"
 
 #: mujinwww/templates/products.html:193
 msgid "Does not need specific 3D CAD software"
@@ -1207,7 +1216,7 @@ msgstr ""
 msgid "MUJIN | Vision"
 msgstr "株式会社MUJIN | ビジョン"
 
-#: mujinwww/templates/vision.html:20F
+#: mujinwww/templates/vision.html:20
 msgid ""
 "MUJIN Inc. was founded in 2011 at Tokyo, Japan by Issei Takino and the world-"
 "renowned roboticist, Dr. Rosen Diankov, the main contributor of the widely "
