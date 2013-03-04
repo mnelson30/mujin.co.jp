@@ -2,167 +2,207 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | News" %}
+{% trans "MUJIN Inc.| News" %}
+{% endblock %}
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#productslider').bjqs({
+  'animation' : 'fade',
+  'width' : 1100,
+  'height' : 160,
+  'showMarkers' : true,
+  'showControls' : false,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
 {% endblock %}
 
 {% block content %}
-
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "News" %}</b>
-  </div>
-</div>
-
-<div id="navi" style="margin-top:30px;width:220px;height:150px;background:#DDDDDD;float:left">
-  <ul class="subnavi" style="position:relative;left:10px;top:5px;">
-    <li><a href="#news_content" class="subbutton">2012</a> </li>
-    <li><a href="#2011news" class="subbutton">2011</a></li>
+ 
+<div id="productslider">
+  <ul class="bjqs">
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}
+              </li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
+              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <img style="margin-left:120px; height:170px; width:900px" src="{{ STATIC_URL }}img/mujin_mission.jpg">
+      <b style="position:absolute; left:210px; bottom:70px; text-align:center; font-size:32px;color:ivory">{% trans "Industrial Robot Automation for Everyone" %}</b>
+    </li>
   </ul>
 </div>
 
-<div id="news_content" style="margin-top:0px; float:right;width:630px">
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/9/18" %}
-        </th>
-        <th class="mj">MUJIN
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/nikkannewspaper.png"  style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}  
-          <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}
-          </a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/10" %}
-        </th>
-        <th class="mj">MUJIN
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> announcing new Koishikawa office" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/koishikawa.png" style="height:200;float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> opened the new Koishikawa office for R&D." %}  
-          <a href="/access_map">{% trans "Visit office" %}
-          </a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/2" %}
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> announcing relocation of headquarter" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/entreplaza.png" style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>" %}. 
-          <a href="/access_map">{% trans "Visit office" %}
-          </a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-          {% trans "2012/5/16" %}
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}
-      </tr>
-    </table>
-
-    <table style="font-size:13px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/yomiuri_article.png" style="float:left"/>
-        </td>
-        <td>
-          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">ロボット最適化で「ＭＵＪＩＮ」の価値
-          </a>
-          <br/>
-
-          シリコンバレーから日本へ。ブルガリア出身の魯仙さん
-          魯仙さん（左）と滝野さん
-          ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）」
-          
-          　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
-          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "more detail" %}
-          </a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-
-
-  <div id="2011news" class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">2011/10/10
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans " <b>MUJIN</b> attends IREX 2011." %} 
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;">
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/irex2011.png" style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}
-        </td>
-      </tr>
-    </table>
-  </div>
+<div id="navi">
+  <ul class="subnavi">
+    <li style="float:left"><a href="#2013news" class="subbutton">{% trans "2013" %}</a>
+    </li>    
+    <li style="float:left"><a href="#20121008" class="subbutton">{% trans "2012" %}</a>
+    </li>    
+    <li style="float:left"><a href="#20111122" class="subbutton">{% trans "2011" %}</a>
+    </li>
+  </ul>
 </div>
 
+
+<div id="product_right">
+  <aside>
+    <h2><span>Latest</span>
+      tweet
+    </h2>
+    <ul>
+      <li>2012/10/08</br><a href="#20121008">{% trans "MUJIN on Nekkei Business" %}</a></li>
+      <li>2012/09/18</br><a href="#20120918">{% trans "MUJIN on Nikkan Industry News" %}</a></li>
+      <li>2012/08/10</br><a href="#20120810">{% trans "MUJIN opens a new office" %}</a></li>
+      <li>2012/08/02</br><a href="#20120802">{% trans "MUJIN relocates headquater" %}</a></li>
+      <li>2012/05/16</br><a href="#20120516">{% trans "MUJIN on Yomiuri Newspaper" %}</a></li>
+    </ul>
+  </aside> 
+  <aside>
+    <h2><span>{% trans "Contact" %}</span>
+      {% trans "representative" %}
+    </h2>
+    <p>{% trans "Fill in your contact information to have a sales representative reach out." %}
+      <ul class="subnavi">
+        <li><a href="/inquiry" class="subbutton">{% trans "Contact a Representative" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+  <aside>
+    <h2><span>{% trans "MUJIN Inc." %}</span>
+    </h2>
+    <p>{% trans "Tokyo University Entrepreneurplaza,7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
+      <ul class="subnavi">
+        <li><a href="/access_map" class="subbutton">{% trans "Visit MUJIN" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+</div>
+
+<div id="news">
+  <div id="20121008" class="one_news">
+    <div class="news_title">
+      <h1>{% trans "<b>MUJIN</b> was introduced by Nikkei Business Magazine" %}
+      </h1>
+    </div>
+    <div class="news_subtitle">
+      <h3>{% trans "by Issei Takino 2012/10/08 " %}</h3>
+    </div>
+    <div id="news_content">    
+      <img src="{{ STATIC_URL }}img/nikkei_business.jpg">
+      <p>{% trans "<b>MUJIN</b> was featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan." %}</p><a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}</a>
+    </div>
+  </div>
+  
+  <div id="20120918"class="one_news">
+    <div class="news_title">
+      <h1>{% trans "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper" %}
+      </h1>
+    </div>
+    <div class="news_subtitle">
+      <h3>{% trans "by Issei Takino 2012/09/18 " %}</h3>
+    </div>
+    <div id="news_content">    
+      <img src="{{ STATIC_URL }}img/nikkannewspaper.png">
+      <p> {% trans "<b>MUJIN</b> receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}<a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}</a>
+    </div>
+  </div>
+
+ <div id="20120810" class="one_news">
+    <div class="news_title">
+      <h1> {% trans "<b>MUJIN</b> announcing new Koishikawa office" %}
+      </h1>
+    </div>
+    <div class="news_subtitle">
+      <h3>{% trans "by Issei Takino 2012/08/10 " %}</h3>
+    </div>
+    <div id="news_content">    
+      <img src="{{ STATIC_URL }}img/koishikawa.png">
+      <p>  {% trans "<b>MUJIN</b> opened the new Koishikawa office for R&D." %}  
+          <a href="/access_map">{% trans "Visit Office" %}
+          </a> 
+    </div>
+  </div>
+ 
+ <div id="20120802" class="one_news" >
+   <div class="news_title">
+     <h1>  {% trans "<b>MUJIN</b> announcing relocation of headquarter" %}
+     </h1>
+   </div>
+   <div class="news_subtitle">
+     <h3>{% trans "by Issei Takino 2012/08/02 " %}</h3>
+   </div>
+   <div id="news_content">    
+     <img src="{{ STATIC_URL }}img/entreplaza.png">
+     <p>{% trans "<b>MUJIN</b> relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>." %}<p></br>
+<h3>Tokyo University Entrepreneur Plaza</h3>
+<p>{% trans "The University of Tokyo's Science Entrepreneurship and Enterprise Development (SEED) office for supporting venture businesses has moved from the planning to the implementation stage, and visible results are now being returned to society. The first stage consisted of establishing the tripartite system of the Division of University Corporate Relations, TODAI TLO, Ltd. (CASTI), and the University of Tokyo Edge Capital Co., Ltd. (UTEC) in order to build support for venture businesses. The second stage consisted of procuring a facility equipped to support wet laboratories for venture businesses in the bioscience field (the University of Tokyo Entrepreneur Plaza)." %}</p>
+       <a href="/access_map">{% trans "Visit Office" %}
+       </a>
+   </div>
+ </div>
+
+ <div id="20120516" class="one_news">
+   <div class="news_title">
+     <h1>  {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %} 
+     </h1>
+   </div>
+   <div class="news_subtitle">
+     <h3>{% trans "by Issei Takino 2012/05/16 " %}</h3>
+   </div>
+   <div id="news_content">    
+     <img src="{{ STATIC_URL }}img/yomiuri_article.png">
+     <p> <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.html">ロボット最適化で「ＭＵＪＩＮ」の価値</a>
+          <br/>
+          シリコンバレーから日本へ。ブルガリア出身の魯仙さん
+          魯仙さん（左）と滝野さん
+          ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供） 
+          　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
+          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "more detail" %}
+          </a> 
+   </div>
+ </div>
+ 
+ <div id="20111122" class="one_news">
+   <div class="news_title">
+     <h1>  {% trans "<b>MUJIN</b> attends IREX 2011" %}
+     </h1>
+   </div>
+   <div class="news_subtitle">
+     <h3>{% trans "by Issei Takino 2012/11/22 " %}</h3>
+   </div>
+   <div id="news_content">    
+     <img src="{{ STATIC_URL }}img/irex2011.png">
+     <p>{% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}</p>
+   </div>
+ </div>
+</div>
 {% endblock %}
+
 

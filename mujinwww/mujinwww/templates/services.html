@@ -9,7 +9,7 @@
   $(document).ready(function(){
   $('#productslider').bjqs({
   'animation' : 'fade',
-  'width' : 850,
+  'width' : 1100,
   'height' : 160,
   'showMarkers' : true,
   'showControls' : false,
@@ -22,38 +22,85 @@
 {% endblock %}
 
 {% block content %}
- 
+
+
 <div id="productslider">
   <ul class="bjqs">
     <li>
       <table>
         <tr>
-          <td><a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-            {% trans "MUJIN Controller Cloud" %}</h3></td>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}
+              </li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}
+              </li>
+            </ul>
+          </td>
         </tr>
       </table>
     <li>
       <table>
         <tr>
-          <td><a href="/mujincontroller"><image src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
-          <td><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-              {% trans "MUJIN Controller" %}</h3></td>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
+              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
+            </ul>
+          </td>
         </tr>
       </table>
+    </li>
+    <li>
+      <img style="margin-left:120px; height:170px; width:900px" src="{{ STATIC_URL }}img/mujin_mission.jpg">
+      <b style="position:absolute; left:210px; bottom:70px; text-align:center; font-size:32px;color:ivory">{% trans "Industrial Robot Automation for Everyone" %}</b>
     </li>
   </ul>
 </div>
 
-<div id="navi" style="width:890px;height:45px;background:#DDDDDD;float:left; margin-top:50px;margin-bottom:30px">
-  <ul class="subnavi" style="position:relative;left:170px;top:5px;width:880px;">
-    <li style="float:left"><a href="#licensing_options" class="subbutton">{% trans "Licensing options" %}</a></li>    
-    <li style="float:left"><a href="#acquiring_steps" class="subbutton">{% trans "Acquiring Products" %}</a></li>   
+<div id="navi">
+  <ul class="subnavi">
+    <li style="float:left"><a href="#licensing_options" class="subbutton">{% trans "Licensing Options" %}</a>
+    </li>    
+    <li style="float:left"><a href="#acquiring_steps" class="subbutton">{% trans "Acquiring Products" %}</a>
+    </li>    
   </ul>
 </div>
 
-{% block product_content %}
-<div id="product_content" style="width:890px; overflow:auto;clear:both;">
+<div id="product_right">
+  <aside>
+    <h2><span>{% trans "Contact" %}</span>
+      {% trans "representative" %}
+    </h2>
+    <p>{% trans "Fill in your contact information to have a sales representative reach out." %}
+      <ul class="subnavi">
+        <li><a href="/inquiry" class="subbutton">{% trans "Contact a Representative" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+  <aside>
+    <h2><span>{% trans "Learn Technology" %}</span>
+    </h2>
+    <p>{% trans "Learn more about MUJIN's world leading IK technology." %}
+      <ul class="subnavi">
+        <li><a href="/technology" class="subbutton">{% trans "MUJIN's Technology" %}</a></li> 
+      </ul>
+    </p>
+  </aside> 
+  <aside>
+    <h2><span>{% trans "MUJIN Inc." %}</span>
+    </h2>
+    <p>{% trans "Tokyo University Entrepreneurplaza,7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
+      <ul class="subnavi">
+        <li><a href="/access_map" class="subbutton">{% trans "Visit MUJIN" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+</div>
+
+<div id="product">
   <div id="productheader" >
     <div id="licensing_options" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:340px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Licensing Options" %}</h1>
     </div>
@@ -140,5 +187,4 @@
     </div>
   </div> 
 </div>
-{% endblock %}
 {% endblock %}

@@ -12,15 +12,48 @@
   </div>
 </div>
 
-<br/>
-<div id="navi" style="width:220px;height:150px;background:#DDDDDD;float:left">
-  <ul class="subnavi" style="position:relative;left:10px;top:5px;">
-    <li><a href="#access_content" class="subbutton">{% trans "Headquarter" %}</a></li>
-    <li><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa Office" %}</a></li>
+<div id="navi">
+  <ul class="subnavi">
+    <li style="float:left"><a href="#access_content" class="subbutton">{% trans "Headquater" %}</a>
+    </li>    
+    <li style="float:left"><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa Office" %}</a>
+    </li>    
   </ul>
-</div>   
+</div>
 
-<div id="access_content" style="float:right;position:relative; left:30px; width:660px;">
+
+<div id="product_right">
+  <aside>
+    <h2><span>{% trans "Contact" %}</span>
+      {% trans "representative" %}
+    </h2>
+    <p>{% trans "Fill in your contact information to have a sales representative reach out." %}
+      <ul class="subnavi">
+        <li><a href="/inquiry" class="subbutton">{% trans "Contact a Representative" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+  <aside>
+    <h2><span>{% trans "Learn Technology" %}</span>
+    </h2>
+    <p>{% trans "Learn more about MUJIN's world leading IK technology." %}
+      <ul class="subnavi">
+        <li><a href="/technology" class="subbutton">{% trans "MUJIN's Technology" %}</a></li> 
+      </ul>
+    </p>
+  </aside> 
+  <aside>
+    <h2><span>{% trans "MUJIN Inc." %}</span>
+    </h2>
+    <p>{% trans "Tokyo University Entrepreneurplaza,7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
+      <ul class="subnavi">
+        <li><a href="/access_map" class="subbutton">{% trans "Visit MUJIN" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+</div>
+
+<div id="access_content">
   <div style="padding:3px 5px;border-color:#cccccc;border-width:1px 1px 1px 7px;border-style:solid;width:180px;background:#F8F8F8;"><h2> {% trans "Headquarter" %}</h2>
   </div>
   <br/>

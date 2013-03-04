@@ -14,14 +14,10 @@ p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bot
 .bjqs li img{
 margin-left:120px;
 }
-body{
-  background:#f5f5f5;
-  font-family: 'Carter One', sans-serif;
-}
 
 #myslider {
   height:300px;
-  width:850px;
+  width:1200px;
   margin:0 auto;
   position:relative;
   background:#fff;
@@ -33,7 +29,7 @@ body{
 
 #myslider2 {
   height:400px;
-  width:500px;
+  width:1200px;
   margin:0 auto;
   position:relative;
   left:170px;
@@ -50,9 +46,9 @@ body{
   position:relative;
   background:#fff;
   border:20px #fff solid;
-  box-shadow:0 0 50px rgba(0,0,0,0.5);
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
   float:left;
-   
+  margin-bottom:30px;   
 }
 
  ul.bjqs-controls li a{
@@ -75,8 +71,10 @@ a.bjqs-next{
 
  p.bjqs-caption{
   background:rgba(0,0,0,0.7);
+  height:10px;
   color:#fff;
   text-align:center;
+  font-size:24px;
 }
 
  ol.bjqs-markers{
@@ -103,4 +101,9 @@ a.bjqs-next{
 
 ol.bjqs-markers li.active-marker a{
   background:#fd0100;
+}
+
+.bjqs li{
+    margin-left:30px;
+    width:500px;
 }

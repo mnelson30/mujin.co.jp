@@ -4,61 +4,169 @@
 {% block title %}
 {% trans "MUJIN Inc.| Technology" %}
 {% endblock %}
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#productslider').bjqs({
+  'animation' : 'fade',
+  'width' : 1100,
+  'height' : 160,
+  'showMarkers' : true,
+  'showControls' : false,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% endblock %}
 
 {% block content %}
-
-<div id="technology_bnr" class="shadowing" style="height:190px;background: url({{ STATIC_URL }}img/technology_bnr.png);"></div>
-<div style="font-size:50px;color:#EE920E;margin-bottom:20px; margin-top:20px"><b>{% trans "Core Technologies" %}</b>
-</div>
-
-<p>{% trans "The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation motion planning system used in over <b>200 robots</b>." %} </p>
-
-<div id="navi" style=";width:890px;height:50px;background:#DDDDDD;float:left; margin-bottom:30px">
-  <ul class="subsubnavi" style="position:relative;left:10px;top:5px;width:890px;">
-    <li style="display:inline-block"><a href="#motionplanning" class="subbutton" style="width:205px;">{% trans "Motion Planning" %}</a></li>    
-    <li style="display:inline-block"><a href="#multirobot" class="subbutton" style="width:205px">{% trans "Multiple Robots" %}</a></li>
-    <li style="display:inline-block"><a href="#inversekinematics" class="subbutton" style="width:205px">{% trans "Inverse Kinematics" %}</a></li>
-    <li style="display:inline-block"><a href="#layoutoptimization" class="subbutton" style="width:205px">{% trans "Layout Optimization" %}</a></li>
+ 
+<div id="productslider">
+  <ul class="bjqs">
+    <li>
+      <img src="{{ STATIC_URL }}img/technology_bnr.png">
+    </li>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}
+              </li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
+              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <img style="margin-left:120px; height:170px; width:900px" src="{{ STATIC_URL }}img/mujin_mission.jpg">
+      <b style="position:absolute; left:210px; bottom:70px; text-align:center; font-size:32px;color:ivory">{% trans "Industrial Robot Automation for Everyone" %}</b>
+    </li>
   </ul>
 </div>
 
-<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
-  <div id="productheader" >
-    <div id="motionplanning" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robot Motion Planning" %}</h1>
+<div id="navi">
+  <ul class="subnavi">
+    <li style="float:left"><a href="#technology" class="subbutton">{% trans "Motion Planning" %}</a>
+    </li>    
+    <li style="float:left"><a href="#multiple_robots" class="subbutton">{% trans "Multiple Planning" %}</a>
+    </li>    
+    <li style="float:left"><a href="#IK" class="subbutton">{% trans "IK for Any Robots" %}</a>
+    </li>
+    <li style="float:left"><a href="#parallelized_opt" class="subbutton">{% trans "Parallelized Opt" %}</a>
+    </li>
+  </ul>
+</div>
+
+
+<div id="product_right">
+  <aside>
+    <h2><span>{% trans "Contact" %}</span>
+      {% trans "representative" %}
+    </h2>
+    <p>{% trans "Fill in your contact information to have a sales representative reach out." %}
+      <ul class="subnavi">
+        <li><a href="/inquiry" class="subbutton">{% trans "Contact a Representative" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+  <aside>
+    <h2><span>{% trans "Learn Technology" %}</span>
+    </h2>
+    <p>{% trans "Learn more about MUJIN's world leading IK technology." %}
+      <ul class="subnavi">
+        <li><a href="/technology" class="subbutton">{% trans "MUJIN's Technology" %}</a></li> 
+      </ul>
+    </p>
+  </aside> 
+  <aside>
+    <h2><span>{% trans "MUJIN Inc." %}</span>
+    </h2>
+    <p>{% trans "Tokyo University Entrepreneurplaza,7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
+      <ul class="subnavi">
+        <li><a href="/access_map" class="subbutton">{% trans "Visit MUJIN" %}</a></li> 
+      </ul>
+    </p>
+  </aside>
+</div>
+
+<div id="technology">
+  <div id="technology_concept">
+    <div id="content">
+      <div id="content_header">
+        <h1>{% trans "Technology Information" %}</h1>
+      </div>
+      <p>{% trans "The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation motion planning system used in over <b>200 robots</b>." %} </p>
+      <div id="sub_content_header">
+      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+      <h2>{% trans "Robot Motion Planning" %} </h2>
+      </div>
+      <div id="sub_content">
+        <img width="640" src="{{ STATIC_URL }}img/motionplanning.png" frameborder="0"/>q
+        <p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
+      </div>
     </div>
   </div>
-  <img width="640" src="{{ STATIC_URL }}img/motionplanning.png" frameborder="0" allowfullscreen/>
-  {% blocktrans %}<p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
-  {% endblocktrans %}
-</div>
-<br/><br/>
-<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
-  <div id="productheader" >
-    <div id="multirobot" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Multiple Robot Motion Planning" %}</h1>
+  
+  <div id="multiple_robots">
+    <div id="content">
+      <div id="sub_content_header">
+        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+        <h2>{% trans "Multiple Robot Motion Planning" %} </h2>
+      </div>
+      <div id="sub_content">
+        <iframe src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0"></iframe>
+        <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
+      </div>
     </div>
   </div>
-  <iframe width="480" height="360" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0" allowfullscreen></iframe>
-  <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
-</div>
-<br/><br/>
-<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
-  <div id="productheader" >
-    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:770px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Robot Inverse Kinematics for any Robot" %}</h1>
+  
+  <div id="IK">
+    <div id="content">
+      <div id="sub_content_header">
+        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+        <h2>{% trans "Robot Inverse Kinematics for any Robot" %} </h2>
+      </div>
+      <div id="sub_content">
+        <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" frameborder="0"/>
+        {% blocktrans %}<p>Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links.</p> {% endblocktrans %}
+        <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" frameborder="0"/>
+      </div>
     </div>
   </div>
-  <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" frameborder="0" allowfullscreen/>
-  {% blocktrans %}<p>Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links.</p> {% endblocktrans %}
-  <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" frameborder="0" allowfullscreen/>
-</div>
-<br/><br/>
-<div id="technology_content" style="width:890px; overflow:auto;clear:both;">
-  <div id="productheader" >
-    <div id="inversekinematics" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:720px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Parallelized Layout Optimization" %}</h1>
+  
+  <div id="parallelized_opt">
+    <div id="content">
+      <div id="sub_content_header">
+        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+        <h2>{% trans "Parallelized Layout Optimization" %} </h2>
+      </div>
+      <div id="sub_content">
+        <iframe src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0"></iframe>
+        {% blocktrans %}<p>Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task.</p>
+        <p>Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller.</p>{% endblocktrans %}
+      </div>
     </div>
-  </div>
-  <iframe width="640" height="360" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
-  <p>{% blocktrans %} Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task.</p>
-  <p>Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller. {% endblocktrans %}</p>
+  </div> 
+  <a href="#technology">To the top</a>
 </div>
-<a href="#technology_content">To the top</a>
-{% endblock %}
+  {% endblock %}
+  
+  

@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | Company overview" %}
+{% trans "MUJIN | Company Overview" %}
 {% endblock %}
 
 {% block css %}
@@ -13,11 +13,12 @@
  
 <div class="bnr"> 
   <image src="{{ STATIC_URL }}img/corporate.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:40px;color:#EE920E;padding0px"><b>{% trans "Company Overview" %}</b>
+  <div class="bnr_title">
+    <b>{% trans "Corporate Overview" %}</b>
   </div>
 </div>
 
-<div id="company_overview" align="left" style="width:870px; overflow-y: hidden;" class="wcustomhtml"> 
+<div id="company_overview" align="left" style="width:1100px;" class="wcustomhtml"> 
   <br/>
   <table class="content-default">
     <tbody>
@@ -80,7 +81,7 @@
       </tr>
       <tr>
         <th>E-mail</th>
-        <td><a href="inquiry">info@mujin.co.jp></a>
+        <td><a href="inquiry">info@mujin.co.jp</a>
         </td>
       </tr>
     </tbody>

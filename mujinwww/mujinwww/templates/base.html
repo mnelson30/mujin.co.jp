@@ -7,75 +7,92 @@
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
   <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+  <meta content="Robot Simulator, MUJIN Controller, MUJINコントローラ,Simulation,robot,生産準備,工程設計・計画,Rosen Diankov,OpenRAVE,生産システムのシミュレーション,Inverse Kinematics,逆運動学,IK,ロボットシミュレーター,ロボット" name="keywords">
   <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
   {% block basic-jquery %}<script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>{% endblock %}
   {% block headscripts %}{% endblock %}
 </head>
-
-<body onload="preloadImages();">
-  <div id="container" class="homepage">
-    <div id="Main">
-      <div id="header">
-        <table>
-          <tr>
-            <td>
-              <div id="logo">
-                <a href="/index">
-                  <img width="220" height="111" border="0" src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
-                </a>
-              </div>
-            </td>
-<td width="20%"><br></td>
-            <td>              
-              <img  border="0" src="{{ STATIC_URL }}img/inquiry.jpg"/>
-            </td>
-            <td>
-              <ul style="display:block">
-                <li style="display:block"> <font size="3px">{% trans "Tell" %}</font></li>
-                <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
-                <li style="display:block"><font size="3px">{% trans "Business hour 9:00am～6:00pm" %}</font></li>
-              </td> 
-            <td>
-              <div id="inquiry"> 
-                <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
-              </div>
-            </td>
-            </tr>
-          </table>
-        </div>
-        <nav>
-        <ul id="NavBar">
+  
+  <body onload="preloadImages();">
+    <div id="container" class="homepage">
+      <div id="Main">
+        <div id="header">
+          <table>
+            <tr>
+              <td>
+                <div id="logo">
+                  <a href="/index">
+                    <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
+                  </a>
+                </div>
+              </td>
+              <td width="300px">
+              </td>
+              <td>              
+                <img  border="0" src="{{ STATIC_URL }}img/call.png" style="width:100px"/ >
+              </td>
+              <td>
+                <ul>
+                  <li style="display:block"> <font size="3px">{% trans "Call" %}</font></li>
+                  <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
+                  <li style="display:block"><font size="3px">{% trans "Business hour 9:00am～6:00pm" %}</font></li>
+                </td> 
+              <td>
+                <ul class="headlink">
+                  <li><div id="inquiry"> 
+                      <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
+                  </div></li>
+                  <li></li>
+                  <li><div id="inquiry"> 
+                      <a href="/access_map"><p class="button">{% trans "Visit MUJIN" %}</p></a>
+                  </div></li>
+                </ul>
+              </td>
+              </tr>
+            </table>
+          </div>
+          <nav>
+            <ul id="NavBar">
+              <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
+              <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+              <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
+              <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
+              <li><a href="/news" title="News">{% trans "News" %}</a></li>
+              <li><a href="/carreers" title="Careers">{% trans "Careers" %}</a></li>
+              <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+            </ul>
+          </nav>   
+          
+          <!-- Content -->
+          <div id="main_content" class="{% block coltype %}colM{% endblock %}">
+            {% block pretitle %}{% endblock %}
+            {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+            {% block content %}
+            {% block object-tools %}{% endblock %}
+            {{ content }}
+            {% endblock %}
+            {% block sidebar %}{% endblock %}
+            <br class="clear" />
+          </div> 
+        </div> 
+      </div>
+      <div id="footer">
+        <ul id="footer_navbar">
           <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+          <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
           <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
           <li><a href="/news" title="News">{% trans "News" %}</a></li>
-          <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
           <li><a href="/carreers" title="Careers">{% trans "Careers" %}</a></li>
           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
         </ul>
-     </nav>   
-  
-        <!-- Content -->
-        <div id="content" class="{% block coltype %}colM{% endblock %}">
-        {% block pretitle %}{% endblock %}
-        {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
-        {% block content %}
-        {% block object-tools %}{% endblock %}
-        {{ content }}
-        {% endblock %}
-        {% block sidebar %}{% endblock %}
-        <br class="clear" />
-      </div> 
-    </div>
-    <div style="clear: both;"></div>
-    <br/>
-    <br/>
-    <br/>    
-    <div id="Footer">
-      <div class="footertext">
-        &copy; 2011-2012 MUJIN Inc. All rights reserved. Privacy Policy
       </div>
-    </div>
-  </div>
-</body>
+      
+      <div class="footertext">
+        <div>	
+          &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
+        </div>
+      </div>	
+    </body>
 </html>
+  

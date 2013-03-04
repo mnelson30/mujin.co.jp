@@ -2,16 +2,67 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | Company profile" %}
+{% trans "MUJIN Inc.| Company Profile" %}
+{% endblock %}
+{% block headscripts %}
+<script>
+  $(document).ready(function(){
+  $('#productslider').bjqs({
+  'animation' : 'fade',
+  'width' : 1100,
+  'height' : 160,
+  'showMarkers' : true,
+  'showControls' : false,
+  'centerMarkers' : false
+  });
+  }); 
+</script>
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
 {% endblock %}
 
-{% block content %}  
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "About MUJIN" %}</b>
-  </div>
-</div>  
+{% block content %}
+ 
+<div id="productslider">
+  <ul class="bjqs">
+    <li>
+      <img src="{{ STATIC_URL }}img/technology_bnr.png">
+    </li>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
+            <ul>
+              <li>{% trans "World's first cloud computing solution for robot motion planning." %}
+              </li>
+              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    <li>
+      <table>
+        <tr>
+          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
+          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
+            <ul>
+              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
+              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <img style="margin-left:120px; height:170px; width:900px" src="{{ STATIC_URL }}img/mujin_mission.jpg">
+      <b style="position:absolute; left:210px; bottom:70px; text-align:center; font-size:32px;color:ivory">{% trans "Industrial Robot Automation for Everyone" %}</b>
+    </li>
+  </ul>
+</div>
 
+<div style="clear:both;margin-top:40px">
 {% include "aboutmujinpane.html" %}
-
+</div>
 {% endblock %}
