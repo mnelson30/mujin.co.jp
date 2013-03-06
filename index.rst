@@ -81,3 +81,7 @@ When updating can just run::
   /var/www/mujinwww/updateweb.bash
 
 
+Useful links
+============
+
+W3's CSS validator: http://jigsaw.w3.org/css-validator/#validate_by_input

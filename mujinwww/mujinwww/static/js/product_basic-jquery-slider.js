@@ -1,6 +1,6 @@
 /*
  * Basic jQuery Slider plug-in v.1.1
- * 
+ *
  * http://www.basic-slider.com
  *
  * Authored by John Cobb
@@ -10,44 +10,44 @@
  * Copyright 2011, John Cobb
  * Free for all to use, abuse and improve under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * First published: August 2011
  * Updated v1.1: September 2011
  * Updated v1.2: Janurary 2012
- * 
+ *
  */ (function ($) {
     $.fn.bjqs = function (options) {
-		
+
         var settings = {},
             defaults = {
-				// Width + Height used to ensure consistency
+        // Width + Height used to ensure consistency
                 width: 200,
                 height: 80,
-				// The type of animation (slide or fade)
+        // The type of animation (slide or fade)
                 animation:"fade",
                 // The duration in ms of the transition between slides
                 animationDuration: 450,
                 // Automatically rotate through the slides
-				automatic: false,
-				// Delay in ms between auto rotation of the slides
+        automatic: false,
+        // Delay in ms between auto rotation of the slides
                 rotationSpeed: 4000,
-				// Pause the slider when any elements receive a hover event
+        // Pause the slider when any elements receive a hover event
                 hoverPause: true,
-				// Show the manual slider controls
+        // Show the manual slider controls
                 showControls: true,
-				// Center the controls vertically
+        // Center the controls vertically
                 centerControls: true,
-				// Text to display in next/prev buttons
+        // Text to display in next/prev buttons
                 nextText: 'Next',
                 prevText: 'Prev',
-				// Show positional markers
+        // Show positional markers
                 showMarkers: true,
-				// Center the positional indicators
+        // Center the positional indicators
                 centerMarkers: true,
-				// Allow navigation with arrow keys
+        // Allow navigation with arrow keys
                 keyboardNav: true,
-				// Use image title text as caption
-                useCaptions: false, 
+        // Use image title text as caption
+                useCaptions: false,
             },
             $container = this,
             $slider = $container.find('.bjqs'),
@@ -299,7 +299,7 @@
             }, settings.rotationSpeed);
         }
 
-        // Show the first slide	
+        // Show the first slide
         slides.eq(current).show();
         $slider.show();
 
@@ -334,7 +334,7 @@
                             $active = $next;
                             animating = false;
                         });
-						
+
                     } else if (settings.animation === 'slide') {
 
                         if (settings.showMarkers) {

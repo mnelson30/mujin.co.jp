@@ -21,9 +21,10 @@ line-height:25px;
     top: 0;
     width:1230px;
 }
+
 html, body {
     background-color: #FFFFFF;
-    border: 0 dotted #333333
+    border: 0 dotted #333333;
     height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -57,7 +58,7 @@ html, body {
 
 #logo img {
     width:220px;
-    height:111px; 
+    height:111px;
     border:0;
 }
 
@@ -96,32 +97,32 @@ html, body {
 
 
 #NavBar {
-    margin:0px 0; 
+    margin:0px 0;
     margin-bottom: 10px;
     list-style:none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; 
-    letter-spacing:-0.5px; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing:-0.5px;
     font-size:20px;
     text-shadow: 0 -1px 3px #202020;
     width:1140px; height:34px;
-    
+
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
-    
+
     -moz-box-shadow: 0px 3px 3px #cecece;
     -webkit-box-shadow: 0px 3px 3px #cecece;
     box-shadow: 0 3px 4px #8b8b8b;
 }
 
 #NavBar li {
-    display:block; 
-    float:left; 
-    border-right:1px solid #5d5d5d; 
-    border-left:1px solid #929292; 
-    width:160.7px; 
-    height:34px; 
-    border-bottom:1px solid #575757;  
+    display:block;
+    float:left;
+    border-right:1px solid #5d5d5d;
+    border-left:1px solid #929292;
+    width:160.7px;
+    height:34px;
+    border-bottom:1px solid #575757;
     border-top:1px solid #797979;
     /* Gradient backgrounds for the buttons. Generated using http://gradients.glrzad.com/ */
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
@@ -134,7 +135,7 @@ html, body {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
     background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
     background-color:#383838; /* Fallback */
-    
+
     /* We use the inset of the box shadow to create a subtle inner glow when hovering */
     -moz-box-shadow: inset 0 0 5px 5px #535353;
     -webkit-box-shadow: inset 0 0 5px 5px #535353;
@@ -155,13 +156,11 @@ html, body {
     color:white; text-decoration:none; text-align:center; display:block; line-height:34px; outline:none; }
 
 
-/* Rounded corner for the first in last item. Shorthand: Top left, Top right, Bottom right, Bottom left.
-   We also remove the borders, since they don't need them. */
 #NavBar li:first-child {
     moz-border-radius:4px 0 0 4px;
     webkit-border-radius:4px 0 0 4px;
     border-radius:4px 0 0 4px;
-    
+
     border-left:none;
 }
 
@@ -169,7 +168,7 @@ html, body {
     moz-border-radius:0px 4px 4px 0px;
     webkit-border-radius:0px 4px 4px 0px;
     border-radius:0px 4px 4px 0px;
-    
+
     border-left:none;
 }
 
@@ -193,48 +192,69 @@ float:left;
     float:left;
 }
 
-#learning_index_table h1 span {
-color:#f76e05;
-}
-
 .learning_index_table h1{
-    float:left
+    float: left;
 }
 
-#learning_index_table .index_mujincontroller_product {
-    background-image:url(/static/img/index_mujincontroller_product.png); 
-    width:300px; 
-    height:300px;
-    vertical-align:middle;
-}
-
+#learning_index_table .index_mujincontroller_product,
 #learning_index_table .index_mujincontroller_product2 {
-    background-image:url(/static/img/index_mujincontroller_product3.png); 
-    width:300px; 
-    height:300px;
-    vertical-align:middle;
+    width: 300px;
+    height: 300px;
 }
 
-#learning_index_table .index_mujincontroller_product2 li h2, #learning_index_table .index_mujincontroller_product li h2 {
-    color:#FFFFFF;
+#learning_index_table .index_mujincontroller_product ul,
+#learning_index_table .index_mujincontroller_product2 ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
-#learning_index_table .index_mujincontroller_product2 li, #learning_index_table .index_mujincontroller_product li {
-    display:block;
-    margin-bottom:20px;
+#learning_index_table .index_mujincontroller_product div,
+#learning_index_table .index_mujincontroller_product2 div {
+    background-image:url(/static/img/index_mujincontroller_product.png);
+    width: 300px;
+    height: 300px;
+
+/*
+    display: block;
+*/
+}
+
+
+#learning_index_table .index_mujincontroller_product2 div {
+    background-image: url(/static/img/index_mujincontroller_product3.png);
+}
+
+
+#learning_index_table .index_mujincontroller_product2 li h2,
+#learning_index_table .index_mujincontroller_product li h2 {
+    color: #FFFFFF;
+}
+
+#learning_index_table .index_mujincontroller_product2 li,
+#learning_index_table .index_mujincontroller_product li {
+/*
+    display: block;
+*/
+/*
+    margin-bottom: 20px;
+*/
 }
 
 #learning_index_table .index_mujincontroller_product2 ul, #learning_index_table .index_mujincontroller_product ul {
+/*
     margin-top:-130px;
+*/
 }
 
-#learning_index_table .index_mujincontroller_product2 a:hover, #learning_index_table .index_mujincontroller_product a:hover{
+#learning_index_table .index_mujincontroller_product2 a:hover,
+#learning_index_table .index_mujincontroller_product a:hover{
     text-shadow: 0px 0px 1px #ffffff,
     0px 0px 10px #FFF,
     0px 0px 20px #FFF,
     0px 0px 30px #FFF,
     0px 0px 40px #FFF;
-    text-decoration: underline\9;
+    text-decoration: underline;
 }
 
 #index_news {
@@ -243,10 +263,9 @@ color:#f76e05;
     padding-bottom: 0px;
     width: 530px;
     height:265px;
-    valign:top
     padding-left:10px;
     overflow:auto;
-    position:relative
+    position:relative;
 }
 
 #index_onenews {
@@ -255,12 +274,18 @@ color:#f76e05;
 }
 
 #line {
-    background: none repeat scroll 0 0 #333333;
+    border: 2px #333333;
+/*
     height: 4px;
+*/
+/*
     left: 0;
-    position:absolute ;
-    width: 1700px;
-    margin:780px 10px 0px -250px;
+    position: absolute ;
+*/
+    width: 100%;
+/*
+    margin: 780px 10px 0px -250px;
+*/
 }
 
 #line2 {
@@ -268,8 +293,8 @@ color:#f76e05;
     height: 350px;
     width:4px;
     position:absolute;
-    top: 985px;  
-    left: 820px;  
+    top: 985px;
+    left: 820px;
 }
 
 #job_navi {
@@ -327,9 +352,9 @@ padding-left:5px;
     background-color: #C2C2C3;
     width:100%;
     height:100px;
-    float:left;    
+    float:left;
     text-align:center;
- }  
+ }
 
 #footer_navbar {
     width:100%;
@@ -347,12 +372,12 @@ padding-left:5px;
     display: inline;
     margin:40px 10px 0px;
     font-size:24px;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;   
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
     }
 
 .footertext {
    width:100%;
-   float:left;   
+   float:left;
 }
 
 .footertext div {
@@ -408,7 +433,7 @@ p.image, p.caption {
 
 p.caption {
     font-size: 80%;
-    align: center }
+    text-align: center }
 
 table .subnavi td {
     background-image: url("{{ STATIC_URL }}img.gif");
@@ -418,7 +443,7 @@ table .subnavi:hover {
     color: red;
 }
 
-.subnavi { 
+.subnavi {
     clear:both;
     margin-bottom:30px;
     width:200px;
@@ -461,21 +486,17 @@ table .subnavi:hover {
 .subnavi li {
     text-decoration:none; text-align:center; display:block; line-height:30px; outline:none; margin:2px;  width:250px
 }
-.learning_index_table {
-    margin-top:20px;
-    float:left;
-}
 
-.learning_index_table h1{
-    float:left
+#learning_index_table {
+    margin-top: 20px;
+    padding-top: 20px;
 }
-
 
 #feature {
     background-color:#FF9900
 }
 #feature .top_shadow {
-    content:""
+    content:"";
     position: fixed;
     top: -10px;
     left: 0;
@@ -490,7 +511,7 @@ table .subnavi:hover {
 }
 
 #feature .bottom_shadow {
-    content:""
+    content:"";
     position: fixed;
     bottom: 10px;
     left: 0;
@@ -500,7 +521,7 @@ table .subnavi:hover {
     -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    
+
     z-index: 100;
 }
 
@@ -548,7 +569,7 @@ table .subnavi:hover {
 
 .imagebox :hover{
     color:black;
-} 
+}
 
 .career_list li {
     margin-left:50px;
@@ -575,9 +596,9 @@ table .subnavi:hover {
 }
 
 .bnr .bnr_title {
-    position:relative; 
-    left:40px; 
-    top:60px; 
+    position:relative;
+    left:40px;
+    top:60px;
     font-size:40px;
     color:#EE920E;
     padding:0px
@@ -588,7 +609,7 @@ table .subnavi:hover {
     width:1140px;
     height:50px;
     background:#DDDDDD;
-    float:left; 
+    float:left;
     margin-top:50px;
     margin-bottom:30px
 }
@@ -680,7 +701,7 @@ table .subnavi:hover {
     width:220px;
     height:1050px;
     background:#DDDDDD;
-    float:right; 
+    float:right;
     margin-right:60px;
     margin-bottom:0px;
     padding-left:5px;
@@ -697,13 +718,13 @@ table .subnavi:hover {
 
 #product_right aside p{
     margin: 5px 0 10px;
-} 
+}
 
 #product{
     width:910px;
     float:left;
     height:5em;
-    overflow:auto; 
+    overflow:auto;
     height:1000px;
 }
 
@@ -733,7 +754,7 @@ width:850px;
 #sub_content_header .subheader_sign {
 float:left;
 margin-right:20px;
-width:30px; 
+width:30px;
 height:30px;
 }
 
@@ -758,7 +779,7 @@ height:30px;
 }
 
 #sub_content .marketing_pics {
-    width:90%; 
+    width:90%;
     height:90%;
     margin:auto;
     display:block
@@ -798,7 +819,7 @@ table.content-default td {
 
 #feature_collision_avoidance table {
     margin-top:30px;
-  
+
 }
 
 #feature_collision_avoidance .border-shadow {
@@ -822,7 +843,7 @@ table.content-default td {
 #productbox .h3_lef {
     background-color: #F7D358;
     /*url("/static/img/header1.png") repeat-x ;*/
-   
+
     float:left;
     height:60px;
     width:290px;
@@ -850,7 +871,7 @@ table.content-default td {
 }
 
 #productbox .box3 img{
-    width:260px; 
+    width:260px;
     height:190px;
     float:right;
 }
@@ -864,7 +885,7 @@ table.content-default td {
     width:910px;
     float:left;
     height:5em;
-    overflow:auto; 
+    overflow:auto;
     height:1000px;
 }
 
@@ -884,14 +905,14 @@ table.content-default td {
  box-shadow: 0 0px 12px 4px #999999;
  moz-box-shadow: 0 3px 12px 4px #999999;
  webkit-box-shadow: 0 3px 12px 4px #999999;
-	}
+  }
 
 
 #fsurround .shadowing{
  box-shadow: 0 2px 6px 2px #999999;
  moz-box-shadow: 0 2px 6px 2px #999999;
  webkit-box-shadow: 0 2px 6px px #999999;
-	}
+  }
 
 #learning_index .button {
     border-top: 1px solid #08020a;
@@ -936,7 +957,7 @@ width:320px;
 background-repeat:no-repeat;
 background-image: url("/static/img/acquiring_chart.png");
 }
- 
+
 #about_mujin .about_mujin_table {
 margin-left:30px;
 clear:both;
@@ -948,7 +969,7 @@ clear:both;
 }
 
 #about_mujin2 .about_mujin_table2 p {
-    font-size:20px; 
+    font-size:20px;
     color:#EE920E;
 }
 

@@ -10,7 +10,7 @@ from django.conf import settings
 #    from IPython.Shell import IPShellEmbed
     #ipshell = IPShellEmbed(argv='',banner = 'MUJIN Controller Dropping into IPython',exit_msg = 'Leaving Interpreter.')
     #ipshell(local_ns=locals())
-    
+
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
