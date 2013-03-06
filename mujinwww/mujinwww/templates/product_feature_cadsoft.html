@@ -1,0 +1,32 @@
+{% extends "featuretemplate.html" %}
+{% load i18n %}
+
+{% block feature %}
+
+<div id="product">
+  <div id="content">
+    <div id="content_header">
+      <h1>{% trans "No need to purchase specifit 3DCAD software" %}</h1>
+    </div>
+    <div id="sub_content_header">
+      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+      <h2>{% trans "Many formats can be easily imported" %} </h2>
+    </div>
+    <div id="sub_content">
+      <p>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} </p>
+      <img src="{{ STATIC_URL }}img/add_on.gif">
+      <ul>
+        <li>COLLADA</li>
+        <li>IGES</li>
+        <li>STEP</li>
+        <li>IV/VRML</li>
+        <li>STL</li>
+        <li>DirectX</li>
+      </ul>    
+    </div>
+  </div>
+</div>
+{% endblock %}
+    
+    
+    

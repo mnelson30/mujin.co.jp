@@ -1,23 +1,21 @@
-{% extends "base.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | Management Team" %}
-{% endblock %}
-{% block headscripts %}
-
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% trans "MUJIN Inc.| Founder Message" %}
 {% endblock %}
 
-{% block content %}
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/management_team.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:0px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Message from Founder" %}</b>
+{% block subnavi %}
+{% endblock %}
+
+{% block feature %}
+<div id="product">
+  <div id="content">
+      <div id="content_header">
+        <h1>{% trans "Message from Founder" %}</h1>
+      </div>
+{% trans "under construction" %}
   </div>
 </div>
-
-{% trans "under construction" %}
-
 <div style="clear:both">
   {% include "aboutmujinpane.html" %}
 </div>

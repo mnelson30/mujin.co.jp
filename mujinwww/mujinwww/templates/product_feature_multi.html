@@ -1,0 +1,28 @@
+{% extends "featuretemplate.html" %}
+{% load i18n %}
+
+{% block feature %}
+
+<div id="product">
+  <div id="content">
+    <div id="content_header">
+      <h1>{% trans "Multi-Robot Manipulation Planning System" %}</h1>
+      </div>
+    <div id="sub_content_header">
+      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+      <h2>{% trans "Multi-Robot moves simultaneously" %} </h2>
+    </div>
+    <div id="sub_content">
+      <img style="float:left" src="{{ STATIC_URL }}img/dual_arm.png" frameborder="0">
+      <p>{% trans "Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutio ns for multiple robots." %}</p>
+      <p>{% trans "Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace. " %}</p>
+      <p>{% trans "To solve these problems, MUJIN has leverages algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. " %}</p>
+      <p>{% trans "Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task." %}</p>   
+      </div>
+  </div>
+</div>
+{% endblock %}
+
+  
+  
+

@@ -1,52 +1,47 @@
-{% extends "base.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | Company development" %}
+{% trans "MUJIN Inc.| Services" %}
 {% endblock %}
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/company_overview.css"/>
+{% block subnavi %}
 {% endblock %}
 
-{% block content %}   
-
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/corporate.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:20px; font-size:40px;color:#EE920E;padding0px"><b>{% trans "Company Development" %}</b>
+{% block feature %}
+<div id="product">
+  <div id="content">
+      <div id="content_header">
+        <h1>{% trans "Company Development" %}</h1>
+      </div>
+      <table class="content-default">
+        <tbody>
+          <tr>
+            <th>2006</th>
+            <td></td>
+            <td>{% trans "Carnegie Mellon University graduate student, Rosen Diankov, invented OpenRAVE, a robot manipulation planning platform that provides an environment for testing, developing, and deploying motion planning algorithms in real-world robotics applications." %}</td>
+          </tr>
+          <tr>
+            <th>2008</th>
+            <td>{% trans "Oct" %}</td>
+            <td>{% trans "OpenRAVE started to be released as an open-source software." %}</td>
+          </tr>
+          <tr>
+            <th>2011</th>
+            <td>{% trans "Jul" %}</td>
+            <td>{% trans "MUJIN Inc. was founded in Tokyo, Japan. The team started to apply OpenRAVE technology to industrial robot system." %}</td>
+          </tr>
+          <tr>
+            <th>2012</th>
+            <td>{% trans "Sep" %}</td>        
+            <td>{% trans "MUJIN Inc. relocated its headquarters to" %} <a href="/#headquarters">{% trans "Tokyo University Entrepreneur Plaza." %}</a></td>
+          </tr>
+        </tbody>
+      </table>
   </div>
 </div>
-
-<div id="company_overview" align="left" style="width:850px; overflow-y: hidden;" class="wcustomhtml"> 
-  <br/>
-  <table class="content-default">
-    <tbody>
-      <tr>
-        <th>2006</th>
-        <td></td>
-        <td>{% trans "Carnegie Mellon University graduate student, Rosen Diankov, invented OpenRAVE, a robot manipulation planning platform that provides an environment for testing, developing, and deploying motion planning algorithms in real-world robotics applications." %}</td>
-      </tr>
-      <tr>
-        <th>2008</th>
-        <td>{% trans "Oct" %}</td>
-        <td>{% trans "OpenRAVE started to be released as an open-source software." %}</td>
-      </tr>
-      <tr>
-        <th>2011</th>
-        <td>{% trans "Jul" %}</td>
-        <td>{% trans "MUJIN Inc. was founded in Tokyo, Japan. The team started to apply OpenRAVE technology to industrial robot system." %}</td>
-      </tr>
-      <tr>
-        <th>2012</th>
-        <td>{% trans "Sep" %}</td>        
-        <td>{% trans "MUJIN Inc. relocated its headquarters to" %} <a href="/#headquarters">{% trans "Tokyo University Entrepreneur Plaza." %}</a></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+  
 <div style="clear:both">
   {% include "aboutmujinpane.html" %}
 </div>
-
+  
 {% endblock %}

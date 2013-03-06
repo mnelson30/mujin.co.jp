@@ -1,50 +1,55 @@
-{% extends "base.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | Vision" %}
+{% trans "MUJIN Inc.| Vision" %}
 {% endblock %}
 
-{% block content %}  
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Vision" %}</b>
-  </div>
-</div>  
+{% block subnavi %}
+{% endblock %}
 
-<div id= "about mujin">
-  <div class="article">
-    <br/>
-    <p>
-      <img width="250" height="190" alt="INCONTROL Office" src="{{ STATIC_URL }}/img/industrial_robots.jpg" style="margin-left: 10px; float: right;"/>
-      {% trans "MUJIN Inc. was founded in 2011 at Tokyo, Japan by Issei Takino and the world-renowned roboticist, Dr. Rosen Diankov, the main contributor of the widely used robot manipulation planning platform OpenRAVE." %}
-    </p>
-    <br/>
-    <p>
-      {% trans "Having been focused on the development of the world-class open-source software for programming autonomous multi-joint robots for the past five years,  Dr. Diankov and the team at MUJIN now address robot makers, robot users, and research institutions around the world." %}
-    </p>
-    <br/>
-    <p>
-      {% blocktrans %}In the many fields our technology can be applied to, MUJIN's main target is Factory Automation (FA) using industrial robots. The demand of factory automation using industrial robots has become higher than ever and is still increasing. However, the special-skill-requiring and time-consuming robot system integration process is the a big obstacle people face.
-      Providing the large range of solutions, from stand-alone to fully integrated services, we strive to help robot system integraters to work more effectively, shorten development and deployment cycle, and increase overall manufacturing performance.{% endblocktrans %}
-    </p>
-    <br/>
-    <p>
-      {% trans "MUJIN's mission is to accomplish -Industrial Robots for Everyone- since we believe that easy access to industrial robot is the key to promote factory automation and increase worldwide manufacturing productivity." %} 
-    </p>
-    <br/>
-    {% trans "Key manufacturing markets include" %}:
-    
-    <ul>
-      <li>{% trans "Food & Medical" %} </li>
-      <li>{% trans "Electric" %}</li>
-      <li>{% trans "Automotive" %}</li>
-      <li>{% trans "Logistics" %}</li>
-    </ul>
+{% block feature %}
+<div id="product">
+  <div id="content">
+    <div id="content_header">
+      <h1>{% trans "Vision" %}</h1>
+    </div>
+    <div id="sub_content_header">
+      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+      <h2>{% trans "Started from Open Source Software" %} </h2>
+    </div>
+    <div id="sub_content">
+      <p>
+        {% trans "MUJIN Inc. was founded in 2011 in Tokyo, Japan by Issei Takino and the world-renowned roboticist, Dr. Rosen Diankov, the main contributor of the widely used robot manipulation planning platform OpenRAVE." %}</p>
+      <br/>
+      <p>
+        {% trans "As a natural transition from being focused on the development of a world-class open-source software for programming autonomous multi-joint robots over the past five years till 2011, Dr. Diankov and the team at MUJIN now address robot makers, robot users, and research institutions around the world." %}
+      </p>
+    </div>
+    <div id="sub_content_header">
+      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
+      <h2>{% trans "MUJIN goes to industry" %} </h2>
+    </div>
+    <div id="sub_content">
+       <img width="250" height="190" alt="INCONTROL Office" src="{{ STATIC_URL }}/img/industrial_robots.jpg" style="margin-left: 10px; float: right;"/><p>{% blocktrans %}In the many fields our technology can be applied to, MUJIN's main target is Factory Automation (FA) using industrial robots. The demand for factory automation using industrial robots has become greater than ever and continues to grow. However, the systems integration process posses a big obstacle to people, because it requires highly specialized skills and is time-consuming. Providing a large range of solutions, from stand-alone to fully integrated services, we strive to help robot system integraters to work more effectively, shorten the development and deployment cycle, and increase overall manufacturing performance.{% endblocktrans %}</p>
+      <br/>
+      <p>
+        {% trans "MUJIN's mission is to achieve our vision of =Industrial Robots for Everyone=. We believe that easy access to industrial robots is key to promoting factory automation and increasing worldwide manufacturing productivity." %} 
+      </p>
+      <br/>
+      {% trans "Key manufacturing markets include" %}:
+      
+      <ul>
+        <li>{% trans "Food" %} </li>
+        <li>{% trans "Medical" %}</li>
+        <li>{% trans "Electrical" %}</li>
+        <li>{% trans "Automotive" %}</li>
+        <li>{% trans "Logistical" %}</li>
+      </ul>
+    </div>
   </div>
 </div>
-<div style="clear:both">
+  <div style="clear:both">
   {% include "aboutmujinpane.html" %}
-</div>
-
-{% endblock %}
+  </div>
+  
+  {% endblock %}
