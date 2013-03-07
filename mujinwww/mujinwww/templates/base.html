@@ -14,21 +14,22 @@
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
     <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
-    
+
     <!--
         I don't think these are even acknowledged by search engines anymore...
       -->
     <meta content="Robot Simulator, MUJIN Controller, MUJINコントローラ,Simulation,robot,生産準備,工程設計・計画,Rosen Diankov,OpenRAVE,生産システムのシミュレーション,Inverse Kinematics,逆運動学,IK,ロボットシミュレーター,ロボット" name="keywords"/>
-    <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
-    <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
     {% block headscripts %}{% endblock %}
   </head>
-  
+
   <body>
     <div id="container" class="homepage">
-	  <div id="Main">
-		<div id="header">   
-		  <table>
+      <div id="Main">
+        <div id="header">
+          <table>
             <tr>
               <td>
                 <div id="logo">
@@ -46,7 +47,7 @@
                 <ul>
                   <li style="display:block"><font size="3px">{% trans "Call us at" %}</font></li>
                   <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
-                  <li style="display:block"><font size="3px">{% trans "Business hours 9:00am～6:00pm" %}</font></li>
+                  <li style="display:block"><font size="3px">{% trans "Business hours 9:00am-6:00pm" %}</font></li>
                 </ul>
               </td>
               <td>
@@ -67,63 +68,76 @@
               </td>
             </tr>
           </table>
-	    </div>
-        <div id="NavBar">
-          <ul>
-            <li>
-              <a href="/index" title="Home">{% trans "Home" %}</a>
-            </li>
-            <li>
-              <a href="/products" title="Products">{% trans "Products" %}</a>
-            </li>
-            <li>
-              <a href="/services" title="Services">{% trans "Services" %}</a>
-            </li>
-            <li>
-              <a href="/technology" title="Technology">{% trans "Technology" %}</a>
-            </li>
-            <li>
-              <a href="/news" title="News">{% trans "News" %}</a>
-            </li>
-            <li>
-              <a href="/careers" title="Careers">{% trans "Careers" %}</a>
-            </li>
-            <li>
-              <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
-            </li>
-          </ul>
         </div>
-        
-        
-        <!-- Content -->
+<!--
+        end header
+-->
+        <div id="NavBar">
+          <div class="inner">
+            <ul>
+              <li>
+                <a href="/index" title="Home">{% trans "Home" %}</a>
+              </li>
+              <li>
+                <a href="/products" title="Products">{% trans "Products" %}</a>
+              </li>
+              <li>
+                <a href="/services" title="Services">{% trans "Services" %}</a>
+              </li>
+              <li>
+                <a href="/technology" title="Technology">{% trans "Technology" %}</a>
+              </li>
+              <li>
+                <a href="/news" title="News">{% trans "News" %}</a>
+              </li>
+              <li>
+                <a href="/careers" title="Careers">{% trans "Careers" %}</a>
+              </li>
+              <li>
+                <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br />
+<!--
+        end navbar
+-->
+
         <div id="main_content" class="{% block coltype %}colM{% endblock %}">
           {% if title %}
-          <h1>{{ title }}</h1>
+            <h1>{{ title }}</h1>
           {% endif %}
           {% block content %}
           {{ content }}
           {% endblock %}
         </div>
-     </div>
-        
-     <div id="footer">
-       <ul id="footer_navbar">
-         <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
-         <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
-         <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
-         <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
-         <li><a href="/news" title="News">{% trans "News" %}</a></li>
-         <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
-         <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-       </ul>
-     </div>
-        
-     <div class="footertext">
-       <div>
-         &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
+<!--
+        end main content
+-->
+
        </div>
-     </div>
-	 </div>
+<!--
+        end main
+-->
+
+       <div id="footer">
+         <ul id="footer_navbar">
+           <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
+           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+           <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
+           <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
+           <li><a href="/news" title="News">{% trans "News" %}</a></li>
+           <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
+           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+         </ul>
+       </div>
+       <div class="footertext">
+         <div>
+           &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
+         </div>
+      </div>
+    </div>
   </body>
 </html>
-  
+

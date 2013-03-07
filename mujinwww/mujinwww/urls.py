@@ -19,7 +19,7 @@ def indexview(request, name):
         name = 'index'
 
     htmlvars = dict()
-    
+
     # TODO: maybe get rid of this and make a model?
     if name == 'index':
         # perhaps move this in initialization step for caching?

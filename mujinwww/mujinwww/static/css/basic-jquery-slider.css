@@ -17,7 +17,7 @@ margin-left:120px;
 
 #myslider {
   height:430px;
-  width:1200px;
+  width:100%;
   margin:0 auto;
   position:relative;
   background:#fff;
@@ -29,7 +29,7 @@ margin-left:120px;
 
 #myslider2 {
   height:400px;
-  width:1200px;
+  width:100%;
   margin:0 auto;
   position:relative;
   left:170px;
