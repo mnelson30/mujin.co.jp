@@ -3,31 +3,32 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
-<head>
-  <title>
-    {% block title %}
-      {% trans "MUJIN Inc Homepage | Industrial Robot for Everyone" %}{% endblock %}</title>
-  {% block css %}
-  {% endblock %}
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
-  <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
-
-<!--
-  I don't think these are even acknowledged by search engines anymore...
--->
-  <meta content="Robot Simulator, MUJIN Controller, MUJINコントローラ,Simulation,robot,生産準備,工程設計・計画,Rosen Diankov,OpenRAVE,生産システムのシミュレーション,Inverse Kinematics,逆運動学,IK,ロボットシミュレーター,ロボット" name="keywords">
-
-  <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
-  <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
-  {% block headscripts %}{% endblock %}
-</head>
-
-<body>
-  <div id="container" class="homepage">
-    <div id="Main">
-      <div id="header">
-        <table>
+  <head>
+    <title>
+      {% block title %}
+      {% trans "MUJIN Inc Homepage | Industrial Robot for Everyone" %}
+      {% endblock %}
+    </title>
+    {% block css %}
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
+    <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    
+    <!--
+        I don't think these are even acknowledged by search engines anymore...
+      -->
+    <meta content="Robot Simulator, MUJIN Controller, MUJINコントローラ,Simulation,robot,生産準備,工程設計・計画,Rosen Diankov,OpenRAVE,生産システムのシミュレーション,Inverse Kinematics,逆運動学,IK,ロボットシミュレーター,ロボット" name="keywords"/>
+    <script src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
+    <script src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
+    {% block headscripts %}{% endblock %}
+  </head>
+  
+  <body>
+    <div id="container" class="homepage">
+	  <div id="Main">
+		<div id="header">   
+		<table>
           <tr>
             <td>
               <div id="logo">
@@ -40,7 +41,7 @@
             </td>
             <td>
               <img  border="0" src="{{ STATIC_URL }}img/call.png" style="width:100px"/ >
-            </td>
+              </td>
             <td>
               <ul>
                 <li style="display:block"><font size="3px">{% trans "Call us at" %}</font></li>
@@ -64,11 +65,11 @@
                 </li>
               </ul>
             </td>
-          </tr>
-        </table>
-      </div>
-      <div>
-        <ul id="NavBar">
+            </tr>
+          </table>
+	    </div>
+        <div>
+          <ul id="NavBar">
           <li>
             <a href="/index" title="Home">{% trans "Home" %}</a>
           </li>
@@ -90,38 +91,38 @@
           <li>
             <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
           </li>
+          </ul>
+     </div>
+        
+        <!-- Content -->
+        <div id="main_content" class="{% block coltype %}colM{% endblock %}">
+          {% if title %}
+          <h1>{{ title }}</h1>
+        {% endif %}
+          {% block content %}
+          {{ content }}
+          {% endblock %}
+        </div>
+      </div> 
+    
+      <div id="footer">
+        <ul id="footer_navbar">
+          <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
+          <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+          <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
+          <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
+      <li><a href="/news" title="News">{% trans "News" %}</a></li>
+          <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
+          <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
         </ul>
       </div>
 
-      <!-- Content -->
-      <div id="main_content" class="{% block coltype %}colM{% endblock %}">
-        {% if title %}
-          <h1>{{ title }}</h1>
-        {% endif %}
-        {% block content %}
-          {{ content }}
-        {% endblock %}
+      <div class="footertext">
+        <div>
+      &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
+        </div>
       </div>
     </div>
-  </div>
-
-  <div id="footer">
-    <ul id="footer_navbar">
-      <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
-      <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
-      <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
-      <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
-      <li><a href="/news" title="News">{% trans "News" %}</a></li>
-      <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
-      <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-    </ul>
-  </div>
-
-  <div class="footertext">
-    <div>
-      &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
-    </div>
-  </div>
-</body>
+  </body>
 </html>
 
