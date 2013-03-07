@@ -28,101 +28,102 @@
     <div id="container" class="homepage">
 	  <div id="Main">
 		<div id="header">   
-		<table>
-          <tr>
-            <td>
-              <div id="logo">
-                <a href="/index">
-                  <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
-                </a>
-              </div>
-            </td>
-            <td width="300px">
-            </td>
-            <td>
-              <img  border="0" src="{{ STATIC_URL }}img/call.png" style="width:100px"/ >
+		  <table>
+            <tr>
+              <td>
+                <div id="logo">
+                  <a href="/index">
+                    <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
+                  </a>
+                </div>
               </td>
-            <td>
-              <ul>
-                <li style="display:block"><font size="3px">{% trans "Call us at" %}</font></li>
-                <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
-                <li style="display:block"><font size="3px">{% trans "Business hours 9:00am～6:00pm" %}</font></li>
-              </ul>
-            </td>
-            <td>
-              <ul class="headlink">
-                <li>
-                  <div id="inquiry">
-                    <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
-                  </div>
-                </li>
-                <li>
-                </li>
-                <li>
-                  <div id="inquiry">
-                    <a href="/access_map"><p class="button">{% trans "Visit MUJIN" %}</p></a>
-                  </div>
-                </li>
-              </ul>
-            </td>
+              <td width="300px">
+              </td>
+              <td>
+                <img  border="0" src="{{ STATIC_URL }}img/call.png" style="width:100px"/>
+              </td>
+              <td>
+                <ul>
+                  <li style="display:block"><font size="3px">{% trans "Call us at" %}</font></li>
+                  <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
+                  <li style="display:block"><font size="3px">{% trans "Business hours 9:00am～6:00pm" %}</font></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="headlink">
+                  <li>
+                    <div id="inquiry">
+                      <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
+                    </div>
+                  </li>
+                  <li>
+                  </li>
+                  <li>
+                    <div id="inquiry">
+                      <a href="/access_map"><p class="button">{% trans "Visit MUJIN" %}</p></a>
+                    </div>
+                  </li>
+                </ul>
+              </td>
             </tr>
           </table>
 	    </div>
-        <div>
-          <ul id="NavBar">
-          <li>
-            <a href="/index" title="Home">{% trans "Home" %}</a>
-          </li>
-          <li>
-            <a href="/products" title="Products">{% trans "Products" %}</a>
-          </li>
-          <li>
-            <a href="/services" title="Services">{% trans "Services" %}</a>
-          </li>
-          <li>
-            <a href="/technology" title="Technology">{% trans "Technology" %}</a>
-          </li>
-          <li>
-            <a href="/news" title="News">{% trans "News" %}</a>
-          </li>
-          <li>
-            <a href="/careers" title="Careers">{% trans "Careers" %}</a>
-          </li>
-          <li>
-            <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
-          </li>
+        <div id="NavBar">
+          <ul>
+            <li>
+              <a href="/index" title="Home">{% trans "Home" %}</a>
+            </li>
+            <li>
+              <a href="/products" title="Products">{% trans "Products" %}</a>
+            </li>
+            <li>
+              <a href="/services" title="Services">{% trans "Services" %}</a>
+            </li>
+            <li>
+              <a href="/technology" title="Technology">{% trans "Technology" %}</a>
+            </li>
+            <li>
+              <a href="/news" title="News">{% trans "News" %}</a>
+            </li>
+            <li>
+              <a href="/careers" title="Careers">{% trans "Careers" %}</a>
+            </li>
+            <li>
+              <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
+            </li>
           </ul>
-     </div>
+        </div>
+        
         
         <!-- Content -->
         <div id="main_content" class="{% block coltype %}colM{% endblock %}">
           {% if title %}
           <h1>{{ title }}</h1>
-        {% endif %}
+          {% endif %}
           {% block content %}
           {{ content }}
           {% endblock %}
         </div>
-      </div> 
-    
-      <div id="footer">
-        <ul id="footer_navbar">
-          <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
-          <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
-          <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
-          <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
-      <li><a href="/news" title="News">{% trans "News" %}</a></li>
-          <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
-          <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-        </ul>
-      </div>
-
-      <div class="footertext">
-        <div>
-      &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
-        </div>
-      </div>
-    </div>
+     </div>
+        
+     <div id="footer">
+       <ul id="footer_navbar">
+         <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
+         <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
+         <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
+         <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
+         <li><a href="/news" title="News">{% trans "News" %}</a></li>
+         <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
+         <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
+       </ul>
+     </div>
+        
+     <div class="footertext">
+       <div>
+         &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
+       </div>
+     </div>
+	 </div>
   </body>
 </html>
-
+  
