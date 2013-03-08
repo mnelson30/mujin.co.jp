@@ -14,6 +14,8 @@ from django.utils.translation import get_language_from_request
 from django.contrib import admin
 admin.autodiscover()
 
+import mujinwww.views
+
 def indexview(request, name):
     if len(name) == 0:
         name = 'index'
@@ -56,6 +58,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    url(r'^contact_us', 'mujinwww.views.contact_us'),
 
     url(r'^(?P<name>(\w)*)$', indexview),
     url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
