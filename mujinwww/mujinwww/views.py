@@ -40,8 +40,7 @@ def sendinquiry(request):
     #~ from IPython.Shell import IPShellEmbed; IPShellEmbed(argv='')(local_ns=locals())
     if request.method == 'POST':
         
-        to = 'lucas.p.doyle@gmail.com'
-        #~ to = 'info@mujin.co.jp'
+        to = 'info@mujin.co.jp'
 
         subject = 'New inquiry from ' + request.POST['first_name'] + ' ' + request.POST['last_name']
         text = '''
