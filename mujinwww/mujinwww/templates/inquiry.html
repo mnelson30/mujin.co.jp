@@ -29,9 +29,10 @@
       }
       if (valid) {
         $.ajax({
-          url: '/contact_us',
+          url: '/sendinquiry',
           type: 'POST',
           data: data,
+          contentType: 'application/json; charset=UTF-8',
           beforeSend: function(xhr) {
             xhr.setRequestHeader('X-CSRFToken', $('input[type="hidden"]').val());
           },

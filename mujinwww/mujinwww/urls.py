@@ -59,7 +59,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^contact_us', 'mujinwww.views.contact_us'),
+    url(r'^sendinquiry', 'mujinwww.views.sendinquiry'),
 
     url(r'^(?P<name>(\w)*)$', indexview),
     url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),

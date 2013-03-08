@@ -36,7 +36,7 @@ def mail(to, subject, text, attach=None, from_address=gmail_user):
     mailServer.sendmail(gmail_user, to, msg.as_string())
     mailServer.close()
 
-def contact_us(request):
+def sendinquiry(request):
     #~ from IPython.Shell import IPShellEmbed; IPShellEmbed(argv='')(local_ns=locals())
     if request.method == 'POST':
         
@@ -47,7 +47,7 @@ def contact_us(request):
         text = '''
 <h1>New inquiry from {first_name} {last_name}</h1>
 <br />
-<b>Their contact info:</b>
+<b>Their info:</b>
 <ul>
   <li>Name: {first_name} {last_name}</li>
   <li>Email: {email}</li>
@@ -63,7 +63,7 @@ def contact_us(request):
 <p>
   {message}
 </p>
-        '''.format(**{key: value[0] for (key, value) in request.POST.iteritems()})
+        '''.format(**{key: value.encode('utf-8') for (key, value) in request.POST.iteritems()})
         
         mail(to, subject, text, from_address=request.POST['email'])
     return HttpResponse()
