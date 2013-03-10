@@ -7,18 +7,18 @@
 
 {% block headscripts %}
 <script type="text/javascript">
-  
+
   var trim = function(str) {
     return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
   }
-  
+
   $(document).ready(function() {
     $('#form_submit').click(function(e) {
       var data = {}
       $('form').find('input[type="text"], textarea').each(function(index, el) {
         data[$(el).attr('name')] = $(el).val();
       })
-      
+
       var valid = true;
       for (var prop in data) {
         if (trim(data[prop]) == "") {

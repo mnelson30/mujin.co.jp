@@ -53,14 +53,18 @@ urlpatterns = patterns('',
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
+    # the admin
     url(r'^admin/', include(admin.site.urls)),
 
+    # for sending inquiry emails
     url(r'^sendinquiry', 'mujinwww.views.sendinquiry'),
+    
+    # to serve the media directory statically when using the dev server
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
-    url(r'^(?P<name>(\w)*)$', indexview),
+    # why is this here?
     url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
+    
+    # the catch all, serves everything
+    url(r'^(?P<name>(\w)*)$', indexview)
 )

@@ -28,18 +28,18 @@ def mail(to, subject, text, attach=None, from_address=gmail_user):
        part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(attach))
        msg.attach(part)
 
-    mailServer = smtplib.SMTP('smtp.gmail.com', 587)
-    mailServer.ehlo()
-    mailServer.starttls()
-    mailServer.ehlo()
-    mailServer.login(gmail_user, gmail_pwd)
-    mailServer.sendmail(gmail_user, to, msg.as_string())
-    mailServer.close()
+    mail_server = smtplib.SMTP('smtp.gmail.com', 587)
+    mail_server.ehlo()
+    mail_server.starttls()
+    mail_server.ehlo()
+    mail_server.login(gmail_user, gmail_pwd)
+    mail_server.sendmail(gmail_user, to, msg.as_string())
+    mail_server.close()
 
 def sendinquiry(request):
     #~ from IPython.Shell import IPShellEmbed; IPShellEmbed(argv='')(local_ns=locals())
     if request.method == 'POST':
-        
+
         to = 'info@mujin.co.jp'
 
         subject = 'New inquiry from ' + request.POST['first_name'] + ' ' + request.POST['last_name']
@@ -63,7 +63,7 @@ def sendinquiry(request):
   {message}
 </p>
         '''.format(**{key: value.encode('utf-8') for (key, value) in request.POST.iteritems()})
-        
+
         mail(to, subject, text, from_address=request.POST['email'])
     return HttpResponse()
 

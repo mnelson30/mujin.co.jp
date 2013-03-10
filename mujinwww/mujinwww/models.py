@@ -4,6 +4,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 
+from django.contrib.auth.models import User
+
 ENGLISH = 'en'
 JAPANESE = 'ja'
 LANGUAGES = (
@@ -18,11 +20,12 @@ class NewsEntry(models.Model):
     content = models.TextField(help_text='This can have HTML in it')
 
     def __unicode__(self):
-        return self.title
+        return self.title + ' ' + self.language
 
-class Employee(models.Model):
-    firstname = models.CharField(max_length=230)
-    lastname = models.CharField(max_length=230)
+# these are employees
+class UserProfile(models.Model):
+    user = models.ForeignKey(User, unique=True)
+
     language = models.CharField(max_length=230, default=ENGLISH, choices=LANGUAGES)
 
     def _photo_path(instance, orig_path):
@@ -35,4 +38,7 @@ class Employee(models.Model):
     bio = models.TextField(help_text='This can have HTML in it')
 
     def __unicode__(self):
-        return self.firstname + ' ' + self.lastname
+        return self.user.username + ' ' + self.language
+
+#~ enables us to reference the users profile and have it created if it does not exist
+User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
