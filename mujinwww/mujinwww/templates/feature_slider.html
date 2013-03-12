@@ -1,0 +1,50 @@
+{% load i18n %}
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#featureCarousel').carousel({
+      interval: 6000
+    });
+  });
+</script>
+<div id="featureCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <a href="/products">
+        <img src="{{ STATIC_URL }}img/mujincontroller_snap.png"/>
+        <div class="carousel-caption">
+          <h4>{% trans "MUJIN Controller Cloud" %}</h4>
+          <p>{% trans "World's first cloud computing solution for robot motion planning." %}</p>
+          <p>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}</p>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="/products">
+        <img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png"/>
+        <div class="carousel-caption">
+          <h4>{% trans "MUJIN Controller" %}</h4>
+          <p>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</p>
+          <p>{% trans "All system operation done through browser, so supports all OSes." %}</p>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="/products">
+        <img src="{{ STATIC_URL }}img/mujin_mission.jpg"/>
+        <div class="carousel-caption">
+          <h4>{% trans "Industrial Robot Automation for Everyone" %}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#featureCarousel" data-slide="prev">‹</a>
+  <a class="carousel-control right" href="#featureCarousel" data-slide="next">›</a>
+  <ol class="carousel-indicators">
+    <li data-target="#featureCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#featureCarousel" data-slide-to="1"></li>
+    <li data-target="#featureCarousel" data-slide-to="2"></li>
+  </ol>
+</div>

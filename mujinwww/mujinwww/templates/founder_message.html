@@ -1,23 +1,10 @@
-{% extends "generaltemplate.html" %}
+{% extends "aboutmujintemplate.html" %}
 {% load i18n %}
 {% block title %}
 {% trans "MUJIN Inc.| Founder Message" %}
 {% endblock %}
 
-{% block subnavi %}
-{% endblock %}
-
-{% block feature %}
-<div id="product">
-  <div id="content">
-      <div id="content_header">
-        <h1>{% trans "Message from Founder" %}</h1>
-      </div>
+{% block main-content %}
+<h2>{% trans "Message from Founder" %}</h2>
 {% trans "under construction" %}
-  </div>
-</div>
-<div style="clear:both">
-  {% include "aboutmujinpane.html" %}
-</div>
-
 {% endblock %}

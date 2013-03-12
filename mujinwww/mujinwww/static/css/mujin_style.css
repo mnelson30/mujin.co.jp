@@ -73,9 +73,14 @@ body {
   margin-bottom: 10px;
 }
 
-.carousel-inner img {
+#homeCarousel .carousel-inner img {
   width: 100%;
   height: 484px;
+}
+
+#featureCarousel .carousel-inner img {
+  width: 100%;
+  height: 284px;
 }
 
 .color-headline b {
@@ -110,12 +115,118 @@ legend {
 }
 .learn-button-menu h3 {
   margin: 5px;
-/*
-  float: left;
-*/
 }
 .learn-button-menu img {
   width: 55px;
   height: 55px;
   margin-right: 15px;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+  color: #484848;
+}
+
+.affix {
+  top: 10px;
+}
+
+/* Sidebar nav */
+.product-sidenav {
+  width: 228px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.product-sidenav > li > div,
+.product-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.product-sidenav > li:first-child > div,
+.product-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.product-sidenav > li:last-child > div,
+.product-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.product-sidenav > .active > div,
+.product-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.product-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.product-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.product-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.product-sidenav .active .icon-chevron-right,
+.product-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.product-sidenav.affix {
+  top: 40px;
+}
+.product-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+fieldset {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.nohover-highlight {
+  color: rgb(51, 51, 51);
+}
+.nohover-highlight:hover {
+  text-decoration: none;
+}
+
+image-inline {
+  display: inline;
+  margin: 10px;
+}
+
+.about-mujin-index img {
+  width: 150px;
+  height: 200px;
 }

@@ -4,118 +4,77 @@
 {% trans "MUJIN Inc.| News" %}
 {% endblock %}
 
-{% block subnavi %}
-<div id="navi">
-  <ul class="subnavi">
-    <li style="float:left"><a href="#2013news" class="subbutton">{% trans "2013" %}</a>
-    </li>
-    <li style="float:left"><a href="#20121008" class="subbutton">{% trans "2012" %}</a>
-    </li>
-    <li style="float:left"><a href="#20111122" class="subbutton">{% trans "2011" %}</a>
-    </li>
-  </ul>
-</div>
+{% block sidebar-list-items %}
+<li><a href="#2012">{% trans "2013" %}</a>
+</li>
+<li><a href="#2011">{% trans "2012" %}</a>
+</li>
 {% endblock %}
 
-{% block feature %}
-<div id="news">
-  <div id="20121008" class="one_news">
-    <div class="news_title">
-      <h1>{% trans "<b>MUJIN</b> was introduced by Nikkei Business Magazine" %}
-      </h1>
-    </div>
-    <div class="news_subtitle">
-      <h3>{% trans "by Issei Takino 2012/10/08 " %}</h3>
-    </div>
-    <div id="news_content">
-      <img src="{{ STATIC_URL }}img/nikkei_business.jpg">
-      <p>{% trans "<b>MUJIN</b> was featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan." %}</p><a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}</a>
-    </div>
+{% block main-content %}
+<fieldset>
+  <h3>{% trans "MUJIN introduced by Nikkei Business Magazine" %}</h3>
+  <div class="fieldset-content">
+    <b>{% trans "Issei Takino 2012/10/08 " %}</b>
+    <img class="thumbnail" style="width:130px;" src="{{ STATIC_URL }}img/nikkei_business.jpg">
+    <p>{% trans "MUJIN was featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan." %}</p>
+    <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "Read more" %}</a>
   </div>
-
-  <div id="20120918"class="one_news">
-    <div class="news_title">
-      <h1>{% trans "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper" %}
-      </h1>
-    </div>
-    <div class="news_subtitle">
-      <h3>{% trans "by Issei Takino 2012/09/18 " %}</h3>
-    </div>
-    <div id="news_content">
-      <img src="{{ STATIC_URL }}img/nikkannewspaper.png">
-      <p> {% trans "<b>MUJIN</b> receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}<a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}</a>
-    </div>
+</fieldset>
+<fieldset>
+  <h3>{% trans "MUJIN was introduced by Nikkan Industrial Newspaper" %}</h3>
+  <div class="fieldset-content">
+    <b>{% trans "Issei Takino 2012/09/18 " %}</b>
+    <br/>
+    <img src="{{ STATIC_URL }}img/nikkannewspaper.png">
+    <p>{% trans "MUJIN receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}<a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "Read more" %}</a></p>
   </div>
-
- <div id="20120810" class="one_news">
-    <div class="news_title">
-      <h1> {% trans "<b>MUJIN</b> announcing new Koishikawa office" %}
-      </h1>
-    </div>
-    <div class="news_subtitle">
-      <h3>{% trans "by Issei Takino 2012/08/10 " %}</h3>
-    </div>
-    <div id="news_content">
-      <img src="{{ STATIC_URL }}img/koishikawa.png">
-      <p>  {% trans "<b>MUJIN</b> opened the new Koishikawa office for R&D." %}
-          <a href="/access_map">{% trans "Visit Office" %}
-          </a>
-    </div>
+</fieldset>
+<fieldset>
+  <h3> {% trans "MUJIN announcing new Koishikawa office" %}</h3>
+  <div class="fieldset-content">
+    <b>{% trans "Issei Takino 2012/08/10 " %}</b>
+    <br/>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/koishikawa.png">
+    <p>  {% trans "MUJIN opened the new Koishikawa office for R&D." %}
+    <a href="/access_map">{% trans "Visit Office" %}</a>
+    </p>
   </div>
-
- <div id="20120802" class="one_news" >
-   <div class="news_title">
-     <h1>  {% trans "<b>MUJIN</b> announcing relocation of headquarter" %}
-     </h1>
-   </div>
-   <div class="news_subtitle">
-     <h3>{% trans "by Issei Takino 2012/08/02 " %}</h3>
-   </div>
-   <div id="news_content">
-     <img src="{{ STATIC_URL }}img/entreplaza.png">
-     <p>{% trans "<b>MUJIN</b> relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>." %}<p></br>
-<h3>Tokyo University Entrepreneur Plaza</h3>
-<p>{% trans "The University of Tokyo's Science Entrepreneurship and Enterprise Development (SEED) office for supporting venture businesses has moved from the planning to the implementation stage, and visible results are now being returned to society. The first stage consisted of establishing the tripartite system of the Division of University Corporate Relations, TODAI TLO, Ltd. (CASTI), and the University of Tokyo Edge Capital Co., Ltd. (UTEC) in order to build support for venture businesses. The second stage consisted of procuring a facility equipped to support wet laboratories for venture businesses in the bioscience field (the University of Tokyo Entrepreneur Plaza)." %}</p>
-       <a href="/access_map">{% trans "Visit Office" %}
-       </a>
-   </div>
- </div>
-
- <div id="20120516" class="one_news">
-   <div class="news_title">
-     <h1>  {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}
-     </h1>
-   </div>
-   <div class="news_subtitle">
-     <h3>{% trans "by Issei Takino 2012/05/16 " %}</h3>
-   </div>
-   <div id="news_content">
-     <img src="{{ STATIC_URL }}img/yomiuri_article.png">
-     <p> <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.html">ロボット最適化で「ＭＵＪＩＮ」の価値</a>
-          <br/>
-          シリコンバレーから日本へ。ブルガリア出身の魯仙さん
-          魯仙さん（左）と滝野さん
-          ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）
-          　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
-          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "more detail" %}
-          </a>
-   </div>
- </div>
-
- <div id="20111122" class="one_news">
-   <div class="news_title">
-     <h1>  {% trans "<b>MUJIN</b> attends IREX 2011" %}
-     </h1>
-   </div>
-   <div class="news_subtitle">
-     <h3>{% trans "by Issei Takino 2012/11/22 " %}</h3>
-   </div>
-   <div id="news_content">
-     <img src="{{ STATIC_URL }}img/irex2011.png">
-     <p>{% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}</p>
-   </div>
- </div>
-</div>
+</fieldset>
+<fieldset>
+  <h3>  {% trans "MUJIN announcing relocation of headquarter" %}</h3>
+  <div class="fieldset-content">
+    <span>{% trans "Issei Takino 2012/08/02 " %}</span>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/entreplaza.png">
+    <p>{% trans "MUJIN relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>." %}</p>
+    </br>
+    <b>Tokyo University Entrepreneur Plaza</b>
+    <p>{% trans "The University of Tokyo's Science Entrepreneurship and Enterprise Development (SEED) office for supporting venture businesses has moved from the planning to the implementation stage, and visible results are now being returned to society. The first stage consisted of establishing the tripartite system of the Division of University Corporate Relations, TODAI TLO, Ltd. (CASTI), and the University of Tokyo Edge Capital Co., Ltd. (UTEC) in order to build support for venture businesses. The second stage consisted of procuring a facility equipped to support wet laboratories for venture businesses in the bioscience field (the University of Tokyo Entrepreneur Plaza)." %}</p>
+  </div>
+</fieldset>
+<fieldset>
+  <h3>{% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}</h3>
+  <div class="fieldset-content">
+    <b>{% trans "Issei Takino 2012/05/16 " %}</b>
+    <p> <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.html">ロボット最適化で「ＭＵＪＩＮ」の価値</a>
+    <br/>
+    シリコンバレーから日本へ。ブルガリア出身の魯仙さん
+    魯仙さん（左）と滝野さん
+    ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）
+    　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
+    <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "Read more" %}
+    </a>
+    </p>
+  </div>
+</fieldset>
+<fieldset>
+  <h3>{% trans "MUJIN attends IREX 2011" %}
+  </h3>
+  <div class="fieldset-content">
+    <b>{% trans "Issei Takino 2012/11/22 " %}</b>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/irex2011.png">
+    <p>{% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}</p>
+  </div>
+</fieldset>
 {% endblock %}
-
 

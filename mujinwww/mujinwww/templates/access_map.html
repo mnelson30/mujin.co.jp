@@ -1,104 +1,62 @@
-{% extends "generaltemplate.html" %}
+{% extends "aboutmujintemplate.html" %}
 {% load i18n %}
 {% block title %}
 {% trans "MUJIN Inc.| Services" %}
 {% endblock %}
 
-{% block subnavi %}
-<div id="navi">
-  <ul class="subnavi">
-    <li style="float:left"><a href="#access_content" class="subbutton">{% trans "Headquater" %}</a>
-    </li>
-    <li style="float:left"><a href="#koishikawa_office" class="subbutton">{% trans "Koishikawa Office" %}</a>
-    </li>
-  </ul>
-</div>
-{% endblock %}
+{% block main-content %}
 
-{% block feature %}
+<h2>{% trans "Offices" %}</h2>
+<br/>
+<br/>
+<h3>{% trans "Headquaters" %} </h3>
+〒113-0033<br/>
+{% trans "Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan" %}<br/>
+({% trans "Please use the intercomm on the 1st floor to call." %})<br/>
+<br/>
+<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=7-3-1+Hong%C5%8D,+Bunky%C5%8D-ku,+T%C5%8Dky%C5%8D-to,+Japan&amp;aq=0&amp;oq=+7-3-1,+Hongo,+Bunkyo-ku,+Tokyo,+Japan&amp;sll=35.714793,139.751608&amp;sspn=0.007727,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Bunky%C5%8D-ku,+Hong%C5%8D,+%EF%BC%97%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91&amp;t=m&amp;ll=35.71481,139.751587&amp;spn=0.033451,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=7-3-1+Hong%C5%8D,+Bunky%C5%8D-ku,+T%C5%8Dky%C5%8D-to,+Japan&amp;aq=0&amp;oq=+7-3-1,+Hongo,+Bunkyo-ku,+Tokyo,+Japan&amp;sll=35.714793,139.751608&amp;sspn=0.007727,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Bunky%C5%8D-ku,+Hong%C5%8D,+%EF%BC%97%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91&amp;t=m&amp;ll=35.71481,139.751587&amp;spn=0.033451,0.054932&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+<br/>
+<h3>{% trans "Walking Directions" %}</h3>
+<table class="table">
+  <tr>
+    <td>{% trans "Tokyo Metro Marunouchi-line Hongosanchome Station" %}</td>
+    <td>{% trans "Take Exit No.2. Turn right at the Hongo3 intersection." %}</td>
+  </tr>
+  <tr>
+    <td>{% trans "Tokyo Metro Chiyoda-line Yushima Station" %}</td>
+    <td>{% trans "Take Exit No.1. Enter campus at the Tatsuoki-gate in front of the fire station." %}</td>
+  </tr>
+  <tr>
+    <td>{% trans "Toei Oedo-line Hongosanchome Station" %}</td>
+    <td>{% trans "Take Exit No.5. Turn right and enter campus at the Tatsuoki-gate." %}</td>
+  </tr>
+</table>
+<br/>
+<h3>{% trans "Driving Directions" %}</h3>
+{% trans "Enter campus from the Tatsuoki-gate. Pass the gate next to the Department of Pharmacy." %}
+<br/>
+{% trans "Please tell guards at the gate that you are going to Entrepreneur Plaza." %}
 
-<div id="product">
-  <div id="access_content">
-    <div id="content">
-      <div id="content_header">
-        <h1>{% trans "Offices" %}</h1>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Headquater" %} </h2>
-      </div>
-      <div id="sub_content">
-        〒113-0033　{% trans "Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan" %}
-        <br/>
-        <br/>
-        　({% trans "Please use the intercomm on the 1st floor to call." %}）
-        <br/>
-        <br/>
-        <img style="width:500px;height:458px;" src="{{ STATIC_URL }}/img/access_map1.jpg"/>
-        <br/>
-        <br/>
-        <h3 style="text-align:left; color:red;">
-          {% trans "Walking Directions" %}
-          <br/>
-        </h3>
-        <strong>{% trans "Tokyo Metro Marunouchi-line Hongosanchome Station" %}</strong>
-        <br/>
-        <br/>
-        {% trans "Take Exit No.2. Turn right at the Hongo3 intersection." %}
-        <br/>
-        <br/>
-        <strong>
-          {% trans "Tokyo Metro Chiyoda-line Yushima Station" %}
-          <br/>
-        </strong>
-        <br/>
-        {% trans "Take Exit No.1. Enter campus at the Tatsuoki-gate in front of the fire station." %}
-        <br/>
-        <br/>
-        <strong>{% trans "Toei Oedo-line Hongosanchome Station" %}</strong>
-        <br/>
-        <br/>
-        {% trans "Take Exit No.5. Turn right and enter campus at the Tatsuoki-gate." %}
-        <br/>
-        <br/>
-        <h3 style="text-align:left; color:red;">
-          {% trans "Driving Directions" %}
-        </h3>
-        {% trans "Enter campus from the Tatsuoki-gate. Pass the gate next to the Department of Pharmacy." %}
-        <br/>
-        {% trans "Please tell guards at the gate that you are going to Entrepreneur Plaza." %}
-      </div>
-      <div id="koishikawa_office">
-        <div id="sub_content_header">
-          <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-          <h2>{% trans "Koishikawa Office" %} </h2>
-        </div>
-        <div id="sub_content">
-          〒112-0002　{% trans "1-22-9 Koishikawa,Bunkyo-ku,Tokyo,Japan" %}
-          <br/>
-          <br/>
-          <img style="width:500px; height:300px"  alt="MUJJIN_MAP" src="{{ STATIC_URL }}/img/access_map2.png"/>
-          <br/>
-          <br/>
-          <h3 style="text-align:left; color:red;">
-            {% trans "Walking Directions" %}
-            <br/>
-          </h3>
-          <strong>{% trans "Tokyo Metro Mita-line Kasuga Station" %}</strong>
-          <br/>
-          <br/>
-          {% trans "Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, turn left at the second intersection." %}
-          <br/>
-           <br/>
-           <h3 style="text-align:left; color:red;">
-             {% trans "Driving Directions" %}</h3>
-           {% trans "Please call us in advance, so that we will prepare for a parking space for you." %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div style="clear:both">
-  {% include "aboutmujinpane.html" %}
-</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+<h3>{% trans "Koishikawa Office" %} </h3>
+
+〒112-0002<br/>
+{% trans "1-22-9 Koishikawa, Bunkyo-ku, Tokyo, Japan" %}
+<br/>
+<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-22-9+Koishikawa,+Bunky%C5%8D-ku,+T%C5%8Dky%C5%8D-to,+Japan&amp;aq=0&amp;oq=1-22-9+Koishikawa,+Bunkyo-ku,+Tokyo,+Japan&amp;sll=35.714865,139.751175&amp;sspn=0.000966,0.002064&amp;t=m&amp;g=35.714858,139.751186&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Bunky%C5%8D-ku,+Koishikawa,+%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%99&amp;ll=35.71481,139.751158&amp;spn=0.033451,0.054932&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1-22-9+Koishikawa,+Bunky%C5%8D-ku,+T%C5%8Dky%C5%8D-to,+Japan&amp;aq=0&amp;oq=1-22-9+Koishikawa,+Bunkyo-ku,+Tokyo,+Japan&amp;sll=35.714865,139.751175&amp;sspn=0.000966,0.002064&amp;t=m&amp;g=35.714858,139.751186&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Bunky%C5%8D-ku,+Koishikawa,+%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%99&amp;ll=35.71481,139.751158&amp;spn=0.033451,0.054932&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+<br/>
+<h3>{% trans "Walking Directions" %}</h3>
+<table class="table">
+  <tr>
+    <td>{% trans "Tokyo Metro Mita-line Kasuga Station" %}</td>
+    <td>{% trans "Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, turn left at the second intersection." %}</td>
+  </tr>
+</table>
+<br>
+<h3>{% trans "Driving Directions" %}</h3>
+<p>{% trans "Please call us in advance, so that we will prepare for a parking space for you." %}</p>
 {% endblock %}

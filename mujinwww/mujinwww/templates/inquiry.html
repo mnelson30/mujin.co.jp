@@ -40,7 +40,7 @@
         });
       }
     });
-  })
+  });
 {% endblock %}
 
 {% block content %}
@@ -50,8 +50,8 @@
   <h3>{% trans "Or email us at" %} <img style="vertical-align:middle;" src="{{STATIC_URL}}img/mujin_mail.png"/></h3>
 </div>
 <div>
-  <br>
-  <br>
+  <br/>
+  <br/>
   <form action="#">
     {% csrf_token %}
     <table cellpadding="4" align="center">
@@ -138,14 +138,14 @@
           <td valign="top">
             <label for="message" style="display: block;">{% trans "Message" %}</label>
             <textarea rows="10" cols="50" maxlength="1000" name="message"></textarea>
-            <br>
-            <br>
+            <br/>
+            <br/>
             <input id="form_submit" type="button" style="padding: 5px; float: right;" value="{% trans "Submit Form" %} ">
           </td>
         </tr>
       </tbody>
     </table>
   </form>
-  <br>
+  <br/>
 </div>
 {% endblock %}

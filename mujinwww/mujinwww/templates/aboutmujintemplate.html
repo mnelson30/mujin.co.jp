@@ -1,0 +1,27 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN Inc.| About MUJIN" %}
+{% endblock %}
+
+{% block sidebar-list-items %}
+<li>
+  <a href="/company_overview">{% trans "Corporate overview" %}</a>
+</li>
+<li>
+  <a href="/vision">{% trans "Vision" %}</a>
+</li>
+<li>
+  <a href="/management_team">{% trans "Management team" %}</a>
+</li>
+<li>
+  <a href="/access_map">{% trans "Visit office" %}</a>
+</li>
+<li>
+  <a href="/founder_message"> {% trans "Message from founder" %}</a>
+</li>
+<li>
+  <a href="/company_development"> {% trans "Company development" %}</a>
+</li>
+{% endblock %}

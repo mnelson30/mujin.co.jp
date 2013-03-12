@@ -4,88 +4,45 @@
 {% trans "MUJIN Inc.| Technology" %}
 {% endblock %}
 
-{% block slider %}
-<li>
-  <a href="/products"><img src="{{ STATIC_URL }}img/technology_bnr.png"/></a>
+{% block sidebar-list-items %}
+<li><a href="#technology">{% trans "Motion Planning" %}</a>
+</li>
+<li><a href="#multiple_robots">{% trans "Multiple Planning" %}</a>
+</li>
+<li><a href="#IK">{% trans "IK for Any Robots" %}</a>
+</li>
+<li><a href="#parallelized_opt">{% trans "Parallelized Optimization" %}</a>
 </li>
 {% endblock %}
 
-{% block subnavi %}
-<div id="navi">
-  <ul class="subnavi">
-    <li style="float:left"><a href="#technology" class="subbutton">{% trans "Motion Planning" %}</a>
-    </li>
-    <li style="float:left"><a href="#multiple_robots" class="subbutton">{% trans "Multiple Planning" %}</a>
-    </li>
-    <li style="float:left"><a href="#IK" class="subbutton">{% trans "IK for Any Robots" %}</a>
-    </li>
-    <li style="float:left"><a href="#parallelized_opt" class="subbutton">{% trans "Parallelized Opt" %}</a>
-    </li>
-  </ul>
-</div>
+{% block main-content %}
+<fieldset id="technology">
+  <h2>{% trans "Technology Information" %}</h2>
+  <p>{% trans "The MUJIN team has been developing motion planning algorithms for over six years culminating in the world's most reliable automation motion planning system used in over <b>200 robots</b>." %} </p>
+  
+  <h4>{% trans "Robot Motion Planning" %}</h4>
+  <img src="{{ STATIC_URL }}img/motionplanning.png" />
+  <p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
+</fieldset>
+
+<fieldset id="multiple_robots">
+  <h2>{% trans "Multiple Robot Motion Planning" %} </h2>
+  <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" >
+  <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
+</fieldset>
+
+<fieldset id="IK">
+  <h2>{% trans "Robot Inverse Kinematics for any Robot" %} </h2>
+  <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" />
+  {% blocktrans %}<p>Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links.</p> {% endblocktrans %}
+  <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" />
+</fieldset>
+
+<fieldset id="parallelized_opt">
+  <h2>{% trans "Parallelized Layout Optimization" %} </h2>
+  <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}">
+  {% blocktrans %}<p>Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task.</p>
+  <p>Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller.</p>{% endblocktrans %}
+</fieldset>
 {% endblock %}
-
-{% block feature %}
-<div id="technology">
-  <div id="technology_concept">
-    <div id="content">
-      <div id="content_header">
-        <h1>{% trans "Technology Information" %}</h1>
-      </div>
-      <p>{% trans "The MUJIN team  has been developing motion planning algorithms for over six years culminating in the world's most reliable automation motion planning system used in over <b>200 robots</b>." %} </p>
-      <div id="sub_content_header">
-      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-      <h2>{% trans "Robot Motion Planning" %} </h2>
-      </div>
-      <div id="sub_content">
-        <img width="640" src="{{ STATIC_URL }}img/motionplanning.png" frameborder="0"/>q
-        <p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="multiple_robots">
-    <div id="content">
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Multiple Robot Motion Planning" %} </h2>
-      </div>
-      <div id="sub_content">
-        <iframe src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" frameborder="0"></iframe>
-        <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="IK">
-    <div id="content">
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Robot Inverse Kinematics for any Robot" %} </h2>
-      </div>
-      <div id="sub_content">
-        <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" frameborder="0"/>
-        {% blocktrans %}<p>Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links.</p> {% endblocktrans %}
-        <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" frameborder="0"/>
-      </div>
-    </div>
-  </div>
-
-  <div id="parallelized_opt">
-    <div id="content">
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Parallelized Layout Optimization" %} </h2>
-      </div>
-      <div id="sub_content">
-        <iframe src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0"></iframe>
-        {% blocktrans %}<p>Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task.</p>
-        <p>Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller.</p>{% endblocktrans %}
-      </div>
-    </div>
-  </div>
-  <a href="#technology">To the top</a>
-</div>
-  {% endblock %}
-
 
