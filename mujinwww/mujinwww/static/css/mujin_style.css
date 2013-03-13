@@ -80,7 +80,7 @@ body {
 
 #featureCarousel .carousel-inner img {
   width: 100%;
-  height: 284px;
+  height: 304px;
 }
 
 .color-headline b {
@@ -228,5 +228,15 @@ image-inline {
 
 .about-mujin-index img {
   width: 150px;
-  height: 200px;
+  height: 150px;
+}
+
+#product_features img {
+  width: 150px;
+  height: 180px;
+  margin-bottom: 8px;
+}
+
+.fieldset-content > div {
+  margin-bottom: 80px;
 }

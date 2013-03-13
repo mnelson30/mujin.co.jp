@@ -2,26 +2,24 @@
 {% load i18n %}
 
 {% block main-content %}
-
-<h1>{% trans "Grasp Planning System" %}</h1>
-<h2>{% trans "Automatically Figure Out Grasp Point" %} </h2>
+<h2>{% trans "Grasp Planning System" %}</h2>
+<h3>{% trans "Automatically Figure Out Grasp Point" %}</h3>
 <table class="table table-bordered">
   <tr>
     <td><img src="/static/img/grasping.gif"></td>
-    <td>{% trans "MUJIN Controller allows robots to change tools and grasp workpieces while computing motions" %}</td>
+    <td>{% trans "MUJIN Controller allows robots to change tools and grasp workpieces efficiently." %}</td>
   </tr>
   <tr>
     <td><img src="/static/img/mitsubishi_robot.png"></td>
-    <td>{% trans "The robot can easily mount different tools, which become part of the robot's coltdsion geometry." %}</td>
+    <td>{% trans "The robot can easily mount different tools, which become part of the robot's collision geometry." %}</td>
   </tr>
   <tr>
     <td> <img src="/static/img/mitsubishi_grasp.png"></td>
-    <td>{% trans "Once the tool is specified, the robot can grab the workpiece, transfer it to its goal, and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembtdes." %}</td>
+    <td>{% trans "Once the tool is specified, the robot can grab the workpiece, transfer it to its goal and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembles." %}</td>
   </tr>
   <tr>
     <td><img  src="/static/img/mitsubishi_grasp.gif"></td>
-    <td>{% trans "The tool can move the workpiece while avoiding environment coltdsions." %}</td>
+    <td>{% trans "The tool can move the workpiece while avoiding environment collisions." %}</td>
   </tr>
 </table>
 {% endblock %}
-

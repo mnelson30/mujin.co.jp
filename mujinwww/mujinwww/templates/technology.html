@@ -5,14 +5,10 @@
 {% endblock %}
 
 {% block sidebar-list-items %}
-<li><a href="#technology">{% trans "Motion Planning" %}</a>
-</li>
-<li><a href="#multiple_robots">{% trans "Multiple Planning" %}</a>
-</li>
-<li><a href="#IK">{% trans "IK for Any Robots" %}</a>
-</li>
-<li><a href="#parallelized_opt">{% trans "Parallelized Optimization" %}</a>
-</li>
+<li><a href="#technology">{% trans "Motion Planning" %}</a></li>
+<li><a href="#multiple_robots">{% trans "Multiple Planning" %}</a></li>
+<li><a href="#IK">{% trans "IK for Any Robots" %}</a></li>
+<li><a href="#parallelized_opt">{% trans "Parallelized Optimization" %}</a></li>
 {% endblock %}
 
 {% block main-content %}
@@ -32,17 +28,16 @@
 </fieldset>
 
 <fieldset id="IK">
-  <h2>{% trans "Robot Inverse Kinematics for any Robot" %}</h2>
+  <h2>{% trans "Inverse Kinematics for any Robot" %}</h2>
   <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" />
-  <p>{% trans "Inverse kinematics solves for the joint angles of the robot given the desired position of its hands. MUJIN can solve for the analytic robot inverse kinematics equations and generate an <b>extremely robust fast programs</b> to finding solutions. MUJIN planning framework supports <b>any</b> robot structure, even if it involves closed links." %}</p>
+  <p>{% trans "Inverse kinematics solves for the joint angles of the robot given the desired goal position of a manipulator. MUJIN can solve the analytic robot inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot structure, even if it involves closed links." %}</p>
   <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" />
 </fieldset>
 
 <fieldset id="parallelized_opt">
   <h2>{% trans "Parallelized Layout Optimization" %} </h2>
   <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}"></iframe>
-  <p>{% trans "Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computation intensive and they can take <b>days</b> to finish optimize one robot task." %}</p>
-  <p>{% trans "Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to <b>under 10 minutes</b> with the MUJIN Controller." %}</p>
+  <p>{% trans "Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computationally intensive and can take days to finish for one task." %}</p>
+  <p>{% trans "Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to under 10 minutes with the MUJIN Controller." %}</p>
 </fieldset>
 {% endblock %}
-
