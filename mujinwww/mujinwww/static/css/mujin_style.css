@@ -138,7 +138,7 @@ legend {
 }
 
 /* Sidebar nav */
-.product-sidenav {
+.sidebar-nav {
   width: 228px;
   margin: 30px 0 0;
   padding: 0;
@@ -150,28 +150,28 @@ legend {
      -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
           box-shadow: 0 1px 4px rgba(0,0,0,.065);
 }
-.product-sidenav > li > div,
-.product-sidenav > li > a {
+.sidebar-nav > li > div,
+.sidebar-nav > li > a {
   display: block;
   width: 190px \9;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
 }
-.product-sidenav > li:first-child > div,
-.product-sidenav > li:first-child > a {
+.sidebar-nav > li:first-child > div,
+.sidebar-nav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
 }
-.product-sidenav > li:last-child > div,
-.product-sidenav > li:last-child > a {
+.sidebar-nav > li:last-child > div,
+.sidebar-nav > li:last-child > a {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
 }
-.product-sidenav > .active > div,
-.product-sidenav > .active > a {
+.sidebar-nav > .active > div,
+.sidebar-nav > .active > a {
   position: relative;
   z-index: 2;
   padding: 9px 15px;
@@ -182,27 +182,27 @@ legend {
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 }
 /* Chevrons */
-.product-sidenav .icon-chevron-right {
+.sidebar-nav .icon-chevron-right {
   float: right;
   margin-top: 2px;
   margin-right: -6px;
   opacity: .25;
 }
-.product-sidenav > li > a:hover {
+.sidebar-nav > li > a:hover {
   background-color: #f5f5f5;
 }
-.product-sidenav a:hover .icon-chevron-right {
+.sidebar-nav a:hover .icon-chevron-right {
   opacity: .5;
 }
-.product-sidenav .active .icon-chevron-right,
-.product-sidenav .active a:hover .icon-chevron-right {
+.sidebar-nav .active .icon-chevron-right,
+.sidebar-nav .active a:hover .icon-chevron-right {
   background-image: url(../img/glyphicons-halflings-white.png);
   opacity: 1;
 }
-.product-sidenav.affix {
+.sidebar-nav.affix {
   top: 40px;
 }
-.product-sidenav.affix-bottom {
+.sidebar-nav.affix-bottom {
   position: absolute;
   top: auto;
   bottom: 270px;

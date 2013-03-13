@@ -19,6 +19,9 @@
     <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        if (window.location.hash == "") {
+          $('.sidebar-nav li:first').addClass('active');
+        }
 {% block headscripts %}
 {% endblock %}
       });
