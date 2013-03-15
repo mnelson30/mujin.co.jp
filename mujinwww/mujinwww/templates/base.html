@@ -20,7 +20,12 @@
     <script type="text/javascript">
       $(document).ready(function() {
         if (window.location.hash == "") {
-          $('.sidebar-nav li:first').addClass('active');
+          var path = document.location.pathname;
+          var link = $('.sidebar-nav li a[href="' + path + '"]').parent('li');
+          if (link.length == 0) {
+            link = $('.sidebar-nav li:first');
+          }
+          link.addClass('active');
         }
 {% block headscripts %}
 {% endblock %}
