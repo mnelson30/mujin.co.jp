@@ -240,3 +240,14 @@ image-inline {
 .fieldset-content > div {
   margin-bottom: 80px;
 }
+
+#managers table td {
+  width: 50%;
+}
+
+#managers img {
+  width: 300px;
+  margin-left: 20px;
+}
+
+
