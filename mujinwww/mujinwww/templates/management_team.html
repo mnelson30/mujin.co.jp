@@ -1,42 +1,86 @@
-{% extends "base.html" %}
+{% extends "aboutmujintemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | Management Team" %}
-{% endblock %}
-{% block headscripts %}
-<script>
-  $(document).ready(function(){
-  $('#myslider2').bjqs({
-  'animation' : 'slide',
-  'width' : 550,
-  'height' : 450,
-  'showMarkers' : true,
-  'showControls' : true,
-  'centerMarkers' : false
-  });
-  }); 
-</script>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% trans "MUJIN Inc.| Management Team" %}
 {% endblock %}
 
-{% block content %}
+{% block main-content %}
+<h2>{% trans "Management Team" %}</h2>
+<br/>
 
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/management_team.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Management Team" %}</b>
-  </div>
-</div>
+<h3>{% trans "Issei Takino - CEO" %} </h3>
 
-<div id="myslider2" style="margin-top:30px;margin-bottom:30px">
-  <ul class="bjqs">
-    <li><img src="{{ STATIC_URL }}img/issei.jpg" width="550" title="{% trans "CEO Issei Takino"%}"/></li>
-    <li><img src="{{ STATIC_URL }}img/rosen.diankov.jpg" width="550"  title="{% trans "CTO Rosen Diankov" %}"/></li>
-  </ul>
-</div>
+<table class="table">
+  <tr>
+    <td width="50%">
+      <img  src="{{ STATIC_URL }}img/issei.jpg">
+    </td>
+    <td>
+      <p><b>Shanghai University</b> 2006</p>
+      <p><b>Graduated from Soka University of America</b> 2007</p>
+      <p><b>Working as Sales Enginner at Iscar</b> 2012</p>
+      <ul>
+        <li><p>Freshman Award 2008</p></li>
+        <li><p>Second Prize for Marketing Proposal Contest 2010</p></li>
+        <li><p>The first award in Sales Contest 2011</p></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-<div style="clear:both">
-  {% include "aboutmujinpane.html" %}
-</div>
+<h3>{% trans "Rosen Diankovo - CTO" %} </h3>
+<table class="table">
+  <tr>
+    <td width="50%">
+      <img src="{{ STATIC_URL }}img/rosen.diankov.jpg">
+    </td>
+    <td>
+      <p><b>Graduated from University of California, Berkeley</b> 2006</p>
+      <ul>
+        <li><p>Warren Dere Design Award 2006</p></li>
+      </ul>
+      <p><b>Intel Research Institute</b> 2008</p>
+      <p><b>Willow Garage</b> 2009</p>
+      <p><b>Ph.D.from Carnegie Mellon University</b> 2010</p>
+      <ul>
+        <li>Ph.D.thesis:<a href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">{% trans "Automated Construction of Robotics Manipulation Programs" %}</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h2 style="color:red">TODO: Issei: take pictures of huan and luke</h2>
+
+<h3>{% trans "Huan Liu - Chief of Software Development" %} </h3>
+<table class="table">
+  <tr>
+    <td width="50%">
+      <img src="{{ STATIC_URL }}img/rosen.diankov.jpg">
+    </td>
+    <td>
+      <p><b>Graduated from Massachusetts Institute of Technology</b> 2009</p>
+      <p><b>Received Master's Degree from Massachusetts Institute of Technology</b> 2011</p>
+      <p><b>Oracle Corporation</b> 2011 - 2012</p>
+    </td>
+  </tr>
+</table>
+
+<h3>{% trans "Lucas Palage Doyle - Software Enginner" %} </h3>
+<table class="table">
+  <tr>
+    <td width="50%">
+      <img src="{{ STATIC_URL }}img/rosen.diankov.jpg">
+    </td>
+    <td>
+      <p><b>Graduated from Rensselaer Polytechnic Institute</b> 2012</p>
+      <ul>
+        <li><p>Team leader in Boeing Robotic Wingbox Project 2012</p></li>
+      </ul>
+      <p><b>Harvard-Smithsonian Center for Astrophysics</b>2009 - 2012</p>
+      <p><b>Robotics Intern at Anybots</b>2011</p>
+    </td>
+  </tr>
+</table>
 
 {% endblock %}
+

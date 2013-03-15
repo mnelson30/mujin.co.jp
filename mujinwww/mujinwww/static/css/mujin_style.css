@@ -1,639 +1,242 @@
-
-#container {
-    background-attachment: fixed;
-    background-color: #FFFFFF;
-    background-position: center top;
-    background-repeat: no-repeat;
-    border: 0 dotted #333333;
-    left: 0;
-    margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-    text-align: left;
-    top: 0;
-    width: 980px;
-    box-shadow:0 0 50px rgba(0,0,0,0.5);
-}
-html, body {
-    background-color: #F5F5F5;
-    border: 0 dotted #333333
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
+body {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
-* html body #Container {
-    height: 100%;
+/* Custom container */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.container > hr {
+  margin: 60px 0;
 }
 
-#Main {
-    float: left;
-    margin-bottom: 0;
-    margin-left: 45px;
-    margin-top: 0px;
-    text-align: left;
-    width: 910px;
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 80px 0;
+  text-align: center;
 }
-#header {
-    font-size: 30px;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    margin-bottom: 0px;
-    width:880px;
+.jumbotron h1 {
+  font-size: 100px;
+  line-height: 1;
 }
-
-
-#Logo {
-    float: left;}
-
-#headNewsHome {
-    background-color: #E3E2E3;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    padding-bottom: 0px;
-    width: 420px;
-    height:230px;
-    valign:top
-    padding-left:10px;
-    overflow:auto;
+.jumbotron .lead {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
 }
 
-
-#NavBar {
-    margin:0px 0; 
-    margin-bottom: 10px;
-    list-style:none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; 
-    letter-spacing:-0.5px; 
-    font-size:13px;
-    text-shadow: 0 -1px 3px #202020;
-    width:888px; height:34px;
-    
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    
-    -moz-box-shadow: 0px 3px 3px #cecece;
-    -webkit-box-shadow: 0px 3px 3px #cecece;
-    box-shadow: 0 3px 4px #8b8b8b;
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
 }
 
-#NavBar li {
-    display:block; 
-    float:left; 
-    border-right:1px solid #5d5d5d; 
-    border-left:1px solid #929292; 
-    width:124.7px; 
-    height:34px; 
-    border-bottom:1px solid #575757;  
-    border-top:1px solid #797979;
-    /* Gradient backgrounds for the buttons. Generated using http://gradients.glrzad.com/ */
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
-    background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
-    background-color:#5f5f5f; /* Fallback */
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+  padding: 0;
+}
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(255,255,255,.75);
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+.navbar .nav li: first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.navbar .nav li: last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
 }
 
-/* Set the states when hovering, except for the last item in the list (the search bar), since it doesn't need to change */
-#NavBar li:hover {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
-    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
-    background-color:#383838; /* Fallback */
-    
-    /* We use the inset of the box shadow to create a subtle inner glow when hovering */
-    -moz-box-shadow: inset 0 0 5px 5px #535353;
-    -webkit-box-shadow: inset 0 0 5px 5px #535353;
-    box-shadow: inset 0 0 5px 5px #535353;
+.masthead img {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
-/* When the user clicks the button, we simply change the box inset (compared to the "hover") */
-#NavBar li:active {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3F3F3F), color-stop(0.5, #383838), color-stop(0.51, #434343), color-stop(1, #555555));
-    background-image: -moz-linear-gradient(center bottom, #3F3F3F 0%, #383838 50%, #434343 51%, #555555 100% );
-    background-color:#383838; /* Fallback */
-    -moz-box-shadow: inset 0 1px 2px 2px #000;
-    -webkit-box-shadow: inset 0 1px 2px 2px #000;
-    box-shadow: inset 0 1px 2px 2px #000;
+#homeCarousel .carousel-inner img {
+  width: 100%;
+  height: 484px;
 }
 
-#NavBar li a {
-    color:white; text-decoration:none; text-align:center; display:block; line-height:34px; outline:none; }
-
-
-/* Rounded corner for the first in last item. Shorthand: Top left, Top right, Bottom right, Bottom left.
-   We also remove the borders, since they don't need them. */
-#NavBar li:first-child {
-    moz-border-radius:4px 0 0 4px;
-    webkit-border-radius:4px 0 0 4px;
-    border-radius:4px 0 0 4px;
-    
-    border-left:none;
+#featureCarousel .carousel-inner img {
+  width: 100%;
+  height: 304px;
 }
 
-#NavBar li:last-child {
-    moz-border-radius:0px 4px 4px 0px;
-    webkit-border-radius:0px 4px 4px 0px;
-    border-radius:0px 4px 4px 0px;
-    
-    border-left:none;
+.color-headline b {
+/*
+  color: #ce4213;
+*/
+  color: #faa732;
 }
 
-#NavBar {
-    webkit-animation: showMenu 1s; position:relative;
+legend {
+  margin: 3px;
+  text-align: center;
+  width: 100%;
 }
 
-#QuoteBox {
-    background-color: #E3E2E3;
-    color: #F58026;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    font-size: 17px;
-    left: 0px;
-    line-height:58px;
-    margin-top: 0px;
-    width: 270px;
-    float: left;
-    margin-right:0px;
-    height:185px;
-    clear:both
-    text-align:center
-    vertical-align:middle
-}
-.homepage #QuoteBox {
-    font-size: 13px;
-    line-height: 19px;
-    top: 150px;
-}
-.header {
-    color: #000000;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 120%;
-}
-.subnavi { 
-    clear:both;
-    margin-bottom:30px;
-    width:200px;
+.overlay-captions p {
+  font-weight: bold;
+  margin-top: 3px;
+  padding: 3px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
 }
 
-#submain .subnavi .subbutton {
-    border-top: 1px solid #f7fafa;
-    background: #f76e05;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
-    background: -webkit-linear-gradient(top, #f0a308, #f76e05);
-    background: -moz-linear-gradient(top, #f0a308, #f76e05);
-    background: -ms-linear-gradient(top, #f0a308, #f76e05);
-    background: -o-linear-gradient(top, #f0a308, #f76e05);
-    padding: 5px 5px;
-    webkit-border-radius: 11px;
-    moz-border-radius: 11px;
-    border-radius: 11px;
-    webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    box-shadow: rgba(0,0,0,1) 0 1px 0;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    color: white;
-    font-size: 24px;
-    font-family: Georgia, serif;
-    text-decoration: none;
-    vertical-align: middle;
-    display:block;
-    font-weight:bold;
-}
-#submain .subnavi .subbutton:hover {
-    border-top-color: #080204;
-    background: #080204;
-    color: #ccc;
-}
-#submain .subnavi .subbutton:active {
-    border-top-color: #a89696;
-    background: #a89696;
+.learn-button-menu {
+  padding-left: 30px;
 }
 
-.subnavi li {
-    text-decoration:none; text-align:center; display:block; line-height:30px; outline:none; margin:2px;  width:250px
+.learn-button-menu a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+.learn-button-menu h3 {
+  margin: 5px;
+}
+.learn-button-menu img {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
 }
 
-#NewsHome {
-    color: #3399FF;
-    float: left;
-    font-family: Century Gothic,Verdana,Geneva,sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 2px;
-    margin-right: 60px;
-    padding-bottom: 60px;
-    width: 260px;
-}
-#Footer {
-    background-color: #FF9900;
-    border-top: 0 dotted #B4A579;
-    bottom: 0;
-    color: #666666;
-    font-family: Lucida Sans Unicode,Lucida Grande,Verdana,sans-serif;
-    font-size: 11px;
-    height: 19px;
-    letter-spacing: 0;
-    line-height: 120%;
-    margin-left: 0;
-    margin-top: 0;
-    padding-top: 10px;
-    position: absolute;
-    text-align: left;
-    width: 980px;
-    clear: both; 
-}
-#Footer a:link {
-    color: #666666;
-    font-weight: normal;
-    text-decoration: underline;
-}
-#Footer a:visited {
-    color: #666666;
-    font-weight: normal;
-    text-decoration: underline;
-}
-#Footer a:hover {
-    color: #FFFFCC;
-    font-weight: normal;
-    text-decoration: underline;
-}
-#Footer a:active {
-    color: #FFFFCC;
-    font-weight: normal;
-    text-decoration: underline;
-}
-.footertext {
-    margin-left: 44px;
-    margin-top: 0;
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+  color: #484848;
 }
 
-.subhead {
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 130%;
-}
-.subsubhead {
-    color: #000000;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 120%;
-}
-.white {
-    color: #000000;
-}
-.size8 {
-    font-size: 10px;
-}
-a:link {
-    color: #3399FF;
-    font-weight: normal;
-    text-decoration: none;
-}
-a:visited {
-    color: #3399FF;
-    font-weight: normal;
-    text-decoration: none;
-}
-a:hover {
-    color: #8D4110;
-    font-weight: normal;
-    text-decoration: none;
+.affix {
+  top: 10px;
 }
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
-    margin: 0;
-    padding: 0;
+/* Sidebar nav */
+.sidebar-nav {
+  width: 228px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.sidebar-nav > li > div,
+.sidebar-nav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.sidebar-nav > li:first-child > div,
+.sidebar-nav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.sidebar-nav > li:last-child > div,
+.sidebar-nav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.sidebar-nav > .active > div,
+.sidebar-nav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.sidebar-nav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.sidebar-nav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.sidebar-nav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.sidebar-nav .active .icon-chevron-right,
+.sidebar-nav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.sidebar-nav.affix {
+  top: 40px;
+}
+.sidebar-nav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
 }
 
-/* styling for icons in Corporate Overview */
-#imagebox {
-    border: 1px dashed #0000cc;
+fieldset {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-p.image, p.caption {
-    text-align: center;
-    margin: 5px;
+.nohover-highlight {
+  color: rgb(51, 51, 51);
+}
+.nohover-highlight:hover {
+  text-decoration: none;
 }
 
-p.caption {
-    font-size: 80%;
-    align: center }
-
-table .subnavi td {
-    background-image: url("{{ STATIC_URL }}img.gif");
+image-inline {
+  display: inline;
+  margin: 10px;
 }
 
-table .subnavi:hover {
-    color: red;
+.about-mujin-index img {
+  width: 150px;
+  height: 150px;
 }
 
-
-#productheader h1{
-    background-color: #E3E2E3;
+#product_features img {
+  width: 150px;
+  height: 180px;
+  margin-bottom: 8px;
 }
 
-
-#feature {
-    background-color:#FF9900
-}
-#feature .top_shadow {
-    content:""
-    position: fixed;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-
-    z-index: 100;
-}
-
-#feature .bottom_shadow {
-    content:""
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    
-    z-index: 100;
-}
-
-.mj {
-    background:#FF9900;
-    color:white;
-    padding:3px 5px;
-    border-color:#cccccc;
-    border-width:1px 1px 1px 1px;
-    border-style:solid;
-    width:45px;
-    border-radius:8px
-}
-
-.onenews{
-    margin-top:30px;
-}
-#news_content .onenews img{
-    width:300px;
-}
-
-.imagebox :hover{
-    color:black;
-} 
-
-
-.career_list li {
-    margin-left:50px;
-}
-
-#career_content .career_subcontent{
-    background:#E2E3E2
-}
-
-.bnr {
-    border: 3px solid #DDDDDD;
-    display: block;
-    height: 135px;
-    margin: 0 0 30px;
-    background: url("/static/img/header2.png");
-}
-
-
-/*product navigation*/
-#navi .subnavi .subbutton {
-    border-top: 1px solid #f7fafa;
-    background: #f76e05;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
-    background: -webkit-linear-gradient(top, #f0a308, #f76e05);
-    background: -moz-linear-gradient(top, #f0a308, #f76e05);
-    background: -ms-linear-gradient(top, #f0a308, #f76e05);
-    background: -o-linear-gradient(top, #f0a308, #f76e05);
-    padding: 3px 3px 3px 3px;
-    webkit-border-radius: 7px;
-    moz-border-radius: 7px;
-    border-radius: 7px;
-    webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    box-shadow: rgba(0,0,0,1) 0 1px 0;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    color: white;
-    font-size: 17px;
-    font-family: Georgia, serif;
-    text-decoration: none;
-    vertical-align: middle;
-    display:block;
-    font-weight:bold;
-}
-#navi .subnavi .subbutton:hover {
-    border-top-color: #080204;
-    background: #080204;
-    color: #ccc;
-}
-#navi .subnavi .subbutton:active {
-    border-top-color: #a89696;
-    background: #a89696;
-}
-
-#navi .subnavi li {
-    text-decoration:none; text-align:center; display:block; line-height:25px; outline:none; margin:2px;  width:250px;display:inline;
-}
-
-#navi .subsubnavi .subbutton {
-    border-top: 1px solid #f7fafa;
-    background: #f76e05;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
-    background: -webkit-linear-gradient(top, #f0a308, #f76e05);
-    background: -moz-linear-gradient(top, #f0a308, #f76e05);
-    background: -ms-linear-gradient(top, #f0a308, #f76e05);
-    background: -o-linear-gradient(top, #f0a308, #f76e05);
-    padding: 3px 3px 3px 3px;
-    webkit-border-radius: 7px;
-    moz-border-radius: 7px;
-    border-radius: 7px;
-    webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    box-shadow: rgba(0,0,0,1) 0 1px 0;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    color: white;
-    font-size: 17px;
-    font-family: Georgia, serif;
-    text-decoration: none;
-    vertical-align: middle;
-    display:block;
-    font-weight:bold;
-}
-#navi .subsubnavi .subbutton:hover {
-    border-top-color: #080204;
-    background: #080204;
-    color: #ccc;
-}
-#navi .subsubnavi .subbutton:active {
-    border-top-color: #a89696;
-    background: #a89696;
-}
-
-#navi .subsubnavi li {
-    text-decoration:none; text-align:center; display:block; line-height:25px; outline:none; margin:2px;  width:200px;display:inline;
-}
-
-#product_cotent{
-    width:930px;
-    float:left;
-    height:5em;
-    overflow: auto;
-    border: red 1px dashed;
-}
-
-#productbox .h2_lef {
-    background: url("/static/img/header1.png") repeat-x ;
-    display:block;
-    float:left;
-    height:32px;
-    width:860px;
-    border: 1px solid #E1E1E1;
-    border-radius: 7px 7px 0px 0px;
-}
-
-#productbox .box2 {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #E1E1E1;
-    border-left: 1px solid #E1E1E1;
-    border-right: 1px solid #E1E1E1;
-    height: 100%;
-    margin-bottom:15px;
-    padding:10px;
-    clear:both;
-    width:840px;
-    border-radius: 0px 0px 7px 7px;
-}
-
-.shadowing{
- box-shadow: 0 3px 12px 4px #999999;
- moz-box-shadow: 0 3px 12px 4px #999999;
- webkit-box-shadow: 0 3px 12px 4px #999999;
-	}
-
-
-#fsurround .shadowing{
- box-shadow: 0 2px 6px 2px #999999;
- moz-box-shadow: 0 2px 6px 2px #999999;
- webkit-box-shadow: 0 2px 6px px #999999;
-	}
-
-#inquiry .button {
-   border-top: 1px solid #08020a;
-   background: #7d0505;
-   background: -webkit-gradient(linear, left top, left bottom, from(#f50c0c), to(#7d0505));
-   background: -webkit-linear-gradient(top, #f50c0c, #7d0505);
-   background: -moz-linear-gradient(top, #f50c0c, #7d0505);
-   background: -ms-linear-gradient(top, #f50c0c, #7d0505);
-   background: -o-linear-gradient(top, #f50c0c, #7d0505);
-   padding: 3px 7px;
-   -webkit-border-radius: 2px;
-   -moz-border-radius: 2px;
-   border-radius: 2px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 22px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-#inquiry .button:hover {
-   border-top-color: #fa0a0a;
-   background: #fa0a0a;
-   color: #ffffff;
-   }
-#inquiry .button:active {
-   border-top-color: #f76f08;
-   background: #f76f08;
-   }
-
-
-#learning_index .button {
-   border-top: 1px solid #08020a;
-   background: #7d0505;
-   background: -webkit-gradient(linear, left top, left bottom, from(#f50c0c), to(#7d0505));
-   background: -webkit-linear-gradient(top, #f50c0c, #7d0505);
-   background: -moz-linear-gradient(top, #f50c0c, #7d0505);
-   background: -ms-linear-gradient(top, #f50c0c, #7d0505);
-   background: -o-linear-gradient(top, #f50c0c, #7d0505);
-   padding: 3px 7px;
-   -webkit-border-radius: 2px;
-   -moz-border-radius: 2px;
-   border-radius: 2px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 22px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-width:300px;
-   }
-#learning_index .button:hover {
-   border-top-color: #fa0a0a;
-   background: #fa0a0a;
-   color: #ffffff;
-   }
-#learning_index .button:active {
-   border-top-color: #f76f08;
-   background: #f76f08;
-   }
-
-#productbox li {
-display:block;
-}
-
-#productbox img{
-  width:300px;
-  height:200px
-}
-
-#navi .index_subnavi .index_button {
-    border-top: 1px solid #f7fafa;
-    background: #f76e05;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f0a308), to(#f76e05));
-    background: -webkit-linear-gradient(top, #f0a308, #f76e05);
-    background: -moz-linear-gradient(top, #f0a308, #f76e05);
-    background: -ms-linear-gradient(top, #f0a308, #f76e05);
-    background: -o-linear-gradient(top, #f0a308, #f76e05);
-    padding: 3px 3px 3px 3px;
-    webkit-border-radius: 7px;
-    moz-border-radius: 7px;
-    border-radius: 7px;
-    webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    box-shadow: rgba(0,0,0,1) 0 1px 0;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    color: white;
-    font-size: 28px;
-    font-family: Georgia, serif;
-    text-decoration: none;
-    vertical-align: middle;
-    display:block;
-    font-weight:bold;
-}
-#navi .index_subnavi .index_button:hover {
-    border-top-color: #080204;
-    background: #080204;
-    color: #ccc;
-}
-#navi .index_subnavi .index_button:active {
-    border-top-color: #a89696;
-    background: #a89696;
-}
-#navi .index_subnavi li {
-    text-decoration:none; text-align:left; display:block; line-height:60px; outline:none; margin:2px;  width:400px;display:inline;
+.fieldset-content > div {
+  margin-bottom: 80px;
 }

@@ -1,239 +1,259 @@
-{% extends "base.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
 
-{% block title %}
-{% trans "MUJIN Inc.| Products" %}
-{% endblock %}
-{% block headscripts %}
-<script>
-  $(document).ready(function(){
-  $('#productslider').bjqs({
-  'animation' : 'fade',
-  'width' : 850,
-  'height' : 160,
-  'showMarkers' : true,
-  'showControls' : false,
-  'centerMarkers' : false
-  });
-  }); 
-</script>
-
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% block sidebar-list-items %}
+<li><a href="#mujin_controller">{% trans "The MUJIN Controller" %}</a></li>
+<li><a href="#product_features">{% trans "Features" %}</a></li>
+<li><a href="#applications">{% trans "Applications" %}</a></li>
+<li><a href="#operation_demo">{% trans "Operation demo" %}</a></li>
+<li><a href="#controller_spec">{% trans "Controller spec" %}</a></li>
 {% endblock %}
 
-{% block content %}
- 
-<div id="productslider">
-  <ul class="bjqs">
-    <li>
-      <table>
-        <tr>
-          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:400px"/></a></td>
-          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
-            <ul>
-              <li>{% trans "World's first cloud computing solution for robot motion planning." %}</li>
-              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}</li>
-            </ul>
-            </div>
-          </td>
-        </tr>
-      </table>
-    <li>
-      <table>
-        <tr>
-          <td><a href="/mujincontroller"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
-          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
-            <ul>
-              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
-              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </li>
-  </ul>
-</div>
-
-<div id="navi" style="width:890px;height:85px;background:#DDDDDD;float:left; margin-top:50px;margin-bottom:30px">
-  <ul class="subnavi" style="position:relative;left:65px;top:5px;width:880px;">
-    <li style="float:left"><a href="#product_concept" class="subbutton">{% trans "Concept" %}</a></li>    
-    <li style="float:left"><a href="#product_features" class="subbutton">{% trans "Features" %}</a></li>    
-    <li style="float:left"><a href="#applications" class="subbutton">{% trans "Applications" %}</a></li>
-    <li style="float:left"><a href="#operation_demo" class="subbutton">{% trans "Operation demo" %}</a></li>
-    <li style="float:left"><a href="#controller_spec" class="subbutton">{% trans "Controller spec" %}</a></li>
- <li style="float:left"><a href="#operation_environment" class="subbutton">{% trans "Operation environment" %}</a>
-</li>
-  </ul>
-</div>
-
-{% block product_content %}
-<div id="product_content" style="width:890px; overflow:auto;clear:both;">
-  <div id="productheader" >
-    <div id="product_concept" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Product Concept" %}</h1>
-    </div>
-  </div>
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;"> {% trans "Industrial Robot Programming for Everyone" %} </h2>
-    </div>
-    <div class="box2">
-      <p>{% trans "MUJIN Controller's innovative solution to industrial robot programming will dramatically improve the existing expensive and complicated processes. MUJIN Controller allows a user to specify desired robot tasks in an intuitive user interface. It then generates collision-free motion plans considering the user-specified task constraints and provides motion planning optimizations. MUJIN Controller saves precious design, development, and deployment time and improves performance in common industrial robotics tasks like manipulation. Furthermore, conventially hard programming tasks like dual-arm-manipulation are simple to test and deploy." %} </p>
-      <br/>
-      <iframe width="450" height="300" src="{% trans "http://www.youtube.com/embed/Je7Gqt1HfR0" %}" frameborder="0" allowfullscreen></iframe>
-      <p>{% trans "The world's first cloud computing solution for robot motion planning." %}</p> 
-    </div>
-  </div>
-  
-  <div id="new_functions">
-    <div id="productbox" style="margin-top:20px;">
-      <div class="h2_lef">
-        <h2 style="margin-left:10px;">{% trans "What You See Is What You Get" %} </h2>
-      </div>
-      <div class="box2">
-        <p>{% trans "We believe that a simulation is pointless unless it is consistent with the reality. While most of existing simulation tools do not ensure the motion in reality, MUJIN Controller guarantees precision. What the program shows on the computer is what will happen in the actual robot cell. " %} </p>
-      </div>
-    </div> 
-  </div>
-{% endblock %}
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-  <div id="productheader" >
-    <div id="product_features" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Product_Features" %}</h1>
-    </div>
-  </div>
-  
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red">{% trans " Automated Collision Avoidance System" %}</font></h2>
-    </div>
-    <div class="box2">
-      <p> {% trans "Most existing industrial robot programming packages can only <b>check</b> for collisions of the workpiece and robot, so they require users to manually move the robot out of collision. In comparison, MUJIN Controller automates all collision avoidance and constraint handling processes. It provide clean, simple, and customizable interfaces that require only high-level parameters as input." %}</p><br/>
-      {% trans "Advantages" %}:
-      <ul>
-        <li style="display:block">{% trans "1. MUJIN Controller eliminates most of the manual teaching operations, which reduces development and deployment cost." %}</li>
-        <li style="display:block">{% trans "2. MUJIN Controller creates motion plans for tasks that are very difficult to program with manual teaching." %}</li>
-      </ul>
-      <div>
-      <table style="border-style:solid;border-color:#FF8C00;border-width:20px">
-        <tr>
-          <td>1</td>
-          <td><img src="{{ STATIC_URL }}img/door_animation.png" frameborder="0" allowfullscreen/></td>
-          <td>
-            <p>{% trans "Importing 3D models to MUJIN Controller. MUJIN Controller supports many 3D CAD software, there is no need to buy a new 3D CAD license!" %}</p>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><img src="{{ STATIC_URL }}img/door_animation.png" frameborder="0" allowfullscreen/></td>
-          <td><p>{% trans "With the MUJIN Planning Language, users can easily specify task parameters such as tool No., task Kinds, and goals." %}</p></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><img  width="300" height="200" src="{{ STATIC_URL }}img/door_animation2.gif" frameborder="0" allowfullscreen/></td>
-          <td>{% trans "MUJIN Controller chooses the best motion by comparing thousands of candidates!" %}</td>
-        </tr>
-      </table>
-      <h2>{% trans "The Old Way" %}</h2>
-      <table>
-        <tr>
-          <td><img src="{{ STATIC_URL }}img/collision.png" frameborder="0" allowfullscreen/><p style="clear:both">{% trans "Collision happens!" %}</p></td>
-          <td><b style="font-size:30px">→</b></td>
-          <td><img src="{{ STATIC_URL }}img/collision_manual_correction.png" frameborder="0" allowfullscreen/><p style="clear:both">{% trans "The robot programmer has to adjust each parameter to correct collision." %}</p>
-          </td>
-        </tr>
-      </table>
-</div>       
-    </div>
-  </div>   
-  
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red">{% trans " Multi-Robot Manipulation Planning System" %}</font></h2>
-    </div>
-    <div class="box2">
-      <p><img  width="250" height="175" src="{{ STATIC_URL }}img/dual_arm.png" frameborder="0" style="float:right"/>{% trans "Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutions for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace. To solve these problems, MUJIN has leverages algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task." %}</p>
-    </div>
-  </div>
-  
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;"><font color="red">{% trans " Robot Placement Optimization System" %}</font></h2>
-    </div>
-    <div class="box2">
-      <p><img src="{{ STATIC_URL }}img/placement_opt.png" style="float:right"/>
-      <p>{% trans "What are the feasible locations of the robot where the task can be completed?" %}</p>
-      <p>{% trans "Among these feasible locations, which allows the robot to perform the task most quickly?" %}</p>
-      <p>{% trans "To answer these questions, the MUJIN Controller evaluates thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. MUJIN Controller is designed with the latest parallel computing technology in order to quickly provide a optimal solutions while taking into account collision avoidance, singularities, and sensor-based visibility constraints." %}</p>
-    </div>
+{% block main-content %}
+<fieldset id="mujin_controller">
+  <h2>{% trans "The MUJIN Controller" %}</h2>
+  <div class="fieldset-content span10">
+    <h3>{% trans "Industrial robot automation for everyone" %} </h3>
+    <img src="{{ STATIC_URL }}img/mujincontroller_snap.png">
+    <p>{% trans "The MUJIN Controller is our innovative solution to industrial robot programming. It will dramatically improve the existing expensive and complicated robot integration processes. The MUJIN Controller allows a user to specify desired robot tasks in an intuitive user interface. It then automatically generates collision-free motion plans considering the user-specified task constraints and provides motion planning optimizations. The MUJIN Controller saves precious design, development and deployment time while increasing productivity in common industrial robotics tasks. Furthermore, conventionally hard programming tasks like dual-arm manipulation are simple to test and deploy." %}</p>
     
-    <div id="productbox" style="margin-top:20px;">
-      <div class="h2_lef">
-        <h2 style="margin-left:10px;"><font color="red">{% trans "The World First" %}</font>{% trans " Grasp Planning System" %}</h2>
-      </div>
-      <div class="box2">
+    <h2 style="color:red">TODO: Issei: What are these images representing? I'd make these less cluttered or split them into multiple images so they're easier to read. Maybe they belong somewhere else?</h2>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/adoptation_effect.jpg">
+    
+    <h3>{% trans "Difference between before and after" %}</h3>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/adoptation_difference.jpg">
+    <br/>
+
+    <h2 style="color:red">TODO: Issei: doesn't this video needs sound in order to be worth showing to people? Also an english version would be nice.</h2>
+    <h3>{% trans "Introduction of MUJIN Controller" %}</h3>
+    <iframe width="580" height="340" src="http://www.youtube.com/embed/4pIhaE4yPgY" frameborder="0" allowfullscreen></iframe>
+    <br/>
+          
+    <h3>{% trans "Simulation Precision and Accuracy" %} </h3>
+    <p>{% trans "We believe that a simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95% precision. What the program shows on the computer is what will happen in the actual robot cell. " %}</p>
+    <br/>
+  </div>
+</fieldset>
+
+<fieldset id="product_features">
+  <h2>{% trans "Product Features" %}</h2>
+  <h2 style="color:red">TODO: Issei: A bunch of these point to pages that don't exist, so you either need to make them or get rid of the links.</h2>
+  <div class="fieldset-content span10">
+    <div>
+      <a class="nohover-highlight" href="/product_ik">
+        <h3>{% trans "The World's Best Inverse Kinematics" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/ik.png">
+        <p>{% trans "The MUJIN Controller features an outstanding IK solver which can find analytical solutions to your robot's IK." %}</p>
         <ul>
-          <li>{% trans "MUJIN Controller allows robots to change tools and grasp workpieces while computing motions." %}</li><br/>          <img src="{{ STATIC_URL }}img/grasping.gif" style="clear:right; display:block"/>
-          <li>{% trans "1. The robot can easily mount different tools, which become part of the robot's collision geometry." %} <img src="{{ STATIC_URL }}img/mitsubishi_robot.png" style="clear:right; display:block"/></li>
-          <li>{% trans "2. Once the tool is specified, the robot can grab the workpiece, transfer it to its goal, and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assemblies." %}</br>
-<img src="{{ STATIC_URL }}img/mitsubishi_grasp.png" style="clear:right"></li>
-          <li>{% trans "3. The tool can move the workpiece while avoiding environment collisions." %}</li>
-<img src="{{ STATIC_URL }}img/mitsubishi_grasp.gif" style="clear:right">
+          <li>{% trans "Solve any robot's IK." %}</li>
+          <li>{% trans "Even works for robots with more than 7DOF." %}</li>
         </ul>
-      </div>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_colision_avoindance">
+        <h3>{% trans "Automated Collision Avoidance System" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/mitsubishi_grasp.gif">
+        <p>{% trans "While most existing industrial robot programming packages can only provide collision checking, MUJIN Controller offers an automatic collision avoidance system." %}</p>
+        <ul>
+          <li>{% trans "No need to explore avoidance points or paths" %}</li>
+          <li>{% trans "Automatically create the most efficient path without specifying intermediate way points to avoid collisions" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_vrc">
+        <h3>{% trans "95% Simulation Precision" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/denso_real_machine.gif"/>
+        <p>{% trans "The MUJIN Controller's output is guaranteed to be at least 95% accurate when compared to the motion of the real robot." %}</p>
+        <ul>
+          <li>{% trans "Simulate precisely before trying programs with a real robot" %}</li>
+          <li>{% trans "Save valuable time when teaching the robot" %}</li>
+          <li>{% trans "Reduce the likelihood of unexpected accidents" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_multi">
+        <h3>{% trans "Multi-Robot Manipulation" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/dual_arm.png"/>
+        <p>{% trans "While most robot simulation packages consider just a single robot, MUJIN has leveraged planning algorithms for collision-free motion plans for multiple robots in the same environment." %}</p>
+        <ul>
+          <li>{% trans "Using multiple robots to finish a task faster" %}</li>
+          <li>{% trans "No need to worry about collisions between robots" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_opt">
+        <h3>{% trans "Robot Placement Optimization" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/placement_opt.png"/>
+        <p>{% trans "MUJIN Controller automatically examine all possible trajectories on all desired positions." %}</p>
+        <ul>
+          <li>{% trans "Significantly reduce the time to figure out the optimal layout of your work cell" %}</li>
+          <li>{% trans "Find the best robot position which maximizes the robot's efficiency for a task" %}</li>
+          <li>{% trans "Trivial to re-run an optimization if a task changes" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_grasp">
+        <h3>{% trans "Fast Grasp Planning" %}</h3>
+        <img class="thumbnail" src="/static/img/grasp.gif">
+        <p>{% trans "The MUJIN Controller can compute grasps for an object and pick the one most suited for the task. Allows robots to change tools and grasp workpieces in an efficient manner." %}</p>
+        <ul>
+          <li>{% trans "Simulate a trajectory while grasping a workpiece" %}</li>
+          <li>{% trans "Simulate how to grasp the workpiece for a particular task" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_itl">
+        <h3>{% trans "Easy Industrial Task Languag (ITL)." %} </h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/itl.png">
+        <p>{% trans "Industrial Task Language is MUJIN's easy to learn, generic robot programming language which can specify tasks for any robot manufacturer." %}</p>
+        <ul>
+          <li>{% trans "Specify task in an easily, intuitive manner" %}</li>
+          <li>{% trans "No need to learn many different robot languages" %}</li>
+          <li>{% trans "Create complicated tasks (grab, release, change tools)" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_program">
+        <h3>{% trans "Output Robot Program" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/both_program.gif"/>
+        <p>{% trans "MUJIN Controller automatically outputs the robot manufacturer's program, so there is no need to write it yourself." %}</p>
+        <ul>
+          <li>{% trans "Can try motion on real machine as soon as simulation is finished" %}</li>
+          <li>{% trans "Examine and verify trajectories easily" %}</li>
+        </ul>
+      </a>
+    </div>
+    <div>
+      <a class="nohover-highlight" href="/product_feature_cadsoft">
+        <h3>{% trans "No Dependencies on Specific 3D CAD Software" %}</h3>
+        <img class="thumbnail" src="{{ STATIC_URL }}img/add_on.gif">
+        <p>{% trans "The MUJIN Controller does not require any specific 3D CAD software. The robot programmer can easily import 3D models in most common formats." %}</p>
+        <ul>
+          <li>{% trans "No need to purchase new 3D CAD software just to use the MUJIN Controller" %}</li>
+          <li>{% trans "Many CAD formats supported" %}</li>
+        </ul>
+      </a>
     </div>
   </div>
-  
-  <div id="productbox" style="margin-top:20px;">
-    <div class="h2_lef">
-      <h2 style="margin-left:10px;">{% trans "Does not need specific 3D CAD software" %} </h2>
+</fieldset>
+
+<fieldset id="applications">
+  <h2>{% trans "Applications" %}</h2>
+  <h2 style="color:red">TODO: Issei: Maybe have captions for these explaining what kinds of applications. Like for automotive we'd probably say something about welding? Right now I don't think they are very helpful.</h2>
+  <div class="fieldset-content span10">
+    <div>
+      <h3>{% trans "Automotive" %} </h3>
+      <img class="thumbnail" src="{{ STATIC_URL }}img/industrial_robots.jpg">
+      <img class="thumbnail" src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif">
     </div>
-    <div class="box2" style="height:350px;">
-      <p><img src="{{ STATIC_URL }}img/add_on.gif" style="height:350px;margin-right:5px;float:left;"/>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %}</p> <br/><br/>
-        {% trans "MUJIN Controller supports the following formats:" %}</br>
-        <ul style="background:#e7e7e7; width:80px; float:left;">
-          <li>COLLADA</li>
-          <li>IGES</li>
-          <li>STEP</li>
-          <li>IV/VRML</li>
-          <li>STL</li>
-          <li>DirectX</li>
-        </ul>
+
+    <div>
+      <h3>{% trans "Electronics" %} </h3>
+      <img class="thumbnail" src="{{ STATIC_URL }}img/assembly.png">
+      <img class="thumbnail" src="{{ STATIC_URL }}img/denso_assembly_dual2.png">
     </div>
-    <a href="#product_features">To the top of Product Features</a>
-  </div> 
-  
-  
-  <div id="productheader" >
-    <div id="applications" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Applications" %}</h1>
+
+    <div>
+      <h3>{% trans "Medical" %} </h3>
+      <img class="thumbnail" src="{{ STATIC_URL }}img/industrial_robots.jpg">
+      <img class="thumbnail" src="{{ STATIC_URL }}img/yaskawa_bio_sequence.png">
     </div>
-{% trans "UNDER CONSTRUCTION" %}
-    
-    <div id="productheader" >
-      <div id="operation_demo" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:320px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Operation demo" %}</h1>
-      </div>
-      {% trans "UNDER CONSTRUCTION" %}
+
+    <div>
+      <h3>{% trans "Special Robot/Machines" %} </h3>
+      <img class="thumbnail" src="{{ STATIC_URL }}img/many_robots.png">
+      <img class="thumbnail" src="{{ STATIC_URL }}img/many_robots2.png">
+    </div>
+  </div>
+</fieldset>
+
+<h2 style="color:red">TODO: Issei: Again, this could probably use sound and an english version?</h2>
+<fieldset id="operation_demo">
+  <h2>{% trans "Operation Demo" %}</h2>
+  <div class="fieldset-content span10">
+    <h3>{% trans "MUJIN Controller has user-friendly interface" %} </h3>
+    <iframe width="580" height="340" src="http://www.youtube.com/embed/4pIhaE4yPgY" frameborder="0" allowfullscreen></iframe>
+  </div>
+</fieldset>
+
+<fieldset id="controller_spec">
+  <h2>{% trans "Controller Spec" %}</h2>
+  <div class="fieldset-content span10">
+    <h3>{% trans "MUJIN Controller" %} </h3>
+    <img src="{{ STATIC_URL }}img/mujin_controller.jpg" style="width,height:300px">
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>{% trans "Product Description" %}
+        </th>
+        <td>{% trans "MUJIN Controller" %}
+        </td>
+      </tr>
+      <tr>
+        <th nowrap="nowrap">{% trans "Dimensions" %}
+        </th>
+        <td>
+          <ul>
+            <li>{% trans "Height" %}: 452mm</li>
+            <li>{% trans "Width" %}: 172mm</li>
+            <li>{% trans "Depth" %}: 645mm</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>{% trans "Weight" %}</th>
+        <td>30kg</td>
+      </tr>
+      <tr>
+        <th>{% trans "Power Consumption" %}</th>
+        <td>300W</td>
+      </tr>
+      <tr>
+        <th>{% trans "Cores" %}</th>
+        <td>{% trans "12 core (24 threads)" %}</td>
+      </tr>
+      <tr>
+        <th>{% trans "Core Clockspeed" %}</th>
+        <td>2.0Ghz</td>
+      </tr>
+      <tr>
+        <th>{% trans "RAM" %}</th>
+        <td>32GB</td>
+      </tr>
+      <tr>
+        <th>{% trans "HDD Capacity for Customer" %}</th>
+        <td>500GB</td>
+      </tr>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <h3>{% trans "MUJIN Controller Cloud" %}</h3>
+    <h2 style="color:red">TODO: Issei: actually write the cloud specs</h2>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/mujincontroller_logo3.png">
+  </div>
+</fieldset>
+
+<fieldset id="operating_environment">
+  <h2>{% trans "Operation Environment" %}</h2>
+  <div class="fieldset-content span10">
+    <h3>{% trans "All you need is an internet browser" %} </h3>
+    <p>{% trans "Browsers MUJIN strongly recommends:" %}</p>
+    <img class="thumbnail" style="width:400px; height:150px;" src="{{ STATIC_URL }}img/firefox_logo.png">
+    <img class="thumbnail" style="width:400px; height:150px;" src="{{ STATIC_URL }}img/chrome_logo.png">
       
-      <div id="productheader" >
-        <div id="controller_spec" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:450px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Controller spec" %}</h1>
-        </div>
-          {% trans "UNDER CONSTRUCTION" %}
-      </div> 
-
-      <div id="productheader" >
-        <div id="operation_environment" style="padding:3px 5px;border-color:#CCCCCC;border-width:1px 1px 1px 7px;border-style:solid;width:450px;background:#F8F8F8;color:#EE920E;"><h1>{% trans "Operation environment" %}</h1>
-        </div>
-        {% trans "UNDER CONSTRUCTION" %}
-      </div> 
-
-    </div>
+    <h3>{% trans "The languages translated into" %} </h3>
+    <ol>
+      <li>{% trans "Japanese" %}</li>
+      <li>{% trans "English" %}</li>
+    </ol>
   </div>
-</div>
+</fieldset>
 
 {% endblock %}
-  
-  

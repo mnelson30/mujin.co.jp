@@ -2,101 +2,144 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN Inc.| Home" %}
+  {% trans "MUJIN Inc.| Home" %}
 {% endblock %}
+
 {% block headscripts %}
-<script>
-  $(document).ready(function(){
-  $('#myslider').bjqs({
-  'animation' : 'fade',
-  'width' : 850,
-  'height' : 400,
-  'showMarkers' : true,
-  'showControls' : true,
-  'centerMarkers' : false
-  });
-  }); 
-</script>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+    $('#homeCarousel').carousel({
+      interval: 6000
+    });
 {% endblock %}
 
-{% block content %}  
-<div id="myslider">
-  <ul class="bjqs">
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="600"  title="{% trans "Multi-arm manipulation assembly" %}"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="600" title="{% trans "Multi-arm manipulation assembly" %}"/></li>
-    <li><img src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif" width="600" height="330" title="{% trans "Optimizing robot motion for complex object placement" %}"/></li>
-  </ul>
+{% block content %}
+<br/>
+
+<h2 style="color:red">TODO: Issei: fix the first picture. Not sure what purpose it is supposed to have. I'd ditch the green background for starters.</h2>
+<div id="homeCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_index2.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "The MUJIN Controller makes industrial robotics easy for everybody" %}</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_snap.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "The MUJIN Controller features an easy to use web interface" %}</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/denso_assembly_dual2.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "Capable of multi-arm manipulation assembly" %}</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/door_animation.gif"/>
+      <div class="carousel-caption">
+        <h4>{% trans "Optimizing robot motion for complex object placement" %}</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#homeCarousel" data-slide="prev">‹</a>
+  <a class="carousel-control right" href="#homeCarousel" data-slide="next">›</a>
+
+  <ol class="carousel-indicators">
+    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#homeCarousel" data-slide-to="1"></li>
+    <li data-target="#homeCarousel" data-slide-to="2"></li>
+    <li data-target="#homeCarousel" data-slide-to="3"></li>
+  </ol>
 </div>
 
-<div id="QuoteBox" class="shadowing">
-  <span class="header" style="color:#666666;" ><br/><br/>{% trans "MUJIN's innovative technology makes it easier to program industrial robots and improves automation quality." %}
-  </span>
-</div>
+<hr>
 
-<div style="box-shadow:0px 3px 12px 0px #999999;position:relative; left:-20px; width:620px;float:right; background: url({{ STATIC_URL }}img/mujin_mission.jpg) top right  no-repeat;padding:0; margin:0;margin-bottom:30px">
-  <div style="position:relative; text-align:center; font-size:32px;color:ivory;padding-top:60px;height:125px"><b>{% trans "Industrial Robot Automation<br/>for Everyone" %}</b><br/><br/><br/>
+<h2 style="color:red">TODO: Luke: Fix the news to work with models.</h2>
+<div class="row-fluid">
+  <div class="span6">
+    <h3 class="color-headline">{% trans "What's" %} <b>{% trans "NEW" %}</b></h3>
+    <div>
+      <b>2012/11/02</b>
+      <div class="row-fluid">
+        <div class="span3">
+          <img src="{{ STATIC_URL }}img/nikkei_business.jpg"/>
+        </div>
+        <div class="span9">
+          {% trans "MUJIN is featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan" %}</br>
+          <a class="btn" href="http://business.nikkeibp.co.jp/nbs/nbo/backnumber/20121008.html">{% trans "ロボットの能力を最大化" %}</a>
+          <br />
+          <p>産業用ロボットの導入に必要なセッティングにかかる期間を最大５分の１に短縮出来る。ロボットの最適化な配置方法や動作パターンまで高速計算するのが当社製ソフトの強み。世界的に見ても競合製品は存在しない。</p>
+        </div>
+      </div>
+
+      <b>2012/9/19</b>
+      <div class="row-fluid">
+        <img src="{{ STATIC_URL }}img/nikkannewspaper.png"/>
+        <div class="span12">
+          <b>{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</b>
+          <br/>
+          {% trans "MUJIN is featured on this week's NIKKEI BUSINESS magazine　as one of the Next Generation Ventures 100 which will save Japan" %}</br>
+          <a class="btn" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">東大発ＶＢ・ＭＵＪＩＮ、来年初頭ソフト販売－産ロボの最適動作算出</a>
+          <br />
+          <p>ＭＵＪＩＮ（東京都文京区、滝野一征代表取締役、０５０・３６８２・７８５２）は、２０１３年初めに産業用ロボットの動作計画を行うソフトウエア「ＭＵＪＩＮコントローラー」の販売を始める。 東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。 ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。 専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 style="color:red">TODO: Issei: fix both these images, its not clear what they are actually for.</h2>
+  <div class="span3">
+    <h3 class="color-headline">IK <b>Fast</b></h3>
+    <a href="/services" class="overlay-captions">
+      <img src="{{STATIC_URL}}img/index_mujincontroller_product3.png">
+      <p>{% trans "The finest Inverse Kinematics Solver" %}</p>
+    </a>
+  </div>
+  <div class="span3">
+    <h3 class="color-headline"><b>MUJIN</b> Controller</h3>
+    <a href="/products" class="overlay-captions">
+      <img src="{{STATIC_URL}}img/index_mujincontroller_product.png">
+      <p>{% trans "Simulation for Robot manufacturing system" %}</p>
+    </a>
   </div>
 </div>
 
-<div id="learning_index" style="clear:both;margin-top:40px;width:880px">
-  <table>
-    <tr>
-      <td>  
-        <iframe width="430" height="260" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe> 
-      </td>
-      <td style="width:410px">
-        <h2 style="border-bottom:1px solid;position:relative;left:20px">{% trans "What's new?" %}</h2>
-        <div id="headNewsHome" style="position:relative; left:20px">
-        {% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</br></br>
-          <img src="{{ STATIC_URL }}img/nikkannewspaper.png" style="width:350px"></img><br/>
-        
-           <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html"><h3>東大発ＶＢ・ＭＵＪＩＮ、来年初頭ソフト販売－産ロボの最適動作算出</h3></a></br>
-<p>ＭＵＪＩＮ（東京都文京区、滝野一征代表取締役、０５０・３６８２・７８５２）は、２０１３年初めに産業用ロボットの動作計画を行うソフトウエア「ＭＵＪＩＮコントローラー」の販売を始める。
-　東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。
-　ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。
-　専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td> 
-        <div id="learn_mujincontroller" style="margin-bottom:50px;margin-top:50px;width:400px">
-          <h3>{% trans "Are you taking too long to program a robot?" %}</h3>
-          <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png" style="width:350px"></img><br/>
-          <a href="/inquiry"><p class="button">{% trans "Apply for trial" %}</p></a>
-        </div>
-      </td>
-      <td>
-        <div id="navi" style="margin-top:50px;margin-bottom:50px">
-          <ul class="index_subnavi" style="position:relative;left:20px;top:5px;180px;">
-            <li style="float:left"><a href="/vision" class="index_button">{% trans "Who we are" %}</a></li>    
-            <li style="float:left"><a href="/products" class="index_button">{% trans "What we do" %}</a></li>    
-            <li style="float:left"><a href="/technology" class="index_button">{% trans "Why we are special" %}</a></li>
-          </ul>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
+<hr>
 
-<div id="NewsHome">
-  <b class="white">{% trans "News" %}</b>
-  <br/>
-  <p><a target="_blank" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</a></p>
- <p><a target="_blank" href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "MUJIN was introduced by Yomiuri newspaper" %}</a></p>
- <p><a target="_blank" href="/news">{% trans "MUJIN moved its headquarter into Tokyo University." %}</a></p>
+<h2 style="color:red">TODO: Issei: doesn't this video needs sound in order to be worth showing to people? Also an english version would be nice.</h2>
+<h3 class="color-headline">{% trans "Learn" %} <b>{% trans "MUJIN" %}</b></h3>
+<div class="row-fluid">
+  <div class="span7">
+    <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="span5 learn-button-menu">
+    <a href="/vision" class="btn btn-warning btn-block">
+      <h3>
+        <img src="{{ STATIC_URL }}img/question_icon.jpg"/>
+        {% trans "Who we are" %} &nbsp;&raquo;
+      </h3>
+    </a>
+    <a href="/services" class="btn btn-warning btn-block">
+      <h3>
+        <img src="{{ STATIC_URL }}img/service_icon.jpg"/>
+        {% trans "Our services" %} &nbsp;&raquo;
+      </h3>
+    </a>
+    <a href="/products" class="btn btn-warning btn-block">
+      <h3>
+        <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png"/>
+        {% trans "Our products" %} &nbsp;&raquo;
+      </h3>
+    </a>
+    <a href="/technology" class="btn btn-warning btn-block">
+      <h3>
+        <img src="{{ STATIC_URL }}img/unique_icon.jpg">
+        {% trans "Why we are special" %} &nbsp;&raquo;
+      </h3>
+    </a>
+  </div>
 </div>
-<div id="NewsHome">
-  <b class="white">{% trans "Vision" %}</b>
-  <br/>
-  <a href="/vision">{% trans "MUJIN strives to automate factory and industrial processes through the creation of complex robotic systems capable of intelligent reasoning to increase manufacturing productivity in our society." %}</a>
-</div>
-
-<div id="NewsHome" style="margin-right:0px;">
-  <b class="white"> {% trans "Careers" %}</b>
-  <br/>
-  <a href="/carreers">{% trans "Thinking about changing your career? At MUJIN, you could change the world, too." %}</a>
-</div>
-
 {% endblock %}

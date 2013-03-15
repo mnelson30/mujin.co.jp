@@ -1,25 +1,10 @@
-{% extends "base.html" %}
+{% extends "aboutmujintemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | Management Team" %}
-{% endblock %}
-{% block headscripts %}
-
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
+{% trans "MUJIN Inc.| Founder Message" %}
 {% endblock %}
 
-{% block content %}
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/management_team.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:0px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "Message from Founder" %}</b>
-  </div>
-</div>
-
+{% block main-content %}
+<h2>{% trans "Message from Founder" %}</h2>
 {% trans "under construction" %}
-
-<div style="clear:both">
-  {% include "aboutmujinpane.html" %}
-</div>
-
 {% endblock %}

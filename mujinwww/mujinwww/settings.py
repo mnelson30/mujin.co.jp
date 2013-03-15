@@ -32,8 +32,8 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
-        }
     }
+}
 
 
 # Local time zone for this installation. Choices can be found here:
@@ -48,7 +48,6 @@ TIME_ZONE = 'UTC'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 #LANGUAGE_CODE = 'en-us'
-
 SITE_ID = 2
 
 # If you set this to False, Django will make some optimizations so as not
@@ -65,16 +64,17 @@ USE_TZ = True
 LOCALE_PATHS=(
     '/home/rdiankov/mujinsvn/web/mujinwww/locale',
     os.path.join(ROOT_PATH,'..','locale'),
-    )
+)
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+#~ MEDIA_ROOT = os.path.join(ROOT_PATH, '..', 'locale'),
+MEDIA_ROOT = os.path.join(ROOT_PATH, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -91,8 +91,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(ROOT_PATH,'static'),
-    os.path.join(ROOT_PATH,'static'+MUJIN_ENV),
+    os.path.join(ROOT_PATH, 'static'),
+    os.path.join(ROOT_PATH, 'static' + MUJIN_ENV),
 )
 
 # List of finder classes that know how to find static files in
@@ -137,23 +137,27 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'mujinwww',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    #~ 'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.admin',
+
     'south',
     #'mujin.controller',
-    
+
     # haystack? # http://haystacksearch.org/
     # Uncomment the next line to enable the admin:
     #'grappelli',
     #'filebrowser',
     'django.contrib.admin',
     # 'django.contrib.admindocs',
-    
+
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -208,6 +212,8 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_AGE = 86400 # 1 day
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
+
+AUTH_PROFILE_MODULE = "account.UserProfile"
 
 if MUJIN_ENV=='production':
     from settings_production import *

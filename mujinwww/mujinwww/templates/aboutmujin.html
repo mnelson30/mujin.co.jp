@@ -2,16 +2,38 @@
 {% load i18n %}
 
 {% block title %}
-{% trans "MUJIN | Company profile" %}
+{% trans "MUJIN Inc.| Company Profile" %}
 {% endblock %}
 
-{% block content %}  
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "About MUJIN" %}</b>
+{% block content %}
+<div class="about-mujin-index">
+  <div class="row">
+    <div class="span4">
+      <a href="/company_overview"><img src="{{ STATIC_URL }}/img/corporate_profile.jpg" alt="company_overview"/></a>
+      <a href="/company_overview"><h3>{% trans "Corporate overview" %}</h3></a>
+    </div>
+    <div class="span4">
+      <a href="/vision"><img src="{{ STATIC_URL }}/img/oldlighthouse.png" alt="access_map"/></a>
+      <a href="/vision"><h3>{% trans "Vision" %}</h3></a>
+    </div>
+    <div class="span4">
+      <a href="/management_team"><img src="{{ STATIC_URL }}/img/management_team.jpg" alt="management_team"/></a>
+      <a href="/management_team"><h3>{% trans "Management team" %}</h3></a>
+    </div>
   </div>
-</div>  
-
-{% include "aboutmujinpane.html" %}
-
+  <div class="row">
+    <div class="span4">
+      <a href="/access_map"><img src="{{ STATIC_URL }}/img/access_map.jpg" alt="access_map"/></a>
+      <a href="/access_map"><h3>{% trans "Visit office" %}</h3></a>
+    </div>
+    <div class="span4">
+      <a href="/founder_message"><img src="{{ STATIC_URL }}/img/message.jpg" alt="company_development"/></a>
+      <a href="/founder_message"><h3>{% trans "Message from founder" %}</h3></a>
+    </div>
+    <div class="span4">
+      <a href="/company_development"><img src="{{ STATIC_URL }}/img/company_development.jpg" alt="company_development"/></a>
+      <a href="/company_development"><h3>{% trans "Company development" %}</h3></a>
+    </div>
+  </div>
+</div>
 {% endblock %}

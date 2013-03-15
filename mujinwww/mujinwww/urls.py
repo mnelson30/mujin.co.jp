@@ -6,23 +6,23 @@ import os
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 
-#if settings.IPYTHON_DEBUG:
-#    from IPython.Shell import IPShellEmbed
-    #ipshell = IPShellEmbed(argv='',banner = 'MUJIN Controller Dropping into IPython',exit_msg = 'Leaving Interpreter.')
-    #ipshell(local_ns=locals())
-    
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
 from django.shortcuts import render_to_response
 from django.template import RequestContext, TemplateDoesNotExist
 from django.utils.translation import get_language_from_request
 
-def indexview(request,name):
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+admin.autodiscover()
+
+import mujinwww.views
+
+def indexview(request, name):
     if len(name) == 0:
         name = 'index'
 
     htmlvars = dict()
+
+    # TODO: maybe get rid of this and make a model?
     if name == 'index':
         # perhaps move this in initialization step for caching?
         gallery_intro_dir = None
@@ -44,21 +44,27 @@ def indexview(request,name):
                         imagefilenames += u'<img src="%s" width="640"/>\n'%os.path.join(urldir,imagename)
             htmlvars['intro_gallery_images'] = imagefilenames
     try:
-        return render_to_response(name, RequestContext(request,htmlvars))
+        return render_to_response(name, RequestContext(request, htmlvars))
     except TemplateDoesNotExist:
-        return render_to_response(name+'.html', RequestContext(request,htmlvars))
+        return render_to_response(name + '.html', RequestContext(request, htmlvars))
 
 urlpatterns = patterns('',
-    url(r'^(?P<name>(\w)*)$', indexview),
-    url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
-
     # Examples:
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # the admin
+    url(r'^admin/', include(admin.site.urls)),
 
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    # for sending inquiry emails
+    url(r'^sendinquiry', 'mujinwww.views.sendinquiry'),
+    
+    # to serve the media directory statically when using the dev server
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+
+    # why is this here?
+    url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
+    
+    # the catch all, serves everything
+    url(r'^(?P<name>(\w)*)$', indexview)
 )

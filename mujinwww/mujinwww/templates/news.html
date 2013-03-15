@@ -1,168 +1,81 @@
-{% extends "base.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
-
 {% block title %}
-{% trans "MUJIN | News" %}
+{% trans "MUJIN Inc.| News" %}
 {% endblock %}
 
-{% block content %}
+{% block sidebar-list-items %}
+<li><a href="#2012">{% trans "2013" %}</a>
+</li>
+<li><a href="#2011">{% trans "2012" %}</a>
+</li>
+{% endblock %}
 
-<div class="bnr"> 
-  <image src="{{ STATIC_URL }}img/conveyer.png" style="float:right;"/>
-  <div style="position:relative; left:40px; top:60px; font-size:50px;color:#EE920E;padding0px"><b>{% trans "News" %}</b>
+{% block main-content %}
+<h2 style="color:red">TODO: Luke: write a template/view that works with the news model</h2>
+<fieldset>
+  <h3>{% trans "MUJIN introduced by Nikkei Business Magazine" %}</h3>
+  <div class="fieldset-content span10">
+    <b>{% trans "Issei Takino 2012/10/08 " %}</b>
+    <img class="thumbnail" style="width:130px;" src="{{ STATIC_URL }}img/nikkei_business.jpg">
+    <p>{% trans "MUJIN was featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan." %}</p>
+    <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "Read more" %}</a>
   </div>
-</div>
-
-<div id="navi" style="margin-top:30px;width:220px;height:150px;background:#DDDDDD;float:left">
-  <ul class="subnavi" style="position:relative;left:10px;top:5px;">
-    <li><a href="#news_content" class="subbutton">2012</a> </li>
-    <li><a href="#2011news" class="subbutton">2011</a></li>
-  </ul>
-</div>
-
-<div id="news_content" style="margin-top:0px; float:right;width:630px">
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/9/18" %}
-        </th>
-        <th class="mj">MUJIN
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/nikkannewspaper.png"  style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}  
-          <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "more detail" %}
-          </a>
-        </td>
-      </tr>
-    </table>
+</fieldset>
+<fieldset>
+  <h3>{% trans "MUJIN was introduced by Nikkan Industrial Newspaper" %}</h3>
+  <div class="fieldset-content span10">
+    <b>{% trans "Issei Takino 2012/09/18 " %}</b>
+    <br/>
+    <img src="{{ STATIC_URL }}img/nikkannewspaper.png">
+    <p>{% trans "MUJIN receives $950k investment from University of Tokyo Edge Capital. Announcing first official product in early 2013 year. " %}<a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">{% trans "Read more" %}</a></p>
   </div>
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/10" %}
-        </th>
-        <th class="mj">MUJIN
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> announcing new Koishikawa office" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/koishikawa.png" style="height:200;float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> opened the new Koishikawa office for R&D." %}  
-          <a href="/access_map">{% trans "Visit office" %}
-          </a>
-        </td>
-      </tr>
-    </table>
+</fieldset>
+<fieldset>
+  <h3> {% trans "MUJIN announcing new Koishikawa office" %}</h3>
+  <div class="fieldset-content span10">
+    <b>{% trans "Issei Takino 2012/08/10 " %}</b>
+    <br/>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/koishikawa.png">
+    <p>  {% trans "MUJIN opened the new Koishikawa office for R&D." %}
+    <a href="/access_map">{% trans "Visit Office" %}</a>
+    </p>
   </div>
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "2012/8/2" %}
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans "<b>MUJIN</b> announcing relocation of headquarter" %}
-        </th>
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/entreplaza.png" style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "<b>MUJIN</b> relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>" %}. 
-          <a href="/access_map">{% trans "Visit office" %}
-          </a>
-        </td>
-      </tr>
-    </table>
+</fieldset>
+<fieldset>
+  <h3>  {% trans "MUJIN announcing relocation of headquarter" %}</h3>
+  <div class="fieldset-content span10">
+    <span>{% trans "Issei Takino 2012/08/02 " %}</span>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/entreplaza.png">
+    <p>{% trans "MUJIN relocated its headquarter to Entrepreneur Plaza in <b>Tokyo University</b>." %}</p>
+    </br>
+    <b>Tokyo University Entrepreneur Plaza</b>
+    <p>{% trans "The University of Tokyo's Science Entrepreneurship and Enterprise Development (SEED) office for supporting venture businesses has moved from the planning to the implementation stage, and visible results are now being returned to society. The first stage consisted of establishing the tripartite system of the Division of University Corporate Relations, TODAI TLO, Ltd. (CASTI), and the University of Tokyo Edge Capital Co., Ltd. (UTEC) in order to build support for venture businesses. The second stage consisted of procuring a facility equipped to support wet laboratories for venture businesses in the bioscience field (the University of Tokyo Entrepreneur Plaza)." %}</p>
   </div>
-
-
-
-  <div class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">
-          {% trans "2012/5/16" %}
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}
-      </tr>
-    </table>
-
-    <table style="font-size:13px; width:650px;" >
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/yomiuri_article.png" style="float:left"/>
-        </td>
-        <td>
-          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">ロボット最適化で「ＭＵＪＩＮ」の価値
-          </a>
-          <br/>
-
-          シリコンバレーから日本へ。ブルガリア出身の魯仙さん
-          魯仙さん（左）と滝野さん
-          ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）」
-          
-          　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
-          <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "more detail" %}
-          </a>
-        </td>
-      </tr>
-    </table>
+</fieldset>
+<fieldset>
+  <h3>{% trans "Tetsuya Isozaki of the Yomiuri Shimbun Venture Corner introduces MUJIN's technology" %}</h3>
+  <div class="fieldset-content span10">
+    <b>{% trans "Issei Takino 2012/05/16 " %}</b>
+    <p> <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.html">ロボット最適化で「ＭＵＪＩＮ」の価値</a>
+    <br/>
+    シリコンバレーから日本へ。ブルガリア出身の魯仙さん
+    魯仙さん（左）と滝野さん
+    ＭＵＪＩＮ社製ソフトウェアを使ったロボットアームのイメージ（同社提供）
+    　最近、日本のベンチャーでも「シリコンバレーに行って勝負してみよう」という会社が多くなってきましたが、今回は逆に、シリコンバレー出身でありながら日本にやってきた起業家のご紹介をします。
+    <a href="http://www.yomiuri.co.jp/job/entrepreneurship/isozaki/20120514-OYT8T00762.htm">{% trans "Read more" %}
+    </a>
+    </p>
   </div>
-
-
-
-  <div id="2011news" class="onenews">
-    <table>
-      <tr>
-        <th style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">2011/10/10
-        </th>
-        <th class="mj">MUJIN 
-        </th>
-        <th>
-          {% trans " <b>MUJIN</b> attends IREX 2011." %} 
-      </tr>
-    </table>
-    <table style="font-size:11px; width:650px;">
-      <tr>
-        <td>
-          <img src="{{ STATIC_URL }}img/irex2011.png" style="float:left"/>
-        </td>
-        <td style="font-size:13px">
-          {% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}
-        </td>
-      </tr>
-    </table>
+</fieldset>
+<fieldset>
+  <h3>{% trans "MUJIN attends IREX 2011" %}
+  </h3>
+  <div class="fieldset-content span10">
+    <b>{% trans "Issei Takino 2012/11/22 " %}</b>
+    <img class="thumbnail" src="{{ STATIC_URL }}img/irex2011.png">
+    <p>{% trans "MUJIN was honored to have an exhibition booth with DensoWave." %}</p>
   </div>
-</div>
-
+</fieldset>
 {% endblock %}
 

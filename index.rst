@@ -42,7 +42,7 @@ Only write English in the HTML files and only inside these translation blocks:
 
 - `trans <https://docs.djangoproject.com/en/1.4/topics/i18n/translation/#std:templatetag-trans>`_
 
-- `blocktrans <https://docs.djangoproject.com/en/1.4/topics/i18n/translation/#blocktrans-template-tag>`_  
+- `blocktrans <https://docs.djangoproject.com/en/1.4/topics/i18n/translation/#blocktrans-template-tag>`_
 
 Videos and image filenames should also be written within the translation blocks so that we can substitute them with the language equivalent.
 
@@ -81,3 +81,7 @@ When updating can just run::
   /var/www/mujinwww/updateweb.bash
 
 
+Useful links
+============
+
+W3's CSS validator: http://jigsaw.w3.org/css-validator/#validate_by_input
