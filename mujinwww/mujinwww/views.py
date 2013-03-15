@@ -39,10 +39,14 @@ def mail(to, subject, text, attach=None, from_address=gmail_user):
 def sendinquiry(request):
     #~ from IPython.Shell import IPShellEmbed; IPShellEmbed(argv='')(local_ns=locals())
     if request.method == 'POST':
-
         to = 'info@mujin.co.jp'
 
         subject = 'New inquiry from ' + request.POST['first_name'] + ' ' + request.POST['last_name']
+
+        request_dict = {}
+        for k, v in request.POST.iteritems():
+            request_dict[k] = v.encode('utf-8')
+
         text = '''
 <h1>New inquiry from {first_name} {last_name}</h1>
 <br />
@@ -62,7 +66,7 @@ def sendinquiry(request):
 <p>
   {message}
 </p>
-        '''.format(**{key: value.encode('utf-8') for (key, value) in request.POST.iteritems()})
+        '''.format(**request_dict)
 
         mail(to, subject, text, from_address=request.POST['email'])
     return HttpResponse()
