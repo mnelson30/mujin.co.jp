@@ -8,28 +8,10 @@ body {
 /* Custom container */
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  width: 1100px !important;
 }
 .container > hr {
   margin: 10px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  margin: 80px 0;
-  text-align: center;
-}
-.jumbotron h1 {
-  font-size: 100px;
-  line-height: 1;
-}
-.jumbotron .lead {
-  font-size: 24px;
-  line-height: 1.25;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
 }
 
 /* Supporting marketing content */
@@ -74,6 +56,10 @@ body {
   margin-bottom: 10px;
 }
 
+/*
+lukes edits start here
+*/
+
 #homeCarousel .carousel-inner img {
   width: 100%;
   height: 484px;
@@ -82,37 +68,6 @@ body {
 #featureCarousel .carousel-inner img {
   width: 100%;
   height: 304px;
-}
-
-.color-headline b {
-/*
-  color: #ce4213;
-*/
-  color: #faa732;
-}
-
-legend {
-  margin: 3px;
-  text-align: center;
-  width: 100%;
-}
-
-.learn-button-menu {
-  padding-left: 30px;
-}
-
-.learn-button-menu a {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-}
-.learn-button-menu h3 {
-  margin: 5px;
-}
-.learn-button-menu img {
-  width: 55px;
-  height: 55px;
-  margin-right: 15px;
 }
 
 .carousel-control {
@@ -271,6 +226,18 @@ image-inline {
 #product_features div.span3 {
   margin-bottom: 10px;
   padding: 5px;
+  height: 350px;
+}
+
+#product_features div.span3 h4 {
+  color: #ffffff;
+  background-color: rgb(221, 72, 20);
+  padding: 3px;
+  margin: 0px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 
 #product_features div.row {

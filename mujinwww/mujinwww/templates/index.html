@@ -58,7 +58,7 @@
 <h2 class="comment" style="color:red;">TODO: Luke: Fix the news to work with models.</h2>
 <div class="row-fluid">
   <div class="span6">
-    <h2 class="color-headline">{% trans "Latest News" %}</h2>
+    <h2>{% trans "Latest News" %}</h2>
     {% for newsentry in news %}
         <p class="lead"><b>{{ newsentry.pub_date }}</b> - <a href="/news#{{ newsentry.en_title }}">{{ newsentry.title }}</a></p>
     {% endfor %}
