@@ -1,24 +1,41 @@
 {% load i18n %}
 
-<div class="row">
-  <div class="span4">
-    <a href="/products">
-      <img src="{{ STATIC_URL }}img/mujincontroller_snap.png"/>
-      <div class="caption">
-        <h4>{% trans "MUJIN Controller Cloud" %}</h4>
-        <p>{% trans "World's first cloud computing solution for robot motion planning." %}</p>
-        <p>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}</p>
-      </div>
-    </a>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#featureCarousel').carousel({
+      interval: 6000
+    });
+  });
+</script>
+<div id="featureCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <a href="/products">
+        <img src="{{ STATIC_URL }}img/mujincontroller_snap.png"/>
+        <div class="carousel-caption">
+          <h4>{% trans "MUJIN Controller Cloud" %}</h4>
+          <p>{% trans "World's first cloud computing solution for robot motion planning." %}</p>
+          <p>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}</p>
+        </div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="/products">
+        <img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png"/>
+        <div class="carousel-caption">
+          <h4>{% trans "MUJIN Controller" %}</h4>
+          <p>{% trans "On-site dedicated 32 core high performance server for use on a private internal network." %}</p>
+          <p>{% trans "Perfecly cross-platform, as all interaction is done through a web browser." %}</p>
+        </div>
+      </a>
+    </div>
   </div>
-  <div class="span4">
-    <a href="/products">
-      <img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png"/>
-      <div class="caption">
-        <h4>{% trans "MUJIN Controller" %}</h4>
-        <p>{% trans "On-site dedicated 32 core high performance server for use on a private internal network." %}</p>
-        <p>{% trans "Perfecly cross-platform, as all interaction is done through a web browser." %}</p>
-      </div>
-    </a>
-  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#featureCarousel" data-slide="prev">‹</a>
+  <a class="carousel-control right" href="#featureCarousel" data-slide="next">›</a>
+  <ol class="carousel-indicators">
+    <li data-target="#featureCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#featureCarousel" data-slide-to="1"></li>
+  </ol>
 </div>
