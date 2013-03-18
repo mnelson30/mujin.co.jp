@@ -14,15 +14,12 @@
 {% block content %}
 <br/>
 
-<h2 style="color:red">TODO: Issei: fix the first picture. Not sure what purpose it is supposed to have. I'd ditch the green background for starters.</h2>
+<h2 class="comment" style="color:red;">TODO: Issei: fix the first picture. Not sure what purpose it is supposed to have. I'd ditch the green background for starters.</h2>
 <div id="homeCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item">
-      <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_index2.png"/>
-      <div class="carousel-caption">
-        <h4>{% trans "The MUJIN Controller makes industrial robotics easy for everybody" %}</h4>
-      </div>
+    <div class="active item" style="text-align: center;">
+      <iframe width="80%" height="450" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" controls="0" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="item">
       <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_snap.png"/>
@@ -58,88 +55,25 @@
 
 <hr>
 
-<h2 style="color:red">TODO: Luke: Fix the news to work with models.</h2>
+<h2 class="comment" style="color:red;">TODO: Luke: Fix the news to work with models.</h2>
 <div class="row-fluid">
   <div class="span6">
-    <h3 class="color-headline">{% trans "What's" %} <b>{% trans "NEW" %}</b></h3>
-    <div>
-      <b>2012/11/02</b>
-      <div class="row-fluid">
-        <div class="span3">
-          <img src="{{ STATIC_URL }}img/nikkei_business.jpg"/>
-        </div>
-        <div class="span9">
-          {% trans "MUJIN is featured on this week's NIKKEI BUSINESS magazine as one of the Next Generation Ventures 100 which will save Japan" %}</br>
-          <a class="btn" href="http://business.nikkeibp.co.jp/nbs/nbo/backnumber/20121008.html">{% trans "ロボットの能力を最大化" %}</a>
-          <br />
-          <p>産業用ロボットの導入に必要なセッティングにかかる期間を最大５分の１に短縮出来る。ロボットの最適化な配置方法や動作パターンまで高速計算するのが当社製ソフトの強み。世界的に見ても競合製品は存在しない。</p>
-        </div>
-      </div>
-
-      <b>2012/9/19</b>
-      <div class="row-fluid">
-        <img src="{{ STATIC_URL }}img/nikkannewspaper.png"/>
-        <div class="span12">
-          <b>{% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}</b>
-          <br/>
-          {% trans "MUJIN is featured on this week's NIKKEI BUSINESS magazine　as one of the Next Generation Ventures 100 which will save Japan" %}</br>
-          <a class="btn" href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">東大発ＶＢ・ＭＵＪＩＮ、来年初頭ソフト販売－産ロボの最適動作算出</a>
-          <br />
-          <p>ＭＵＪＩＮ（東京都文京区、滝野一征代表取締役、０５０・３６８２・７８５２）は、２０１３年初めに産業用ロボットの動作計画を行うソフトウエア「ＭＵＪＩＮコントローラー」の販売を始める。 東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。 ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。 専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
-        </div>
-      </div>
-    </div>
+    <h2 class="color-headline">{% trans "Latest News" %}</h2>
+    {% for newsentry in news %}
+        <p class="lead"><b>{{ newsentry.pub_date }}</b> - <a href="/news#{{ newsentry.en_title }}">{{ newsentry.title }}</a></p>
+    {% endfor %}
   </div>
-  <h2 style="color:red">TODO: Issei: fix both these images, its not clear what they are actually for.</h2>
-  <div class="span3">
-    <h3 class="color-headline">IK <b>Fast</b></h3>
-    <a href="/services" class="overlay-captions">
-      <img src="{{STATIC_URL}}img/index_mujincontroller_product3.png">
-      <p>{% trans "The finest Inverse Kinematics Solver" %}</p>
+  <div class="span6">
+    <a href="/vision" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "The MUJIN Controller" %} &nbsp;&raquo;</h2>
     </a>
-  </div>
-  <div class="span3">
-    <h3 class="color-headline"><b>MUJIN</b> Controller</h3>
-    <a href="/products" class="overlay-captions">
-      <img src="{{STATIC_URL}}img/index_mujincontroller_product.png">
-      <p>{% trans "Simulation for Robot manufacturing system" %}</p>
+    <a href="/vision" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "Inverse Kinematics" %} &nbsp;&raquo;</h2>
+    </a>
+    <a href="/vision" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "Custom Engineering" %} &nbsp;&raquo;</h2>
     </a>
   </div>
 </div>
 
-<hr>
-
-<h2 style="color:red">TODO: Issei: doesn't this video needs sound in order to be worth showing to people? Also an english version would be nice.</h2>
-<h3 class="color-headline">{% trans "Learn" %} <b>{% trans "MUJIN" %}</b></h3>
-<div class="row-fluid">
-  <div class="span7">
-    <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="span5 learn-button-menu">
-    <a href="/vision" class="btn btn-warning btn-block">
-      <h3>
-        <img src="{{ STATIC_URL }}img/question_icon.jpg"/>
-        {% trans "Who we are" %} &nbsp;&raquo;
-      </h3>
-    </a>
-    <a href="/services" class="btn btn-warning btn-block">
-      <h3>
-        <img src="{{ STATIC_URL }}img/service_icon.jpg"/>
-        {% trans "Our services" %} &nbsp;&raquo;
-      </h3>
-    </a>
-    <a href="/products" class="btn btn-warning btn-block">
-      <h3>
-        <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png"/>
-        {% trans "Our products" %} &nbsp;&raquo;
-      </h3>
-    </a>
-    <a href="/technology" class="btn btn-warning btn-block">
-      <h3>
-        <img src="{{ STATIC_URL }}img/unique_icon.jpg">
-        {% trans "Why we are special" %} &nbsp;&raquo;
-      </h3>
-    </a>
-  </div>
-</div>
 {% endblock %}

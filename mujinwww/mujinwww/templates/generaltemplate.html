@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block content %}
-{% include "feature_slider.html" %}
-
+{% block slider %}
+  <div class="row">
+    <div class="span8 offset2">
+  {% include "feature_slider.html" %}
+    </div>
+  </div>
+{% endblock %}
 <div class="row">
   <div class="span3" id="scrollspy">
     <div class="row">

@@ -19,7 +19,7 @@ class TranslatedNewsEntry(models.Model):
     content = models.TextField(help_text='HTML supported')
 
     def __unicode__(self):
-        return self.title
+        return self.title + ' (%s)'%self.language
 
 class NewsEntry(models.Model):
     pub_date = models.DateTimeField(default=datetime.datetime.now)

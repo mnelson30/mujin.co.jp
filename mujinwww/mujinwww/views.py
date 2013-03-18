@@ -11,6 +11,13 @@ import os
 gmail_user = 'mujinmanager@gmail.com'
 gmail_pwd = 'MujinRocksRobotics0'
 
+from django.shortcuts import render_to_response
+from django.template import RequestContext, TemplateDoesNotExist
+from django.utils.translation import get_language_from_request
+from django.conf import settings
+
+from models import NewsEntry
+
 def mail(to, subject, text, attach=None, from_address=gmail_user):
     msg = MIMEMultipart()
 
@@ -71,3 +78,35 @@ def sendinquiry(request):
         mail(to, subject, text, from_address=request.POST['email'])
     return HttpResponse()
 
+def catchall(request, name):
+    try:
+        return render_to_response(name + '.html', RequestContext(request))
+    except TemplateDoesNotExist:
+        return index(request)
+
+def get_translated_news(request, news):
+    ret = []
+    LANG = get_language_from_request(request)[:2].lower()
+    for newsitem in news:
+        this_newsitem = {'en_title': newsitem.en.title}
+        this_newsitem['pub_date'] = newsitem.pub_date.strftime('%b %d, %Y')
+        if LANG == 'en':
+            this_newsitem['title'] = newsitem.en.title
+            this_newsitem['content'] = newsitem.en.content
+        elif LANG == 'ja':
+            this_newsitem['title'] = newsitem.ja.title
+            this_newsitem['content'] = newsitem.ja.content
+        else:
+            raise Exception('language not supported')
+        ret.append(this_newsitem)
+    return ret
+
+def index(request):
+    news = NewsEntry.objects.all().order_by('-pub_date')[:4]
+    template = {'news': get_translated_news(request, news)}
+    return render_to_response('index.html', RequestContext(request, template))
+
+def news(request):
+    news = NewsEntry.objects.all().order_by('-pub_date')
+    template = {'news': get_translated_news(request, news)}
+    return render_to_response('news.html', RequestContext(request, template))
