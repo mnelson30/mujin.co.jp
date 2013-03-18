@@ -22,7 +22,7 @@
             defaults = {
         // Width + Height used to ensure consistency
                 width: 1100,
-                height: 450,
+                height: 470,
         // The type of animation (slide or fade)
                 animation: 'fade',
                 // The duration in ms of the transition between slides
