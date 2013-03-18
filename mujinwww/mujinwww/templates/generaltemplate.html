@@ -4,102 +4,63 @@
 {% block title %}
 {% trans "MUJIN Inc.| Products" %}
 {% endblock %}
-{% block headscripts %}
-<script>
-  $(document).ready(function(){
-  $('#productslider').bjqs({
-  'animation' : 'fade',
-  'width' : 1100,
-  'height' : 160,
-  'showMarkers' : true,
-  'showControls' : false,
-  'centerMarkers' : false
-  });
-  });
-</script>
-
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
-{% endblock %}
 
 {% block content %}
-
-<div id="productslider">
-  <ul class="bjqs">
-{% block slider %}{% endblock %}
-    <li>
-      <table>
-        <tr>
-          <td><a href="/products"><img src="{{ STATIC_URL }}img/mujincontroller_snap.png" style="width:400px"/></a></td>
-          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller Cloud" %}</h3>
-            <ul>
-              <li>{% trans "World's first cloud computing solution for robot motion planning." %}
-              </li>
-              <li>{% trans "Can use 20-100 CPU cores simultaneously for motion optimization from anywhere in the world." %}
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </li>
-    <li>
-      <table>
-        <tr>
-          <td><a href="/products"><img src="{{ STATIC_URL }}img/mujincontroller_logo_black.png" style="width:400px"/></a></td>
-          <td style="padding-left: 20px"><h3 style="padding:4px 5px;border-color:#990000;border-width:0 0 0 6px;border-style:solid">{% trans "MUJIN Controller" %}</h3>
-            <ul>
-              <li>{% trans "On-site dedicated 32 core high performance server running on a user internal network." %}</li>
-              <li>{% trans "All system operation done through browser, so support all OSes." %}</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </li>
-    <li>
-      <a href="/products"><img style="margin-left:120px; height:170px; width:900px" src="{{ STATIC_URL }}img/mujin_mission.jpg"></a>
-      <b style="position:absolute; left:210px; bottom:70px; text-align:center; font-size:32px;color:ivory">{% trans "Industrial Robot Automation for Everyone" %}</b>
-    </li>
-  </ul>
-</div>
-
-{% block subnavi %}{% endblock %}
-
-<div id="product_right">
-  <aside>
-    <h2><span>{% trans "Contact" %}</span>
-      {% trans "representative" %}
-    </h2>
-    <p>{% trans "Fill in your contact information to have a sales representative reach out." %}
-      <ul class="subnavi">
-        <li><a href="/inquiry" class="subbutton">{% trans "Contact a Representative" %}</a></li>
-      </ul>
-    </p>
-  </aside>
-  <aside>
-    <h2><span>{% trans "Learn Technology" %}</span>
-    </h2>
-    <p>{% trans "Learn more about MUJIN's world leading IK technology." %}
-      <ul class="subnavi">
-        <li><a href="/technology" class="subbutton">{% trans "MUJIN's Technology" %}</a></li>
-      </ul>
-    </p>
-  </aside>
-  <aside>
-    <h2><span>{% trans "MUJIN Inc." %}</span>
-    </h2>
-    <p>{% trans "Tokyo University Entrepreneurplaza,7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
-      <ul class="subnavi">
-        <li><a href="/access_map" class="subbutton">{% trans "Visit MUJIN" %}</a></li>
-      </ul>
-    </p>
-  </aside>
-</div>
-
-
-{% block feature %}{% endblock %}
-
-</div>
+{% block slider %}
+  <div class="row">
+    <div class="span8 offset2">
+    {% include "feature_slider.html" %}
+    </div>
+  </div>
 {% endblock %}
+<div class="row">
+  <div class="span3" id="scrollspy">
+    <div class="row">
+      <div class="span3" data-offset-top="650" data-spy="affix">
+        <ul class="nav nav-list sidebar-nav">
+{% block sidebar-list-items %}
+{% endblock %}
+          <li>
+            <div>
+              <h4 style="margin-top:0px;">{% trans "Contact us" %}</h4>
+              <p>
+                {% trans "Fill in your contact information to have a sales representative reach out." %}
+              </p>
+              <p>
+                <a href="/inquiry" class="btn btn-small"><b>{% trans "Contact a Representative" %}</b></a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>{% trans "See our Technology" %}</h4>
+              <p>
+                {% trans "Learn more about MUJIN's world leading IK technology." %}
+              </p>
+              <p>
+                <a href="/technology" class="btn btn-small"><b>{% trans "MUJIN's Technology" %}</b></a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>{% trans "MUJIN Inc." %}</h4>
+              <p>
+                {% trans "Tokyo University Entrepreneur plaza, 7-3-1 Hongo, Bunkyo, Tokyo, Japan" %}
+              </p>
+              <p>
+                <a href="/access_map" class="btn btn-small"><b>{% trans "Visit MUJIN" %}</b></a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="span7">
+{% block main-content %}
+{% endblock %}
+  </div>
+</div>
 
-
-
-
+{% endblock %}

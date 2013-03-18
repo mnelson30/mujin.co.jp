@@ -4,117 +4,77 @@
 {% trans "MUJIN Inc.| Careers" %}
 {% endblock %}
 
-{% block subnavi %}
-<div id="navi">
-  <ul class="subnavi">
-    <li style="float:left"><a href="#career_webpragrammer" class="subbutton">{% trans "Web Programmer" %}</a>
-    </li>
-    <li style="float:left"><a href="#career_engineer" class="subbutton">{% trans "Engineer" %}</a>
-    </li>
-  </ul>
-</div>
-{% endblock %}
+{% block main-content %}
+  <h2>{% trans "Careers" %}</h2>
 
-{% block feature %}
-
-<div id="product">
+  <h2 class="comment" style="color:red;">TODO: Luke / Rosen / Huan: edit this? are they what we want?</h2>
   <div id="web_programmer">
-    <div id="content">
-      <div id="content_header">
-        <h1>{% trans "Careers" %}</h1>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Web Programmer" %} </h2>
-      </div>
-      <div id="sub_content">
-        <div class="career_subcontent">
-          <h3>【{% trans "Job Description" %}】</h3>
-          <ul class="career_list">
-            <li> {% trans "Front-end user interface development" %}</li>
-            <li> {% trans "Back-end development" %}</li>
-          </ul><br/>
+    <h3>{% trans "Web Programmer" %} </h3>
+    <h4>{% trans "Job Description" %}</h4>
+    <ul>
+      <li>{% trans "Front-end user interface development" %}</li>
+      <li>{% trans "Back-end development" %}</li>
+    </ul>
+    <br/>
 
-          <h3>【{% trans "Minimum Qualification" %}】</h3>
-          <ul class="career_list">
-            <li> JavaScript (jQuery), AJAX, HTML</li>
-            <li> Django Python Web Framework </li>
-            <li> SQL DB (knowledge of PostgreSQL preferred, but can be learned)</li>
-            <li> RESTful API creation</li>
-          </ul>
-          <br/>
+    <h4>{% trans "Minimum Qualification" %}</h4>
+    <ul>
+      <li>JavaScript (jQuery), AJAX, HTML</li>
+      <li>Django Python Web Framework </li>
+      <li>SQL DB (knowledge of PostgreSQL preferred, but can be learned)</li>
+      <li>RESTful API creation</li>
+    </ul>
+    <br/>
 
-          <h3>【{% trans "Preferred Skills" %}】
-          </h3>
-          <ul class="career_list">
-            <li> Debian/Ubuntu Linux</li>
-            <li> HTML5 and CSS </li>
-            <li> WebGL API - 3D graphics in browser</li>
-            <li> WebSocket API - for fast streaming data</li>
-          </ul>
-          <br/>
+    <h4>{% trans "Preferred Skills" %}
+    </h4>
+    <ul>
+      <li>Debian/Ubuntu Linux</li>
+      <li>HTML5 and CSS </li>
+      <li>WebGL API - 3D graphics in browser</li>
+      <li>WebSocket API - for fast streaming data</li>
+    </ul>
+    <br/>
 
-          <h3>【{% trans "Work Location" %}】</h3>
-          <ul class="career_list">
-            <li><b> {% trans "Headquater" %}</b>　{% trans "Tokyo University Entrepreneur Plaza," %}<br/>
-              {% trans "7-3-1, Hongoh, Bunkyo-ku, Tokyo, Japan" %}</li>
-            <li><b> {% trans "Koishikawa Office" %}</b> {% trans "1-22-9, Koishikawa, Bunkyo-ku, Tokyo, Japan" %}</li>　
-          </ul>
-          <br/>
+    <h4>{% trans "Work Location" %}</h4>
+    <ul>
+      <li><b>{% trans "Headquater" %}</b>　{% trans "Tokyo University Entrepreneur Plaza," %}<br/>
+        {% trans "7-3-1, Hongoh, Bunkyo-ku, Tokyo, Japan" %}</li>
+      <li><b>{% trans "Koishikawa Office" %}</b>{% trans "1-22-9, Koishikawa, Bunkyo-ku, Tokyo, Japan" %}</li>　
+    </ul>
+    <br/>
 
-          <h3>【{% trans "Work Hours" %}】</h3>
-          <ul class="career_list"><li>9:00~18:00</li></ul>
-          <br/>
-          <br/>
+    <h4>{% trans "Work Hours" %}</h4>
+    <ul><li>9:00-18:00</li></ul>
+    <br/>
 
-          <h3>【{% trans "How To Apply" %}】</h3>
-          <ul class="career_list">
-            <li>{% trans "Please email your resume and career history to our official mail box: info@mujin.co.jp." %}
-          </ul>
-          <br/>
-          <br/>
+    <h4>{% trans "How To Apply" %}</h4>
+    <ul>
+      <li>{% trans "Please email your resume and career history to our official mail box: info@mujin.co.jp." %}
+    </ul>
+    <br/>
 
-          <h3>【{% trans "Contact Us" %}】</h3>
-          <ul class="career_list">
-            <li>{% trans "MUJIN Inc" %}</li>
-            <li>E-mail:info@mujin.co.jp</li>
-            <li>TEL:050-3682-7852 　FAX:050-3682-7852 </li>
-          </ul>
-          <br/>
-        </div>
-      </div>
+    <h4>{% trans "Contact Us" %}</h4>
+    <ul>
+      <li>{% trans "MUJIN Inc" %}</li>
+      <li>E-mail:info@mujin.co.jp</li>
+      <li>TEL:050-3682-7852 　FAX:050-3682-7852 </li>
+    </ul>
+    <br/>
 
-      <div id="career_engineer">
-        <div id="sub_content_header">
-          <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-          <h2>{% trans "Engineer" %} </h2>
-        </div>
-        <div id="sub_content">
-          {% trans "Currently there is no open position for engineers." %}
-          <br/>
-          <br/>
-        </div>
-      </div>
-
-      <div id="career_statement" class="shadowing">
-        <br/>
-        <br/>
-        <個人情報の取り扱いについて><br/>
-          ご提供いただく個人情報は、弊社個人情報保護法方針に基づき、以下のようにお取り扱いさせていただきます。
-          <ui class="career_list">
-            <li>株式会社MUJINは、ご提供いただいた個人情報を厳正に管理し、以下の目的にのみ利用いたします。</li>
-            <li>法令の規定等による場合を除いて、事前の同意を得ることなく第三者に提供することは致しません。</li>
-            <li>上記利用目的のために、個人情報を他の会社に預託する場合があります。その場合預託先は弊社委託先選定基準に適う会社と致します。</li>
-            <li>個人情報をご提供いただくことは任意です。但し、必要とされる情報をご提供いただけない場合、ご要望にお答えできない場合がございます。</li>
-            <li>個人情報の開示・訂正・削除を希望される場合は、ご連絡願います。
-            </li>
-          </ui>
-
-          <br/>株式会社MUJIN
-      </div>
+    <h2 class="comment" style="color:red;">TODO: Issei: what is this? should it be here? should it be translated?</h2>
+    <div>
+        ご提供いただく個人情報は、弊社個人情報保護法方針に基づき、以下のようにお取り扱いさせていただきます。
+      <ui>
+        <li>株式会社MUJINは、ご提供いただいた個人情報を厳正に管理し、以下の目的にのみ利用いたします。</li>
+        <li>法令の規定等による場合を除いて、事前の同意を得ることなく第三者に提供することは致しません。</li>
+        <li>上記利用目的のために、個人情報を他の会社に預託する場合があります。その場合預託先は弊社委託先選定基準に適う会社と致します。</li>
+        <li>個人情報をご提供いただくことは任意です。但し、必要とされる情報をご提供いただけない場合、ご要望にお答えできない場合がございます。</li>
+        <li>個人情報の開示・訂正・削除を希望される場合は、ご連絡願います。
+        </li>
+      </ui>
+      <br/>株式会社MUJIN
     </div>
-  </div>
 </div>
 {% endblock %}
-
 

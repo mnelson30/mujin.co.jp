@@ -32,8 +32,8 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
-        }
     }
+}
 
 
 # Local time zone for this installation. Choices can be found here:
@@ -48,7 +48,6 @@ TIME_ZONE = 'UTC'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 #LANGUAGE_CODE = 'en-us'
-
 SITE_ID = 2
 
 # If you set this to False, Django will make some optimizations so as not
@@ -65,13 +64,12 @@ USE_TZ = True
 LOCALE_PATHS=(
     '/home/rdiankov/mujinsvn/web/mujinwww/locale',
     os.path.join(ROOT_PATH,'..','locale'),
-    )
+)
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 #~ MEDIA_ROOT = os.path.join(ROOT_PATH, '..', 'locale'),
-MEDIA_ROOT = os.path.join(ROOT_PATH, 'media'),
-
+MEDIA_ROOT = os.path.join(ROOT_PATH, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -214,6 +212,8 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_AGE = 86400 # 1 day
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
+
+AUTH_PROFILE_MODULE = "account.UserProfile"
 
 if MUJIN_ENV=='production':
     from settings_production import *

@@ -1,23 +1,11 @@
-{% extends "featuretemplate.html" %}
+{% extends "generaltemplate.html" %}
 {% load i18n %}
 
-{% block feature %}
+{% block main-content %}
 
-
-<div id="product">
-  <div id="content">
-    <div id="content_header">
-      <h1>{% trans "What is Industrial Task Language?" %}</h1>
-    </div>
+<h1>{% trans "What is Industrial Task Language?" %}</h1>
 <p> Industrial Task Language is a robot programming language developed by MUJIN, which enables users to conveniently program and design on their robotic applications. ITL is completely indenpendent to any robot manufactures' and designed to maximize MUJIN Controller's extensive simulation features. Using ITL release people from managing differnt robot program languages dependent on manufactures'and reduce the effort required to plan, apply and maintain core robotic exercises, saving time and expenditure.</p>
-    <div id="sub_content_header">
-      <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-      <h2>{% trans "Specify only goals" %} </h2>
-    </div>
-    <div id="sub_content">
-      <p>{% trans "Since MUJIN controller is the tool creating the most optimized path consisted of avoidance points, in ITL user is supposed to specify only goals." %} </p>
-      <img  src="{{ STATIC_URL }}img/itl.png">
-    </div>
-  </div>
-</div>
+<h2>{% trans "Specify only goals" %} </h2>
+<p>{% trans "Since MUJIN Controller is the tool creating the most optimized path consisted of avoidance points, in ITL user is supposed to specify only goals." %} </p>
+<img class="thumbnail pull-left image-inline" src="{{ STATIC_URL }}img/itl.png">
 {% endblock %}

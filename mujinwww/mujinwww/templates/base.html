@@ -1,143 +1,120 @@
 {% load url from future %}
 {% load i18n %}
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
   <head>
     <title>
       {% block title %}
-      {% trans "MUJIN Inc Homepage | Industrial Robot for Everyone" %}
+      {% trans "MUJIN Inc Homepage | Industrial Robots for Everyone" %}
       {% endblock %}
     </title>
-    {% block css %}
-    {% endblock %}
+    
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/pontanosans.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/mujin_style.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tooltip_style.css"/>
-    <link type="text/css" href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
 
-    <!--
-        I don't think these are even acknowledged by search engines anymore...
-      -->
-    <meta content="Robot Simulator, MUJIN Controller, MUJINコントローラ,Simulation,robot,生産準備,工程設計・計画,Rosen Diankov,OpenRAVE,生産システムのシミュレーション,Inverse Kinematics,逆運動学,IK,ロボットシミュレーター,ロボット" name="keywords"/>
-
-    <script type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery-1.6.2.min.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/basic-jquery-slider.js"></script>
-    {% block headscripts %}{% endblock %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        if (window.location.hash == "") {
+          var path = document.location.pathname;
+          var link = $('.sidebar-nav li a[href="' + path + '"]').parent('li');
+          if (link.length == 0) {
+            link = $('.sidebar-nav li:first');
+          }
+          link.addClass('active');
+        }
+{% block headscripts %}
+{% endblock %}
+      });
+    </script>
   </head>
 
-  <body>
-    <div id="container" class="homepage">
-      <div id="Main">
-        <div id="header">
-          <table>
-            <tr>
-              <td>
-                <div id="logo">
-                  <a href="/index">
-                    <img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/>
-                  </a>
-                </div>
-              </td>
-              <td width="300px">
-              </td>
-              <td>
-                <img  border="0" src="{{ STATIC_URL }}img/call.png" style="width:100px"/>
-              </td>
-              <td>
-                <ul>
-                  <li style="display:block"><font size="3px">{% trans "Call us at" %}</font></li>
-                  <li style="display:block"><font color="#b93c68">050-3682-7852</font></li>
-                  <li style="display:block"><font size="3px">{% trans "Business hours 9:00am-6:00pm" %}</font></li>
-                </ul>
-              </td>
-              <td>
-                <ul class="headlink">
-                  <li>
-                    <div id="inquiry">
-                      <a href="/inquiry"><p class="button">{% trans "Contact us" %}</p></a>
-                    </div>
-                  </li>
-                  <li>
-                  </li>
-                  <li>
-                    <div id="inquiry">
-                      <a href="/access_map"><p class="button">{% trans "Visit MUJIN" %}</p></a>
-                    </div>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-<!--
-        end header
--->
-        <div id="NavBar">
-          <div class="inner">
-            <ul>
-              <li>
-                <a href="/index" title="Home">{% trans "Home" %}</a>
-              </li>
-              <li>
-                <a href="/products" title="Products">{% trans "Products" %}</a>
-              </li>
-              <li>
-                <a href="/services" title="Services">{% trans "Services" %}</a>
-              </li>
-              <li>
-                <a href="/technology" title="Technology">{% trans "Technology" %}</a>
-              </li>
-              <li>
-                <a href="/news" title="News">{% trans "News" %}</a>
-              </li>
-              <li>
-                <a href="/careers" title="Careers">{% trans "Careers" %}</a>
-              </li>
-              <li>
-                <a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a>
-              </li>
-            </ul>
+  <body data-spy="scroll" data-target="#scrollspy">
+    <div class="container">
+      <div class="masthead">
+        
+        <!-- logo -->
+        <a href="/index"><img src="{{ STATIC_URL }}img/mujin_logo_medium.jpg"/></a>
+        
+        <!-- call us! -->
+        <div class="pull-right">
+          <div class="span2">
+            <img class="pull-right" style="width: 80px;" src="{{ STATIC_URL }}img/call.png"/>
+          </div>
+          <div class="span3">
+            {% trans "Call us at" %}
+            <h3 style="margin: 0px; color: #b93c68;">050-3682-7852</h3>
+            {% trans "Business hours 9:00am - 6:00pm" %}
+          </div>
+          <div class="span2" style="margin-left: 0px;">
+            <a class="muted btn btn-danger" href="/inquiry">{% trans "Contact us" %}</a>
+            <br/>
+            <br/>
+            <a class="muted btn btn-danger" href="/access_map">{% trans "Visit MUJIN" %}</a>
           </div>
         </div>
-        <br />
-<!--
-        end navbar
--->
+        
+        <!-- navigation -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="/index">{% trans "Home" %}</a></li>
+                <li><a href="/products">{% trans "Products" %}</a></li>
+                <li><a href="/services">{% trans "Services" %}</a></li>
+                <li><a href="/technology">{% trans "Technology" %}</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  {% trans "About MUJIN" %}
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="/news"><h4>{% trans "News" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/careers"><h4>{% trans "Careers" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/company_overview"><h4>{% trans "Corporate overview" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/vision"><h4>{% trans "Vision" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/management_team"><h4>{% trans "Management team" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/access_map"><h4>{% trans "Visit office" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/founder_message"><h4>{% trans "Message from the founders" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/company_development"><h4>{% trans "Company development" %}</h4></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /navbar -->
+      </div><!-- /masthead -->
 
-        <div id="main_content" class="{% block coltype %}colM{% endblock %}">
-          {% if title %}
-            <h1>{{ title }}</h1>
-          {% endif %}
-          {% block content %}
-          {{ content }}
-          {% endblock %}
-        </div>
-<!--
-        end main content
--->
+{% block content %}
+{% endblock %}
 
-       </div>
-<!--
-        end main
--->
+      <hr>
 
-       <div id="footer">
-         <ul id="footer_navbar">
-           <li><a href="/index" title="Home">{% trans "Home" %}</a></li>
-           <li><a href="/products" title="Products">{% trans "Products" %}</a></li>
-           <li><a href="/services" title="Services">{% trans "Services" %}</a></li>
-           <li><a href="/technology" title="Technology">{% trans "Technology" %}</a></li>
-           <li><a href="/news" title="News">{% trans "News" %}</a></li>
-           <li><a href="/careers" title="Careers">{% trans "Careers" %}</a></li>
-           <li><a href="/aboutmujin" title="About MUJIN">{% trans "About MUJIN" %}</a></li>
-         </ul>
-       </div>
-       <div class="footertext">
-         <div>
-           &copy; 2011-2013 MUJIN Inc. All rights reserved. Privacy Policy
-         </div>
+      <div class="footer">
+        &copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="#">Privacy Policy</a></p>
       </div>
-    </div>
+
+    </div><!-- /container -->
   </body>
 </html>
 

@@ -6,155 +6,74 @@
 {% endblock %}
 
 {% block headscripts %}
-  <script>
-    $(document).ready(function(){
-      $('#myslider').bjqs({
-
-      });
+    $('#homeCarousel').carousel({
+      interval: 6000
     });
-  </script>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/basic-jquery-slider.css"/>
 {% endblock %}
 
 {% block content %}
-<div id="myslider">
-  <ul class="bjqs">
-    <li style="position:relative">
-        <a href="/products">
-          <img src="{{ STATIC_URL }}img/gallery_intro/mujincontroller_index2_shadow.png" width="1020"/>
-        </a>
-        <div style="position:absolute;top:55px;right:115px; width:640px;color:#FFFFFF;font-size:37px;text-shadow:5px 5px 2px black;">
-          <b>Automatically Layout, Program,</b><br/>
-          <b>------------->Move</b>
-                          <b style="color:#f76e05;">ANY ROBOT.</b>
-                          </div>
-                          </li>
-                        <li>
-                          <img src="{{ STATIC_URL }}img/gallery_intro/mujincontroller_snap.png" width="950"/>
-    </li>
-    <li>
-      <img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual1.png" width="1000"  title="{% trans "Multi-arm manipulation assembly" %}"/>
-    </li>
-    <li>
-      <img src="{{ STATIC_URL }}img/gallery_intro/denso_assembly_dual2.png" width="1000" title="{% trans "Multi-arm manipulation assembly" %}"/>
-    </li>
-    <li>
-      <img src="{{ STATIC_URL }}img/gallery_intro/door_animation.gif" width="1000"/>
-    </li>
-  </ul>
+<br/>
+
+<h2 class="comment" style="color:red;">TODO: Issei: fix the first picture. Not sure what purpose it is supposed to have. I'd ditch the green background for starters.</h2>
+<div id="homeCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item" style="text-align: center;">
+      <iframe width="80%" height="450" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" controls="0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_snap.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "The MUJIN Controller features an easy to use web interface" %}</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/denso_assembly_dual2.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "Capable of multi-arm manipulation assembly" %}</h4>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/door_animation.gif"/>
+      <div class="carousel-caption">
+        <h4>{% trans "Optimizing robot motion for complex object placement" %}</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#homeCarousel" data-slide="prev">‹</a>
+  <a class="carousel-control right" href="#homeCarousel" data-slide="next">›</a>
+
+  <ol class="carousel-indicators">
+    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#homeCarousel" data-slide-to="1"></li>
+    <li data-target="#homeCarousel" data-slide-to="2"></li>
+    <li data-target="#homeCarousel" data-slide-to="3"></li>
+  </ol>
 </div>
 
-<div id="learning_index_table" style="border-top-style:none; margin-top:0px">
-  <table>
-    <tr>
-      <td>
-        <h1>
-          {% trans "What's" %}
-        </h1>
-        <h1 style="color:#f76e05;display:inline;">{% trans "NEW?" %}
-        </h1>
-        <div id="index_news">
-          <div id="index_onenews">2012/11/02
-            <br />
-            <img src="{{ STATIC_URL }}img/nikkei_business.jpg" style="float:left; width:170px"/>
-            {% trans "MUJIN is featured on this week's NIKKEI BUSINESS magazine　as one of the Next Generation Ventures 100 which will save Japan" %}</br>
-            <br />
-            <a href="http://business.nikkeibp.co.jp/nbs/nbo/backnumber/20121008.html">
-              <h3>{% trans "ロボットの能力を最大化" %}</h3>
-            </a>
-            <br />
-            <p>産業用ロボットの導入に必要なセッティングにかかる期間を最大５分の１に短縮出来る。ロボットの最適化な配置方法や動作パターンまで高速計算するのが当社製ソフトの強み。世界的に見ても競合製品は存在しない。</p>
-              ---------------------------------------------------------------------
-          </div>
+<hr>
 
-          <div id="index_onenews">
-            2012/9/19
-            <br />
-            <img src="{{ STATIC_URL }}img/nikkannewspaper.png" style="width:350px"/>
-            {% trans "MUJIN was introduced by Nikkan Kogyo Newspaper" %}
-            <br />
-            <a href="http://www.nikkan.co.jp/news/nkx0120120919eaal.html">
-              <h3>東大発ＶＢ・ＭＵＪＩＮ、来年初頭ソフト販売－産ロボの最適動作算出</h3>
-            </a>
-            <br />
-            <p>ＭＵＪＩＮ（東京都文京区、滝野一征代表取締役、０５０・３６８２・７８５２）は、２０１３年初めに産業用ロボットの動作計画を行うソフトウエア「ＭＵＪＩＮコントローラー」の販売を始める。
-              　東京大学エッジキャピタルからの７５００万円の増資を基に１年以内に増員し、開発を加速する。中小型ロボットハンド向けを中心に展開し、３年後に数億円レベルの売り上げを目指す。
-              　ＭＵＪＩＮは東京大学大学院情報理工学系研究科情報システム工学研究室研究員のデアンコウ・ロセン氏を中心に、１１年７月に設立したベンチャー。ＭＵＪＩＮコントローラーは産業用ロボットの最適な動きを提案するソフトで、これまで数日かかっていた動作計画を１０分程度に短縮できる。
-              　専門の技術者でなくても、数字や簡単な単語を入力するだけで扱えるのが特徴。</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="index_mujincontroller_product2">
-          <div style="position:absolute;padding-top:24px;height:275px;">
-            <a href="/services">
-              <h1 style="color: #f76e05; display: inline;">IK</h1>
-              <h1 style="color: #FFFFFF">Fast</h1>
-              <h2 style="clear:both">{% trans "The finest Inverse Kinematics Solver" %}</h2>
-            </a>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="index_mujincontroller_product">
-         <div style="position:absolute;padding-top:25px;height:275px;">
-           <a href="/products">
-                <h1 style="color:#ff0000;display:inline;">MUJIN</h1>
-                <h1 style="color:#FFFFFF">Controller</h1>
-                <h2>{% trans "Simulation for Robot manufacturing system" %}</h2>
-           </a>
-         </div>
-        </div>
-      </td>
-    </tr>
-  </table>
+<h2 class="comment" style="color:red;">TODO: Luke: Fix the news to work with models.</h2>
+<div class="row-fluid">
+  <div class="span6">
+    <h2>{% trans "Latest News" %}</h2>
+    {% for newsentry in news %}
+        <p class="lead"><b>{{ newsentry.pub_date }}</b> - <a href="/news#{{ newsentry.en_title }}">{{ newsentry.title }}</a></p>
+    {% endfor %}
+  </div>
+  <div class="span6">
+    <a href="/products" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "The MUJIN Controller" %} &nbsp;&raquo;</h2>
+    </a>
+    <a href="/services" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "Inverse Kinematics" %} &nbsp;&raquo;</h2>
+    </a>
+    <a href="/services" class="btn btn-primary btn-block btn-large">
+      <h2>{% trans "Custom Engineering" %} &nbsp;&raquo;</h2>
+    </a>
+  </div>
 </div>
 
-<div id="learning_index_table">
-  <table>
-    <tr>
-      <td>
-        <h1>{% trans "Learn" %}</h1>
-        <h1 style="color:#f76e05">{% trans "MUJIN" %}</h1>
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <iframe width="640" height="360" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" frameborder="0" allowfullscreen></iframe>
-      </td>
-      <td>
-        <div id="job_navi" style="position:relative">
-          <ul class="index_subnavi" style="position:relative;">
-            <li>
-              <a href="/vision" class="index_button">
-                <img src="{{ STATIC_URL }}img/question_icon.jpg"/>
-                {% trans "Who we are" %}
-              </a>
-            </li>
-            <li>
-              <a href="/services" class="index_button">
-                <img src="{{ STATIC_URL }}img/service_icon.jpg"/>
-                {% trans "What services?" %}
-              </a>
-            </li>
-            <li>
-              <a href="/products" class="index_button">
-                <img src="{{ STATIC_URL }}img/mujincontroller_logo3.png"/>
-                {% trans "What products?" %}
-              </a>
-            </li>
-            <li>
-              <a href="/technology" class="index_button">
-                <img src="{{ STATIC_URL }}img/unique_icon.jpg">
-                {% trans "Why we are special" %}
-              </a>
-            </li>
-          </ul>
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
 {% endblock %}

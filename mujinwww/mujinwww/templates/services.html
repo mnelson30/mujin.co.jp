@@ -1,119 +1,30 @@
 {% extends "generaltemplate.html" %}
 {% load i18n %}
+
 {% block title %}
 {% trans "MUJIN Inc.| Services" %}
 {% endblock %}
 
-{% block subnavi %}
-<div id="navi">
-  <ul class="subnavi">
-    <li style="float:left"><a href="#IK solution" class="subbutton">{% trans "IK Solution" %}</a>
-    </li>
-    <li style="float:left"><a href="#FA engineering" class="subbutton">{% trans "FA Engineering" %}</a>
-    </li>
-    <li style="float:left"><a href="#licensing_options" class="subbutton">{% trans "Product Service" %}</a>
-    </li>
-  </ul>
-</div>
+{% block sidebar-list-items %}
+<li><a href="#IK_solution">{% trans "IK Solution" %}</a></li>
+<li><a href="#custom">{% trans "Custom Solutions" %}</a></li>
 {% endblock %}
 
-{% block feature %}
-<div id="product">
-  <div id="content">
- <div id="content_header">
-        <h1>{% trans "Inverse Kinematics Solution Service" %}</h1>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Why IK is important?" %}</h2>
-      </div>
-      <div id="sub_content">
-        <p>{% trans "Whatever machine you create, Inverse Kinematics is need to be calculated and solved. Most operators use forward kinematics for each motion to adjust, since solving IK is very difficult. This work not only takes a lot of time, but also does not assure the precision." %}</p>
-        <p>{% trans "MUJIN is known as the company which has the most advanced IK solving technology. Even more than 10axis machines can be solved in a couple days." %}</p>
-        <img style="width:600px" src="{{ STATIC_URL }}img/technology_iksolutions.jpg">
-        <a href="#technology">more detail about IK</a>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "MUJIN solves IK of your machines" %}</h2>
-      </div>
-      <div id="sub_content">
-</div>
-      <div id="content_header">
-        <h1>{% trans "Licensing Options" %}</h1>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Annual Licensing Option" %}</h2>
-      </div>
-      <div id="sub_content">
-        <p>{% trans "MUJIN offers annual licenses to commercial companies. License fees differ depending on which kind of MUJIN Controller you choose and how much computing power you want. For pricing details, please " %} <a href="/inquiry">{% trans "contact us" %}</a>{% trans " or call +81-050-3682-7852." %}</p>
-      </div>
-      <div id="sub_content_header">
-        <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-        <h2>{% trans "Academic Licensing Option" %}</h2>
-      </div>
-      <div id="sub_content">
-        <p>{% trans "MUJIN offers academic licenses to non-commercial research programs. The licenses are only for academic research and for student projects. We expect teachers and researchers in robot engineering, computer science, electrical engineering, mechanical engineering, and many other fields to select our academic licensing option." %}</p>
-        <p>{% trans "The academic licensing agreement includes the following provisions:" %}</p><br/>
-        <ul>
-          <li>{% trans "The software may only be used for non-commercial research not sponsored by an organization that could receive economic benefits from the work."%}</li>
-          <li>{% trans "Technical support would be provided to a single contact person." %}</li>
-        </ul>
-      </div>
+{% block main-content %}
+<fieldset id="IK_solution">
+  <h3>{% trans "Inverse Kinematics Solutions" %}</h3>
+  <div class="fieldset-content">
+    <p>{% trans "Whatever machine you create, the inverse kinematics needs to be calculated and solved. While there may be ways to approximate an analytical IK solution by using iterative methods, it can be slow and imprecise." %}</p>
+    <p>{% trans "MUJIN is known as the company which has the most advanced IK solving technology. Even machines with more than 10 axes can be solved in a couple days." %}</p>
+    <img style="width:600px" src="{{ STATIC_URL }}img/technology_iksolutions.jpg">
   </div>
-  <div id="content_header">
-    <h1>{% trans "Process for Acquiring MUJIN Controller" %}</h1>
-  </div>
-  <div id="sub_content_header">
-    <img class="subheader_sign" src="{{ STATIC_URL }}img/cube.jpg">
-    <h2>{% trans "Steps to acquire a product" %}</h2>
-  </div>
-  <div id="sub_content">
-    <table style="clear:both">
-      <tr>
-        <td class="aquiring_process">
-          <p><font color="red">STEP 1</font> {% trans " Contacting MUJIN sales" %}</p>
-        </td>
-        <td>
-          <p>{% trans "Please send an inquiry by" %} <a href="/inquiry">web<a>, {% trans "or call +81-050-3682-7852." %}</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="aquiring_process">
-          <p><font color="red">STEP 2</font> {% trans " Presenting your problem" %}</p>
-        </td>
-        <td>
-          <p>{% trans "MUJIN will arrange a meeting with you to fully understand your problem." %}</p>
-        </td>
-      </tr>
-      <tr>
-        <td class="aquiring_process">
-          <p><font color="red">STEP 3</font> {% trans " Receiving MUJIN proposal" %}</p>
-        </td>
-        <td>
-          <p>{% trans "We analyze the problem and propose a MUJIN solution considering all the constraints and requirements. We will also decide the details about the trial of the service." %} </p>
-        </td>
-      </tr>
+</fieldset>
 
-      <tr>
-        <td class="aquiring_process">
-          <p><font color="red">STEP 4</font> {% trans " Approving quotation" %}</p>
-        </td>
-        <td>
-          <p>{% trans "MUJIN sales sends you a quotation, and as soon as you approve it, the product will be delivered." %} </p>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="aquiring_process">
-          <p><font color="red">STEP 5</font> {% trans " Starting operation" %}</p>
-        </td>
-        <td>
-          <p>{% trans "You will be fully supported by MUJIN engineers as soon as the contract takes effect." %} </p>
-        </td>
-      </tr>
-    </table>
+<fieldset id="custom">
+  <h3>{% trans "Custom Solutions" %}</h3>
+  <div class="fieldset-content">
+    <p>{% trans "MUJIN's engineers have experience solving some of the toughest problems in robotics. If you have a unique problem that we can assist with, we'd be more than happy to help. Don't hesitate to" %} <a href="/inquiry">{% trans "contact us" %}</a> {% trans "or call +81-050-3682-7852." %}</p>
   </div>
-</div>
+</fieldset>
+
 {% endblock %}
