@@ -18,6 +18,12 @@
 <div id="homeCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
+    <div class="item">
+      <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_index2_shadow.png"/>
+      <div class="carousel-caption">
+        <h4>{% trans "Optimizing robot motion for complex object placement" %}</h4>
+      </div>
+    </div>   
     <div class="active item" style="text-align: center;">
       <iframe width="80%" height="450" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}" controls="0" frameborder="0" allowfullscreen></iframe>
     </div>
@@ -73,7 +79,7 @@
     <a href="/services" class="btn btn-primary btn-block btn-large">
       <h2>{% trans "Custom Engineering" %} &nbsp;&raquo;</h2>
     </a>
-  </div>
+  </div>-
 </div>
 
 {% endblock %}

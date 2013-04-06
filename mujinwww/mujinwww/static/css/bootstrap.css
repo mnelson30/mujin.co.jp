@@ -226,7 +226,7 @@ textarea {
 body {
   margin: 0;
   font-family: 'Ubuntu', Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -1375,7 +1375,7 @@ textarea.span8,
 input.span7,
 textarea.span7,
 .uneditable-input.span7 {
-  width: 526px;
+  width: 26px;
 }
 
 input.span6,
