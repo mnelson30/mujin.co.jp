@@ -13,18 +13,18 @@
 
 {% block main-content %}
 <fieldset id="technology">
-  <h2>{% trans "Technology Information" %}</h2>
+  <h2>{% trans "Motion Planning" %}</h2>
   <p>{% trans "The MUJIN team has been developing motion planning algorithms for over six years culminating in the world's most reliable automation motion planning system used in over <b>200 robots</b>." %} </p>
   
   <h4>{% trans "Robot Motion Planning" %}</h4>
-  <img src="{{ STATIC_URL }}img/motionplanning.png" />
-  <p>Motion planning is used to avoid collision obstacles while optimizing the robot task time.</p>
+  <img  style="width:600px" src="{{ STATIC_URL }}img/motionplanning.png" />
+  <p>{% trans "Motion planning is used to avoid collision obstacles while optimizing the robot task time." %}</p>
 </fieldset>
 
 <fieldset id="multiple_robots">
   <h2>{% trans "Multiple Robot Motion Planning" %} </h2>
   <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" ></iframe>
-  <p>{% blocktrans %}Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25% {% endblocktrans %}</p>
+  <p>{% trans "Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25%"  %}</p>
 </fieldset>
 
 <fieldset id="IK">

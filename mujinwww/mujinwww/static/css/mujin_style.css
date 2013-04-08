@@ -185,8 +185,9 @@ image-inline {
   margin-bottom: 8px;
 }
 
-.fieldset-content > div {
-  margin-bottom: 80px;
+
+.fieldset-content  {
+  margin-left: 30px;
 }
 
 #managers table td {
