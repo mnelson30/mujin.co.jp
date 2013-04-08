@@ -5,6 +5,7 @@
 # Django settings for mujinwww project.
 
 import os
+import socket
 
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
@@ -27,7 +28,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
-        'USER': 'mujincontroller',
+        'USER': 'mujinwww',
         'PASSWORD': 'testpass',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -215,5 +216,5 @@ CSRF_COOKIE_SECURE = False
 
 AUTH_PROFILE_MODULE = "account.UserProfile"
 
-if MUJIN_ENV=='production':
+if MUJIN_ENV=='production' or socket.gethostname() == 'mujinserver0':
     from settings_production import *
