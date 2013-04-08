@@ -20,7 +20,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujincontroller',
-        'PASSWORD': open('/var/www/mujincontroller_dbpass','r').read(),
         'HOST': 'mujin.co.jp',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
