@@ -1,0 +1,45 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+{% block title %}
+{% trans "MUJIN Inc.| Business_Connection" %}
+{% endblock %}
+
+{% block sidebar-list-items %}
+<li><a href="#client_companies">{% trans "Client_Companies" %}</a></li>
+<li><a href="#subcontractors">{% trans "Subcontractors" %}</a></li>
+<li><a href="#investors">{% trans "Investors" %}</a></li>
+{% endblock %}
+
+{% block main-content %}
+<fieldset id="client_companies">
+  <h3>{% trans "Client_Companies" %}</h3>
+  <div class="fieldset-content">
+    <ul>
+      <li>{% trans "Canon Inc." %}<a href="http://canon.jp/">{% trans "(Homepage)" %}</a></li>
+      <img style="width:200px" src="{{ STATIC_URL }}img/canon_logo.png">
+      <li>{% trans "CEC ltd." %}<a href="http://www.cec-ltd.co.jp/service/vr+r/">{% trans "(Homepage)" %}</a></li>
+      <img style="width:200px" src="{{ STATIC_URL }}img/cec_logo.png">
+    </ul>
+  </div>
+</fieldset>
+<fieldset id="subcontractors">
+  <h3>{% trans "Subcontractors" %}</h3>
+  <div class="fieldset-content">
+    <ul>
+      <li>{% trans "CEC ltd." %}<a href="http://www.cec-ltd.co.jp/service/vr+r/">{% trans "(Homepage)" %}</a></li>
+      <img style="width:200px" src="{{ STATIC_URL }}img/cec_logo.png">
+      <li>{% trans "MeiwaEtech" %}<a href="http://www.cec-ltd.co.jp/service/vr+r/">{% trans "(Homepage)" %}</a></li>
+      <img style="width:200px" src="{{ STATIC_URL }}img/meiwa_logo.jpeg">
+    </ul>
+  </div>
+</fieldset>
+<fieldset id="investors">
+  <h3>{% trans "Investors" %}</h3>
+  <div class="fieldset-content">
+    <ul>
+      <li>{% trans "The University of Tokyo Edge Capital" %}<a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1">{% trans "(Homepage)" %}</a></li>
+      <img style="width:200px" src="{{ STATIC_URL }}img/U-TEC.jpg">
+    </ul>
+  </div>
+</fieldset>
+{% endblock %}
