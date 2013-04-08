@@ -1,15 +1,53 @@
 {% extends "generaltemplate.html" %}
 {% load i18n %}
 
-{% block main-content %}
+{% block title %}
+{% trans "MUJIN Inc.| Product Feature IK" %}
+{% endblock %}
 
-<h1>{% trans "Robot Placement Optimization System" %}</h1>
-<h2>{% trans "Find the best position and trajectory" %} </h2>
-<p>{% trans "What are the feasible locations of the robot where the task can be completed?" %}</p>
-<p>{% trans "Among these feasible locations, which allows the robot to perform the task most quickly?" %}</p>
-<p>{% trans "To answer these questions, the MUJIN Controller evaluates thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan." %}</p>
-<p>{% trans "MUJIN Controller is designed with the latest parallel computing technology in order to quickly provide a optimal solutions while taking into account collision avoidance, singularities, and sensor-based visibility constraints." %}</p>
-<img class="thumbnail pull-left image-inline" src="{{ STATIC_URL }}img/placement_opt.png">
+{% block sidebar-list-items %}
+<li><a href="#robot_placement_optimization">{% trans "Robot Placement Optimization" %}</a></li>
+<li><a href="#object_placement_optimization">{% trans "Object Placement Optimization" %}</a></li>
+<li><a href="#opt_procedure">{% trans "Optimization Procedure" %}</a></li>
+{% endblock %}
+
+{% block main-content %}
+<fieldset id="robot_placement_optimization">
+  <h3>{% trans "Robot Placement Optimization" %}</h3>
+  <div class="fieldset-content">
+    <h4>Find the best position and trajectory</h4>
+    <p>{% trans "What are the feasible locations of the robot where the task can be completed?" %}</p>
+    <p>{% trans "Among these feasible locations, which allows the robot to perform the task most quickly?" %}</p>
+    <p>{% trans "To answer these questions, the MUJIN Controller evaluates thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan." %}</p>
+    <img class="thumbnail pull-left image-inline" src="{{ STATIC_URL }}img/placement_opt.png" style="width:400px"> 
+  </div>
+</fieldset>
+
+<fieldset id="object_placement_optimization">
+  <h3>{% trans "Object Placement Optimization" %}</h3>
+  <div class="fieldset-content">
+    <h4>Find the best position while robot position is fixed.</h4>
+    <p>{% trans "When robot position can not be moved, position of workpiece fed has to be optimized. MUJIN Controller has a function which optimizes object position. The Controller calculates up to two objects position to miximize efficiency of workcell." %}</p>
+    <img style="width:600px" src="{{ STATIC_URL }}img/.png">
+    <p>{% trans "" %}</p>
+  </div>
+</fieldset>
+
+<fieldset id="optimization_procedure">
+  <h3>{% trans "Optimization Procedure" %}</h3>
+  <div class="fieldset-content">
+    <p>{% trans "MUJIN will customize any workcell by considering your specific need. Our FA engineering is featured especially with assembly, palletizing, and transfar in industrial applications. Tables, Hands, other devices can be integrated to maximize efficiency and deliver the quality and safety you expect." %}</p>
+    <ul>
+      <li>{% trans "Build Inteligent Robot Manufacturing System." %} </li>
+      <li>{% trans "Design and make other mechanical parts such as jig, hand, and parts feeder." %}</li>
+      <li>{% trans "Hand Shake with old system" %}</li>
+      <li>{% trans "Design Controller" %}</li>
+    </ul>
+    <img style="width:600px" src="{{ STATIC_URL }}img/linear_demo.png">
+    <p>{% trans "For any robotcell MUJIN offers, MUJIN Controller are provided as a controller. MUJIN Controller is the controller which the most advanced motion planning system is implemented to. Using MUJIN controller enable operators to make robot program easily and modify the setting flexibly." %}</p>
+  </div>
+</fieldset>
 
 {% endblock %}
+
 
