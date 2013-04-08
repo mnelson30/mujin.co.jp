@@ -20,6 +20,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
+        'PASSWORD': open('/var/www/.pgpass','r').read().split('\n')[0].split(':')[-1],  # yeahhh
         'HOST': 'mujin.co.jp',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
