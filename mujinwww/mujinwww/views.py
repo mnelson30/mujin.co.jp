@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from django.http import HttpResponse
+from django.conf import settings
 
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
@@ -8,8 +9,8 @@ from email.MIMEText import MIMEText
 from email import Encoders
 import os
 
-gmail_user = 'mujinmanager@gmail.com'
-gmail_pwd = 'MujinRocksRobotics0'
+gmail_user = settings.EMAIL_HOST_USER
+gmail_pwd = settings.EMAIL_HOST_PASSWORD
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext, TemplateDoesNotExist

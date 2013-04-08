@@ -216,5 +216,5 @@ CSRF_COOKIE_SECURE = False
 
 AUTH_PROFILE_MODULE = "account.UserProfile"
 
-if MUJIN_ENV=='production' or socket.gethostname() == 'mujinserver0':
-    from settings_production import *
+#~ if MUJIN_ENV=='production' or socket.gethostname() == 'mujinserver0':
+from settings_production import *
