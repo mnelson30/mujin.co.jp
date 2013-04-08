@@ -8,8 +8,8 @@ User **mujincontroller**, Password is **testpass**
 
 ::
 
-  sudo -u postgres psql --command "CREATE ROLE mujinwww PASSWORD 'md53c8bec98348b82fb05cc70d4744dfb59' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;"
-  createdb --host localhost --username mujinwww --encoding UTF-8 mujinwww
+  sudo -u postgres psql --command "CREATE ROLE mujinwww PASSWORD 'md5f2884d0c1dc57fa66c837bea9a244ba2' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;"
+  sudo createdb --host localhost --username mujinwww --encoding UTF-8 mujinwww
 
 Updating
 ========
