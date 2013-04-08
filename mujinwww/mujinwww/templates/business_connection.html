@@ -12,18 +12,17 @@
 
 {% block main-content %}
 <fieldset id="client_companies">
-  <h3>{% trans "Client_Companies" %}</h3>
+  <h3>{% trans "Clients" %}</h3>
+  {% trans "A short list of some of our clients" %}
   <div class="fieldset-content">
     <ul>
-      <li>{% trans "Canon Inc." %}<a href="http://canon.jp/">{% trans "(Homepage)" %}</a></li>
-      <img style="width:200px" src="{{ STATIC_URL }}img/canon_logo.png">
       <li>{% trans "CEC ltd." %}<a href="http://www.cec-ltd.co.jp/service/vr+r/">{% trans "(Homepage)" %}</a></li>
       <img style="width:200px" src="{{ STATIC_URL }}img/cec_logo.png">
     </ul>
   </div>
 </fieldset>
 <fieldset id="subcontractors">
-  <h3>{% trans "Subcontractors" %}</h3>
+  <h3>{% trans "Partners/Subcontractors" %}</h3>
   <div class="fieldset-content">
     <ul>
       <li>{% trans "CEC ltd." %}<a href="http://www.cec-ltd.co.jp/service/vr+r/">{% trans "(Homepage)" %}</a></li>
