@@ -4,7 +4,7 @@ MUJIN Home Website Development
 Initial Setup
 =============
 
-User **mujincontroller**, Password is **testpass**
+User **mujinwww**, Password is **testpass**
 
 ::
 
