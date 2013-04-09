@@ -5,22 +5,14 @@
 {% trans "MUJIN Inc.| Product Feature IK" %}
 {% endblock %}
 
-{% block sidebar-list-items %}
-<li><a href="#fa_enginneering">{% trans "FA Engineering" %}</a></li>
-<li><a href="#teaching_solution">{% trans "Teaching Solution" %}</a></li>
-<li><a href="#motion_controll_solution">{% trans "Motion_Controll_Solution" %}</a></li>
-{% endblock %}
-
 {% block main-content %}
-<fieldset id="inverse_kinematics">
-  <h3>{% trans "Inverse Kinematics" %}</h3>
-  <div class="fieldset-content">
-    <img class="thumbnail" style="margin: auto;" width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" />
-    <br />
-    <p class="lead">{% trans "Inverse kinematics is the kinematics which solves for the joint angles of the robot given the desired goal position of a manipulator. MUJIN can solve the analytic robot inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot structure, even if it involves more than 7axis or closed links." %}</p>
-<!--
-    <img width="640" src="{{ STATIC_URL }}img/_robots.png" />    
--->
-  </div>
-</fieldset>
+<h2>{% trans "Inverse Kinematics" %}</h2>
+<p class="lead">{% trans "Inverse kinematics is used to determine the joint parameters that provide a desired position of the end-effector. Traditionally, the kinematic equations to solve the IK of a robot can be difficult and tedious to work with. Various numerical techniques exist to approximate analytical solutions, but the algorithms are usually lacking in speed or accuracy." %}</p>
+<br/>
+<img class="thumbnail" style="margin: auto;" width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" />
+<br/>
+<p class="lead">{% trans "Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains." %}</p>
+<img class="thumbnail" style="margin: auto;" width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" />    
+<br />
+<a class="btn btn-large" href="/products#product_features"><b>&laquo;</b>&nbsp;{% trans "Back to Product Features" %}</a>
 {% endblock %}

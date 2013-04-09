@@ -2,16 +2,20 @@
 {% load i18n %}
 
 {% block main-content %}
-<fieldset id="fa_engineering">
 <h2>{% trans "Multi-Robot Manipulation Planning System" %}</h2>
 
-<h3>{% trans "Collision Free Optimal Trajectory" %}</h3>
+<p class="lead">{% trans "Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutions for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace." %}</p>
 
-<p>{% trans "Most existing industrial robot programming packages can only check for collisions of the workpiece and robot, so they require users to manually move the robot out of collision. The MUJIN Controller appriaches things differently. All collision avoidance and constraint handling happen automatically. It provide clean, simple, and customizable interfaces that require only high-level parameters as input." %}</p>
+<div class="well">
+  <iframe width="80%" style="margin-left: 10%;" height="355" src="http://www.youtube.com/embed/vLu0twF2-Ps" frameborder="0" allowfullscreen></iframe>
+  <div style="text-align: center;">
+    <p class="lead"><h4>{% trans "The speed benefits of multiple robots in an assembly task." %}</h4></p>
+  </div>
+</div>
+<br/>
+<br/>
+<p class="lead">{% trans "To solve these problems, MUJIN has leveraged algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task." %}</p>
 
-  <iframe width="460" height="335" src="http://www.youtube.com/embed/vLu0twF2-Ps" frameborder="0" allowfullscreen></iframe>
-
-<p>{% trans "Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutio ns for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace. To solve these problems, MUJIN has leverages algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task." %}</p>
-
+<br />
+<a class="btn btn-large" href="/products#product_features"><b>&laquo;</b>&nbsp;{% trans "Back to Product Features" %}</a>
 {% endblock %}
-
