@@ -5,7 +5,6 @@
 # Django settings for mujinwww project.
 
 import os
-import socket
 
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
@@ -16,10 +15,10 @@ ROOT_PATH = os.path.dirname(__file__)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-IPYTHON_DEBUG = True
+IPYTHON_DEBUG = False
 
 ADMINS = (
-    ('Rosen Diankov', 'rosen.diankov@mujin.co.jp'),
+    ('Controller Admin', 'controllernotification@mujin.co.jp'),
 )
 
 MANAGERS = ADMINS
@@ -29,8 +28,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
-        'PASSWORD': 'testpass',
-        'HOST': 'localhost',
+        'HOST': 'mujin.co.jp',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
     }
@@ -63,7 +61,6 @@ USE_L10N = True
 USE_TZ = True
 
 LOCALE_PATHS=(
-    '/home/rdiankov/mujinsvn/web/mujinwww/locale',
     os.path.join(ROOT_PATH,'..','locale'),
 )
 
@@ -138,7 +135,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'mujinwww',
+#    'mujinwww',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -216,5 +213,5 @@ CSRF_COOKIE_SECURE = False
 
 AUTH_PROFILE_MODULE = "account.UserProfile"
 
-if MUJIN_ENV=='production' or socket.gethostname() == 'mujinserver0':
+if MUJIN_ENV=='production':
     from settings_production import *

@@ -10,10 +10,10 @@ except KeyError:
     MUJIN_ENV = 'dev'
 
 DEBUG = False
-TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = False 
 IPYTHON_DEBUG = False
 
-EMAIL_HOST='gmail.com'
+EMAIL_HOST='smtp.gmail.com'
 
 if os.path.exists('/var/mujinmanager_gmailpass'):
     EMAIL_HOST_PASSWORD=open('/var/mujinmanager_gmailpass','r').read()
@@ -22,8 +22,8 @@ else:
 EMAIL_HOST_USER='mujinmanager@gmail.com'
 EMAIL_PORT=587
 EMAIL_SUBJECT_PREFIX='[Home Django] '
-EMAIL_USE_TLS=False
-SEND_BROKEN_LINK_EMAILS=True
+EMAIL_USE_TLS=True
+SEND_BROKEN_LINK_EMAILS=False
 SERVER_EMAIL='mujinmanager@gmail.com'
 DEFAULT_FROM_EMAIL = 'mujinmanager@gmail.com'
 
@@ -55,5 +55,6 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(ROOT_PATH, 'static'),
     os.path.join(ROOT_PATH, 'static' + MUJIN_ENV),
-    '/var/www/www/mujinwww/mujinwww/static/'
+    #'/var/www/www/mujinwww/mujinwww/static/'
 )
+
