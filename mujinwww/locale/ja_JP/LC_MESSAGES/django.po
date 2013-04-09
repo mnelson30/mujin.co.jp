@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 22:46+0900\n"
+"POT-Creation-Date: 2013-04-09 23:25+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -379,7 +379,9 @@ msgid ""
 "environment for testing, developing, and deploying motion planning "
 "algorithms in real-world robotics applications."
 msgstr ""
-"カーネギーメロン大学の大学院生であったRosen Diankovが現実世界の自律型ロボットアプリケーションをターゲットとし、そのテストと開発のためのモーションプランニングと高度な知的アルゴリズムを備えた開発環境であるOpenRAVEを発明しました。"
+"カーネギーメロン大学の大学院生であったRosen Diankovが現実世界の自律型ロボット"
+"アプリケーションをターゲットとし、そのテストと開発のためのモーションプランニ"
+"ングと高度な知的アルゴリズムを備えた開発環境であるOpenRAVEを発明しました。"
 
 #: mujinwww/templates/corporate_overview.html:5
 msgid "MUJIN Inc.| Company Overview"
@@ -559,7 +561,7 @@ msgstr "ロボットプログラミングとワークセルレイアウトのた
 msgid "Optimizing robot motion for complex object placement"
 msgstr "複雑な設置作業におけるロボット動作の最適化"
 
-#: mujinwww/templates/index.html:33 mujinwww/templates/technology.html:39
+#: mujinwww/templates/index.html:33 mujinwww/templates/technology.html:41
 msgid "http://www.youtube.com/embed/p2QwPuc8oPw"
 msgstr ""
 
@@ -1327,7 +1329,7 @@ msgstr ""
 "このレイアウトはロボットの配置最適化後のものです。ロボット配置と角度が明らか"
 "に変わっているのがわかります。このレイアウトはマニュアルティーチングで短時間"
 "で見つけるのは非常に難しいはずです。このケースでは配置最適化をした事により  "
-"40% のタスクタイム短縮に成功しました。"
+"40%% のタスクタイム短縮に成功しました。"
 
 #: mujinwww/templates/product_feature_opt.html:26
 msgid ""
@@ -1927,7 +1929,7 @@ msgstr ""
 "<p>動作計画はタスク時間の最適化と障害物への干渉を回避するために使われます。</"
 "p>"
 
-#: mujinwww/templates/technology.html:25
+#: mujinwww/templates/technology.html:24
 msgid "Multiple Robot Motion Planning"
 msgstr "複数ロボットによる動作生成"
 
@@ -1935,21 +1937,21 @@ msgstr "複数ロボットによる動作生成"
 msgid "http://www.youtube.com/embed/vLu0twF2-Ps"
 msgstr ""
 
-#: mujinwww/templates/technology.html:27
+#: mujinwww/templates/technology.html:28
 #, python-format
 msgid ""
 "Motion planning for multiple robots. Task time for one robot is 16.6s, "
-"adding two in the same environment decreases task time by 25%% "
+"adding two in the same environment decreases task time by 25%%. "
 msgstr ""
 "複数ロボットとの作業が短時間で実現頂けます。以下の作業では、1台で16.6秒の所要"
 "時間が、2台では動作が12.3秒に短縮されました。複数台か双腕ロボットを使えば同じ"
 "作業の時間を約25%短縮出来ます。 "
 
-#: mujinwww/templates/technology.html:31
+#: mujinwww/templates/technology.html:33
 msgid "Inverse Kinematics for any Robot"
 msgstr "ロボットや機械を選ばないロボット逆運動学"
 
-#: mujinwww/templates/technology.html:33
+#: mujinwww/templates/technology.html:35
 msgid ""
 "Inverse kinematics solves for the joint angles of the robot given the "
 "desired goal position of a manipulator. MUJIN can solve the analytic robot "
@@ -1962,11 +1964,11 @@ msgstr ""
 "駄の無いロボットプログラムを生成します。MUJINの動作計画フレームワークは閉リン"
 "ク機構の存在に関係なく全てのロボット構造に対応しております。</p>"
 
-#: mujinwww/templates/technology.html:38
+#: mujinwww/templates/technology.html:39
 msgid "Parallelized Layout Optimization"
 msgstr "並列処理され導かれるロボット配置の最適化"
 
-#: mujinwww/templates/technology.html:40
+#: mujinwww/templates/technology.html:43
 #, python-format
 msgid ""
 "Optimizing the robot placement and other objects in the workspace can "
@@ -1981,7 +1983,7 @@ msgstr ""
 "並列化クラウド計算を得意としており、MUJINコントローラでは計算時間を10分以下に"
 "する事に成功しました。"
 
-#: mujinwww/templates/technology.html:41
+#: mujinwww/templates/technology.html:43
 msgid ""
 "Fortunately, MUJIN technology can take advantage of today's parallel "
 "processing and multi-core CPUs to shrink the computation time to under 10 "
