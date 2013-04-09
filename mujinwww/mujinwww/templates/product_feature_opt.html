@@ -5,38 +5,20 @@
 {% trans "MUJIN Inc.| Product Feature IK" %}
 {% endblock %}
 
-{% block sidebar-list-items %}
-<li><a href="#robot_placement_optimization">{% trans "Robot Placement Optimization" %}</a></li>
-<li><a href="#object_placement_optimization">{% trans "Object Placement Optimization" %}</a></li>
-<li><a href="#opt_procedure">{% trans "Optimization Procedure" %}</a></li>
-{% endblock %}
-
 {% block main-content %}
-<fieldset id="robot_placement_optimization">
-  <h3>{% trans "Robot Placement Optimization" %}</h3>
-  <div class="fieldset-content">
-    <h4>Find the best position and trajectory</h4>
-    <p>{% trans "What are the feasible locations of the robot where the task can be completed?" %}</p>
-    <p>{% trans "Among these feasible locations, which allows the robot to perform the task most quickly?" %}</p>
-    <p>{% trans "To answer these questions, the MUJIN Controller evaluates thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan." %}</p>
-    <img class="thumbnail pull-left image-inline" src="{{ STATIC_URL }}img/placement_opt.png" style="width:400px"> 
-  </div>
-</fieldset>
+<h2>{% trans "Placement Optimizations" %}</h2>
+  <p class="lead">{% trans "In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times." %}</p>
 
-<fieldset id="object_placement_optimization">
-  <h3>{% trans "Object Placement Optimization" %}</h3>
-  <div class="fieldset-content">
-    <h4>Find the best position while robot position is fixed.</h4>
-    <p>{% trans "When robot position can not be moved, position of workpiece fed has to be optimized. MUJIN Controller has a function which optimizes object position. The Controller calculates up to two objects position to miximize efficiency of workcell." %}</p>
-    <img style="width:600px" src="{{ STATIC_URL }}img/.png">
-    <p>{% trans "" %}</p>
-  </div>
-</fieldset>
+  <p class="lead">{% trans "For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times." %}</p>
+  <img class="thumbnail" style="margin: auto; width: 500px;" src="{{ STATIC_URL }}img/placement_opt.png"> 
 
-<fieldset id="optimization_procedure">
-  <h3>{% trans "Optimization Procedure" %}</h3>
-</fieldset>
+  <p class="lead">{% trans "Additionally, the same optimization could also have been run against the position of the target workpiece object as well. The optimization would then have simultaneously considered all the positions of the robot and target object. In summary, optimizations allow users of the MUJIN Controller to calculate the optimum body positions to maximize efficiency of a workcell." %}</p>
+</div>
 
+<br />
+<a class="btn btn-large" href="/products#product_features"><b>&laquo;</b>&nbsp;{% trans "Back to Product Features" %}</a>
 {% endblock %}
+
+
 
 

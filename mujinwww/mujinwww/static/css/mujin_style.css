@@ -244,3 +244,7 @@ image-inline {
 #product_features div.row {
   margin-bottom: 10px;
 }
+
+.vertical-center-table td {
+  vertical-align: middle;
+}

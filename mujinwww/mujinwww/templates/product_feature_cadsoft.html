@@ -2,11 +2,8 @@
 {% load i18n %}
 
 {% block main-content %}
-
-<h1>{% trans "Extensive support of 3D CAD software" %}</h1>
-<h2>{% trans "Many formats can be easily imported" %} </h2>
-<p>{% trans "No need to purchase specific 3D CAD software" %}</p>
-<p>{% trans "Many of the existing robot simulation software are add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} </p>
+<h1>{% trans "Extensive 3D CAD Software Support" %}</h1>
+<p class="lead">{% trans "Many of existing robot simulation software are implemented as add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats." %} </p>
 <img class="thumbnail" src="{{ STATIC_URL }}img/add_on.gif">
 <h4>{% trans "Supported formats:" %} </h4>
 <ul>
@@ -17,5 +14,7 @@
   <li>STL</li>
   <li>DirectX</li>
 </ul>
+<br />
+<a class="btn btn-large" href="/products#product_features"><b>&laquo;</b>&nbsp;{% trans "Back to Product Features" %}</a>
 {% endblock %}
 
