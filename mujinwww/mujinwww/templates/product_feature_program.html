@@ -1,0 +1,13 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block main-content %}
+<fieldset id="product_feature_program">
+  <h2>{% trans "Output Manufacutures'Robot Program" %}</h2>
+
+  <p>{% trans "After trajectory's accuracy is assured by VRC, MUJIN Controller converts into native files for DENSO, MITSUBISHI. By copying and paste the program to real machine, user immediately can move the robot." %}</p>
+    
+  <img src="/static/img/mitsubishi_grasp.png">
+  <p>{% trans "Once the tool is specified, the robot can grab the workpiece, transfer it to its goal and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembles." %}</p>
+</fieldset>
+{% endblock %}

@@ -6,9 +6,9 @@
 {% endblock %}
 
 {% block sidebar-list-items %}
-<li><a href="#fa_enginneering">{% trans "FA Engineering" %}</a></li>
+<li><a href="#fa_engineering">{% trans "FA Engineering" %}</a></li>
 <li><a href="#teaching_solution">{% trans "Teaching Solution" %}</a></li>
-<li><a href="#motion_controll_solution">{% trans "Motion_Controll_Solution" %}</a></li>
+<li><a href="#motion_control_solution">{% trans "Motion Control Solution" %}</a></li>
 {% endblock %}
 
 {% block main-content %}
@@ -30,7 +30,7 @@
 <fieldset id="teaching_solution">
   <h3>{% trans "Teaching & Simulation Solution" %}</h3>
   <div class="fieldset-content">
-    <p>{% trans "Mujin engineers have a lot of experience programming extremely difficult robot manufacuturing system such as manipulation of 6axis robot on the linear stages or dual arm robots. We will offer customesrs precise simulation that describes how real robots should move and where they shoudl be mounted. To refer our feasibility study, customer can save a lot of time for the process of try and error." %} <a href="/inquiry">{% trans "contact us" %}</a> {% trans "or call +81-050-3682-7852." %}</p>
+    <p>{% trans "Mujin engineers have a lot of experience programming extremely difficult robot manufacuturing system such as manipulation of 6axis robot on the linear stages or dual arm robots. We will offer customesrs precise simulation that describes how real robots should move and where they shoudl be mounted. To refer our feasibility study, customer can save a lot of time for the process of try and error. If you have any question, please" %} <a href="/inquiry">{% trans "contact our service" %}</a></p>
     <div class="row">
       <div class="span4">
         <p>{% trans "If customer was using line simulator, following 3D project environments are available" %}</p>
@@ -53,8 +53,8 @@
   </div>
 </fieldset>
 
-<fieldset id="motion_controll_solution">
-  <h3>{% trans "Motion Planning & Controll Solution" %}</h3>
+<fieldset id="motion_control_solution">
+  <h3>{% trans "Motion Planning & Control Solution" %}</h3>
   <div class="fieldset-content">
     <p>{% trans "When you would like to controll your customized machine with high precision or automated system, motion planning system become necessary. MUJIN is known as the company which has the most advanced IK solving technology. Even machines with more than 10 axes can be solved in a couple days." %}</p>
     <h4>{% trans "Motion Planning can be used for" %} </h4>
@@ -63,12 +63,11 @@
 <img style="width:300px" src="{{ STATIC_URL }}img/mujincontroller_logo3.png">
       <li>{% trans "Controller for manufacturing automation system" %}</li>
       <img style="width:300px" src="{{ STATIC_URL }}img/factory_automation.png">
+      <li>{% trans "IK Solution for malti-axis machines" %}</li>
+      <img style="width:600px" src="{{ STATIC_URL }}img/technology_iksolutions.jpg">
       <li>{% trans "Navigation system for autonomous machines" %}</li>
       <img style="width:300px" src="{{ STATIC_URL }}img/simplenavigation.jpg">
-      <li>{% trans "IK Solution for malti-axis machines" %}</li>
     </ul>
-    <p>{% trans "." %}</p>
-    <img style="width:600px" src="{{ STATIC_URL }}img/technology_iksolutions.jpg">
   </div>
 </fieldset>
 

@@ -1,0 +1,23 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block title %}
+{% trans "MUJIN Inc.| Product Feature IK" %}
+{% endblock %}
+
+{% block sidebar-list-items %}
+<li><a href="#fa_enginneering">{% trans "FA Engineering" %}</a></li>
+<li><a href="#teaching_solution">{% trans "Teaching Solution" %}</a></li>
+<li><a href="#motion_controll_solution">{% trans "Motion_Controll_Solution" %}</a></li>
+{% endblock %}
+
+{% block main-content %}
+<fieldset id="inverse_kinematics">
+  <h3>{% trans "Inverse Kinematics" %}</h3>
+  <div class="fieldset-content">
+    <img width="640" src="{{ STATIC_URL }}img/technology_iksolutions.jpg" />
+    <p>{% trans "Inverse kinematics is the kinematics which solves for the joint angles of the robot given the desired goal position of a manipulator. MUJIN can solve the analytic robot inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot structure, even if it involves more than 7axis or closed links." %}</p>
+    <img width="640" src="{{ STATIC_URL }}img/_robots.png" />    
+  </div>
+</fieldset>
+{% endblock %}

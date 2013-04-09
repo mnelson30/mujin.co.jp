@@ -14,15 +14,15 @@
 {% block content %}
 <br/>
 
-<h2 class="comment" style="color:red;">TODO: Issei: fix the first picture. Not sure what purpose it is supposed to have. I'd ditch the green background for starters.</h2>
+<h2 class="comment" style="color:red;"></h2>
 <div id="homeCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
     <div class="active item">
-      <div style:"position:relative">
+      <div style="position:relative">
       <img src="{{STATIC_URL}}img/gallery_intro/mujincontroller_index2_shadow.png"/>
       <div style="position:absolute; top:45px; left:320px; width: 800px;">
-        <b style="color:#FF8C00; font-size:45px;text-shadow: 5px 5px 2px #000000">  Best tool for programming robot and layout workcell.</b>
+        <b style="color:#FF8C00; font-size:45px;text-shadow: 5px 5px 2px #000000">{% trans " Best tool for programming robot and layout workcell." %}</b>
       </div>
       </div>
       <div class="carousel-caption">
@@ -79,10 +79,10 @@
       <h2>{% trans "The MUJIN Controller" %} &nbsp;&raquo;</h2>
     </a>
     <a href="/services" class="btn btn-primary btn-block btn-large">
-      <h2>{% trans "Inverse Kinematics" %} &nbsp;&raquo;</h2>
+      <h2>{% trans "FA Engineering" %} &nbsp;&raquo;</h2>
     </a>
     <a href="/services" class="btn btn-primary btn-block btn-large">
-      <h2>{% trans "Custom Engineering" %} &nbsp;&raquo;</h2>
+      <h2>{% trans "Motion Control" %} &nbsp;&raquo;</h2>
     </a>
   </div>-
 </div>

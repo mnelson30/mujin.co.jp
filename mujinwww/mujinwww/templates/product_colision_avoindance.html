@@ -2,58 +2,60 @@
 {% load i18n %}
 
 {% block main-content %}
+<fieldset id="inverse_kinematics">
+  <h2>{% trans "Automated Collision Avoidance System" %}</h2>
+  
+  <h3>{% trans "Create an optimized trajectory" %}</h3>
 
-<h2>{% trans "Automated Collision Avoidance System" %}</h2>
+  <p>{% trans "Most existing industrial robot programming packages can only check for collisions of the workpiece and robot, so they require users to manually move the robot out of collision. The MUJIN Controller appriaches things differently. All collision avoidance and constraint handling happen automatically. It provide clean, simple, and customizable interfaces that require only high-level parameters as input." %}</p>
 
-<h3>{% trans "Create an optimized trajectory" %}</h3>
 
-<p>{% trans "Most existing industrial robot programming packages can only check for collisions of the workpiece and robot, so they require users to manually move the robot out of collision. The MUJIN Controller appriaches things differently. All collision avoidance and constraint handling happen automatically. It provide clean, simple, and customizable interfaces that require only high-level parameters as input." %}</p>
-<br>
+  <b>{% trans "Advantages" %}:</b>
+  <ol>
+    <li>{% trans "Eliminates most of the manual teaching operations, which reduces development and deployment cost." %}</li>
+    <li>{% trans "Creates motion plans for tasks that are very difficult to program with manual teaching." %}</li>
+  </ol>
 
-<b>{% trans "Advantages" %}:</b>
-<ul>
-  <li>{% trans "Eliminates most of the manual teaching operations, which reduces development and deployment cost." %}</li>
-  <li>{% trans "Creates motion plans for tasks that are very difficult to program with manual teaching." %}</li>
-</ul>
-<br>
-<br>
-<h3>{% trans "Example Workflow" %}</h3>
-<table class="table table-bordered">
-  <tr>
+  <h3>{% trans "Example Workflow" %}</h3>
+  <table class="table table-bordered">
+    <tr>
+      <td>
+        <img style="width:300px" src="{{ STATIC_URL }}img/door_animation.png"/>
+      </td>
+      <td>
+        <p>{% trans "Import 3D models to the MUJIN Controller. The MUJIN Controller supports many 3D CAD software, so there is no need to buy a new 3D CAD licenses." %}</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img  style="width:300px" src="{{ STATIC_URL }}img/door_animation2.png"/>
+      </td>
+      <td>
+        <p><a href="/product_feature_itl">{% trans "With MUJIN ITL" %}</a>,{% trans " users can easily specify task parameters such as tool, task type, and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2)." %}</p>
+        <h4> only program you write is </h4>
+        <ol>
+          <li>move(p[P1])-----------move to P1</li> 
+          <li>grab(t[chair1])--------grab chair1</li>
+          <li>move(p[P2])----------move to P2</li>
+          <li>release(t[chair2])-----release chair2</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
     <td>
-      <img src="{{ STATIC_URL }}img/door_animation.png"/>
+      <img style="width:300px" src="{{ STATIC_URL }}img/door_animation2.gif"/>
     </td>
     <td>
-      <p>{% trans "Import 3D models to the MUJIN Controller. The MUJIN Controller supports many 3D CAD software, so there is no need to buy a new 3D CAD licenses." %}</p>
+      {% trans "Sit back and relax while the MUJIN Controller chooses the best motion by comparing thousands of candidate trajectories.After calculating the most optimal trajectory, MUJIN Controller" %}<a href="/product_collision_avoidance"> {% trans "automatically output robot manufactures program." %}</a>
     </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="{{ STATIC_URL }}img/door_animation.png"/>
-    </td>
-    <td>
-      <p>{% trans "With MUJIN <a href=\"/product_feature_itl\">ITL</a>, users can easily specify task parameters such as tool, task type, and goals." %}</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="{{ STATIC_URL }}img/door_animation2.gif"/>
-    </td>
-    <td>
-      {% trans "Sit back and relax while the MUJIN Controller chooses the best motion by comparing thousands of candidate trajectories." %}
-    </td>
-  </tr>
-</table>
-
-<br/>
-<br/>
-
-<h3>{% trans "Problems doing it the old way" %}</h3>
-<img class="thumbnail" src="{{ STATIC_URL }}img/collision.png"/>
-<p>{% trans "Collisions happen all the time!" %}</p>
-<br>
-<br>
-<img class="thumbnail" src="{{ STATIC_URL }}img/collision_manual_correction.png"/>
-<p style="clear:both">{% trans "The robot programmer has to adjust each parameter to correct collision." %}</p>
+    </tr>
+  </table>
+  
+  <h3>{% trans "Problems doing it the old way" %}</h3>
+  <img class="thumbnail" src="{{ STATIC_URL }}img/collision.png"/>
+  <p>{% trans "Collisions happen all the time!" %}</p>
+  <img class="thumbnail" src="{{ STATIC_URL }}img/collision_manual_correction.png"/>
+  <p style="clear:both">{% trans "The robot programmer has to adjust each parameter to correct collision." %}</p>
+</fieldset>
 {% endblock %}
 

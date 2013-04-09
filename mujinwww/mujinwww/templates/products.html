@@ -19,10 +19,15 @@
   <h2>{% trans "The MUJIN Controller" %}</h2>
   <div class="fieldset-content span10">
     <h3>{% trans "Industrial robot automation for everyone" %} </h3>
-    <img src="{{ STATIC_URL }}img/mujincontroller_snap.png">
+    <div style="position:relative">
+      <img src="{{ STATIC_URL }}img/mujincontroller_snap_interface.png">
+      <div style="position:absolute; top:-5px; left:260px; width: 650px;">
+        <h4 style="color:#000000">{% trans "The MUJIN Controller features an easy to use web interface" %}</h4>
+      </div>
+    </div>
     <p class="lead">{% trans "The MUJIN Controller is our innovative solution to industrial robot programming. It will dramatically improve the existing expensive and complicated robot integration processes. The MUJIN Controller allows a user to specify desired robot tasks in an intuitive user interface. It then automatically generates collision-free motion plans considering the user-specified task constraints and provides motion planning optimizations. The MUJIN Controller saves precious design, development and deployment time while increasing productivity in common industrial robotics tasks. Furthermore, conventionally hard programming tasks like dual-arm manipulation are simple to test and deploy." %}</p>
     
-    <h2 class="comment" style="color:red;">TODO: Issei: What are these images representing? I'd make these less cluttered or split them into multiple images so they're easier to read. Maybe they belong somewhere else?</h2>
+    <h2 class="comment" style="color:red;"></h2>
     <img class="thumbnail" src="{{ STATIC_URL }}img/adoptation_effect.jpg">
     
     <h3>{% trans "Difference between before and after" %}</h3>
@@ -35,7 +40,7 @@
     <br/>
           
     <h3>{% trans "Simulation Precision and Accuracy" %} </h3>
-    <p class="lead">{% trans "A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95% precision. What the program shows on the computer is what will happen in the actual robot cell. " %}</p>
+    <p class="lead">{% trans "A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95% precision. What the program shows on the computer is what will happen in the actual robot cell." %}</p>
     <br/>
   </div>
 </fieldset>
@@ -50,18 +55,18 @@
         <a class="nohover-highlight feature-item" href="/product_feature_ik">
           <h4>{% trans "Inverse Kinematics" %}</h4>
           <img class="thumbnail" src="{{ STATIC_URL }}img/ik.png">
-          <p>{% trans "The IK solver can find analytical solutions to your robot's IK, even for >7DOF." %}</p>
+          <p>{% trans "The IK solver can find analytical solutions to your robot's IK, even for more than 7axis machine." %}</p>
         </a>
       </div>
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_colision_avoindance">
           <h4>{% trans "Collision Avoidance" %}</h4>
           <img class="thumbnail" src="{{ STATIC_URL }}img/mitsubishi_grasp.gif">
-          <p>{% trans "The collision avoidance system automatically finds efficient paths without specifying intermediate waypoints to avoid collisions." %}</p>
+          <p>{% trans "The collision avoidance automatically finds efficient paths without specifying intermediate waypoints." %}</p>
         </a>
       </div>
       <div class="span3 well">
-        <a class="nohover-highlight feature-item" href="/product_feature_vrc">
+        <a class="nohover-highlight feature-item" href="/product_feature_accuracy">
           <h4>{% trans "Simulation Precision" %}</h4>
           <img class="thumbnail" src="{{ STATIC_URL }}img/denso_real_machine.gif"/>
           <p>{% trans "Trajectories are guaranteed to be at least 95% accurate when compared to the motion of the real robot." %}</p>
@@ -107,10 +112,10 @@
         </a>
       </div>
       <div class="span3 well">
-        <a class="nohover-highlight feature-item" href="/product_feature_cadsoft">
+        <a class="nohover-highlight feature-item" href="/product_feature_zero">
           <h4>{% trans "Zero Installation" %}</h4>
-          <img class="thumbnail" src="{{ STATIC_URL }}img/browsers.jpg">
-          <p>{% trans "Use the controller through your web browser on any platform you like. We recommend Google Chrome or Mozilla Firefox." %}</p>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/no_install.png">
+          <p>{% trans "Use the controller through your web browser on any platform you like." %}</p>
         </a>
       </div>
     </div>
@@ -147,7 +152,7 @@
   </div>
 </fieldset>
 
-<h2 class="comment" style="color:red;">TODO: Issei: Again, this could probably use sound and an english version?</h2>
+<h2 class="comment" style="color:red;"></h2>
 <fieldset id="operation_demo">
   <h2>{% trans "Operation Demo" %}</h2>
   <div class="fieldset-content span10">

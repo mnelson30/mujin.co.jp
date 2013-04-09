@@ -1,0 +1,14 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block main-content %}
+<fieldset id="object_placement_optimization">
+  <h2>{% trans "Simulation Accuracy" %}</h2>
+  <p class="lead">{% trans "A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95 percent precision." %}</p>
+  <h3>{% trans "Virtual Robot Controller (VRC) " %}</h3>
+  <p class="lead">{% trans "To assure the accuracy in real robot, MUJIN Controller examine all trajectory calculated through robot manufacture's Virtual Robot Controller(VRC). Only collision free trajectory proven by test with VRC is output as a result. " %}</p>
+   
+  <img src="/static/img/VRC.png">
+ 
+</fieldset>
+{% endblock %}
