@@ -1,0 +1,13 @@
+{
+  "title": "MUJIN Homepage",
+  "name": "mujinwww",
+  "version": "0.0.0",
+  "author": "Lucas Doyle <lukedoyle@mujin.co.jp>",
+  "description": "MUJIN's Homepage",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-exec": "*",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-regarde": "~0.1.1"
+  }
+}

@@ -16,7 +16,12 @@
 
     <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
-    <script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/mujinwww.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        {% block headscripts %}
+        {% endblock %}
+      });
       
       // google analytics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,21 +31,6 @@
 
       ga('create', 'UA-39951744-1', 'mujin.co.jp');
       ga('send', 'pageview');
-
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        if (window.location.hash == "") {
-          var path = document.location.pathname;
-          var link = $('.sidebar-nav li a[href="' + path + '"]').parent('li');
-          if (link.length == 0) {
-            link = $('.sidebar-nav li:first');
-          }
-          link.addClass('active');
-        }
-{% block headscripts %}
-{% endblock %}
-      });
     </script>
   </head>
 
