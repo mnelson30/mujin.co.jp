@@ -21,10 +21,12 @@
   <p>{% trans "Motion planning is used to avoid collision obstacles while optimizing the robot task time." %}</p>
 </fieldset>
 
-<fieldset id="multiple_robots">
-  <h2>{% trans "Multiple Robot Motion Planning" %} </h2>
-  <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" ></iframe>
-  <p>{% trans "Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25%"  %}</p>
+<h2>{% trans "Multiple Robot Motion Planning" %} </h2>
+<fieldset id="multiple_robots" class="well">
+  <iframe width="80%" style="margin-left: 10%;" height="355" src="{% trans "http://www.youtube.com/embed/vLu0twF2-Ps" %}" ></iframe>
+  <div style="text-align: center;">
+    <p>{% trans "Motion planning for multiple robots. Task time for one robot is 16.6s, adding two in the same environment decreases task time by 25%% "  %}</p>
+  </div>
 </fieldset>
 
 <fieldset id="IK">
@@ -34,10 +36,11 @@
   <img width="640" src="{{ STATIC_URL }}img/ikfast_robots.png" />
 </fieldset>
 
-<fieldset id="parallelized_opt">
-  <h2>{% trans "Parallelized Layout Optimization" %} </h2>
-  <iframe width="580" height="340" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}"></iframe>
-  <p>{% trans "Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%</b>. However layout and robot optimizations are very computationally intensive and can take days to finish for one task." %}</p>
-  <p>{% trans "Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to under 10 minutes with the MUJIN Controller." %}</p>
+<h2>{% trans "Parallelized Layout Optimization" %} </h2>
+<fieldset id="parallelized_opt" class="well">
+  <iframe  width="80%" style="margin-left: 10%;" height="355" src="{% trans "http://www.youtube.com/embed/p2QwPuc8oPw" %}"></iframe>
+  <div style="text-align: center;">
+    <p>{% trans "Optimizing the robot placement and other objects in the workspace can quickly cut the total task time <b>by 25%%</b>. However layout and robot optimizations are very computationally intensive and can take days to finish for one task." %}{% trans "Fortunately, MUJIN technology can take advantage of today's parallel processing and multi-core CPUs to shrink the computation time to under 10 minutes with the MUJIN Controller." %}</p>
+  </div>
 </fieldset>
 {% endblock %}
