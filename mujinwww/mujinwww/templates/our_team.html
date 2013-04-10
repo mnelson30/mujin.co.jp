@@ -1,0 +1,81 @@
+{% extends "aboutmujintemplate.html" %}
+{% load i18n %}
+{% block title %}
+{% trans "MUJIN Inc.| Our Team" %}
+{% endblock %}
+
+{% block main-content %}
+<h2>{% trans "Our Team" %}</h2>
+<br/>
+
+<div id="managers">
+  <h3>{% trans "Issei Takino - CEO" %} </h3>
+  <table class="table">
+    <tr>
+      <td>
+        <img class="thumbnail" style="width:200px" src="{{ STATIC_URL }}img/issei.png">
+      </td>
+      <td>
+        <p><b>{% trans "Graduated from Soka University of America" %}</b> 2007</p>
+        <p><b>{% trans "Working as Sales Enginner at Iscar" %}</b> 2012</p>
+        <ul>
+          <li><p>{% trans "Freshman Award 2008" %}</p></li>
+          <li><p>{% trans "Second Prize for Marketing Proposal Contest 2010" %}</p></li>
+          <li><p>{% trans "The first award in Sales Contest 2011" %}</p></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <h3>{% trans "Rosen Diankovo - CTO" %} </h3>
+  <table class="table">
+    <tr>
+      <td>
+        <img class="thumbnail" style="width:200px" src="{{ STATIC_URL }}img/rosen.png">
+      </td>
+      <td>
+        <p><b>{% trans "University of California, Berkeley (EECS)" %}</b> 2006</p>
+        <p><b>{% trans "Carnegie Mellon University (Ph.D)" %}</b> 2010</p>
+        <p><b>{% trans "OpenRAVE - Founder and Developer" %}</b></p>
+        <ul>
+          <li>Ph.D.thesis:<a href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">{% trans "Automated Construction of Robotics Manipulation Programs" %}</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <h2 class="comment" style="color:red;"></h2>
+
+  <h3>{% trans "Chief of Software Development - Huan Liu" %} </h3>
+  <table class="table">
+    <tr>
+      <td>
+        <img class="thumbnail" style="width:200px" src="{{ STATIC_URL }}img/huan.png">
+      </td>
+      <td>
+        <p><b>{% trans "Graduated from Massachusetts Institute of Technology" %}</b> 2010</p>
+        <p><b>{% trans "Master of Engineering from Massachusetts Institute of Technology" %}</b> 2011</p>
+        <p><b>{% trans "Oracle Corporation" %}</b> 2011 - 2012</p>
+      </td>
+    </tr>
+  </table>
+
+  <h3>{% trans "Software Engineer - Lucas Palage Doyle" %}</h3>
+  <table class="table">
+    <tr>
+      <td>
+        <img class="thumbnail" style="width:200px" src="{{ STATIC_URL }}img/luke.png">
+      </td>
+      <td>
+        <p><b>{% trans "Graduated from Rensselaer Polytechnic Institute" %}</b> 2012</p>
+        <ul>
+          <li>{% trans "Team leader in Boeing Robotic Wingbox Project" %} 2012</li>
+        </ul>
+        <p><b>{% trans "Harvard-Smithsonian Center for Astrophysics" %}</b>2009 - 2012</p>
+        <p><b>{% trans "Robotics Intern at Anybots" %}</b>2011</p>
+      </td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
+
