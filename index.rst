@@ -126,3 +126,13 @@ This is the workflow to follow when doing work on the website
   fab update
 
 5. Check that the changes you made actually worked with a web browser. Mistakes are easy to make and you can't be too careful with these things.
+
+
+Editing News
+============
+
+When you want to edit news on mujin.co.jp, its useful to start a remote instance of the django dev server. To do this, simply run this command and open your browser to mujin.co.jp:8000/admin/
+
+::
+
+  fab devserver
