@@ -10,7 +10,9 @@
     <h3>{{ newsentry.title }}</h3>
     <div class="fieldset-content span10">
       <b>{{ newsentry.pub_date }}</b>
-      <p class="lead">{{ newsentry.content }}</p>
+      {% autoescape off %}
+        {{ newsentry.content }}
+	  {% endautoescape %}
     </div>
   </fieldset>
 {% endfor %}
