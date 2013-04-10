@@ -1404,40 +1404,40 @@ msgstr "全ての人にロボットプログラミングを"
 msgid ""
 "The MUJIN Controller is our innovative solution to industrial robot "
 "programming. It "
-msgstr "MUJINコントローラーが提供する産業用ロボットプログラミングに対する革新的ソリューションは、既存のコスト高で複雑なプロセスを著しく改善いたします。"
+msgstr "MUJINコントローラーは産業用ロボットプログラミングに対する革新的ソリューションです。MUJINコントローラは"
 
 #: mujinwww/templates/products.html:30
 msgid ""
 "dramatically improves the existing expensive and complicated robot "
 "integration processes,"
-msgstr ""
+msgstr "既存のコスト高で複雑なロボットインテグレーション工程を大幅に削減いたします。"
 
 #: mujinwww/templates/products.html:31
 msgid ""
 "allows a user to specify desired robot tasks in an intuitive user interface,"
-msgstr ""
+msgstr "直感的に操作できるインターフェースを提供する事により、ユーザー様のニーズに沿ったロボットタスクを簡単に指定できるようになります。"
 
 #: mujinwww/templates/products.html:32
 msgid ""
 "automatically generates collision-free motion plans considering the user-"
 "specified task constraints,"
-msgstr ""
+msgstr "ユーザー様が指定する制約条件を満たしながら干渉回避が完璧に考慮された軌道生成を自動で行います。"
 
 #: mujinwww/templates/products.html:33
-msgid "provides motion planning optimizations,"
-msgstr ""
+msgid "provides robot placement optimizations,"
+msgstr "ロボットの配置を最適化します。"
 
 #: mujinwww/templates/products.html:34
 msgid ""
-"saves precious design, development and deployment time while increasing "
+"saves precious design, testing, and deployment time while increasing "
 "productivity in common industrial robotics tasks,"
-msgstr ""
+msgstr "産業ロボットの作業効率を向上させる上、デザインやテスト、配置検討のための貴重な時間を削減します。"
 
 #: mujinwww/templates/products.html:35
 msgid ""
 "and simplifies deployment and testing of hard programming tasks like dual-"
 "arm manipulation."
-msgstr ""
+msgstr "非常に困難な７軸ロボットや双腕ロボットなどによるプログラミングが難しいとされるタスクも簡単に作成できます。"
 
 #: mujinwww/templates/products.html:42
 msgid "Difference between before and after"
