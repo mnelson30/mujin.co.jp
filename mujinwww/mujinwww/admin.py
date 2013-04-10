@@ -3,8 +3,13 @@ from models import NewsEntry, UserProfile, TranslatedNewsEntry
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin as AuthUserAdmin
 
-admin.site.register(NewsEntry)
-admin.site.register(TranslatedNewsEntry)
+class NewsEntryAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(NewsEntry, NewsEntryAdmin)
+
+class TranslatedNewsEntryAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(TranslatedNewsEntry, TranslatedNewsEntryAdmin)
 
 class UserProfileInline(admin.StackedInline):
     model = UserProfile

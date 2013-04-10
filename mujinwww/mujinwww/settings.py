@@ -28,7 +28,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
-        'HOST': 'mujin.co.jp',
+        'HOST': 'localhost',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
     }
@@ -111,6 +111,13 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+	'django.contrib.auth.context_processors.auth',
+	'django.contrib.messages.context_processors.messages',
+	'django.core.context_processors.static',
+	'django.core.context_processors.media',
+)
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -135,7 +142,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-#    'mujinwww',
+    'mujinwww',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',

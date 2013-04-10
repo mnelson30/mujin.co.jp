@@ -9,7 +9,7 @@ try:
 except KeyError:
     MUJIN_ENV = 'dev'
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = False 
 IPYTHON_DEBUG = False
 
@@ -32,7 +32,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
-        'PASSWORD': open('/var/www/.pgpass','r').read().split('\n')[0].split(':')[-1],  # yeahhh
         'HOST': 'mujin.co.jp',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
@@ -40,11 +39,12 @@ DATABASES = {
 }
 
 SESSION_COOKIE_AGE = 3600 # 1 hour
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False # setting these both to true mean that only HTTPS can be used
+CSRF_COOKIE_SECURE = False
 
 MEDIA_ROOT = '/var/www/media/'
 MEDIA_URL = '/media/'
+
 STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
 
