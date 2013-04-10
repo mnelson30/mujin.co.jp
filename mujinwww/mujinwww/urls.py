@@ -6,7 +6,6 @@ import os
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 
-# Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
@@ -17,8 +16,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),
 
-    # the admin
-    url(r'^admin/', include(admin.site.urls)),
+    # the admin. comment or uncomment this to enable/disable the admin
+    #~ url(r'^admin/', include(admin.site.urls)),
 
     # for sending inquiry emails
     url(r'^sendinquiry', 'mujinwww.views.sendinquiry'),
@@ -34,5 +33,8 @@ urlpatterns = patterns('',
     url(r'^google958ac3d7145e5350.html$', 'django.views.generic.simple.redirect_to', {'url': '/static/google958ac3d7145e5350.html'}),
     
     # the catchall, serves everything
-    url(r'^(?P<name>(\w)*)$', 'mujinwww.views.catchall')
+    url(r'^(?P<name>(\w)*)$', 'mujinwww.views.catchallhtml'),
 )
+
+#from django.contrib.staticfiles.urls import staticfiles_urlpatterns                                                                                                           
+#urlpatterns += staticfiles_urlpatterns()  

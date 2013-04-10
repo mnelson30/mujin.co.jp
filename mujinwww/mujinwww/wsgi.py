@@ -15,9 +15,11 @@ framework.
 """
 import os,sys
 
+
+if not 'MUJIN_ENV' in os.environ:
+    os.environ['MUJIN_ENV'] = 'production'
 sys.path.append('/var/www/www/mujinwww')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mujinwww.settings")
-os.environ['MUJIN_ENV'] = 'production'
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION

@@ -5,7 +5,6 @@
 # Django settings for mujinwww project.
 
 import os
-import socket
 
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
@@ -16,10 +15,10 @@ ROOT_PATH = os.path.dirname(__file__)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-IPYTHON_DEBUG = True
+IPYTHON_DEBUG = False
 
 ADMINS = (
-    ('Rosen Diankov', 'rosen.diankov@mujin.co.jp'),
+    ('Controller Admin', 'controllernotification@mujin.co.jp'),
 )
 
 MANAGERS = ADMINS
@@ -29,7 +28,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
-        'PASSWORD': 'testpass',
         'HOST': 'localhost',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
@@ -63,7 +61,6 @@ USE_L10N = True
 USE_TZ = True
 
 LOCALE_PATHS=(
-    '/home/rdiankov/mujinsvn/web/mujinwww/locale',
     os.path.join(ROOT_PATH,'..','locale'),
 )
 
@@ -112,6 +109,13 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+	'django.contrib.auth.context_processors.auth',
+	'django.contrib.messages.context_processors.messages',
+	'django.core.context_processors.static',
+	'django.core.context_processors.media',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -216,5 +220,5 @@ CSRF_COOKIE_SECURE = False
 
 AUTH_PROFILE_MODULE = "account.UserProfile"
 
-if MUJIN_ENV=='production' or socket.gethostname() == 'mujinserver0':
+if MUJIN_ENV=='production':
     from settings_production import *

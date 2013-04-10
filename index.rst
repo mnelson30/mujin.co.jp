@@ -10,6 +10,9 @@ User **mujinwww**, Password is **testpass**
 
   sudo -u postgres psql --command "CREATE ROLE mujinwww PASSWORD 'md5f2884d0c1dc57fa66c837bea9a244ba2' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;"
   sudo createdb --host localhost --username mujinwww --encoding UTF-8 mujinwww
+  python manage.py syncdb
+  python manage.py schemamigration mujinwww --initial
+  python manage.py migrate
 
 Updating
 ========
@@ -19,6 +22,7 @@ Execute every time mujinwww is updated
 ::
 
   python $MUJIN_HOME/../www/mujinwww/manage.py syncdb
+  python manage.py schemamigration mujinwww
   python $MUJIN_HOME/../www/mujinwww/manage.py migrate
 
 Running

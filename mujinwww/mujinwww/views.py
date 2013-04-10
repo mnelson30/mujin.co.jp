@@ -79,7 +79,7 @@ def sendinquiry(request):
         mail(to, subject, text, from_address=request.POST['email'])
     return HttpResponse()
 
-def catchall(request, name):
+def catchallhtml(request, name):
     try:
         return render_to_response(name + '.html', RequestContext(request))
     except TemplateDoesNotExist:
