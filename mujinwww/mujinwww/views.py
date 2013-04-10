@@ -1,4 +1,5 @@
-#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# Copyright (C) 2013 MUJIN Inc
 from django.http import HttpResponse
 from django.conf import settings
 
@@ -17,7 +18,7 @@ from django.template import RequestContext, TemplateDoesNotExist
 from django.utils.translation import get_language_from_request
 from django.conf import settings
 
-from models import NewsEntry
+from . import models
 
 def mail(to, subject, text, attach=None, from_address=gmail_user):
     msg = MIMEMultipart()
@@ -91,23 +92,22 @@ def get_translated_news(request, news):
     for newsitem in news:
         this_newsitem = {'en_title': newsitem.en.title}
         this_newsitem['pub_date'] = newsitem.pub_date.strftime('%b %d, %Y')
-        if LANG == 'en':
-            this_newsitem['title'] = newsitem.en.title
-            this_newsitem['content'] = newsitem.en.content
-        elif LANG == 'ja':
+        if LANG == 'ja':
             this_newsitem['title'] = newsitem.ja.title
             this_newsitem['content'] = newsitem.ja.content
         else:
-            raise Exception('language not supported')
+            # always fallback on english
+            this_newsitem['title'] = newsitem.en.title
+            this_newsitem['content'] = newsitem.en.content
         ret.append(this_newsitem)
     return ret
 
 def index(request):
-    news = NewsEntry.objects.all().order_by('-pub_date')[:4]
+    news = models.NewsEntry.objects.all().order_by('-pub_date')[:4]
     template = {'news': get_translated_news(request, news)}
     return render_to_response('index.html', RequestContext(request, template))
 
 def news(request):
-    news = NewsEntry.objects.all().order_by('-pub_date')
+    news = models.NewsEntry.objects.all().order_by('-pub_date')
     template = {'news': get_translated_news(request, news)}
     return render_to_response('news.html', RequestContext(request, template))

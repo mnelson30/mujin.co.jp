@@ -1,6 +1,5 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (C) 2011-2012 MUJIN Inc
+# Copyright (C) 2012-2013 MUJIN Inc
 import os
 
 from django.conf.urls import patterns, include, url
@@ -9,7 +8,7 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
-import mujinwww.views
+from . import views
 
 urlpatterns = patterns('',
     # Examples:

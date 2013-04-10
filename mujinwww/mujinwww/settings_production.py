@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Copyright (C) 2011-2012 MUJIN Inc
 import os
@@ -9,7 +8,7 @@ try:
 except KeyError:
     MUJIN_ENV = 'dev'
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False 
 IPYTHON_DEBUG = False
 

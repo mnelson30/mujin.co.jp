@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# Copyright (C) 2013 MUJIN Inc
 import os
 import datetime
 from django.db import models
