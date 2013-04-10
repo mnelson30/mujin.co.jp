@@ -419,7 +419,7 @@ msgstr "役員紹介"
 
 #: mujinwww/templates/corporate_overview.html:25
 msgid "CEO Issei Takino"
-msgstr "代表取締役 滝野　一征"
+msgstr "代表取締役　営業部長 滝野　一征"
 
 #: mujinwww/templates/corporate_overview.html:26
 msgid "CTO Rosen Diankov, Ph.D.(Carnegie Mellon Univeristy)"
@@ -431,11 +431,11 @@ msgstr "取締役"
 
 #: mujinwww/templates/corporate_overview.html:32
 msgid "Representative Director: Issei Takino, CEO"
-msgstr "代表取締役　滝野　一征"
+msgstr "代表取締役　営業部長　滝野　一征"
 
 #: mujinwww/templates/corporate_overview.html:33
 msgid "Director (To be elected): Rosen Diankov , Ph.D.,  CTO"
-msgstr "取締役（就任予定）出杏光　魯仙(Rosen Diankov)"
+msgstr "取締役　出杏光　魯仙(Rosen Diankov)"
 
 #: mujinwww/templates/corporate_overview.html:34
 msgid "Direcotr (Outside): Ted Yamamoto, General Partner at UTEC"
@@ -661,7 +661,7 @@ msgstr "MUJIN | チーム"
 
 #: mujinwww/templates/our_team.html:12
 msgid "Issei Takino - CEO"
-msgstr "代表取締役 滝野　一征"
+msgstr "代表取締役　営業部長 滝野　一征"
 
 #: mujinwww/templates/our_team.html:19
 msgid "Graduated from Soka University of America"
@@ -685,7 +685,7 @@ msgstr "セールスコンテスト1位　2011"
 
 #: mujinwww/templates/our_team.html:30
 msgid "Rosen Diankovo - CTO"
-msgstr "取締役技術部長　出杏光　魯仙（Rosen Diankov)"
+msgstr "取締役　技術部長　出杏光　魯仙（Rosen Diankov)"
 
 #: mujinwww/templates/our_team.html:37
 msgid "University of California, Berkeley (EECS)"
