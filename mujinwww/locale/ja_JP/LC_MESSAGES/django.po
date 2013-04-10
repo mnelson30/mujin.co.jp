@@ -1945,7 +1945,7 @@ msgid ""
 msgstr ""
 "複数ロボットとの作業が短時間で実現頂けます。以下の作業では、1台で16.6秒の所要"
 "時間が、2台では動作が12.3秒に短縮されました。複数台か双腕ロボットを使えば同じ"
-"作業の時間を約25%短縮出来ます。 "
+"作業の時間を約25%%短縮出来ます。 "
 
 #: mujinwww/templates/technology.html:33
 msgid "Inverse Kinematics for any Robot"
