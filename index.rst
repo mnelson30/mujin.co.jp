@@ -63,29 +63,66 @@ Open **$MUJIN_HOME/../web/mujinwww/locale/ja_JP/LC_MESSAGES/django.po** and edit
 
 Restart the mujinwww server and the new translation should be visible!
 
-Gallery Images
---------------
-
-The front page will have a gallery of images scolling images. Can add or remove images through the **web/mujinwww/mujinwww/static/img/gallery_intro** page.
 
 Production Environment
 ----------------------
 
-This is for the real site and needs to be run on the MUJIN server. For **Rosen** only.
+This is for sending things to the real site.
 
 Setup
 =====
 
-Login with the **www-data** user and checkout the code into **/var/www**
+In order to push to mujin.co.jp, it needs your ssh public key. Your public key is probably in ~/.ssh/id_rsa.mujin.<yourname>.pub. You need to send this file to someone and have them add it to the authorized keys on mujin.co.jp.
 
-  svn co https://svn.mujin.co.jp/web/mujinwww /var/www/mujinwww
+::
 
-When updating can just run::
+  cat ~/.ssh/id_rsa.mujin.<yourname>.pub
 
-  /var/www/mujinwww/updateweb.bash
+Verify that the key was added by trying to ssh into mujin.co.jp. You'll know everything is working correctly when you try to ssh and immediately see a prompt for www-data@mujinserver0 without having to enter a password.
+
+::
+
+  ssh www-data@mujin.co.jp
+
+Next, you need to install fabric, the tool that we use for pushing updates to mujin.co.jp
+
+::
+
+  sudo pip install fabric
 
 
-Useful links
-============
+Updating
+========
 
-W3's CSS validator: http://jigsaw.w3.org/css-validator/#validate_by_input
+To push updates to the website, just run "fab update" in the same directory as manage.py
+
+
+
+Overall Workflow
+----------------
+
+This is the workflow to follow when doing work on the website
+
+1. Before starting work, make sure you pull in the latest changes from master
+
+::
+
+  git pull origin master
+
+2. Next, make the changes you want and test them locally on the django dev server
+
+3. Once you're done making edits or whatever, make sure to add and commit everything you worked on. The "git status" is useful for looking at what was changed. Note that if you added a new file, it will be in the list for untracked files until you explicitly add it. Also be sure to write a DETAILED, CONCISE COMMIT MESSAGE. This lets others know what you did without having to look through your entire commit. Finally you need to push your changes to master if you want them to appear on the main website.
+
+::
+
+  git add <the files you worked on>
+  git commit -m "<detailed, concise commit message>"
+  git push origin master
+
+4. Finally, to deploy your changes to the live website, simply run the update task with fabric from the same directory as manage.py
+
+::
+
+  fab update
+
+5. Check that the changes you made actually worked with a web browser. Mistakes are easy to make and you can't be too careful with these things.
