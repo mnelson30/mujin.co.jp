@@ -431,7 +431,7 @@ msgstr "取締役"
 
 #: mujinwww/templates/corporate_overview.html:32
 msgid "Representative Director: Issei Takino, CEO"
-msgstr "代表取締役　滝野　一征"
+msgstr "代表取締役営業部長　滝野　一征"
 
 #: mujinwww/templates/corporate_overview.html:33
 msgid "Director (To be elected): Rosen Diankov , Ph.D.,  CTO"
@@ -661,7 +661,7 @@ msgstr "MUJIN | チーム"
 
 #: mujinwww/templates/our_team.html:12
 msgid "Issei Takino - CEO"
-msgstr "代表取締役 滝野　一征"
+msgstr "代表取締役営業部長 滝野　一征"
 
 #: mujinwww/templates/our_team.html:19
 msgid "Graduated from Soka University of America"
