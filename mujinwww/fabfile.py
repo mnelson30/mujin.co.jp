@@ -3,6 +3,7 @@ import os
 from fabric.api import *
 
 WWW_ROOT = '/var/www/www/mujinwww'
+DEV_ROOT = '/var/www/temp/www/mujinwww'
 
 env.user = 'www-data'
 env.hosts = ['mujin.co.jp']
@@ -34,6 +35,12 @@ def update():
     clean()
     pull()
     build_translations()
+
+def devserver():
+    with cd(DEV_ROOT):
+        run('git pull origin master')
+        run('export MUJIN_ENV=production')
+        run('python manage.py runserver 0.0.0.0:8000')
 
 def update_packages():
     run('sudo apt-get update')
