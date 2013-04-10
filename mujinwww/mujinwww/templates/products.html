@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block sidebar-list-items %}
-<li><a href="#mujin_controller">{% trans "The MUJIN Controller" %}</a></li>
+<li><a href="#mujin_controller">{% trans "MUJIN Controller" %}</a></li>
 <li><a href="#product_features">{% trans "Features" %}</a></li>
 <li><a href="#applications">{% trans "Applications" %}</a></li>
 <li><a href="#operation_demo">{% trans "Operation demo" %}</a></li>
@@ -16,7 +16,7 @@
 
 {% block main-content %}
 <fieldset id="mujin_controller">
-  <h2>{% trans "The MUJIN Controller" %}</h2>
+  <h2>{% trans "MUJIN Controller" %}</h2>
   <div class="fieldset-content span10">
     <h3>{% trans "Industrial robot automation for everyone" %} </h3>
     <div style="position:relative">
@@ -25,7 +25,16 @@
         <h4 style="color:#000000">{% trans "The MUJIN Controller features an easy to use web interface" %}</h4>
       </div>
     </div>
-    <p class="lead">{% trans "The MUJIN Controller is our innovative solution to industrial robot programming. It will dramatically improve the existing expensive and complicated robot integration processes. The MUJIN Controller allows a user to specify desired robot tasks in an intuitive user interface. It then automatically generates collision-free motion plans considering the user-specified task constraints and provides motion planning optimizations. The MUJIN Controller saves precious design, development and deployment time while increasing productivity in common industrial robotics tasks. Furthermore, conventionally hard programming tasks like dual-arm manipulation are simple to test and deploy." %}</p>
+    <p class="lead">{% trans "The MUJIN Controller is our innovative solution to industrial robot programming. It "%}
+      <ul>
+        <li>{% trans "dramatically improves the existing expensive and complicated robot integration processes," %}</li>
+        <li>{% trans "allows a user to specify desired robot tasks in an intuitive user interface," %}</li>
+        <li>{% trans "automatically generates collision-free motion plans considering the user-specified task constraints," %}</li>
+        <li>{% trans "provides motion planning optimizations," %}</li>
+        <li>{% trans "saves precious design, development and deployment time while increasing productivity in common industrial robotics tasks," %}</li>
+        <li>{% trans "and simplifies deployment and testing of hard programming tasks like dual-arm manipulation." %}</li>
+      </ul>
+    </p>
     
     <h2 class="comment" style="color:red;"></h2>
     <img class="thumbnail" src="{{ STATIC_URL }}img/adoptation_effect.jpg">
