@@ -20,7 +20,7 @@
   <div class="fieldset-content span10">
     <h3>{% trans "Industrial robot automation for everyone" %} </h3>
     <div style="position:relative">
-      <img src="{{ STATIC_URL }}img/mujincontroller_snap_interface.png">
+      {% blocktrans %}<img src="{{ STATIC_URL }}img/mujincontroller_snap_en.png"> {% endblocktrans %}
       <div style="position:absolute; top:-5px; left:260px; width: 650px;">
         <h4 style="color:#000000">{% trans "The MUJIN Controller features an easy to use web interface" %}</h4>
       </div>
@@ -142,7 +142,7 @@
 
 <fieldset id="applications">
   <h2>{% trans "Applications" %}</h2>
-  <h2 class="comment" style="color:red;">TODO: Issei: Maybe have captions for these explaining what kinds of applications. Like for automotive we'd probably say something about welding? Right now I don't think they are very helpful.</h2>
+  <h2 class="comment" style="color:red;"></h2>
   <div class="fieldset-content span10">
     <ul>
       <li>
