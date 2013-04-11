@@ -38,8 +38,9 @@ def update():
 
 def devserver():
     with cd(DEV_ROOT):
+        run('git reset --hard HEAD')
         run('git pull origin master')
-        run('export MUJIN_ENV=production')
+        run('export MUJIN_ENV=dev')
         run('python manage.py runserver 0.0.0.0:8000')
 
 def update_packages():
