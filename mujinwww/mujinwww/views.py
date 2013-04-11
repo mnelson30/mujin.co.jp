@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Copyright (C) 2013 MUJIN Inc
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseServerError
 from django.conf import settings
 
 import smtplib
@@ -111,3 +111,6 @@ def news(request):
     news = models.NewsEntry.objects.all().order_by('-pub_date')
     template = {'news': get_translated_news(request, news)}
     return render_to_response('news.html', RequestContext(request, template))
+
+def ignore(request):
+    return HttpResponseNotFound()
