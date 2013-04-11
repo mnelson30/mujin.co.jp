@@ -34,7 +34,7 @@ urlpatterns = patterns('',
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
     if MUJIN_ENV == 'dev':
-        urlpatterns += patterns('', url(r'^admin/', include(admin.site.urls)),)
+        urlpatterns += patterns('admin', url(r'^admin/', include(admin.site.urls)),)
 except KeyError:
     pass
 
