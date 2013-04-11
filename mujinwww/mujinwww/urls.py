@@ -29,6 +29,14 @@ urlpatterns = patterns('',
     
     # the catchall, serves everything
     url(r'^(?P<name>(\w)*)$', 'mujinwww.views.catchallhtml'),
+
+    url(r'^favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '/static/img/mujin_icon.png'}),
+
+    url(r'\.(php|cgi)$', 'mujinwww.views.ignore'),
+    url(r'^phpmyadmin/', 'mujinwww.views.ignore'),
+    url(r'^apple-touch-icon.*\.png$', 'mujinwww.views.ignore'),
+    url(r'^favicon\.ico$', 'mujinwww.views.ignore'),
+    url(r'^robots\.txt$', 'mujinwww.views.ignore'),
 )
 
 try:
