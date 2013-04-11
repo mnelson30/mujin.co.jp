@@ -31,27 +31,9 @@ urlpatterns = patterns('',
     url(r'^(?P<name>(\w)*)$', 'mujinwww.views.catchallhtml'),
 )
 
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-print os.environ['MUJIN_ENV'].lower()
-
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
     if MUJIN_ENV == 'dev':
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
-        print 'AAAAAAAAAAHHHHHHHHHHHHh'
         urlpatterns += patterns('', url(r'^admin/', include(admin.site.urls)),)
 except KeyError:
     pass

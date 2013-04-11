@@ -219,5 +219,5 @@ CSRF_COOKIE_SECURE = False
 
 AUTH_PROFILE_MODULE = "account.UserProfile"
 
-if MUJIN_ENV=='production':
+if MUJIN_ENV == 'production':
     from settings_production import *
