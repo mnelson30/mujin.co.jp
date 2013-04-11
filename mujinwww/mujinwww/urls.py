@@ -15,12 +15,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'mujinwww.views.home', name='home'),
     # url(r'^mujinwww/', include('mujinwww.foo.urls')),
 
-    # the admin. comment or uncomment this to enable/disable the admin
-    #~ url(r'^admin/', include(admin.site.urls)),
-
     # for sending inquiry emails
     url(r'^sendinquiry', 'mujinwww.views.sendinquiry'),
-
 
     url(r'^/|^index', 'mujinwww.views.index'),
     url(r'^news', 'mujinwww.views.news'),
@@ -43,5 +39,9 @@ urlpatterns = patterns('',
     url(r'^robots\.txt$', 'mujinwww.views.ignore'),
 )
 
-#from django.contrib.staticfiles.urls import staticfiles_urlpatterns                                                                                                           
-#urlpatterns += staticfiles_urlpatterns()  
+try:
+    MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
+    if MUJIN_ENV == 'dev':
+        urlpatterns += patterns('', url(r'^admin/', include(admin.site.urls)),)
+except KeyError:
+    pass

@@ -15,8 +15,6 @@ for key in os.listdir(os.path.join(os.environ['HOME'], '.ssh')):
     if 'mujin' in key.split('.') and 'pub' not in key.split('.'):
         env.key_filename.append(os.path.join(os.environ['HOME'], '.ssh', key))
 
-print env.key_filename
-
 def clean():
     with cd(WWW_ROOT):
         run('git reset --hard HEAD')
@@ -38,9 +36,9 @@ def update():
 
 def devserver():
     with cd(DEV_ROOT):
+        run('git reset --hard HEAD')
         run('git pull origin master')
-        run('export MUJIN_ENV=production')
-        run('python manage.py runserver 0.0.0.0:8000')
+        run('MUJIN_ENV=dev python manage.py runserver 0.0.0.0:8000')
 
 def update_packages():
     run('sudo apt-get update')
