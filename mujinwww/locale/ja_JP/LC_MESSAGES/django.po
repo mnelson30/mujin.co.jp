@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-10 11:17+0000\n"
+"POT-Creation-Date: 2013-04-11 17:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
-#: mujinwww/models.py:12
+#: mujinwww/models.py:14
 msgid "English"
 msgstr "英語"
 
-#: mujinwww/models.py:13
+#: mujinwww/models.py:15
 msgid "Japanese"
 msgstr "日本語"
 
@@ -505,14 +505,14 @@ msgstr "20-100CPUコアを同時に使用しながら動作の最適化の実現
 msgid "MUJIN Controller"
 msgstr "MUJINコントローラ"
 
-#: mujinwww/templates/feature_slider.html:28
+#: mujinwww/templates/feature_slider.html:29
 msgid ""
 "On-site dedicated 12 core high performance server for use on a private "
 "internal network."
 msgstr ""
 "12CPUコア搭載の専用サーバーで高性能計算をお客様ネットワーク内に設置可能。"
 
-#: mujinwww/templates/feature_slider.html:29
+#: mujinwww/templates/feature_slider.html:30
 msgid ""
 "Perfecly cross-platform, as all interaction is done through a web browser."
 msgstr ""
@@ -688,7 +688,7 @@ msgid "University of California, Berkeley (EECS)"
 msgstr "University of California, Berkeley卒 (EECS)"
 
 #: mujinwww/templates/our_team.html:38
-msgid "Carnegie Mellon University (Ph.D)"
+msgid "Ph.D from Carnegie Mellon University"
 msgstr "カーネギーメロン大学にてロボット工学博士号取得"
 
 #: mujinwww/templates/our_team.html:39
@@ -734,6 +734,26 @@ msgstr "ハーバードスミソニアンセンターにて勤務"
 #: mujinwww/templates/our_team.html:75
 msgid "Robotics Intern at Anybots"
 msgstr "Anybots社にてインターン"
+
+#: mujinwww/templates/our_team.html:80
+msgid "Visiting Scientist - Pham Quang Cuang"
+msgstr "客員研究員 - Pham Quang Cuang"
+
+#: mujinwww/templates/our_team.html:87
+msgid "Graduated from École Normale Supérieure rue d'Ulm"
+msgstr "エコール・ノルマル・シュペリウール(パリ)卒"
+
+#: mujinwww/templates/our_team.html:88
+msgid "Ph.D from Collège de France"
+msgstr "コレージュ・ド・フランスにて博士号取得"
+
+#: mujinwww/templates/our_team.html:89
+msgid "JSPS researcher at University of Tokyo"
+msgstr "東京大学にてJSPS特別研究員として従事"
+
+#: mujinwww/templates/our_team.html:90
+msgid "RSS 2012 Best Paper Award"
+msgstr "RSS 2012年度ベストペーパー賞受賞"
 
 #: mujinwww/templates/privacy_policy.html:5
 msgid "MUJIN Inc.| Privacy Policy"
@@ -1404,24 +1424,31 @@ msgstr "全ての人にロボットプログラミングを"
 msgid ""
 "The MUJIN Controller is our innovative solution to industrial robot "
 "programming. It "
-msgstr "MUJINコントローラーは産業用ロボットプログラミングに対する革新的ソリューションです。MUJINコントローラは"
+msgstr ""
+"MUJINコントローラーは産業用ロボットプログラミングに対する革新的ソリューション"
+"です。MUJINコントローラは"
 
 #: mujinwww/templates/products.html:30
 msgid ""
 "dramatically improves the existing expensive and complicated robot "
 "integration processes,"
-msgstr "既存のコスト高で複雑なロボットインテグレーション工程を大幅に削減いたします。"
+msgstr ""
+"既存のコスト高で複雑なロボットインテグレーション工程を大幅に削減いたします。"
 
 #: mujinwww/templates/products.html:31
 msgid ""
 "allows a user to specify desired robot tasks in an intuitive user interface,"
-msgstr "直感的に操作できるインターフェースを提供する事により、ユーザー様のニーズに沿ったロボットタスクを簡単に指定できるようになります。"
+msgstr ""
+"直感的に操作できるインターフェースを提供する事により、ユーザー様のニーズに"
+"沿ったロボットタスクを簡単に指定できるようになります。"
 
 #: mujinwww/templates/products.html:32
 msgid ""
 "automatically generates collision-free motion plans considering the user-"
 "specified task constraints,"
-msgstr "ユーザー様が指定する制約条件を満たしながら干渉回避が完璧に考慮された軌道生成を自動で行います。"
+msgstr ""
+"ユーザー様が指定する制約条件を満たしながら干渉回避が完璧に考慮された軌道生成"
+"を自動で行います。"
 
 #: mujinwww/templates/products.html:33
 msgid "provides robot placement optimizations,"
@@ -1431,13 +1458,17 @@ msgstr "ロボットの配置を最適化します。"
 msgid ""
 "saves precious design, testing, and deployment time while increasing "
 "productivity in common industrial robotics tasks,"
-msgstr "産業ロボットの作業効率を向上させる上、デザインやテスト、配置検討のための貴重な時間を削減します。"
+msgstr ""
+"産業ロボットの作業効率を向上させる上、デザインやテスト、配置検討のための貴重"
+"な時間を削減します。"
 
 #: mujinwww/templates/products.html:35
 msgid ""
 "and simplifies deployment and testing of hard programming tasks like dual-"
 "arm manipulation."
-msgstr "非常に困難な７軸ロボットや双腕ロボットなどによるプログラミングが難しいとされるタスクも簡単に作成できます。"
+msgstr ""
+"非常に困難な７軸ロボットや双腕ロボットなどによるプログラミングが難しいとされ"
+"るタスクも簡単に作成できます。"
 
 #: mujinwww/templates/products.html:42
 msgid "Difference between before and after"
