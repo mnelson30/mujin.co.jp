@@ -34,10 +34,14 @@ urlpatterns = patterns('',
 try:
     MUJIN_ENV = os.environ['MUJIN_ENV'].lower()
     if MUJIN_ENV == 'dev':
-        urlpatterns += patterns('admin.views', url(r'^admin/', include(admin.site.urls)),)
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        print 'AAAAAAAAAAHHHHHHHHHHHHh'
+        urlpatterns += patterns('', url(r'^admin/', include(admin.site.urls)),)
 except KeyError:
     pass
-
-
-#from django.contrib.staticfiles.urls import staticfiles_urlpatterns                                                                                                           
-#urlpatterns += staticfiles_urlpatterns()  
