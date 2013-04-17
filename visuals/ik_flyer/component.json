@@ -1,0 +1,7 @@
+{
+  "name": "ik_flyer",
+  "version": "0.0.0",
+  "devDependencies": {
+    "bootstrap": "~2.3.1"
+  }
+}

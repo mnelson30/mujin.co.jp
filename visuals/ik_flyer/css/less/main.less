@@ -1,0 +1,102 @@
+//~ First, import bootstrap
+@import "../../components/bootstrap/less/bootstrap.less";
+
+//~ change fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,500);
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #7F7F7F;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Custom container */
+@outer-padding: 10px;
+
+.container-outer {
+  .container;
+  padding: @outer-padding;
+  background-color: #FFFFFF;
+}
+.container {
+  width: 1000px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 40px 0;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.jumbotron h1 {
+  font-size: 62px;
+  line-height: 1;
+  margin-bottom: 21px;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.color-section {
+  font-weight: 500;
+  margin: 0px;
+  margin-left: -@outer-padding;
+  padding: @outer-padding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #FFFFFF;
+  //~ min-height: 200px;
+}
+
+.blue {
+  .color-section;
+  background-color: #0099CC;
+}
+
+.red {
+  .color-section;
+  background-color: #CC0000;
+}
+
+.orange {
+  .color-section;
+  background-color: #FF8800;
+}
+
+.green {
+  .color-section;
+  background-color: #669900;
+}
+
+.purple {
+  .color-section;
+  background-color: #9933CC;
+}
+
+ul {
+  margin-top: -10px;
+  padding-left: 20px;
+}
+
+ul > li > p.lead {
+  margin: 0px;
+}

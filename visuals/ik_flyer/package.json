@@ -1,0 +1,13 @@
+{
+  "title": "MUJIN IK Flyer",
+  "version": "0.0.0",
+  "author": "Lucas Doyle <lukedoyle@mujin.co.jp>",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-exec": "*",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-less": "*"
+  }
+}
