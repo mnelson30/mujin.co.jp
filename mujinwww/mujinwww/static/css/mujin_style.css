@@ -3,6 +3,13 @@ body {
   padding-bottom: 60px;
   font-family: 'Pontano Sans', sans-serif;
   min-width: 925px;
+  font-size: 18px;
+}
+
+input.span7,
+textarea.span7,
+.uneditable-input.span7 {
+  width: 26px;
 }
 
 /* Custom container */
@@ -42,11 +49,12 @@ body {
   border-left: 1px solid rgba(255,255,255,.75);
   border-right: 1px solid rgba(0,0,0,.1);
 }
-.navbar .nav li: first-child a {
+
+.navbar .nav li:first-child a {
   border-left: 0;
   border-radius: 3px 0 0 3px;
 }
-.navbar .nav li: last-child a {
+.navbar .nav li:last-child a {
   border-right: 0;
   border-radius: 0 3px 3px 0;
 }

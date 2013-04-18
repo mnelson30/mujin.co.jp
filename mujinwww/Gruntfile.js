@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-regarde');
   grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-exec');
-
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   // Config
   // ------
@@ -25,10 +25,18 @@ module.exports = function(grunt) {
         stdout: true
       }
     },
+    less: {
+      everything: {
+        files: {
+          "mujinwww/static/css/main.css": "mujinwww/static/css/less/main.less",
+          "mujinwww/static/css/flyer.css": "mujinwww/static/css/less/flyer.less"
+        }
+      }
+    },
     regarde: {
-      app: {
-        files: 'mujinwww/' + '**/*',
-        tasks: ['exec:fixjsstyle', 'livereload']
+      mujinwww: {
+        files: ['mujinwww/**/*', '!mujinwww/static/css/*'],
+        tasks: ['build', 'livereload']
       }
     }
   });
@@ -37,6 +45,8 @@ module.exports = function(grunt) {
   // Tasks
   // -----
 
+  grunt.registerTask('build', ['exec:fixjsstyle', 'less']);
+  
   // handy watch thing for live reloads
-  grunt.registerTask('watch', ['livereload-start', 'regarde']);
+  grunt.registerTask('watch', ['build', 'livereload-start', 'regarde']);
 };
