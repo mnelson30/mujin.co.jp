@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-19 19:18+0900\n"
+"POT-Creation-Date: 2013-04-20 17:42+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -583,7 +583,8 @@ msgid ""
 "into your product."
 msgstr ""
 "MUJINは、複雑な運動学構造の逆運動学解を自動計算するツールを開発しております。"
-"私達はお客様の商品を容易にインテグレートできるための無駄が無く、非常に効率のよいプログラムロボットプログラムをご提供いたします。"
+"私達はお客様の商品を容易にインテグレートできるための無駄が無く、非常に効率の"
+"よいプログラムロボットプログラムをご提供いたします。"
 
 #: mujinwww/templates/ik_flyer.html:56
 msgid "Our Technology"
@@ -595,9 +596,9 @@ msgid ""
 "difficult and tedious to work with. Various numerical techniques exist to "
 "approximate analytic solutions, but they usually lack in speed or accuracy."
 msgstr ""
-"今までは、ロボットの逆運動学解をとく運動学計算は非常に"
-"難しく、多数の細かい作業を必要としていました。そのため、様々な計算技術が大体の解析解を導くために検討"
-"されてきましたが、それらのアルゴリズムは早さと正確さに問題がありました。"
+"今までは、ロボットの逆運動学解をとく運動学計算は非常に難しく、多数の細かい作"
+"業を必要としていました。そのため、様々な計算技術が大体の解析解を導くために検"
+"討されてきましたが、それらのアルゴリズムは早さと正確さに問題がありました。"
 
 #: mujinwww/templates/ik_flyer.html:58
 msgid ""
@@ -606,10 +607,10 @@ msgid ""
 "any robot or kinematic structure, even if it involves more than 7 axes or "
 "closed kinematic chains."
 msgstr ""
-"それに対しMUJINは、ロボット逆運動学方程式を解くことが出来、非常に素早く、"
-"無駄の無いロボットプログラムを生成するツールを開発しました。MUJINの動作計画フ"
-"レームワークは閉リンク機構の存在に関係なく７軸以上の多軸ロボットをも含む全て"
-"のロボット構造に対応しております。"
+"それに対しMUJINは、ロボット逆運動学方程式を解くことが出来、非常に素早く、無駄"
+"の無いロボットプログラムを生成するツールを開発しました。MUJINの動作計画フレー"
+"ムワークは閉リンク機構の存在に関係なく７軸以上の多軸ロボットをも含む全てのロ"
+"ボット構造に対応しております。"
 
 #: mujinwww/templates/ik_flyer.html:67
 msgid "Any Kinematic Structure"
@@ -643,7 +644,9 @@ msgstr "認められたソリューション"
 msgid ""
 "MUJIN's IK Solver has a solid track record of analytically solving many "
 "different robot and kinematic structures."
-msgstr "MUJINの逆運動学ソルバーは多種多様なロボットと運動学構造に対応してきた実績があります。"
+msgstr ""
+"MUJINの逆運動学ソルバーは多種多様なロボットと運動学構造に対応してきた実績があ"
+"ります。"
 
 #: mujinwww/templates/ik_flyer.html:97
 msgid "Our solutions are used every day in real-world industrial applications."
@@ -658,15 +661,20 @@ msgid ""
 "Our IK solutions are generated into programs that are robust, fast and "
 "extremely easy to integrate with other software. C++ and Python are natively "
 "supported. Other languages and platforms can call the IK solver externally."
-msgstr "私達の逆運動学ソリューションは他のソフトウェアと素早く且つ、非常に簡単にインテグレート出来るプログラムとしてお客様に提供しております。"
+msgstr ""
+"私達の逆運動学ソリューションは他のソフトウェアと素早く且つ、非常に簡単にイン"
+"テグレート出来るプログラムとしてお客様に提供しております。"
 
 #: mujinwww/templates/ik_flyer.html:111
 msgid ""
 "We'd be happy to help you with your inverse kinematics! To learn more about "
 "us, check out <b>http://mujin.co.jp</b> or contact a representative at "
 "<b>050-3682-7852</b> or email <b>info@mujin.co.jp</b>."
-msgstr "私達はお客様の逆運動学解析のお役に立てれば大変幸せです。詳細についてのお問い合わせにつきましては<b>http://mujin.co.jp</b>をご参照頂くか、弊社の担当まで直接お問い合わせください。電話 "
-"<b>050-3682-7852</b> もしくはEMAIL <b>info@mujin.co.jp</b>にて受け付けております。"
+msgstr ""
+"私達はお客様の逆運動学解析のお役に立てれば大変幸せです。詳細についてのお問い"
+"合わせにつきましては<b>http://mujin.co.jp</b>をご参照頂くか、弊社の担当まで直"
+"接お問い合わせください。電話 <b>050-3682-7852</b> もしくはEMAIL "
+"<b>info@mujin.co.jp</b>にて受け付けております。"
 
 #: mujinwww/templates/ik_flyer.html:117
 msgid "&copy; MUJIN 2013"
@@ -1623,6 +1631,22 @@ msgstr ""
 #: mujinwww/templates/products.html:39
 msgid "Difference between before and after"
 msgstr "MUJINコントローラ導入前と導入後の比較"
+
+#: mujinwww/templates/products.html:40
+#, python-format
+msgid ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_effect_en.png\"> "
+msgstr ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_effect.jpg\">"
+
+#: mujinwww/templates/products.html:41
+#, python-format
+msgid ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_difference_en.png"
+"\"> "
+msgstr ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_difference.jpg"
+"\">"
 
 #: mujinwww/templates/products.html:45
 msgid "Introduction of MUJIN Controller"
