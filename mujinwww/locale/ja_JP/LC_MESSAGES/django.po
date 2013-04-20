@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-20 17:42+0900\n"
+"POT-Creation-Date: 2013-04-20 18:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1645,8 +1645,7 @@ msgid ""
 "<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_difference_en.png"
 "\"> "
 msgstr ""
-"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_difference.jpg"
-"\">"
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/adoptation_difference.jpg\">"
 
 #: mujinwww/templates/products.html:45
 msgid "Introduction of MUJIN Controller"
@@ -2100,6 +2099,10 @@ msgstr "ロボットによる生産システムのシミュレーション"
 msgid "IK Solution for malti-axis machines"
 msgstr "複数軸機械のための逆運動学ソリューション"
 
+#: mujinwww/templates/services.html:68
+msgid "more detail"
+msgstr "詳細はこちら"
+
 #: mujinwww/templates/services.html:70
 msgid "Navigation system for autonomous machines"
 msgstr "自律的機械のためのナビゲーションシステム"
@@ -2547,9 +2550,6 @@ msgstr "物流業界"
 #~ msgstr ""
 #~ "弊社が今週号の日経ビジネス誌に「日本を救うベンチャー１００社」として紹介さ"
 #~ "れました。"
-
-#~ msgid "more detail"
-#~ msgstr "続きはこちら"
 
 #~ msgid "<b>MUJIN</b> was introduced by Nikkan Industrial Newspaper"
 #~ msgstr "株式会社MUJINが日刊工業新聞に紹介されました。"
