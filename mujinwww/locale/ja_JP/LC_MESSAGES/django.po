@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-20 18:06+0900\n"
+"POT-Creation-Date: 2013-04-22 20:42+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgid ""
 msgstr "ゲートではアントレプレナープラザに行く旨をお伝え下さい。"
 
 #: mujinwww/templates/access_map.html:44 mujinwww/templates/careers.html:43
-#: mujinwww/templates/corporate_history.html:13
+#: mujinwww/templates/corporate_history.html:18
 #: mujinwww/templates/corporate_overview.html:53
 msgid "Koishikawa Office"
 msgstr "小石川事業所"
@@ -240,7 +240,7 @@ msgid "Partners"
 msgstr "パートナー企業"
 
 #: mujinwww/templates/business_connections.html:10
-#: mujinwww/templates/business_connections.html:42
+#: mujinwww/templates/business_connections.html:46
 msgid "Investors"
 msgstr "投資会社"
 
@@ -256,12 +256,14 @@ msgstr "キヤノン株式会社"
 #: mujinwww/templates/business_connections.html:25
 #: mujinwww/templates/business_connections.html:34
 #: mujinwww/templates/business_connections.html:36
-#: mujinwww/templates/business_connections.html:45
+#: mujinwww/templates/business_connections.html:38
+#: mujinwww/templates/business_connections.html:40
+#: mujinwww/templates/business_connections.html:49
 msgid "(Homepage)"
 msgstr "（ホームページ）"
 
 #: mujinwww/templates/business_connections.html:25
-#: mujinwww/templates/business_connections.html:34
+#: mujinwww/templates/business_connections.html:38
 msgid "CEC ltd."
 msgstr "株式会社シーイーシー"
 
@@ -269,11 +271,28 @@ msgstr "株式会社シーイーシー"
 msgid "Partners/Subcontractors"
 msgstr "パートナー企業"
 
+#: mujinwww/templates/business_connections.html:34
+msgid "DENSO WAVE INCORPORATED"
+msgstr "株式会社デンソーウェーブ"
+
+#: mujinwww/templates/business_connections.html:34
+msgid "<a href=\"http://www.denso-wave.com/en/\">"
+msgstr "<a href=\"http://www.denso-wave.com/\">"
+
 #: mujinwww/templates/business_connections.html:36
+msgid "Mitsubishi Electric Corporation"
+msgstr "三菱電機株式会社"
+
+#: mujinwww/templates/business_connections.html:36
+msgid ""
+"<a href=\"http://www.meau.com/eprise/main/sites/public/About_Us/-Home\">"
+msgstr "<a href=\"http://www.mitsubishielectric.co.jp/fa/index.html\">"
+
+#: mujinwww/templates/business_connections.html:40
 msgid "MeiwaEtech"
 msgstr "株式会社明和eテック"
 
-#: mujinwww/templates/business_connections.html:45
+#: mujinwww/templates/business_connections.html:49
 msgid "The University of Tokyo Edge Capital"
 msgstr "UTEC2号投資事業有限責任組合"
 
@@ -353,31 +372,52 @@ msgid "Company Development"
 msgstr "沿革"
 
 #: mujinwww/templates/corporate_history.html:12
-#: mujinwww/templates/corporate_history.html:27
+msgid "Apr"
+msgstr ""
+
+#: mujinwww/templates/corporate_history.html:13
+msgid ""
+"MUJIN Inc. announced to go into partnership with CEC Inc., for development "
+"of new Service RoboDIA"
+msgstr ""
+
+#: mujinwww/templates/corporate_history.html:17
+#: mujinwww/templates/corporate_history.html:37
 msgid "Oct"
 msgstr "10月"
 
-#: mujinwww/templates/corporate_history.html:13
+#: mujinwww/templates/corporate_history.html:18
 msgid "MUJIN Inc. Opened new office at Koishikawa, Bunkyo."
 msgstr "文京区に小石川事業所を設置いたしました。"
 
-#: mujinwww/templates/corporate_history.html:17
+#: mujinwww/templates/corporate_history.html:22
+#: mujinwww/templates/corporate_history.html:27
 msgid "Sep"
 msgstr "9月"
 
-#: mujinwww/templates/corporate_history.html:18
+#: mujinwww/templates/corporate_history.html:23
 msgid "MUJIN Inc. relocated its headquarters to"
 msgstr "MUJINは本社を"
 
-#: mujinwww/templates/corporate_history.html:18
+#: mujinwww/templates/corporate_history.html:23
 msgid "Tokyo University Entrepreneur Plaza."
 msgstr "東京都文京区本郷7-3-1, 東京大学アントレプレナープラザに移転する"
 
-#: mujinwww/templates/corporate_history.html:22
+#: mujinwww/templates/corporate_history.html:28
+msgid ""
+"Industrial Robotics Software Startup MUJIN Inc. raises $950K Series A "
+"funding from UTEC -The University of Tokyo Edge Capital"
+msgstr ""
+
+#: mujinwww/templates/corporate_history.html:28
+msgid "(UTEC Announcement)"
+msgstr ""
+
+#: mujinwww/templates/corporate_history.html:32
 msgid "Jul"
 msgstr "7月"
 
-#: mujinwww/templates/corporate_history.html:23
+#: mujinwww/templates/corporate_history.html:33
 msgid ""
 "MUJIN Inc. was founded in Tokyo, Japan. The team started to apply OpenRAVE "
 "technology to industrial robot system."
@@ -385,15 +425,15 @@ msgstr ""
 "株式会社MUJINが東京にて設立される。OpenRAVEの革新的技術を産業用ロボットに応用"
 "する事を開始。"
 
-#: mujinwww/templates/corporate_history.html:28
+#: mujinwww/templates/corporate_history.html:38
 msgid "OpenRAVE"
 msgstr "OpenRAVE"
 
-#: mujinwww/templates/corporate_history.html:28
+#: mujinwww/templates/corporate_history.html:38
 msgid " started to be released as an open-source software."
 msgstr "がオープンソースソフトウェアとしてリリースされました。"
 
-#: mujinwww/templates/corporate_history.html:33
+#: mujinwww/templates/corporate_history.html:43
 msgid ""
 "Carnegie Mellon University graduate student, Rosen Diankov, invented "
 "OpenRAVE, a robot manipulation planning platform that provides an "
@@ -2103,7 +2143,7 @@ msgstr "複数軸機械のための逆運動学ソリューション"
 msgid "more detail"
 msgstr "詳細はこちら"
 
-#: mujinwww/templates/services.html:70
+#: mujinwww/templates/services.html:71
 msgid "Navigation system for autonomous machines"
 msgstr "自律的機械のためのナビゲーションシステム"
 
