@@ -1701,12 +1701,12 @@ msgid ""
 "A simulation is pointless unless it is consistent with the reality. Most "
 "existing simulation tools have difficulty with ensuring that a planned "
 "trajectory matches up with the robot's motion in reality. MUJIN however is "
-"proud to guarantee our trajectories to at least 95%% precision. What the "
+"proud to guarantee our trajectories to at least 95% precision. What the "
 "program shows on the computer is what will happen in the actual robot cell."
 msgstr ""
 "私達は現実と整合性がとれないシミュレーションツールは意味がないとの信じており"
 "ます。従来のほとんどのシミュレーションソフトは現実での動作や所要時間を保証し"
-"ておりませんが、MUJINコントローラは対応しているメーカーに限っては９９％の精度"
+"ておりませんが、MUJINコントローラは対応しているメーカーに限っては95％の精度"
 "を誇っております。お客様がMUJINコントローラ上でプログラムしたものは、そのまま"
 "現実のロボットの動きとして実現されます。"
 
@@ -1765,7 +1765,7 @@ msgstr ""
 
 #: mujinwww/templates/products.html:100
 msgid "Grasp Planning"
-msgstr "複数アーム動作計画"
+msgstr "把持計画(近日予定)"
 
 #: mujinwww/templates/products.html:102
 msgid "Compute grasps for an object and pick the one most suited for the task."
