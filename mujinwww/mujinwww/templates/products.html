@@ -82,10 +82,17 @@
     </div>
     <div class="row">
       <div class="span3 well">
-        <a class="nohover-highlight feature-item" href="/product_feature_multi">
-          <h4>{% trans "Multi-Robot Manipulation" %}</h4>
-          <img class="thumbnail" src="{{ STATIC_URL }}img/dual_arm.png"/>
-          <p>{% trans "MUJIN leverages planning algorithms for collision-free motion plans with multiple robots in the same environment." %}</p>
+        <a class="nohover-highlight feature-item" href="/product_feature_grasp">
+          <h4>{% trans "Grasp/Release Simulation" %}</h4>
+          <img class="thumbnail" src="/static/img/grasp.gif">
+          <p>{% trans "Simulate trajectories while considering a workpiece in the robots grasp" %}</p>
+        </a>
+      </div>
+      <div class="span3 well">
+        <a class="nohover-highlight feature-item" href="/product_feature_grasp_planning">
+          <h4>{% trans "Grasp Planning" %}</h4>
+          <img class="thumbnail" src="/static/img/grasp.gif">
+          <p>{% trans "Planning the most suited grasps out of specified grasp sets for the task." %}</p>
         </a>
       </div>
       <div class="span3 well">
@@ -95,15 +102,15 @@
           <p>{% trans "Optimize your layout by examining all possible positions and trajectories in an environment." %}</p>
         </a>
       </div>
-      <div class="span3 well">
-        <a class="nohover-highlight feature-item" href="/product_feature_grasp">
-          <h4>{% trans "Grasp Planning" %}</h4>
-          <img class="thumbnail" src="/static/img/grasp.gif">
-          <p>{% trans "Compute grasps for an object and pick the one most suited for the task." %}</p>
-        </a>
-      </div>
     </div>
     <div class="row">
+      <div class="span3 well">
+        <a class="nohover-highlight feature-item" href="/product_feature_multi">
+          <h4>{% trans "Multi-Robot Manipulation" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/dual_arm.png"/>
+          <p>{% trans "MUJIN leverages planning algorithms for collision-free motion plans with multiple robots in the same environment." %}</p>
+        </a>
+      </div>
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_itl">
           <h4>{% trans "Industrial Task Language" %} </h4>
@@ -118,6 +125,8 @@
           <p>{% trans "The controller outputs the robot manufacturer's program, so there is no need to write it yourself." %}</p>
         </a>
       </div>
+    </div>
+    <div class="row">
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_zero">
           <h4>{% trans "Zero Installation" %}</h4>
@@ -125,8 +134,6 @@
           <p>{% trans "Use the controller through your web browser on any platform you like." %}</p>
         </a>
       </div>
-    </div>
-    <div class="row">
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_cadsoft">
           <h4>{% trans "No CAD Dependencies" %}</h4>

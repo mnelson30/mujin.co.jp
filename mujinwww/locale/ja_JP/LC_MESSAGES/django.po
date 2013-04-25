@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-22 20:42+0900\n"
+"POT-Creation-Date: 2013-04-26 00:29+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -546,7 +546,7 @@ msgid "Telephone"
 msgstr "電話"
 
 #: mujinwww/templates/feature_slider.html:17
-#: mujinwww/templates/products.html:220
+#: mujinwww/templates/products.html:227
 msgid "MUJIN Controller Cloud"
 msgstr "MUJINコントローラ　クラウド"
 
@@ -562,7 +562,7 @@ msgstr "20-100CPUコアを同時に使用しながら動作の最適化の実現
 
 #: mujinwww/templates/feature_slider.html:27 mujinwww/templates/index.html:80
 #: mujinwww/templates/products.html:5 mujinwww/templates/products.html:19
-#: mujinwww/templates/products.html:174 mujinwww/templates/products.html:180
+#: mujinwww/templates/products.html:181 mujinwww/templates/products.html:187
 msgid "MUJIN Controller"
 msgstr "MUJINコントローラ"
 
@@ -974,6 +974,7 @@ msgstr ""
 #: mujinwww/templates/product_feature_cadsoft.html:18
 #: mujinwww/templates/product_feature_collision.html:76
 #: mujinwww/templates/product_feature_grasp.html:18
+#: mujinwww/templates/product_feature_grasp_planning.html:15
 #: mujinwww/templates/product_feature_ik.html:17
 #: mujinwww/templates/product_feature_itl.html:31
 #: mujinwww/templates/product_feature_multi.html:20
@@ -1378,6 +1379,19 @@ msgstr ""
 "使用出来る事により、複雑な組み立て等の工程も簡単にシミュレーション出来るよう"
 "になります。"
 
+#: mujinwww/templates/product_feature_grasp_planning.html:5
+#: mujinwww/templates/products.html:93
+msgid "Grasp Planning"
+msgstr "把持計画(近日予定)"
+
+#: mujinwww/templates/product_feature_grasp_planning.html:7
+msgid ""
+"The MUJIN Controller has a function which can optimize grasp out of "
+"specified grasp sets. After the user specified possible grasp sets for the "
+"workpiece, MUJIN Controller automatically simulates all possible task "
+"trajectory and tells you which grasp set is the most suitable for the task."
+msgstr "MUJINコントローラは指定された複数の把持セットの中から最適な把持を探索する機能を有しています。ユーザーがワークピースに対して可能な把持セットを指定後、MUJINコントローラが自動で全可能軌道を検証し、そのタスクに対してどの把持が最も効率が良いかを算出します。"
+
 #: mujinwww/templates/product_feature_ik.html:5
 msgid "MUJIN Inc.| Product Feature IK"
 msgstr "株式会社MUJIN | 製品機能ー逆運動学"
@@ -1484,7 +1498,7 @@ msgstr ""
 "単に作成でき、大幅なコスト削減を可能にします。"
 
 #: mujinwww/templates/product_feature_opt.html:5
-#: mujinwww/templates/products.html:93
+#: mujinwww/templates/products.html:100
 msgid "Placement Optimizations"
 msgstr "ロボット配置の最適化"
 
@@ -1571,7 +1585,7 @@ msgstr ""
 "けで、すぐに実機で動作検証して頂けます。"
 
 #: mujinwww/templates/product_feature_zero.html:5
-#: mujinwww/templates/products.html:123
+#: mujinwww/templates/products.html:132
 msgid "Zero Installation"
 msgstr "ゼロインストール"
 
@@ -1589,7 +1603,7 @@ msgstr ""
 msgid "Features"
 msgstr "製品機能"
 
-#: mujinwww/templates/products.html:7 mujinwww/templates/products.html:142
+#: mujinwww/templates/products.html:7 mujinwww/templates/products.html:149
 msgid "Applications"
 msgstr "アプリケーション"
 
@@ -1706,9 +1720,9 @@ msgid ""
 msgstr ""
 "私達は現実と整合性がとれないシミュレーションツールは意味がないとの信じており"
 "ます。従来のほとんどのシミュレーションソフトは現実での動作や所要時間を保証し"
-"ておりませんが、MUJINコントローラは対応しているメーカーに限っては95％の精度"
-"を誇っております。お客様がMUJINコントローラ上でプログラムしたものは、そのまま"
-"現実のロボットの動きとして実現されます。"
+"ておりませんが、MUJINコントローラは対応しているメーカーに限っては95％の精度を"
+"誇っております。お客様がMUJINコントローラ上でプログラムしたものは、そのまま現"
+"実のロボットの動きとして実現されます。"
 
 #: mujinwww/templates/products.html:56
 msgid "Product Features"
@@ -1744,18 +1758,19 @@ msgid ""
 msgstr "算出される軌道は実機での動作比較で95％の精度を保証いたします。"
 
 #: mujinwww/templates/products.html:86
-msgid "Multi-Robot Manipulation"
-msgstr "複数ロボット制御"
+msgid "Grasp/Release Simulation"
+msgstr "把持/解放シミュレーション"
 
 #: mujinwww/templates/products.html:88
-msgid ""
-"MUJIN leverages planning algorithms for collision-free motion plans with "
-"multiple robots in the same environment."
-msgstr ""
-"ほとんどのロボットシミュレーションパッケージは単体のロボットのみに対応してお"
-"り、複数ロボットでの協調動作を算出する事は不可能でした。"
+msgid "Simulate trajectories while considering a workpiece in the robots grasp"
+msgstr "ロボットが把持しているワークピースまで考慮して干渉回避軌道を生成します。"
 
 #: mujinwww/templates/products.html:95
+msgid ""
+"Planning the most suited grasps out of specified grasp sets for the task."
+msgstr "指定された複数の把持セットの中から、タスクに最も適した把持を計画いたします。"
+
+#: mujinwww/templates/products.html:102
 msgid ""
 "Optimize your layout by examining all possible positions and trajectories in "
 "an environment."
@@ -1763,19 +1778,23 @@ msgstr ""
 "全ての候補配置においての全ての軌道を分析しお客様のレイアウトを最適化いたしま"
 "す。"
 
-#: mujinwww/templates/products.html:100
-msgid "Grasp Planning"
-msgstr "把持計画(近日予定)"
-
-#: mujinwww/templates/products.html:102
-msgid "Compute grasps for an object and pick the one most suited for the task."
-msgstr "物体の把持ポイントを計算し、そのタスクに最も適した部分を把持します。"
-
 #: mujinwww/templates/products.html:109
+msgid "Multi-Robot Manipulation"
+msgstr "複数ロボット制御"
+
+#: mujinwww/templates/products.html:111
+msgid ""
+"MUJIN leverages planning algorithms for collision-free motion plans with "
+"multiple robots in the same environment."
+msgstr ""
+"ほとんどのロボットシミュレーションパッケージは単体のロボットのみに対応してお"
+"り、複数ロボットでの協調動作を算出する事は不可能でした。"
+
+#: mujinwww/templates/products.html:116
 msgid "Industrial Task Language"
 msgstr "インダストリアルタスク言語とは？"
 
-#: mujinwww/templates/products.html:111
+#: mujinwww/templates/products.html:118
 msgid ""
 "ITL is MUJIN's easy to learn, generic robot programming language which can "
 "specify tasks for any robot manufacturer."
@@ -1783,11 +1802,11 @@ msgstr ""
 "インダストリアルタスク言語はMUJINが独自開発したロボットメーカーに関係なく使用"
 "できる非常に覚えやすいロボット言語です。"
 
-#: mujinwww/templates/products.html:116
+#: mujinwww/templates/products.html:123
 msgid "Robot Program Output"
 msgstr "メーカー特有プログラムを自動排出"
 
-#: mujinwww/templates/products.html:118
+#: mujinwww/templates/products.html:125
 msgid ""
 "The controller outputs the robot manufacturer's program, so there is no need "
 "to write it yourself."
@@ -1795,17 +1814,17 @@ msgstr ""
 "MUJINコントローラはメーカー事に異なるロボットプログラムを自動で排出いたしま"
 "す。これによりお客様自身がプログラムを書く時間を削減いたします。"
 
-#: mujinwww/templates/products.html:125
+#: mujinwww/templates/products.html:134
 msgid "Use the controller through your web browser on any platform you like."
 msgstr ""
 "お客様はOSに関係なくお好きなウェブブラウザーをとおして当コントローラを使用し"
 "て頂きます。なかでもGoogle Chrome及びMozzila Firefoxを推奨しております。"
 
-#: mujinwww/templates/products.html:132
+#: mujinwww/templates/products.html:139
 msgid "No CAD Dependencies"
 msgstr "CADソフトへの非依存"
 
-#: mujinwww/templates/products.html:134
+#: mujinwww/templates/products.html:141
 msgid ""
 "The controller does not require any specific 3D CAD software. Users can "
 "easily import from most common formats."
@@ -1813,83 +1832,83 @@ msgstr ""
 "MUJINコントローラは特別な3D CADソフトは必要ありません。お客様がお使いの３DCAD"
 "フォーマットをそのまま簡単にインポートする事が可能です。"
 
-#: mujinwww/templates/products.html:147 mujinwww/templates/vision.html:33
+#: mujinwww/templates/products.html:154 mujinwww/templates/vision.html:33
 msgid "Automotive"
 msgstr "自動車業界"
 
-#: mujinwww/templates/products.html:150
+#: mujinwww/templates/products.html:157
 msgid "Electronics"
 msgstr "電機業界"
 
-#: mujinwww/templates/products.html:153 mujinwww/templates/vision.html:31
+#: mujinwww/templates/products.html:160 mujinwww/templates/vision.html:31
 msgid "Medical"
 msgstr "医療業界"
 
-#: mujinwww/templates/products.html:156
+#: mujinwww/templates/products.html:163
 msgid "Special Robot/Machines"
 msgstr "カスタマイズロボット/専用機械/特殊機械"
 
-#: mujinwww/templates/products.html:164
+#: mujinwww/templates/products.html:171
 msgid "Operation Demo"
 msgstr "操作デモ"
 
-#: mujinwww/templates/products.html:166
+#: mujinwww/templates/products.html:173
 msgid "MUJIN Controller has user-friendly interface"
 msgstr "MUJINコントローラの操作しやすいインターフェース"
 
-#: mujinwww/templates/products.html:172
+#: mujinwww/templates/products.html:179
 msgid "Controller Spec"
 msgstr "製品スペック"
 
-#: mujinwww/templates/products.html:178
+#: mujinwww/templates/products.html:185
 msgid "Product Description"
 msgstr "製品名"
 
-#: mujinwww/templates/products.html:184
+#: mujinwww/templates/products.html:191
 msgid "Dimensions"
 msgstr "寸法"
 
-#: mujinwww/templates/products.html:188
+#: mujinwww/templates/products.html:195
 msgid "Height"
 msgstr "高さ"
 
-#: mujinwww/templates/products.html:189
+#: mujinwww/templates/products.html:196
 msgid "Width"
 msgstr "幅"
 
-#: mujinwww/templates/products.html:190
+#: mujinwww/templates/products.html:197
 msgid "Depth"
 msgstr "奥行き"
 
-#: mujinwww/templates/products.html:195
+#: mujinwww/templates/products.html:202
 msgid "Weight"
 msgstr "重量"
 
-#: mujinwww/templates/products.html:199
+#: mujinwww/templates/products.html:206
 msgid "Power Consumption"
 msgstr "消費電力"
 
-#: mujinwww/templates/products.html:203
+#: mujinwww/templates/products.html:210
 msgid "Cores"
 msgstr "コア"
 
-#: mujinwww/templates/products.html:204
+#: mujinwww/templates/products.html:211
 msgid "12 core (24 threads)"
 msgstr "12コア (24スレッド）"
 
-#: mujinwww/templates/products.html:207
+#: mujinwww/templates/products.html:214
 msgid "Core Clockspeed"
 msgstr "コアクロックスピード"
 
-#: mujinwww/templates/products.html:211
+#: mujinwww/templates/products.html:218
 msgid "RAM"
 msgstr "RAM"
 
-#: mujinwww/templates/products.html:215
+#: mujinwww/templates/products.html:222
 msgid "HDD Capacity for Customer"
 msgstr "お客様用HDD容量"
 
-#: mujinwww/templates/products.html:222
+#: mujinwww/templates/products.html:229
 msgid ""
 "MUJIN is proud to offer its controller as a cloud service! Enjoy better "
 "performance, save money and receive free upgrades without the hassle of "
@@ -1899,15 +1918,15 @@ msgstr ""
 "フォーマンス、コスト削減、そして実機のメンテナンス無しの無料アップグレードを"
 "お楽しみください。"
 
-#: mujinwww/templates/products.html:229
+#: mujinwww/templates/products.html:236
 msgid "Licensing Options"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/products.html:231
+#: mujinwww/templates/products.html:238
 msgid "Annual Licensing Option"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/products.html:232
+#: mujinwww/templates/products.html:239
 msgid ""
 "MUJIN offers annual licenses of our controllers to commercial companies. "
 "License fees differ depending on which kind of MUJIN Controller you choose "
@@ -1918,19 +1937,19 @@ msgstr ""
 "MUJINコントローラクラウドの方がサーバーが付帯する通常版よりもお安くなります。"
 "価格の詳細につきましてはお気軽に"
 
-#: mujinwww/templates/products.html:232
+#: mujinwww/templates/products.html:239
 msgid "contact us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/products.html:232 mujinwww/templates/products.html:253
+#: mujinwww/templates/products.html:239 mujinwww/templates/products.html:260
 msgid "or call +81-050-3682-7852."
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
-#: mujinwww/templates/products.html:233
+#: mujinwww/templates/products.html:240
 msgid "Academic Licensing Option"
 msgstr "アカデミックライセンス制"
 
-#: mujinwww/templates/products.html:234
+#: mujinwww/templates/products.html:241
 msgid ""
 "MUJIN offers academic licenses to non-commercial research programs. These "
 "licenses are only for academic research and for student projects. We expect "
@@ -1943,11 +1962,11 @@ msgstr ""
 "れ、ロボット工学、電機工学、その他の分野の多くの先生方にご利用される事を願っ"
 "ております。"
 
-#: mujinwww/templates/products.html:235
+#: mujinwww/templates/products.html:242
 msgid "The academic licensing agreement includes the following provisions:"
 msgstr "アカデミックライセンス契約には以下の規定を定めています。"
 
-#: mujinwww/templates/products.html:238
+#: mujinwww/templates/products.html:245
 msgid ""
 "The software may only be used for non-commercial research not sponsored by "
 "an organization that could receive economic benefits from the work."
@@ -1955,38 +1974,38 @@ msgstr ""
 "本ソフトウェアは非営利目的の研究に使用される事（その研究から経済的利益を得る"
 "可能性があるスポンサーがついていない事）"
 
-#: mujinwww/templates/products.html:239
+#: mujinwww/templates/products.html:246
 msgid "Technical support would be provided to a single contact person."
 msgstr ""
 "テクニカルサポートを受けられる対象者は一人の代表担当者のみに限定させて頂く事"
 "のご承認"
 
-#: mujinwww/templates/products.html:245
+#: mujinwww/templates/products.html:252
 msgid "How to get a MUJIN Controller"
 msgstr "MUJINコントローラの購入方法"
 
-#: mujinwww/templates/products.html:250
+#: mujinwww/templates/products.html:257
 msgid "Contact MUJIN sales"
 msgstr "MUJINの営業担当者へのお問い合わせ"
 
-#: mujinwww/templates/products.html:253
+#: mujinwww/templates/products.html:260
 msgid "Please send an inquiry by"
 msgstr "メールにてお問い合わせ頂くか"
 
-#: mujinwww/templates/products.html:259
+#: mujinwww/templates/products.html:266
 msgid "Present your problem"
 msgstr "お客様のボトルネックの把握"
 
-#: mujinwww/templates/products.html:262
+#: mujinwww/templates/products.html:269
 msgid "MUJIN will arrange a meeting with you to fully understand your problem."
 msgstr ""
 "MUJINはお客様のボトルネックをより深く理解するために面談をお願いしております。"
 
-#: mujinwww/templates/products.html:267
+#: mujinwww/templates/products.html:274
 msgid "Receive MUJIN proposal"
 msgstr "MUJINからのご提案"
 
-#: mujinwww/templates/products.html:270
+#: mujinwww/templates/products.html:277
 msgid ""
 "We analyze the problem and propose a MUJIN solution considering all the "
 "constraints and requirements. We will also decide the details about the "
@@ -1995,11 +2014,11 @@ msgstr ""
 "私達はボトルネックを分析し全ての制約条件とご要求を考慮したMUJINのソリューショ"
 "ンを提案させて頂きます。"
 
-#: mujinwww/templates/products.html:276
+#: mujinwww/templates/products.html:283
 msgid "Approve a quotation"
 msgstr "お見積書への同意"
 
-#: mujinwww/templates/products.html:279
+#: mujinwww/templates/products.html:286
 msgid ""
 "MUJIN sales sends you a quotation, and as soon as you approve it, the "
 "product will be delivered."
@@ -2007,11 +2026,11 @@ msgstr ""
 "MUJINの営業部よりお見積書を送付させて頂きます。お客様の了解を得次第、商品を出"
 "荷させて頂きます。"
 
-#: mujinwww/templates/products.html:285
+#: mujinwww/templates/products.html:292
 msgid "Start operation"
 msgstr "作業開始"
 
-#: mujinwww/templates/products.html:288
+#: mujinwww/templates/products.html:295
 msgid ""
 "You will be fully supported by MUJIN engineers as soon as the contract takes "
 "effect."
@@ -2334,6 +2353,11 @@ msgstr "電機業界"
 #: mujinwww/templates/vision.html:34
 msgid "Logistical"
 msgstr "物流業界"
+
+#~ msgid ""
+#~ "Compute grasps for an object and pick the one most suited for the task."
+#~ msgstr ""
+#~ "物体の把持ポイントを計算し、そのタスクに最も適した部分を把持します。"
 
 #~ msgid "The MUJIN Controller"
 #~ msgstr "MUJINコントローラ"
