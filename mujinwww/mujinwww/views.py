@@ -112,5 +112,5 @@ def news(request):
     template = {'news': get_translated_news(request, news)}
     return render_to_response('news.html', RequestContext(request, template))
 
-def ignore(request):
+def ignore(request,*args,**kwargs):
     return HttpResponseNotFound()
