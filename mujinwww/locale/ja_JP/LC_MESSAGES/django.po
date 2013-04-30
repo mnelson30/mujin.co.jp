@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-26 00:29+0900\n"
+"POT-Creation-Date: 2013-04-30 20:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -373,13 +373,15 @@ msgstr "沿革"
 
 #: mujinwww/templates/corporate_history.html:12
 msgid "Apr"
-msgstr ""
+msgstr "4月"
 
 #: mujinwww/templates/corporate_history.html:13
 msgid ""
 "MUJIN Inc. announced to go into partnership with CEC Inc., for development "
 "of new Service RoboDIA"
 msgstr ""
+"MUJINはシーイーシー社と産業用ロボット向けの新サービス、RobotDIA開発において業"
+"務提携いたしました。"
 
 #: mujinwww/templates/corporate_history.html:17
 #: mujinwww/templates/corporate_history.html:37
@@ -408,10 +410,12 @@ msgid ""
 "Industrial Robotics Software Startup MUJIN Inc. raises $950K Series A "
 "funding from UTEC -The University of Tokyo Edge Capital"
 msgstr ""
+"株式会社MUJIN、75百万円のシリーズＡ資金を東京大学エッジキャピタル（UTEC）から"
+"調達"
 
 #: mujinwww/templates/corporate_history.html:28
 msgid "(UTEC Announcement)"
-msgstr ""
+msgstr "UTECプレスリリース"
 
 #: mujinwww/templates/corporate_history.html:32
 msgid "Jul"
@@ -1029,66 +1033,70 @@ msgid "Ph.D from Carnegie Mellon University"
 msgstr "カーネギーメロン大学にてロボット工学博士号取得"
 
 #: mujinwww/templates/our_team.html:39
+msgid "JSPS Postdoctoral Fellowship in JSK Tokyo University"
+msgstr "東京大学JSKにてJSPS特別研究員として従事"
+
+#: mujinwww/templates/our_team.html:40
 msgid "OpenRAVE - Founder and Developer"
 msgstr "OpenRAVE - 発明者/開発者"
 
-#: mujinwww/templates/our_team.html:41
+#: mujinwww/templates/our_team.html:42
 msgid "Automated Construction of Robotics Manipulation Programs"
 msgstr "ロボット動作プログラムの自動生成"
 
-#: mujinwww/templates/our_team.html:49
+#: mujinwww/templates/our_team.html:50
 msgid "Chief of Software Development - Huan Liu"
 msgstr "ソフトウェア開発室長 - Huan Liu"
 
-#: mujinwww/templates/our_team.html:56
+#: mujinwww/templates/our_team.html:57
 msgid "Graduated from Massachusetts Institute of Technology"
 msgstr "マサチューセッツ工科大学卒"
 
-#: mujinwww/templates/our_team.html:57
+#: mujinwww/templates/our_team.html:58
 msgid "Master of Engineering from Massachusetts Institute of Technology"
 msgstr "マサチューセッツ工科大学大学院にて修士取得"
 
-#: mujinwww/templates/our_team.html:58
+#: mujinwww/templates/our_team.html:59
 msgid "Oracle Corporation"
 msgstr "オラクル"
 
-#: mujinwww/templates/our_team.html:63
+#: mujinwww/templates/our_team.html:64
 msgid "Software Engineer - Lucas Palage Doyle"
 msgstr "ソフトウェアエンジニア - Lucas Palage Doyle"
 
-#: mujinwww/templates/our_team.html:70
+#: mujinwww/templates/our_team.html:71
 msgid "Graduated from Rensselaer Polytechnic Institute"
 msgstr "レンセラー工科大学卒"
 
-#: mujinwww/templates/our_team.html:72
+#: mujinwww/templates/our_team.html:73
 msgid "Team leader in Boeing Robotic Wingbox Project"
 msgstr "ボーイング社の主翼内ロボットプロジェクトにてリーダーとして従事"
 
-#: mujinwww/templates/our_team.html:74
+#: mujinwww/templates/our_team.html:75
 msgid "Harvard-Smithsonian Center for Astrophysics"
 msgstr "ハーバードスミソニアンセンターにて勤務"
 
-#: mujinwww/templates/our_team.html:75
+#: mujinwww/templates/our_team.html:76
 msgid "Robotics Intern at Anybots"
 msgstr "Anybots社にてインターン"
 
-#: mujinwww/templates/our_team.html:80
+#: mujinwww/templates/our_team.html:81
 msgid "Visiting Scientist - Pham Quang Cuong"
 msgstr "客員研究員 - Pham Quang Cuang"
 
-#: mujinwww/templates/our_team.html:87
+#: mujinwww/templates/our_team.html:88
 msgid "Graduated from École Normale Supérieure rue d'Ulm"
 msgstr "エコール・ノルマル・シュペリウール(パリ)卒"
 
-#: mujinwww/templates/our_team.html:88
+#: mujinwww/templates/our_team.html:89
 msgid "Ph.D from Collège de France"
 msgstr "コレージュ・ド・フランスにて博士号取得"
 
-#: mujinwww/templates/our_team.html:89
+#: mujinwww/templates/our_team.html:90
 msgid "JSPS researcher at University of Tokyo"
 msgstr "東京大学にてJSPS特別研究員として従事"
 
-#: mujinwww/templates/our_team.html:90
+#: mujinwww/templates/our_team.html:91
 msgid "RSS 2012 Best Paper Award"
 msgstr "RSS 2012年度ベストペーパー賞受賞"
 
@@ -1390,7 +1398,11 @@ msgid ""
 "specified grasp sets. After the user specified possible grasp sets for the "
 "workpiece, MUJIN Controller automatically simulates all possible task "
 "trajectory and tells you which grasp set is the most suitable for the task."
-msgstr "MUJINコントローラは指定された複数の把持セットの中から最適な把持を探索する機能を有しています。ユーザーがワークピースに対して可能な把持セットを指定後、MUJINコントローラが自動で全可能軌道を検証し、そのタスクに対してどの把持が最も効率が良いかを算出します。"
+msgstr ""
+"MUJINコントローラは指定された複数の把持セットの中から最適な把持を探索する機能"
+"を有しています。ユーザーがワークピースに対して可能な把持セットを指定後、MUJIN"
+"コントローラが自動で全可能軌道を検証し、そのタスクに対してどの把持が最も効率"
+"が良いかを算出します。"
 
 #: mujinwww/templates/product_feature_ik.html:5
 msgid "MUJIN Inc.| Product Feature IK"
@@ -1763,12 +1775,14 @@ msgstr "把持/解放シミュレーション"
 
 #: mujinwww/templates/products.html:88
 msgid "Simulate trajectories while considering a workpiece in the robots grasp"
-msgstr "ロボットが把持しているワークピースまで考慮して干渉回避軌道を生成します。"
+msgstr ""
+"ロボットが把持しているワークピースまで考慮して干渉回避軌道を生成します。"
 
 #: mujinwww/templates/products.html:95
 msgid ""
 "Planning the most suited grasps out of specified grasp sets for the task."
-msgstr "指定された複数の把持セットの中から、タスクに最も適した把持を計画いたします。"
+msgstr ""
+"指定された複数の把持セットの中から、タスクに最も適した把持を計画いたします。"
 
 #: mujinwww/templates/products.html:102
 msgid ""
@@ -1917,6 +1931,14 @@ msgstr ""
 "MUJINはクラウドサービスを通してコントローラの提供を開始いたします。よりよいパ"
 "フォーマンス、コスト削減、そして実機のメンテナンス無しの無料アップグレードを"
 "お楽しみください。"
+
+#: mujinwww/templates/products.html:231
+#, python-format
+msgid ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\"/"
+">"
+msgstr ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_en.png\">"
 
 #: mujinwww/templates/products.html:236
 msgid "Licensing Options"
