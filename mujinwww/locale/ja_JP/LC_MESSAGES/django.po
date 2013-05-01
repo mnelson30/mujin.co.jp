@@ -1935,10 +1935,9 @@ msgstr ""
 #: mujinwww/templates/products.html:231
 #, python-format
 msgid ""
-"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\"/"
-">"
-msgstr ""
 "<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_en.png\">"
+msgstr ""
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\">"
 
 #: mujinwww/templates/products.html:236
 msgid "Licensing Options"
