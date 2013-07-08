@@ -102,8 +102,15 @@
           <p>{% trans "Optimize your layout by examining all possible positions and trajectories in an environment." %}</p>
         </a>
       </div>
-    </div>
+    </div>    
     <div class="row">
+      <div class="span3 well">
+        <a class="nohover-highlight feature-item" href="/product_feature_clearance">
+          <h4>{% trans "Clearance Setting" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/clearance.png"/>
+          <p>{% trans "It is possible to set an obstacle clearance so that all parts of the robot and its grabbed objects can be at least specified distance away from obstacles." %}</p>
+        </a>
+      </div>
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_multi">
           <h4>{% trans "Multi-Robot Manipulation" %}</h4>
@@ -118,6 +125,8 @@
           <p>{% trans "ITL is MUJIN's easy to learn, generic robot programming language which can specify tasks for any robot manufacturer." %}</p>
         </a>
       </div>
+    </div>
+    <div class="row">
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_program">
           <h4>{% trans "Robot Program Output" %}</h4>
@@ -125,8 +134,6 @@
           <p>{% trans "The controller outputs the robot manufacturer's program, so there is no need to write it yourself." %}</p>
         </a>
       </div>
-    </div>
-    <div class="row">
       <div class="span3 well">
         <a class="nohover-highlight feature-item" href="/product_feature_zero">
           <h4>{% trans "Zero Installation" %}</h4>
