@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-23 16:39+0900\n"
+"POT-Creation-Date: 2013-08-23 18:21+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,7 +240,7 @@ msgid "Partners"
 msgstr "パートナー企業"
 
 #: mujinwww/templates/business_connections.html:10
-#: mujinwww/templates/business_connections.html:48
+#: mujinwww/templates/business_connections.html:54
 msgid "Investors"
 msgstr "投資会社"
 
@@ -254,50 +254,55 @@ msgstr "キヤノン株式会社"
 
 #: mujinwww/templates/business_connections.html:19
 #: mujinwww/templates/business_connections.html:25
-#: mujinwww/templates/business_connections.html:34
-#: mujinwww/templates/business_connections.html:36
-#: mujinwww/templates/business_connections.html:38
+#: mujinwww/templates/business_connections.html:31
 #: mujinwww/templates/business_connections.html:40
 #: mujinwww/templates/business_connections.html:42
-#: mujinwww/templates/business_connections.html:51
+#: mujinwww/templates/business_connections.html:44
+#: mujinwww/templates/business_connections.html:46
+#: mujinwww/templates/business_connections.html:48
+#: mujinwww/templates/business_connections.html:57
 msgid "(Homepage)"
 msgstr "（ホームページ）"
 
 #: mujinwww/templates/business_connections.html:25
-#: mujinwww/templates/business_connections.html:38
+msgid "Honda Engineering Co., Ltd"
+msgstr "ホンダエンジニアリング株式会社"
+
+#: mujinwww/templates/business_connections.html:31
+#: mujinwww/templates/business_connections.html:44
 msgid "CEC ltd."
 msgstr "株式会社シーイーシー"
 
-#: mujinwww/templates/business_connections.html:31
+#: mujinwww/templates/business_connections.html:37
 msgid "Partners/Subcontractors"
 msgstr "パートナー企業"
 
-#: mujinwww/templates/business_connections.html:34
+#: mujinwww/templates/business_connections.html:40
 msgid "DENSO WAVE INCORPORATED"
 msgstr "株式会社デンソーウェーブ"
 
-#: mujinwww/templates/business_connections.html:34
+#: mujinwww/templates/business_connections.html:40
 msgid "<a href=\"http://www.denso-wave.com/en/\">"
 msgstr "<a href=\"http://www.denso-wave.com/\">"
 
-#: mujinwww/templates/business_connections.html:36
+#: mujinwww/templates/business_connections.html:42
 msgid "Mitsubishi Electric Corporation"
 msgstr "三菱電機株式会社"
 
-#: mujinwww/templates/business_connections.html:36
+#: mujinwww/templates/business_connections.html:42
 msgid ""
 "<a href=\"http://www.meau.com/eprise/main/sites/public/About_Us/-Home\">"
 msgstr "<a href=\"http://www.mitsubishielectric.co.jp/fa/index.html\">"
 
-#: mujinwww/templates/business_connections.html:40
+#: mujinwww/templates/business_connections.html:46
 msgid "Knowledge ltd."
-msgstr ""
+msgstr "株式会社ナレッジ"
 
-#: mujinwww/templates/business_connections.html:42
+#: mujinwww/templates/business_connections.html:48
 msgid "MeiwaEtech"
 msgstr "株式会社明和eテック"
 
-#: mujinwww/templates/business_connections.html:51
+#: mujinwww/templates/business_connections.html:57
 msgid "The University of Tokyo Edge Capital"
 msgstr "UTEC2号投資事業有限責任組合"
 
@@ -306,9 +311,8 @@ msgid "MUJIN Inc.| Careers"
 msgstr "株式会社MUJIN | 採用情報"
 
 #: mujinwww/templates/careers.html:12
-#, fuzzy
 msgid "Robot Motion Planning Engineer"
-msgstr "ロボットの動作計画生成"
+msgstr "ロボットの動作計画エンジニア"
 
 #: mujinwww/templates/careers.html:13 mujinwww/templates/careers.html.py:36
 msgid "Job Description"
@@ -316,12 +320,11 @@ msgstr "業務内容"
 
 #: mujinwww/templates/careers.html:15
 msgid "Core motion planning algorithms"
-msgstr ""
+msgstr "コア動作計画アルゴリズム"
 
 #: mujinwww/templates/careers.html:16
-#, fuzzy
 msgid "Robot dynamics simulations"
-msgstr "複数ロボット制御"
+msgstr "ロボット動力学シミュレーション"
 
 #: mujinwww/templates/careers.html:20 mujinwww/templates/careers.html.py:43
 msgid "Minimum Qualification"
@@ -748,9 +751,8 @@ msgid "MUJIN Inc.| Home"
 msgstr "株式会社MUJIN | ホーム"
 
 #: mujinwww/templates/index.html:25
-#, fuzzy
 msgid " Best tools for robot programming and workcell layout."
-msgstr "ロボットプログラミングとワークセルレイアウトのためのベストツール"
+msgstr "ロボットプログラミングとセルレイアウトのためのベストツール"
 
 #: mujinwww/templates/index.html:29 mujinwww/templates/index.html.py:50
 msgid "Optimizing robot motion for complex object placement"
@@ -1079,7 +1081,7 @@ msgstr "マサチューセッツ工科大学大学院にて修士取得"
 
 #: mujinwww/templates/our_team.html:60
 msgid "Tutoring chair for HKN national EECS honor society"
-msgstr ""
+msgstr "MITにてHKN national EECS honor societyでの準講師部長として従事"
 
 #: mujinwww/templates/our_team.html:62
 msgid "Oracle Corporation"
@@ -1430,7 +1432,15 @@ msgid ""
 "obstacles or goals to accomplish specified task. When the task cannot be "
 "accomplished with specified clearance amount, MUJIN controller automatically "
 "reduces the amount of clearance and tries to complete the task. "
-msgstr "MUJJINコントローラはロボットと障害物間のクリアランス距離を自由に設定できる独創的な機能を備えています。一般的に多くの作業者は安全を確保するため、ある程度のクリアランス量を必要とするため、クリアランス量を確保しながら軌道生成する事が現場では必要となります。MUJINコントローラは可能な限り指定されたクリアランス量を守りながら軌道を生成します。しかし、目標位置にアプローチする場合や、狭い場所を通過する際にはどうしても、設定されたクリアランス量ではタスクを達成する事が不可能な場合があります。その場合には、MUJINコントローラがその状況を判断し、より少ないクリアランス量を自動で割り当てタスクを達成させます。"
+msgstr ""
+"MUJJINコントローラはロボットと障害物間のクリアランス距離を自由に設定できる独"
+"創的な機能を備えています。一般的に多くの作業者は安全を確保するため、ある程度"
+"のクリアランス量を必要とするため、クリアランス量を確保しながら軌道生成する事"
+"が現場では必要となります。MUJINコントローラは可能な限り指定されたクリアランス"
+"量を守りながら軌道を生成します。しかし、目標位置にアプローチする場合や、狭い"
+"場所を通過する際にはどうしても、設定されたクリアランス量ではタスクを達成する"
+"事が不可能な場合があります。その場合には、MUJINコントローラがその状況を判断"
+"し、より少ないクリアランス量を自動で割り当てタスクを達成させます。"
 
 #: mujinwww/templates/product_feature_clearance.html:13
 msgid "Clearance setting 30mm"
@@ -1891,7 +1901,9 @@ msgid ""
 "It is possible to set an obstacle clearance so that all parts of the robot "
 "and its grabbed objects can be at least specified distance away from "
 "obstacles."
-msgstr "クリアランス量を設定することにより、ロボット及びロボットが把持している物と障害物との間の最低クリアランス量を確保する事ができます。"
+msgstr ""
+"クリアランス量を設定することにより、ロボット及びロボットが把持している物と障"
+"害物との間の最低クリアランス量を確保する事ができます。"
 
 #: mujinwww/templates/products.html:116
 msgid "Multi-Robot Manipulation"
@@ -1902,7 +1914,8 @@ msgid ""
 "MUJIN leverages planning algorithms for collision-free motion plans with "
 "multiple robots in the same environment."
 msgstr ""
-"MUJINは独自の動作計画アルゴリズムを拡張させる事により、同環境下の複数ロボットでもお互いの干渉を回避しながら動作計画を行う事が可能です。"
+"MUJINは独自の動作計画アルゴリズムを拡張させる事により、同環境下の複数ロボット"
+"でもお互いの干渉を回避しながら動作計画を行う事が可能です。"
 
 #: mujinwww/templates/products.html:123
 msgid "Industrial Task Language"
