@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-23 16:12+0900\n"
+"POT-Creation-Date: 2013-08-23 16:39+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -265,7 +265,6 @@ msgstr "（ホームページ）"
 
 #: mujinwww/templates/business_connections.html:25
 #: mujinwww/templates/business_connections.html:38
-#: mujinwww/templates/business_connections.html:40
 msgid "CEC ltd."
 msgstr "株式会社シーイーシー"
 
@@ -289,6 +288,10 @@ msgstr "三菱電機株式会社"
 msgid ""
 "<a href=\"http://www.meau.com/eprise/main/sites/public/About_Us/-Home\">"
 msgstr "<a href=\"http://www.mitsubishielectric.co.jp/fa/index.html\">"
+
+#: mujinwww/templates/business_connections.html:40
+msgid "Knowledge ltd."
+msgstr ""
 
 #: mujinwww/templates/business_connections.html:42
 msgid "MeiwaEtech"
@@ -1028,7 +1031,7 @@ msgstr "イスカル社にてセールスエンジニアとして従事"
 
 #: mujinwww/templates/our_team.html:22
 msgid "Freshman Award 2008"
-msgstr "新人賞 2080"
+msgstr "新人賞 2008"
 
 #: mujinwww/templates/our_team.html:23
 msgid "Second Prize for Marketing Proposal Contest 2010"
@@ -1103,9 +1106,8 @@ msgid "Robotics Intern at Anybots"
 msgstr "Anybots社にてインターン"
 
 #: mujinwww/templates/our_team.html:84
-#, fuzzy
 msgid "Software Engineer - Daniel Matthew Taub"
-msgstr "ソフトウェアエンジニア - Lucas Palage Doyle"
+msgstr "ソフトウェアエンジニア - Daniel Matthew Taub"
 
 #: mujinwww/templates/our_team.html:97
 msgid "Visiting Scientist - Pham Quang Cuong"
@@ -1128,47 +1130,42 @@ msgid "RSS 2012 Best Paper Award"
 msgstr "RSS 2012年度ベストペーパー賞受賞"
 
 #: mujinwww/templates/our_team.html:112
-#, fuzzy
 msgid "Visiting Scientist - Ryosuke Tasaki"
-msgstr "客員研究員 - Pham Quang Cuang"
+msgstr "客員研究員 - 田崎　良祐"
 
 #: mujinwww/templates/our_team.html:119
-#, fuzzy
 msgid "Graduated from Kyoto Institute of Technology"
-msgstr "マサチューセッツ工科大学卒"
+msgstr "京都工芸繊維大学卒"
 
 #: mujinwww/templates/our_team.html:120
 msgid "Ph.D from Toyohashi University of Technology"
-msgstr ""
+msgstr "豊橋技術科学大学にて博士号取得"
 
 #: mujinwww/templates/our_team.html:121
-#, fuzzy
 msgid "JSPS researcher at Toyohashi University of Technology "
-msgstr "東京大学にてJSPS特別研究員として従事"
+msgstr "豊橋技術科学大学にてJSPS特別研究員として従事"
 
 #: mujinwww/templates/our_team.html:122
 msgid ""
 "Special research encouragement prize from The Japan Foundry engineering "
 "Society (JFS)"
-msgstr ""
+msgstr "日本鋳造工学会東海支部研究奨励賞"
 
 #: mujinwww/templates/our_team.html:127
-msgid "Intern - Syohei Fujii"
-msgstr ""
+msgid "Intern - Shohei Fujii"
+msgstr "インターン - 藤井　祥平"
 
 #: mujinwww/templates/our_team.html:134
-#, fuzzy
 msgid "Graduated from Tokyo University"
-msgstr "Soka University of America卒"
+msgstr "東京大学　工学部卒"
 
 #: mujinwww/templates/our_team.html:135
 msgid "Engineering dean's list"
-msgstr ""
+msgstr "東京大学工学部長賞　受賞"
 
 #: mujinwww/templates/our_team.html:136
-#, fuzzy
 msgid "Master course at University of Tokyo JSK"
-msgstr "東京大学にてJSPS特別研究員として従事"
+msgstr "東京大学JSKにて修士課程"
 
 #: mujinwww/templates/privacy_policy.html:5
 msgid "MUJIN Inc.| Privacy Policy"
@@ -1422,7 +1419,7 @@ msgstr "サポート済みフォーマット"
 
 #: mujinwww/templates/product_feature_clearance.html:5
 msgid "Clearance Setting Function"
-msgstr ""
+msgstr "クリアランス設定機能"
 
 #: mujinwww/templates/product_feature_clearance.html:7
 msgid ""
@@ -1433,15 +1430,15 @@ msgid ""
 "obstacles or goals to accomplish specified task. When the task cannot be "
 "accomplished with specified clearance amount, MUJIN controller automatically "
 "reduces the amount of clearance and tries to complete the task. "
-msgstr ""
+msgstr "MUJJINコントローラはロボットと障害物間のクリアランス距離を自由に設定できる独創的な機能を備えています。一般的に多くの作業者は安全を確保するため、ある程度のクリアランス量を必要とするため、クリアランス量を確保しながら軌道生成する事が現場では必要となります。MUJINコントローラは可能な限り指定されたクリアランス量を守りながら軌道を生成します。しかし、目標位置にアプローチする場合や、狭い場所を通過する際にはどうしても、設定されたクリアランス量ではタスクを達成する事が不可能な場合があります。その場合には、MUJINコントローラがその状況を判断し、より少ないクリアランス量を自動で割り当てタスクを達成させます。"
 
 #: mujinwww/templates/product_feature_clearance.html:13
 msgid "Clearance setting 30mm"
-msgstr ""
+msgstr "クリアランス設定　30mm"
 
 #: mujinwww/templates/product_feature_clearance.html:20
 msgid "Clearance setting 60mm"
-msgstr ""
+msgstr "クリアランス設定　60mm"
 
 #: mujinwww/templates/product_feature_collision.html:5
 msgid "Automated Collision Avoidance System"
@@ -1735,7 +1732,7 @@ msgstr "全ての人にロボットプログラミングを"
 #: mujinwww/templates/products.html:23
 #, python-format
 msgid "<img src=\"%(STATIC_URL)simg/mujincontroller_snap_en.png\"> "
-msgstr "<img src=\"%(STATIC_URL)simg/mujincontroller_snap_interface.png\">"
+msgstr "<img src=\"%(STATIC_URL)simg/mujincontroller_snap_ja.png\">"
 
 #: mujinwww/templates/products.html:28
 msgid ""
@@ -1887,14 +1884,14 @@ msgstr ""
 
 #: mujinwww/templates/products.html:109
 msgid "Clearance Setting"
-msgstr ""
+msgstr "クリアランス設定"
 
 #: mujinwww/templates/products.html:111
 msgid ""
 "It is possible to set an obstacle clearance so that all parts of the robot "
 "and its grabbed objects can be at least specified distance away from "
 "obstacles."
-msgstr ""
+msgstr "クリアランス量を設定することにより、ロボット及びロボットが把持している物と障害物との間の最低クリアランス量を確保する事ができます。"
 
 #: mujinwww/templates/products.html:116
 msgid "Multi-Robot Manipulation"
@@ -1905,8 +1902,7 @@ msgid ""
 "MUJIN leverages planning algorithms for collision-free motion plans with "
 "multiple robots in the same environment."
 msgstr ""
-"ほとんどのロボットシミュレーションパッケージは単体のロボットのみに対応してお"
-"り、複数ロボットでの協調動作を算出する事は不可能でした。"
+"MUJINは独自の動作計画アルゴリズムを拡張させる事により、同環境下の複数ロボットでもお互いの干渉を回避しながら動作計画を行う事が可能です。"
 
 #: mujinwww/templates/products.html:123
 msgid "Industrial Task Language"
@@ -2037,9 +2033,9 @@ msgstr ""
 "お楽しみください。"
 
 #: mujinwww/templates/products.html:238
-#, fuzzy, python-format
+#, python-format
 msgid ""
-"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\"/"
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_en.png\"/"
 ">"
 msgstr ""
 "<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\">"
