@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-30 20:57+0900\n"
+"POT-Creation-Date: 2013-08-23 16:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,66 +106,66 @@ msgstr "東京都文京区本郷7-3-1, 東京大学アントレプレナープ�
 msgid "Please use the intercomm on the 1st floor to call."
 msgstr "1階のインターフォンにて405号室をお呼びください"
 
-#: mujinwww/templates/access_map.html:18 mujinwww/templates/access_map.html:51
+#: mujinwww/templates/access_map.html:19 mujinwww/templates/access_map.html:52
 msgid "Walking Directions"
 msgstr "最寄駅"
 
-#: mujinwww/templates/access_map.html:21
+#: mujinwww/templates/access_map.html:22
 msgid "Tokyo Metro Marunouchi-line Hongosanchome Station"
 msgstr "東京メトロ丸の内線　本郷三丁目駅"
 
-#: mujinwww/templates/access_map.html:22
+#: mujinwww/templates/access_map.html:23
 msgid "Take Exit No.2. Turn right at the Hongo3 intersection."
 msgstr "２番出口を出て本郷三丁目の交差点を右折"
 
-#: mujinwww/templates/access_map.html:25
+#: mujinwww/templates/access_map.html:26
 msgid "Tokyo Metro Chiyoda-line Yushima Station"
 msgstr "東京メトロ千代田線　湯島駅"
 
-#: mujinwww/templates/access_map.html:26
+#: mujinwww/templates/access_map.html:27
 msgid ""
 "Take Exit No.1. Enter campus at the Tatsuoki-gate in front of the fire "
 "station."
 msgstr "１番出口を出て右折後、消防署の前の龍岡門よりキャンパスにお入りください"
 
-#: mujinwww/templates/access_map.html:29
+#: mujinwww/templates/access_map.html:30
 msgid "Toei Oedo-line Hongosanchome Station"
 msgstr "都営大江戸線　本郷三丁目駅"
 
-#: mujinwww/templates/access_map.html:30
+#: mujinwww/templates/access_map.html:31
 msgid "Take Exit No.5. Turn right and enter campus at the Tatsuoki-gate."
 msgstr "5番出口を出て右折後、龍岡門よりお入りください"
 
-#: mujinwww/templates/access_map.html:34 mujinwww/templates/access_map.html:59
+#: mujinwww/templates/access_map.html:35 mujinwww/templates/access_map.html:60
 msgid "Driving Directions"
 msgstr "お車の場合"
 
-#: mujinwww/templates/access_map.html:35
+#: mujinwww/templates/access_map.html:36
 msgid ""
 "Enter campus from the Tatsuoki-gate. Pass the gate next to the Department of "
 "Pharmacy."
 msgstr "お車の場合は龍岡門から入り直進し、薬学部脇のゲートからお入り下さい。"
 
-#: mujinwww/templates/access_map.html:37
+#: mujinwww/templates/access_map.html:38
 msgid ""
 "Please tell guards at the gate that you are going to Entrepreneur Plaza."
 msgstr "ゲートではアントレプレナープラザに行く旨をお伝え下さい。"
 
-#: mujinwww/templates/access_map.html:44 mujinwww/templates/careers.html:43
+#: mujinwww/templates/access_map.html:45 mujinwww/templates/careers.html:66
 #: mujinwww/templates/corporate_history.html:18
 #: mujinwww/templates/corporate_overview.html:53
 msgid "Koishikawa Office"
 msgstr "小石川事業所"
 
-#: mujinwww/templates/access_map.html:47
+#: mujinwww/templates/access_map.html:48
 msgid "1-22-9 Koishikawa, Bunkyo-ku, Tokyo, Japan"
 msgstr "東京都文京区小石川1-22-9"
 
-#: mujinwww/templates/access_map.html:54
+#: mujinwww/templates/access_map.html:55
 msgid "Tokyo Metro Mita-line Kasuga Station"
 msgstr "東京メトロ三田線　春日駅"
 
-#: mujinwww/templates/access_map.html:55
+#: mujinwww/templates/access_map.html:56
 msgid ""
 "Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, "
 "turn left at the second intersection."
@@ -173,7 +173,7 @@ msgstr ""
 "A5出口より白山通りを東に徒歩5分。スーパーマーケットを通過後二つ目の交差点を左"
 "折"
 
-#: mujinwww/templates/access_map.html:60
+#: mujinwww/templates/access_map.html:61
 msgid ""
 "Please call us in advance, so that we will prepare for a parking space for "
 "you."
@@ -240,7 +240,7 @@ msgid "Partners"
 msgstr "パートナー企業"
 
 #: mujinwww/templates/business_connections.html:10
-#: mujinwww/templates/business_connections.html:46
+#: mujinwww/templates/business_connections.html:48
 msgid "Investors"
 msgstr "投資会社"
 
@@ -258,12 +258,14 @@ msgstr "キヤノン株式会社"
 #: mujinwww/templates/business_connections.html:36
 #: mujinwww/templates/business_connections.html:38
 #: mujinwww/templates/business_connections.html:40
-#: mujinwww/templates/business_connections.html:49
+#: mujinwww/templates/business_connections.html:42
+#: mujinwww/templates/business_connections.html:51
 msgid "(Homepage)"
 msgstr "（ホームページ）"
 
 #: mujinwww/templates/business_connections.html:25
 #: mujinwww/templates/business_connections.html:38
+#: mujinwww/templates/business_connections.html:40
 msgid "CEC ltd."
 msgstr "株式会社シーイーシー"
 
@@ -288,11 +290,11 @@ msgid ""
 "<a href=\"http://www.meau.com/eprise/main/sites/public/About_Us/-Home\">"
 msgstr "<a href=\"http://www.mitsubishielectric.co.jp/fa/index.html\">"
 
-#: mujinwww/templates/business_connections.html:40
+#: mujinwww/templates/business_connections.html:42
 msgid "MeiwaEtech"
 msgstr "株式会社明和eテック"
 
-#: mujinwww/templates/business_connections.html:49
+#: mujinwww/templates/business_connections.html:51
 msgid "The University of Tokyo Edge Capital"
 msgstr "UTEC2号投資事業有限責任組合"
 
@@ -301,69 +303,83 @@ msgid "MUJIN Inc.| Careers"
 msgstr "株式会社MUJIN | 採用情報"
 
 #: mujinwww/templates/careers.html:12
-msgid "Web Programmer"
-msgstr "Webプログラマー"
+#, fuzzy
+msgid "Robot Motion Planning Engineer"
+msgstr "ロボットの動作計画生成"
 
-#: mujinwww/templates/careers.html:13
+#: mujinwww/templates/careers.html:13 mujinwww/templates/careers.html.py:36
 msgid "Job Description"
 msgstr "業務内容"
 
 #: mujinwww/templates/careers.html:15
-msgid "Front-end user interface development"
-msgstr "フロントエンド"
+msgid "Core motion planning algorithms"
+msgstr ""
 
 #: mujinwww/templates/careers.html:16
-msgid "Back-end development"
-msgstr "沿革"
+#, fuzzy
+msgid "Robot dynamics simulations"
+msgstr "複数ロボット制御"
 
-#: mujinwww/templates/careers.html:20
+#: mujinwww/templates/careers.html:20 mujinwww/templates/careers.html.py:43
 msgid "Minimum Qualification"
 msgstr "応募資格"
 
-#: mujinwww/templates/careers.html:29
+#: mujinwww/templates/careers.html:26 mujinwww/templates/careers.html.py:52
 msgid "Preferred Skills"
 msgstr "優遇対象資格"
 
+#: mujinwww/templates/careers.html:35
+msgid "Web Programmer"
+msgstr "Webプログラマー"
+
+#: mujinwww/templates/careers.html:38
+msgid "Front-end user interface development"
+msgstr "フロントエンド"
+
 #: mujinwww/templates/careers.html:39
+msgid "Back-end development"
+msgstr "沿革"
+
+#: mujinwww/templates/careers.html:62
 msgid "Work Location"
 msgstr "勤務地"
 
-#: mujinwww/templates/careers.html:41
+#: mujinwww/templates/careers.html:64
 msgid "Headquater"
 msgstr "本社"
 
-#: mujinwww/templates/careers.html:41
+#: mujinwww/templates/careers.html:64
 msgid "Tokyo University Entrepreneur Plaza,"
 msgstr "東京大学アントレプレナープラザ"
 
-#: mujinwww/templates/careers.html:42
+#: mujinwww/templates/careers.html:65
 msgid "7-3-1, Hongoh, Bunkyo-ku, Tokyo, Japan"
 msgstr "東京都文京区本郷7-3-1"
 
-#: mujinwww/templates/careers.html:43
+#: mujinwww/templates/careers.html:66
 msgid "1-22-9, Koishikawa, Bunkyo-ku, Tokyo, Japan"
 msgstr "東京都文京区小石川1-22-9"
 
-#: mujinwww/templates/careers.html:47
+#: mujinwww/templates/careers.html:70
 msgid "Work Hours"
 msgstr "勤務時間"
 
-#: mujinwww/templates/careers.html:51
+#: mujinwww/templates/careers.html:74
 msgid "How To Apply"
 msgstr "応募方法"
 
-#: mujinwww/templates/careers.html:53
+#: mujinwww/templates/careers.html:76
 msgid ""
 "Please email your resume and career history to our official mail box: "
 "info@mujin.co.jp."
 msgstr ""
 "貴殿の履歴書と職歴をMUJIN公式MAIL BOX(info@mujin.co.jp)宛にお送りください。"
 
-#: mujinwww/templates/careers.html:57 mujinwww/templates/ik_flyer.html:110
+#: mujinwww/templates/careers.html:80 mujinwww/templates/ik_flyer.html:110
 msgid "Contact Us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/careers.html:59
+#: mujinwww/templates/careers.html:82
 msgid "MUJIN Inc"
 msgstr "株式会社MUJIN"
 
@@ -550,7 +566,7 @@ msgid "Telephone"
 msgstr "電話"
 
 #: mujinwww/templates/feature_slider.html:17
-#: mujinwww/templates/products.html:227
+#: mujinwww/templates/products.html:234
 msgid "MUJIN Controller Cloud"
 msgstr "MUJINコントローラ　クラウド"
 
@@ -566,7 +582,7 @@ msgstr "20-100CPUコアを同時に使用しながら動作の最適化の実現
 
 #: mujinwww/templates/feature_slider.html:27 mujinwww/templates/index.html:80
 #: mujinwww/templates/products.html:5 mujinwww/templates/products.html:19
-#: mujinwww/templates/products.html:181 mujinwww/templates/products.html:187
+#: mujinwww/templates/products.html:188 mujinwww/templates/products.html:194
 msgid "MUJIN Controller"
 msgstr "MUJINコントローラ"
 
@@ -729,7 +745,8 @@ msgid "MUJIN Inc.| Home"
 msgstr "株式会社MUJIN | ホーム"
 
 #: mujinwww/templates/index.html:25
-msgid " Best tool for programming robot and workcell layout."
+#, fuzzy
+msgid " Best tools for robot programming and workcell layout."
 msgstr "ロボットプログラミングとワークセルレイアウトのためのベストツール"
 
 #: mujinwww/templates/index.html:29 mujinwww/templates/index.html.py:50
@@ -976,6 +993,7 @@ msgstr ""
 #: mujinwww/templates/motion_control.html:76
 #: mujinwww/templates/product_feature_accuracy.html:13
 #: mujinwww/templates/product_feature_cadsoft.html:18
+#: mujinwww/templates/product_feature_clearance.html:25
 #: mujinwww/templates/product_feature_collision.html:76
 #: mujinwww/templates/product_feature_grasp.html:18
 #: mujinwww/templates/product_feature_grasp_planning.html:15
@@ -1048,57 +1066,109 @@ msgstr "ロボット動作プログラムの自動生成"
 msgid "Chief of Software Development - Huan Liu"
 msgstr "ソフトウェア開発室長 - Huan Liu"
 
-#: mujinwww/templates/our_team.html:57
+#: mujinwww/templates/our_team.html:57 mujinwww/templates/our_team.html:91
 msgid "Graduated from Massachusetts Institute of Technology"
 msgstr "マサチューセッツ工科大学卒"
 
-#: mujinwww/templates/our_team.html:58
+#: mujinwww/templates/our_team.html:58 mujinwww/templates/our_team.html:92
 msgid "Master of Engineering from Massachusetts Institute of Technology"
 msgstr "マサチューセッツ工科大学大学院にて修士取得"
 
-#: mujinwww/templates/our_team.html:59
+#: mujinwww/templates/our_team.html:60
+msgid "Tutoring chair for HKN national EECS honor society"
+msgstr ""
+
+#: mujinwww/templates/our_team.html:62
 msgid "Oracle Corporation"
 msgstr "オラクル"
 
-#: mujinwww/templates/our_team.html:64
+#: mujinwww/templates/our_team.html:67
 msgid "Software Engineer - Lucas Palage Doyle"
 msgstr "ソフトウェアエンジニア - Lucas Palage Doyle"
 
-#: mujinwww/templates/our_team.html:71
+#: mujinwww/templates/our_team.html:74
 msgid "Graduated from Rensselaer Polytechnic Institute"
 msgstr "レンセラー工科大学卒"
 
-#: mujinwww/templates/our_team.html:73
+#: mujinwww/templates/our_team.html:76
 msgid "Team leader in Boeing Robotic Wingbox Project"
 msgstr "ボーイング社の主翼内ロボットプロジェクトにてリーダーとして従事"
 
-#: mujinwww/templates/our_team.html:75
+#: mujinwww/templates/our_team.html:78
 msgid "Harvard-Smithsonian Center for Astrophysics"
 msgstr "ハーバードスミソニアンセンターにて勤務"
 
-#: mujinwww/templates/our_team.html:76
+#: mujinwww/templates/our_team.html:79
 msgid "Robotics Intern at Anybots"
 msgstr "Anybots社にてインターン"
 
-#: mujinwww/templates/our_team.html:81
+#: mujinwww/templates/our_team.html:84
+#, fuzzy
+msgid "Software Engineer - Daniel Matthew Taub"
+msgstr "ソフトウェアエンジニア - Lucas Palage Doyle"
+
+#: mujinwww/templates/our_team.html:97
 msgid "Visiting Scientist - Pham Quang Cuong"
 msgstr "客員研究員 - Pham Quang Cuang"
 
-#: mujinwww/templates/our_team.html:88
+#: mujinwww/templates/our_team.html:104
 msgid "Graduated from École Normale Supérieure rue d'Ulm"
 msgstr "エコール・ノルマル・シュペリウール(パリ)卒"
 
-#: mujinwww/templates/our_team.html:89
+#: mujinwww/templates/our_team.html:105
 msgid "Ph.D from Collège de France"
 msgstr "コレージュ・ド・フランスにて博士号取得"
 
-#: mujinwww/templates/our_team.html:90
+#: mujinwww/templates/our_team.html:106
 msgid "JSPS researcher at University of Tokyo"
 msgstr "東京大学にてJSPS特別研究員として従事"
 
-#: mujinwww/templates/our_team.html:91
+#: mujinwww/templates/our_team.html:107
 msgid "RSS 2012 Best Paper Award"
 msgstr "RSS 2012年度ベストペーパー賞受賞"
+
+#: mujinwww/templates/our_team.html:112
+#, fuzzy
+msgid "Visiting Scientist - Ryosuke Tasaki"
+msgstr "客員研究員 - Pham Quang Cuang"
+
+#: mujinwww/templates/our_team.html:119
+#, fuzzy
+msgid "Graduated from Kyoto Institute of Technology"
+msgstr "マサチューセッツ工科大学卒"
+
+#: mujinwww/templates/our_team.html:120
+msgid "Ph.D from Toyohashi University of Technology"
+msgstr ""
+
+#: mujinwww/templates/our_team.html:121
+#, fuzzy
+msgid "JSPS researcher at Toyohashi University of Technology "
+msgstr "東京大学にてJSPS特別研究員として従事"
+
+#: mujinwww/templates/our_team.html:122
+msgid ""
+"Special research encouragement prize from The Japan Foundry engineering "
+"Society (JFS)"
+msgstr ""
+
+#: mujinwww/templates/our_team.html:127
+msgid "Intern - Syohei Fujii"
+msgstr ""
+
+#: mujinwww/templates/our_team.html:134
+#, fuzzy
+msgid "Graduated from Tokyo University"
+msgstr "Soka University of America卒"
+
+#: mujinwww/templates/our_team.html:135
+msgid "Engineering dean's list"
+msgstr ""
+
+#: mujinwww/templates/our_team.html:136
+#, fuzzy
+msgid "Master course at University of Tokyo JSK"
+msgstr "東京大学にてJSPS特別研究員として従事"
 
 #: mujinwww/templates/privacy_policy.html:5
 msgid "MUJIN Inc.| Privacy Policy"
@@ -1350,6 +1420,29 @@ msgstr ""
 msgid "Supported formats:"
 msgstr "サポート済みフォーマット"
 
+#: mujinwww/templates/product_feature_clearance.html:5
+msgid "Clearance Setting Function"
+msgstr ""
+
+#: mujinwww/templates/product_feature_clearance.html:7
+msgid ""
+"The MUJIN Controller has an unique function which can set a clearance "
+"distance between robot and obstacles. Since each customer should have "
+"desired clearance amount for their safety, MUJIN Controller tries to sutisfy "
+"the contstrain as much as it can. However, robot sometimes to approach to "
+"obstacles or goals to accomplish specified task. When the task cannot be "
+"accomplished with specified clearance amount, MUJIN controller automatically "
+"reduces the amount of clearance and tries to complete the task. "
+msgstr ""
+
+#: mujinwww/templates/product_feature_clearance.html:13
+msgid "Clearance setting 30mm"
+msgstr ""
+
+#: mujinwww/templates/product_feature_clearance.html:20
+msgid "Clearance setting 60mm"
+msgstr ""
+
 #: mujinwww/templates/product_feature_collision.html:5
 msgid "Automated Collision Avoidance System"
 msgstr "干渉自動回避システム"
@@ -1597,7 +1690,7 @@ msgstr ""
 "けで、すぐに実機で動作検証して頂けます。"
 
 #: mujinwww/templates/product_feature_zero.html:5
-#: mujinwww/templates/products.html:132
+#: mujinwww/templates/products.html:139
 msgid "Zero Installation"
 msgstr "ゼロインストール"
 
@@ -1615,7 +1708,7 @@ msgstr ""
 msgid "Features"
 msgstr "製品機能"
 
-#: mujinwww/templates/products.html:7 mujinwww/templates/products.html:149
+#: mujinwww/templates/products.html:7 mujinwww/templates/products.html:156
 msgid "Applications"
 msgstr "アプリケーション"
 
@@ -1793,10 +1886,21 @@ msgstr ""
 "す。"
 
 #: mujinwww/templates/products.html:109
+msgid "Clearance Setting"
+msgstr ""
+
+#: mujinwww/templates/products.html:111
+msgid ""
+"It is possible to set an obstacle clearance so that all parts of the robot "
+"and its grabbed objects can be at least specified distance away from "
+"obstacles."
+msgstr ""
+
+#: mujinwww/templates/products.html:116
 msgid "Multi-Robot Manipulation"
 msgstr "複数ロボット制御"
 
-#: mujinwww/templates/products.html:111
+#: mujinwww/templates/products.html:118
 msgid ""
 "MUJIN leverages planning algorithms for collision-free motion plans with "
 "multiple robots in the same environment."
@@ -1804,11 +1908,11 @@ msgstr ""
 "ほとんどのロボットシミュレーションパッケージは単体のロボットのみに対応してお"
 "り、複数ロボットでの協調動作を算出する事は不可能でした。"
 
-#: mujinwww/templates/products.html:116
+#: mujinwww/templates/products.html:123
 msgid "Industrial Task Language"
 msgstr "インダストリアルタスク言語とは？"
 
-#: mujinwww/templates/products.html:118
+#: mujinwww/templates/products.html:125
 msgid ""
 "ITL is MUJIN's easy to learn, generic robot programming language which can "
 "specify tasks for any robot manufacturer."
@@ -1816,11 +1920,11 @@ msgstr ""
 "インダストリアルタスク言語はMUJINが独自開発したロボットメーカーに関係なく使用"
 "できる非常に覚えやすいロボット言語です。"
 
-#: mujinwww/templates/products.html:123
+#: mujinwww/templates/products.html:132
 msgid "Robot Program Output"
 msgstr "メーカー特有プログラムを自動排出"
 
-#: mujinwww/templates/products.html:125
+#: mujinwww/templates/products.html:134
 msgid ""
 "The controller outputs the robot manufacturer's program, so there is no need "
 "to write it yourself."
@@ -1828,17 +1932,17 @@ msgstr ""
 "MUJINコントローラはメーカー事に異なるロボットプログラムを自動で排出いたしま"
 "す。これによりお客様自身がプログラムを書く時間を削減いたします。"
 
-#: mujinwww/templates/products.html:134
+#: mujinwww/templates/products.html:141
 msgid "Use the controller through your web browser on any platform you like."
 msgstr ""
 "お客様はOSに関係なくお好きなウェブブラウザーをとおして当コントローラを使用し"
 "て頂きます。なかでもGoogle Chrome及びMozzila Firefoxを推奨しております。"
 
-#: mujinwww/templates/products.html:139
+#: mujinwww/templates/products.html:146
 msgid "No CAD Dependencies"
 msgstr "CADソフトへの非依存"
 
-#: mujinwww/templates/products.html:141
+#: mujinwww/templates/products.html:148
 msgid ""
 "The controller does not require any specific 3D CAD software. Users can "
 "easily import from most common formats."
@@ -1846,83 +1950,83 @@ msgstr ""
 "MUJINコントローラは特別な3D CADソフトは必要ありません。お客様がお使いの３DCAD"
 "フォーマットをそのまま簡単にインポートする事が可能です。"
 
-#: mujinwww/templates/products.html:154 mujinwww/templates/vision.html:33
+#: mujinwww/templates/products.html:161 mujinwww/templates/vision.html:33
 msgid "Automotive"
 msgstr "自動車業界"
 
-#: mujinwww/templates/products.html:157
+#: mujinwww/templates/products.html:164
 msgid "Electronics"
 msgstr "電機業界"
 
-#: mujinwww/templates/products.html:160 mujinwww/templates/vision.html:31
+#: mujinwww/templates/products.html:167 mujinwww/templates/vision.html:31
 msgid "Medical"
 msgstr "医療業界"
 
-#: mujinwww/templates/products.html:163
+#: mujinwww/templates/products.html:170
 msgid "Special Robot/Machines"
 msgstr "カスタマイズロボット/専用機械/特殊機械"
 
-#: mujinwww/templates/products.html:171
+#: mujinwww/templates/products.html:178
 msgid "Operation Demo"
 msgstr "操作デモ"
 
-#: mujinwww/templates/products.html:173
+#: mujinwww/templates/products.html:180
 msgid "MUJIN Controller has user-friendly interface"
 msgstr "MUJINコントローラの操作しやすいインターフェース"
 
-#: mujinwww/templates/products.html:179
+#: mujinwww/templates/products.html:186
 msgid "Controller Spec"
 msgstr "製品スペック"
 
-#: mujinwww/templates/products.html:185
+#: mujinwww/templates/products.html:192
 msgid "Product Description"
 msgstr "製品名"
 
-#: mujinwww/templates/products.html:191
+#: mujinwww/templates/products.html:198
 msgid "Dimensions"
 msgstr "寸法"
 
-#: mujinwww/templates/products.html:195
+#: mujinwww/templates/products.html:202
 msgid "Height"
 msgstr "高さ"
 
-#: mujinwww/templates/products.html:196
+#: mujinwww/templates/products.html:203
 msgid "Width"
 msgstr "幅"
 
-#: mujinwww/templates/products.html:197
+#: mujinwww/templates/products.html:204
 msgid "Depth"
 msgstr "奥行き"
 
-#: mujinwww/templates/products.html:202
+#: mujinwww/templates/products.html:209
 msgid "Weight"
 msgstr "重量"
 
-#: mujinwww/templates/products.html:206
+#: mujinwww/templates/products.html:213
 msgid "Power Consumption"
 msgstr "消費電力"
 
-#: mujinwww/templates/products.html:210
+#: mujinwww/templates/products.html:217
 msgid "Cores"
 msgstr "コア"
 
-#: mujinwww/templates/products.html:211
+#: mujinwww/templates/products.html:218
 msgid "12 core (24 threads)"
 msgstr "12コア (24スレッド）"
 
-#: mujinwww/templates/products.html:214
+#: mujinwww/templates/products.html:221
 msgid "Core Clockspeed"
 msgstr "コアクロックスピード"
 
-#: mujinwww/templates/products.html:218
+#: mujinwww/templates/products.html:225
 msgid "RAM"
 msgstr "RAM"
 
-#: mujinwww/templates/products.html:222
+#: mujinwww/templates/products.html:229
 msgid "HDD Capacity for Customer"
 msgstr "お客様用HDD容量"
 
-#: mujinwww/templates/products.html:229
+#: mujinwww/templates/products.html:236
 msgid ""
 "MUJIN is proud to offer its controller as a cloud service! Enjoy better "
 "performance, save money and receive free upgrades without the hassle of "
@@ -1932,22 +2036,23 @@ msgstr ""
 "フォーマンス、コスト削減、そして実機のメンテナンス無しの無料アップグレードを"
 "お楽しみください。"
 
-#: mujinwww/templates/products.html:231
-#, python-format
+#: mujinwww/templates/products.html:238
+#, fuzzy, python-format
 msgid ""
-"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_en.png\">"
+"<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\"/"
+">"
 msgstr ""
 "<img class=\"thumbnail\" src=\"%(STATIC_URL)simg/mujincontrolleruse_ja.png\">"
 
-#: mujinwww/templates/products.html:236
+#: mujinwww/templates/products.html:243
 msgid "Licensing Options"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/products.html:238
+#: mujinwww/templates/products.html:245
 msgid "Annual Licensing Option"
 msgstr "ライセンス形態"
 
-#: mujinwww/templates/products.html:239
+#: mujinwww/templates/products.html:246
 msgid ""
 "MUJIN offers annual licenses of our controllers to commercial companies. "
 "License fees differ depending on which kind of MUJIN Controller you choose "
@@ -1958,19 +2063,19 @@ msgstr ""
 "MUJINコントローラクラウドの方がサーバーが付帯する通常版よりもお安くなります。"
 "価格の詳細につきましてはお気軽に"
 
-#: mujinwww/templates/products.html:239
+#: mujinwww/templates/products.html:246
 msgid "contact us"
 msgstr "お問い合わせ"
 
-#: mujinwww/templates/products.html:239 mujinwww/templates/products.html:260
+#: mujinwww/templates/products.html:246 mujinwww/templates/products.html:267
 msgid "or call +81-050-3682-7852."
 msgstr "または、050-3682-7852までお電話頂きますようお願いいたします。"
 
-#: mujinwww/templates/products.html:240
+#: mujinwww/templates/products.html:247
 msgid "Academic Licensing Option"
 msgstr "アカデミックライセンス制"
 
-#: mujinwww/templates/products.html:241
+#: mujinwww/templates/products.html:248
 msgid ""
 "MUJIN offers academic licenses to non-commercial research programs. These "
 "licenses are only for academic research and for student projects. We expect "
@@ -1983,11 +2088,11 @@ msgstr ""
 "れ、ロボット工学、電機工学、その他の分野の多くの先生方にご利用される事を願っ"
 "ております。"
 
-#: mujinwww/templates/products.html:242
+#: mujinwww/templates/products.html:249
 msgid "The academic licensing agreement includes the following provisions:"
 msgstr "アカデミックライセンス契約には以下の規定を定めています。"
 
-#: mujinwww/templates/products.html:245
+#: mujinwww/templates/products.html:252
 msgid ""
 "The software may only be used for non-commercial research not sponsored by "
 "an organization that could receive economic benefits from the work."
@@ -1995,38 +2100,38 @@ msgstr ""
 "本ソフトウェアは非営利目的の研究に使用される事（その研究から経済的利益を得る"
 "可能性があるスポンサーがついていない事）"
 
-#: mujinwww/templates/products.html:246
+#: mujinwww/templates/products.html:253
 msgid "Technical support would be provided to a single contact person."
 msgstr ""
 "テクニカルサポートを受けられる対象者は一人の代表担当者のみに限定させて頂く事"
 "のご承認"
 
-#: mujinwww/templates/products.html:252
+#: mujinwww/templates/products.html:259
 msgid "How to get a MUJIN Controller"
 msgstr "MUJINコントローラの購入方法"
 
-#: mujinwww/templates/products.html:257
+#: mujinwww/templates/products.html:264
 msgid "Contact MUJIN sales"
 msgstr "MUJINの営業担当者へのお問い合わせ"
 
-#: mujinwww/templates/products.html:260
+#: mujinwww/templates/products.html:267
 msgid "Please send an inquiry by"
 msgstr "メールにてお問い合わせ頂くか"
 
-#: mujinwww/templates/products.html:266
+#: mujinwww/templates/products.html:273
 msgid "Present your problem"
 msgstr "お客様のボトルネックの把握"
 
-#: mujinwww/templates/products.html:269
+#: mujinwww/templates/products.html:276
 msgid "MUJIN will arrange a meeting with you to fully understand your problem."
 msgstr ""
 "MUJINはお客様のボトルネックをより深く理解するために面談をお願いしております。"
 
-#: mujinwww/templates/products.html:274
+#: mujinwww/templates/products.html:281
 msgid "Receive MUJIN proposal"
 msgstr "MUJINからのご提案"
 
-#: mujinwww/templates/products.html:277
+#: mujinwww/templates/products.html:284
 msgid ""
 "We analyze the problem and propose a MUJIN solution considering all the "
 "constraints and requirements. We will also decide the details about the "
@@ -2035,11 +2140,11 @@ msgstr ""
 "私達はボトルネックを分析し全ての制約条件とご要求を考慮したMUJINのソリューショ"
 "ンを提案させて頂きます。"
 
-#: mujinwww/templates/products.html:283
+#: mujinwww/templates/products.html:290
 msgid "Approve a quotation"
 msgstr "お見積書への同意"
 
-#: mujinwww/templates/products.html:286
+#: mujinwww/templates/products.html:293
 msgid ""
 "MUJIN sales sends you a quotation, and as soon as you approve it, the "
 "product will be delivered."
@@ -2047,11 +2152,11 @@ msgstr ""
 "MUJINの営業部よりお見積書を送付させて頂きます。お客様の了解を得次第、商品を出"
 "荷させて頂きます。"
 
-#: mujinwww/templates/products.html:292
+#: mujinwww/templates/products.html:299
 msgid "Start operation"
 msgstr "作業開始"
 
-#: mujinwww/templates/products.html:295
+#: mujinwww/templates/products.html:302
 msgid ""
 "You will be fully supported by MUJIN engineers as soon as the contract takes "
 "effect."
