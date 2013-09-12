@@ -24,20 +24,20 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=47
-FILE_NAME_0=986;Javascript;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2FGruntfile.js;0;2
+current_page=50
+FILE_NAME_0=647;Javascript;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2FGruntfile.js;0;2
 FILE_NAME_1=925;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Ffabfile.py;0;2
 FILE_NAME_2=0;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmanage.py;0;2
 FILE_NAME_3=0;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww.apache;0;2
-FILE_NAME_4=0;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fpackage.json;0;2
-FILE_NAME_5=23;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2F.gitignore;0;2
+FILE_NAME_4=346;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fpackage.json;0;2
+FILE_NAME_5=29;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2F.gitignore;0;2
 FILE_NAME_6=0;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fadmin.py;0;2
 FILE_NAME_7=0;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2F__init__.py;0;2
 FILE_NAME_8=1050;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fmodels.py;0;2
 FILE_NAME_9=401;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fsettings.py;0;2
 FILE_NAME_10=1145;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fsettings_production.py;0;2
 FILE_NAME_11=0;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Furls.py;0;2
-FILE_NAME_12=2895;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fviews.py;0;2
+FILE_NAME_12=1382;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fviews.py;0;2
 FILE_NAME_13=0;Python;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fwsgi.py;0;2
 FILE_NAME_14=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Ftemplates%2F404.html;0;2
 FILE_NAME_15=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Ftemplates%2F500.html;0;2
@@ -73,6 +73,12 @@ FILE_NAME_44=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujin
 FILE_NAME_45=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Ftemplates%2Fservices.html;0;2
 FILE_NAME_46=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Ftemplates%2Ftechnology.html;0;2
 FILE_NAME_47=0;HTML;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Ftemplates%2Fvision.html;0;2
+FILE_NAME_48=100;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fbower.json;0;2
+FILE_NAME_49=0;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fstatic%2Fcss%2Fless%2Fbootswatch.less;0;2
+FILE_NAME_50=498;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fstatic%2Fcss%2Fless%2Fflyer.less;0;2
+FILE_NAME_51=65;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fstatic%2Fcss%2Fless%2Fmain.less;0;2
+FILE_NAME_52=0;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fstatic%2Fcss%2Fless%2Fnavbar-edits.less;0;2
+FILE_NAME_53=0;None;0;EUTF-8;0;1;1;%2Fvar%2Fwww%2Fmujin%2Fwww%2Fmujinwww%2Fmujinwww%2Fstatic%2Fcss%2Fless%2Fvariables.less;0;2
 
 [VTE]
 last_dir=/var/www

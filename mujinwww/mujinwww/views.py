@@ -31,11 +31,11 @@ def mail(to, subject, text, attach=None, from_address=gmail_user):
     #~ msg.attach(MIMEText(text, 'plain'))
 
     if attach is not None:
-       part = MIMEBase('application', 'octet-stream')
-       part.set_payload(open(attach, 'rb').read())
-       Encoders.encode_base64(part)
-       part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(attach))
-       msg.attach(part)
+        part = MIMEBase('application', 'octet-stream')
+        part.set_payload(open(attach, 'rb').read())
+        Encoders.encode_base64(part)
+        part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(attach))
+        msg.attach(part)
 
     mail_server = smtplib.SMTP('smtp.gmail.com', 587)
     mail_server.ehlo()
