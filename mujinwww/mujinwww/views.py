@@ -103,7 +103,7 @@ def get_translated_news(request, news):
     return ret
 
 def index(request):
-    news = models.NewsEntry.objects.all().order_by('-pub_date')[:4]
+    news = models.NewsEntry.objects.all().order_by('-pub_date')[:7]
     template = {'news': get_translated_news(request, news)}
     return render_to_response('index.html', RequestContext(request, template))
 
