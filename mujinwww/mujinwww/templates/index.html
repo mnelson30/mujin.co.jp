@@ -76,6 +76,22 @@
     {% endfor %}
   </div>
   <div class="span6" style="margin-top:40px">
+    <div class="row-fluid">
+      <div class="span6 well">
+          <a href="/videos#controller_demo">
+            <img class="thumbnail" style="width: 100%;" src="{{ STATIC_URL }}img/video_thumbs/controller-demo.png"/>
+            <b>{% trans "Controller Demonstration" %} &nbsp;&raquo;</b>
+          </a>
+      </div>
+      <div class="span6 well">
+          <a href="/videos#scanning_demo">
+            <img class="thumbnail" style="width: 100%;" src="{{ STATIC_URL }}img/video_thumbs/scanning-demo.png"/>
+            <b>{% trans "Scanning Demonstration" %} &nbsp;&raquo;</b>
+          </a>
+      </div>
+    </div>
+    
+    
     <a href="/products" class="btn btn-primary btn-block btn-large">
       <h2>{% trans "MUJIN Controller" %} &nbsp;&raquo;</h2>
     </a>
