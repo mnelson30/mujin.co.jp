@@ -6,7 +6,8 @@ WWW_ROOT = '/var/www/www/mujinwww'
 DEV_ROOT = '/var/www/temp/www/mujinwww'
 
 env.user = 'www-data'
-env.hosts = ['mujin.co.jp']
+# env.hosts = ['mujin.co.jp']
+env.hosts = ['ec2-54-200-55-36.us-west-2.compute.amazonaws.com']
 
 env.use_ssh_config = True
 
@@ -33,6 +34,10 @@ def update():
     clean()
     pull()
     build_translations()
+
+def push():
+    with cd(WWW_ROOT):
+        local('rsync -axhvve ssh . ' + env.user + '@' + env.hosts[0] + ':' + WWW_ROOT)
 
 def devserver():
     with cd(DEV_ROOT):

@@ -31,7 +31,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mujinwww',
         'USER': 'mujinwww',
-        'HOST': 'mujin.co.jp',
+        'HOST': 'localhost',
         'PORT': '5432',
         'TIME_ZONE': 'UTC',
     }
