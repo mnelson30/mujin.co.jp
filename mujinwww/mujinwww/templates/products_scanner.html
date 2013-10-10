@@ -99,30 +99,50 @@
 
     <h3>{% trans "Easy three step process" %}</h3>
 
-    <div class="row">
-      <div class="span3 well" style="height: auto;">
-        <a class="nohover-highlight feature-item" href="#">
-          <h4>{% trans "Scan the object" %}</h4>
-          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/luke_byhimself.png">
-          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/scanner-flyer-020.jpg">
-        </a>
-      </div>
-      <div class="span3 well" style="height: auto;">
-        <a class="nohover-highlight feature-item" href="#">
-          <h4>{% trans "Clip extra geometry and set coordinate system" %}</h4>
-          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/scan_process2.png">
-          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/scan_process3.png">
-        </a>
-      </div>
-      <div class="span3 well" style="height: auto;">
-        <a class="nohover-highlight feature-item" href="#">
-          <h4>{% trans "Export in desired format (STEP, WRL, IGES, STL, X)" %}</h4>
-          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/scan_process4.png"/>
-        </a>
-      </div>
-    </div>
-  </div>
-  
+
+    <ol style="font-size: 17.5px; margin: 10px 0; font-family: inherit; font-weight: bold; line-height: 20px; color: inherit; text-rendering: optimizelegibility;">
+      <li>
+          {% trans "Scan the object" %}
+          <br/>
+          <table class="scanner-table" style="width: 100%;">
+              <tr>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/luke_byhimself.png">
+                  </td>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scanner-flyer-020.jpg">
+                  </td>
+              </tr>
+          </table>
+          <br/>
+          <br/>
+      </li>
+      <li>
+          {% trans "Clip extra geometry and set coordinate system" %}
+          <br/>
+          <table class="scanner-table" style="width: 100%;">
+              <tr>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scan_process2.png">
+                  </td>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scan_process3.png">
+                  </td>
+              </tr>
+          </table>
+          <br/>
+          <br/>
+      </li>
+      <li>
+          {% trans "Clip extra geometry and set coordinate system" %}
+          <br/>
+          <img src="{{ STATIC_URL }}img/scanner/scan_process4.png"/>
+          <br/>
+          <br/>
+      </li>
+    </ol>
+
+
   <h3>{% trans "Benefits to our approach" %}</h3>
   
   <p class="lead">
