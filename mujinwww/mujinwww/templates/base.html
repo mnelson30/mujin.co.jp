@@ -64,7 +64,20 @@
             <div class="container">
               <ul class="nav">
                 <li><a href="/index">{% trans "Home" %}</a></li>
-                <li><a href="/products">{% trans "Products" %}</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  {% trans "Products" %}
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="/products_controller"><h4>{% trans "MUJIN Controller" %}</h4></a>
+                    </li>
+                    <li>
+                      <a href="/products_scanner"><h4>{% trans "MUJIN Scanner" %}</h4></a>
+                    </li>
+                  </ul>
+                </li>
                 <li><a href="/services">{% trans "Services" %}</a></li>
                 <li><a href="/technology">{% trans "Technology" %}</a></li>
                 <li class="dropdown">

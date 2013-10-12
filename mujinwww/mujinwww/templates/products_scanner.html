@@ -1,0 +1,158 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block sidebar-list-items %}
+<li><a href="#mujin_scanner">{% trans "MUJIN Scanner" %}</a></li>
+<li><a href="#part_scanning">{% trans "Part Scanning" %}</a></li>
+<li><a href="#env_scanning">{% trans "Environment Scanning" %}</a></li>
+<li><a href="#getone">{% trans "Purchasing" %}</a></li>
+{% endblock %}
+
+{% block slider %}
+{% endblock %}
+
+{% block main-content %}
+<img src="{{ STATIC_URL }}img/scanner/header.png">
+
+<fieldset id="mujin_scanner">
+  <div class="fieldset-content span10">
+    <h3>{% trans "Easy and accurate 3D scans of parts and environments" %} </h3>
+
+    <p class="lead">{% trans "Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is." %}</p>
+    
+    <p class="lead">{% trans "Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is." %}</p>
+    
+    <br>
+
+  </div>
+</fieldset>
+
+<fieldset id="part_scanning" class="highlight-span3">
+  <h2>{% trans "Part Scanning" %}</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+  <div class="fieldset-content span10">
+
+    <div class="row">
+      <h3>{% trans "Demonstration" %} </h3>
+
+      <iframe width="580" height="340" src="//www.youtube.com/embed/sEahNnpTVws" frameborder="0" allowfullscreen></iframe>
+
+      <br>
+
+      <h3>{% trans "Sample part scans" %}</h3>
+      
+      <table class="scanner-table" style="width: 100%;">
+          <tr>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/compressor.png">
+              </td>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/scanned_compressor.png">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/jig.png">
+              </td>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/scanned_jig.jpg">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/binpicking_box_orig.png">
+              </td>
+              <td>
+                  <img src="{{ STATIC_URL }}img/scanner/binpicking_box.png">
+              </td>
+          </tr>
+      </table>
+
+      <br/>
+    </div>
+
+    <h3>{% trans "Use scanned parts with existing tools" %}</h3>
+
+    <div class="row">
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "RT Toolbox" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/rttoolbox.png">
+        </a>
+      </div>
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "Wincaps" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/wincaps.png">
+        </a>
+      </div>
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "MUJIN Controller" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/mujincontroller.png"/>
+        </a>
+      </div>
+    </div>
+    
+    <br>
+
+    <h3>{% trans "Easy three step process" %}</h3>
+
+
+    <ol style="font-size: 17.5px; margin: 10px 0; font-family: inherit; font-weight: bold; line-height: 20px; color: inherit; text-rendering: optimizelegibility;">
+      <li>
+          {% trans "Scan the object" %}
+          <br/>
+          <table class="scanner-table" style="width: 100%;">
+              <tr>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/luke_byhimself.png">
+                  </td>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scanner-flyer-020.jpg">
+                  </td>
+              </tr>
+          </table>
+          <br/>
+          <br/>
+      </li>
+      <li>
+          {% trans "Clip extra geometry and set coordinate system" %}
+          <br/>
+          <table class="scanner-table" style="width: 100%;">
+              <tr>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scan_process2.png">
+                  </td>
+                  <td>
+                      <img src="{{ STATIC_URL }}img/scanner/scan_process3.png">
+                  </td>
+              </tr>
+          </table>
+          <br/>
+          <br/>
+      </li>
+      <li>
+          {% trans "Clip extra geometry and set coordinate system" %}
+          <br/>
+          <img src="{{ STATIC_URL }}img/scanner/scan_process4.png"/>
+          <br/>
+          <br/>
+      </li>
+    </ol>
+
+
+  <h3>{% trans "Benefits to our approach" %}</h3>
+  
+  <p class="lead">
+    <ul>
+      <li>{% trans "No need for special markers" %}</li>
+      <li>{% trans "No need to mound object on a turntable, can simply be placed against any flat surface." %}</li>
+      <li>{% trans "Mesh output is very lightweight. The system produces models without excessive polygons, so it won't slow down other CAD programs that import the model." %}</li>
+    </ul>
+  </p>
+
+</fieldset>
+
+{% endblock %}
