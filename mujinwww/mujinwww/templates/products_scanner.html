@@ -16,19 +16,21 @@
 
 <fieldset id="mujin_scanner">
   <div class="fieldset-content span10">
-    <h3>{% trans "Easy and accurate 3D scans of parts and environments" %} </h3>
+    <h3>{% trans "Easy and quick 3D scans for parts and environments" %} </h3><br/>
+    <h4>{% trans "Very light scanned model" %}</h4>
 
-    <p class="lead">{% trans "Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is." %}</p>
+    <p class="lead">{% trans "MUJIN Scanner is the ideal choice for those that require to receive a easy, quick and light scan. It captures objects quickly with handy 3D sensor, which allows for almost unlimited applications." %}</p>
     
-    <p class="lead">{% trans "Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is. Some text here talking about how badass our scanner is." %}</p>
-    
-    <br>
+    <p class="lead">{% trans "MUJIN Scanner is similar to the videocamera which captures objects in 3D, and it is actually developed especially for robot simulation application. Scanning can be competed only in a minute and the generated 3D model is relatively light, so that you can import the models to many different kinds of robot simulators immediately. " %}</p>
+
+  <p class="lead">{% trans "Because MUJIN Scanner does not require marker and turntable,it does not choose object's size and location. You can carry around the factory and scan various kind of objects wherever and whenever you need to do. " %}</p>    
+  
 
   </div>
 </fieldset>
 
 <fieldset id="part_scanning" class="highlight-span3">
-  <h2>{% trans "Part Scanning" %}</h2>
+  <h2 style="color:red">{% trans "Part Scanning" %}</h2>
   <br>
   <h2 class="comment" style="color:red;"></h2>
   <div class="fieldset-content span10">
@@ -72,7 +74,7 @@
       <br/>
     </div>
 
-    <h3>{% trans "Use scanned parts with existing tools" %}</h3>
+    <h3>{% trans "High usability for various kinds of simulators" %}</h3>
 
     <div class="row">
       <div class="span3 well" style="height: auto;">
@@ -155,4 +157,47 @@
 
 </fieldset>
 
+
+<fieldset id="environment_scanning" class="highlight-span3">
+  <h2 style="color:red">{% trans "Environment Scanning" %}</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+  <div class="fieldset-content span10">
+
+    <div class="row">
+      <h3>{% trans "Large environment" %} </h3>
+      <p class="lead">{% trans "Those who desire to scan environment which is bigger than sensor range, MUJIN Scanner offers environment scan mode which can marge multiple scanned data in high accuracy. Only by putting some markers, you can easily scan large area like entire production line. " %}</p>
+<img style="width:60%"; src="{{ STATIC_URL }}img/scanner/environment_scan.png">
+ <h3>{% trans "World First robot environment scan" %} </h3>
+      <p class="lead">{% trans ". " %}</p>
+
+   <h3>{% trans "Easy Steps" %}</h3>
+
+    <div class="row">
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "Choose environment" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/office_test.png">
+        </a>
+      </div>
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "2. Prepare for markers" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/marker.png">
+        </a>
+      </div>
+      <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "3.Scan quickly" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/robot_scan1.png"/>
+        </a>
+      </div>
+ <div class="span3 well" style="height: auto;">
+        <a class="nohover-highlight feature-item" href="#">
+          <h4>{% trans "4.Robot is detected" %}</h4>
+          <img class="thumbnail" src="{{ STATIC_URL }}img/scanner/missing.png"/>
+        </a>
+      </div>
+    </div>
+    
 {% endblock %}
