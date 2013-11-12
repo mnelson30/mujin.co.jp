@@ -11,6 +11,33 @@ module.exports = function(grunt) {
     jekyll: {
       website: {}
     },
+    
+    rsync: {
+      
+      options: {
+        recursive: true
+      },
+
+      assets: {
+        options: {
+          src: [
+            'img',
+            'css',
+            'js'
+          ],
+          dest: '_site'
+        }
+      },
+      
+      bower_components: {
+        options: {
+          src: [
+            'bower_components'
+          ],
+          dest: '_site'
+        }
+      }
+    },
 
     watch: {
 
@@ -24,11 +51,30 @@ module.exports = function(grunt) {
           '_config.yml',
           '_includes/**/*.html',
           '_layouts/**/*.html',
-          'examples/**/*',
-          'bower_components/**/*',
           '*.html'
         ],
         tasks: ['jekyll']
+      },
+      
+      assets: {
+        files: [
+          'img/**/*',
+          'js/**/*',
+          'css/**/*'
+        ],
+        tasks: ['rsync:assets']
+      },
+      
+      bower_components: {
+        files: [
+          'bower_components/**/*',
+
+          // exclude a bunch of crap that should not be watched
+          '!**/.git/**',
+          '!**/node_modules/**',
+          '!**/bower_components/**'
+        ],
+        tasks: ['rsync:bower_components']
       }
     },
 

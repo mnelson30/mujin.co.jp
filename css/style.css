@@ -128,3 +128,18 @@ footer {
 }
 
 }
+
+
+/*////////////////////////*/
+
+.navbar-brand > img {
+  width: 30px;
+  height: auto;
+}
+
+.navbar-brand {
+  padding: 10px 10px;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 600;
+}

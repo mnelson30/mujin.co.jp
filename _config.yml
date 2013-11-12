@@ -8,3 +8,6 @@ permalink: none
 # Server
 destination: _site
 exclude: ["_site", ".gitignore", "bower.json", "CNAME", "Gruntfile.js", "package.json", "node_modules", "README.md", "vagrant", ".vagrant", "old", "src"]
+
+
+name: 'MUJIN'
