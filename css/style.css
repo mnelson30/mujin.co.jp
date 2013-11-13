@@ -129,7 +129,6 @@ footer {
 
 }
 
-
 /*////////////////////////*/
 
 .navbar-brand > img {
@@ -142,4 +141,13 @@ footer {
   font-size: 27px;
   line-height: 27px;
   font-weight: 600;
+}
+
+.carousel-caption > h1 {
+  -webkit-box-shadow:  0px 0px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow:  0px 0px 10px 10px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, .6);
+  padding-top: 3px;
+  padding-bottom: 3px;
 }

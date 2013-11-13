@@ -1,13 +1,13 @@
-# Dependencies
+# dependencies
 markdown: redcarpet
 pygments: true
 
-# Permalinks
+# permalinks
 permalink: none
 
-# Server
+# server
 destination: _site
 exclude: ["_site", ".gitignore", "bower.json", "CNAME", "Gruntfile.js", "package.json", "node_modules", "README.md", "vagrant", ".vagrant", "old", "src"]
 
-
+# site variables
 name: 'MUJIN'

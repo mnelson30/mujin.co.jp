@@ -49,9 +49,14 @@ module.exports = function(grunt) {
       website: {
         files: [
           '_config.yml',
-          '_includes/**/*.html',
-          '_layouts/**/*.html',
-          '*.html'
+          '**/*.md',
+          '**/*.html',
+
+          // exclude a bunch of crap that should not be watched
+          '!**/.git/**',
+          '!**/node_modules/**',
+          '!**/bower_components/**',
+          '!**/_site/**'
         ],
         tasks: ['jekyll']
       },
@@ -68,11 +73,6 @@ module.exports = function(grunt) {
       bower_components: {
         files: [
           'bower_components/**/*',
-
-          // exclude a bunch of crap that should not be watched
-          '!**/.git/**',
-          '!**/node_modules/**',
-          '!**/bower_components/**'
         ],
         tasks: ['rsync:bower_components']
       }
