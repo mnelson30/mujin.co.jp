@@ -1,0 +1,16 @@
+{% extends "generaltemplate.html
+{% load i18n %}
+
+{% block title %}
+MUJIN Inc.| Product Feature IK
+
+{% block main-content %}
+<h2>Inverse Kinematics</h2>
+<p>Inverse kinematics is used to determine the joint parameters that provide a desired position of the end-effector. Traditionally, the kinematic equations to solve the IK of a robot can be difficult and tedious to work with. Various numerical techniques exist to approximate analytical solutions, but the algorithms are usually lacking in speed or accuracy.</p>
+<br/>
+<img class="thumbnail" style="margin: auto;" width="640" src="{{ page.base_url }}img/technology_iksolutions.jpg" />
+<br/>
+<p>Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains.</p>
+<img class="thumbnail" style="margin: auto;" width="640" src="{{ page.base_url }}img/ikfast_robots.png" />    
+<br />
+

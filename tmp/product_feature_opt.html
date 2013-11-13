@@ -1,0 +1,30 @@
+<h2>Placement Optimizations</h2>
+  <p>In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times.</p>
+
+  <img class="thumbnail" style="margin: auto; width: 500px;" src="{{ page.base_url }}img/placement_opt.png"> 
+
+  <p>For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times.</p>
+
+<div class="well">
+  <iframe width="80%" style="margin-left: 10%;" height="355" src="http://www.youtube.com/embed/6cDRke79WZI" frameborder="0" allowfullscreen></iframe>
+  <div style="text-align: center;">
+  <p>This layout is before optimizing robot position. You can see that the robot perfectly avoids all obstacles, but there may be better trajectory in better position. </p>
+  </div>
+</div>
+
+<div class="well">
+  <iframe width="80%" style="margin-left: 10%;" height="355" src="http://www.youtube.com/embed/S7HsOU3iafQ" frameborder="0" allowfullscreen></iframe>
+  <div style="text-align: center;">
+  <p>{% blocktrans %}This layout is after optimizing robot position. you can see that robot position and angle apparently changed and those should be difficult to be found by manual teaching. In this case, placement optimization save 40% of task time. {% endblocktrans %}</p>
+  </div>
+</div>
+
+  <p>Additionally, the same optimization could also have been run against the position of the target workpiece object as well. The optimization would then have simultaneously considered all the positions of the robot and target object. In summary, optimizations allow users of the MUJIN Controller to calculate the optimum body positions to maximize efficiency of a workcell.</p>
+</div>
+
+<br />
+
+
+
+
+

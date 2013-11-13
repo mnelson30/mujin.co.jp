@@ -1,0 +1,19 @@
+{% extends "aboutmujintemplate.html
+{% load i18n %}
+{% block title %}
+MUJIN Inc.| News
+{% endblock %}
+
+{% block main-content %}
+{% for newsentry in news %}
+  <fieldset id="{{ newsentry.en_title }}">
+    <h3>{{ newsentry.title }}</h3>
+    <div class="fieldset-content span10">
+      <b>{{ newsentry.pub_date }}</b>
+      {% autoescape off %}
+        {{ newsentry.content }}
+	  {% endautoescape %}
+    </div>
+  </fieldset>
+{% endfor %}
+{% endblock %}

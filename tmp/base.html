@@ -1,0 +1,158 @@
+{% load url from future %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+  <head>
+    <title>
+      {% block title %}
+      MUJIN Inc Homepage | Industrial Robots for Everyone
+      {% endblock %}
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ page.base_url }}css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ page.base_url }}css/mujin_style.css"/>
+
+    <script type="text/javascript" src="{{ page.base_url }}js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ page.base_url }}js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ page.base_url }}js/mujinwww.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        {% block headscripts %}
+        {% endblock %}
+      });
+      
+      // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39951744-1', 'mujin.co.jp');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target="#scrollspy">
+    <div class="container">
+      <div class="masthead">
+        
+        <!-- logo -->
+        <a href="/index"><img src="{{ page.base_url }}img/mujin_logo_medium.jpg"/></a>
+        
+        <!-- call us! -->
+        <div class="pull-right">
+          <div class="span2">
+            <img class="pull-right" style="width: 80px;" src="{{ page.base_url }}img/call.png"/>
+          </div>
+          <div class="span4">
+            Call us at
+            <h3 style="margin: 0px; color: #b93c68;">050-3734-6850</h3>
+            Business hours 9:00am - 7:00pm
+          </div>
+          <div class="span2" style="margin-left: 0px;">
+            <a class="muted btn btn-danger" href="/inquiry">Contact us</a>
+            <br/>
+            <br/>
+            <a class="muted btn btn-danger" href="/access_map">Visit MUJIN</a>
+          </div>
+        </div>
+        
+        <!-- navigation -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="/index">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Products
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="/products_controller"><h4>MUJIN Controller</h4></a>
+                    </li>
+                    <li>
+                      <a href="/products_scanner"><h4>MUJIN Scanner</h4></a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/technology">Technology</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  About MUJIN
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="/news"><h4>News</h4></a>
+                    </li>
+                    <li>
+                      <a href="/our_team"><h4>Our Team</h4></a>
+                    </li>
+                    <li>
+                      <a href="/vision"><h4>Vision</h4></a>
+                    </li>
+                    <li>
+                      <a href="/access_map"><h4>Visit our Office</h4></a>
+                    </li>
+                    <li>
+                      <a href="/careers"><h4>Careers</h4></a>
+                    </li>
+                    <li>
+                      <a href="/business_connections"><h4>Business Connections</h4></a>
+                    </li>
+                    <li>
+                      <a href="/corporate_overview"><h4>Corporate Overview</h4></a>
+                    </li>
+                    <li>
+                      <a href="/corporate_history"><h4>Corporate History</h4></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /navbar -->
+      </div><!-- /masthead -->
+
+{% block content %}
+{% endblock %}
+
+      <hr>
+
+      <div class="footer">
+        <div class="pull-left">
+          &copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="/privacy_policy">Privacy Policy</a></p>
+        </div>
+        <div class="pull-right">
+
+          <a href="https://www.facebook.com/mujininc">
+            <img src="static/img/icons/facebook-large.png">
+          </a>
+          &nbsp;&nbsp;
+
+          <a href="https://twitter.com/mujin">
+            <img src="static/img/icons/twitter-large.png">
+          </a>
+          &nbsp;&nbsp;
+
+          <a href="http://www.youtube.com/user/mujinvideo">
+            <img src="static/img/icons/youtube-large.png">
+          </a>
+          &nbsp;&nbsp;
+
+          <a href="https://github.com/mujin">
+            <img src="static/img/icons/github-large.png">
+          </a>
+          &nbsp;&nbsp;
+
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </body>
+</html>
+

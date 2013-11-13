@@ -1,0 +1,148 @@
+{% extends "base.html
+{% load i18n %}
+
+{% block title %}
+MUJIN | Inquiry
+{% endblock %}
+
+{% block headscripts %}
+  var trim = function(str) {
+    return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+  }
+
+  $(document).ready(function() {
+    $('#form_submit').click(function(e) {
+      var data = {}
+      $('form').find('input[type="text"], textarea').each(function(index, el) {
+        data[$(el).attr('name')] = $(el).val();
+      })
+
+      var valid = true;
+      for (var prop in data) {
+        if (trim(data[prop]) == "") {
+          alert($('label[for="' + prop + '"]').text() + ' can not be blank!');
+          valid = false;
+          break;
+        }
+      }
+      if (valid) {
+        $.ajax({
+          url: '/sendinquiry',
+          type: 'POST',
+          data: data,
+          contentType: 'application/json; charset=UTF-8',
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-CSRFToken', $('input[type="hidden"]').val());
+          },
+          success: function() {
+            alert('Message sent');
+          }
+        });
+      }
+    });
+  });
+{% endblock %}
+
+{% block content %}
+<h2>Contact us </h2>
+<h4>Reach out to MUJIN's representatives and find your solution.</h4>
+<h4>Or email us at <img style="vertical-align: middle; width:150px;" src="{{STATIC_URL}}img/mujin_mail.png"/></h4>
+
+<br/>
+<br/>
+<form action="#">
+  {% csrf_token %}
+  <table cellpadding="4" align="center" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td style="width:50%;">
+          <table style="width:100%;">
+            <tbody>
+              <tr>
+                <td>
+                  <label for="first_name">First Name</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="first_name">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="last_name">Last Name</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="last_name"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="company_name">Company Name</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="company_name"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="address">Address</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="address"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="city">City</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="city"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="state">State/Prefecture</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="state">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Country">Country</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="country">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email Address</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="email">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="telephone">Telephone Number</label>
+                </td>
+                <td>
+                  <input type="text" class="input-xlarge" name="telephone">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td valign="top">
+          <label for="message" style="display: block;">Message</label>
+          <textarea rows="10" cols="50" maxlength="1000" style="width: 100%; height: 300px;" name="message"></textarea>
+          <br/>
+          <br/>
+          <input id="form_submit" type="button" style="padding: 5px; float: right;" value="Submit Form ">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<br/>
+{% endblock %}

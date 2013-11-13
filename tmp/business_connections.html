@@ -1,0 +1,62 @@
+{% extends "generaltemplate.html
+{% load i18n %}
+{% block title %}
+MUJIN Inc.| Business Connections
+{% endblock %}
+
+{% block sidebar-list-items %}
+<li><a href="#clients">Clients</a></li>
+<li><a href="#partners">Partners</a></li>
+<li><a href="#investors">Investors</a></li>
+{% endblock %}
+
+{% block main-content %}
+<fieldset id="clients">
+  <h3>Clients</h3>
+  A short list of some of our clients
+  <div class="fieldset-content">
+    <ul>
+      <li>CANON Inc.<a href="http://canon.jp/">(Homepage)</a></li>
+      <a href="http://canon.jp/"><img style="width:200px" src="{{ page.base_url }}img/canon_logo.png"></a>
+    </ul>
+  </div>
+  <div class="fieldset-content">
+    <ul>
+      <li>Honda Engineering Co., Ltd<a href="http://www.honda.co.jp/EG/">(Homepage)</a></li>
+      <a href="http://www.honda.co.jp/EG/"><img style="width:200px" src="{{ page.base_url }}img/honda_eg_logo.png"></a>
+    </ul>
+  </div>
+  <div class="fieldset-content">
+    <ul>
+      <li>CEC ltd.<a href="http://www.cec-ltd.co.jp/service/vr+r/">(Homepage)</a></li>
+      <a href="http://www.cec-ltd.co.jp/service/vr+r/"><img style="width:200px" src="{{ page.base_url }}img/cec_logo.png"></a>
+    </ul>
+  </div>
+</fieldset>
+<fieldset id="partners">
+  <h3>Partners/Subcontractors</h3>
+  <div class="fieldset-content">
+    <ul>
+      <li>DENSO WAVE INCORPORATED{% blocktrans %}<a href="http://www.denso-wave.com/en/">{% endblocktrans %}(Homepage)</a></li>
+      <a href="http://www.denso-wave.com/en/"><img style="width:200px" src="{{ page.base_url }}img/densowave_logo.png"></a>
+ <li>Mitsubishi Electric Corporation{% blocktrans %}<a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home">{% endblocktrans %}(Homepage)</a></li>
+      <a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home"><img style="width:200px" src="{{ page.base_url }}img/mitsubishi_logo.jpg"></a></br></br>
+      <li>CEC ltd.<a href="http://www.cec-ltd.co.jp/service/vr+r/">(Homepage)</a></li>
+      <a href="http://www.cec-ltd.co.jp/service/vr+r/"><img style="width:200px" src="{{ page.base_url }}img/cec_logo.png"></a></br></br>
+      <li>Knowledge ltd.<a href="http://3dp.co.jp/">(Homepage)</a></li>
+      <a href="http://3dp.co.jp/"><img style="width:200px" src="{{ page.base_url }}img/knowledge_logo.png"></a></br></br>
+      <li>MeiwaEtech<a href="http://www.meiwa-e.co.jp/">(Homepage)</a></li>
+      <a href="http://www.meiwa-e.co.jp/"><img style="width:170px" src="{{ page.base_url }}img/meiwa_logo.jpeg"></a>
+    </ul>
+  </div>
+</fieldset>
+<fieldset id="investors">
+  <h3>Investors</h3>
+  <div class="fieldset-content">
+    <ul>
+      <li>The University of Tokyo Edge Capital<a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1">(Homepage)</a></li>
+      <a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1"> <img style="width:200px" src="{{ page.base_url }}img/U-TEC.jpg"></a>
+    </ul>
+  </div>
+</fieldset>
+{% endblock %}

@@ -19,7 +19,7 @@ base_url: "../../"
     </div>
   
     <div class="col-md-9 col-sm-8">
-      <h1 class="page-header">MUJIN Controller <small>Industrial robot automation for everyone</small></h1>
+      <h2 class="page-header">MUJIN Controller <small>Industrial robot automation for everyone</small></h2>
       <img style="width: 100%; height: auto;" src="{{ page.base_url }}img/products/mujincontroller_snap_en.png">
       <p class="lead">The MUJIN Controller is our innovative solution to industrial robot programming</p>
       <ul>
@@ -31,6 +31,293 @@ base_url: "../../"
         <li>Simplifies deployment and testing of hard programming tasks like dual-arm manipulation</li>
       </ul>
 
+      <h2 class="page-header">Simulation Precision and Accuracy</h2>
+      <p>A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95%% precision. What the program shows on the computer is what will happen in the actual robot cell.</p>
+      
+      
+      <h2 class="page-header">Features</h2>
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active">
+            <a data-toggle="tab" href="#feature-1">Inverse Kinematics</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-2">Collision Avoidance</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-3">Simulation Precision</a>
+          </li>
+
+          <li class="">
+            <a data-toggle="tab" href="#feature-4">Grasp/Release Simulation</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-5">Grasp Planning</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-6">Placement Optimizations</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-7">Clearance Setting</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-8">Multi-Robot Manipulation</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-9">Industrial Task Language</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-10">Robot Program Output</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-11">Zero Installation</a>
+          </li>
+
+          <li>
+            <a data-toggle="tab" href="#feature-12">No CAD Dependencies</a>
+          </li>
+
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade active in" id="feature-1">
+            <h2>Inverse Kinematics</h2>
+            <p>Inverse kinematics is used to determine the joint parameters that provide a desired position of the end-effector. Traditionally, the kinematic equations to solve the IK of a robot can be difficult and tedious to work with. Various numerical techniques exist to approximate analytical solutions, but the algorithms are usually lacking in speed or accuracy.</p>
+            <br/>
+            <img class="thumbnail" src="{{ page.base_url }}img/technology_iksolutions.jpg" />
+            <br/>
+            <p>Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains.</p>
+            <img class="thumbnail" src="{{ page.base_url }}img/ikfast_robots.png" />    
+          </div>
+
+          <div class="tab-pane fade" id="feature-2">
+
+            <h2>Automated Collision Avoidance System</h2>
+
+            <p>Most existing industrial robot programming packages can only check for collisions with the workpiece and robot. They require users to manually specify collision-free waypoints so trajectories will never have collisions in them. The problem with this technique is that the waypoints users choose will most certainly yield sub-optimal trajectories.</p>
+
+            <p>The MUJIN Controller approaches things differently. All collision avoidance and constraint handling happens automatically based on simulations and path planning algorithms based on the robot and its environment. It takes a lot of stress off the robot programmer as it provides a clean and simple interface that requires only high-level parameters as input.</p>
+
+            <h3>Advantages</h3>
+
+            <ul>
+              <li><p>Eliminates the need for manual teaching operations, which reduces development and deployment cost.</p></li>
+              <li><p>Creates motion plans for tasks that are very difficult or impossible to program with manual teaching.</p></li>
+            </ul>
+
+            <h3>Example Task</h3>
+
+            <iframe width="100%" height="355" src="http://www.youtube.com/embed/McLwjiAx-10" frameborder="0" allowfullscreen></iframe>
+            <div class="text-center">
+              <p><h4>This task would have been very difficult to program without automatic collision avoidance.</h4></p>
+            </div>
+
+            <h3>Example Workflow</h3>
+
+            <p>Collision avoidance enables a drastically simplified workflow for robot programmers and system integrators when approacing the complex task of programming a robot.</p>
+
+            <table class="table table-bordered">
+              <tr>
+                <td>
+                  <img src="{{ page.base_url }}img/door_animation.png"/>
+                </td>
+                <td>
+                  <p>Import 3D models into the MUJIN Controller. The MUJIN Controller supports many 3D CAD software, so there is no need to buy a new 3D CAD systems or licenses.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="{{ page.base_url }}img/door_animation2.png"/>
+                </td>
+                <td>
+                  <p>With <a href="/product_feature_itl">MUJIN ITL</a> users have a high-level, generic way to easily specify task parameters such as tool, task type and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2).</p>
+                  <br/>
+                  <b>The only program you write is:</b>
+                  <div class="row">
+                    <div class="span6">
+                      <pre>
+move(p[P1])          #move to P1 
+grab(t[chair1])      #grab chair1
+move(p[P2])          #move to P2
+release(t[chair2])   #release chair2
+                      </pre>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="{{ page.base_url }}img/door_animation2.gif"/>
+                </td>
+                <td>
+                  Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing thousands of candidate trajectories. After calculating the most optimal trajectory, MUJIN Controller<a href="/product_feature_program"> automatically output robot manufactures program.</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-pane fade" id="feature-3">
+
+            <h2>Simulation Precision</h2>
+
+            <p>A simulation is pointless unless it is consistent with reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory in a virtual environment matches up exactly with the robot's motion in the real world. MUJIN however is proud to guarantee our trajectories are accurate and precise to at least 95 percent of the real robot's motion.</p>
+            
+            <h3>Virtual Robot Controller (VRC) </h3>
+            
+            <p>To achieve our high simulation accuracy the MUJIN Controller examines all trajectories calculated through a robot manufacture's Virtual Robot Controller (VRC). This means that their simulation software verifies the MUJIN Controller generated trajectory. Only collision free trajectories proven by the test with VRC is output as a result.</p>
+             
+            <img class="thumbnail" src="{{ page.base_url }}img/VRC.png">
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-4">
+
+            <h2>Grasp and Release Function</h2>
+
+            <p>The MUJIN Controller has an unique function which can simulate trajectories while considering a workpiece in the robots grasp. As soon as a robot grabs an object, the MUJIN Controller treats that object as a part of the robot. This means the objects will be part of the robots collision mesh and respond to collision avoidance, so that users do not have to specify intermediate waypoints to account for the object being in a specific place while being manipulated by the robot.</p>
+
+            <iframe width="100%" height="355" src="http://www.youtube.com/embed/McLwjiAx-10" frameborder="0" allowfullscreen></iframe>
+            <p>Once the tool is specified, the robot can grab the workpiece, transfer it to its goal and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembles.</p>
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-5">
+
+            <h2>Grasp Planning</h2>
+
+            <p>The MUJIN Controller has a function which can optimize grasp out of specified grasp sets. After the user specified possible grasp sets for the workpiece, MUJIN Controller automatically simulates all possible task trajectory and tells you which grasp set is the most suitable for the task.</p>
+
+            <img src="{{ page.base_url }}img/grasp.gif" frameborder="0" allowfullscreen></img>
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-6">
+
+            <h2>Placement Optimizations</h2>
+
+            <p>In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times.</p>
+
+            <img src="{{ page.base_url }}img/placement_opt.png"> 
+
+            <p>For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times.</p>
+
+            <iframe width="100%" height="355" src="http://www.youtube.com/embed/6cDRke79WZI" frameborder="0" allowfullscreen></iframe>
+            <p>This layout is before optimizing robot position. You can see that the robot perfectly avoids all obstacles, but there may be better trajectory in better position. </p>
+
+            <iframe width="100%" height="355" src="http://www.youtube.com/embed/S7HsOU3iafQ" frameborder="0" allowfullscreen></iframe>
+            <p>This layout is after optimizing robot position. you can see that robot position and angle apparently changed and those should be difficult to be found by manual teaching. In this case, placement optimization save 40% of task time.</p>
+
+            <p>Additionally, the same optimization could also have been run against the position of the target workpiece object as well. The optimization would then have simultaneously considered all the positions of the robot and target object. In summary, optimizations allow users of the MUJIN Controller to calculate the optimum body positions to maximize efficiency of a workcell.</p>
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-7">
+
+            <h2>Clearance Setting Function</h2>
+
+            <p>The MUJIN Controller has an unique function which can set a clearance distance between robot and obstacles. Since each customer should have desired clearance amount for their safety, MUJIN Controller tries to sutisfy the contstrain as much as it can. However, robot sometimes to approach to obstacles or goals to accomplish specified task. When the task cannot be accomplished with specified clearance amount, MUJIN controller automatically reduces the amount of clearance and tries to complete the task.</p>
+
+            <iframe width="100%" height="355" src="//www.youtube.com/embed/-N8olRmGgIA" frameborder="0" allowfullscreen></iframe>
+            <p>Clearance setting 30mm</p>
+
+            <iframe width="100%" height="355" src="//www.youtube.com/embed/RTAoU5XcBGI" frameborder="0" allowfullscreen></iframe>
+            <p>Clearance setting 60mm</p>
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-8">
+
+            <h2>Multi-Robot Manipulation Planning System</h2>
+
+            <p>Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutions for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace.</p>
+
+            <iframe width="100%" height="355" src="http://www.youtube.com/embed/vLu0twF2-Ps" frameborder="0" allowfullscreen></iframe>
+            <p><h4>The speed benefits of multiple robots in an assembly task.</h4></p>
+
+            <p>To solve these problems, MUJIN has leveraged algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task.</p>
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-9">
+
+            <h2>Industrial Task Language (ITL)</h1>
+
+            <p>Industrial Task Language is a robot programming language developed by MUJIN. It enables users to conveniently program and design their robotic applications in a generic and scalable way. ITL is completely independent to any robot manufactures' language and is designed to maximize MUJIN Controller's extensive simulation features. Using ITL releases people from managing different robot programs in different languages that depend on manufactures'. It also reduces the effort required to plan, apply and maintain core robotic programming techniques, saving time and money.</p>
+            
+            <h3>Specify only goals</h2>
+            
+            <p>Since the MUJIN Controller is a tool designed to create the optimized, collision free paths, an ITL user only has to specify goals. </p>
+
+            <h4>Example Program</h4>
+                  <pre>
+settool(1)
+move(translation(0,0,20)*p[P2])
+movel(p[P2])
+movel(translation(0,0,20)*p[P2])
+move(translation(0,0,20)*p[P3])
+movel(p[P3])
+movel(translation(0,0,20)*p[P3])
+move(translation(0,0,20)*p[P1])
+movel(p[P1])
+movel(translation(0,0,20)*p[P1])
+move(translation(0,0,20)*p[P3])
+movel(p[P3])            </pre>
+
+              <br />
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-10">
+
+            <h2>Manufacturer-specific Program Output</h2>
+
+            <p>After a trajectory's accuracy is assured by VRC or other simulation on the MUJIN Controller, it gets converted into native files for a particular robot manufacturer. Currently DENSO and MITSUBISHI are supported on the MUJIN Controller. The user copies this program and pastes it into the robot manufacturers program connected to a real robot. The user can immediately move the robot.</p>
+            <br />
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-11">
+
+            <h2>Zero Installation</h2>
+
+            <p>The MUJIN Controller does not require users to install any software. The only requirement is a web browser. MUJIN strongly recommends the following browsers: </p>
+
+            <img style="width: 20%;" src="{{ page.base_url }}img/firefox_logo.png">
+            <br />
+            <img style="width: 20%;" src="{{ page.base_url }}img/chrome_logo.png">
+
+          </div>
+
+          <div class="tab-pane fade" id="feature-12">
+
+            <h1>Standalone 3D CAD Format Support</h1>
+
+            <p>Many of existing robot simulation software are implemented as add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats. </p>
+
+            <h4>Supported formats: </h4>
+
+            <ul>
+              <li>COLLADA</li>
+              <li>IGES</li>
+              <li>STEP</li>
+              <li>IV/VRML</li>
+              <li>STL</li>
+              <li>DirectX</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
     </div>
     
   </div><!-- /.row -->
