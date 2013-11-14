@@ -269,3 +269,9 @@ footer {
 #myTabContent > div {
   margin-left: 220px;
 }
+
+
+#nav-sidebar .affix {
+  width: 262.5px;
+  position: fixed;
+}

@@ -1,9 +1,18 @@
-// Activates the Carousel
+// carousel
 $('.carousel').carousel({
   interval: 5000
 })
 
-// Activates Tooltips for Social Links
+// tooltips for social links
 $('.tooltip-social').tooltip({
   selector: "a[data-toggle=tooltip]"
+})
+
+$('body').scrollspy({
+  target: '#nav-sidebar',
+  offset: 80
+});
+
+$(window).on('load', function () {
+  $body.scrollspy('refresh')
 })
