@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-14 02:10+0900\n"
+"POT-Creation-Date: 2013-11-14 15:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2198,27 +2198,34 @@ msgid "Easy Step"
 msgstr "簡単ステップ"
 
 #: mujinwww/templates/products_pickworker.html:19
-msgid "World first motion plnanning bin-picking system"
-msgstr "世界初、動作生成機能付バラ積みピッキング知能システム"
+msgid "World first motion planning bin-picking system"
+msgstr "動作生成機能付バラ積みピッキング知能システム"
 
 #: mujinwww/templates/products_pickworker.html:20
 msgid ""
-"By registering 3D models of boxes and objects in advance, robot "
-"automatically generates collision and singularity free motions between "
-"picking and suppyling. This innovative techology enable robot to pick "
-"objects from inside of bin. "
-msgstr "あらかじめ設備その他の干渉物の3D情報を登録する事により、全ての干渉・特異点を回避し、今まで困難であったバラ積み部品の取り出しから供給までの作業を完全自動化"
+"By registering 3D models objects in advance, the robot automatically "
+"generates collision and singularity free motions between picking and "
+"suppyling locations. Additionally, grasp sets for the objects are pre-"
+"computed, so parts can be picked up in many different ways. This innovative "
+"technology enables a very flexible, smooth and fast system for a robot to "
+"pick objects from inside of a bin."
+msgstr ""
+"あらかじめ設備その他の干渉物の3D情報を登録する事により、全ての干渉・特異点を"
+"回避し、今まで困難であったバラ積み部品の取り出しから供給までの作業を完全自動"
+"化"
 
 #: mujinwww/templates/products_pickworker.html:22
-msgid "Additional value brought by smooth motion"
-msgstr "なめらかな動作がもたらす付加価値"
+msgid "The added value of motion planning"
+msgstr "自動動作計画による付加価値"
 
 #: mujinwww/templates/products_pickworker.html:23
 msgid ""
-"Since all robot motions are output by MUJIN Controller automatically, robot "
-"motions are usually very smooth. This smooth motion could reduce damages for "
-"sensitive products "
-msgstr "ティーチングでは限界とされていた「なめらかな動作で、製品や設備等に与えるダメージを軽減する」事にも貢献。デリケートな商品搬送への応用も期待されます。"
+"Since all robot motions are outputted by the MUJIN Controller, robot motions "
+"are usually very smooth. This smooth motion could reduce damages for fragile "
+"or sensitive products."
+msgstr ""
+"ティーチングでは限界とされていた「なめらかな動作で、製品や設備等に与えるダ"
+"メージを軽減する」事にも貢献。デリケートな商品搬送への応用も期待されます。"
 
 #: mujinwww/templates/products_pickworker.html:25
 msgid "Simple but flexible system"
@@ -2226,20 +2233,26 @@ msgstr "シンプルな構成で変種変量生産にもジャストフィット
 
 #: mujinwww/templates/products_pickworker.html:26
 msgid ""
-"Because Pick Worker system is highly integrated by software, it is "
-"successfully builtwith a minimum number of components such as robot, slider, "
-"camera, and MUJIN Controller. By keeping hardware system simple, possibility "
-"of hardware trouble can be reduced as low as possible and also can be more "
-"flexible to modifications based on customers' request. "
-msgstr "ソフトウェア主体で知能化されているため、ハードウェアを最大限シンプル化けるする事に成功しました。ハードウェア構成がシンプルな分、不具合もおきにくく長期間の使用にも難なく耐えます。また、品種替えによる段取り作業も最小限におさえます。"
+"The brilliance of the Pick Worker system lies in its software. However, it "
+"was built with a minimal number of components such as the robot, slider, "
+"camera, and the MUJIN Controller. By keeping the hardware simple, it reduces "
+"the possibility for mechanical failure and opens up possibility for flexable "
+"and easy modifications based on customers' request."
+msgstr ""
+"ソフトウェア主体で知能化されているため、ハードウェアを最大限シンプル化けるす"
+"る事に成功しました。ハードウェア構成がシンプルな分、不具合もおきにくく長期間"
+"の使用にも難なく耐えます。また、品種替えによる段取り作業も最小限におさえま"
+"す。"
 
 #: mujinwww/templates/products_pickworker.html:28
-msgid "Latest point cloud technology "
+msgid "Latest point cloud technology"
 msgstr "最新の点群データ処理アルゴリズム搭載"
 
 #: mujinwww/templates/products_pickworker.html:29
-msgid "Latest point cloud technology is applied to offical perception. "
-msgstr "リアルタイム搬送に不可欠な高速処理を実現。今後様々なワーク形状へ対応を拡大"
+msgid ""
+"We use cutting edge point cloud and computer vision algorithms in our "
+"perception system."
+msgstr "MUJINの認識システムでは最新の点群処理とコンピュータービジョンアルゴリズムを使用しています。"
 
 #: mujinwww/templates/products_pickworker.html:41
 #: mujinwww/templates/products_scanner.html:39
@@ -2633,7 +2646,7 @@ msgstr "MUJINコントローラデモ"
 
 #: mujinwww/templates/videos.html:22
 msgid "Liquid_fast Handling Demo"
-msgstr "液体高速搬送"
+msgstr "高速液体搬送"
 
 #: mujinwww/templates/videos.html:29
 msgid "Scanning Demo"
@@ -2726,6 +2739,13 @@ msgstr "電機業界"
 #: mujinwww/templates/vision.html:34
 msgid "Logistical"
 msgstr "物流業界"
+
+#~ msgid "Additional value brought by smooth motion"
+#~ msgstr "なめらかな動作がもたらす付加価値"
+
+#~ msgid "Latest point cloud technology is applied to offical perception. "
+#~ msgstr ""
+#~ "リアルタイム搬送に不可欠な高速処理を実現。今後様々なワーク形状へ対応を拡大"
 
 #~ msgid ""
 #~ "On-site dedicated 12 core high performance server for use on a private "
