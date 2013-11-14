@@ -1,0 +1,56 @@
+{% extends "generaltemplate.html" %}
+{% load i18n %}
+
+{% block sidebar-list-items %}
+<li><a href="#pickworker">{% trans "MUJIN Scanner" %}</a></li>
+<li><a href="#pickworker_video">{% trans "Demo Video" %}</a></li>
+<li><a href="#pickworker_step">{% trans "Easy Step" %}</a></li>
+<li><a href="#getone">{% trans "Purchasing" %}</a></li>
+{% endblock %}
+
+{% block slider %}
+{% endblock %}
+
+{% block main-content %}
+<img src="{{ STATIC_URL }}img/pickworker/pickworker.png">
+
+<fieldset id="pickworker">
+  <div class="fieldset-content span10">
+    <h3>{% trans "World first motion planning bin-picking system" %} </h3><br/>
+    <p class="lead">{% trans "By registering 3D models objects in advance, the robot automatically generates collision and singularity free motions between picking and suppyling locations. Additionally, grasp sets for the objects are pre-computed, so parts can be picked up in many different ways. This innovative technology enables a very flexible, smooth and fast system for a robot to pick objects from inside of a bin." %}</p>
+
+    <h3>{% trans "The added value of motion planning" %} </h3><br/>
+    <p class="lead">{% trans "Since all robot motions are outputted by the MUJIN Controller, robot motions are usually very smooth. This smooth motion could reduce damages for fragile or sensitive products." %}</p>
+
+    <h3>{% trans "Simple but flexible system" %} </h3><br/>
+    <p class="lead">{% trans "The brilliance of the Pick Worker system lies in its software. However, it was built with a minimal number of components such as the robot, slider, camera, and the MUJIN Controller. By keeping the hardware simple, it reduces the possibility for mechanical failure and opens up possibility for flexable and easy modifications based on customers' request." %}</p>   
+
+    <h3>{% trans "Latest point cloud technology" %} </h3><br/>
+    <p class="lead">{% trans "We use cutting edge point cloud and computer vision algorithms in our perception system." %}</p>   
+
+  </div>
+</fieldset>
+
+<fieldset id="pickworker_video" class="highlight-span3">
+  <h2 style="color:red">{% trans "Demo Video" %}</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+  <div class="fieldset-content span10">
+
+    <div class="row">
+      <h3>{% trans "Demonstration" %} </h3>
+
+      <iframe width="580" height="340" src="//www.youtube.com/embed/X-nUkgUb81A" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset id="pickworker_step" class="highlight-span3">
+  <h2 style="color:red">{% trans "Easy Steps" %}</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+    <img src="{{ STATIC_URL }}img/pickworker/pickworker_step.png">
+</fieldset>
+<fieldset id="getone" class="highlight-span3">
+</fieldset>
+{% endblock %}
