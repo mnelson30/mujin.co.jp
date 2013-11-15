@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       // build the website if anything changes
       website: {
         files: [
-          '_config.yml',
+          '**/*.yml',
           '**/*.md',
           '**/*.html',
 

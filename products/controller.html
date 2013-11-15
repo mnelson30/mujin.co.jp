@@ -7,7 +7,7 @@ base_url: "../../"
 <div class="container">
   
   <div class="row">
-    <div class="col-md-3 col-sm-4 hidden-xs">
+    <div class="col-lg-4 visible-lg">
       <div class="sidebar" id="nav-sidebar">
         <ul class="nav nav-stacked nav-pills" data-spy="affix" data-offset-top="280">
           <li><a href="#controller">MUJIN Controller</a></li>
@@ -20,7 +20,7 @@ base_url: "../../"
       </div>
     </div>
   
-    <div class="col-md-9 col-sm-8">
+    <div class="col-lg-8 col-sm-12 col-md-12">
       <h2 id="controller" class="page-header">MUJIN Controller <small>Industrial robot automation for everyone</small></h2>
       <img style="width: 100%; height: auto;" src="{{ page.base_url }}img/mujincontroller_snap_en.png">
       <p class="lead">The MUJIN Controller is our innovative solution to industrial robot programming</p>
@@ -140,7 +140,7 @@ base_url: "../../"
                   <img src="{{ page.base_url }}img/door_animation2.png"/>
                 </td>
                 <td>
-                  <p>With <a href="/product_feature_itl">MUJIN ITL</a> users have a high-level, generic way to easily specify task parameters such as tool, task type and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2).</p>
+                  <p>With <a href="{{ site.baseurl_root }}{{ site.lang }}/product_feature_itl">MUJIN ITL</a> users have a high-level, generic way to easily specify task parameters such as tool, task type and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2).</p>
                   <br/>
                   <b>The only program you write is:</b>
                   <div class="row">
@@ -160,7 +160,7 @@ release(t[chair2])   #release chair2
                   <img src="{{ page.base_url }}img/door_animation2.gif"/>
                 </td>
                 <td>
-                  Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing thousands of candidate trajectories. After calculating the most optimal trajectory, MUJIN Controller<a href="/product_feature_program"> automatically output robot manufactures program.</a>
+                  Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing thousands of candidate trajectories. After calculating the most optimal trajectory, MUJIN Controller automatically output robot manufactures program.
                 </td>
               </tr>
             </table>
@@ -376,7 +376,7 @@ movel(p[P3])            </pre>
 
       <h1 id="license" class="page-header">Licensing Options</h1>
       <h4>Annual Licensing Option</h4>
-      <p>MUJIN offers annual licenses of our controllers to commercial companies. License fees differ depending on which kind of MUJIN Controller you choose and how much computing power you want. For pricing details, please <a href="/inquiry">contact us</a> or call +81-050-3682-7852.</p>
+      <p>MUJIN offers annual licenses of our controllers to commercial companies. License fees differ depending on which kind of MUJIN Controller you choose and how much computing power you want. For pricing details, please <a href="{{ site.baseurl_root }}{{ site.lang }}/inquiry">contact us</a> or call +81-050-3682-7852.</p>
       <h4>Academic Licensing Option</h4>
       <p>MUJIN offers academic licenses to non-commercial research programs. These licenses are only for academic research and for student projects. We expect teachers and researchers in robot engineering, computer science, electrical engineering, mechanical engineering and many other fields to select our academic licensing option.</p>
       <p>The academic licensing agreement includes the following provisions:</p>

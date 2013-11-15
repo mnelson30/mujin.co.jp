@@ -13,8 +13,8 @@ base_url: "./"
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <h3><img style="width: 30px; height: auto;" src="{{ page.base_url }}img/logo/mujin_logo_single_notext.svg"/> {{ site.name }}</h3>
-        <p class="lead">We are a team of robotics, motion control and design experts ready to tackle your toughest industrial robot problems.</p>
-        <a class="btn btn-primary btn-lg" href="#">Learn more about MUJIN &raquo;</a>
+        <p class="lead">{% t We are a team of robotics, motion control and design experts ready to tackle your toughest industrial robot problems. %}</p>
+        <a class="btn btn-primary btn-lg" href="{{ site.baseurl_root }}{{ site.lang }}/company.html">Learn more about MUJIN &raquo;</a>
       </div>
       <div class="col-lg-4 col-md-4">
         <h3>MUJIN Controller</h3>
@@ -27,7 +27,7 @@ base_url: "./"
         <h3>MUJIN Scanner</h3>
         <p class="lead">Save time by modeling simple parts and complex environments.</p>
         <div class="text-center">
-          <img style="width: 90%; height: auto;" src="{{ page.base_url }}img/video_thumteambs/scanner-demo.png"/>
+          <img style="width: 90%; height: auto;" src="{{ page.base_url }}img/video_thumbs/scanner-demo.png"/>
         </div>
       </div>
     </div><!-- /.row -->
@@ -49,10 +49,10 @@ base_url: "./"
         </ul>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <a href="#" class="btn btn-default btn-lg btn-block">MUJIN Controller &raquo;</a>
-        <a href="#" class="btn btn-default btn-lg btn-block">MUJIN Scanner &raquo;</a>
-        <a href="#" class="btn btn-default btn-lg btn-block">Engineering Services &raquo;</a>
-        <a href="#" class="btn btn-default btn-lg btn-block">Our Technology &raquo;</a>
+        <a href="{{ site.baseurl_root }}{{ site.lang }}/products/controller.html" class="btn btn-default btn-lg btn-block">MUJIN Controller &raquo;</a>
+        <a href="{{ site.baseurl_root }}{{ site.lang }}/" class="btn btn-default btn-lg btn-block">MUJIN Scanner &raquo;</a>
+        <a href="{{ site.baseurl_root }}{{ site.lang }}/" class="btn btn-default btn-lg btn-block">Engineering Services &raquo;</a>
+        <a href="{{ site.baseurl_root }}{{ site.lang }}/" class="btn btn-default btn-lg btn-block">Our Technology &raquo;</a>
       </div>
     </div><!-- /.row -->
 
