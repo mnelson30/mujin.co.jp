@@ -5683,6 +5683,7 @@ a.badge:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
+
 .scanner-table img {
   max-height: 200px;
   max-width: 60%;
@@ -5690,6 +5691,7 @@ a.badge:focus {
   width: auto;
   margin: auto;
 }
+
 .scanner-table td {
   width: 50%;
 }

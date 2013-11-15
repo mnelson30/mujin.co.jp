@@ -270,8 +270,19 @@ footer {
   margin-left: 220px;
 }
 
-
 #nav-sidebar .affix {
   width: 262.5px;
   position: fixed;
+}
+
+.scanner-table img {
+  max-height: 200px;
+  max-width: 60%;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+.scanner-table td {
+  width: 50%;
 }

@@ -1,14 +1,18 @@
+{% extends "generaltemplate.html
+{% load i18n %}
+
+{% block main-content %}
 <h2>Automated Collision Avoidance System</h2>
 
-<p>Most existing industrial robot programming packages can only check for collisions with the workpiece and robot. They require users to manually specify collision-free waypoints so trajectories will never have collisions in them. The problem with this technique is that the waypoints users choose will most certainly yield sub-optimal trajectories.</p>
+<p class="lead">Most existing industrial robot programming packages can only check for collisions with the workpiece and robot. They require users to manually specify collision-free waypoints so trajectories will never have collisions in them. The problem with this technique is that the waypoints users choose will most certainly yield sub-optimal trajectories.</p>
 
-<p>The MUJIN Controller approaches things differently. All collision avoidance and constraint handling happens automatically based on simulations and path planning algorithms based on the robot and its environment. It takes a lot of stress off the robot programmer as it provides a clean and simple interface that requires only high-level parameters as input.</p>
+<p class="lead">The MUJIN Controller approaches things differently. All collision avoidance and constraint handling happens automatically based on simulations and path planning algorithms based on the robot and its environment. It takes a lot of stress off the robot programmer as it provides a clean and simple interface that requires only high-level parameters as input.</p>
 
 <h3>Advantages</h3>
 
 <ul>
-  <li><p>Eliminates the need for manual teaching operations, which reduces development and deployment cost.</p></li>
-  <li><p>Creates motion plans for tasks that are very difficult or impossible to program with manual teaching.</p></li>
+  <li><p class="lead">Eliminates the need for manual teaching operations, which reduces development and deployment cost.</p></li>
+  <li><p class="lead">Creates motion plans for tasks that are very difficult or impossible to program with manual teaching.</p></li>
 </ul>
 
 <h3>Example Task</h3>
@@ -16,13 +20,13 @@
 <div class="well">
   <iframe width="80%" style="margin-left: 10%;" height="355" src="http://www.youtube.com/embed/McLwjiAx-10" frameborder="0" allowfullscreen></iframe>
   <div style="text-align: center;">
-    <p><h4>This task would have been very difficult to program without automatic collision avoidance.</h4></p>
+    <p class="lead"><h4>This task would have been very difficult to program without automatic collision avoidance.</h4></p>
   </div>
 </div>
 
 <h3>Example Workflow</h3>
 
-<p>Collision avoidance enables a drastically simplified workflow for robot programmers and system integrators when approacing the complex task of programming a robot.</p>
+<p class="lead">Collision avoidance enables a drastically simplified workflow for robot programmers and system integrators when approacing the complex task of programming a robot.</p>
 
 <table class="table table-bordered vertical-center-table">
   <tr>
@@ -69,5 +73,6 @@ release(t[chair2])   #release chair2
 <img class="thumbnail" src="{{ page.base_url }}img/collision_manual_correction.png"/>
 <p style="clear:both">The robot programmer has to adjust each parameter to correct collision.</p>
 <br />
-
+<a class="btn btn-large" href="/products_controller#product_features"><b>&laquo;</b>&nbsp;Back to Product Features</a>
+{% endblock %}
 

@@ -1,0 +1,56 @@
+{% extends "generaltemplate.html
+{% load i18n %}
+
+{% block sidebar-list-items %}
+<li><a href="#pickworker">MUJIN Scanner</a></li>
+<li><a href="#pickworker_video">Demo Video</a></li>
+<li><a href="#pickworker_step">Easy Step</a></li>
+<li><a href="#getone">Purchasing</a></li>
+{% endblock %}
+
+{% block slider %}
+{% endblock %}
+
+{% block main-content %}
+<img src="{{ page.base_url }}img/pickworker/pickworker.png">
+
+<div id="pickworker">
+  <div class="div-content span10">
+    <h3>World first motion planning bin-picking system </h3><br/>
+    <p class="lead">By registering 3D models objects in advance, the robot automatically generates collision and singularity free motions between picking and suppyling locations. Additionally, grasp sets for the objects are pre-computed, so parts can be picked up in many different ways. This innovative technology enables a very flexible, smooth and fast system for a robot to pick objects from inside of a bin.</p>
+
+    <h3>The added value of motion planning </h3><br/>
+    <p class="lead">Since all robot motions are outputted by the MUJIN Controller, robot motions are usually very smooth. This smooth motion could reduce damages for fragile or sensitive products.</p>
+
+    <h3>Simple but flexible system </h3><br/>
+    <p class="lead">The brilliance of the Pick Worker system lies in its software. However, it was built with a minimal number of components such as the robot, slider, camera, and the MUJIN Controller. By keeping the hardware simple, it reduces the possibility for mechanical failure and opens up possibility for flexable and easy modifications based on customers' request.</p>   
+
+    <h3>Latest point cloud technology </h3><br/>
+    <p class="lead">We use cutting edge point cloud and computer vision algorithms in our perception system.</p>   
+
+  </div>
+</div>
+
+<div id="pickworker_video" class="highlight-span3">
+  <h2 style="color:red">Demo Video</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+  <div class="div-content span10">
+
+    <div class="row">
+      <h3>Demonstration </h3>
+
+      <iframe width="580" height="340" src="//www.youtube.com/embed/X-nUkgUb81A" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div id="pickworker_step" class="highlight-span3">
+  <h2 style="color:red">Easy Steps</h2>
+  <br>
+  <h2 class="comment" style="color:red;"></h2>
+    <img src="{{ page.base_url }}img/pickworker/pickworker_step.png">
+</div>
+<div id="getone" class="highlight-span3">
+</div>
+{% endblock %}

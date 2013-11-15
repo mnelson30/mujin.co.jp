@@ -1,11 +1,18 @@
+{% extends "generaltemplate.html
+{% load i18n %}
+
+{% block main-content %}
 <h2>Zero Installation</h2>
 
-<p>The MUJIN Controller does not require users to install any software. The only requirement is a web browser. MUJIN strongly recommends the following browsers: </p>
+<p class="lead">The MUJIN Controller does not require users to install any software. The only requirement is a web browser. MUJIN strongly recommends the following browsers:</p>
 
-<img style="width: 400px;" src="{{ page.base_url }}img/firefox_logo.png">
+<img style="width: 400px;" src="/static/img/firefox_logo.png">
 <br />
-<img style="width: 400px;" src="{{ page.base_url }}img/chrome_logo.png">
+<br />
+<img style="width: 400px;" src="/static/img/chrome_logo.png">
 
 <br />
-
+<br />
+<a class="btn btn-large" href="/products_controller#product_features"><b>&laquo;</b>&nbsp;Back to Product Features</a>
+{% endblock %}
 
