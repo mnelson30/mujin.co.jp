@@ -12,4 +12,4 @@ exclude: ["_site", ".gitignore", "bower.json", "CNAME", "Gruntfile.js", "package
 # site variables
 name: 'MUJIN'
 
-languages: ["en", "en", "ja"]
+languages: ["ja", "en", "ja"]

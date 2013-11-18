@@ -516,7 +516,7 @@ Automated Collision Avoidance System: 干渉自動回避システム
 : 一方、MUJINコントローラは従来の方法とは違ったアプローチをとっております。全て
   の干渉回避や制約条件をロボットと環境を考慮した軌道生成アルゴリズムによって自
   動で行います。クリーンでシンプルなインターフェース上でハイレベルパラメターだ
-けを入力する事によりロボットプログラマーのストレスと時間を大幅に軽減いたします。
+  けを入力する事によりロボットプログラマーのストレスと時間を大幅に軽減いたします。
 
 Advantages: 利点
 
@@ -700,10 +700,10 @@ The speed benefits of multiple robots in an assembly task.: 複数ロボット�
   optimize for cell-manufacturing where a dual-arm robot performs a complex assembly
   task.
 : この問題を解決するため、MUJINは複数台のロボットがお互いの干渉を回避し、且つ制
-約条件を守れる画期的な機能を開発いたしました。これにより、一つの工程において
-複数台のロボットで行う事により能率UPを達成する可能性を生み出します。また、双
-腕ロボットによるセル生産式組み付け工程においても、従来の非常に複雑な教示を簡
-単に作成でき、大幅なコスト削減を可能にします。
+  約条件を守れる画期的な機能を開発いたしました。これにより、一つの工程において
+  複数台のロボットで行う事により能率UPを達成する可能性を生み出します。また、双
+  腕ロボットによるセル生産式組み付け工程においても、従来の非常に複雑な教示を簡
+  単に作成でき、大幅なコスト削減を可能にします。
 
 Industrial Task Language (ITL): インダストリアルタスク言語
 
@@ -872,9 +872,9 @@ Inverse Kinematics for any Robot: ロボットや機械を選ばないロボッ�
   equations and generate extremely robust and fast programs to find solutions. MUJIN's
   framework supports any robot structure, even if it involves closed links.
 : 逆運動学は指定されたハンドの姿勢を達成するために必要とするロボットの関節角
-度を解きます。MUJINはロボット逆運動学方程式を解くことが出来、非常に素早く、無
-駄の無いロボットプログラムを生成します。MUJINの動作計画フレームワークは閉リン
-ク機構の存在に関係なく全てのロボット構造に対応しております。
+  度を解きます。MUJINはロボット逆運動学方程式を解くことが出来、非常に素早く、無
+  駄の無いロボットプログラムを生成します。MUJINの動作計画フレームワークは閉リン
+  ク機構の存在に関係なく全てのロボット構造に対応しております。
 
 Parallelized Layout Optimization: 並列処理され導かれるロボット配置の最適化
 
@@ -1216,10 +1216,10 @@ Teaching &amp; Simulation Solution: ティーチング＆シミュレーショ�
   can save a lot of time for the process of try and error. If you have any question,
   please <a href="{{ site.baseurl_root }}{{ site.lang }}/contact.html">contact our service</a>
 : MUJINのエンジニアは走行軸上の６軸ロボットや双腕ロボットなどの非常に難しいロ
-ボット製造システムをプログラミングする豊富な経験を持っております。MUJINはロ
-ボットがどこに配置され、実機がどのように動作すべきかを表す精巧なシミュレー
-ションを提供いたします。MUJINの検証データを参照する事により、お客様は手戻り作
-業とそれにかかる時間とコストを削減いたします。
+  ボット製造システムをプログラミングする豊富な経験を持っております。MUJINはロ
+  ボットがどこに配置され、実機がどのように動作すべきかを表す精巧なシミュレー
+  ションを提供いたします。MUJINの検証データを参照する事により、お客様は手戻り作
+  業とそれにかかる時間とコストを削減いたします。
 
 MUJIN Controller can be used with the following factory line/robot simulators.: MUJINコントローラは現在以下のシミュレーションソフトに対応しております。
 
