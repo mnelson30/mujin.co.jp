@@ -10,7 +10,7 @@ base_url: "../"
 
     <div class="col-sm-12">
 
-      <h1 class="page-header">Contact <small>We'd Love to Hear From You!</small></h1>
+      <h1 class="page-header">{% t Contact %} <small>{% t We'd Love to Hear From You! %}</small></h1>
 
       <table id="contactform" cellpadding="4" align="center" style="width: 100%;">
         <tbody>
@@ -20,85 +20,85 @@ base_url: "../"
                 <tbody>
                   <tr>
                     <td>
-                      <label for="first_name">First Name</label>
+                      <label for="first_name">{% t First Name %}</label>
                     </td>
                     <td>
-                      <input data-human-name="First Name" type="text" class="input-lg" name="first_name" id="first_name">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label for="last_name">Last Name</label>
-                    </td>
-                    <td>
-                      <input data-human-name="Last Name" type="text" class="input-lg" name="last_name" id="last_name"/>
+                      <input data-human-name="{% t First Name %}" type="text" class="input-lg" name="first_name" id="first_name">
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="company_name">Company Name</label>
+                      <label for="last_name">{% t Last Name %}</label>
                     </td>
                     <td>
-                      <input data-human-name="Company Name" type="text" class="input-lg" name="company_name"/>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label for="address">Address</label>
-                    </td>
-                    <td>
-                      <input data-human-name="Address" type="text" class="input-lg" name="address"/>
+                      <input data-human-name="{% t Last Name %}" type="text" class="input-lg" name="last_name" id="last_name"/>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="city">City</label>
+                      <label for="company_name">{% t Company Name %}</label>
                     </td>
                     <td>
-                      <input data-human-name="City" type="text" class="input-lg" name="city"/>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label for="state">State/Prefecture</label>
-                    </td>
-                    <td>
-                      <input data-human-name="State/Prefecture" type="text" class="input-lg" name="state">
+                      <input data-human-name="{% t Company Name %}" type="text" class="input-lg" name="company_name"/>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="Country">Country</label>
+                      <label for="address">{% t Address %}</label>
                     </td>
                     <td>
-                      <input data-human-name="Country" type="text" class="input-lg" name="country">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label for="email">Email Address</label>
-                    </td>
-                    <td>
-                      <input data-human-name="Email Address" type="text" class="input-lg" name="email">
+                      <input data-human-name="{% t Address %}" type="text" class="input-lg" name="address"/>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <label for="telephone">Telephone Number</label>
+                      <label for="city">{% t City %}</label>
                     </td>
                     <td>
-                      <input data-human-name="Telephone Number" type="text" class="input-lg" name="telephone">
+                      <input data-human-name="{% t City %}" type="text" class="input-lg" name="city"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="state">{% t State/Prefecture %}</label>
+                    </td>
+                    <td>
+                      <input data-human-name="{% t State/Prefecture %}" type="text" class="input-lg" name="state">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="country">{% t Country %}</label>
+                    </td>
+                    <td>
+                      <input data-human-name="{% t Country %}" type="text" class="input-lg" name="country">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="email">{% t Email Address %}</label>
+                    </td>
+                    <td>
+                      <input data-human-name="{% t Email Address %}" type="text" class="input-lg" name="email">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="telephone">{% t Telephone Number %}</label>
+                    </td>
+                    <td>
+                      <input data-human-name="{% t Telephone Number %}" type="text" class="input-lg" name="telephone">
                     </td>
                   </tr>
                 </tbody>
               </table>
             </td>
             <td valign="top">
-              <label for="message" style="display: block;">Message</label>
-              <textarea rows="10" cols="50" maxlength="1000" style="width: 100%; height: 300px;" name="message" data-human-name="Message"></textarea>
+              <label for="message" style="display: block;">{% t Message %}</label>
+              <textarea rows="10" cols="50" maxlength="1000" style="width: 100%; height: 300px;" name="message" data-human-name="{% t Message %}"></textarea>
               <br/>
               <br/>
-              <input id="form_submit" class="btn btn-lg btn-primary pull-right" value="Submit">
+              <input id="form_submit" class="btn btn-lg btn-primary pull-right" value="{% t Submit %}">
             </td>
           </tr>
         </tbody>

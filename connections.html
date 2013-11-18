@@ -10,54 +10,78 @@ base_url: "../"
     <div class="col-lg-4 visible-lg">
       <div class="sidebar" id="nav-sidebar">
         <ul class="nav nav-stacked nav-pills" data-spy="affix" data-offset-top="280">
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#partners">Partners</a></li>
-          <li><a href="#investors">Investors</a></li>
+          <li><a href="#clients">{% t Clients %}</a></li>
+          <li><a href="#partners">{% t Partners %}</a></li>
+          <li><a href="#investors">{% t Investors %}</a></li>
         </ul>
       </div>
     </div>
   
     <div class="col-lg-8 col-sm-12 col-md-12">
-      <h1 class="page-header">Connections</h1>
+      <h1 class="page-header">{% t Connections %}</h1>
 
       <div id="clients">
-        <h3>Clients</h3>
-        A short list of some of our clients
+        <h3>{% t Clients %}</h3>
+        {% t A short list of some of our clients %}
         <ul>
-          <li>CANON Inc.<a href="http://canon.jp/">(Homepage)</a></li>
-          <a href="http://canon.jp/"><img style="width:200px" src="{{ page.base_url }}img/canon_logo.png"></a>
-          <li>Honda Engineering Co., Ltd<a href="http://www.honda.co.jp/EG/">(Homepage)</a></li>
-          <a href="http://www.honda.co.jp/EG/"><img style="width:200px" src="{{ page.base_url }}img/honda_eg_logo.png"></a>
-          <li>CEC ltd.<a href="http://www.cec-ltd.co.jp/service/vr+r/">(Homepage)</a></li>
-          <a href="http://www.cec-ltd.co.jp/service/vr+r/"><img style="width:200px" src="{{ page.base_url }}img/cec_logo.png"></a>
+          <li>{% t CANON Inc. %} <a href="http://canon.jp/">{% t (Homepage) %}</a></li>
+          <a href="http://canon.jp/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/canon_logo.png">
+          </a>
+          <li>{% t Honda Engineering Co., Ltd %} <a href="http://www.honda.co.jp/EG/">{% t (Homepage) %}</a></li>
+          <a href="http://www.honda.co.jp/EG/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/honda_eg_logo.png">
+          </a>
+          <li>{% t CEC ltd. %} <a href="http://www.cec-ltd.co.jp/service/vr+r/">{% t (Homepage) %}</a></li>
+          <a href="http://www.cec-ltd.co.jp/service/vr+r/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/cec_logo.png">
+          </a>
         </ul>
         <br/>
         <br/>
       </div>
 
       <div id="partners">
-        <h3>Partners/Subcontractors</h3>
+        <h3>{% t Partners/Subcontractors %}</h3>
         <ul>
-          <li>DENSO WAVE INCORPORATED<a href="http://www.denso-wave.com/en/">(Homepage)</a></li>
-          <a href="http://www.denso-wave.com/en/"><img style="width:200px" src="{{ page.base_url }}img/densowave_logo.png"></a>
-          <li>Mitsubishi Electric Corporation<a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home">(Homepage)</a></li>
-          <a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home"><img style="width:200px" src="{{ page.base_url }}img/mitsubishi_logo.jpg"></a></br></br>
-          <li>CEC ltd.<a href="http://www.cec-ltd.co.jp/service/vr+r/">(Homepage)</a></li>
-          <a href="http://www.cec-ltd.co.jp/service/vr+r/"><img style="width:200px" src="{{ page.base_url }}img/cec_logo.png"></a></br></br>
-          <li>Knowledge ltd.<a href="http://3dp.co.jp/">(Homepage)</a></li>
-          <a href="http://3dp.co.jp/"><img style="width:200px" src="{{ page.base_url }}img/knowledge_logo.png"></a></br></br>
-          <li>MeiwaEtech<a href="http://www.meiwa-e.co.jp/">(Homepage)</a></li>
-          <a href="http://www.meiwa-e.co.jp/"><img style="width:170px" src="{{ page.base_url }}img/meiwa_logo.jpeg"></a>
+          <li>{% t DENSO WAVE INCORPORATED %} <a href="http://www.denso-wave.com/en/">{% t (Homepage) %}</a></li>
+          <a href="http://www.denso-wave.com/en/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/densowave_logo.png">
+          </a>
+          <li>{% t Mitsubishi Electric Corporation %} <a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home">{% t (Homepage) %}</a></li>
+          <a href="http://www.meau.com/eprise/main/sites/public/About_Us/-Home">
+            <img style="width: 200px;" src="{{ page.base_url }}img/mitsubishi_logo.jpg">
+          </a>
+          </br>
+          </br>
+          <li>{% t CEC ltd. %} <a href="http://www.cec-ltd.co.jp/service/vr+r/">{% t (Homepage) %}</a></li>
+          <a href="http://www.cec-ltd.co.jp/service/vr+r/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/cec_logo.png">
+          </a>
+          </br>
+          </br>
+          <li>{% t Knowledge ltd. %} <a href="http://3dp.co.jp/">{% t (Homepage) %}</a></li>
+          <a href="http://3dp.co.jp/">
+            <img style="width: 200px;" src="{{ page.base_url }}img/knowledge_logo.png">
+          </a>
+          </br>
+          </br>
+          <li>{% t MeiwaEtech %} <a href="http://www.meiwa-e.co.jp/">{% t (Homepage) %}</a></li>
+          <a href="http://www.meiwa-e.co.jp/">
+            <img style="width: 170px;" src="{{ page.base_url }}img/meiwa_logo.jpeg">
+          </a>
         </ul>
         <br/>
         <br/>
       </div>
 
       <div id="investors">
-        <h3>Investors</h3>
+        <h3>{% t Investors %}</h3>
         <ul>
-          <li>The University of Tokyo Edge Capital<a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1">(Homepage)</a></li>
-          <a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1"> <img style="width:200px" src="{{ page.base_url }}img/U-TEC.jpg"></a>
+          <li>{% t The University of Tokyo Edge Capital %} <a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1">{% t (Homepage) %}</a></li>
+          <a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1">
+            <img style="width: 200px;" src="{{ page.base_url }}img/U-TEC.jpg">
+          </a>
         </ul>
         <br/>
         <br/>

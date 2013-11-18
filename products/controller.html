@@ -10,121 +10,121 @@ base_url: "../../"
     <div class="col-lg-4 visible-lg">
       <div class="sidebar" id="nav-sidebar">
         <ul class="nav nav-stacked nav-pills" data-spy="affix" data-offset-top="280">
-          <li><a href="#controller">MUJIN Controller</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#demo">Operational Demo</a></li>
-          <li><a href="#specs">Specifications</a></li>
-          <li><a href="#license">Licensing</a></li>
-          <li><a href="#purchase">Purchasing</a></li>
+          <li><a href="#controller">{% t MUJIN Controller %}</a></li>
+          <li><a href="#features">{% t Features %}</a></li>
+          <li><a href="#demo">{% t Operational Demo %}</a></li>
+          <li><a href="#specs">{% t Specifications %}</a></li>
+          <li><a href="#license">{% t Licensing %}</a></li>
+          <li><a href="#purchase">{% t Purchasing %}</a></li>
         </ul>
       </div>
     </div>
   
     <div class="col-lg-8 col-sm-12 col-md-12">
-      <h2 id="controller" class="page-header">MUJIN Controller <small>Industrial robot automation for everyone</small></h2>
-      <img style="width: 100%; height: auto;" src="{{ page.base_url }}img/mujincontroller_snap_en.png">
-      <p class="lead">The MUJIN Controller is our innovative solution to industrial robot programming</p>
+      <h2 id="controller" class="page-header">{% t MUJIN Controller %} <small>{% t Industrial robot automation for everyone %}</small></h2>
+      <img style="width: 100%; height: auto;" src="{{ page.base_url }}{% t img/mujincontroller_snap_en.png %}">
+      <p class="lead">{% t The MUJIN Controller is our innovative solution to industrial robot programming %}</p>
       <ul>
-        <li>Dramatically improves the existing expensive and complicated robot integration processes</li>
-        <li>Allows a user to specify desired robot tasks in an intuitive user interface</li>
-        <li>Automatically generates collision-free motion plans considering the user-specified task constraints</li>
-        <li>Provides robot placement optimizations</li>
-        <li>Saves precious design, testing, and deployment time while increasing productivity in common industrial robotics tasks</li>
-        <li>Simplifies deployment and testing of hard programming tasks like dual-arm manipulation</li>
+        <li>{% t Dramatically improves the existing expensive and complicated robot integration processes %}</li>
+        <li>{% t Allows a user to specify desired robot tasks in an intuitive user interface %}</li>
+        <li>{% t Automatically generates collision-free motion plans considering the user-specified task constraints %}</li>
+        <li>{% t Provides robot placement optimizations %}</li>
+        <li>{% t Saves precious design, testing, and deployment time while increasing productivity in common industrial robotics tasks %}</li>
+        <li>{% t Simplifies deployment and testing of hard programming tasks like dual-arm manipulation %}</li>
       </ul>
 
-      <h2 class="page-header">Simulation Precision and Accuracy</h2>
-      <p>A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95%% precision. What the program shows on the computer is what will happen in the actual robot cell.</p>
+      <h2 class="page-header">{% t Simulation Precision and Accuracy %}</h2>
+      <p>{% t A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95%% precision. What the program shows on the computer is what will happen in the actual robot cell. %}</p>
       
-      <h2 id="features" class="page-header">Features</h2>
+      <h2 id="features" class="page-header">{% t Features %}</h2>
       <div class="tabbable tabs-left">
         <ul class="nav nav-tabs" id="myTab">
           <li class="active">
-            <a data-toggle="tab" href="#feature-1">Inverse Kinematics</a>
+            <a data-toggle="tab" href="#feature-1">{% t Inverse Kinematics %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-2">Collision Avoidance</a>
+            <a data-toggle="tab" href="#feature-2">{% t Collision Avoidance %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-3">Simulation Precision</a>
+            <a data-toggle="tab" href="#feature-3">{% t Simulation Precision %}</a>
           </li>
 
           <li class="">
-            <a data-toggle="tab" href="#feature-4">Grasp/Release Simulation</a>
+            <a data-toggle="tab" href="#feature-4">{% t Grasp/Release Simulation %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-5">Grasp Planning</a>
+            <a data-toggle="tab" href="#feature-5">{% t Grasp Planning %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-6">Placement Optimizations</a>
+            <a data-toggle="tab" href="#feature-6">{% t Placement Optimizations %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-7">Clearance Setting</a>
+            <a data-toggle="tab" href="#feature-7">{% t Clearance Setting %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-8">Multi-Robot Manipulation</a>
+            <a data-toggle="tab" href="#feature-8">{% t Multi-Robot Manipulation %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-9">Industrial Task Language</a>
+            <a data-toggle="tab" href="#feature-9">{% t Industrial Task Language %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-10">Robot Program Output</a>
+            <a data-toggle="tab" href="#feature-10">{% t Robot Program Output %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-11">Zero Installation</a>
+            <a data-toggle="tab" href="#feature-11">{% t Zero Installation %}</a>
           </li>
 
           <li>
-            <a data-toggle="tab" href="#feature-12">No CAD Dependencies</a>
+            <a data-toggle="tab" href="#feature-12">{% t No CAD Dependencies %}</a>
           </li>
 
         </ul>
 
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade active in" id="feature-1">
-            <h2>Inverse Kinematics</h2>
-            <p>Inverse kinematics is used to determine the joint parameters that provide a desired position of the end-effector. Traditionally, the kinematic equations to solve the IK of a robot can be difficult and tedious to work with. Various numerical techniques exist to approximate analytical solutions, but the algorithms are usually lacking in speed or accuracy.</p>
+            <h2>{% t Inverse Kinematics %}</h2>
+            <p>{% t Inverse kinematics is used to determine the joint parameters that provide a desired position of the end-effector. Traditionally, the kinematic equations to solve the IK of a robot can be difficult and tedious to work with. Various numerical techniques exist to approximate analytical solutions, but the algorithms are usually lacking in speed or accuracy. %}</p>
             <br/>
             <img class="thumbnail" src="{{ page.base_url }}img/technology_iksolutions.jpg" />
             <br/>
-            <p>Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains.</p>
+            <p>{% t Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains. %}</p>
             <img class="thumbnail" src="{{ page.base_url }}img/ikfast_robots.png" />    
           </div>
 
           <div class="tab-pane fade" id="feature-2">
 
-            <h2>Automated Collision Avoidance System</h2>
+            <h2>{% t Automated Collision Avoidance System %}</h2>
 
-            <p>Most existing industrial robot programming packages can only check for collisions with the workpiece and robot. They require users to manually specify collision-free waypoints so trajectories will never have collisions in them. The problem with this technique is that the waypoints users choose will most certainly yield sub-optimal trajectories.</p>
+            <p>{% t Most existing industrial robot programming packages can only check for collisions with the workpiece and robot. They require users to manually specify collision-free waypoints so trajectories will never have collisions in them. The problem with this technique is that the waypoints users choose will most certainly yield sub-optimal trajectories. %}</p>
 
-            <p>The MUJIN Controller approaches things differently. All collision avoidance and constraint handling happens automatically based on simulations and path planning algorithms based on the robot and its environment. It takes a lot of stress off the robot programmer as it provides a clean and simple interface that requires only high-level parameters as input.</p>
+            <p>{% t The MUJIN Controller approaches things differently. All collision avoidance and constraint handling happens automatically based on simulations and path planning algorithms based on the robot and its environment. It takes a lot of stress off the robot programmer as it provides a clean and simple interface that requires only high-level parameters as input. %}</p>
 
-            <h3>Advantages</h3>
+            <h3>{% t Advantages %}</h3>
 
             <ul>
-              <li><p>Eliminates the need for manual teaching operations, which reduces development and deployment cost.</p></li>
-              <li><p>Creates motion plans for tasks that are very difficult or impossible to program with manual teaching.</p></li>
+              <li><p>{% t Eliminates the need for manual teaching operations, which reduces development and deployment cost. %}</p></li>
+              <li><p>{% t Creates motion plans for tasks that are very difficult or impossible to program with manual teaching. %}</p></li>
             </ul>
 
-            <h3>Example Task</h3>
+            <h3>{% t Example Task %}</h3>
 
             <iframe width="600" height="355" src="http://www.youtube.com/embed/McLwjiAx-10" frameborder="0" allowfullscreen></iframe>
             <div class="text-center">
-              <p><h4>This task would have been very difficult to program without automatic collision avoidance.</h4></p>
+              <p><h4>{% t This task would have been very difficult to program without automatic collision avoidance. %}</h4></p>
             </div>
 
-            <h3>Example Workflow</h3>
+            <h3>{% t Example Workflow %}</h3>
 
-            <p>Collision avoidance enables a drastically simplified workflow for robot programmers and system integrators when approacing the complex task of programming a robot.</p>
+            <p>{% t Collision avoidance enables a drastically simplified workflow for robot programmers and system integrators when approacing the complex task of programming a robot. %}</p>
 
             <table class="table table-bordered">
               <tr>
@@ -132,7 +132,7 @@ base_url: "../../"
                   <img src="{{ page.base_url }}img/door_animation.png"/>
                 </td>
                 <td>
-                  <p>Import 3D models into the MUJIN Controller. The MUJIN Controller supports many 3D CAD software, so there is no need to buy a new 3D CAD systems or licenses.</p>
+                  <p>{% t Import 3D models into the MUJIN Controller. The MUJIN Controller supports many 3D CAD software, so there is no need to buy a new 3D CAD systems or licenses. %}</p>
                 </td>
               </tr>
               <tr>
@@ -140,9 +140,9 @@ base_url: "../../"
                   <img src="{{ page.base_url }}img/door_animation2.png"/>
                 </td>
                 <td>
-                  <p>With <a href="{{ site.baseurl_root }}{{ site.lang }}/product_feature_itl">MUJIN ITL</a> users have a high-level, generic way to easily specify task parameters such as tool, task type and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2).</p>
+                  <p>{% t With <a href="{{ site.baseurl_root }}{{ site.lang }}/product_feature_itl">MUJIN ITL</a> users have a high-level, generic way to easily specify task parameters such as tool, task type and goals. In this case, users only specify tool position when it grab the chair (P1) and tool position in final destination (P2). %}</p>
                   <br/>
-                  <b>The only program you write is:</b>
+                  <b>{% t The only program you write is: %}</b>
                   <div class="row">
                     <div class="span6">
                       <pre>
@@ -160,7 +160,7 @@ release(t[chair2])   #release chair2
                   <img src="{{ page.base_url }}img/door_animation2.gif"/>
                 </td>
                 <td>
-                  Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing thousands of candidate trajectories. After calculating the most optimal trajectory, MUJIN Controller automatically output robot manufactures program.
+                  {% t Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing thousands of candidate trajectories. After calculating the most optimal trajectory, MUJIN Controller automatically output robot manufactures program. %}
                 </td>
               </tr>
             </table>
@@ -168,13 +168,13 @@ release(t[chair2])   #release chair2
 
           <div class="tab-pane fade" id="feature-3">
 
-            <h2>Simulation Precision</h2>
+            <h2>{% t Simulation Precision %}</h2>
 
-            <p>A simulation is pointless unless it is consistent with reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory in a virtual environment matches up exactly with the robot's motion in the real world. MUJIN however is proud to guarantee our trajectories are accurate and precise to at least 95 percent of the real robot's motion.</p>
+            <p>{% t A simulation is pointless unless it is consistent with reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory in a virtual environment matches up exactly with the robot's motion in the real world. MUJIN however is proud to guarantee our trajectories are accurate and precise to at least 95 percent of the real robot's motion. %}</p>
             
-            <h3>Virtual Robot Controller (VRC) </h3>
+            <h3>{% t Virtual Robot Controller (VRC) %}</h3>
             
-            <p>To achieve our high simulation accuracy the MUJIN Controller examines all trajectories calculated through a robot manufacture's Virtual Robot Controller (VRC). This means that their simulation software verifies the MUJIN Controller generated trajectory. Only collision free trajectories proven by the test with VRC is output as a result.</p>
+            <p>{% t To achieve our high simulation accuracy the MUJIN Controller examines all trajectories calculated through a robot manufacture's Virtual Robot Controller (VRC). This means that their simulation software verifies the MUJIN Controller generated trajectory. Only collision free trajectories proven by the test with VRC is output as a result. %}</p>
              
             <img class="thumbnail" src="{{ page.base_url }}img/VRC.png">
 
@@ -182,20 +182,20 @@ release(t[chair2])   #release chair2
 
           <div class="tab-pane fade" id="feature-4">
 
-            <h2>Grasp and Release Function</h2>
+            <h2>{% t Grasp and Release Function %}</h2>
 
-            <p>The MUJIN Controller has an unique function which can simulate trajectories while considering a workpiece in the robots grasp. As soon as a robot grabs an object, the MUJIN Controller treats that object as a part of the robot. This means the objects will be part of the robots collision mesh and respond to collision avoidance, so that users do not have to specify intermediate waypoints to account for the object being in a specific place while being manipulated by the robot.</p>
+            <p>{% t The MUJIN Controller has an unique function which can simulate trajectories while considering a workpiece in the robots grasp. As soon as a robot grabs an object, the MUJIN Controller treats that object as a part of the robot. This means the objects will be part of the robots collision mesh and respond to collision avoidance, so that users do not have to specify intermediate waypoints to account for the object being in a specific place while being manipulated by the robot. %}</p>
 
             <iframe width="600" height="355" src="http://www.youtube.com/embed/McLwjiAx-10" frameborder="0" allowfullscreen></iframe>
-            <p>Once the tool is specified, the robot can grab the workpiece, transfer it to its goal and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembles.</p>
+            <p>{% t Once the tool is specified, the robot can grab the workpiece, transfer it to its goal and release it without adjusting any parameters. Multiple workpieces and tools can be chained in one task to form complex assembles. %}</p>
 
           </div>
 
           <div class="tab-pane fade" id="feature-5">
 
-            <h2>Grasp Planning</h2>
+            <h2>{% t Grasp Planning %}</h2>
 
-            <p>The MUJIN Controller has a function which can optimize grasp out of specified grasp sets. After the user specified possible grasp sets for the workpiece, MUJIN Controller automatically simulates all possible task trajectory and tells you which grasp set is the most suitable for the task.</p>
+            <p>{% t The MUJIN Controller has a function which can optimize grasp out of specified grasp sets. After the user specified possible grasp sets for the workpiece, MUJIN Controller automatically simulates all possible task trajectory and tells you which grasp set is the most suitable for the task. %}</p>
 
             <img src="{{ page.base_url }}img/grasp.gif" frameborder="0" allowfullscreen></img>
 
@@ -203,62 +203,62 @@ release(t[chair2])   #release chair2
 
           <div class="tab-pane fade" id="feature-6">
 
-            <h2>Placement Optimizations</h2>
+            <h2>{% t Placement Optimizations %}</h2>
 
-            <p>In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times.</p>
+            <p>{% t In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times. %}</p>
 
             <img src="{{ page.base_url }}img/placement_opt.png"> 
 
-            <p>For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times.</p>
+            <p>{% t For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times. %}</p>
 
             <iframe width="600" height="355" src="http://www.youtube.com/embed/6cDRke79WZI" frameborder="0" allowfullscreen></iframe>
-            <p>This layout is before optimizing robot position. You can see that the robot perfectly avoids all obstacles, but there may be better trajectory in better position.</p>
+            <p>{% t This layout is before optimizing robot position. You can see that the robot perfectly avoids all obstacles, but there may be better trajectory in better position. %}</p>
 
             <iframe width="600" height="355" src="http://www.youtube.com/embed/S7HsOU3iafQ" frameborder="0" allowfullscreen></iframe>
-            <p>This layout is after optimizing robot position. you can see that robot position and angle apparently changed and those should be difficult to be found by manual teaching. In this case, placement optimization save 40% of task time.</p>
+            <p>{% t This layout is after optimizing robot position. you can see that robot position and angle apparently changed and those should be difficult to be found by manual teaching. In this case, placement optimization save 40% of task time. %}</p>
 
-            <p>Additionally, the same optimization could also have been run against the position of the target workpiece object as well. The optimization would then have simultaneously considered all the positions of the robot and target object. In summary, optimizations allow users of the MUJIN Controller to calculate the optimum body positions to maximize efficiency of a workcell.</p>
+            <p>{% t Additionally, the same optimization could also have been run against the position of the target workpiece object as well. The optimization would then have simultaneously considered all the positions of the robot and target object. In summary, optimizations allow users of the MUJIN Controller to calculate the optimum body positions to maximize efficiency of a workcell. %}</p>
 
           </div>
 
           <div class="tab-pane fade" id="feature-7">
 
-            <h2>Clearance Setting Function</h2>
+            <h2>{% t Clearance Setting Function %}</h2>
 
-            <p>The MUJIN Controller has an unique function which can set a clearance distance between robot and obstacles. Since each customer should have desired clearance amount for their safety, MUJIN Controller tries to sutisfy the contstrain as much as it can. However, robot sometimes to approach to obstacles or goals to accomplish specified task. When the task cannot be accomplished with specified clearance amount, MUJIN controller automatically reduces the amount of clearance and tries to complete the task.</p>
+            <p>{% t The MUJIN Controller has an unique function which can set a clearance distance between robot and obstacles. Since each customer should have desired clearance amount for their safety, MUJIN Controller tries to sutisfy the contstrain as much as it can. However, robot sometimes to approach to obstacles or goals to accomplish specified task. When the task cannot be accomplished with specified clearance amount, MUJIN controller automatically reduces the amount of clearance and tries to complete the task. %}</p>
 
             <iframe width="600" height="355" src="//www.youtube.com/embed/-N8olRmGgIA" frameborder="0" allowfullscreen></iframe>
-            <p>Clearance setting 30mm</p>
+            <p>{% t Clearance setting 30mm %}</p>
 
             <iframe width="600" height="355" src="//www.youtube.com/embed/RTAoU5XcBGI" frameborder="0" allowfullscreen></iframe>
-            <p>Clearance setting 60mm</p>
+            <p>{% t Clearance setting 60mm %}</p>
 
           </div>
 
           <div class="tab-pane fade" id="feature-8">
 
-            <h2>Multi-Robot Manipulation Planning System</h2>
+            <h2>{% t Multi-Robot Manipulation Planning System %}</h2>
 
-            <p>Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutions for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace.</p>
+            <p>{% t Most robot simulation packages consider just a single robot and are not configured to simultaneously compute solutions for multiple robots. Because of this handicap, robot programmers have a difficult time producing non-colliding motions for robots moving in the same workspace. %}</p>
 
             <iframe width="600" height="355" src="http://www.youtube.com/embed/vLu0twF2-Ps" frameborder="0" allowfullscreen></iframe>
-            <p><h4>The speed benefits of multiple robots in an assembly task.</h4></p>
+            <p><h4>{% t The speed benefits of multiple robots in an assembly task. %}</h4></p>
 
-            <p>To solve these problems, MUJIN has leveraged algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task.</p>
+            <p>{% t To solve these problems, MUJIN has leveraged algorithms for collision-free motion plans for multiple robots in the same environment. Furthermore, the MUJIN Controller makes it possible to optimize the combined locations of all robots involved in the task. Customers would be able to use multiple robots together in an assembly line, which can result in a substantial gain in productivity. MUJIN Controller can also optimize for cell-manufacturing where a dual-arm robot performs a complex assembly task. %}</p>
 
           </div>
 
           <div class="tab-pane fade" id="feature-9">
 
-            <h2>Industrial Task Language (ITL)</h1>
+            <h2>{% t Industrial Task Language (ITL) %}</h1>
 
-            <p>Industrial Task Language is a robot programming language developed by MUJIN. It enables users to conveniently program and design their robotic applications in a generic and scalable way. ITL is completely independent to any robot manufactures' language and is designed to maximize MUJIN Controller's extensive simulation features. Using ITL releases people from managing different robot programs in different languages that depend on manufactures'. It also reduces the effort required to plan, apply and maintain core robotic programming techniques, saving time and money.</p>
+            <p>{% t Industrial Task Language is a robot programming language developed by MUJIN. It enables users to conveniently program and design their robotic applications in a generic and scalable way. ITL is completely independent to any robot manufactures' language and is designed to maximize MUJIN Controller's extensive simulation features. Using ITL releases people from managing different robot programs in different languages that depend on manufactures'. It also reduces the effort required to plan, apply and maintain core robotic programming techniques, saving time and money. %}</p>
             
-            <h3>Specify only goals</h2>
+            <h3>{% t Specify only goals %}</h2>
             
-            <p>Since the MUJIN Controller is a tool designed to create the optimized, collision free paths, an ITL user only has to specify goals.</p>
+            <p>{% t Since the MUJIN Controller is a tool designed to create the optimized, collision free paths, an ITL user only has to specify goals. %}</p>
 
-            <h4>Example Program</h4>
+            <h4>{% t Example Program %}</h4>
                   <pre>
 settool(1)
 move(translation(0,0,20)*p[P2])
@@ -279,18 +279,18 @@ movel(p[P3])            </pre>
 
           <div class="tab-pane fade" id="feature-10">
 
-            <h2>Manufacturer-specific Program Output</h2>
+            <h2>{% t Manufacturer-specific Program Output %}</h2>
 
-            <p>After a trajectory's accuracy is assured by VRC or other simulation on the MUJIN Controller, it gets converted into native files for a particular robot manufacturer. Currently DENSO and MITSUBISHI are supported on the MUJIN Controller. The user copies this program and pastes it into the robot manufacturers program connected to a real robot. The user can immediately move the robot.</p>
+            <p>{% t After a trajectory's accuracy is assured by VRC or other simulation on the MUJIN Controller, it gets converted into native files for a particular robot manufacturer. Currently DENSO and MITSUBISHI are supported on the MUJIN Controller. The user copies this program and pastes it into the robot manufacturers program connected to a real robot. The user can immediately move the robot. %}</p>
             <br />
 
           </div>
 
           <div class="tab-pane fade" id="feature-11">
 
-            <h2>Zero Installation</h2>
+            <h2>{% t Zero Installation %}</h2>
 
-            <p>The MUJIN Controller does not require users to install any software. The only requirement is a web browser. MUJIN strongly recommends the following browsers:</p>
+            <p>{% t The MUJIN Controller does not require users to install any software. The only requirement is a web browser. MUJIN strongly recommends the following browsers: %}</p>
 
             <img style="width: 20%;" src="{{ page.base_url }}img/firefox_logo.png">
             <br />
@@ -300,19 +300,19 @@ movel(p[P3])            </pre>
 
           <div class="tab-pane fade" id="feature-12">
 
-            <h1>Standalone 3D CAD Format Support</h1>
+            <h1>{% t Standalone 3D CAD Format Support %}</h1>
 
-            <p>Many of existing robot simulation software are implemented as add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats.</p>
+            <p>{% t Many of existing robot simulation software are implemented as add-on's to expensive 3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN Controller does not require any specific 3D CAD software and the robot programmer can easily import 3D models in most common formats. %}</p>
 
-            <h4>Supported formats: </h4>
+            <h4>{% t Supported formats: %}</h4>
 
             <ul>
-              <li>COLLADA</li>
-              <li>IGES</li>
-              <li>STEP</li>
-              <li>IV/VRML</li>
-              <li>STL</li>
-              <li>DirectX</li>
+              <li>{% t COLLADA %}</li>
+              <li>{% t IGES %}</li>
+              <li>{% t STEP %}</li>
+              <li>{% t IV/VRML %}</li>
+              <li>{% t STL %}</li>
+              <li>{% t DirectX %}</li>
             </ul>
 
           </div>
@@ -320,70 +320,70 @@ movel(p[P3])            </pre>
         </div>
       </div>
       
-      <h1 id="demo" class="page-header">Demonstration</h1>
+      <h1 id="demo" class="page-header">{% t Demonstration %}</h1>
       <iframe width="600" height="360" src="//www.youtube.com/embed/4pIhaE4yPgY?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
       
-      <h1 id="specs" class="page-header">Controller Specifications</h1>
+      <h1 id="specs" class="page-header">{% t Controller Specifications %}</h1>
       <img src="{{ page.base_url }}img/mujin_controller.jpg" style="width: 300px; height: 300px;">
       <table class="table table-striped table-bordered">
         <tr>
-          <th>Product Description
+          <th>{% t Product Description %}
           </th>
-          <td>MUJIN Controller
+          <td>{% t MUJIN Controller %}
           </td>
         </tr>
         <tr>
-          <th nowrap="nowrap">Dimensions
+          <th nowrap="nowrap">{% t Dimensions %}
           </th>
           <td>
             <ul>
-              <li>Height: 452mm</li>
-              <li>Width: 172mm</li>
-              <li>Depth: 645mm</li>
+              <li>{% t Height: 452mm %}</li>
+              <li>{% t Width: 172mm %}</li>
+              <li>{% t Depth: 645mm %}</li>
             </ul>
           </td>
         </tr>
         <tr>
-          <th>Weight</th>
+          <th>{% t Weight %}</th>
           <td>30kg</td>
         </tr>
         <tr>
-          <th>Power Consumption</th>
+          <th>{% t Power Consumption %}</th>
           <td>300W</td>
         </tr>
         <tr>
-          <th>Cores</th>
+          <th>{% t Cores %}</th>
           <td>12 core (24 threads)</td>
         </tr>
         <tr>
-          <th>Core Clockspeed</th>
+          <th>{% t Core Clockspeed %}</th>
           <td>2.0Ghz</td>
         </tr>
         <tr>
-          <th>RAM</th>
+          <th>{% t RAM %}</th>
           <td>32GB</td>
         </tr>
         <tr>
-          <th>HDD Capacity for Customer</th>
+          <th>{% t HDD Capacity %}</th>
           <td>500GB</td>
         </tr>
       </table>
       <br/>
 
-      <h2>MUJIN Controller Cloud</h2>
-      <p>MUJIN is proud to offer its controller as a cloud service! Enjoy better performance, save money and receive free upgrades without the hassle of owning a physical controller.</p>
+      <h2>{% t MUJIN Controller Cloud %}</h2>
+      <p>{% t MUJIN is proud to offer its controller as a cloud service! Enjoy better performance, save money and receive free upgrades without the hassle of owning a physical controller. %}</p>
       <img class="thumbnail" src="{{ page.base_url }}img/mujincontrolleruse_en.png"/>
 
-      <h1 id="license" class="page-header">Licensing Options</h1>
-      <h4>Annual Licensing Option</h4>
-      <p>MUJIN offers annual licenses of our controllers to commercial companies. License fees differ depending on which kind of MUJIN Controller you choose and how much computing power you want. For pricing details, please <a href="{{ site.baseurl_root }}{{ site.lang }}/inquiry">contact us</a> or call +81-050-3682-7852.</p>
-      <h4>Academic Licensing Option</h4>
-      <p>MUJIN offers academic licenses to non-commercial research programs. These licenses are only for academic research and for student projects. We expect teachers and researchers in robot engineering, computer science, electrical engineering, mechanical engineering and many other fields to select our academic licensing option.</p>
-      <p>The academic licensing agreement includes the following provisions:</p>
+      <h1 id="license" class="page-header">{% t Licensing Options %}</h1>
+      <h4>{% t Annual Licensing Option %}</h4>
+      <p>{% t MUJIN offers annual licenses of our controllers to commercial companies. License fees differ depending on which kind of MUJIN Controller you choose and how much computing power you want. For pricing details, please <a href="{{ site.baseurl_root }}{{ site.lang }}/inquiry">contact us</a> or call +81-050-3682-7852. %}</p>
+      <h4>{% t Academic Licensing Option %}</h4>
+      <p>{% t MUJIN offers academic licenses to non-commercial research programs. These licenses are only for academic research and for student projects. We expect teachers and researchers in robot engineering, computer science, electrical engineering, mechanical engineering and many other fields to select our academic licensing option. %}</p>
+      <p>{% t The academic licensing agreement includes the following provisions: %}</p>
       <br/>
       <ul>
-        <li>The software may only be used for non-commercial research not sponsored by an organization that could receive economic benefits from the work."%}</li>
-        <li>Technical support would be provided to a single contact person.</li>
+        <li>{% t The software may only be used for non-commercial research not sponsored by an organization that could receive economic benefits from the work. %}</li>
+        <li>{% t Technical support would be provided to a single contact person. %}</li>
       </ul>
 
       {% include purchase.html productName="MUJIN Controller" %}

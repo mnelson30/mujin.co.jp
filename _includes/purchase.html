@@ -1,46 +1,46 @@
-<h1 id="purchase" class="page-header">Purchase {{ include.productName }}</h1>
+<h1 id="purchase" class="page-header">{% t Purchase {{ include.productName }} %}</h1>
 <table class="table table-bordered">
   <tr>
     <td>
-      <p><b style="color: red;">STEP 1</b><br/> Contact MUJIN sales</p>
+      <p><b style="color: red;">{% t STEP 1 %}</b><br/> {% t Contact MUJIN sales %}</p>
     </td>
     <td>
-      <p>Please send an inquiry by <a href="{{ site.baseurl_root }}{{ site.lang }}/inquiry">web</a>, or call +81-050-3682-7852.</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <p><b style="color: red;">STEP 2</b><br/> Present your problem</p>
-    </td>
-    <td>
-      <p>MUJIN will arrange a meeting with you to fully understand your problem.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><b style="color: red;">STEP 3</b><br/> Receive MUJIN proposal</p>
-    </td>
-    <td>
-      <p>We analyze the problem and propose a MUJIN solution considering all the constraints and requirements. We will also decide the details about the trial of the service.</p>
+      <p>{% t Please send an inquiry by <a href="{{ site.baseurl_root }}{{ site.lang }}/inquiry">web</a>, or call +81-050-3682-7852. %}</p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <p><b style="color: red;">STEP 4</b><br/> Approve a quotation</p>
+      <p><b style="color: red;">{% t STEP 2 %}</b><br/> {% t Present your problem %}</p>
     </td>
     <td>
-      <p>MUJIN sales sends you a quotation, and as soon as you approve it, the product will be delivered.</p>
+      <p>{% t MUJIN will arrange a meeting with you to fully understand your problem. %}</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><b style="color: red;">{% t STEP 3 %}</b><br/> {% t Receive MUJIN proposal %}</p>
+    </td>
+    <td>
+      <p>{% t We analyze the problem and propose a MUJIN solution considering all the constraints and requirements. We will also decide the details about the trial of the service. %}</p>
     </td>
   </tr>
 
   <tr>
     <td>
-      <p><b style="color: red;">STEP 5</b><br/> Start operation</p>
+      <p><b style="color: red;">{% t STEP 4 %}</b><br/> {% t Approve a quotation %}</p>
     </td>
     <td>
-      <p>You will be fully supported by MUJIN engineers as soon as the contract takes effect.</p>
+      <p>{% t MUJIN sales sends you a quotation, and as soon as you approve it, the product will be delivered. %}</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p><b style="color: red;">{% t STEP 5 %}</b><br/> {% t Start operation %}</p>
+    </td>
+    <td>
+      <p>{% t You will be fully supported by MUJIN engineers as soon as the contract takes effect. %}</p>
     </td>
   </tr>
 </table>

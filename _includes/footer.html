@@ -5,14 +5,14 @@
   <footer>
     <div class="row">
       <div class="col-lg-5">
-        <p>&copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="{{ site.baseurl_root }}{{ site.lang }}/privacy.html">Privacy Policy</a></p>
+        <p>{% t &copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="{{ site.baseurl_root }}{{ site.lang }}/privacy.html">Privacy Policy</a> %}</p>
 
         {% if site.lang == "ja" %}
           {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
-          <a href="{{ link1 }}" >{% t global.en_message %}</a>
+          <a href="{{ link1 }}" >{% t en_message %}</a>
         {% else if site.lang == "en" %}
           {% capture link2 %}{{ site.baseurl_root }}ja{{ page.url }}{% endcapture %}
-          <a href="{{ link2 }}" >{% t global.ja_message %}</a>
+          <a href="{{ link2 }}" >{% t ja_message %}</a>
         {% endif %}
 
       </div>
