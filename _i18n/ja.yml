@@ -1252,3 +1252,99 @@ Controller for manufacturing automation system: ロボットによる生産シ�
 IK Solution for multi-axis machines: 複数軸機械のための逆運動学ソリューション
 
 Navigation system for autonomous machines: 自律的機械のためのナビゲーションシステム
+
+MUJIN Inc. raises $950K Series A funding from UTEC -The University of Tokyo Edge Capital: 株式会社MUJIN、75百万円のシリーズＡ資金を東京大学エッジキャピタル（UTEC）から調達
+
+? MUJIN, Inc., developing system solutions for industrial robots announced that it has raised $950K in a Series A financing from UTEC - The University of Tokyo Edge Capital. MUJIN will use the new capital to advance its robot motion planning systems and deliver their first product MUJIN Controller that leverages many-core servers to automatically create complex motion programs for industrial robots and optimize layouts of industrial environments. <a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1.woa/wa/read/139e1c0490f//">(more detail)</a>
+: 産業用ロボット向けのソフトウェアを開発販売する株式会社MUJIN（本社：東京都文京区、代表取締役：滝野一征、以下「MUJIN」）は、この度ベンチャーキャピタルの株式会社東京大学エッジキャピタル(本社：東京都文京区、代表取締役社長：郷治友孝、以下「UTEC」)からシリーズA資金として75百万円の増資を実施致しました。MUJINでは、今回の調達資金を用いて、産業用ロボットの動作計画と配置最適化を行うソフトウェア「MUJINコントローラー」の開発を進め、本革新技術の市場展開を進めて参ります。<br/><a href="http://www.ut-ec.co.jp/cgi-bin/WebObjects/1201dac04a1.woa/wa/read/139dc82123a/"> (詳細はこちら) </a>
+
+MUJIN is chosen as one of the Next Generation Venture 100 which will save Japan: MUJIN社が日経ビジネス誌に「日本を救う次世代ベンチャー100」に選ばれました。
+
+? Nikkei Business, the flagship magazine of Nikkei Business Publications, was launched in 1969. It is Japan's leading weekly business magazine for top and middle managers providing them with invaluable information for running their companies. The current circulation is 270,031 (Japan ABC 2009) of which more than 90% are subscribers.
+: この度日経ビジネス誌に「日本を救う次世代ベンチャー100」の一社として大きく取り上げて頂きました。これからも産業用ロボットの効率化を通して日本の製造業に貢献して参るべく精進してまいります。
+
+CEC announced partnership with MUJIN for development of new Service RoboDiA: MUJINはシーイーシー社と産業用ロボット向けのサービス開発において業務提携いたしました。
+
+? CEC announced partnership with MUJIN for development of new service, RoboDiA which provides industrial robot teaching solutions.
+: <p>株式会社MUJIN（本社：東京都文京区、代表取締役営業部長：滝野　一征、以下MUJIN）は、このほど株式会社シーイーシー（本社：東京都渋谷区、代表取締役社長：柏木 茂、以下シーイーシー）と、産業用ロボット向けのサービス事業において業務提携し、産業用ロボット向けのプログラミング(ティーチング)作業の効率化、生産現場における事前検証時間短縮の支援を目的としたサービスRoboDiA(ロボディア)の提供を開始いたしました。</p>
+  <p>生産現場において産業用ロボットの需要が高まる一方で、ロボットの動作教示やレイアウト検討は技術者の経験と勘に頼る状況が続いています。属人化はロボット導入コストの増加と導入期間の長期化をもたらすだけでなく、生産ライン改善段階でも大きな障害になりつつあります。</p>
+  <p>一方シーイーシーは、生産・物流現場向けのソリューションサービスVR+R®(ヴイ・アール・アール)の中で、ロボットラインや工場、物流拠点用の成立性・効率性検証ツールや制御検証ツール、モニタリングツール等を提供してきた一方、MUJINは最適ロボット軌道や最適レイアウト算出のためのコア技術を有し、この大きな課題に挑戦しています</p><p>両社はそれぞれの持つ製品を連携させることで、より高い付加価値をお客様に提供すべく、産業用ロボット向けの最適軌道・最適レイアウト算出のためのサービス開発に合意、サービスの提供を開始いたしました。</p>
+  <p>シーイーシーは本事業にて2015年までの3年間で10億円の売上を目指します。</p>
+  <br/>
+  <b>協業による仮想構想・仮想検証の実現</b>
+
+MUJIN announced that CANON has adopted MUJIN Controller: ＭＵＪＩＮコントローラの受注について日刊工業新聞に取り上げられました。
+
+? Nikkan Kogyo Newspaper - MUJIN announced that CANON has adopted MUJIN controller as a tool to maximize efficiency of automation system. CANON is one of the leading company in robotics development and very eager to achieve full automation of at least some factories. In the integration process of automation, automated programming tool, MUJIN Controller is expected to be very useful.
+: <p>東京大学発ベンチャー企業のＭＵＪＩＮ（東京都文京区、滝野一征代表取締役ＣＥＯ、０５０・３６８２・７８５２）は、キヤノンから産業用ロボット向け自動動作教示ソフトウエアを受注した。ＭＵＪＩＮにとって製品の初の本格採用となる。受注額は非公表。６月にソフトを一般発売し、生産ライン構築のコンサルティング業務も始める。</p>
+  <p>今回の受注を弾みに、ソフト販売やコンサル事業などを合わせて、今後３年間で１０億円の売り上げを目指す。</p>
+  <p>採用された「ＭＵＪＩＮコントローラ」は、ロボットにさせたい作業と周囲の環境を設定するだけで、最も効率のいい動きを短時間で自動検索する。動作教示時間を短縮できる。三菱電機とデンソーウェーブ（愛知県阿久比町）製ロボの全機種に対応。ロボメーカーごとのプログラムをダウンロードでき、検索結果をそのまま実機に反映できる。各ロボメーカーのシミュレーションソフトとの整合性は９５％以上</p>
+  <a href="http://www.nikkan.co.jp/news/nkx0220130508eaaf.html"><p><b>日刊工業新聞</b></p></a>
+
+MUJIN gave demonstration in DMS exhibition: 設計・製造ソリューション展にてシーイーシー社との共同出展が盛況に終わりました。
+
+
+
+MUJIN will exhibit OpenRAVE at Open Source Conference Kyoto: オープンソースカンファレンス京都にてOpenRAVEを出展いたします。
+
+MUJIN will exhibit at International Robot Exhibition 2013: MUJINは国際ロボット展（IREX）２０１３に６ブースにて出展いたします。
+
+? MUJIN gave a demonstration and exhibited products with CEC in Design Engineering
+  &amp; Manufacturing Solution Expo (DMS) held from ６/18ー２１ in Tokyo Intex. We deeply
+  appreciate all people who came to our booth.
+: ６月１８日ー２１日に東京国際展示場で催された設計・製造ソリューション展に協力会社であるシーイーシー社と共同出展し、盛況に終わることができました。弊社ブースにお越し頂きました全てのお客様に心から御礼申し上げます。
+
+We mainly exhibited RoboDiA, which is collaborative product with CEC.: 当日のブースではシーイーシーとの共同開発製品であるRoboDiAの展示を主に行いました。
+
+Customers move obstacles（bottle&cup）at their will: 障害物（ペットボトルとカップ）を動かして頂く
+
+Customers specifys only final destinations which they want robot arm go to: ロボットに動いて欲しい場所だけを指定する
+
+RoboDiA calculates trajectory: RoboDiAが軌道を計算する
+
+Robot moves while all obstacles, singular points, and clearance are perfectly considered: ロボットが障害物、特異点を完璧に考慮しながら動作する
+
+? MUJIN will exhibit OpenRAVE (Open Robotics Automation Virtual Environment) and present
+  at the upcoming Open Source Conference(OSC) held on August 2-3, 2013 in Kyoto, Japan.
+: ''
+
+? OSC is a leading power open source event that focuses on both practical and applied
+  aspects of open source business. MUJIN's booth will feature demonstrations of OpenRAVE
+  which is the most used robot kinematics solver in the world by using actual MITSUBISHI
+  industrial robot. The company will also look for the potential programmer who are
+  interested in industrial robot business.
+: ''
+
+MUJIN's location in the atrium: ''
+
+MUJIN is proud to introduce our innovative products in 6 different booths at International Robot Exhibition 2013.: MUJINは国際ロボット展にて様々な新製品を協力会社の６ブースにて出典いたします。主な出展製品と企業様は以下のとおりです。
+
+CEC--------------------------------------RoboDiA (MUJIN Controller OEM).: CEC---------------------先進ラインシミュレーター：RoboDiA (MUJIN Controller をOEM供給)
+
+Densowave---------------------------MUJIN Controller &amp; MUJIN scanner.: デンソーウェーブ-----世界発軌道・配置最適化システム：MUJIN Controller &amp; MUJINスキャナー
+
+Kawasaki Heavy Industry------The world fastedst liquid transportation: 川崎重工業-----------世界初、高速液体搬送デモ（MUJINコントローラで軌道作成）
+
+Knowledge---------------------------The world first intelligent bin-picking system - MUJIN Pick Worker.: 
+ナレッジ------ ----------世界初干渉・特異点自動回避機能搭載ばら積みロボット: MUJIN Pick Worker
+
+Mitsubishi Electric------------------MUJIN Controller live demo with Melfa robot.: 三菱電機---------------Melfaロボットを使用してのMUJINコントローラライブデモ
+
+MUJIN-----------------------------------MUJIN Controller demo with Melfa Robot &amp; MUJIN tour guide.: MUJIN------------------Melfaロボットを使用してのMUJINコントローラデモ&amp; MUJINツアー受付
+
+Please contact us if you wish to participate our MUJIN tour in IREX ASAP. MUJIN team member will guide customers around IREX and explain how mujin's the world new technology contributes their productivity.: MUJINではIREX会場各所に散らばる弊社製品を細かに説明して回るMUJINツアーをうけつけております。ツアーをご希望されるお客様はお早目に以下のメールアドレスにinfo@mujin.co.jp 滝野まで
+
+? Please visit MUJIN booth.
+: <ol>
+  <li>希望日</li>
+  <li>時間</li>
+  <li>人数</li>
+  </ol>
+  <br/>
+  を記載していただき、お申し込みください。<br/>
+  すでに多くの予約が入り初めておりますので、ご希望のお客様はお早めにお願い申し上げます。<br/>
+  <br/>
+
+  では当日皆様にお会いできることを楽しみにしております。<br/>
+  <br/>
+  MUJINブース番号IR２ー０８<br/>
