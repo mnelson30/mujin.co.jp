@@ -5,7 +5,7 @@ en_message: In English
 
 Contact: ご質問
 
-We'd Love to Hear From You!: ''
+We'd Love to Hear From You!: どのような事でもご相談ください！
 
 First Name: 名前
 
@@ -13,7 +13,7 @@ Last Name: 姓名
 
 Company Name: 会社名
 
-Street Address: ''
+Street Address: 番地
 
 City: 市町村
 
@@ -21,13 +21,13 @@ State/Prefecture: 州/県
 
 Country: 国
 
-Email Address: 'Emailアドレス'
+Email Address: Emailアドレス
 
 Telephone Number: 電話番号
 
 Message: メッセージ
 
-Submit: ''
+Submit: 送信
 
 MUJIN: 株式会社MUJIN
 
@@ -39,9 +39,9 @@ MUJIN Controller: MUJINコントローラ
 
 MUJIN Scanner: MUJINスキャナ
 
-Pick Worker: ''
+Pick Worker: ピックワーカー
 
-Video Gallery: ''
+Video Gallery: ビデオギャラリー
 
 Services: 業務内容
 
@@ -49,19 +49,19 @@ Technology: 技術情報
 
 News: 新着情報
 
-About: ''
+About: 企業情報
 
 Our Team: チーム
 
 Vision: ビジョン
 
-Locations: ''
+Locations: 所在地
 
 Careers: 採用情報
 
 Business Connections: 取引先企業
 
-Company Info: ''
+Company Info: 会社概要
 
 ? ! '&copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="{{ site.baseurl_root  }}{{ site.lang }}/privacy.html">Privacy Policy</a>'
 : ''
@@ -205,7 +205,7 @@ Headquarters: 本社
 
 Tokyo University Entrepreneur Plaza, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan: 東京都文京区本郷7-3-1, 東京大学アントレプレナープラザ
 
-Koishikawa Office: ''
+Koishikawa Office: 小石川事業所
 
 1-22-9 Koishikawa, Bunkyo-ku, Tokyo, Japan: 東京都文京区小石川1-22-9
 
@@ -217,7 +217,7 @@ URL: ''
 
 E-mail: ''
 
-Company History: ''
+Company History: 沿革
 
 Apr: 4月
 
@@ -252,9 +252,9 @@ MUJIN Inc. was founded in Tokyo, Japan. The team started to apply OpenRAVE techn
   アプリケーションをターゲットとし、そのテストと開発のためのモーションプランニ
   ングと高度な知的アルゴリズムを備えた開発環境であるOpenRAVEを発明しました。
 
-Fluid Handling: ''
+Fluid Handling: 液体搬送
 
-Videos: ''
+Videos: ビデオ
 
 MUJIN Controller Demo: MUJINコントローラデモ
 
@@ -337,7 +337,7 @@ Scan quickly: 3.スキャン
 
 Robot is detected: 4.ロボットが認識されます
 
-Purchase: ''
+Purchase: 購入方法
 
 STEP 1: ''
 
@@ -414,9 +414,9 @@ Demonstration: デモンストレーション
 
 Features: 製品機能
 
-Operational Demo: ''
+Operational Demo: 操作デモ
 
-Specifications: ''
+Specifications: 仕様
 
 Licensing: ライセンス形態
 
@@ -549,7 +549,7 @@ Example Workflow: ワークフローの例
   イレベルで一般的な方法をとる事ができます。このケースではユーザーは椅子を把持
   する際(P1)と椅子を設置する最終目的地（P2)でのツールポジションを指定するだけです。
 
-! 'The only program you write is:': ''
+! 'The only program you write is:': お客様に書いて頂くプログラムは
 
 ? Sit back and relax while the MUJIN Controller chooses the best trajectory by comparing
   thousands of candidate trajectories. After calculating the most optimal trajectory,
@@ -728,7 +728,7 @@ Specify only goals: 目標位置のみを指定
 : MUJINコントローラは干渉回避を考慮した最適軌道を作成するツールであるため、ユー
   ザーはITLの中で目標位置のみを指定します。
 
-Example Program: ''
+Example Program: プログラム事例
 
 Manufacturer-specific Program Output: メーカー事のロボットプログラム排出
 
@@ -748,7 +748,7 @@ Manufacturer-specific Program Output: メーカー事のロボットプログラ
   せん。唯一必要な物はウェブブラウザーのみになります。MUJIN社としましては、以下
   のブラウザーを推奨しております。
 
-Standalone 3D CAD Format Support: 広範な３D　CADフォーマットのサポート
+Standalone 3D CAD Format Support: 広範な3D CADフォーマットのサポート
 
 ? Many of existing robot simulation software are implemented as add-on's to expensive
   3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN
@@ -896,7 +896,7 @@ Partners: パートナー企業
 
 Investors: 投資会社
 
-Connections: ''
+Connections: コネクション
 
 A short list of some of our clients: クライアント様リスト
 
@@ -922,23 +922,23 @@ The University of Tokyo Edge Capital: UTEC2号投資事業有限責任組合
 
 Best tools for robot programming and workcell layout: ロボットプログラミングとセルレイアウトのためのベストツール
 
-Modern and easy to use interfaces for robots: ''
+Modern and easy to use interfaces for robots: モダンで直感的に使えるインターフェース
 
-Capable of advanced planning for high DOF and dual arm robots: ''
+Capable of advanced planning for high DOF and dual arm robots: 双腕ロボットや７軸以上の多軸にも対応する最新の動作計画技術
 
 Optimizing robot motion for complex object placement: 複雑な設置作業におけるロボット動作の最適化
 
-We are a team of robotics, motion control and design experts ready to tackle your toughest industrial robot problems.: ''
+We are a team of robotics, motion control and design experts ready to tackle your toughest industrial robot problems.: 弊社はお客様が抱える最も難しい産業用ロボット課題を解決できるロボット工学、動作計画、産業デザインのエキスパートチームです
 
-Learn more about MUJIN: ''
+Learn more about MUJIN: MUJINについて知る
 
-Our platform for programming and optimizing industrial robots.: ''
+Our platform for programming and optimizing industrial robots.: 産業用ロボットのプログラミングと最適化のためのプラットフォーム
 
-Save time by modeling simple parts and complex environments.: ''
+Save time by modeling simple parts and complex environments.: 単品部品や複雑な環境をモデリングするお客様の時間を削減します
 
 Latest News: 最新情報
 
-Engineering Services: ''
+Engineering Services: エンジニアリング
 
 Our Technology: 技術情報
 
@@ -952,7 +952,7 @@ Robot dynamics simulations: ロボット動力学シミュレーション
 
 Minimum Qualification: 応募資格
 
-Knowledge of OpenRAVE, C++, and Python: ''
+Knowledge of OpenRAVE, C++, and Python: OpenRAVE, C++, や Pythonについての知識
 
 Preferred Skills: 優遇対象資格
 
@@ -966,17 +966,17 @@ Back-end development: 沿革
 
 JavaScript (jQuery), AJAX, HTML: ''
 
-Django Python Web Framework: ''
+Django Python Web Framework: Django Python Web フレームワーク
 
-SQL DB (knowledge of PostgreSQL preferred, but can be learned): ''
+SQL DB (knowledge of PostgreSQL preferred, but can be learned): SQL DB(PostgreSQLについての知識があれば好ましいが,研修で習得も可能)
 
 RESTful API creation: ''
 
 HTML5 and CSS: ''
 
-WebSocket API - for fast streaming data: ''
+WebSocket API - for fast streaming data: WebSocket API - 高速ストリーミング用
 
-WebGL API - 3D graphics in browser: ''
+WebGL API - 3D graphics in browser: WebGL API - ブラウザーの3Dグラフィクス用
 
 Work Location: 勤務地
 
@@ -1145,7 +1145,7 @@ Tokyo University Entrepreneur Plaza 4F, 7-3-1, Hongo, Bunkyo-ku, Tokyo, Japan: �
 
 (Please use the intercomm on the 1st floor to call.): 1階のインターフォンにて405号室をお呼びください
 
-View Larger Map: ''
+View Larger Map: 地図の拡大
 
 Walking Directions: 最寄駅
 
@@ -1175,7 +1175,7 @@ Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, turn
 
 Please call us in advance, so that we will prepare for a parking space for you.: 駐車スペースを確保させて頂きますので、お車でお越しの場合は前もってご連絡ください。
 
-FA Engineering: FA エンジニアリング
+FA Engineering: ロボットエンジニアリング
 
 Teaching Solution: ティーチングソリューション
 
