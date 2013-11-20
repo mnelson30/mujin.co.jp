@@ -20,14 +20,14 @@ bower install
 sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 # install rvm and ruby 1.9.3
-sudo apt-get install -y build-essential
-\curl -L https://get.rvm.io | bash -s stable
+sudo apt-get install -y build-essential curl
+curl -L https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 rvm install 1.9.3
 rvm use 1.9.3
 
 # install jekyll
-gem install jekyll
+sudo gem install jekyll
 
 # goodbye!
 sudo apt-get install -y toilet
