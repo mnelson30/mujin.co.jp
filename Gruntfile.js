@@ -39,6 +39,18 @@ module.exports = function(grunt) {
       }
     },
 
+    less: {
+
+      production: {
+        options: {
+          yuicompress: true
+        },
+        files: {
+          'css/bootstrap.min.css': 'less/bootstrap.less'
+        }
+      }
+    },
+
     watch: {
 
       options: {
@@ -68,6 +80,11 @@ module.exports = function(grunt) {
           'css/**/*'
         ],
         tasks: ['rsync:assets']
+      },
+      
+      less: {
+        files: ['less/**/*'],
+        tasks: ['less']
       },
       
       bower_components: {

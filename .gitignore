@@ -1,7 +1,6 @@
-
-
 # Ignore compiled stuff
 _site
+css/bootstrap.min.css
 
 # Numerous always-ignore extensions
 *.diff
