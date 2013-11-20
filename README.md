@@ -6,13 +6,13 @@ If you want to do any work on the website please follow these steps
 
 1. Clone the repo and its submodules:
   
-      git clone https://github.com/mujin/mujin.co.jp.git
-      cd mujin.co.jp
-      git submodule update --init
+      	git clone https://github.com/mujin/mujin.co.jp.git
+      	cd mujin.co.jp
+      	git submodule update --init
   
 2. Install dependencies to build the website. All you have to do is run: 
   
-      ./become-a-website-developer.bash
+      	./become-a-website-developer.bash
   
   This installs all the dependencies
   - `bower` and `grunt` (which need `node` and `npm`)
@@ -20,13 +20,13 @@ If you want to do any work on the website please follow these steps
   
   Since `rvm` did some things to your shell to get the right version of ruby, you also need to run
   
-      source ~/.rvm/scripts/rvm
+      	source ~/.rvm/scripts/rvm
   
   This only needs to be done once though.
   
 3. You're done. Now you can build the website for the first time:
   
-      grunt
+      	grunt
   
 ###Vagrant
 
