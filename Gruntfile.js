@@ -112,8 +112,16 @@ module.exports = function(grunt) {
   grunt.registerTask('website', function() {
 
     grunt.task.run([
-      'jekyll',
+      'less',
+      'jekyll'
+    ]);
+  });
+
+  grunt.registerTask('gaze', function() {
+
+    grunt.task.run([
       'connect',
+      'website',
       'watch'
     ]);
   });
