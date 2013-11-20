@@ -45,7 +45,14 @@ base_url: "./"
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h1>{% t Latest News %}</h1>
         <ul>
-          <li>TODO</li>
+
+          {% for post in site.posts limit:5 %}  
+             <li>  
+               <span>{{ post.date | date_to_string }}</span> &raquo;  
+               <a href="{{ site.baseurl_root }}{{ site.lang }}{{ post.url }}">{% t {{ post.title }} %}</a>  
+             </li>  
+          {% endfor %}  
+
         </ul>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">

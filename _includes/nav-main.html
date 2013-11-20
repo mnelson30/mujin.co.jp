@@ -41,10 +41,10 @@
           </ul>
         </li>
         <li>
-          {% if site.lang == "ja" %}
+          {% if site.lang == 'ja' %}
             {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
             <a href="{{ link1 }}" >{% t en %}</a>
-          {% else if site.lang == "en" %}
+          {% else if site.lang == 'en' %}
             {% capture link2 %}{{ site.baseurl_root }}ja{{ page.url }}{% endcapture %}
             <a href="{{ link2 }}" >{% t ja %}</a>
           {% endif %}
