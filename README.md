@@ -39,9 +39,11 @@ The website is implemented with [jekyll](http://jekyllrb.com/), which is a stati
 To work on the website, just run `grunt gaze` and point your browser to [http://localhost:1234](http://localhost:1234). You can now modify any part of the website and it will be automatically rebuilt and your browser will refresh for you. Right now the jekyll build can be slow (It is because of internationalizations -- I'm working on speedups for it).
 
 ###Deployment
-
-TODO
-
+  
+You should only do this if your name is Lucas Doyle (actually it won't work if you don't have SSH keys)
+  
+        grunt deploy
+  
 ###Updating translations
 
 The japanese translation index is kept in the `_i18n/ja.yml` file. This index is manually kept, which means that anything you put in a translation tag must be manually copied into the YAML file and then translated. If you manually run "jekyll build", it will output all the missing translation keys to give you an idea of what needs to be added.

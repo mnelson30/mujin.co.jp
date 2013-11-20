@@ -36,6 +36,15 @@ module.exports = function(grunt) {
           ],
           dest: '_site'
         }
+      },
+      
+      deploy: {
+        options: {
+          src: ['_site'],
+          dest: '/var/www/www/mujin.co.jp',
+          host: 'www-data@mujin.co.jp',
+          syncDest: true
+        }
       }
     },
 
@@ -132,6 +141,14 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'website'
+    ]);
+  });
+
+  grunt.registerTask('deploy', function() {
+
+    grunt.task.run([
+      'website',
+      'rsync:deploy'
     ]);
   });
 
