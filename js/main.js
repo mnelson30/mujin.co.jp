@@ -8,7 +8,6 @@ $('.tooltip-social').tooltip({
   selector: "a[data-toggle=tooltip]"
 });
 
-
 $('#form_submit').click(function() {
   var body = '';
   $('#contactform [data-human-name]').each(function() {
@@ -22,4 +21,7 @@ $('#form_submit').click(function() {
   
   var address = 'mailto:' + encodeURI('info@mujin.co.jp?subject=' + subject + '&body=' + body);
   window.location = window.location.href = address;
+  
+  $('#message-container').show();
+  $('#message-body').html('<pre>' + body + '</pre>');
 });
