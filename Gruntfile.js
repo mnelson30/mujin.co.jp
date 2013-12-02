@@ -38,6 +38,15 @@ module.exports = function(grunt) {
         }
       },
       
+      htaccess: {
+        options: {
+          src: [
+            '.htaccess'
+          ],
+          dest: '_site'
+        }
+      },
+      
       deploy: {
         options: {
           src: ['_site'],
@@ -59,6 +68,8 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+    clean: ['_site'],
 
     watch: {
 
@@ -121,8 +132,10 @@ module.exports = function(grunt) {
   grunt.registerTask('website', function() {
 
     grunt.task.run([
+      'clean',
       'less',
-      'jekyll'
+      'jekyll',
+      'rsync:htaccess'
     ]);
   });
 

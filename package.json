@@ -20,7 +20,8 @@
     "matchdep": "~0.1.2",
     "grunt-jekyll": "~0.3.9",
     "grunt-rsync": "~0.2.1",
-    "grunt-contrib-less": "~0.8.2"
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-clean": "~0.5.0"
   },
   "engines": {
     "node": ">=0.10.17",

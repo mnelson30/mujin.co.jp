@@ -7,7 +7,7 @@ permalink: none
 
 # server
 destination: _site
-exclude: ["_site", ".gitignore", "bower.json", "CNAME", "Gruntfile.js", "package.json", "node_modules", "README.md", "vagrant", ".vagrant", "old", "src"]
+exclude: ["_site", ".gitignore", ".htaccess", "bower.json", "CNAME", "Gruntfile.js", "package.json", "node_modules", "README.md", "vagrant", ".vagrant", "old", "src"]
 
 # site variables
 name: 'MUJIN'
