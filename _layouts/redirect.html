@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% include header.html %}
+
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1;url={{ site.baseurl_root }}{{ site.lang }}/{{ page.new_url }}">
+        <script type="text/javascript">
+            window.location.href = "{{ site.baseurl_root }}{{ site.lang }}/{{ page.new_url }}"
+        </script>
+
+        <title>
+            {% t Page Moved %} &middot; {% t MUJIN %}
+        </title>
+
+    </head>
+    <body data-spy="scroll" data-target="#nav-sidebar">
+
+        {% include nav-main.html %}
+        
+        <h2 class="page-header">{% t Page Moved %}</h2>
+        <p>{% t If you are not redirected automatically, follow this link %}: <a href="{{ site.baseurl_root }}{{ site.lang }}/{{ page.new_url }}">{% t link %}</a></p>
+
+        {{ content }}
+
+        {% include footer.html %}
+
+    </body>
+</html>
