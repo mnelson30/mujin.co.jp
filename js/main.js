@@ -21,5 +21,5 @@ $('#form_submit').click(function() {
   var subject = 'New inquiry from ' + $('#first_name').val() + ' '  + $('#last_name').val() 
   
   var address = 'mailto:' + encodeURI('info@mujin.co.jp?subject=' + subject + '&body=' + body);
-  window.location = window.location.href = address;
+  window.location.href = address;
 });
