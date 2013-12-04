@@ -7,15 +7,24 @@
       <div class="col-lg-5">
         <p>{% t &copy; 2011-2013 MUJIN Inc., All rights reserved. <a href="{{ site.baseurl_root }}{{ site.lang }}/privacy.html">Privacy Policy</a> %}</p>
 
-        {% if site.lang == 'ja' %}
-          {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
-          <a href="{{ link1 }}" >{% t en_message %}</a>
-        {% else if site.lang == 'en' %}
-          {% capture link2 %}{{ site.baseurl_root }}ja{{ page.url }}{% endcapture %}
-          <a href="{{ link2 }}" >{% t ja_message %}</a>
-        {% endif %}
+        <p>
+          <button type="button" class="btn disabled">
+            <span class="glyphicon glyphicon-earphone"></span> 50-3734-6850
+          </button>
+          &nbsp;&nbsp;
+          <a class="btn btn-info" href="{{ site.baseurl_root }}{{ site.lang }}/contact.html">{% t Contact %}</a>
+          &nbsp;&nbsp;
+          {% if site.lang == 'ja' %}
+            {% capture link1 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
+            <a class="btn btn-default" href="{{ link1 }}">{% t en_message %}</a>
+          {% else if site.lang == 'en' %}
+            {% capture link2 %}{{ site.baseurl_root }}ja{{ page.url }}{% endcapture %}
+            <a class="btn btn-default" href="{{ link2 }}">{% t ja_message %}</a>
+          {% endif %}
+        </p>
 
       </div>
+      
       <div class="col-lg-4 col-lg-offset-3">
 
         <a href="https://www.facebook.com/mujininc">
