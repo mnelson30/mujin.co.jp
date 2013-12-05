@@ -28,7 +28,7 @@ base_url: "../"
 
       <table id="contactform" cellpadding="4" align="center" style="width: 100%;">
         <tbody>
-          <tr>
+          <tr id="form">
             <td style="width: 50%;">
               <table style="width: 100%;">
                 <tbody>
@@ -109,10 +109,15 @@ base_url: "../"
             </td>
             <td valign="top">
               <label for="message" style="display: block;">{% t Message %}</label>
-              <textarea rows="10" cols="50" maxlength="1000" style="width: 100%; height: 300px;" name="message" data-human-name="{% t Message %}"></textarea>
+              <textarea rows="10" cols="50" maxlength="1000" class="form-control" style="height: 300px;" name="message" data-human-name="{% t Message %}"></textarea>
               <br/>
               <br/>
-              <input id="form_submit" class="btn btn-lg btn-primary pull-right" value="{% t Submit %}">
+              <a href="#" id="mail-link" class="btn btn-lg btn-primary pull-right" target="_top">{% t Submit %}</a>
+            </td>
+          </tr>
+          <tr id="thanks" style="display: none;">
+            <td style="text-align: center;" class="well" colspan="2">
+              <h1>{% t Thanks! We'll get back to you soon. %}</h1>
             </td>
           </tr>
         </tbody>
@@ -120,15 +125,6 @@ base_url: "../"
       <br/>
       <br/>
       <br/>
-      
-<!--
-      <div style="display: none;">
--->
-      <div id="message-container" style="display: none;">
-        <h3>{% t If the email form doesn't show up, please send the following message to <b>info@mujin.co.jp</b> %}</h3>
-        <div id="message-body">
-        </div>
-      </div>
 
     </div><!-- /.row -->
 

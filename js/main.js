@@ -1,27 +1,37 @@
 // carousel
 $('.carousel').carousel({
   interval: 5000
-})
+});
 
 // tooltips for social links
 $('.tooltip-social').tooltip({
-  selector: "a[data-toggle=tooltip]"
+  selector: 'a[data-toggle=tooltip]'
 });
 
-$('#form_submit').click(function() {
+$('#mail-link').click(function() {
   var body = '';
   $('#contactform [data-human-name]').each(function() {
     var $this = $(this);
 
-    body += '[' + $this.data('humanName') + ']\n';
-    body += $this.val() + '\n';
-    body += '\n';
+    body += '<b>' + $this.data('humanName') + '</b><br/>';
+    body += $this.val() + '<br/>';
+    body += '<br/>';
   });
-  var subject = 'New inquiry from ' + $('#first_name').val() + ' '  + $('#last_name').val() 
-  
-  var address = 'mailto:' + encodeURI('info@mujin.co.jp?subject=' + subject + '&body=' + body);
-  window.location.href = address;
-  
-  $('#message-container').show();
-  $('#message-body').html('<pre>' + body + '</pre>');
+
+  var subject = 'Inquiry from ' + $('#first_name').val() + ' ' + $('#last_name').val();
+
+  $.ajax({
+    type: 'POST',
+    url: '/app/contactSubmit',
+    data: JSON.stringify({
+      subject: subject,
+      body: body
+    }),
+    success: function() {
+      $('#contactform #form').hide();
+      $('#contactform #thanks').show();
+    },
+    dataType: 'json',
+    contentType: 'application/json; charset=UTF-8'
+  });
 });
