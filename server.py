@@ -44,8 +44,9 @@ def site(filename):
 
 @app.route('/contactSubmit', methods=['POST'])
 def contact():
-    mail(request.json['subject'], request.json['body'])
+    mail(unicode(request.json['subject']).encode('utf-8'), unicode(request.json['body']).encode('utf-8'))
     return '{}'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run()
