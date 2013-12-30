@@ -9,7 +9,7 @@ except KeyError:
     MUJIN_ENV = 'dev'
 
 DEBUG = False
-TEMPLATE_DEBUG = False 
+TEMPLATE_DEBUG = False
 IPYTHON_DEBUG = False
 
 EMAIL_HOST='smtp.gmail.com'

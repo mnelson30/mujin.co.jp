@@ -5,7 +5,7 @@ base_url: "../../"
 ---
 
 <div class="container">
-  
+
   <div class="row">
     <div class="col-lg-4 visible-lg">
       <div class="sidebar" id="nav-sidebar">
@@ -18,7 +18,7 @@ base_url: "../../"
         </ul>
       </div>
     </div>
-  
+
     <div class="col-lg-8 col-sm-12 col-md-12">
       <h2 id="controller" class="page-header">{% t MUJIN Controller %} <small>{% t Industrial robot automation for everyone %}</small></h2>
 
@@ -40,7 +40,7 @@ base_url: "../../"
 
       <h2 class="page-header">{% t Simulation Precision and Accuracy %}</h2>
       <p>{% t A simulation is pointless unless it is consistent with the reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory matches up with the robot's motion in reality. MUJIN however is proud to guarantee our trajectories to at least 95%% precision. What the program shows on the computer is what will happen in the actual robot cell. %}</p>
-      
+
       <h2 id="features" class="page-header">{% t Features %}</h2>
       <div class="tabbable tabs-left">
         <ul class="nav nav-tabs" id="myTab">
@@ -102,7 +102,7 @@ base_url: "../../"
             <img class="thumbnail" src="{{ page.base_url }}img/technology_iksolutions.jpg" />
             <br/>
             <p>{% t Here at MUJIN, we have developed tools that can automatically solve the analytic inverse kinematics equations and generate extremely robust and fast programs to find solutions. MUJIN's framework supports any robot or kinematic structure, even if it involves more than 7 axes or closed kinematic chains. %}</p>
-            <img class="thumbnail" src="{{ page.base_url }}img/ikfast_robots.png" />    
+            <img class="thumbnail" src="{{ page.base_url }}img/ikfast_robots.png" />
           </div>
 
           <div class="tab-pane fade" id="feature-2">
@@ -151,7 +151,7 @@ base_url: "../../"
                   <div class="row">
                     <div class="span6">
                       <pre>
-move(p[P1])          #move to P1 
+move(p[P1])          #move to P1
 grab(t[chair1])      #grab chair1
 move(p[P2])          #move to P2
 release(t[chair2])   #release chair2
@@ -176,11 +176,11 @@ release(t[chair2])   #release chair2
             <h2>{% t Simulation Precision %}</h2>
 
             <p>{% t A simulation is pointless unless it is consistent with reality. Most existing simulation tools have difficulty with ensuring that a planned trajectory in a virtual environment matches up exactly with the robot's motion in the real world. MUJIN however is proud to guarantee our trajectories are accurate and precise to at least 95 percent of the real robot's motion. %}</p>
-            
+
             <h3>{% t Virtual Robot Controller (VRC) %}</h3>
-            
+
             <p>{% t To achieve our high simulation accuracy the MUJIN Controller examines all trajectories calculated through a robot manufacture's Virtual Robot Controller (VRC). This means that their simulation software verifies the MUJIN Controller generated trajectory. Only collision free trajectories proven by the test with VRC is output as a result. %}</p>
-             
+
             <img class="thumbnail" src="{{ page.base_url }}img/VRC.png">
 
           </div>
@@ -212,7 +212,7 @@ release(t[chair2])   #release chair2
 
             <p>{% t In order to enable our customers to discover the most optimal robot and workcell layout, the MUJIN Controller supports several types of optimizations. An optimization will take one or more bodies (robot or other objects) in an environment and examine all possible positions and trajectories for a given task. It automatically finds the environment states that best corresponds to fast task times. %}</p>
 
-            <img src="{{ page.base_url }}img/placement_opt.png"> 
+            <img src="{{ page.base_url }}img/placement_opt.png">
 
             <p>{% t For example, an optimization could move the robot around its environment in attempts to discover the most optimal position given the task. The MUJIN Controller will evaluate thousands of robot positions and orientations, and for each robot placement it solves for an optimal motion plan. In the end, the user is left with the robot locations that yielded the fastest task times. %}</p>
 
@@ -258,9 +258,9 @@ release(t[chair2])   #release chair2
             <h2>{% t Industrial Task Language (ITL) %}</h1>
 
             <p>{% t Industrial Task Language is a robot programming language developed by MUJIN. It enables users to conveniently program and design their robotic applications in a generic and scalable way. ITL is completely independent to any robot manufactures' language and is designed to maximize MUJIN Controller's extensive simulation features. Using ITL releases people from managing different robot programs in different languages that depend on manufactures'. It also reduces the effort required to plan, apply and maintain core robotic programming techniques, saving time and money. %}</p>
-            
+
             <h3>{% t Specify only goals %}</h2>
-            
+
             <p>{% t Since the MUJIN Controller is a tool designed to create the optimized, collision free paths, an ITL user only has to specify goals. %}</p>
 
             <h4>{% t Example Program %}</h4>
@@ -324,7 +324,7 @@ movel(p[P3])            </pre>
 
         </div>
       </div>
-      
+
       <h1 id="specs" class="page-header">{% t Controller Specifications %}</h1>
       <img src="{{ page.base_url }}img/mujin_controller.jpg" style="width: 300px; height: 300px;">
       <table class="table table-striped table-bordered">
@@ -391,7 +391,7 @@ movel(p[P3])            </pre>
       {% include purchase.html productName="MUJIN Controller" %}
 
     </div>
-    
+
   </div><!-- /.row -->
 
 </div><!-- /.container -->

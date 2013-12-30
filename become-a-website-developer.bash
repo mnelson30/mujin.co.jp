@@ -12,7 +12,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g bower grunt-cli
 sudo rm -r ~/.npm ~/tmp
 
-# install our node and bower deps 
+# install our node and bower deps
 npm install
 bower install
 

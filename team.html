@@ -4,110 +4,116 @@ title: Team
 base_url: "../"
 ---
 
+<style>
+  .col-sm-4 {
+    text-align: center;
+  }
+
+  .col-sm-4 {
+    width: 200px;
+  }
+</style>
+
 <div class="container">
-  
-  
-    <div class="col-md-12 col-sm-12">
-      <h1 class="page-header">{% t Our Team %}</h1>
 
 
-      <br/>
+  <div class="col-md-12 col-sm-12">
+    <h1 class="page-header">{% t Our Team %}</h1>
 
-      <div id="managers">
-        <h3>{% t Issei Takino - CEO %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/issei.png">
-            </td>
-            <td>
-              <p><b>{% t Graduated from Soka University of America %}</b> 2007</p>
-              <p><b>{% t Working as Sales Engineer at Iscar %}</b> 2012</p>
-              <ul>
-                <li><p>{% t Freshman Award %} 2008</p></li>
-                <li><p>{% t Second Prize for Marketing Proposal Contest %} 2010</p></li>
-                <li><p>{% t The first award in Sales Contest %} 2011</p></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
+    <br/>
 
-        <h3>{% t Rosen Diankov - CTO %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/rosen.png">
-            </td>
-            <td>
-              <p><b>{% t University of California, Berkeley (EECS) %}</b> 2006</p>
-              <p><b>{% t Ph.D from Carnegie Mellon University %}</b> 2010</p>
-              <p><b>{% t JSPS Postdoctoral Fellowship in JSK Tokyo University %}</b> 2010-2012</p>
-              <p><b>{% t OpenRAVE - Founder and Developer %}</b></p>
-              <ul>
-                <li>{% t Ph.D.thesis: <a href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">Automated Construction of Robotics Manipulation Programs</a> %}</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
+    <h3>{% t Issei Takino - CEO %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/issei.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Graduated from Soka University of America %}</b> 2007</p>
+        <p><b>{% t Working as Sales Engineer at Iscar %}</b> 2012</p>
+        <ul>
+          <li><p>{% t Freshman Award %} 2008</p></li>
+          <li><p>{% t Second Prize for Marketing Proposal Contest %} 2010</p></li>
+          <li><p>{% t The first award in Sales Contest %} 2011</p></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
 
-        <h2 class="comment" style="color:red;"></h2>
+    <h3>{% t Rosen Diankov - CTO %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/rosen.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t University of California, Berkeley (EECS) %}</b> 2006</p>
+        <p><b>{% t Ph.D from Carnegie Mellon University %}</b> 2010</p>
+        <p><b>{% t JSPS Postdoctoral Fellowship in JSK Tokyo University %}</b> 2010 - 2012</p>
+        <p><b>{% t OpenRAVE - Founder and Developer %}</b></p>
+        <ul>
+          <li>{% t Ph.D.thesis: <a href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">Automated Construction of Robotics Manipulation Programs</a> %}</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
 
-        <h3>{% t Huan Liu - Chief of Software Development %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/huan.png">
-            </td>
-            <td>
-              <p><b>{% t Graduated from Massachusetts Institute of Technology %}</b> 2010</p>
-              <p><b>{% t Master of Engineering from Massachusetts Institute of Technology %}</b> 2011</p>
-              <ul>
-                <li>{% t Tutoring chair for HKN national EECS honor society %} 2010-2011</li>
-              </ul>
-              <p><b>{% t Oracle Corporation %}</b> 2011-2012</p>
-            </td>
-          </tr>
-        </table>
+    <h3>{% t Huan Liu - Chief of Software Development %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/huan.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Graduated from Massachusetts Institute of Technology %}</b> 2010</p>
+        <p><b>{% t Master of Engineering from Massachusetts Institute of Technology %}</b> 2011</p>
+        <ul>
+          <li>{% t Tutoring chair for HKN national EECS honor society %} 2010 - 2011</li>
+        </ul>
+        <p><b>{% t Oracle Corporation %}</b> 2011 - 2012</p>
+      </div>
+    </div>
+    <br/>
 
-        <h3>{% t Lucas Doyle - Software Engineer %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/luke.png">
-            </td>
-            <td>
-              <p><b>{% t Graduated from Rensselaer Polytechnic Institute %}</b> 2012</p>
-              <ul>
-                <li>{% t Team leader in Boeing Robotic Wingbox Project %} 2012</li>
-              </ul>
-              <p><b>{% t Harvard-Smithsonian Center for Astrophysics %}</b> 2009-2012</p>
-              <p><b>{% t Robotics Intern at Anybots %}</b> 2011</p>
-            </td>
-          </tr>
-        </table>
+    <h3>{% t Lucas Doyle - Software Engineer %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/luke.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Graduated from Rensselaer Polytechnic Institute %}</b> 2012</p>
+        <ul>
+          <li>{% t Team leader in Boeing Robotic Wingbox Project %} 2012</li>
+        </ul>
+        <p><b>{% t Harvard-Smithsonian Center for Astrophysics %}</b> 2009 - 2012</p>
+        <p><b>{% t Robotics Intern at Anybots %}</b> 2011</p>
+      </div>
+    </div>
+    <br/>
 
-        <h3>{% t Michael Nelson - Software Engineer %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/michael.png">
-            </td>
-            <td>
-              <p><b>{% t Team Leader at Lockon %}</b> 2012-2013</p>
+    <h3>{% t Michael Nelson - Software Engineer %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/michael.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Team Leader at Lockon %}</b> 2012 - 2013</p>
 
-              <p><b>{% t Temple University, Japan Campus %}</b> 2006-2008</p>
-              <p><b>{% t Shiga University %}</b> 2005-2006</p>
-              <p><b>{% t Connecticut State University %}</b> 2002-2005</p>
-            </td>
-          </tr>
-        </table>
+        <p><b>{% t Temple University, Japan Campus %}</b> 2006 - 2008</p>
+        <p><b>{% t Shiga University %}</b> 2005 - 2006</p>
+        <p><b>{% t Connecticut State University %}</b> 2002 - 2005</p>
+      </div>
+    </div>
+    <br/>
 
 <!--
        <h3>{% t Software Engineer - Daniel Matthew Taub %}</h3>
         <table class="table">
           <tr>
             <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/daniel.png">
+              <img class="thumbnail" src="{{ page.base_url }}img/people/daniel.png">
             </td>
             <td>
               <p><b>{% t Graduated from Massachusetts Institute of Technology %}</b> 2006</p>
@@ -117,27 +123,28 @@ base_url: "../"
         </table>
 
 -->
-      <h3>{% t Advisor - Pham Quang Cuong %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/quang.png">
-            </td>
-            <td>
-              <p><b>{% t Graduated from École Normale Supérieure rue d'Ulm %}</b> 2007</p>
-              <p><b>{% t Ph.D from Collège de France %}</b> 2009</p>
-              <p><b>{% t JSPS researcher at University of Tokyo %}</b> 2010-2013</p>
-              <p><b>{% t RSS 2012 Best Paper Award %}</b> - <a href="http://roboticsproceedings.org/rss08/p42.pdf">{% t trajectory deformation for redundant manipulators %}</a></p>
-            </td>
-          </tr>
-        </table>
+
+    <h3>{% t Advisor - Pham Quang Cuong %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/quang.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Graduated from École Normale Supérieure rue d'Ulm %}</b> 2007</p>
+        <p><b>{% t Ph.D from Collège de France %}</b> 2009</p>
+        <p><b>{% t JSPS researcher at University of Tokyo %}</b> 2010 - 2013</p>
+        <p><b>{% t RSS 2012 Best Paper Award %}</b> - <a href="http://roboticsproceedings.org/rss08/p42.pdf">{% t trajectory deformation for redundant manipulators %}</a></p>
+      </div>
+    </div>
+    <br/>
 
 <!--
       <h3>{% t Visiting Scientist - Ryosuke Tasaki %}</h3>
         <table class="table">
           <tr>
             <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/ryosuke.png">
+              <img class="thumbnail" src="{{ page.base_url }}img/people/ryosuke.png">
             </td>
             <td>
               <p><b>{% t Graduated from Kyoto Institute of Technology %}</b> 2007</p>
@@ -149,23 +156,21 @@ base_url: "../"
         </table>
 
 -->
-      <h3>{% t Shohei Fujii - Intern %}</h3>
-        <table class="table">
-          <tr>
-            <td>
-              <img class="thumbnail" style="width:200px" src="{{ page.base_url }}img/people/shohei.png">
-            </td>
-            <td>
-              <p><b>{% t Graduated from Tokyo University %}</b> 2012</p>
-              <p><b>{% t Engineering dean's list %}</b> 2012</p>
-              <p><b>{% t Master course at University of Tokyo JSK %}</b> 2012-{% t now %}</p>
-            </td>
-          </tr>
-        </table>
-      </div>
 
+    <h3>{% t Shohei Fujii - Intern %}</h3>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="thumbnail" src="{{ page.base_url }}img/people/shohei.png">
+      </div>
+      <div class="col-sm-8">
+        <p><b>{% t Graduated from Tokyo University %}</b> 2012</p>
+        <p><b>{% t Engineering dean's list %}</b> 2012</p>
+        <p><b>{% t Master course at University of Tokyo JSK %}</b> 2012 - {% t now %}</p>
+      </div>
     </div>
-    
+    <br/>
+
   </div><!-- /.row -->
 
 </div><!-- /.container -->

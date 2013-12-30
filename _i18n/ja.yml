@@ -570,7 +570,7 @@ Example Workflow: ワークフローの例
   誇っております。お客様がMUJINコントローラ上でプログラムしたものは、そのまま現
   実のロボットの動きとして実現されます。
 
-Virtual Robot Controller (VRC): バーチャルロボットコントローラ (VRC) 
+Virtual Robot Controller (VRC): バーチャルロボットコントローラ (VRC)
 
 ? To achieve our high simulation accuracy the MUJIN Controller examines all trajectories
   calculated through a robot manufacture's Virtual Robot Controller (VRC). This means
@@ -647,7 +647,7 @@ Grasp and Release Function: 把持及び解放機能
   teaching. In this case, placement optimization save 40% of task time.
 : このレイアウトはロボットの配置最適化後のものです。ロボット配置と角度が明らか
   に変わっているのがわかります。このレイアウトはマニュアルティーチングで短時間
-  で見つけるのは非常に難しいはずです。このケースでは配置最適化をした事により  
+  で見つけるのは非常に難しいはずです。このケースでは配置最適化をした事により
   40%% のタスクタイム短縮に成功しました。
 
 ? Additionally, the same optimization could also have been run against the position
@@ -1325,7 +1325,7 @@ Densowave---------------------------MUJIN Controller &amp; MUJIN scanner.: デ�
 
 Kawasaki Heavy Industry------The world fastedst liquid transportation: 川崎重工業-----------世界初、高速液体搬送デモ（MUJINコントローラで軌道作成）
 
-Knowledge---------------------------The world first intelligent bin-picking system - MUJIN Pick Worker.: 
+Knowledge---------------------------The world first intelligent bin-picking system - MUJIN Pick Worker.:
 ナレッジ------ ----------世界初干渉・特異点自動回避機能搭載ばら積みロボット: MUJIN Pick Worker
 
 Mitsubishi Electric------------------MUJIN Controller live demo with Melfa robot.: 三菱電機---------------Melfaロボットを使用してのMUJINコントローラライブデモ

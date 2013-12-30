@@ -33,7 +33,7 @@ base_url: "./"
   <div class="container">
 
     <div class="row">
-      
+
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h3>{% t MUJIN Controller %}</h3>
         <p class="lead">{% t Our platform for programming and optimizing industrial robots. %}</p>
@@ -43,11 +43,11 @@ base_url: "./"
           </a>
         </div>
       </div>
-      
+
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h3>{% t MUJIN Scanner %}</h3>
         <p class="lead">{% t Save time by modeling simple parts and complex environments. %}</p>
-        <div class="text-center">  
+        <div class="text-center">
           <a href="{{ site.baseurl_root }}{{ site.lang }}/videos.html#scanner">
             <img style="width: 90%; height: auto;" src="{{ page.base_url }}img/video_thumbs/quickscan_demo.png"/>
           </a>
@@ -68,13 +68,13 @@ base_url: "./"
           </a>
         </div>
       </div>
-      
+
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h3>{% t Bin Picking Demonstration %}</h3>
 <!--
         <p class="lead">{% t Save time by modeling simple parts and complex environments. %}</p>
 -->
-        <div class="text-center">  
+        <div class="text-center">
           <a href="{{ site.baseurl_root }}{{ site.lang }}/videos.html#pick-worker">
             <img style="width: 90%; height: auto;" src="{{ page.base_url }}img/video_thumbs/pickworker_demo.png"/>
           </a>
@@ -96,11 +96,11 @@ base_url: "./"
         <h1>{% t Latest News %}</h1>
         <ul>
 
-          {% for post in site.posts limit:5 %}  
-             <li>  
-               <span>{{ post.date | date_to_string }}</span> &raquo;  
-               <a href="{{ site.baseurl_root }}{{ site.lang }}{{ post.url }}">{% t {{ post.title }} %}</a>  
-             </li>  
+          {% for post in site.posts limit:5 %}
+             <li>
+               <span>{{ post.date | date_to_string }}</span> &raquo;
+               <a href="{{ site.baseurl_root }}{{ site.lang }}{{ post.url }}">{% t {{ post.title }} %}</a>
+             </li>
           {% endfor %}
 
         </ul>

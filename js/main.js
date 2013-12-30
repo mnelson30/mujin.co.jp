@@ -3,11 +3,6 @@ $('.carousel').carousel({
   interval: 5000
 });
 
-// tooltips for social links
-$('.tooltip-social').tooltip({
-  selector: 'a[data-toggle=tooltip]'
-});
-
 $('#mail-link').click(function() {
   var body = '';
   $('#contactform [data-human-name]').each(function() {

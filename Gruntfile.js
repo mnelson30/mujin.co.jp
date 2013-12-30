@@ -11,9 +11,9 @@ module.exports = function(grunt) {
     jekyll: {
       website: {}
     },
-    
+
     rsync: {
-      
+
       options: {
         recursive: true
       },
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           dest: '_site'
         }
       },
-      
+
       bower_components: {
         options: {
           src: [
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
           dest: '_site'
         }
       },
-      
+
       htaccess: {
         options: {
           src: [
@@ -46,12 +46,12 @@ module.exports = function(grunt) {
           dest: '_site'
         }
       },
-      
+
       deploy: {
         options: {
           src: ['_site'],
           dest: '/var/www/www/mujin.co.jp',
-          host: 'www-data@mujin.co.jp',
+          host: 'www-data@www.mujin.co.jp',
           syncDest: true
         }
       }
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     clean: ['_site'],
 
     watch: {
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         ],
         tasks: ['jekyll']
       },
-      
+
       assets: {
         files: [
           'img/**/*',
@@ -101,12 +101,12 @@ module.exports = function(grunt) {
         ],
         tasks: ['rsync:assets']
       },
-      
+
       less: {
         files: ['less/**/*'],
         tasks: ['less']
       },
-      
+
       bower_components: {
         files: [
           'bower_components/**/*',
