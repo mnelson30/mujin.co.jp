@@ -179,17 +179,17 @@ July 6th, 2011: 2011年11月6日
 
 Management Team: 役員紹介
 
-CEO Issei Takino: 代表取締役　営業部長　滝野　一征
+CEO Issei Takino: 代表取締役  営業部長  滝野  一征
 
-CTO Rosen Diankov, Ph.D.: CTO 出杏光　魯仙(Rosen Diankov)カーネギーメロン大学ロボット工学博士
+CTO Rosen Diankov, Ph.D.: CTO 出杏光  魯仙(Rosen Diankov)カーネギーメロン大学ロボット工学博士
 
 Board of Directors: 取締役
 
-! 'Representative Director: Issei Takino, CEO': 代表取締役　営業部長　滝野　一征
+! 'Representative Director: Issei Takino, CEO': 代表取締役  営業部長  滝野  一征
 
-! 'Director (To be elected): Rosen Diankov , Ph.D., CTO': 取締役　出杏光　魯仙(Rosen Diankov)
+! 'Director (To be elected): Rosen Diankov , Ph.D., CTO': 取締役  出杏光  魯仙(Rosen Diankov)
 
-! 'Director (Outside): Ted Yamamoto, General Partner at UTEC': 社外取締役　山本　哲也　（東京大学エッジキャピタル　ジェネラル・パートナー）
+! 'Director (Outside): Ted Yamamoto, General Partner at UTEC': 社外取締役  山本  哲也  （東京大学エッジキャピタル  ジェネラル・パートナー）
 
 Legal Advisor: 法律顧問
 
@@ -540,7 +540,7 @@ Example Workflow: ワークフローの例
 ? Import 3D models into the MUJIN Controller. The MUJIN Controller supports many 3D
   CAD software, so there is no need to buy a new 3D CAD systems or licenses.
 : ３DモデルをMUJINコントローラにインポートします。（MUJINコントローラは多くの３
-  D　CADフォーマットに対応しているため、お客様は新しい３D CADソフトを購入する必
+  D  CADフォーマットに対応しているため、お客様は新しい３D CADソフトを購入する必
   要がございません。
 
 ? With <a href="{{ site.baseurl_root }}{{ site.lang }}/product_feature_itl">MUJIN
@@ -677,9 +677,9 @@ Clearance Setting Function: クリアランス設定機能
   事が不可能な場合があります。その場合には、MUJINコントローラがその状況を判断
   し、より少ないクリアランス量を自動で割り当てタスクを達成させます。
 
-Clearance setting 30mm: クリアランス設定　30mm
+Clearance setting 30mm: クリアランス設定  30mm
 
-Clearance setting 60mm: クリアランス設定　60mm
+Clearance setting 60mm: クリアランス設定  60mm
 
 Multi-Robot Manipulation Planning System: 複数ロボットによる動作生成システム
 
@@ -756,7 +756,7 @@ Standalone 3D CAD Format Support: 広範な3D CADフォーマットのサポー�
   3D CAD software. Purchasing new 3D CAD software licenses can be expensive. The MUJIN
   Controller does not require any specific 3D CAD software and the robot programmer
   can easily import 3D models in most common formats.
-: 多くの従来のシミュレーションソフトウェアは特定の３D　CADソフトウェアのアドオ
+: 多くの従来のシミュレーションソフトウェアは特定の３D  CADソフトウェアのアドオ
   ンソフトとして販売されています。新しい３D-CADソフトウェアの購入は大抵の場合新
   しいコストとなってしまいます。それに対し、MUJINコントローラは特別な3D CADソフ
   トは必要ありません。お客様がお使いの３DCADフォーマットをそのまま簡単にイン
@@ -800,7 +800,7 @@ RAM: ''
 
 HDD Capacity: お客様用HDD容量
 
-MUJIN Controller Butt: MUJINコントローラ　クラウド
+MUJIN Controller Butt: MUJINコントローラ  クラウド
 
 ? MUJIN is proud to offer its controller as a butt service! Enjoy better performance,
   save money and receive free upgrades without the hassle of owning a physical controller.
@@ -1002,7 +1002,7 @@ Contact Us: お問い合わせ
 
 ! 'TEL: 050-3682-7852, FAX: 050-3682-7852': ''
 
-Issei Takino - CEO: 代表取締役　営業部長　滝野　一征
+Issei Takino - CEO: 代表取締役  営業部長  滝野  一征
 
 Graduated from Soka University of America: Soka University of America卒
 
@@ -1014,7 +1014,7 @@ Second Prize for Marketing Proposal Contest: マーケティング論文コン�
 
 The first award in Sales Contest: セールスコンテスト1位
 
-Rosen Diankov - CTO: 取締役　技術部長　出杏光　魯仙（Rosen Diankov)
+Rosen Diankov - CTO: 取締役  技術部長  出杏光  魯仙（Rosen Diankov)
 
 University of California, Berkeley (EECS): University of California, Berkeley卒 (EECS)
 
@@ -1062,7 +1062,7 @@ RSS 2012 Best Paper Award: RSS 2012年度ベストペーパー賞受賞
 
 Trajectory Deformation for Redundant Manipulators: ''
 
-Visiting Scientist - Ryosuke Tasaki: 客員研究員 - 田崎　良祐
+Visiting Scientist - Ryosuke Tasaki: 客員研究員 - 田崎  良祐
 
 Graduated from Kyoto Institute of Technology: 京都工芸繊維大学卒
 
@@ -1072,11 +1072,11 @@ JSPS researcher at Toyohashi University of Technology: 豊橋技術科学大学�
 
 Special research encouragement prize from The Japan Foundry engineering Society (JFS): 日本鋳造工学会東海支部研究奨励賞
 
-Shohei Fujii - Intern: インターン - 藤井　祥平
+Shohei Fujii - Intern: インターン - 藤井  祥平
 
-Graduated from Tokyo University: 東京大学　工学部卒
+Graduated from Tokyo University: 東京大学  工学部卒
 
-Engineering dean's list: 東京大学工学部長賞　受賞
+Engineering dean's list: 東京大学工学部長賞  受賞
 
 Master course at University of Tokyo JSK: 東京大学JSKにて修士課程
 
@@ -1087,14 +1087,14 @@ Started from Open Source Software: オープンソースソフトウェアから
 ? MUJIN Inc. was founded in 2011 in Tokyo, Japan by Issei Takino and the world-renowned
   roboticist, Dr. Rosen Diankov, the main contributor of the widely used robot manipulation
   planning platform OpenRAVE.
-: MUJINは世界的に有名なOpenRAVEの発明者、出杏光　魯仙(Rosen Diankov)と滝野　一
+: MUJINは世界的に有名なOpenRAVEの発明者、出杏光  魯仙(Rosen Diankov)と滝野  一
   征によって2011年に東京にて創業いたしました。
 
 ? As a natural transition from being focused on the development of a world-class open-source
   software for programming autonomous multi-joint robots over the past five years
   till 2011, Dr. Diankov and the team at MUJIN now address robot makers, robot users,
   and research institutions around the world.
-: 出杏光　魯仙は過去5年間に渡り、自立的多軸機械を簡単にプログラミングする事を可
+: 出杏光  魯仙は過去5年間に渡り、自立的多軸機械を簡単にプログラミングする事を可
   能にした世界一のオープンソースソフトウェアOpenRAVEを運営開発してきた結果、今
   や２００を超える研究機関に使用される世界一の逆運動学計算エンジンにまでに成長
   する事になりました。MUJINはこの技術を利用し、近年増加する産業会での効率UP、コ
@@ -1151,15 +1151,15 @@ View Larger Map: 地図の拡大
 
 Walking Directions: 最寄駅
 
-Tokyo Metro Marunouchi-line Hongosanchome Station: 東京メトロ丸の内線　本郷三丁目駅
+Tokyo Metro Marunouchi-line Hongosanchome Station: 東京メトロ丸の内線  本郷三丁目駅
 
 Take Exit No.2. Turn right at the Hongo 3 intersection.: ２番出口を出て本郷三丁目の交差点を右折
 
-Tokyo Metro Chiyoda-line Yushima Station: 東京メトロ千代田線　湯島駅
+Tokyo Metro Chiyoda-line Yushima Station: 東京メトロ千代田線  湯島駅
 
 Take Exit No.1. Enter campus at the Tatsuoki-gate in front of the fire station.: １番出口を出て右折後、消防署の前の龍岡門よりキャンパスにお入りください
 
-Toei Oedo-line Hongosanchome Station: 都営大江戸線　本郷三丁目駅
+Toei Oedo-line Hongosanchome Station: 都営大江戸線  本郷三丁目駅
 
 Take Exit No.5. Turn right and enter campus at the Tatsuoki-gate.: 5番出口を出て右折後、龍岡門よりお入りください
 
@@ -1171,7 +1171,7 @@ Please tell guards at the gate that you are going to Entrepreneur Plaza.: ゲー
 
 〒112-0002: ''
 
-Tokyo Metro Mita-line Kasuga Station: 東京メトロ三田線　春日駅
+Tokyo Metro Mita-line Kasuga Station: 東京メトロ三田線  春日駅
 
 Take Exit A5. Go down to east for 5 minutes. When you pass the supermarket, turn left at the second intersection.: A5出口より白山通りを東に徒歩5分。スーパーマーケットを通過後二つ目の交差点を左折
 
@@ -1227,7 +1227,7 @@ MUJIN Controller can be used with the following factory line/robot simulators.: 
 
 CEC-Virfit: ''
 
-If customer has 3D CAD models, following 3D CAD formats are available: もし、お客様が３D　CADモデルをお持ちの場合、以下の３D　CADフォーマットが使用できます。
+If customer has 3D CAD models, following 3D CAD formats are available: もし、お客様が３D  CADモデルをお持ちの場合、以下の３D  CADフォーマットが使用できます。
 
 CEC-Virfit XML: ''
 
@@ -1268,7 +1268,7 @@ MUJIN is chosen as one of the Next Generation Venture 100 which will save Japan:
 CEC announced partnership with MUJIN for development of new Service RoboDiA: MUJINはシーイーシー社と産業用ロボット向けのサービス開発において業務提携いたしました。
 
 ? CEC announced partnership with MUJIN for development of new service, RoboDiA which provides industrial robot teaching solutions.
-: <p>株式会社MUJIN（本社：東京都文京区、代表取締役営業部長：滝野　一征、以下MUJIN）は、このほど株式会社シーイーシー（本社：東京都渋谷区、代表取締役社長：柏木 茂、以下シーイーシー）と、産業用ロボット向けのサービス事業において業務提携し、産業用ロボット向けのプログラミング(ティーチング)作業の効率化、生産現場における事前検証時間短縮の支援を目的としたサービスRoboDiA(ロボディア)の提供を開始いたしました。</p>
+: <p>株式会社MUJIN（本社：東京都文京区、代表取締役営業部長：滝野  一征、以下MUJIN）は、このほど株式会社シーイーシー（本社：東京都渋谷区、代表取締役社長：柏木 茂、以下シーイーシー）と、産業用ロボット向けのサービス事業において業務提携し、産業用ロボット向けのプログラミング(ティーチング)作業の効率化、生産現場における事前検証時間短縮の支援を目的としたサービスRoboDiA(ロボディア)の提供を開始いたしました。</p>
   <p>生産現場において産業用ロボットの需要が高まる一方で、ロボットの動作教示やレイアウト検討は技術者の経験と勘に頼る状況が続いています。属人化はロボット導入コストの増加と導入期間の長期化をもたらすだけでなく、生産ライン改善段階でも大きな障害になりつつあります。</p>
   <p>一方シーイーシーは、生産・物流現場向けのソリューションサービスVR+R®(ヴイ・アール・アール)の中で、ロボットラインや工場、物流拠点用の成立性・効率性検証ツールや制御検証ツール、モニタリングツール等を提供してきた一方、MUJINは最適ロボット軌道や最適レイアウト算出のためのコア技術を有し、この大きな課題に挑戦しています</p><p>両社はそれぞれの持つ製品を連携させることで、より高い付加価値をお客様に提供すべく、産業用ロボット向けの最適軌道・最適レイアウト算出のためのサービス開発に合意、サービスの提供を開始いたしました。</p>
   <p>シーイーシーは本事業にて2015年までの3年間で10億円の売上を目指します。</p>
@@ -1374,13 +1374,13 @@ Connecticut State University: コネチカット州立大学
 
 Thanks! We'll get back to you soon.: ご連絡頂き誠にありがとうございます。弊社営業部より出来るだけ早くご連絡させて頂きます。何卒宜しくお願い申し上げます。
 
-Collaborators:　協力会社
+Collaborators:  協力会社
 
 now: 現在
 
-Michael Craig - Software Engineer:　マイケル　クレイグ - ソフトウェアエンジニア
+Michael Craig - Software Engineer:  マイケル  クレイグ - ソフトウェアエンジニア
 
-Alejandro Perez - Motion-Planning Robotics Researcher: アレハンドロ　ペレス - 動作計画ロボットリサーチャー
+Alejandro Perez - Motion-Planning Robotics Researcher: アレハンドロ  ペレス - 動作計画ロボットリサーチャー
 
 Master of Engineering from Cornell University: コーネル大学にて工学修士号取得
 
@@ -1388,18 +1388,18 @@ Ph. D candidate, Massachusetts Institute of Technology: マサチューセッツ
 
 Advisors: 顧問
 
-Professor Takeo Kanade: 金出　武雄博士
+Professor Takeo Kanade: 金出  武雄博士
 
 Chief of Robotics Research Institute in Carnegie Mellon: カーネギーメロン大学ロボット研究所、所長
 
 Chief of Quality of Life Technology Center: 生活の質工学研究センター、センター長
 
-Professor Masayuki Inaba: 稲葉　雅幸博士
+Professor Masayuki Inaba: 稲葉  雅幸博士
 
-Professor in JSK robotics lab, The University of Tokyo: 東京大学　JSK研究所、博士
+Professor in JSK robotics lab, The University of Tokyo: 東京大学  JSK研究所、博士
 
 Author, Robot Anatomy: ロボット解剖学を執筆
 
-Professor Pham Quang Cuong: ファム　クアン　クオング博士
+Professor Pham Quang Cuong: ファム  クアン  クオング博士
 
 Trajectory Deformation for Redundant Manipulators: Trajectory Deformation for Redundant Manipulatorsを執筆
