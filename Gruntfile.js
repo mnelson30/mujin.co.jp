@@ -46,12 +46,22 @@ module.exports = function(grunt) {
           dest: '_site'
         }
       },
-
+      
       deploy: {
         options: {
           src: ['_site'],
           dest: '/var/www/www/mujin.co.jp',
           host: 'www-data@www.mujin.co.jp',
+          syncDest: true
+        }
+      },
+      
+      // temporary until rosen fixes dns
+      awsDeploy: {
+        options: {
+          src: ['_site'],
+          dest: '/var/www/www/mujin.co.jp',
+          host: 'www-data@ec2-54-200-55-36.us-west-2.compute.amazonaws.com',
           syncDest: true
         }
       }
@@ -161,12 +171,8 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'website',
-      'rsync:deploy'
+      'rsync:deploy',
+      'rsync:awsDeploy'
     ]);
   });
-
-  // gaze, to be used along with server
-  grunt.registerTask('lint', [
-    'exec:fixjsstyle'
-  ]);
 };
