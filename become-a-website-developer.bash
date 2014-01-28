@@ -21,6 +21,10 @@ fi
 npm install
 bower install
 
+# install git submodules
+sudo apt-get install -y git-core
+git submodule update --init
+
 # install linter
 sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
