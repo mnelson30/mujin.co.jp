@@ -15,8 +15,8 @@ sudo npm install -g bower@1.2.8 grunt-cli@0.1.13
 sudo rm -r ~/.npm ~/tmp
 
 # install our node and bower deps
-if [ -a "/home/vagrant/mujinwww/.vagrant-tmp" ]; then
-  cd /home/vagrant/mujinwww/
+if [ -a "/home/vagrant/mujin.co.jp/.vagrant-tmp" ]; then
+  cd /home/vagrant/mujin.co.jp/
 fi
 npm install
 bower install
@@ -27,7 +27,7 @@ sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-late
 # install rvm and ruby 1.9.3
 sudo apt-get install -y build-essential curl
 curl -L https://get.rvm.io | bash -s stable
-if [ -a "/home/vagrant/mujinwww/.vagrant-tmp" ]; then
+if [ -a "/home/vagrant/mujin.co.jp/.vagrant-tmp" ]; then
   source /home/vagrant/.rvm/scripts/rvm
 else
   source ~/.rvm/scripts/rvm
@@ -36,11 +36,12 @@ rvm install 1.9.3
 rvm use 1.9.3
 
 # install jekyll
-sudo gem install jekyll -v 1.4.3
+gem install  -v 2.2.1
+gem install jekyll -v 1.4.3
 
 # clean up if this was done from vagrant
-if [ -a "/home/vagrant/mujinwww/.vagrant-tmp" ]; then
-  rm /home/vagrant/mujinwww/.vagrant-tmp
+if [ -a "/home/vagrant/mujin.co.jp/.vagrant-tmp" ]; then
+  rm /home/vagrant/mujin.co.jp/.vagrant-tmp
 fi
 
 # goodbye!

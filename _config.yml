@@ -12,4 +12,5 @@ exclude: ["_site", ".gitignore", ".htaccess", "bower.json", "CNAME", "Gruntfile.
 # site variables
 name: 'MUJIN'
 
+# first one here is the default language
 languages: ["ja", "en", "ja"]
