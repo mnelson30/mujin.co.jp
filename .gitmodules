@@ -1,9 +1,3 @@
-[submodule "vagrant/modules/apt"]
-	path = vagrant/modules/apt
-	url = https://github.com/puppetlabs/puppetlabs-apt.git
-[submodule "vagrant/modules/stdlib"]
-	path = vagrant/modules/stdlib
-	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
 [submodule "_plugins/multiple-languages"]
 	path = _plugins/multiple-languages
 	url = https://github.com/Stonelinks/jekyll-multiple-languages-plugin.git

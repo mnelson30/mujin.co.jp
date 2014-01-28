@@ -8,13 +8,12 @@ If you want to do any work on the website please follow these steps
 
       	git clone https://github.com/mujin/mujin.co.jp.git
       	cd mujin.co.jp
-      	git submodule update --init
 
 2. Install dependencies to build the website. All you have to do is run:
 
       	./become-a-website-developer.bash
 
-  This installs all the dependencies
+  This installs all the dependencies you need to work on the website. Here are some of them:
   - `bower` and `grunt` (which need `node` and `npm`)
   - `jekyll` (which needs ruby 1.9.3, `rvm`)
 

@@ -31,4 +31,8 @@ nbproject
 
 # Folders to ignore
 node_modules
+
+# Temporary vagrant files
 .vagrant
+.vagrant-tmp
+.goutputstream*
