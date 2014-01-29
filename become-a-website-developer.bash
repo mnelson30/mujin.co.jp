@@ -40,7 +40,7 @@ rvm install 1.9.3
 rvm use 1.9.3
 
 # install jekyll
-gem install  -v 2.2.1
+gem install rdoc -v 2.2.1
 gem install jekyll -v 1.4.3
 
 # clean up if this was done from vagrant
